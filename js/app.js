@@ -387,9 +387,15 @@
         <div class="home-hero__subtitle">TACTICAL FIELD MANUAL</div>
         <div class="home-hero__line"></div>
         <p style="color: var(--white-dim); max-width: 600px; margin: 0 auto; line-height: 1.7; font-weight: 300;">
-          Welcome to the Girls' Frontline 5th Ring field manual. Select a section below
-          or use the sidebar to navigate between topics. All rules, techniques, and character
-          creation resources are accessible from this terminal.
+          A tabletop roleplaying game set in the near-future cyberpunk world of <em>Girls' Frontline</em>:
+          autonomous T-Dolls, collapse radiation, and asymmetric warfare. Built on <em>Legend of the Five Rings</em>'
+          roll-and-keep dice engine, with its framework of basic actions, techniques, advantages, and passions
+          ported wholesale into a sci-fi setting.
+        </p>
+        <p style="color: var(--white-dimmer); max-width: 600px; margin: 0.8em auto 0; line-height: 1.7; font-weight: 300; font-size: 0.9em;">
+          <strong style="color: var(--white-dim);">Why GFL5R?</strong>
+          It's a portmanteau of two acronyms: <em>GFL</em> from <em>Girls' Frontline</em> and <em>L5R</em> from
+          <em>Legend of the Five Rings</em>.
         </p>
       </div>
 

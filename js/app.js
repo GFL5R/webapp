@@ -10,11 +10,11 @@
 
   // Static HTML content pages (served from pages/)
   const HTML_PAGES = {
-    'Introduction':                     'pages/introduction.html',
     'Setting & T-Dolls':                'pages/setting-and-t-dolls.html',
     'Approaches & Derived Attributes':  'pages/approaches-and-derived-attributes.html',
     'Skills':                           'pages/skills.html',
     'Making a Check':                   'pages/making-a-check.html',
+    'A Boy and His Doll':               'pages/a-boy-and-his-doll.html',
     'Building a Commander':             'pages/building-a-commander.html',
     'Building Your T-Doll':             'pages/building-your-t-doll.html',
     'Humanity & Fame':                  'pages/humanity-and-fame.html',
@@ -34,7 +34,7 @@
 
   // Defines the reading order for rulebook-style navigation
   const PAGE_ORDER = [
-    'Introduction',
+    'A Boy and His Doll',
     'Setting & T-Dolls',
     'Approaches & Derived Attributes',
     'Skills',
@@ -58,11 +58,11 @@
 
   // Maps each page to its sidebar section for breadcrumbs
   const PAGE_SECTIONS = {
-    'Introduction':                     'Overview',
     'Setting & T-Dolls':                'Overview',
     'Approaches & Derived Attributes':  'Fundamentals',
     'Skills':                           'Fundamentals',
     'Making a Check':                   'Fundamentals',
+    'A Boy and His Doll':               'Character Creation',
     'Building a Commander':             'Character Creation',
     'Building Your T-Doll':             'Character Creation',
     'Humanity & Fame':                  'Identity & Growth',

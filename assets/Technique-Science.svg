@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <filter id="glow"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bloom"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="bg"><stop offset="0%" stop-color="#aaddff" stop-opacity="0.18"/><stop offset="100%" stop-color="#06090d" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g transform="translate(60,60)">
+    <circle cx="0" cy="0" r="55" fill="url(#bg)"/>
+    <g filter="url(#bloom)" opacity="0.3">
+      <ellipse cx="0" cy="0" rx="44" ry="16" fill="none" stroke="#88ccff" stroke-width="6"/>
+      <ellipse cx="0" cy="0" rx="44" ry="16" fill="none" stroke="#88ccff" stroke-width="6" transform="rotate(60)"/>
+      <ellipse cx="0" cy="0" rx="44" ry="16" fill="none" stroke="#88ccff" stroke-width="6" transform="rotate(120)"/>
+    </g>
+    <g filter="url(#glow)">
+      <!-- Three orbital ellipses at 60deg increments -->
+      <ellipse cx="0" cy="0" rx="44" ry="14" fill="none" stroke="#88ccff" stroke-width="1.5" transform="rotate(0)"/>
+      <ellipse cx="0" cy="0" rx="44" ry="14" fill="none" stroke="#88ccff" stroke-width="1.5" transform="rotate(60)"/>
+      <ellipse cx="0" cy="0" rx="44" ry="14" fill="none" stroke="#88ccff" stroke-width="1.5" transform="rotate(120)"/>
+      <!-- Electron dots on each orbit -->
+      <circle cx="44"  cy="0"   r="4" fill="#aaddff" transform="rotate(0)"/>
+      <circle cx="-44" cy="0"   r="3" fill="#aaddff" opacity="0.5" transform="rotate(0)"/>
+      <circle cx="44"  cy="0"   r="4" fill="#aaddff" transform="rotate(60)"/>
+      <circle cx="-44" cy="0"   r="3" fill="#aaddff" opacity="0.5" transform="rotate(60)"/>
+      <circle cx="44"  cy="0"   r="4" fill="#aaddff" transform="rotate(120)"/>
+      <circle cx="-44" cy="0"   r="3" fill="#aaddff" opacity="0.5" transform="rotate(120)"/>
+      <!-- Nucleus -->
+      <circle cx="0" cy="0" r="10" fill="#001830" stroke="#88ccff" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="6"  fill="#88ccff" opacity="0.4"/>
+      <circle cx="0" cy="0" r="3.5" fill="#aaddff"/>
+      <circle cx="0" cy="0" r="1.5" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>

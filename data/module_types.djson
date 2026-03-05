@@ -1,0 +1,20 @@
+/* Module type categories: parsed by docstring-json into webapp/data/module_types.json */
+{
+  "Approach Augmentation": {
+    description: """
+      <p>Approach Augmentation modules focus on direct improvements to a T-Doll's physical frame and onboard combat hardware. Rather than altering higher-level neural behavior, these modifications reinforce, replace, or recalibrate structural components such as actuators, sensor housings, power conduits, and stabilization systems. The result is a sturdier, more specialized platform capable of pushing beyond factory tolerances.</p>
+      <p>Each augmentation increases the associated approach by 1 rank, at a cost of <strong>12,000 URNC Credits</strong>.</p>
+    """
+  },
+  "Flash Training": {
+    description: """
+      <p>Flash Training is the rapid acquisition of operational knowledge through direct data ingestion into a T-Doll's Neural Cloud. Rather than relying on long-term drills or repeated field exposure, this process applies curated instruction sets, simulation data, and procedural guides in a compressed time frame.</p>
+      <p>Each training package increases the associated skill by 1 rank, at a cost of <strong>6,000 URNC Credits</strong>.</p>
+    """
+  },
+  Remolding: {
+    description: """
+      <p>Remolding is a highly experimental tech that allows the user to harness ambient collapse radiation to affect reality. Unpredictable and dangerous, these modules are the domain of those who are willing to risk everything for a chance at power beyond imagination.</p>
+    """
+  }
+}

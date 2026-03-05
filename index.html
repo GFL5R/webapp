@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFL5R: Field Manual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Top bar -->
+  <header class="top-bar">
+    <div class="top-bar__left">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="top-bar__logo">
+        <span class="logo-prefix">GFL</span><span class="logo-suffix">5R</span>
+      </div>
+      <div class="top-bar__subtitle">TACTICAL FIELD MANUAL</div>
+    </div>
+    <div class="top-bar__right">
+      <div class="top-bar__status">
+        <span class="status-dot"></span>
+        <span class="status-text">SYSTEM ONLINE</span>
+      </div>
+      <div class="top-bar__search">
+        <input type="text" id="searchInput" placeholder="SEARCH DATABANK..." autocomplete="off">
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main layout -->
+  <div class="layout">
+    <!-- Sidebar navigation -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar__inner">
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="overview">
+            <span class="heading-icon">◆</span> OVERVIEW
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+            <li><a href="#" data-page="Setting & T-Dolls" class="nav-link">Setting &amp; T-Dolls</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="fundamentals">
+            <span class="heading-icon">◆</span> FUNDAMENTALS
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="Approaches & Derived Attributes" class="nav-link">Approaches &amp; Attributes</a></li>
+            <li><a href="#" data-page="Skills" class="nav-link">Skills</a></li>
+            <li><a href="#" data-page="Making a Check" class="nav-link">Making a Check</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="charcreation">
+            <span class="heading-icon">◆</span> CHARACTER CREATION
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="A Boy and His Doll" class="nav-link">A Boy and His Doll</a></li>
+            <li><a href="#" data-page="Building a Commander" class="nav-link">Building a Commander</a></li>
+            <li><a href="#" data-page="Building Your T-Doll" class="nav-link">Building Your T-Doll</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="identity">
+            <span class="heading-icon">◆</span> IDENTITY &amp; GROWTH
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="Humanity & Fame" class="nav-link">Humanity &amp; Fame</a></li>
+            <li><a href="#" data-page="Disciplines" class="nav-link">Disciplines</a></li>
+            <li><a href="#" data-page="Experience" class="nav-link">Experience</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="gameplay">
+            <span class="heading-icon">◆</span> GAMEPLAY
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="Scenes" class="nav-link">Scenes</a></li>
+            <li><a href="#" data-page="Strife" class="nav-link">Strife</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="combat">
+            <span class="heading-icon">◆</span> COMBAT
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="Weapons & Armor" class="nav-link">Weapons &amp; Armor</a></li>
+            <li><a href="#" data-page="Harm & Healing" class="nav-link">Harm &amp; Healing</a></li>
+            <li><a href="#" data-page="Conditions" class="nav-link">Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="subsystems">
+            <span class="heading-icon">◆</span> SUBSYSTEMS
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="Electronic Warfare" class="nav-link">Electronic Warfare</a></li>
+            <li><a href="#" data-page="Driving & Vehicles" class="nav-link">Driving &amp; Vehicles</a></li>
+            <li><a href="#" data-page="Collapse Radiation" class="nav-link">Collapse Radiation</a></li>
+            <li><a href="#" data-page="Poisons & Drugs" class="nav-link">Poisons &amp; Drugs</a></li>
+            <li><a href="#" data-page="Crime" class="nav-link">Crime</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="techniques">
+            <span class="heading-icon">◆</span> TECHNIQUES
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="techniques-all" class="nav-link">All Techniques</a></li>
+            <li><a href="#" data-page="techniques-combat" class="nav-link">Combat</a></li>
+            <li><a href="#" data-page="techniques-ew" class="nav-link">Electronic Warfare</a></li>
+            <li><a href="#" data-page="techniques-street" class="nav-link">Street</a></li>
+            <li><a href="#" data-page="techniques-conditioning" class="nav-link">Conditioning</a></li>
+            <li><a href="#" data-page="techniques-science" class="nav-link">Science</a></li>
+            <li><a href="#" data-page="techniques-social" class="nav-link">Social</a></li>
+            <li><a href="#" data-page="techniques-vehicle" class="nav-link">Vehicle</a></li>
+            <li><a href="#" data-page="techniques-remolding" class="nav-link">Remolding</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="peculiarities">
+            <span class="heading-icon">◆</span> PECULIARITIES
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="advantages-all" class="nav-link">Advantages</a></li>
+            <li><a href="#" data-page="passions-all" class="nav-link">Passions</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__heading" data-section="items">
+            <span class="heading-icon">◆</span> ITEMS
+          </div>
+          <ul class="sidebar__links">
+            <li><a href="#" data-page="modules-all" class="nav-link">T-Doll Modules</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar__footer">
+        <div class="sidebar__version">BUILD v1.0 // <span id="currentDate"></span></div>
+      </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main class="content" id="content">
+      <div class="content__inner" id="contentInner">
+        <!-- Content loaded dynamically -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Loading overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner">
+      <div class="spinner-ring"></div>
+      <div class="spinner-text">LOADING DATA...</div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+/* T-Doll Modules data: parsed by docstring-json into webapp/data/modules.json */
+{
+  "Power Augmentation": {
+    type: "Approach Augmentation",
+    cost: 12000,
+    skill: null,
+    approach: "Power",
+    description: """
+      <p>Structural supports and actuators are strengthened, allowing the frame to safely handle greater force output during attacks.</p>
+    """
+  },
+  "Precision Augmentation": {
+    type: "Approach Augmentation",
+    cost: 12000,
+    skill: null,
+    approach: "Precision",
+    description: """
+      <p>Micro-adjustments to the frame's balance points and targeting hardware reduce mechanical drift, ensuring more consistent alignment during fine motor tasks.</p>
+    """
+  },
+  "Swiftness Augmentation": {
+    type: "Approach Augmentation",
+    cost: 12000,
+    skill: null,
+    approach: "Swiftness",
+    description: """
+      <p>Nonessential mass is removed and motion systems are refined, allowing faster transitions between movement states without compromising frame integrity.</p>
+    """
+  },
+  "Resilience Augmentation": {
+    type: "Approach Augmentation",
+    cost: 12000,
+    skill: null,
+    approach: "Resilience",
+    description: """
+      <p>Critical components are shielded with improved materials and impact-absorbing mounts, increasing the frame's tolerance to sustained damage and stress.</p>
+    """
+  },
+  "Fortune Augmentation": {
+    type: "Approach Augmentation",
+    cost: 12000,
+    skill: null,
+    approach: "Fortune",
+    description: """
+      <p>The frame is retrofitted with predictive microcontrollers, subtly adjusting timing and execution order to increase the chance that actions resolve favorably under uncertain conditions.</p>
+    """
+  },
+  "Blades Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Blades",
+    approach: null,
+    description: """
+      <p>Rapid implantation of close-quarters engagement heuristics for edged weapons. The Neural Cloud is loaded with optimized distance control, strike sequencing, and pressure-maintenance routines derived from recorded combat data.</p>
+    """
+  },
+  "Exotic Weapons Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Exotic Weapons",
+    approach: null,
+    description: """
+      <p>Specialized handling schemas for unconventional weapon systems are integrated into the Neural Cloud. This training focuses on safe operation, activation timing, and compensating for nonstandard balance or recoil profiles.</p>
+    """
+  },
+  "Explosives Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Explosives",
+    approach: null,
+    description: """
+      <p>The Neural Cloud receives calibrated models for blast radius prediction, fuse timing, and placement logic. This allows precise use of explosive devices with reduced setup errors and improved battlefield shaping.</p>
+    """
+  },
+  "Firearms Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Firearms",
+    approach: null,
+    description: """
+      <p>Marksmanship routines are reinforced through recoil compensation patterns, reload sequencing, and threat-priority targeting logic. Performance remains consistent even under stress or degraded conditions.</p>
+    """
+  },
+  "Hand-To-Hand Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Hand-To-Hand",
+    approach: null,
+    description: """
+      <p>Close-combat movement libraries and grappling response trees are implanted. The Doll gains refined control over balance, leverage, and counters in unarmed engagements.</p>
+    """
+  },
+  "Tactics Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Tactics",
+    approach: null,
+    description: """
+      <p>Real-time battlefield reasoning models are reinforced. This training improves threat evaluation, squad positioning logic, and adaptive planning when conditions shift unexpectedly.</p>
+    """
+  },
+  "Conditioning Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Conditioning",
+    approach: null,
+    description: """
+      <p>Physical performance limiters are recalibrated in the Neural Cloud. This training optimizes stamina management, movement efficiency, and exertion pacing in demanding environments.</p>
+    """
+  },
+  "Resolve Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Resolve",
+    approach: null,
+    description: """
+      <p>Mental stability frameworks are strengthened through stress-response conditioning. This improves resistance to panic states, coercive influence, and hostile signal intrusion.</p>
+    """
+  },
+  "Crafting Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Crafting",
+    approach: null,
+    description: """
+      <p>Procedural knowledge for repair, modification, and improvisation is directly implanted. The Doll gains immediate familiarity with tool use, material substitution, and field-expedient construction.</p>
+    """
+  },
+  "Insight Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Insight",
+    approach: null,
+    description: """
+      <p>Behavioral analysis patterns are reinforced, improving recognition of subtle changes in tone, posture, and intent. This training enhances interpersonal awareness without requiring extended observation.</p>
+    """
+  },
+  "Stealth Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Stealth",
+    approach: null,
+    description: """
+      <p>Movement optimization and concealment heuristics are refined. The Neural Cloud emphasizes noise reduction, exposure timing, and exploitation of environmental blind spots.</p>
+    """
+  },
+  "Survival Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Survival",
+    approach: null,
+    description: """
+      <p>Environmental adaptation models are loaded, covering hazard recognition, scavenging priorities, and shelter logic. This training improves decision-making in unstable or resource-poor regions.</p>
+    """
+  },
+  "Computers Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Computers",
+    approach: null,
+    description: """
+      <p>Digital intrusion and system navigation routines are implanted. This includes encryption handling, access escalation logic, and rapid interface comprehension across unfamiliar platforms.</p>
+    """
+  },
+  "Mechanics Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Mechanics",
+    approach: null,
+    description: """
+      <p>Mechanical system schematics and repair workflows are integrated. The Doll gains immediate competence in disassembly, calibration, and restoration of physical hardware.</p>
+    """
+  },
+  "Medicine Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Medicine",
+    approach: null,
+    description: """
+      <p>Medical assessment and treatment protocols are reinforced. This training focuses on injury prioritization, stabilization techniques, and efficient use of limited medical supplies.</p>
+    """
+  },
+  "Piloting Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Piloting",
+    approach: null,
+    description: """
+      <p>Vehicle control models and emergency response routines are loaded into the Neural Cloud. This improves handling precision, reaction timing, and situational awareness during operation.</p>
+    """
+  },
+  "Science Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Science",
+    approach: null,
+    description: """
+      <p>Analytical frameworks for experimentation and data interpretation are implanted. This training improves hazard analysis, material identification, and sensor data evaluation.</p>
+    """
+  },
+  "Subterfuge Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Subterfuge",
+    approach: null,
+    description: """
+      <p>Covert mechanical manipulation routines are reinforced. The Doll gains refined capability in lock interaction, trap handling, and discreet system interference.</p>
+    """
+  },
+  "Arts Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Arts",
+    approach: null,
+    description: """
+      <p>Creative process frameworks and stylistic references are implanted. This training improves the Doll's ability to produce, analyze, and interpret artistic works.</p>
+    """
+  },
+  "Command Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Command",
+    approach: null,
+    description: """
+      <p>Authority projection and directive framing routines are reinforced. This training enhances compliance generation and unit cohesion under pressure.</p>
+    """
+  },
+  "Culture Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Culture",
+    approach: null,
+    description: """
+      <p>Linguistic, historical, and social-context datasets are integrated. This allows rapid adaptation to unfamiliar communities and interpretation of symbolic behavior.</p>
+    """
+  },
+  "Deception Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Deception",
+    approach: null,
+    description: """
+      <p>Misleading communication models are implanted. This training improves consistency in false narratives, controlled information release, and signal manipulation.</p>
+    """
+  },
+  "Negotiation Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Negotiation",
+    approach: null,
+    description: """
+      <p>Dialogue optimization frameworks are reinforced. This training improves bargaining position assessment, concession timing, and conflict de-escalation strategies.</p>
+    """
+  },
+  "Performance Flash Training": {
+    type: "Flash Training",
+    cost: 6000,
+    skill: "Performance",
+    approach: null,
+    description: """
+      <p>Persona maintenance and behavioral consistency routines are implanted. This allows the Doll to sustain convincing roles, disguises, or public-facing presentations without error.</p>
+    """
+  },
+  "Remolding Unit": {
+    type: "Remolding",
+    cost: null,
+    skill: null,
+    approach: null,
+    description: """
+      <p>Remolding is a highly experimental tech that allows the user to harness ambient collapse radiation to affect reality. Taking this module will allow you use Remolding techniques.</p>
+      <p><strong>TODO:</strong> Determine cost.</p>
+    """
+  }
+}

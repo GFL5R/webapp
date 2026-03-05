@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <filter id="glow"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bloom"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="bg"><stop offset="0%" stop-color="#ffdd00" stop-opacity="0.18"/><stop offset="100%" stop-color="#06090d" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g transform="translate(60,60)">
+    <circle cx="0" cy="0" r="55" fill="url(#bg)"/>
+    <g filter="url(#glow)">
+      <!-- Speedometer arc: 210deg sweep from bottom-left to bottom-right (like a real speedo) -->
+      <!-- Arc from 210deg to 330deg = 120deg sweep of empty, the rest is the gauge -->
+      <!-- Full outer arc: 220deg sweep, flat at bottom -->
+      <path d="M-42,22 A46,46 0 1,1 42,22"
+            fill="none" stroke="#ffdd00" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+      <!-- Redline zone: last 40deg of arc, bright orange -->
+      <path d="M30,-36 A46,46 0 0,1 42,22"
+            fill="none" stroke="#ff6600" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+      <!-- Tick marks around arc -->
+      <!-- Major ticks at ~every 30deg along the 240deg arc -->
+      <g stroke="#ffdd00" stroke-width="1.8" stroke-linecap="round">
+        <line x1="-42" y1="22" x2="-36" y2="18"/>
+        <line x1="-46" y1="-2" x2="-39" y2="-2"/>
+        <line x1="-38" y1="-26" x2="-32" y2="-20"/>
+        <line x1="-20" y1="-42" x2="-16" y2="-36"/>
+        <line x1="0"   y1="-46" x2="0"   y2="-39"/>
+        <line x1="20"  y1="-42" x2="16"  y2="-36"/>
+        <line x1="38"  y1="-26" x2="32"  y2="-20"/>
+        <line x1="46"  y1="-2"  x2="39"  y2="-2"/>
+        <line x1="42"  y1="22"  x2="36"  y2="18"/>
+      </g>
+      <!-- Minor ticks -->
+      <g stroke="#ffdd00" stroke-width="1" opacity="0.5" stroke-linecap="round">
+        <line x1="-45" y1="10" x2="-40" y2="9"/>
+        <line x1="-44" y1="-14" x2="-39" y2="-12"/>
+        <line x1="-30" y1="-36" x2="-26" y2="-31"/>
+        <line x1="-10" y1="-45" x2="-8" y2="-39"/>
+        <line x1="10"  y1="-45" x2="8"  y2="-39"/>
+        <line x1="30"  y1="-36" x2="26" y2="-31"/>
+        <line x1="44"  y1="-14" x2="39" y2="-12"/>
+        <line x1="45"  y1="10"  x2="40" y2="9"/>
+      </g>
+      <!-- Needle: pointing to redline (~310deg = upper right) -->
+      <line x1="0" y1="0" x2="30" y2="-34"
+            stroke="#ffdd00" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Needle base pin -->
+      <circle cx="0" cy="0" r="8"   fill="#1a1400" stroke="#ffdd00" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="4"   fill="#ffdd00"/>
+      <circle cx="0" cy="0" r="2"   fill="#fffacc"/>
+      <!-- Speed lines at bottom: motion blur -->
+      <line x1="-36" y1="38" x2="-18" y2="38" stroke="#ffdd00" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+      <line x1="-44" y1="44" x2="-24" y2="44" stroke="#ffdd00" stroke-width="0.8" stroke-linecap="round" opacity="0.3"/>
+      <line x1="36"  y1="38" x2="18"  y2="38" stroke="#ffdd00" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+      <line x1="44"  y1="44" x2="24"  y2="44" stroke="#ffdd00" stroke-width="0.8" stroke-linecap="round" opacity="0.3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,234 @@
+/* Advantages data: parsed by docstring-json into webapp/data/advantages.json */
+{
+  "Personal Contact": {
+    type: "Interpersonal",
+    description: """
+      <p>You maintain a trusted relationship with a person who monitors events and networks on your behalf (handler, quartermaster, analyst, or confidant) and shares actionable intel early.</p>
+      <p><strong>Mechanic:</strong> When drawing on that contact's help (for example, Negotiation to secure a favor or Insight to read their stressed tone), you may reroll up to two dice.</p>
+    """
+  },
+  Coordinated: {
+    type: "Physical",
+    description: """
+      <p>You switch hands and adjust grip seamlessly on weapons or tools without losing tempo or precision.</p>
+      <p><strong>Mechanic:</strong> When ambidexterity creates advantage (for example, Blades to vary attack angle or Subterfuge while manipulating a lock quietly), you may reroll up to two dice.</p>
+    """
+  },
+  Romantic: {
+    type: "Interpersonal",
+    description: """
+      <p>You intuit romantic openness and emotional tone quickly, filtering posturing or awkward signals.</p>
+      <p><strong>Mechanic:</strong> When sincere emotional expression helps (for example, Performance during a vulnerable admission or Negotiation while building deep trust), you may reroll up to two dice.</p>
+    """
+  },
+  "Quick Recovery": {
+    type: "Physical",
+    description: """
+      <p>Your physiology or self-repair routines clear fatigue and subsystem strain faster than typical.</p>
+      <p><strong>Mechanic:</strong> When sustained exertion or bounce-back matters (for example, Conditioning during prolonged pursuit or Hand-To-Hand while retaining grappling control), you may reroll up to two dice.</p>
+    """
+  },
+  Blackmail: {
+    type: "Interpersonal",
+    description: """
+      <p>You possess compromising information about one chosen individual (pick when gained) who complies to avoid fallout so long as demands stay short-term and non-ruinous.</p>
+      <p><strong>Mechanic:</strong> When applying that leverage (for example, Command to force action or Negotiation to secure a hard concession), you may reroll up to two dice.</p>
+    """
+  },
+  "Protected Asset": {
+    type: "Interpersonal",
+    description: """
+      <p>Official registries or corporate directives flag you as strategically important; hostile actors risk consequences if they harm you openly.</p>
+      <p><strong>Mechanic:</strong> When invoking that protected status (for example, Command to demand safe passage or Culture while citing jurisdictional protocols), you may reroll up to two dice.</p>
+    """
+  },
+  "Committed Partner": {
+    type: "Interpersonal",
+    description: """
+      <p>A dependable romantic partner manages off-mission logistics and offers grounded counsel, reducing personal friction.</p>
+      <p><strong>Mechanic:</strong> When leaning on that bond (for example, Negotiation to leverage their network or Insight to parse conflicting motives), you may reroll up to two dice.</p>
+    """
+  },
+  "Market Sense": {
+    type: "Interpersonal",
+    description: """
+      <p>You read price drift and scarcity signals early in local and networked supply chains.</p>
+      <p><strong>Mechanic:</strong> When anticipating value shifts (for example, Commerce to secure rare components before a spike or Negotiation while structuring a trade), you may reroll up to two dice.</p>
+    """
+  },
+  "Sex Appeal": {
+    type: "Physical",
+    description: """
+      <p>Your presence reliably captures attention; admiration, curiosity, or desire keeps eyes on you longer than intended.</p>
+      <p><strong>Mechanic:</strong> When that allure helps (for example, Command to nudge daring action or Performance to amplify emotional intensity), you may reroll up to two dice.</p>
+    """
+  },
+  "Blue Collar": {
+    type: "Interpersonal",
+    description: """
+      <p>Workers in reclamation, logistics, and infrastructure warm quickly to you, assuming shared hardship baseline.</p>
+      <p><strong>Mechanic:</strong> When that rapport helps (for example, Mechanics while collaborating on urgent field repairs or Survival during coordinated haul operations), you may reroll up to two dice.</p>
+    """
+  },
+  "Honest Reputation": {
+    type: "Fame",
+    description: """
+      <p>People assume your statements are factual unless strong contradictory evidence appears.</p>
+      <p><strong>Mechanic:</strong> When credible sincerity aids you (for example, Command while validating a critical report or Negotiation to finalize a balanced agreement), you may reroll up to two dice.</p>
+    """
+  },
+  "Lucky Reputation": {
+    type: "Fame",
+    description: """
+      <p>Stories circulate of improbable survivals and clutch outcomes you've achieved, boosting morale around you.</p>
+      <p><strong>Mechanic:</strong> When perceived luck sways others (for example, Command to inspire calm under risk or Tactics while pushing a high-variance maneuver), you may reroll up to two dice.</p>
+    """
+  },
+  "Reliable Reputation": {
+    type: "Fame",
+    description: """
+      <p>Stakeholders assume you will fulfill obligations despite adversity; default expectation is follow-through.</p>
+      <p><strong>Mechanic:</strong> When invoking dependable record (for example, Command to stabilize fearful personnel or Performance while reinforcing patient persistence), you may reroll up to two dice.</p>
+    """
+  },
+  "Successful Reputation": {
+    type: "Fame",
+    description: """
+      <p>Your track record of results under pressure precedes you; leadership expects impact, not excuses.</p>
+      <p><strong>Mechanic:</strong> When citing that efficiency (for example, Tactics to compel enemy reposition or Negotiation to secure mission latitude), you may reroll up to two dice.</p>
+    """
+  },
+  "Wealthy Reputation": {
+    type: "Fame",
+    description: """
+      <p>Others assume you can unlock credit lines, premium procurement, or discretionary funding quickly.</p>
+      <p><strong>Mechanic:</strong> When leveraging perceived resources (for example, Commerce to source restricted components or Negotiation to calm scarcity disputes), you may reroll up to two dice.</p>
+    """
+  },
+  Flexibility: {
+    type: "Physical",
+    description: """
+      <p>You navigate constricted passages (service conduits, collapsed framing, ventilation runs) others cannot without tool aid.</p>
+      <p><strong>Mechanic:</strong> When adaptive contortion helps (for example, Subterfuge while bypassing a physical barrier or Hand-To-Hand while slipping a restraint), you may reroll up to two dice.</p>
+    """
+  },
+  "Research Savant": {
+    type: "Technical",
+    description: """
+      <p>You rapidly locate the closest credible repository for needed data and complete focused research in half standard time.</p>
+      <p><strong>Mechanic:</strong> When accelerated synthesis helps (for example, Science while correlating contaminated zone readings or Computers while parsing historical access logs), you may reroll up to two dice.</p>
+    """
+  },
+  "Resilient Physiology": {
+    type: "Physical",
+    description: """
+      <p>You avoid commonplace infections and purge toxins or biological/synthetic system corruption in half normal recovery time.</p>
+      <p><strong>Mechanic:</strong> When raw durability matters (for example, Survival while subsisting on minimal supplies or Resolve while resisting systemic distress), you may reroll up to two dice.</p>
+    """
+  },
+  "Indomitable Will": {
+    type: "Interpersonal",
+    description: """
+      <p>You hold position against fear routines, intimidation attempts, and emergent panic triggers without involuntary retreat.</p>
+      <p><strong>Mechanic:</strong> When unshaken focus helps (for example, Command while directing under overwhelming noise or Resolve while sealing emotional spikes), you may reroll up to two dice.</p>
+    """
+  },
+  "Enhanced Balance": {
+    type: "Physical",
+    description: """
+      <p>You traverse unstable or narrow surfaces (loose scaffolds, cable bundles, angled plating) without slipping unless physically disrupted.</p>
+      <p><strong>Mechanic:</strong> When refined balance helps (for example, Conditioning resisting forced displacement or Stealth while moving rapidly over irregular terrain), you may reroll up to two dice.</p>
+    """
+  },
+  "Enhanced Hearing": {
+    type: "Physical",
+    description: """
+      <p>You parse low-volume, filtered, or distant audio cues and assemble close-quarters positional layouts by sound alone.</p>
+      <p><strong>Mechanic:</strong> When enhanced auditory detail helps (for example, Insight to flag microstress in a voice or Survival while following concealed movement), you may reroll up to two dice.</p>
+    """
+  },
+  "Enhanced Sight": {
+    type: "Physical",
+    description: """
+      <p>You spot distant motion and micro details (tool wear, trace residue) before others register them.</p>
+      <p><strong>Mechanic:</strong> When visual acuity helps (for example, Science while identifying subtle material variance or Firearms engaging a long-range target), you may reroll up to two dice.</p>
+    """
+  },
+  "Enhanced Smell": {
+    type: "Physical",
+    description: """
+      <p>You catalog and recall scent profiles (propellants, chems, bio states) with high fidelity.</p>
+      <p><strong>Mechanic:</strong> When smell-based inference helps (for example, Survival while locating hidden cookfires or Medicine identifying volatile contaminants), you may reroll up to two dice.</p>
+    """
+  },
+  "Bonded Pair": {
+    type: "Interpersonal",
+    description: """
+      <p>You share an unusually deep link (long-term operational trust, neural sync history, or formative trauma) with one chosen character; you sense their general direction and sudden peril.</p>
+      <p><strong>Mechanic:</strong> When acting for that bonded partner (for example, Command coordinating their defense or Performance expressing raw support), you may reroll up to two dice.</p>
+    """
+  },
+  "Gentle Presence": {
+    type: "Interpersonal",
+    description: """
+      <p>Children, new recruits, and newly deployed civilian T-Dolls relax around you quickly; panic de-escalates faster in your company.</p>
+      <p><strong>Mechanic:</strong> When calming or directing the inexperienced (for example, Command during an evacuation or Performance to soothe distress), you may reroll up to two dice.</p>
+    """
+  },
+  "Large Frame": {
+    type: "Physical",
+    description: """
+      <p>Your build grants reach, leverage, and higher sightlines, though tight spaces can impede you.</p>
+      <p><strong>Mechanic:</strong> When physical mass helps (for example, Conditioning while bracing structural failure or Mechanics seating oversized components), you may reroll up to two dice.</p>
+    """
+  },
+  "Exact Recall": {
+    type: "Technical",
+    description: """
+      <p>You retain verbatim details of anything you have read, heard, or visually scanned during the current session and retrieve older data with unusual ease.</p>
+      <p><strong>Mechanic:</strong> When precise memory aids success (for example, Insight to reconstruct a prior conversation or Computers to recall legacy command syntax), you may reroll up to two dice.</p>
+    """
+  },
+  "Rapid Reflexes": {
+    type: "Physical",
+    description: """
+      <p>At the start of a scene you may instantly secure or reposition one reachable object a short distance (GM adjudicates scope) before general action begins.</p>
+      <p><strong>Mechanic:</strong> When sheer reaction speed helps (for example, Hand-To-Hand to seize opening control or Subterfuge while improvising a tool on the fly), you may reroll up to two dice.</p>
+    """
+  },
+  "Seasoned Operative": {
+    type: "Interpersonal",
+    description: """
+      <p>Years navigating post-collapse cultures grant you broad etiquette fluency and a network of older contacts whose reach still surprises younger allies.</p>
+      <p><strong>Mechanic:</strong> When hard-earned perspective helps (for example, Culture to choose respectful protocol or Negotiation while mentoring a rash teammate toward restraint), you may reroll up to two dice.</p>
+    """
+  },
+  "Anomaly Sense": {
+    type: "Physical",
+    description: """
+      <p>You intuit subtle field distortions, powered concealment signatures, and pattern anomalies before they become obvious threats; hostile intent feels palpably different.</p>
+      <p><strong>Mechanic:</strong> When following a hunch about hidden presence (for example, Survival to detect a concealed hazard or Resolve to trust instinct under uncertain pressure), you may reroll up to two dice.</p>
+    """
+  },
+  "Compact Frame": {
+    type: "Physical",
+    description: """
+      <p>Your small build (or compact chassis) slips through tight gaps, vanishes behind cover others find insufficient, and blends into dense foot traffic.</p>
+      <p><strong>Mechanic:</strong> When reduced profile helps (for example, Stealth to melt into a crowd or Subterfuge while reaching through a narrow access panel), you may reroll up to two dice.</p>
+    """
+  },
+  "People Person": {
+    type: "Interpersonal",
+    description: """
+      <p>You effortlessly read posture shifts, micro facial changes, vocal cadence, and conversational pacing to gauge intent, mood, and hidden pressure in most social contexts.</p>
+      <p><strong>Mechanic:</strong> When rapid social read or tailored response helps (for example, Insight to spot concealed anxiety, Negotiation to frame acceptable terms, or Deception while constructing a believable cover), you may reroll up to two dice.</p>
+    """
+  },
+  "Trusted Affiliation": {
+    type: "Interpersonal",
+    description: """
+      <p>You have earned standing with one chosen organization; its members grant routine hospitality (food, rest, basic medical) and access to non-restricted facilities when it carries no reputational risk. Select group on acquisition.</p>
+      <p><strong>Mechanic:</strong> When leveraging rapport with that group (for example, Command to coordinate their assistance or Culture while invoking internal protocols), you may reroll up to two dice.</p>
+    """
+  }
+}

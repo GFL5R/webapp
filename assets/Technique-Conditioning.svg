@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <filter id="glow"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bloom"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="bg"><stop offset="0%" stop-color="#00ff88" stop-opacity="0.18"/><stop offset="100%" stop-color="#06090d" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g transform="translate(60,60)">
+    <circle cx="0" cy="0" r="55" fill="url(#bg)"/>
+    <g filter="url(#bloom)" opacity="0.3">
+      <polyline points="-52,0 -34,0 -26,0 -22,-6 -18,0 -10,0 -4,-4 0,42 4,-48 8,0 14,4 18,0 22,0 52,0"
+                fill="none" stroke="#00ff88" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g filter="url(#glow)">
+      <!-- Outer boundary lines top and bottom -->
+      <line x1="-52" y1="-42" x2="52" y2="-42" stroke="#00ff88" stroke-width="0.8" opacity="0.2"/>
+      <line x1="-52" y1="42"  x2="52" y2="42"  stroke="#00ff88" stroke-width="0.8" opacity="0.2"/>
+      <!-- Vertical rails -->
+      <line x1="-52" y1="-46" x2="-52" y2="46" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+      <line x1="52"  y1="-46" x2="52"  y2="46" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+      <!-- Rail ticks -->
+      <line x1="-56" y1="-14" x2="-52" y2="-14" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+      <line x1="-56" y1="14"  x2="-52" y2="14"  stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+      <line x1="52"  y1="-14" x2="56"  y2="-14" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+      <line x1="52"  y1="14"  x2="56"  y2="14"  stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+
+      <!-- Flat baseline left, then classic ECG bump, then THE SPIKE, then flat right -->
+      <!-- Flat in -->
+      <!-- Small normal heartbeat blip left of center -->
+      <!-- Giant overdrive spike at center -->
+      <!-- Flat out -->
+      <polyline points="
+        -52,0
+        -28,0
+        -24,0
+        -20,-8
+        -16,8
+        -12,0
+        -6,0
+        -2,-6
+        2,44
+        6,-50
+        10,6
+        14,-2
+        18,0
+        52,0"
+        fill="none" stroke="#00ff88" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Highlight on the spike peak -->
+      <line x1="6" y1="-50" x2="6" y2="-38" stroke="#aaffdd" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+      <!-- Small dot at spike peak -->
+      <circle cx="6" cy="-50" r="3" fill="#00ff88"/>
+      <circle cx="6" cy="-50" r="1.5" fill="#ccffee"/>
+
+      <!-- Zero line reference (dashed, faint) -->
+      <line x1="-52" y1="0" x2="-28" y2="0" stroke="#00ff88" stroke-width="0.8" opacity="0.3"/>
+      <line x1="18"  y1="0" x2="52"  y2="0" stroke="#00ff88" stroke-width="0.8" opacity="0.3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <filter id="glow"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bloom"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="bg"><stop offset="0%" stop-color="#00ccff" stop-opacity="0.18"/><stop offset="100%" stop-color="#06090d" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g transform="translate(60,60)">
+    <circle cx="0" cy="0" r="55" fill="url(#bg)"/>
+    <g filter="url(#glow)">
+      <!-- PCB-style circuit board layout -->
+      <!-- Main horizontal bus line -->
+      <line x1="-46" y1="0" x2="46" y2="0" stroke="#00ccff" stroke-width="2" stroke-linecap="round"/>
+      <!-- Main vertical bus line -->
+      <line x1="0" y1="-46" x2="0" y2="46" stroke="#00ccff" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Branch traces: L-shaped turns like PCB routes -->
+      <!-- Top-left branch -->
+      <polyline points="-30,0 -30,-20 -46,-20" fill="none" stroke="#00ccff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Top-right branch -->
+      <polyline points="18,0 18,-28 36,-28" fill="none" stroke="#00ccff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Bottom-left branch -->
+      <polyline points="-18,0 -18,22 -36,22" fill="none" stroke="#00ccff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Bottom-right branch -->
+      <polyline points="30,0 30,16 46,16" fill="none" stroke="#00ccff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Upper vertical branch -->
+      <polyline points="0,-24 14,-24 14,-46" fill="none" stroke="#00ccff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Lower vertical branch -->
+      <polyline points="0,30 -14,30 -14,46" fill="none" stroke="#00ccff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Component nodes: small squares = chips/resistors, circles = vias -->
+      <!-- Vias on main bus -->
+      <circle cx="-30" cy="0"  r="3.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.5"/>
+      <circle cx="18"  cy="0"  r="3.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.5"/>
+      <circle cx="-18" cy="0"  r="3.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.5"/>
+      <circle cx="30"  cy="0"  r="3.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.5"/>
+      <circle cx="0"   cy="-24" r="3.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.5"/>
+      <circle cx="0"   cy="30"  r="3.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.5"/>
+
+      <!-- Small chip rectangles at branch ends -->
+      <rect x="-52" y="-24" width="12" height="8" rx="1.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.3"/>
+      <rect x="30"  y="-32" width="12" height="8" rx="1.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.3"/>
+      <rect x="-42" y="18"  width="12" height="8" rx="1.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.3"/>
+      <rect x="40"  y="12"  width="12" height="8" rx="1.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.3"/>
+      <rect x="9"   y="-52" width="10" height="12" rx="1.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.3"/>
+      <rect x="-19" y="40"  width="10" height="12" rx="1.5" fill="#001a2a" stroke="#00ccff" stroke-width="1.3"/>
+
+      <!-- Center IC chip — the main processor being hacked -->
+      <rect x="-14" y="-14" width="28" height="28" rx="3" fill="#001a2a" stroke="#00ccff" stroke-width="2"/>
+      <!-- IC pin lines -->
+      <g stroke="#00aaff" stroke-width="1" opacity="0.6">
+        <line x1="-14" y1="-7" x2="-20" y2="-7"/>
+        <line x1="-14" y1="0"  x2="-20" y2="0"/>
+        <line x1="-14" y1="7"  x2="-20" y2="7"/>
+        <line x1="14"  y1="-7" x2="20"  y2="-7"/>
+        <line x1="14"  y1="0"  x2="20"  y2="0"/>
+        <line x1="14"  y1="7"  x2="20"  y2="7"/>
+        <line x1="-7"  y1="-14" x2="-7" y2="-20"/>
+        <line x1="0"   y1="-14" x2="0"  y2="-20"/>
+        <line x1="7"   y1="-14" x2="7"  y2="-20"/>
+        <line x1="-7"  y1="14" x2="-7"  y2="20"/>
+        <line x1="0"   y1="14" x2="0"   y2="20"/>
+        <line x1="7"   y1="14" x2="7"   y2="20"/>
+      </g>
+      <!-- Core glow -->
+      <circle cx="0" cy="0" r="5"   fill="#00ccff" opacity="0.2"/>
+      <circle cx="0" cy="0" r="3"   fill="#00ccff"/>
+      <circle cx="0" cy="0" r="1.5" fill="#ddfaff"/>
+    </g>
+  </g>
+</svg>

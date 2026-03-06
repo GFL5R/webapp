@@ -34,11 +34,11 @@
 
   // Defines the reading order for rulebook-style navigation
   const PAGE_ORDER = [
-    'A Boy and His Doll',
     'Setting & T-Dolls',
     'Approaches & Derived Attributes',
     'Skills',
     'Making a Check',
+    'A Boy and His Doll',
     'Building a Commander',
     'Building Your T-Doll',
     'Humanity & Fame',

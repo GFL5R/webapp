@@ -1945,3 +1945,138 @@ body {
   vertical-align: middle;
   margin: 0 0.1em;
 }
+
+/* --- WIP Modal --- */
+.wip-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 10, 18, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20000;
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.wip-modal-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.wip-modal {
+  position: relative;
+  background: var(--bg-panel);
+  border: 1px solid var(--amber);
+  box-shadow: 0 0 40px rgba(255, 145, 0, 0.2), inset 0 0 40px rgba(255, 145, 0, 0.03);
+  max-width: 560px;
+  width: calc(100% - 2rem);
+  padding: 2rem;
+}
+
+.wip-modal__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 145, 0, 0.25);
+}
+
+.wip-modal__icon {
+  font-size: 1.4rem;
+  color: var(--amber);
+  line-height: 1;
+}
+
+.wip-modal__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--amber);
+}
+
+.wip-modal__body {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--white-dim);
+  line-height: 1.7;
+}
+
+.wip-modal__body p {
+  margin-bottom: 0.75rem;
+}
+
+.wip-modal__body strong {
+  color: var(--white);
+}
+
+.wip-modal__body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.wip-modal__body ul li {
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.wip-modal__body ul li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--amber-dim);
+  font-size: 0.55rem;
+  top: 0.35em;
+}
+
+.wip-modal__sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--white-dimmer);
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+
+.wip-modal__footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.wip-modal__dismiss {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--bg-primary);
+  background: var(--amber);
+  border: none;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+
+.wip-modal__dismiss:hover {
+  background: var(--yellow);
+  box-shadow: 0 0 16px var(--amber);
+}
+
+.wip-modal__corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--amber);
+  border-style: solid;
+}
+
+.wip-modal__corner--tl { top: 0; left: 0; border-width: 2px 0 0 2px; }
+.wip-modal__corner--tr { top: 0; right: 0; border-width: 2px 2px 0 0; }
+.wip-modal__corner--bl { bottom: 0; left: 0; border-width: 0 0 2px 2px; }
+.wip-modal__corner--br { bottom: 0; right: 0; border-width: 0 2px 2px 0; }

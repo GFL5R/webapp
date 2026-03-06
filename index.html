@@ -168,6 +168,33 @@
     </main>
   </div>
 
+  <!-- WIP Modal -->
+  <div class="wip-modal-overlay" id="wipModalOverlay">
+    <div class="wip-modal">
+      <div class="wip-modal__header">
+        <span class="wip-modal__icon">⚠</span>
+        <span class="wip-modal__title">NOTICE: WORK IN PROGRESS</span>
+      </div>
+      <div class="wip-modal__body">
+        <p>This field manual is <strong>not yet complete</strong>. The following should be kept in mind:</p>
+        <ul>
+          <li>Rules are <strong>not final</strong> and are subject to change at any time.</li>
+          <li>Techniques and Peculiarities (Advantages &amp; Passions) are <strong>still being added</strong>.</li>
+          <li>Some pages may be incomplete, missing, or contain placeholder content.</li>
+          <li>Balance has not been fully playtested. <strong>Expect rough edges.</strong></li>
+        </ul>
+        <p class="wip-modal__sub">You are viewing an early draft. All content is provisional.</p>
+      </div>
+      <div class="wip-modal__footer">
+        <button class="wip-modal__dismiss" id="wipModalDismiss">ACKNOWLEDGED — PROCEED</button>
+      </div>
+      <div class="wip-modal__corner wip-modal__corner--tl"></div>
+      <div class="wip-modal__corner wip-modal__corner--tr"></div>
+      <div class="wip-modal__corner wip-modal__corner--bl"></div>
+      <div class="wip-modal__corner wip-modal__corner--br"></div>
+    </div>
+  </div>
+
   <!-- Loading overlay -->
   <div class="loading-overlay" id="loadingOverlay">
     <div class="loading-spinner">

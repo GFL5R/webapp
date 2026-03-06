@@ -120,6 +120,7 @@
   const searchInput = document.getElementById('searchInput');
   const searchResults = document.getElementById('searchResults');
   const loadingOverlay = document.getElementById('loadingOverlay');
+  const wipModalOverlay = document.getElementById('wipModalOverlay');
 
   // ── Initialize ─────────────────────────────────────────────────
   async function init() {
@@ -128,6 +129,7 @@
     setupDate();
     setupBackToTop();
     setupSidebarCollapse();
+    setupWipModal();
 
     // Load all JSON data
     await loadAllData();
@@ -141,6 +143,21 @@
 
     // Hide loading overlay
     setTimeout(() => loadingOverlay.classList.add('hidden'), 300);
+  }
+
+  // ── WIP Modal ──────────────────────────────────────────────────
+  function setupWipModal() {
+    const dismissBtn = document.getElementById('wipModalDismiss');
+    function dismiss() {
+      wipModalOverlay.classList.add('hidden');
+    }
+    dismissBtn.addEventListener('click', dismiss);
+    wipModalOverlay.addEventListener('click', (e) => {
+      if (e.target === wipModalOverlay) dismiss();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') dismiss();
+    }, { once: true });
   }
 
   // ── Navigation ─────────────────────────────────────────────────
@@ -401,17 +418,17 @@
 
       <div class="home-grid">
         ${homeCard('[SET]', 'Setting & T-Dolls', 'The world of 2070, T-Doll technology, and the pair dynamic.', 'Setting & T-Dolls')}
-        ${homeCard('[CHR]', 'Character Creation', 'Build your Commander and T-Doll pair through guided questions.', 'Introduction')}
         ${homeCard('[COR]', 'Core Rules', 'Checks, approaches, skills, and the fundamental mechanics.', 'Making a Check')}
-        ${homeCard('[TCH]', 'Techniques', Object.keys(techniques).length + ' combat, electronic warfare, and street techniques.', 'techniques-all')}
+        ${homeCard('[CHR]', 'Character Creation', 'Build your Commander and T-Doll pair through guided questions.', 'Introduction')}
         ${homeCard('[DSC]', 'Disciplines', 'Class progressions, rank structure, and technique trees.', 'Disciplines')}
         ${homeCard('[STR]', 'Strife & Conditions', 'Stress mechanics, emotional pressure, and status effects.', 'Strife')}
         ${homeCard('[WPN]', 'Weapons & Armor', 'Weapon profiles, categories, armor, and equipment.', 'Weapons & Armor')}
         ${homeCard('[EWR]', 'Electronic Warfare', 'Hacking, networks, nodes, sentries, and digital operations.', 'Electronic Warfare')}
-        ${homeCard('[PEC]', 'Peculiarities', Object.keys(advantages).length + ' Advantages and ' + Object.keys(passions).length + ' Passions that define your character.', 'advantages-all')}
-        ${homeCard('[RAD]', 'Collapse Radiation', 'Exposure, ELID, contamination zones, and protective measures.', 'Collapse Radiation')}
         ${homeCard('[VEH]', 'Driving & Vehicles', 'Chase mechanics, vehicle combat, and positions.', 'Driving & Vehicles')}
+        ${homeCard('[RAD]', 'Collapse Radiation', 'Exposure, ELID, contamination zones, and protective measures.', 'Collapse Radiation')}
         ${homeCard('[CRM]', 'Crime & Investigation', 'Evidence, investigation checks, and accusation mechanics.', 'Crime')}
+        ${homeCard('[TCH]', 'Techniques', Object.keys(techniques).length + ' combat, electronic warfare, and street techniques.', 'techniques-all')}
+        ${homeCard('[PEC]', 'Peculiarities', Object.keys(advantages).length + ' Advantages and ' + Object.keys(passions).length + ' Passions that define your character.', 'advantages-all')}
         ${homeCard('[MOD]', 'T-Doll Modules', Object.keys(modules).length + ' augmentations, flash training packages, and upgrades.', 'modules-all')}
       </div>
     `;

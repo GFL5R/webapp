@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Navy fill inside the border shape; SVG background is transparent -->
+  <polygon
+    points="4,1 28,1 31,4 31,28 28,31 4,31 1,28 1,4"
+    fill="#060a12"
+    stroke="#FFE135"
+    stroke-width="1.1"
+  />
+
+  <!-- "GFL" — small label top -->
+  <text
+    x="16" y="13"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, sans-serif"
+    font-weight="900"
+    font-size="10.5"
+    letter-spacing="1.5"
+    fill="#e0e8f0"
+  >GFL</text>
+
+  <!-- "5R" — large, bold -->
+  <text
+    x="16" y="28"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, sans-serif"
+    font-weight="900"
+    font-size="17"
+    letter-spacing="0.5"
+    fill="#FFE135"
+  >5R</text>
+</svg>

@@ -1290,6 +1290,90 @@ body {
   line-height: 1.5;
 }
 
+/* --- Tab Card --- */
+.tab-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  margin: 20px 0;
+}
+
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tab-nav::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white-dimmer);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 12px 22px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  margin-bottom: -1px;
+}
+
+.tab-btn:hover {
+  color: var(--yellow);
+  background: var(--bg-hover);
+}
+
+.tab-btn.active {
+  color: var(--yellow);
+  border-bottom-color: var(--yellow);
+  background: var(--bg-panel-alt);
+}
+
+.tab-panels {
+  padding: 28px;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-panel .data-label {
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.tab-panel hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 10px 0 18px;
+}
+
+.tab-panel p {
+  line-height: 1.75;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.tab-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.tab-panel__summary {
+  font-style: italic;
+  color: var(--white-dim) !important;
+}
+
 /* Formula Display */
 .formula {
   font-family: var(--font-mono);

@@ -507,6 +507,8 @@
           }
         }
       });
+
+      initTabComponents(contentInner);
     } catch (e) {
       console.error('Failed to load page:', e);
       contentInner.innerHTML = `
@@ -522,6 +524,24 @@
         </p>
       `;
     }
+  }
+
+  // ── Tab Components ─────────────────────────────────────────────
+  function initTabComponents(container) {
+    container.querySelectorAll('.tab-card').forEach(card => {
+      const btns = card.querySelectorAll('.tab-btn');
+      const panels = card.querySelectorAll('.tab-panel');
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('active'));
+          panels.forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          const target = btn.dataset.target;
+          const panel = card.querySelector('#' + target);
+          if (panel) panel.classList.add('active');
+        });
+      });
+    });
   }
 
   function resolvePageLink(href) {

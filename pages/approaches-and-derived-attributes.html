@@ -2,31 +2,71 @@
 
 <p>Every character has five <strong>Approaches</strong>. These are your core stats, representing both your ability and your style when facing challenges. A higher Approach means you roll more dice when using it, but the <strong>Approach you choose also changes how you narrate your action.</strong></p>
 
-<div class="stat-block">
-  <div class="stat-item">
-    <span class="data-label">Fortune</span>
-    <hr/>
-    <p>Instinct, intuition, and improbable insight. Characters act through gut feeling, sudden clarity, or fate bending outcomes in their favor.</p>
+<div class="tab-card">
+  <div class="tab-nav">
+
+    <button class="tab-btn active" data-target="tab-panel-power">Power</button>
+    <button class="tab-btn" data-target="tab-panel-precision">Precision</button>
+    <button class="tab-btn" data-target="tab-panel-swiftness">Swiftness</button>
+    <button class="tab-btn" data-target="tab-panel-resilience">Resilience</button>
+    <button class="tab-btn" data-target="tab-panel-fortune">Fortune</button>
+
   </div>
-  <div class="stat-item">
-    <span class="data-label">Power</span>
-    <hr/>
-    <p>The force that drives direct action. Intensity, decisive aggression, emotional momentum, and the strength behind strikes, arguments, or bold decisions.</p>
-  </div>
-  <div class="stat-item">
-    <span class="data-label">Precision</span>
-    <hr/>
-    <p>Careful focus and refined control. Exact timing, measured technique, and a deliberate approach to overcome obstacles with minimal waste.</p>
-  </div>
-  <div class="stat-item">
-    <span class="data-label">Resilience</span>
-    <hr/>
-    <p>Inner stability and physical endurance. Patience, discipline, and the capacity to withstand pressure, maintain form, and push forward despite setbacks.</p>
-  </div>
-  <div class="stat-item">
-    <span class="data-label">Swiftness</span>
-    <hr/>
-    <p>Adaptable movement and fast decision-making. Reacting fluidly to changing circumstances, acting with speed, flexibility, and efficient momentum.</p>
+  <div class="tab-panels">
+    <div class="tab-panel" id="tab-panel-power">
+      <span class="data-label">Power</span>
+      <hr/>
+      <p>The essence of power is force.
+        Physical force to push through an enemy with all your might.
+        Force of personality to steer a conversation to your will.
+        Power doesn't see a closed door, it sees a temporary one, to be ripped from its hinges and thrown across the room.
+        Power charges at problems head-on and overwhelms them in one fell swoop.
+        It is aggressive and, above all, honest.</p>
+    </div>
+
+    <div class="tab-panel" id="tab-panel-precision">
+      <span class="data-label">Precision</span>
+      <hr/>
+      <p>Precision is quiet, calm, and controlled.
+        A perfectly placed round from a sniper rifle, fired with the gentlest of trigger pulls.
+        A carefully crafted speech that rallies a crowd to your cause.
+        A lock picked so cleanly the door may as well have never been closed.
+        Precision doesn't see challenges, only puzzles to be solved with patience and craftsmanship.
+        It is meticulous and carefully dishonest.</p>
+    </div>
+
+    <div class="tab-panel" id="tab-panel-swiftness">
+      <span class="data-label">Swiftness</span>
+      <hr/>
+      <p>Swiftness is more than raw speed.
+        It's thinking on your feet.
+        Turning an attack into a feint and changing angles in the same heartbeat.
+        Reading a room the moment you step through the door.
+        Closing distance on a target and vanishing before anyone reacts.
+        Swiftness moves with the flow of things, never against it.</p>
+    </div>
+
+    <div class="tab-panel" id="tab-panel-resilience">
+      <span class="data-label">Resilience</span>
+      <hr/>
+      <p>Resilience is endurance.
+        The ability to absorb hardship, pain, or stress and emerge stronger on the other side.
+        To reason with an enemy in one breath and hold your ground when they attack anyway.
+        To carry a memory that should have faded long ago but refuses to.
+        Resilience is patient, stubborn, and unchanging.</p>
+    </div>
+
+    <div class="tab-panel active" id="tab-panel-fortune">
+      <span class="data-label">Fortune</span>
+      <hr/>
+      <p>Fortune is trust.
+        Trust in your luck.
+        Trust in your allies to pull off the impossible.
+        Trust in your future self to make the right call when it matters.
+        Fortune quiets the mind amid chaos, because you're either going to make it or you're not.
+        And that's okay.
+        Uncertainty is a fact of life that fortune accepts, embraces, and turns into an advantage.</p>
+    </div>
   </div>
 </div>
 
@@ -52,7 +92,7 @@
   <div class="stat-item">
     <span class="data-label">Endurance</span>
     <hr/>
-    <p>Physical stamina and ability to keep moving through pain or exhaustion.</p>
+    <p>How long you last when everything hurts. The ability to keep moving when your body is telling you to stop.</p>
     <div class="use-block formula">
       <p>(Power + Resilience) × 2</p>
     </div>
@@ -60,7 +100,7 @@
   <div class="stat-item">
     <span class="data-label">Composure</span>
     <hr/>
-    <p>Ability to stay calm, maintain emotional balance during stressful moments.</p>
+    <p>Your ability to think clearly when the world is falling apart around you and everyone else is panicking.</p>
     <div class="use-block formula">
       <p>(Resilience + Swiftness) × 2</p>
     </div>
@@ -68,7 +108,7 @@
   <div class="stat-item">
     <span class="data-label">Vigilance</span>
     <hr/>
-    <p>Awareness of shifting conditions, hidden threats, or subtle movement.</p>
+    <p>The instinct that something is wrong before you know what it is, and the ability to catch details others miss. </p>
     <div class="use-block formula">
       <p>(Precision + Swiftness) ÷ 2 ↑</p>
     </div>
@@ -76,7 +116,7 @@
   <div class="stat-item">
     <span class="data-label">Focus</span>
     <hr/>
-    <p>Ability to stay on task and work through long or repetitive actions.</p>
+    <p>The ability to stay locked in during long tasks, repetitive work, and other tedious problems that bore you to death.</p>
     <div class="use-block formula">
       <p>Power + Precision</p>
     </div>
@@ -85,24 +125,24 @@
 
 <h2>Fortune Points</h2>
 
-<p>Fortune Points are a renewable resource that allows characters to bend events toward a favorable outcome.</p>
+<p>Fortune Points let characters bend events in their favor. They're a renewable resource, spent when you need luck on your side and earned back when things go badly.</p>
 
-<p>A character begins play with Fortune Points equal to half of their Fortune (rounded down), and their maximum pool is equal to their full Fortune.</p>
+<p>A character starts with Fortune Points equal to half their Fortune score (rounded down). Their maximum pool equals their full Fortune.</p>
 
 <h3>Spending Fortune Points</h3>
-<p>Fortune Points may be spent in situations such as:</p>
+<p>Fortune Points may be spent to:</p>
 <ul>
-  <li>Increasing your dice pool by 1 for a single check</li>
-  <li>Enduring an event that would otherwise incapacitate or destroy the character</li>
-  <li>Activating techniques or abilities that require a Fortune Point</li>
+  <li>Increase your dice pool by 1 for a single check</li>
+  <li>Survive an event that would otherwise take you out</li>
+  <li>Activate techniques or abilities that cost a Fortune Point</li>
 </ul>
 
 <h3>Gaining Fortune Points</h3>
 <p>Characters regain Fortune Points by encountering meaningful adversity. This includes:</p>
 <ul>
-  <li>Failing a check where a disadvantage is relevant</li>
-  <li>Once per scene when an anxiety meaningfully affects the situation</li>
-  <li>Whenever the GM conceals the TN of a check from the player, creating uncertainty or risk</li>
+  <li>Failing a check where one of your disadvantages is relevant</li>
+  <li>Once per scene, when an anxiety meaningfully affects the situation</li>
+  <li>Whenever the GM hides the TN of a check, creating uncertainty the player has to act through</li>
 </ul>
 
 <div class="tn-guide">
@@ -110,31 +150,31 @@
   <div class="tn-entry">
     <div class="tn-value">1</div>
     <div class="tn-label">Limited</div>
-    <div class="tn-desc">Limited capability. Often defers to others or relies on different methods.</div>
+    <div class="tn-desc">Barely functional. You avoid this approach when you can and lean on others when you can't.</div>
   </div>
   <div class="tn-entry">
     <div class="tn-value">2</div>
     <div class="tn-label">Typical</div>
-    <div class="tn-desc">Functions at a typical level. Handles most tasks, though performance rarely stands out.</div>
+    <div class="tn-desc">Gets the job done. Nothing impressive, nothing embarrassing.</div>
   </div>
   <div class="tn-entry">
     <div class="tn-value">3</div>
     <div class="tn-label">Strong</div>
-    <div class="tn-desc">Shows clear strength. Others recognize the confidence and consistency.</div>
+    <div class="tn-desc">Noticeably good. People trust you when this approach is what the situation calls for.</div>
   </div>
   <div class="tn-entry">
     <div class="tn-value">4</div>
     <div class="tn-label">Remarkable</div>
-    <div class="tn-desc">Demonstrates remarkable control. Reflects training, insight, or natural ability beyond the norm.</div>
+    <div class="tn-desc">Trained, practiced, or just built different. You stand out even in skilled company.</div>
   </div>
   <div class="tn-entry">
     <div class="tn-value">5</div>
     <div class="tn-label">Mastery</div>
-    <div class="tn-desc">Embodies this Approach with uncommon mastery. Defines expectations for the style.</div>
+    <div class="tn-desc">This approach defines you. Others measure themselves against what you do with it.</div>
   </div>
   <div class="tn-entry">
     <div class="tn-value">6</div>
     <div class="tn-label">Beyond Human</div>
-    <div class="tn-desc">Capability associated with elite T-Dolls, advanced prototypes, or entities shaped by forces outside normal experience. Outside the range of standard character creation.</div>
+    <div class="tn-desc">The domain of elite T-Dolls, advanced prototypes, and those shaped by something beyond normal experience. Few ever get here.</div>
   </div>
 </div>

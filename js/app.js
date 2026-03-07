@@ -817,7 +817,7 @@
           </div>
         </div>
 
-        ${tech.flavor ? `<div class="technique-card__flavor">${escapeHtml(tech.flavor)}</div>` : ''}
+        ${tech.flavor ? `<div class="technique-card__flavor">${tech.flavor}</div>` : ''}
 
         <div class="technique-card__toggle"></div>
 
@@ -926,7 +926,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
-          ${adv.flavor ? `<div class="technique-card__flavor">${escapeHtml(adv.flavor)}</div>` : ''}
+          ${adv.flavor ? `<div class="technique-card__flavor">${adv.flavor}</div>` : ''}
           ${adv.description || '<p>No description available.</p>'}
         </div>
       </div>
@@ -1034,7 +1034,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
-          ${pas.flavor ? `<div class="technique-card__flavor">${escapeHtml(pas.flavor)}</div>` : ''}
+          ${pas.flavor ? `<div class="technique-card__flavor">${pas.flavor}</div>` : ''}
           ${pas.description || '<p>No description available.</p>'}
         </div>
       </div>
@@ -1139,7 +1139,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
-          ${dis.flavor ? `<div class="technique-card__flavor">${escapeHtml(dis.flavor)}</div>` : ''}
+          ${dis.flavor ? `<div class="technique-card__flavor">${dis.flavor}</div>` : ''}
           ${dis.description || '<p>No description available.</p>'}
         </div>
       </div>
@@ -1247,7 +1247,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
-          ${anx.flavor ? `<div class="technique-card__flavor">${escapeHtml(anx.flavor)}</div>` : ''}
+          ${anx.flavor ? `<div class="technique-card__flavor">${anx.flavor}</div>` : ''}
           ${anx.description || '<p>No description available.</p>'}
         </div>
       </div>

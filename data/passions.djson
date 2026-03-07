@@ -1,10 +1,19 @@
 {
-    placeholder: {
-        type: ["Placeholder"],
-        flavor: "some flavortext",
+    Ammosexual: {
+        type: ["Mental"],
+        flavor: """
+            <p><em>The burst stitched across the rooftop and the whole squad fell flat on the ground, concrete dust pelting their backs. The commander looked to the side, and one T-doll had stars in her eyes.</em></p>
+            <p>"MG-42! It's an MG-42! Seven-point-nine-two Mauser, roller-locked, recoil-operated, twelve-hundred rounds per minute-"</p>
+            <p>"<strong>Remi.</strong> It's shooting at us."</p>
+            <p><em>A pause. Another burst tore through the air above them.</em></p>
+            <p>"I know, isn't it awesome?"</p>
+        """,
         description: """
-        <p>The following is a placeholder Passion</p>
-        <p>When you do something you like doing, remove up to three strife.</p>
+            <h3>Effects</h3>
+            <ul>
+                <li>You have an extensive knowlege of firearms that most would call concering, and can easily identify the manufacturer and country of origin of any firearm you come across in the field.</li>
+                <li>After interacting with a new weapon for the first time in any capacity (even being shot at with it), you lose three strife.</li>
+            </ul>
         """
     }
 }

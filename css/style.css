@@ -1687,6 +1687,75 @@ body {
   line-height: 1.6;
 }
 
+/* Frame Card */
+.frame-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.frame-card {
+  background: var(--bg-panel-alt);
+  border: 1px solid var(--border-color);
+  transition: border-color 0.3s;
+}
+
+.frame-card:hover {
+  border-color: var(--yellow-dim);
+}
+
+.frame-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-panel);
+}
+
+.frame-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--yellow);
+  letter-spacing: 1px;
+}
+
+.frame-card__skills {
+  display: flex;
+  gap: 6px;
+}
+
+.frame-card__skill {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--amber);
+  border: 1px solid var(--amber-dim);
+  padding: 2px 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.frame-card__approaches {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--white-dim);
+  padding: 7px 20px;
+  border-bottom: 1px solid var(--border-color);
+  letter-spacing: 1px;
+}
+
+.frame-card__body {
+  padding: 14px 20px;
+}
+
+.frame-card__body p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--white-dim);
+  margin-bottom: 0;
+}
+
 /* Module Card */
 .module-card {
   background: var(--bg-panel);

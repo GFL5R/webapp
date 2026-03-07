@@ -1,0 +1,10 @@
+{
+    placeholder: {
+        type: ["Placeholder"],
+        flavor: "some flavortext",
+        description: """
+        <p>The following is a placeholder Anxiety</p>
+        <p>when you do something that stresses you out, gain 3 strife.</p>
+        """
+    }
+}

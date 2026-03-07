@@ -4,7 +4,7 @@
         flavor: "some flavortext",
         description: """
         <p>The following is a placeholder Advantage</p>
-        <p>When you do something you're good at, reroll up to two dice.</p>
+        <p>When you do something you're bad at, you must choose and reroll to two dice containing (su) or (ex).</p>
         """
     }
 }

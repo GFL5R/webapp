@@ -82,12 +82,15 @@
 
   // JSON data files (built from djson by build.py)
   const DATA_FILES = {
-    techniqueTypes: 'data/technique_types.json',
-    techniques:     'data/techniques.json',
-    advantages:     'data/advantages.json',
-    passions:       'data/passions.json',
-    moduleTypes:    'data/module_types.json',
-    modules:        'data/modules.json',
+    techniqueTypes:      'data/technique_types.json',
+    techniques:          'data/techniques.json',
+    advantages:          'data/advantages.json',
+    disadvantages:       'data/disadvantages.json',
+    passions:            'data/passions.json',
+    anxieties:           'data/anxieties.json',
+    peculiarityTypes:    'data/peculiarities_types.json',
+    moduleTypes:         'data/module_types.json',
+    modules:             'data/modules.json',
   };
 
   // Section display names for breadcrumbs (used by data pages)
@@ -100,7 +103,10 @@
   let techniqueTypes = {};
   let techniques = {};
   let advantages = {};
+  let disadvantages = {};
   let passions = {};
+  let anxieties = {};
+  let peculiarityTypes = {};
   let moduleTypes = {};
   let modules = {};
   let currentPage = 'home';
@@ -229,8 +235,12 @@
       renderTechniquesPage(page);
     } else if (page.startsWith('advantages-')) {
       renderAdvantagesPage(page);
+    } else if (page.startsWith('disadvantages-')) {
+      renderDisadvantagesPage(page);
     } else if (page.startsWith('passions-')) {
       renderPassionsPage(page);
+    } else if (page.startsWith('anxieties-')) {
+      renderAnxietiesPage(page);
     } else if (page.startsWith('modules-')) {
       renderModulesPage(page);
     } else if (HTML_PAGES[page]) {
@@ -263,18 +273,24 @@
   // ── Load All JSON Data ──────────────────────────────────────────
   async function loadAllData() {
     try {
-      const [typesData, techData, advData, pasData, modTypesData, modData] = await Promise.all([
+      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData] = await Promise.all([
         fetch(DATA_FILES.techniqueTypes).then(r => r.json()),
         fetch(DATA_FILES.techniques).then(r => r.json()),
         fetch(DATA_FILES.advantages).then(r => r.json()),
+        fetch(DATA_FILES.disadvantages).then(r => r.json()),
         fetch(DATA_FILES.passions).then(r => r.json()),
+        fetch(DATA_FILES.anxieties).then(r => r.json()),
+        fetch(DATA_FILES.peculiarityTypes).then(r => r.json()),
         fetch(DATA_FILES.moduleTypes).then(r => r.json()),
         fetch(DATA_FILES.modules).then(r => r.json()),
       ]);
       techniqueTypes = typesData || {};
       techniques = techData || {};
       advantages = advData || {};
+      disadvantages = disData || {};
       passions = pasData || {};
+      anxieties = anxData || {};
+      peculiarityTypes = pecTypesData || {};
       moduleTypes = modTypesData || {};
       modules = modData || {};
     } catch (e) {
@@ -301,7 +317,7 @@
       allSearchableContent.push({
         title: name,
         section: `Technique: ${tech.type || 'General'}`,
-        page: `techniques-${(tech.type || 'all').toLowerCase().replace(/\s+/g, '')}`,
+        page: `techniques-${(typeof tech.type === 'string' ? tech.type : 'all').toLowerCase().replace(/\s+/g, '')}`,
         type: 'technique',
         data: tech,
       });
@@ -312,9 +328,20 @@
       allSearchableContent.push({
         title: name,
         section: `Advantage: ${adv.type || 'General'}`,
-        page: `advantages-${(adv.type || 'all').toLowerCase().replace(/\s+/g, '')}`,
+        page: `advantages-${(typeof adv.type === 'string' ? adv.type : 'all').toLowerCase().replace(/\s+/g, '')}`,
         type: 'advantage',
         data: adv,
+      });
+    });
+
+    // Add disadvantages
+    Object.entries(disadvantages).forEach(([name, dis]) => {
+      allSearchableContent.push({
+        title: name,
+        section: `Disadvantage: ${dis.type || 'General'}`,
+        page: `disadvantages-${(typeof dis.type === 'string' ? dis.type : 'all').toLowerCase().replace(/\s+/g, '')}`,
+        type: 'disadvantage',
+        data: dis,
       });
     });
 
@@ -327,6 +354,18 @@
         page: 'passions-all',
         type: 'passion',
         data: pas,
+      });
+    });
+
+    // Add anxieties
+    Object.entries(anxieties).forEach(([name, anx]) => {
+      const typeLabel = Array.isArray(anx.type) ? anx.type.join(', ') : (anx.type || 'General');
+      allSearchableContent.push({
+        title: name,
+        section: `Anxiety: ${typeLabel}`,
+        page: 'anxieties-all',
+        type: 'anxiety',
+        data: anx,
       });
     });
 
@@ -428,7 +467,7 @@
         ${homeCard('[RAD]', 'Collapse Radiation', 'Exposure, ELID, contamination zones, and protective measures.', 'Collapse Radiation')}
         ${homeCard('[CRM]', 'Crime & Investigation', 'Evidence, investigation checks, and accusation mechanics.', 'Crime')}
         ${homeCard('[TCH]', 'Techniques', Object.keys(techniques).length + ' combat, electronic warfare, and street techniques.', 'techniques-all')}
-        ${homeCard('[PEC]', 'Peculiarities', Object.keys(advantages).length + ' Advantages and ' + Object.keys(passions).length + ' Passions that define your character.', 'advantages-all')}
+        ${homeCard('[PEC]', 'Peculiarities', Object.keys(advantages).length + ' Advantages, ' + Object.keys(disadvantages).length + ' Disadvantages, ' + Object.keys(passions).length + ' Passions, and ' + Object.keys(anxieties).length + ' Anxieties.', 'advantages-all')}
         ${homeCard('[MOD]', 'T-Doll Modules', Object.keys(modules).length + ' augmentations, flash training packages, and upgrades.', 'modules-all')}
       </div>
     `;
@@ -791,16 +830,17 @@
 
   // ── Advantages Page ─────────────────────────────────────────────
   function renderAdvantagesPage(page) {
-    const filterType = page.replace('advantages-', '');
-    const typeMap = {
-      'all': null,
-      'interpersonal': 'Interpersonal',
-      'physical': 'Physical',
-      'fame': 'Fame',
-      'technical': 'Technical',
-    };
+    const filterSlug = page.replace('advantages-', '');
 
-    const activeType = typeMap[filterType] || null;
+    // Build unique types from data
+    const allTypes = [...new Set(
+      Object.values(advantages).flatMap(a => Array.isArray(a.type) ? a.type : [a.type]).filter(Boolean)
+    )].sort();
+
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
 
     // Filter
     const filtered = Object.entries(advantages).filter(([name, adv]) => {
@@ -813,20 +853,11 @@
 
     const title = activeType ? `${activeType} Advantages` : 'All Advantages';
 
-    const typeDescriptions = {
-      'Interpersonal': 'Advantages rooted in social connections, relationships, and interpersonal dynamics.',
-      'Physical': 'Advantages derived from physical traits, enhanced senses, or bodily capabilities.',
-      'Fame': 'Advantages tied to reputation, public perception, and the weight of your name.',
-      'Technical': 'Advantages grounded in knowledge, recall, and analytical capability.',
-    };
-    const typeDesc = activeType ? (typeDescriptions[activeType] || '') : 'All available advantages across every type. Each advantage allows you to reroll up to two dice when its conditions are met.';
+    const typeDesc = activeType
+      ? (peculiarityTypes[activeType]?.description?.trim() || '')
+      : 'All available advantages across every type. Each advantage allows you to reroll up to two dice when its conditions are met.';
 
-    const typeIcons = {
-      'Interpersonal': '◇',
-      'Physical': '◎',
-      'Fame': '★',
-      'Technical': '⬡',
-    };
+    const typeIcons = { 'Interpersonal': '◇', 'Physical': '◎', 'Fame': '★', 'Technical': '⬡' };
     const icon = typeIcons[activeType] || '◆';
 
     let html = `
@@ -843,20 +874,19 @@
         <div class="type-header__icon">${icon}</div>
         <div class="type-header__info">
           <h1>${title.toUpperCase()}</h1>
-          <div class="type-header__desc">${escapeHtml(typeDesc)}</div>
+          <div class="type-header__desc">${typeDesc || escapeHtml(typeDesc)}</div>
         </div>
       </div>
 
       <div class="technique-filters">
         ${filterBtn('ALL', 'advantages-all', !activeType)}
-        ${filterBtn('INTERPERSONAL', 'advantages-interpersonal', activeType === 'Interpersonal')}
-        ${filterBtn('PHYSICAL', 'advantages-physical', activeType === 'Physical')}
-        ${filterBtn('FAME', 'advantages-fame', activeType === 'Fame')}
-        ${filterBtn('TECHNICAL', 'advantages-technical', activeType === 'Technical')}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `advantages-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
       </div>
 
       <div class="technique-filters" style="margin-top: -10px; margin-bottom: 15px;">
+        ${filterBtn('⇄ DISADVANTAGES', 'disadvantages-all', false)}
         ${filterBtn('⇄ PASSIONS', 'passions-all', false)}
+        ${filterBtn('⇄ ANXIETIES', 'anxieties-all', false)}
       </div>
 
       <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--white-dimmer); letter-spacing: 1px; margin-bottom: 20px;">
@@ -896,6 +926,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
+          ${adv.flavor ? `<div class="technique-card__flavor">${escapeHtml(adv.flavor)}</div>` : ''}
           ${adv.description || '<p>No description available.</p>'}
         </div>
       </div>
@@ -904,18 +935,19 @@
 
   // ── Passions Page ─────────────────────────────────────────────
   function renderPassionsPage(page) {
-    const filterType = page.replace('passions-', '');
-    const typeMap = {
-      'all': null,
-      'mental': 'Mental',
-      'physical': 'Physical',
-      'interpersonal': 'Interpersonal',
-      'spiritual': 'Spiritual',
-    };
+    const filterSlug = page.replace('passions-', '');
 
-    const activeType = typeMap[filterType] || null;
+    // Build unique types from data (passions have array types)
+    const allTypes = [...new Set(
+      Object.values(passions).flatMap(p => Array.isArray(p.type) ? p.type : [p.type]).filter(Boolean)
+    )].sort();
 
-    // Filter: passions have array types
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
+
+    // Filter
     const filtered = Object.entries(passions).filter(([name, pas]) => {
       if (!activeType) return true;
       const types = Array.isArray(pas.type) ? pas.type : [pas.type];
@@ -927,20 +959,11 @@
 
     const title = activeType ? `${activeType} Passions` : 'All Passions';
 
-    const typeDescriptions = {
-      'Mental': 'Passions driven by intellectual curiosity, knowledge, and mental engagement.',
-      'Physical': 'Passions rooted in bodily experience, physical skill, or sensory engagement.',
-      'Interpersonal': 'Passions centered on social interaction, emotional connection, and relationships.',
-      'Spiritual': 'Passions tied to ritual, intuition, and a sense of deeper meaning.',
-    };
-    const typeDesc = activeType ? (typeDescriptions[activeType] || '') : 'All available passions. Each passion allows you to remove 3 Strife after a check that engages its theme.';
+    const typeDesc = activeType
+      ? (peculiarityTypes[activeType]?.description?.trim() || '')
+      : 'All available passions. Each passion allows you to remove 3 Strife after a check that engages its theme.';
 
-    const typeIcons = {
-      'Mental': '⬡',
-      'Physical': '◎',
-      'Interpersonal': '◇',
-      'Spiritual': '✧',
-    };
+    const typeIcons = { 'Mental': '⬡', 'Physical': '◎', 'Interpersonal': '◇', 'Spiritual': '✧' };
     const icon = typeIcons[activeType] || '◆';
 
     let html = `
@@ -957,20 +980,19 @@
         <div class="type-header__icon">${icon}</div>
         <div class="type-header__info">
           <h1>${title.toUpperCase()}</h1>
-          <div class="type-header__desc">${escapeHtml(typeDesc)}</div>
+          <div class="type-header__desc">${typeDesc || escapeHtml(typeDesc)}</div>
         </div>
       </div>
 
       <div class="technique-filters">
         ${filterBtn('ALL', 'passions-all', !activeType)}
-        ${filterBtn('MENTAL', 'passions-mental', activeType === 'Mental')}
-        ${filterBtn('PHYSICAL', 'passions-physical', activeType === 'Physical')}
-        ${filterBtn('INTERPERSONAL', 'passions-interpersonal', activeType === 'Interpersonal')}
-        ${filterBtn('SPIRITUAL', 'passions-spiritual', activeType === 'Spiritual')}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `passions-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
       </div>
 
       <div class="technique-filters" style="margin-top: -10px; margin-bottom: 15px;">
         ${filterBtn('⇄ ADVANTAGES', 'advantages-all', false)}
+        ${filterBtn('⇄ DISADVANTAGES', 'disadvantages-all', false)}
+        ${filterBtn('⇄ ANXIETIES', 'anxieties-all', false)}
       </div>
 
       <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--white-dimmer); letter-spacing: 1px; margin-bottom: 20px;">
@@ -1012,7 +1034,221 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
+          ${pas.flavor ? `<div class="technique-card__flavor">${escapeHtml(pas.flavor)}</div>` : ''}
           ${pas.description || '<p>No description available.</p>'}
+        </div>
+      </div>
+    `;
+  }
+
+  // ── Disadvantages Page ─────────────────────────────────────────
+  function renderDisadvantagesPage(page) {
+    const filterSlug = page.replace('disadvantages-', '');
+
+    // Build unique types from data
+    const allTypes = [...new Set(
+      Object.values(disadvantages).flatMap(d => Array.isArray(d.type) ? d.type : [d.type]).filter(Boolean)
+    )].sort();
+
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
+
+    // Filter
+    const filtered = Object.entries(disadvantages).filter(([name, dis]) => {
+      if (!activeType) return true;
+      return dis.type === activeType;
+    });
+
+    // Sort alphabetically
+    filtered.sort((a, b) => a[0].localeCompare(b[0]));
+
+    const title = activeType ? `${activeType} Disadvantages` : 'All Disadvantages';
+
+    const typeDesc = activeType
+      ? (peculiarityTypes[activeType]?.description?.trim() || '')
+      : 'All available disadvantages across every type. Each disadvantage forces rerolls of favorable dice when its conditions are met.';
+
+    const typeIcons = { 'Interpersonal': '◇', 'Physical': '◎', 'Fame': '★', 'Technical': '⬡' };
+    const icon = typeIcons[activeType] || '◆';
+
+    let html = `
+      <div class="breadcrumb">
+        <a href="#home">HOME</a>
+        <span class="sep">›</span>
+        <a href="#disadvantages-all">PECULIARITIES</a>
+        <span class="sep">›</span>
+        <a href="#disadvantages-all">DISADVANTAGES</a>
+        ${activeType ? `<span class="sep">›</span>${activeType.toUpperCase()}` : ''}
+      </div>
+
+      <div class="type-header">
+        <div class="type-header__icon">${icon}</div>
+        <div class="type-header__info">
+          <h1>${title.toUpperCase()}</h1>
+          <div class="type-header__desc">${typeDesc || escapeHtml(typeDesc)}</div>
+        </div>
+      </div>
+
+      <div class="technique-filters">
+        ${filterBtn('ALL', 'disadvantages-all', !activeType)}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `disadvantages-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
+      </div>
+
+      <div class="technique-filters" style="margin-top: -10px; margin-bottom: 15px;">
+        ${filterBtn('⇄ ADVANTAGES', 'advantages-all', false)}
+        ${filterBtn('⇄ PASSIONS', 'passions-all', false)}
+        ${filterBtn('⇄ ANXIETIES', 'anxieties-all', false)}
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--white-dimmer); letter-spacing: 1px; margin-bottom: 20px;">
+        ${filtered.length} DISADVANTAGE${filtered.length !== 1 ? 'S' : ''} FOUND
+      </div>
+
+      <div class="technique-grid">
+    `;
+
+    filtered.forEach(([name, dis]) => {
+      html += renderDisadvantageCard(name, dis);
+    });
+
+    html += '</div>';
+
+    contentInner.innerHTML = html;
+    attachFilterHandlers();
+    attachCardToggleHandlers();
+  }
+
+  function renderDisadvantageCard(name, dis) {
+    return `
+      <div class="technique-card">
+        <div class="technique-card__corner technique-card__corner--tl"></div>
+        <div class="technique-card__corner technique-card__corner--tr"></div>
+        <div class="technique-card__corner technique-card__corner--bl"></div>
+        <div class="technique-card__corner technique-card__corner--br"></div>
+
+        <div class="technique-card__header">
+          <div class="technique-card__name">${escapeHtml(name)}</div>
+          <div class="technique-card__meta">
+            <span class="technique-card__tag tag-type">${escapeHtml(dis.type || 'GENERAL')}</span>
+            <span class="technique-card__tag tag-rank">REROLL 2 DICE</span>
+          </div>
+        </div>
+
+        <div class="technique-card__toggle"></div>
+
+        <div class="technique-card__body">
+          ${dis.flavor ? `<div class="technique-card__flavor">${escapeHtml(dis.flavor)}</div>` : ''}
+          ${dis.description || '<p>No description available.</p>'}
+        </div>
+      </div>
+    `;
+  }
+
+  // ── Anxieties Page ─────────────────────────────────────────────
+  function renderAnxietiesPage(page) {
+    const filterSlug = page.replace('anxieties-', '');
+
+    // Build unique types from data (anxieties have array types)
+    const allTypes = [...new Set(
+      Object.values(anxieties).flatMap(a => Array.isArray(a.type) ? a.type : [a.type]).filter(Boolean)
+    )].sort();
+
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
+
+    // Filter
+    const filtered = Object.entries(anxieties).filter(([name, anx]) => {
+      if (!activeType) return true;
+      const types = Array.isArray(anx.type) ? anx.type : [anx.type];
+      return types.includes(activeType);
+    });
+
+    // Sort alphabetically
+    filtered.sort((a, b) => a[0].localeCompare(b[0]));
+
+    const title = activeType ? `${activeType} Anxieties` : 'All Anxieties';
+
+    const typeDesc = activeType
+      ? (peculiarityTypes[activeType]?.description?.trim() || '')
+      : 'All available anxieties. Each anxiety causes you to gain 3 Strife when a check engages its theme.';
+
+    const typeIcons = { 'Mental': '⬡', 'Physical': '◎', 'Interpersonal': '◇', 'Spiritual': '✧' };
+    const icon = typeIcons[activeType] || '◆';
+
+    let html = `
+      <div class="breadcrumb">
+        <a href="#home">HOME</a>
+        <span class="sep">›</span>
+        <a href="#anxieties-all">PECULIARITIES</a>
+        <span class="sep">›</span>
+        <a href="#anxieties-all">ANXIETIES</a>
+        ${activeType ? `<span class="sep">›</span>${activeType.toUpperCase()}` : ''}
+      </div>
+
+      <div class="type-header">
+        <div class="type-header__icon">${icon}</div>
+        <div class="type-header__info">
+          <h1>${title.toUpperCase()}</h1>
+          <div class="type-header__desc">${typeDesc || escapeHtml(typeDesc)}</div>
+        </div>
+      </div>
+
+      <div class="technique-filters">
+        ${filterBtn('ALL', 'anxieties-all', !activeType)}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `anxieties-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
+      </div>
+
+      <div class="technique-filters" style="margin-top: -10px; margin-bottom: 15px;">
+        ${filterBtn('⇄ ADVANTAGES', 'advantages-all', false)}
+        ${filterBtn('⇄ DISADVANTAGES', 'disadvantages-all', false)}
+        ${filterBtn('⇄ PASSIONS', 'passions-all', false)}
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--white-dimmer); letter-spacing: 1px; margin-bottom: 20px;">
+        ${filtered.length} ANXIET${filtered.length !== 1 ? 'IES' : 'Y'} FOUND
+      </div>
+
+      <div class="technique-grid">
+    `;
+
+    filtered.forEach(([name, anx]) => {
+      html += renderAnxietyCard(name, anx);
+    });
+
+    html += '</div>';
+
+    contentInner.innerHTML = html;
+    attachFilterHandlers();
+    attachCardToggleHandlers();
+  }
+
+  function renderAnxietyCard(name, anx) {
+    const typeLabel = Array.isArray(anx.type) ? anx.type.join(', ') : (anx.type || 'General');
+
+    return `
+      <div class="technique-card">
+        <div class="technique-card__corner technique-card__corner--tl"></div>
+        <div class="technique-card__corner technique-card__corner--tr"></div>
+        <div class="technique-card__corner technique-card__corner--bl"></div>
+        <div class="technique-card__corner technique-card__corner--br"></div>
+
+        <div class="technique-card__header">
+          <div class="technique-card__name">${escapeHtml(name)}</div>
+          <div class="technique-card__meta">
+            <span class="technique-card__tag tag-type">${escapeHtml(typeLabel)}</span>
+            <span class="technique-card__tag tag-rank">+3 STRIFE</span>
+          </div>
+        </div>
+
+        <div class="technique-card__toggle"></div>
+
+        <div class="technique-card__body">
+          ${anx.flavor ? `<div class="technique-card__flavor">${escapeHtml(anx.flavor)}</div>` : ''}
+          ${anx.description || '<p>No description available.</p>'}
         </div>
       </div>
     `;
@@ -1189,6 +1425,14 @@
     contentInner.querySelectorAll('.technique-card__toggle').forEach(toggle => {
       toggle.addEventListener('click', () => {
         toggle.closest('.technique-card').classList.toggle('collapsed');
+      });
+    });
+  }
+
+  function attachFilterHandlers() {
+    contentInner.querySelectorAll('.filter-btn[data-page]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        window.location.hash = btn.dataset.page;
       });
     });
   }

@@ -56,9 +56,12 @@ DJSON_SOURCES = {
     "technique_types.json": BASE_DIR / "data" / "technique_types.djson",
     "techniques.json":      BASE_DIR / "data" / "techniques.djson",
     "advantages.json":      BASE_DIR / "data" / "advantages.djson",
+    "disadvantages.json":   BASE_DIR / "data" / "disadvantages.djson",
     "passions.json":        BASE_DIR / "data" / "passions.djson",
-    "module_types.json":    BASE_DIR / "data" / "module_types.djson",
-    "modules.json":         BASE_DIR / "data" / "modules.djson",
+    "anxieties.json":       BASE_DIR / "data" / "anxieties.djson",
+    "module_types.json":         BASE_DIR / "data" / "module_types.djson",
+    "modules.json":               BASE_DIR / "data" / "modules.djson",
+    "peculiarities_types.json":   BASE_DIR / "data" / "peculiarities_types.djson",
 }
 
 app = FastAPI(title="GFL5R Field Manual")

@@ -82,14 +82,15 @@
 
   // JSON data files (built from djson by build.py)
   const DATA_FILES = {
-    techniqueTypes:  'data/technique_types.json',
-    techniques:      'data/techniques.json',
-    advantages:      'data/advantages.json',
-    disadvantages:   'data/disadvantages.json',
-    passions:        'data/passions.json',
-    anxieties:       'data/anxieties.json',
-    moduleTypes:     'data/module_types.json',
-    modules:         'data/modules.json',
+    techniqueTypes:      'data/technique_types.json',
+    techniques:          'data/techniques.json',
+    advantages:          'data/advantages.json',
+    disadvantages:       'data/disadvantages.json',
+    passions:            'data/passions.json',
+    anxieties:           'data/anxieties.json',
+    peculiarityTypes:    'data/peculiarities_types.json',
+    moduleTypes:         'data/module_types.json',
+    modules:             'data/modules.json',
   };
 
   // Section display names for breadcrumbs (used by data pages)
@@ -105,6 +106,7 @@
   let disadvantages = {};
   let passions = {};
   let anxieties = {};
+  let peculiarityTypes = {};
   let moduleTypes = {};
   let modules = {};
   let currentPage = 'home';
@@ -271,13 +273,14 @@
   // ── Load All JSON Data ──────────────────────────────────────────
   async function loadAllData() {
     try {
-      const [typesData, techData, advData, disData, pasData, anxData, modTypesData, modData] = await Promise.all([
+      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData] = await Promise.all([
         fetch(DATA_FILES.techniqueTypes).then(r => r.json()),
         fetch(DATA_FILES.techniques).then(r => r.json()),
         fetch(DATA_FILES.advantages).then(r => r.json()),
         fetch(DATA_FILES.disadvantages).then(r => r.json()),
         fetch(DATA_FILES.passions).then(r => r.json()),
         fetch(DATA_FILES.anxieties).then(r => r.json()),
+        fetch(DATA_FILES.peculiarityTypes).then(r => r.json()),
         fetch(DATA_FILES.moduleTypes).then(r => r.json()),
         fetch(DATA_FILES.modules).then(r => r.json()),
       ]);
@@ -287,6 +290,7 @@
       disadvantages = disData || {};
       passions = pasData || {};
       anxieties = anxData || {};
+      peculiarityTypes = pecTypesData || {};
       moduleTypes = modTypesData || {};
       modules = modData || {};
     } catch (e) {
@@ -813,7 +817,7 @@
           </div>
         </div>
 
-        ${tech.flavor ? `<div class="technique-card__flavor">${escapeHtml(tech.flavor)}</div>` : ''}
+        ${tech.flavor ? `<div class="technique-card__flavor">${tech.flavor}</div>` : ''}
 
         <div class="technique-card__toggle"></div>
 
@@ -826,16 +830,17 @@
 
   // ── Advantages Page ─────────────────────────────────────────────
   function renderAdvantagesPage(page) {
-    const filterType = page.replace('advantages-', '');
-    const typeMap = {
-      'all': null,
-      'interpersonal': 'Interpersonal',
-      'physical': 'Physical',
-      'fame': 'Fame',
-      'technical': 'Technical',
-    };
+    const filterSlug = page.replace('advantages-', '');
 
-    const activeType = typeMap[filterType] || null;
+    // Build unique types from data
+    const allTypes = [...new Set(
+      Object.values(advantages).flatMap(a => Array.isArray(a.type) ? a.type : [a.type]).filter(Boolean)
+    )].sort();
+
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
 
     // Filter
     const filtered = Object.entries(advantages).filter(([name, adv]) => {
@@ -848,20 +853,11 @@
 
     const title = activeType ? `${activeType} Advantages` : 'All Advantages';
 
-    const typeDescriptions = {
-      'Interpersonal': 'Advantages rooted in social connections, relationships, and interpersonal dynamics.',
-      'Physical': 'Advantages derived from physical traits, enhanced senses, or bodily capabilities.',
-      'Fame': 'Advantages tied to reputation, public perception, and the weight of your name.',
-      'Technical': 'Advantages grounded in knowledge, recall, and analytical capability.',
-    };
-    const typeDesc = activeType ? (typeDescriptions[activeType] || '') : 'All available advantages across every type. Each advantage allows you to reroll up to two dice when its conditions are met.';
+    const typeDesc = activeType
+      ? (peculiarityTypes[activeType]?.description?.trim() || '')
+      : 'All available advantages across every type. Each advantage allows you to reroll up to two dice when its conditions are met.';
 
-    const typeIcons = {
-      'Interpersonal': '◇',
-      'Physical': '◎',
-      'Fame': '★',
-      'Technical': '⬡',
-    };
+    const typeIcons = { 'Interpersonal': '◇', 'Physical': '◎', 'Fame': '★', 'Technical': '⬡' };
     const icon = typeIcons[activeType] || '◆';
 
     let html = `
@@ -878,16 +874,13 @@
         <div class="type-header__icon">${icon}</div>
         <div class="type-header__info">
           <h1>${title.toUpperCase()}</h1>
-          <div class="type-header__desc">${escapeHtml(typeDesc)}</div>
+          <div class="type-header__desc">${typeDesc || escapeHtml(typeDesc)}</div>
         </div>
       </div>
 
       <div class="technique-filters">
         ${filterBtn('ALL', 'advantages-all', !activeType)}
-        ${filterBtn('INTERPERSONAL', 'advantages-interpersonal', activeType === 'Interpersonal')}
-        ${filterBtn('PHYSICAL', 'advantages-physical', activeType === 'Physical')}
-        ${filterBtn('FAME', 'advantages-fame', activeType === 'Fame')}
-        ${filterBtn('TECHNICAL', 'advantages-technical', activeType === 'Technical')}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `advantages-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
       </div>
 
       <div class="technique-filters" style="margin-top: -10px; margin-bottom: 15px;">
@@ -933,6 +926,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
+          ${adv.flavor ? `<div class="technique-card__flavor">${adv.flavor}</div>` : ''}
           ${adv.description || '<p>No description available.</p>'}
         </div>
       </div>
@@ -941,18 +935,19 @@
 
   // ── Passions Page ─────────────────────────────────────────────
   function renderPassionsPage(page) {
-    const filterType = page.replace('passions-', '');
-    const typeMap = {
-      'all': null,
-      'mental': 'Mental',
-      'physical': 'Physical',
-      'interpersonal': 'Interpersonal',
-      'spiritual': 'Spiritual',
-    };
+    const filterSlug = page.replace('passions-', '');
 
-    const activeType = typeMap[filterType] || null;
+    // Build unique types from data (passions have array types)
+    const allTypes = [...new Set(
+      Object.values(passions).flatMap(p => Array.isArray(p.type) ? p.type : [p.type]).filter(Boolean)
+    )].sort();
 
-    // Filter: passions have array types
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
+
+    // Filter
     const filtered = Object.entries(passions).filter(([name, pas]) => {
       if (!activeType) return true;
       const types = Array.isArray(pas.type) ? pas.type : [pas.type];
@@ -964,20 +959,11 @@
 
     const title = activeType ? `${activeType} Passions` : 'All Passions';
 
-    const typeDescriptions = {
-      'Mental': 'Passions driven by intellectual curiosity, knowledge, and mental engagement.',
-      'Physical': 'Passions rooted in bodily experience, physical skill, or sensory engagement.',
-      'Interpersonal': 'Passions centered on social interaction, emotional connection, and relationships.',
-      'Spiritual': 'Passions tied to ritual, intuition, and a sense of deeper meaning.',
-    };
-    const typeDesc = activeType ? (typeDescriptions[activeType] || '') : 'All available passions. Each passion allows you to remove 3 Strife after a check that engages its theme.';
+    const typeDesc = activeType
+      ? (peculiarityTypes[activeType]?.description?.trim() || '')
+      : 'All available passions. Each passion allows you to remove 3 Strife after a check that engages its theme.';
 
-    const typeIcons = {
-      'Mental': '⬡',
-      'Physical': '◎',
-      'Interpersonal': '◇',
-      'Spiritual': '✧',
-    };
+    const typeIcons = { 'Mental': '⬡', 'Physical': '◎', 'Interpersonal': '◇', 'Spiritual': '✧' };
     const icon = typeIcons[activeType] || '◆';
 
     let html = `
@@ -994,16 +980,13 @@
         <div class="type-header__icon">${icon}</div>
         <div class="type-header__info">
           <h1>${title.toUpperCase()}</h1>
-          <div class="type-header__desc">${escapeHtml(typeDesc)}</div>
+          <div class="type-header__desc">${typeDesc || escapeHtml(typeDesc)}</div>
         </div>
       </div>
 
       <div class="technique-filters">
         ${filterBtn('ALL', 'passions-all', !activeType)}
-        ${filterBtn('MENTAL', 'passions-mental', activeType === 'Mental')}
-        ${filterBtn('PHYSICAL', 'passions-physical', activeType === 'Physical')}
-        ${filterBtn('INTERPERSONAL', 'passions-interpersonal', activeType === 'Interpersonal')}
-        ${filterBtn('SPIRITUAL', 'passions-spiritual', activeType === 'Spiritual')}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `passions-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
       </div>
 
       <div class="technique-filters" style="margin-top: -10px; margin-bottom: 15px;">
@@ -1051,6 +1034,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
+          ${pas.flavor ? `<div class="technique-card__flavor">${pas.flavor}</div>` : ''}
           ${pas.description || '<p>No description available.</p>'}
         </div>
       </div>
@@ -1059,16 +1043,17 @@
 
   // ── Disadvantages Page ─────────────────────────────────────────
   function renderDisadvantagesPage(page) {
-    const filterType = page.replace('disadvantages-', '');
-    const typeMap = {
-      'all': null,
-      'interpersonal': 'Interpersonal',
-      'physical': 'Physical',
-      'fame': 'Fame',
-      'technical': 'Technical',
-    };
+    const filterSlug = page.replace('disadvantages-', '');
 
-    const activeType = typeMap[filterType] || null;
+    // Build unique types from data
+    const allTypes = [...new Set(
+      Object.values(disadvantages).flatMap(d => Array.isArray(d.type) ? d.type : [d.type]).filter(Boolean)
+    )].sort();
+
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
 
     // Filter
     const filtered = Object.entries(disadvantages).filter(([name, dis]) => {
@@ -1081,20 +1066,11 @@
 
     const title = activeType ? `${activeType} Disadvantages` : 'All Disadvantages';
 
-    const typeDescriptions = {
-      'Interpersonal': 'Disadvantages rooted in social tensions, broken relationships, and interpersonal frictions.',
-      'Physical': 'Disadvantages stemming from physical limitations, impairments, or bodily vulnerabilities.',
-      'Fame': 'Disadvantages tied to notoriety, infamy, or the weight of a damaged reputation.',
-      'Technical': 'Disadvantages grounded in knowledge gaps, analytical blind spots, or cognitive biases.',
-    };
-    const typeDesc = activeType ? (typeDescriptions[activeType] || '') : 'All available disadvantages across every type. Each disadvantage forces rerolls of favorable dice when its conditions are met.';
+    const typeDesc = activeType
+      ? (peculiarityTypes[activeType]?.description?.trim() || '')
+      : 'All available disadvantages across every type. Each disadvantage forces rerolls of favorable dice when its conditions are met.';
 
-    const typeIcons = {
-      'Interpersonal': '◇',
-      'Physical': '◎',
-      'Fame': '★',
-      'Technical': '⬡',
-    };
+    const typeIcons = { 'Interpersonal': '◇', 'Physical': '◎', 'Fame': '★', 'Technical': '⬡' };
     const icon = typeIcons[activeType] || '◆';
 
     let html = `
@@ -1111,16 +1087,13 @@
         <div class="type-header__icon">${icon}</div>
         <div class="type-header__info">
           <h1>${title.toUpperCase()}</h1>
-          <div class="type-header__desc">${escapeHtml(typeDesc)}</div>
+          <div class="type-header__desc">${typeDesc || escapeHtml(typeDesc)}</div>
         </div>
       </div>
 
       <div class="technique-filters">
         ${filterBtn('ALL', 'disadvantages-all', !activeType)}
-        ${filterBtn('INTERPERSONAL', 'disadvantages-interpersonal', activeType === 'Interpersonal')}
-        ${filterBtn('PHYSICAL', 'disadvantages-physical', activeType === 'Physical')}
-        ${filterBtn('FAME', 'disadvantages-fame', activeType === 'Fame')}
-        ${filterBtn('TECHNICAL', 'disadvantages-technical', activeType === 'Technical')}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `disadvantages-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
       </div>
 
       <div class="technique-filters" style="margin-top: -10px; margin-bottom: 15px;">
@@ -1166,6 +1139,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
+          ${dis.flavor ? `<div class="technique-card__flavor">${dis.flavor}</div>` : ''}
           ${dis.description || '<p>No description available.</p>'}
         </div>
       </div>
@@ -1174,18 +1148,19 @@
 
   // ── Anxieties Page ─────────────────────────────────────────────
   function renderAnxietiesPage(page) {
-    const filterType = page.replace('anxieties-', '');
-    const typeMap = {
-      'all': null,
-      'mental': 'Mental',
-      'physical': 'Physical',
-      'interpersonal': 'Interpersonal',
-      'spiritual': 'Spiritual',
-    };
+    const filterSlug = page.replace('anxieties-', '');
 
-    const activeType = typeMap[filterType] || null;
+    // Build unique types from data (anxieties have array types)
+    const allTypes = [...new Set(
+      Object.values(anxieties).flatMap(a => Array.isArray(a.type) ? a.type : [a.type]).filter(Boolean)
+    )].sort();
 
-    // Filter: anxieties have array types
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
+
+    // Filter
     const filtered = Object.entries(anxieties).filter(([name, anx]) => {
       if (!activeType) return true;
       const types = Array.isArray(anx.type) ? anx.type : [anx.type];
@@ -1197,20 +1172,11 @@
 
     const title = activeType ? `${activeType} Anxieties` : 'All Anxieties';
 
-    const typeDescriptions = {
-      'Mental': 'Anxieties rooted in intellectual dread, intrusive thoughts, and mental vulnerability.',
-      'Physical': 'Anxieties tied to bodily harm, physical discomfort, or sensory overwhelm.',
-      'Interpersonal': 'Anxieties centered on social pressure, fear of judgment, and relational stress.',
-      'Spiritual': 'Anxieties tied to existential uncertainty, loss of meaning, or ritual disruption.',
-    };
-    const typeDesc = activeType ? (typeDescriptions[activeType] || '') : 'All available anxieties. Each anxiety causes you to gain 3 Strife when a check engages its theme.';
+    const typeDesc = activeType
+      ? (peculiarityTypes[activeType]?.description?.trim() || '')
+      : 'All available anxieties. Each anxiety causes you to gain 3 Strife when a check engages its theme.';
 
-    const typeIcons = {
-      'Mental': '⬡',
-      'Physical': '◎',
-      'Interpersonal': '◇',
-      'Spiritual': '✧',
-    };
+    const typeIcons = { 'Mental': '⬡', 'Physical': '◎', 'Interpersonal': '◇', 'Spiritual': '✧' };
     const icon = typeIcons[activeType] || '◆';
 
     let html = `
@@ -1227,16 +1193,13 @@
         <div class="type-header__icon">${icon}</div>
         <div class="type-header__info">
           <h1>${title.toUpperCase()}</h1>
-          <div class="type-header__desc">${escapeHtml(typeDesc)}</div>
+          <div class="type-header__desc">${typeDesc || escapeHtml(typeDesc)}</div>
         </div>
       </div>
 
       <div class="technique-filters">
         ${filterBtn('ALL', 'anxieties-all', !activeType)}
-        ${filterBtn('MENTAL', 'anxieties-mental', activeType === 'Mental')}
-        ${filterBtn('PHYSICAL', 'anxieties-physical', activeType === 'Physical')}
-        ${filterBtn('INTERPERSONAL', 'anxieties-interpersonal', activeType === 'Interpersonal')}
-        ${filterBtn('SPIRITUAL', 'anxieties-spiritual', activeType === 'Spiritual')}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `anxieties-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
       </div>
 
       <div class="technique-filters" style="margin-top: -10px; margin-bottom: 15px;">
@@ -1284,6 +1247,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
+          ${anx.flavor ? `<div class="technique-card__flavor">${anx.flavor}</div>` : ''}
           ${anx.description || '<p>No description available.</p>'}
         </div>
       </div>

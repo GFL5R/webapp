@@ -1,10 +1,20 @@
 {
-    placeholder: {
-        type: ["Placeholder"],
-        flavor: "some flavortext",
-        description: """
-        <p>The following is a placeholder Advantage</p>
-        <p>When you do something you're bad at, you must choose and reroll to two dice containing (su) or (ex).</p>
+    "Love Blind": {
+        "type": ["Interpersonal", "Social"],
+        flavor: """
+            <p><em>The flowers had been appearing outside Helian's office every morning for two weeks. Kalina had counted. Today there were seven, arranged in a neat row along the doorframe.</em></p>
+            <p>"Someone has a secret admirer"</p>
+            <p><em>Helian stepped over them without looking down.</em></p>
+            <p>"Logistics left them. Something about base beautification."</p>
+            <p><em>Kalina looked at the flowers. She looked at Helian. She opened her mouth.</em></p>
+            <p>"Right, Beautification..."</p>
+        """,
+        "description": """
+            <h3>Effects</h3>
+            <ul>
+                <li>You are completely and utterly blind to the intricacies of romance and romantic cues. This can lead to misunderstandings and missed opportunities in social interactions involving romantic interests.</li>
+                <li>When performing a check that involves understanding or responding to romantic signals, you must reroll two dice showing (su) or (ex)</li>
+            </ul>
         """
     }
 }

@@ -1,10 +1,146 @@
 {
-    placeholder: {
-        type: ["Placeholder"],
-        flavor: "some flavortext",
-        description: """
-        <p>The following is a placeholder Advantage</p>
-        <p>When you do something you're good at, reroll up to two dice.</p>
+  "Harmless Appearance": {
+    "type": [
+        "Interpersonal", "Social"
+    ],
+    "flavor": """
+        <p><em>The checkpoint guard leaned out of his booth, hand already moving toward his radio.</em></p>
+        <p><em>Harpsy smiled at him. It came out wrong, too wide, a little desperate, the smile of someone who had just realized they'd used the wrong door and were hoping nobody noticed. She clutched her clipboard to her chest.</em></p>
+        <p>"Sorry! Sorry, I'm so sorry, I think I took the wrong corridor again, they moved the maintenance access and I just..." She gestured vaguely behind her. Her voice cracked slightly on the last word.</p>
+        <p><em>The guard looked at her. Then at the clipboard. Then at the very specific expression of a person who was definitely not a threat and possibly a little lost.</em></p>
+        <p>"Maintenance is back the way you came. Left at the junction."</p>
+    """,
+    "description": """
+        <h3>Effects</h3>
+        <ul>
+            <li>You appear earnest and perhaps a bit hapless, and your flaws generally come off as charming, at least at first glance. People tend to underestimate you, and you can use this to your advantage.</li>
+            <li>When performing a check that benefits from your harmless appearance (such as cozying up to a stranger or hiding your true intentions), you can reroll up to two dice.</li>
+        </ul>
+    """
+  },
+  "Ally [Name]": {
+    "type": [
+
+    ],
+    "flavor": """
+        <p><em>The broker had a firm handshake and a carefully neutral expression, the kind of face that had learned, over many years, not to react to anything.</em></p>
+        <p>It lasted until Leva smiled at him.</p>
+        <p><em>By the end of the hour he had given her three names, a private frequency, and a standing invitation to call ahead next time.</em></p>
+        <p>"Pleasure doing business," she said.</p>
+    """,
+    "description": """
+        <h3>Effects</h3>
+        <ul>
+            <li>You have forged an alliance with someone, who is willing to help you (within reason). They are open to sharing what they know about most topics, whether via a face-to-face meeting or other means of communication. They are also willing to arrange introductions for you with people they know.</li>
+            <li>When performing a check that benefits from your close relationship with the character (such as requisitioning an item through them or trying to convince a mutual friend), you can reroll up to two dice.</li>
+        </ul>
+    """
+  },
+  Ambidexterity: {
+    "type": [
+        "Physical"
+    ],
+    "flavor": """
+        <p>"I bet you can't do that with your left hand."</p>
+        <p>"How much do you want to bet?"</p>
+        <p><em>With a proud expression, Sgt. Mason switched the handgun to his left, and drilled three shots into the target with his off hand.</em></p>
+        <p>"Ambidexterity, sir, I can do it with either hand."</p>
+    """,
+    "description": """
+        <h3>Effects</h3>
+        <ul>
+            <li>You are equally adept at using both hands, and can easily compensate if either hand is injured or occupied.</li>
+            <li>When performing a check that benefits from your ambidexterity (such as wielding two weapons or using both hands to misdirect an opponent), you can reroll up to two dice.</li>
+        </ul>
+    """
+  },
+  "Animal Trainer": {
+    "type": [
+        "Interpersonal"
+    ],
+    "flavor": """
+        <p><em>When the dog started barking, Krolik remembered the bunny she had been training for the past few months.</em></p>
+        <p><em>Surprising everyone, she knelt down and pet the dog, who immediately stopped barking and wagged its tail. Krolik smiled and stood up, meeting everyone's stares.</em></p>
+        <p>"What?"</p>
+    """,
+    "description": """
+        <h3>Effects</h3>
+        <ul>
+            <li>You are well versed in animal behaviors and effective techniques for training animals. You also know the telltale signs of hostility in both wild and domesticated animals.</li>
+            <li>When performing a check that benefits from your animal training skills (such as calming a wild animal or teaching a pet a new trick), you can reroll up to two dice.</li>
+        </ul>
+    """
+    },
+    "Commanding Presence": {
+        "type": [
+            "Interpersonal", "Social"
+        ],
+        "flavor": """
+            <p><em>The meeting had been going on for three hours already, when Klukai entered the room. As she strode to the board, the room fell silent.</em></p>
+            <p>"You're going to die if you follow this plan." <em>She stated, having looked at the board for only a few seconds.</em></p>
+            <p>"You should insert from the north, and then take the west exit to flank them."</p>
+            <p><em>Everyone looked at her, and then at each other. The plan was quickly revised, and the meeting ended shortly after.</em></p>
+        """,
+        "description": """
+            <h3>Effects</h3>
+            <ul>
+                <li>You speak with a confidence that most find hard to ignore, and people are more likely to hear what you have to say, even if they are of a higher status than you. This does not mean that those who hear you will heed you, however, and your words may still have undesired consequences.</li>
+                <li>When performing a check that benefits from your ability to command attention (such as giving a speech or trying to intimidate someone), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    "Romantic Insight": {
+        "type": [
+            "Interpersonal", "Social"
+        ],
+        "flavor": """
+            <p><em>Groza contemplated the scene in front of her, She and the commander had been infiltrating a white-zone party for the past few hours, in an attempt to gain access to a diplomat's residence.<em></p>
+            <p>"That servant over there, the one with the red hair, has been eyeing you for the past hour. You could probably get her to do anything you wanted if you played your cards right."</p>
+            <p>"Like sneak into the office and steal the diplomat's schedule?"</p>
+            <p><em>Groza nodded.</em></p>
+        """,
+        "description": """
+            <h3>Effects</h3>
+            <ul>
+                <li>After interacting with a character for one or more scenes, you are able to pin down their romantic preferences and tendencies, and can predict how they will react to certain romantic advances.</li>
+                <li>When performing a check that benefits from your romantic insight (such as trying to flirt with someone or predict how a romantic rival will react), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    "Swift Recovery": {
+        "type": [
+            "Physical"
+        ],
+        "flavor": """
+            <p><em>After a long day of training in the refitting room, most dolls on the Elmo would be exhausted, but not Krolik. After a short rest, she was ready to go again.</em></p>
+            <p>"Don't tell me you're giving up already, Nemesis~"</p>
+            <p><em>Krolik grinned at the sniper.</em></p>
+            <p>"Running rivers crash over waterfalls in the sunrise."</p>
+            <p>"Haah?"</p>
+        """,
+        "description": """
+            <h3>Effects</h3>
+            <ul>
+                <li>Your body recovers from physical exhaustion at an accelerated rate, allowing you to bounce back from strenuous activities more quickly than most people.</li>
+                <li>When performing a check that benefits from your swift recovery (such as recovering from a long day of physical labor or bouncing back from an injury), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    Blackmail: {
+        "type": [
+            "Interpersonal", "Social"
+        ],
+        "flavor": """
+            <p>"N-no! The Commander can't know about that! I didn't spend 3 hours hunting for chocolates for his birthday! I-I was just... Having a sweet tooth! Yeah, that's it!"</p>
+            <p><em>Makiatto stammered a rushed exuse in her typical fashion as Colphne grinned at her.</em></p>
+            <p>"Don't worry, I won't tell him. But if you want to keep this a secret, it'll cost you."</p>
+        """,
+        "description": """
+            <h3>Effects</h3>
+            <ul>
+                <li>You have gathered compromising information about someone, which you can use to coerce them into doing something for you, provided it would not be more damaging to their reputation than sharing the information itself.</li>
+                <li>When performing a check that benefits from your blackmail (such as trying to get someone to do something for you or trying to keep your own secrets hidden), you can reroll up to two dice.</li>
+            </ul>
         """
     }
 }

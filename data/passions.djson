@@ -988,8 +988,8 @@
     "description": """
       <h3>Effects</h3>
             <ul>
-                <li>You are never shaken or hesitant in the face of violence. Combat is where you feel most like yourself, and the chaos of battle is where your mind is quietest.</li>
-                <li>After performing a check involving direct combat (such as a check to press an assault or hold a position under heavy fire), you remove 3 strife.</li>
+                <li>You are a student of violence in all its forms. You can always identify the most decisive way to incapacitate or destroy any target, and you can quickly assess the relative threat and combat capability of anyone you observe.</li>
+                <li>After performing a check in which the violence is total and decisive (such as a check to score a critical hit or deliver a killing blow), you remove 3 strife.</li>
             </ul>
     """
   },

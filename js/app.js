@@ -456,7 +456,7 @@
       </div>
 
       <div class="home-grid">
-        ${homeCard('[SET]', 'Setting & T-Dolls', 'The world of 2070, T-Doll technology, and the pair dynamic.', 'Setting & T-Dolls')}
+        ${homeCard('[SET]', 'Setting & T-Dolls', 'The world of 2072, T-Doll technology, and the pair dynamic.', 'Setting & T-Dolls')}
         ${homeCard('[COR]', 'Core Rules', 'Checks, approaches, skills, and the fundamental mechanics.', 'Making a Check')}
         ${homeCard('[CHR]', 'Character Creation', 'Build your Commander and T-Doll pair through guided questions.', 'Introduction')}
         ${homeCard('[DSC]', 'Disciplines', 'Class progressions, rank structure, and technique trees.', 'Disciplines')}

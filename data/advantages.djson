@@ -20,7 +20,7 @@
   },
   "Ally [Name]": {
     "type": [
-
+        "Interpersonal", "Social"
     ],
     "flavor": """
         <p><em>The broker had a firm handshake and a carefully neutral expression, the kind of face that had learned, over many years, not to react to anything.</em></p>
@@ -140,6 +140,84 @@
             <ul>
                 <li>You have gathered compromising information about someone, which you can use to coerce them into doing something for you, provided it would not be more damaging to their reputation than sharing the information itself.</li>
                 <li>When performing a check that benefits from your blackmail (such as trying to get someone to do something for you or trying to keep your own secrets hidden), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    "Loyal Attendant": {
+        "type": [
+            "Interpersonal", "Social"
+        ],
+        flavor: """
+            <p><em>The commander arrived at the liaison dinner forty minutes late. The table was already warm.</em></p>
+            <p>"Your seat, commander." <em>G36 pulled out the chair without looking up from her notes.</em> "The district liaison has been reassured you were delayed by a priority briefing. I've taken the liberty of ordering your preferred drink and suggesting the lamb, which has already generated favorable conversation."</p>
+            <p>"How long have you been here?"</p>
+            <p>"Two hours." <em>She folded her notepad.</em> "The groundwork is done. You just have to show up and be charming."</p>
+            <p><em>She said it as if that were the easy part.</em></p>
+        """,
+        description: """
+            <h3>Effects</h3>
+            <ul>
+                <li>You have a loyal attendant that handles certain social duties in your name when you are absent, provides assistance in their area of expertise, and offers counsel when you face a difficult decision.</li>
+                <li>When performing a check that benefits from your attendant's support (such as trying to get a favor from someone who is close to your attendant or researching a topic they are knowledgeable about), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    "Criminal Contacts": {
+        type: [
+            "Interpersonal", "Social"
+        ],
+        flavor: """
+            <p><em>The broker was not happy to see her. He was never happy to see her, but he always opened the door.</em></p>
+            <p>"I need you to move something."</p>
+            <p>"Last time you needed me to move something, I spent a week explaining myself to Varjager."</p>
+            <p>"And I made sure they believed you." <em>UMP45 met his eyes.</em> "I keep my debts, Yuri. You know that."</p>
+            <p><em>A long pause. He opened the door wider.</em></p>
+            <p>"What is it this time?"</p>
+        """,
+        description: """
+            <h3>Effects</h3>
+            <ul>
+                <li>You have useful allies and associates among the criminal underworld, you can use these contacts to find information or obtain illicit goods and services.</li>
+                <li>When performing a check that benefits from your criminal contacts (such as trying to find a black market dealer or get information about a crime), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    "Market Sense": {
+        type: [
+            "Interpersonal", "Social"
+        ],
+        flavor: """
+            <p>"Wait on the morphine buy."</p>
+            <p><em>The commander looked up from the supply report.</em> "Prices are at a three-month low. If we don't move now—"</p>
+            <p>"There's a URNC medical convoy coming through the Yellow Zone next week. Half the independent suppliers in this market are about to dump their stock before it undercuts them." <em>Stechkin set down her coffee.</em> "Give it ten days. We'll get the same supplies for sixty percent of what they're asking now."</p>
+            <p>"How do you know about the convoy?"</p>
+            <p>"I spent an afternoon in the market. People talk."</p>
+        """,
+        description: """
+            <h3>Effects</h3>
+            <ul>
+                <li>After spending one or more scenes in a relevant market, you can always discern whether a given commodity or service's value is going to rise or fall in the next month.</li>
+                <li>When performing a check that benefits from your market sense (such as trying to find a good deal or selling an item), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    "Sex Appeal": {
+        type: [
+            "Interpersonal", "Social"
+        ],
+        flavor: """
+            <p><em>The checkpoint had three guards and no good reason to let them through. Florence stepped forward before anyone could stop her.</em></p>
+            <p><em>Two minutes later she was back, waving the squad through with a laminated pass.</em></p>
+            <p>"How did you get that?"</p>
+            <p>"I asked." <em>She folded the pass into her jacket.</em> "Politely. At very close range."</p>
+            <p>"What did you promise him?"</p>
+            <p>"Nothing I intend to deliver." <em>The smile didn't waver.</em> "That's the beauty of hope, commander. It's very cheap to manufacture."</p>
+        """,
+        description: """
+            <h3>Effects</h3>
+            <ul>
+                <li>You are strikingly attractive to those who would normally find your gender appealing, causing them to potentially act foolishly around you, and making it easier for you to influence or manipulate them.</li>
+                <li>When performing a check that benefits from your sex appeal (such as trying to charm, seduce, or distract someone), you can reroll up to two dice.</li>
             </ul>
         """
     }

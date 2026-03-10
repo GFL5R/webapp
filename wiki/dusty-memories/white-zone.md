@@ -1,0 +1,9 @@
+# Dusty Memories: White Zone
+
+## White Zone
+
+### Tales of the Seaside
+
+As New Year approaches, SMG UMP9, who's on long-term dispatch to assist Kalina in the Non-Military Forces Administration, is thinking about the presents she'll buy for the rest of 404. Kalina suggests that her and SMG UMP45 start the next year by choosing new personal names since they must now make public appearances. 9 worries that the Commander wouldn't be able to recognize her if she also changes her name after already changing her body, and needs to discuss with 45 so they keep using similar-sounding names. 9 also wants to discuss the matter with AR G11 and AR HK416, and Kalina suggests that they use their vacation days to travel, just like they used to at Griffin. Since actually traveling won't accommodate their schedule, 9 visits Persica to borrow environmental projectors to simulate a trip tot he beach, but when it comes time to assemble the others, they are all on dispatch. Overcome with loneliness, 9 spirals down into self-loathing until 45 arrives.
+
+After 9 explains her woes, 45 calls 416 and provokes her into keeping the channel up while they fight to prove her worth as an elite T-Doll. 9 and 45 then proceed to taunt 416 and G11 with promises of beach relaxation and fireworks show. 9 brings up the topic of new names, and 45 produces "A Guide to Common Female Names in the URNC", which Kalina gave to her earlier. 45 suggests that 9 takes her old name Reina, which was a popular name where 9 lived, but 9 decides to pick a name that sounds the same but is written differently: Lenna (莱娜, láinà). 45 is about to pick her own name at random, but Lenna makes up a new name after being inspired by the etymology of Lenna, related to “lion”: Leva (莱娅, láiyà). Later on, 416's name would be changed to Klukai, and after joining the Elmo, Lenna tries to reinforce her “family bonds” with the Commander, just like she did by changing names with the rest of 404.

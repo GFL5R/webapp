@@ -1,0 +1,40 @@
+# I.O.P.
+
+**Important Operations Prototype Manufacturing Company** , or **IOP** , is a Neo-Soviet R&D and manufacturing company specializing in Tactical Dolls, directed by Havier Witkin. IOP is the world leader in Tactical Doll production since World War Three thanks to 16LAB's groundbreaking technological research, and the main supplier of workforce for Griffin & Kryuger PMC.
+
+## History
+
+### Origins
+
+IOP was conceived when the Pan-European Alliance asked companies Scheppel Advanced Technology Company and Westchester United Electronics Manufacturing Company to unite their development efforts to create versatile combat dolls able to replace flesh-and-blood soldiers. The Chief of Staff General was the main proponent of this project and managed to secure funds and assemble an internal commission to ensure the two companies' cooperation. Westchester and Scheppel both invested capital in forming IOP as a company dedicated to Tactical Dolls development.
+
+It took three years from planning to official founding to create IOP. During this time, Witkin sensed the dolls market could go beyond military organizations and spent time finding partners to solve the incoming technical challenges of advanced doll systems and raise interest in the civilian and security markets. Witkin registered three wholly-owned subsidiaries in the US, Ukraine and China to find local partners. The Ukraine branch entered a partnership with the rapidly growing Sangvis Ferri Manufacturing, who were more interested in the toughness of the early ALR-52P model than the advanced technologies of the CSD-03H model (much to Witkin's chagrin) and invested large amounts of money in IOP while also offering to provide AI researchers.
+
+The start of World War Three in 2045 forced Witkin to accelerate its plans to begin taking the fast-coming military contracts, and IOP was founded in 2046. Sangvis Ferri became an important partner as production demand became higher and higher, and IOP subcontracted part of its production to SF and provided them technical documents to modify their Tactical Dolls. The modified ALR-52P Jaegers produced by SF became widely used on the frontlines while the CSD series was falling out of favor because its autonomy and frequent malfunction due to its complexity made them unreliable on the battlefield. They were relegated to gun platforms used by the military police and derided as target practice by frontline personnel. IOP lost contracts to SF, which enraged Witkin and the two companies' relations soured. Witkin nevertheless pushed for versatile Tactical Dolls and worked to improve the AI and reliability of the CSD series, but didn't get satisfying results, demoralizing IOP's teams.
+
+### Growth
+
+In 2049, Witkin's research partner Mihacj discovered from one of his students articles about an underground technological group called 90WISH. Witkin was impressed by the technological capacities and development drive of the group and tried to contact them, but the group seemed completely inaccessible. Witkin learned from contacts in the Russian government that 90WISH was actually in an internal debacle and learned of two former 90WISH members whose lives were threatened by their former comrades: Persicaria and Lycoris. He hired a PMC to escort them to IOP's buildings, which succeeded though he PMC soldiers suffered casualties. The Russian Ministry of Internal Affairs was also involved in the mission to secure Persicaria. Both scientists agreed to work for IOP under false identities as members of a shell company called Hermit, contracting with IOP. Hermit's work enabled several breakthrough in the CSD series' development, leading to the CSD-08A and CSD-08B models, the experimental IAD series and the ACD series, regaining the favors of military clients for their reliability, resilience and capacity to be used both in frontlines and as manual laborers.
+
+The ACD series Tactical Dolls were the most used during World War Three, with 11 730 units produced, including 2300 by Sangvis Ferri.
+
+### Expansion outside of military markets
+
+The civilian dolls market grew after the end of World War Three as the production, service and PMC sectors were short in manpower. IOP enjoyed a comfortable market share thanks to its relations with major PMCs and international industrial companies. A major client of IOP was Griffin and Kryuger, whose constant influx of field data were instrumental for Persicaria's constant improvement of T-Dolls. Most of the Dolls working for G&K came from IOP, who were also in charge of militarizing Dolls acquired from other sources. At some point, IOP also produced purpose-built T-Dolls, including AR HK416 for G&K and the members of Griffin Squad for Griffin Lyons. IOP also produced Doll-related equipment such as repair tanks and heavy industrial equipment such as the Elmo landship, which has been called “the final glory of the NSU's heavy industry”.
+
+Receiving contracts from governments, business companies, civilian services companies and private individuals, IOP's revenues boomed, bolstered by new military dolls series and the Service Dolls series dedicated to civilian markets, with emotional simulation software, elaborate man-machine interaction, attractive appearances and customization capabilities. However, no additional funds were given to Lycoris's autonomous IA research, and he eventually defected to Sangvis Ferri with help from G&K. Witkin reacted by adding even more funds into Persicaria's research, leading to the creation of 16LAB. When Sangvis Ferri disappeared as a manufacturer after the Butterfly Incident of 2061, IOP basically controlled the Tactical Doll market, be it military dolls, armed civilian dolls or unarmed civilian dolls. Persica finalized her vision for Second Generation T-Dolls by implementing the Fire Control Core, Imprint Technology and Dummy Network features, and the Neural Cloud also became a standard feature in 2060.
+
+Through Witkin's involvement with the Prometheans, IOP provided logistical support to the Commander: they analyzed Architect after her capture during Operation Hypothermia and provided a temporary base when their were forced to work for Statesec, the train they originally used to enter the Baltic Red Zone, and the Elmo landship. IOP also provided support for the neural upgrade of most Dolls. The relationship between IOP and G&K broke down at the end of the Battle of Frankfurt, when the Commander opposed the Prometheans. Griffin Lyons ordered Witkin to use the Nidhogg Protocol to rescind G&K's authority over all of their IOP-made Dolls. However, Witkin was sympathetic to the Commander's cause and staggered the activation of the Protocol over 12 hours, starting with the weakest Dolls first. The IOP Dolls were eventually reactivated and took part in the mission to assassinate William, expecting IOP to dismantle them for disobeying the company's protocol. Instead, they were granted full autonomy at the Commander's request before they were exiled by the Prometheans, and returned to civilian life or joined paramilitary groups.
+
+In the 2070s, the Girard Group stole the base layer technology originally developed by 16LAB for IOP Dolls to use it in their own Doll models. The corporate theft was revealed after IOP Doll models were found to be compatible with a virus targeting Girard Dolls.
+
+## Members
+
+  * Havier Witkin (director)
+  * Engineer 402
+
+## Trivia
+
+  * IOP is often blamed by fans as the source of all the impractical features meant to make Dolls more human. This is also alluded to in the story itself.
+  * The AI-powered enhancement chip found by SMG Micro Uzi during her Neural Upgrade story is called the IOP Type 2063 Advanced Multi-functional Intelligent Support System Prototype.
+  * The Game Department - IOP Logo Dorm Furniture is a big IOP logo with the name “I.O.P. Game Studio” and the tagline “The last stand behind human race”. Curiously similar to Sunborn's fellow game company and competitor MiHoYo's tagline, “Game Otakus Save the World”.

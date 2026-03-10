@@ -11,6 +11,7 @@
   // Static HTML content pages (served from pages/)
   const HTML_PAGES = {
     'Setting & T-Dolls':                'pages/setting-and-t-dolls.html',
+    'Factions & Powers':                'pages/factions.html',
     'Approaches & Derived Attributes':  'pages/approaches-and-derived-attributes.html',
     'Skills':                           'pages/skills.html',
     'Making a Check':                   'pages/making-a-check.html',
@@ -35,6 +36,7 @@
   // Defines the reading order for rulebook-style navigation
   const PAGE_ORDER = [
     'Setting & T-Dolls',
+    'Factions & Powers',
     'Approaches & Derived Attributes',
     'Skills',
     'Making a Check',
@@ -59,6 +61,7 @@
   // Maps each page to its sidebar section for breadcrumbs
   const PAGE_SECTIONS = {
     'Setting & T-Dolls':                'Overview',
+    'Factions & Powers':                'Overview',
     'Approaches & Derived Attributes':  'Fundamentals',
     'Skills':                           'Fundamentals',
     'Making a Check':                   'Fundamentals',

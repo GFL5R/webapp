@@ -576,10 +576,70 @@
       </ul>
     """
   },
+  "Hand of God": {
+    rank: 3,
+    type: "Combat",
+    approach: "Precision",
+    skill: "Firearms",
+    flavor: "The ideal sniper shot is one that strikes with surgical precision, bypassing armor and resistance to hit a vulnerable spot. A marksman who can consistently find that spot, even under less-than-ideal conditions, can take down targets that would be otherwise untouchable.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As an Attack action, make a <strong>Firearms (Precision)</strong> check targeting one character at a range greater than 3. The TN of the attack is equal to the normal TN of the weapon at that range plus the target's vigilance.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, the target suffers damage equal to two times the weapon’s base damage plus your bonus successes.</p>
+       <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong>If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon’s deadliness damage plus your bonus successes.</li>
+      </ul>
+    """
+  },
+  "Splat!" :{
+    rank: 1,
+    type: "Combat",
+    approach: "Resilience",
+    skill: "Exotic Weapons",
+    flavor: "It's not practical on a modern battlefield, but you can't deny that a giant fucking hammer is a great way to make an impression.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make an Attack action using a melee-type Exotic weapon, you may spend (op) in the following way:</p>
+      <ul>
+        <li><strong>Resilience (op):</strong> If you fail, your target suffers physical damage equal to your ranks in Conditioning.</li>
+        <li><strong>Resilience (op):</strong> If you succeed and your target is Prone, increase the damage you deal by your ranks in Fitness. </li>
+      </ul>
+    """
+  },
+  "Crushing Blow": {
+    rank: 2,
+    type: "Combat",
+    approach: "Power",
+    skill: "Exotic Weapons",
+    flavor: "A powerful strike with a heavy weapon can do more than just deal damage. It can break through defenses, shatter armor, and leave the target vulnerable to follow-up attacks.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make an Attack action using a melee-type Exotic weapon, you may spend (op) in the following way:</p>
+      <ul>
+        <li><strong>Power (op)(op):</strong> If you succeed, choose one defensive item your target is using (such as armor they are wearing or a readied shield they are wielding). The item receives the Damaged item quality; if it is already Damaged, it becomes Destroyed instead. </li>
+      </ul>
+    """
+  },
+  "Gap in the Armor": {
+    rank: 2,
+    type: "Combat",
+    approach: null,
+    skill: "Blades",
+    flavor: "Even the toughest armor has a weak point. A skilled fighter who can find and exploit that weak point can turn a heavily armored opponent into a sitting duck.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make an Attack Action using a Bladed weapon, you may spend (op) as follows:</p>
+      <ul>
+          <li><strong>(op)+:</strong> Your weapon ignores an amount of your target's armor equal to (op) spent this way.</li>
+      </ul>
+    """
+  },
   Alibi: {
     rank: 2,
     type: "Street",
-    approach: ["Precision, Swiftness"],
+    approach: ["Precision", "Swiftness"],
     skill: ["Stealth", "Subterfuge", "Deception"],
     flavor: "In the world of espionage and covert operations, a well-constructed alibi can be the difference between a successful mission and a compromised one.",
     description: """
@@ -863,6 +923,500 @@
         <li><strong>Swiftness (op):</strong> If you succeed, the target unit's commander suffers a critical strike with severity equal to 6 plus your bonus successes.</li>
         <li><strong>Swiftness (op)(op):</strong> The target unit's commander suffers the Dazed condition.</li>
         <li><strong>(op)+:</strong> If you succeed, you may expend up to (op) additional explosive devices to add 2 bonus successes per device expended this way.</li>
+      </ul>
+    """
+  },
+  "Jack of All Trades": {
+    rank: 3,
+    type: "Science",
+    approach: "Fortune",
+    skill: "Science",
+    flavor: "All skills share the same fundamental principle: the application of knowledge to achieve a desired outcome. A versatile operator can leverage their understanding of one field to enhance their performance in another, treating their proficiency in one area as a proxy for another when the situation calls for it.",
+    description: """
+      <h3>Activation:</h3>
+      <p>Once per scene as a Support action, you may make a <strong>TN 4 Science (Fortune)</strong> check.</p>
+      <h3>Effects:</h3>
+      <p>On success, choose one skill. Until the end of the scene, when making checks using the chosen skill, treat your rating in that skill as equal to your Science rating if it would otherwise be lower.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op):</strong> This technique applies to one additional skill of your choice.</li>
+      </ul>
+    """
+  },
+ "Just a Joke": {
+    rank: 1,
+    type: "Social",
+    approach: "Swiftness",
+    skill: "Deception",
+    flavor: "Schroedinger's Asshole (Noun): A person who, after making a statement, waits until the reaction is clear before confirming whether they were joking or not.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make a Social skill check using Swiftness, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op)+:</strong> If you lost Humanity as part of this check by saying something crass, rude, or deliberately provocative, regain 1 Humanity per (op) spent this way.</li>
+      </ul>
+    """
+  },
+  "Intimidation": {
+    rank: 3,
+    type: "Social",
+    approach: "Power",
+    skill: ["Command", "Performance"],
+    flavor: "Intimidation is not just about making threats. It's about creating an atmosphere of fear and uncertainty that can sap an opponent's will to fight. A powerful display of dominance can make even the bravest adversary think twice before crossing you.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, you may make a <strong>TN 4 Command or Performance (Power)</strong> check targeting any number of characters in the scene.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, each target suffers 2 strife whenever they choose you as the target of a Social skill check. This effect persists until the end of the scene.</p>
+      <p>If you fail, you suffer 4 strife.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)(op)+:</strong> Each target suffers 1 additional strife per (op)(op) spent this way whenever they target you with a Social skill check.</li>
+      </ul>
+    """
+  },
+  "Appreciate the Scenery": {
+    rank: 1,
+    type: "Social",
+    approach: ["Resilience", "Fortune"],
+    skill: "Arts",
+    flavor: "Sometimes the best way to deal with a tense situation is to take a step back and appreciate the world around you.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make a Support action check targeting another character while you are both in Dangerous, Entangling, or Obscuring terrain, you may spend (op) in the following ways:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op):</strong> You and your target each remove strife equal to your ranks in Arts.</li>
+        <li><strong>Fortune (op):</strong> You and your target each add 1 bonus die to their next check made before the end of the scene.</li>
+      </ul>
+    """
+  },
+  "Artisan's Appraisal": {
+    rank: 1,
+    type: "Social",
+    approach: "Precision",
+    skill: "Arts",
+    flavor: "An artist's work is a reflection of their skills, their emotions, and their intentions. A discerning eye can read between the lines of a painting, the notes of a song, or the movements of a performance to gain insight into the creator's mindset and motivations.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make an <strong>Arts or Performance check using the Precision approach</strong> to assess an object or performance, you may spend (op) in the following ways:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> Choose one Approach. You learn the creator's or performer's rating in that Approach, and any one Advantage or Disadvantage they possess that relates to it (chosen by the GM).</li>
+        <li><strong>Precision (op):</strong> You learn the creator's or performer's emotional state at the time of creation or performance, and what they most wanted from the work.</li>
+      </ul>
+    """
+  },
+  "Read the Room": {
+    rank: 1,
+    type: "Social",
+    approach: "Precision",
+    skill: "Insight",
+    flavor: "A game is a controlled environment. The rules are fixed, the pieces are known, and the only variable is the person sitting across from you. A careful observer does not just watch the board.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, you may make an <strong>Insight (Precision)</strong> check targeting one opponent in a game you are playing with them. The TN of this check is equal to the target's vigilance.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, choose one skill from the following: Tactics, any Combat skill, or any Social skill. You learn your target's ranks in that skill. Choose one additional skill to learn per bonus success.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op)(op):</strong> You learn all of your target's Advantages and Disadvantages that relate to mental acuity, willpower, or social behavior (chosen by the GM).</li>
+      </ul>
+    """
+  },
+  "No Retreat": {
+    rank: 2,
+    type: "Social",
+    approach: "Fortune",
+    skill: "Command",
+    flavor: "The calculus of retreat is simple: if survival is possible, some will choose it. Remove that option and the math changes. No ground to fall back to means every fighter is now playing for keeps, which is either a catastrophe or an advantage depending on who's made the call.",
+    description: """
+      <h3>Activation:</h3>
+      <p>Once per scene as a Support action, you may make a <strong>TN 5 Command (Fortune)</strong> check targeting your cohort or a number of characters who can hear you up to your ranks in Tactics. Reduce the TN of this check to 2 if all targets are in Entangling or Obscuring terrain.</p>
+      <h3>Effects:</h3>
+      <p><strong>During a Mass Battle:</strong> If you succeed, your forces do not suffer morale collapse regardless of their current panic value, and continue to function normally. This effect persists for one round, plus one additional round per three bonus successes.</p>
+      <p><strong>During any other scene:</strong> If you succeed, each target ignores the effects of conditions caused by Strife at or above their Composure threshold. This effect persists for one round, plus one additional round per two bonus successes.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op)+ (Skirmish or other scene):</strong> Choose one additional target per (op) spent this way.</li>
+        <li><strong>Fortune (op)(op) (Skirmish or other scene):</strong> If you succeed, each target also ignores the effects of being Incapacitated for one round, plus one additional round per two bonus successes.</li>
+      </ul>
+    """
+  },
+  "War Cry": {
+    rank: 1,
+    type: "Social",
+    approach: "Resilience",
+    skill: "Command",
+    flavor: "Sometimes the best way to fight is to rally your allies and strike fear into your enemies. A well-timed war cry can boost your team's morale, intimidate your opponents, and turn the tide of battle in your favor.",
+    description: """
+      <h3>Activation:</h3>
+      <p>Once per scene as a Support action, you may make a <strong>TN 2 Command (Resilience)</strong> check targeting one character within earshot.</p>
+      <h3>Effects:</h3>
+      <ul>
+        <li>If you succeed and your target's Strife equals or exceeds their Composure, they remove Strife until their Strife is equal to their Composure minus 1.</li>
+        <li>If you succeed and your target's Fatigue equals or exceeds their Endurance, they remove Fatigue until their Fatigue is equal to their Endurance minus 1.</li>
+      </ul>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op)(op):</strong> You may use this technique one additional time this scene.</li>
+        <li><strong>Resilience (op)(op)(op):</strong> This technique instead targets any number of qualifying characters within earshot.</li>
+      </ul>
+    """
+  },
+  "Bend with the Storm": {
+    rank: 3,
+    type: "Social",
+    approach: "Precision",
+    skill: "Deception",
+    flavor: "Sometimes the best way to weather a storm is to let it pass through you. A skilled operator can use misdirection, half-truths, and carefully crafted impressions to manipulate how others perceive them, creating a false sense of security that can be exploited at the right moment.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make a Social skill check using the Precision approach targeting another character, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> Choose one Advantage or Disadvantage. The target comes to believe you possess it, without you having stated it directly or expended visible effort to create that impression. The target also believes you are unaware you have revealed this about yourself. If you do anything that could call this impression into question, any character who witnesses it may resist with a <strong>TN 5 Insight check (Resilience 6, Power 3)</strong> to see through the fabrication. This effect persists until the target encounters incontrovertible evidence to the contrary or succeeds on the resistance check.</li>
+      </ul>
+    """
+  },
+  "Beware the Smallest Mouse": {
+    rank: 1,
+    type: "Social",
+    approach: "Swiftness",
+    skill: "Deception",
+    flavor: "Uninteresting people are often overlooked, and that can be a powerful advantage. A skilled operator can use their unassuming nature to their benefit, slipping under the radar and catching others off guard when they least expect it.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make a Social skill check using the Swiftness approach targeting one or more characters, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op)(op)+:</strong> While interacting with you, the target treats their vigilance as 1 lower per (op)(op) spent this way, and reduces the TN of their Social skill checks targeting you by 1. This effect persists until the end of the scene.</li>
+      </ul>
+    """
+  },
+  "Bond of Heroes": {
+    rank: 3,
+    type: "Social",
+    approach: "Fortune",
+    skill: "Performance",
+    flavor: "Some bonds are forged in the heat of battle. The shared experience of fighting side by side can create a connection that transcends words, allowing allies to draw strength from each other even in the darkest moments.",
+    description: """
+      <h3>Activation:</h3>
+      <p>Once per session as a Support action, you may make a <strong>TN 5 Performance (Fortune)</strong> check targeting each character in the scene with whom you share a meaningful bond.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, each target removes 5 Strife and 5 Fatigue, plus 1 additional point of each per two bonus successes.</p>
+    """
+  },
+  "Sacrifice Play": {
+    rank: 3,
+    type: "Social",
+    approach: "Fortune",
+    skill: "Command",
+    flavor: "Asking someone to potentially lay down their lives is one of the hardest things a commander can do. It requires not just confidence in the cause, but also a deep understanding of the people being asked to make that sacrifice.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As an Action, you may make a <strong>TN 5 Command (Fortune)</strong> check targeting any number of characters who can hear you, or your cohort during a Mass Battle.</p>
+      <h3>Effects:</h3>
+      <p><strong>During any other scene:</strong> If you succeed, each target ignores the effects of critical strikes with severity lower than your Fortune plus your bonus successes. This effect persists until the end of the scene, at which point all deferred injuries take effect simultaneously.</p>
+      <p><strong>During a Mass Battle:</strong> If you succeed, your army gains the following ability until the end of the scene:</p>
+      <p><strong>Fearless:</strong> At the end of each round, your army removes panic equal to your Fortune approach value.</p>
+    """
+  },
+  "Borrowed Courage": {
+    rank: 1,
+    type: "Social",
+    approach: "Precision",
+    skill: "Performance",
+    flavor: "The odds are what they are. What you tell people the odds are is a separate question entirely, and one with a correct answer. A commander who needs their people to hold the line for one more hour has exactly one job: give them a reason to believe the hour is worth it. Truth is optional.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a downtime activity, you may make a <strong>TN 4 Performance (Precision)</strong> check targeting an army or a number of characters who can hear you up to your ranks in Insight. You may stake up to 3 Fame to reduce the TN by that amount (minimum 1) to embroider the truth.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, you spread a powerful rumor of your enemy's weakness, of reinforcements certain to arrive, or of some other hidden advantage. The first time each target would receive panic or Strife during the next scene, reduce the amount they receive by your ranks in Performance (minimum 0).</p>
+      <p>Whether you succeed or fail, if your side loses the battle, you lose your staked Fame — your promises proved empty. There may also be narrative consequences if individuals remember what you told them.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> If you fail, no one can quite recall the specifics of what you said. There are no narrative social consequences for the fabrication.</li>
+        <li><strong>Precision (op):</strong> If you succeed, add 1 bonus die to the first Scheme action check you make during the next scene.</li>
+      </ul>
+    """
+  },
+  "Bravado": {
+    rank: 2,
+    type: "Social",
+    approach: "Power",
+    skill: ["Performance", "Arts"],
+    flavor: "Playing up your own strengths can be a powerful way to manipulate how others perceive you. Whether it's a display of confidence, a show of force, or a carefully crafted persona, the right performance can make others see you in a completely different light.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, you may make a <strong>Performance or Arts (Power)</strong> check targeting any number of characters in the scene.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, each target perceives your Fame as 10 higher or lower than its actual value (your choice), plus or minus an additional 10 per bonus success (maximum 100, minimum 0). If you do anything that could call your Fame into question, any character may resist with a <strong>TN 4 Insight check (Precision 5, Swiftness 2)</strong> to determine your actual Fame. This effect persists until the end of the scene.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op):</strong> Choose one character in the scene. You learn whether their Fame is higher or lower than your own actual value.</li>
+      </ul>
+    """
+  },
+  "Dramatic Entrance": {
+    rank: 5,
+    type: "Social",
+    approach: "Swiftness",
+    skill: "Culture",
+    flavor: "Making an entrance is an art form. The right timing, the perfect line, the ideal amount of flair, all of these can combine to create a moment that captivates everyone in the room and sets the tone for the entire conversation.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, you may make a <strong>Culture (Swiftness)</strong> check targeting a number of characters up to your Swiftness approach value. The TN is equal to the vigilance of the character with the highest Fame among your targets.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, you may enter or exit the conversation without social penalty. You do not lose Humanity or Fame for interrupting, suddenly departing from, or preempting another character in the conversation, regardless of the relative Fame of those involved.</p>
+    """
+  },
+  "Cadence": {
+    rank: 1,
+    type: "Social",
+    approach: "Precision",
+    skill: "Deception",
+    flavor: "Every skilled operative develops a private language with their close partners: a word choice, a pause, a gesture that means something entirely different from what it appears to mean. To anyone not listening for it, the conversation is exactly what it sounds like.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make a Social skill check using the Precision approach, you may spend (op) in the following ways:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> Convey a secret message that alters or contradicts the outward meaning of what you are saying to one character observing you who possesses this technique.</li>
+        <li><strong>Precision (op)(op):</strong> Convey a secret message that alters or contradicts the outward meaning of what you are saying to one character observing you who does not possess this technique.</li>
+      </ul>
+    """
+  },
+  "Call the Wild": {
+    rank: 3,
+    type: "Street",
+    approach: "Power",
+    skill: "Survival",
+    flavor: "An animal companion can be more than just a pet. With the right training and bond, they can become a fierce ally in combat, capable of turning the tide of battle with their strength and ferocity.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Support action, you may make a <strong>Survival (Power)</strong> check targeting one friendly animal companion at range 0–2. The TN of the check is equal to the animal's vigilance.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, increase the damage and deadliness of the animal's weapon profiles by 1, plus 1 per two bonus successes. This effect persists until the end of the scene. The animal then gains the Enraged condition and removes all Strife.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op)+:</strong> You may target one additional friendly animal companion per (op) spent this way.</li>
+        <li><strong>(op)+:</strong> The target animal removes 1 Fatigue per (op) spent this way.</li>
+      </ul>
+    """
+  },
+ "Um, Actually": {
+    rank: 2,
+    type: "Social",
+    approach: "Resilience",
+    skill: "Science",
+    flavor: "Some arguments are won by rhetoric. Others are won by arriving with more data than the other person can answer. The distinction matters less than most people think.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, you may make a <strong>Science (Resilience)</strong> check (or another knowledge-based skill at the GM's discretion) targeting one character. The TN of this check is equal to your target's Focus minus their current Strife, to a minimum of 1.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your target suffers the Silenced condition unless they choose to gain Strife equal to your ranks in Command plus one for every bonus success.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op):</strong> If you succeed, you may add one bonus die to your next Social skill check made this scene.</li>
+        <li><strong>(op)(op)+:</strong> Choose one additional target whose Focus is lower than your original target's Focus per (op)(op) spent this way.</li>
+      </ul>
+    """
+  },
+  "Manners maketh the Man": {
+    rank: 2,
+    type: "Social",
+    approach: "Resilience",
+    skill: ["Command", "Culture"],
+    flavor: "There are contexts where violence isn't just inadvisable, it's actively improper. A character who knows the rules well enough can make attacking a protected individual cost more than it's worth.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, you may make a <strong>Command or Culture (Resilience)</strong> check targeting one character to claim protection for an individual of your choice. The TN of this check is equal to the target's vigilance.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, the target must lose Humanity equal to your ranks in Command plus your bonus successes, and suffer that much Strife, to perform an Attack or Scheme action targeting the chosen individual. This effect persists until the end of the scene or until the target performs an Attack or Scheme action targeting that individual.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op)+:</strong> Choose one additional target whose vigilance is lower than or equal to your first target's vigilance per (op) spent this way.</li>
+      </ul>
+    """
+  },
+  "Eyes on the Prize": {
+    rank: 2,
+    type: "Combat",
+    approach: "Precision",
+    skill: "Insight",
+    flavor: "Knowing your enemy's weaknesses is one thing. Knowing their strengths is another. A skilled operator can identify the techniques their opponent relies on most, and use that information to exploit openings and create new opportunities in combat.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make a check to perform a Strike action, you may spend (op) as follows:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op)+:</strong> If your target's vigilance is lower than your ranks in Insight plus the number of (op) spent this way, choose one of the following disclosure categories: <strong>approaches</strong> (learn one of the target's approach values), <strong>conditions</strong> (learn all conditions the target is currently suffering), or <strong>techniques</strong> (the target reveals one combat technique they possess, chosen by the target).</li>
+      </ul>
+    """
+  },
+  "Two Heads are Better than One": {
+    rank: 3,
+    type: "Social",
+    approach: "Swiftness",
+    skill: "Command",
+    flavor: "Two people with identical experience give you one perspective. Two people with different experience give you something more useful: options neither of them would have found alone.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Support action, you may make a <strong>TN 3 Command (Swiftness)</strong> check targeting one other character in the scene.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your target has your assistance on the next check they make. Additionally, your target may grant you assistance on the next check you make. Both effects persist until the end of your next turn.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op)(op):</strong> Choose one skill in which you have 0 ranks and your target has 1 or more ranks. When you grant assistance to another character, you count as trained in that skill. This effect persists until the end of the scene.</li>
+      </ul>
+    """
+  },
+  "Marching Orders": {
+    rank: 1,
+    type: "Social",
+    approach: "Swiftness",
+    skill: "Performance",
+    flavor: "An army marching on extra rations with a good rhythm moving through the rank and file will outlast one marching in silence every time. Morale is logistics.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a downtime activity, you may make a <strong>TN 4 Performance (Swiftness)</strong> check targeting an army or a number of characters traveling with you up to your ranks in Command. You may expend an additional day's rations (army rations for an army, individual rations per individual) to reduce the TN by 2 (minimum 1).</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, you and your targets cover the distance they would normally travel in that time, regardless of terrain penalties from the march.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op):</strong> If your target is an army, it removes attrition up to your ranks in Medicine.</li>
+        <li><strong>Swiftness (op):</strong> If your target is an army, it removes panic up to your ranks in Culture.</li>
+        <li><strong>Swiftness (op)+:</strong> One individual target per (op) spent this way removes Fatigue up to your ranks in Medicine.</li>
+        <li><strong>Swiftness (op)+:</strong> One individual target per (op) spent this way removes Strife up to your ranks in Culture.</li>
+        <li><strong>Swiftness (op)(op)+:</strong> Choose one mundane terrain quality that would affect the targets during the march per (op)(op) spent this way. Each target ignores that terrain quality for the duration.</li>
+      </ul>
+    """
+  },
+  "Keep Your Cool": {
+    rank: 1,
+    type: "Social",
+    approach: "Fortune",
+    skill: "Resolve",
+    flavor: "Composure under pressure is not a passive quality. It is something you practice, maintain, and occasionally have to consciously rebuild in the middle of a conversation that is trying very hard to take it from you.",
+    description: """
+      <h3>Activation:</h3>
+      <p>Once per scene as a Support action, you may spend 1 Fortune point.</p>
+      <h3>Effects:</h3>
+      <p>Remove Strife equal to your Fame divided by 10 (rounded down, minimum 1).</p>
+    """
+  },
+  "Roast": {
+    rank: 3,
+    type: "Social",
+    approach: "Power",
+    skill: "Performance",
+    flavor: "Sometimes the best way to get under someone's skin is to say something that hits a little too close to home.",
+    description: """
+      <h3>Activation:</h3>
+      <p>Once per session as a Scheme action, you may make a <strong>TN 3 Performance (Power)</strong> check targeting a number of characters up to your Power approach value.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, each target suffers 2 Strife and must make a <strong>TN 5 Resolve check (Precision 4, Swiftness 2)</strong>. On a failure, each target suffers additional Strife equal to their shortfall.</p>
+      <p>If you fail, you suffer 3 Strife.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)(op):</strong> For each target who reaches their Composure threshold as a result of this technique, gain 5 Fame.</li>
+      </ul>
+    """
+  },
+  "Slip of the Tongue": {
+    rank: 3,
+    type: "Social",
+    approach: "Precision",
+    skill: "Insight",
+    flavor: "People rarely lie outright. They omit, redirect, and let you draw the conclusions they want you to draw. Finding the gap between what someone says and what they know takes patience and a very specific kind of attention.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, you may make an <strong>Insight (Precision)</strong> check targeting one character. The TN of this check is equal to your target's Focus minus their current Strife, to a minimum of 1.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your target slips up and admits something they were concealing from you. If your target was not concealing anything from you, you know this with certainty.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op)(op)+:</strong> If you succeed, your target suffers 2 Strife per (op)(op) spent this way.</li>
+      </ul>
+    """
+  },
+  "Show Off": {
+    rank: 3,
+    type: "Social",
+    approach: "Power",
+    skill: ["Arts", "Performance"],
+    flavor: "Sometimes the best way to get what you want is to make sure everyone knows how good you are at what you do. A well-timed display of skill can earn you admiration, respect, and maybe even a little bit of envy from those around you.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When making an <strong>Arts or Performance (Power)</strong> check, you may spend (op) in the following way:</p>
+      <ul>
+        <li><strong>Power (op)+:</strong> The next time you receive a Fame award this scene, increase the amount by 1. If there is a character with higher Fame than you in the scene, increase the amount by 1 per (op) spent this way instead.</li>
+      </ul>
+    """
+  },
+  "Rolling With the Punches": {
+    rank: 2,
+    type: "Combat",
+    approach: "Fortune",
+    skill: "Conditioning",
+    flavor: "The best way to survive a hit is to not be there when it lands. The second best way is to be there, but not be a rigid target for it. A flexible defense can turn an opponent's strength against them, reducing the damage you take and maybe even creating an opening for a counterattack.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make a Conditioning check to resist a critical strike caused by another character's attack, you may spend (op) in the following way:</p>
+      <ul>
+        <li><strong>Fortune (op)+:</strong> You may reduce the critical strike by an additional point per (op)(op) spent this way</li>
+      </ul>
+    """
+  },
+  "Whirling Strike": {
+    rank: 1,
+    type: "Combat",
+    approach: "Swiftness",
+    skill: "Melee Combat",
+    flavor: "A spinning attack can be a powerful way to strike multiple opponents at once, or to create an opening in an opponent's defense. The momentum of the spin can add extra force to your strike, making it more difficult to block or dodge.",
+    description: """
+      <h3>Activation:</h3>
+      <p>When you make an Attack action using an Exotic weapon, you may spend (op) in the following way:</p>
+      <ul>
+        <li><strong>Swiftness (op)+:</strong> If you succeed and your target is a minion, your target suffers additional damage equal to the deadliness of your weapon.</li>
+        <li><strong>Swiftness (op)+:</strong> If you fail and your target's ranks in Resolve are less than or equal to (op) spent this way, your target receives strife equal to the deadliness of your weapon.</li>
+      </ul>
+    """
+  },
+  "Pistol Whip": {
+    rank: 1,
+    type: "Combat",
+    approach: "Power",
+    skill: "Rifle Combat",
+    flavor: "A gun is not just a tool for shooting. It can also be a blunt instrument, a symbol of authority, and a source of intimidation. A well-placed pistol whip can disarm an opponent, break their concentration, or simply remind them who's in charge.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As an Attack and Support action using a readied firearm, you may make a <strong>TN 3 Conditioning (Resilience) check</strong> targeting one character at range 0.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your target suffers physical damage equal to 5 plus your bonus successes with deadliness 2.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)(op)+:</strong> Your target must resist with a <strong>TN 4 Conditioning check (Precision 2, Swiftness 5)</strong> or be pushed 1 range band away from you per (op)(op) spent this way.</li>
+      </ul>
+    """
+  },
+  "Throwing Knife":{
+    rank: 1,
+    type: "Combat",
+    approach: null,
+    skill: "Blades",
+    flavor: "A throwing knife is a versatile weapon that can be used for both offense and defense. A well-aimed throw can take out an opponent from a distance, while a quick toss can create an opening in an opponent's defense or distract them long enough to make a follow-up attack.",
+    description: """
+      <h3>Activation:</h3>
+      <p>As an Attack action using one readied Knife in a one-handed grip, you may make a <strong>TN 2 Blades</strong> check targeting one character at range 1.</p>
+      <h3>Effects:</h3>
+      <p>You hurl your knife at the target.</p>
+      <p>If you succeed, you deal physical damage to the target equal to the Knife’s base damage plus your bonus successes. The Knife lands at range in a direction of your choice from the target if they defend against the damage, or embeds in them if they suffer a critical strike.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op)+:</strong> Reduce the TN of the next attack action against the target before the end of your next turn by 1.</li>
       </ul>
     """
   }

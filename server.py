@@ -54,7 +54,6 @@ def _apply_shortcodes(obj):
 # Data files served dynamically from their .djson source
 DJSON_SOURCES = {
     "technique_types.json": BASE_DIR / "data" / "technique_types.djson",
-    "techniques.json":      BASE_DIR / "data" / "techniques.djson",
     "advantages.json":      BASE_DIR / "data" / "advantages.djson",
     "disadvantages.json":   BASE_DIR / "data" / "disadvantages.djson",
     "passions.json":        BASE_DIR / "data" / "passions.djson",
@@ -64,12 +63,35 @@ DJSON_SOURCES = {
     "peculiarities_types.json":   BASE_DIR / "data" / "peculiarities_types.djson",
 }
 
+# Technique files split by type
+TECHNIQUE_FILES = {
+    "combat":              BASE_DIR / "data" / "techniques" / "combat.djson",
+    "electronic_warfare":  BASE_DIR / "data" / "techniques" / "electronic_warfare.djson",
+    "conditioning":        BASE_DIR / "data" / "techniques" / "conditioning.djson",
+    "science":             BASE_DIR / "data" / "techniques" / "science.djson",
+    "social":              BASE_DIR / "data" / "techniques" / "social.djson",
+    "vehicle":             BASE_DIR / "data" / "techniques" / "vehicle.djson",
+    "street":              BASE_DIR / "data" / "techniques" / "street.djson",
+    "remolding":           BASE_DIR / "data" / "techniques" / "remolding.djson",
+    "command":             BASE_DIR / "data" / "techniques" / "command.djson",
+}
+
 app = FastAPI(title="GFL5R Field Manual")
 
 
 @app.get("/data/{filename}")
 async def serve_data(filename: str):
     """Parse the matching .djson file and return it as JSON."""
+    # Handle techniques.json specially - merge all technique files
+    if filename == "techniques.json":
+        merged = {}
+        for tech_type, djson_path in TECHNIQUE_FILES.items():
+            if djson_path.exists():
+                data = docstring_json.load(str(djson_path))
+                data = _apply_shortcodes(data)
+                merged.update(data)
+        return JSONResponse(content=merged)
+    
     djson_path = DJSON_SOURCES.get(filename)
     if djson_path is None:
         raise HTTPException(status_code=404, detail=f"Unknown data file: {filename}")

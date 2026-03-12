@@ -470,7 +470,7 @@
         ${homeCard('[VEH]', 'Driving & Vehicles', 'Chase mechanics, vehicle combat, and positions.', 'Driving & Vehicles')}
         ${homeCard('[RAD]', 'Collapse Radiation', 'Exposure, ELID, contamination zones, and protective measures.', 'Collapse Radiation')}
         ${homeCard('[CRM]', 'Crime & Investigation', 'Evidence, investigation checks, and accusation mechanics.', 'Crime')}
-        ${homeCard('[TCH]', 'Techniques', Object.keys(techniques).length + ' combat, electronic warfare, and street techniques.', 'techniques-all')}
+        ${homeCard('[TCH]', 'Techniques', Object.keys(techniques).length + ' combat, electronic warfare, street, and command techniques.', 'techniques-all')}
         ${homeCard('[PEC]', 'Peculiarities', Object.keys(advantages).length + ' Advantages, ' + Object.keys(disadvantages).length + ' Disadvantages, ' + Object.keys(passions).length + ' Passions, and ' + Object.keys(anxieties).length + ' Anxieties.', 'advantages-all')}
         ${homeCard('[MOD]', 'T-Doll Modules', Object.keys(modules).length + ' augmentations, flash training packages, and upgrades.', 'modules-all')}
       </div>
@@ -635,6 +635,7 @@
       'social': 'Social',
       'vehicle': 'Vehicle',
       'remolding': 'Remolding',
+      'command': 'Command',
     };
 
     // Set initial type from hash if not set
@@ -714,13 +715,14 @@
       'Social': '<img src="assets/Technique-Social.svg" alt="Social" class="technique-icon">',
       'Vehicle': '<img src="assets/Technique-Vehicle.svg" alt="Vehicle" class="technique-icon">',
       'Remolding': '<img src="assets/Technique-Remolding.svg" alt="Remolding" class="technique-icon">',
+      'Command': '◆',
     };
 
     const title = activeType || 'All Techniques';
     const icon = typeIcons[activeType] || '◆';
 
     // Dropdown options
-    const typeOptions = ['All', 'Combat', 'Electronic Warfare', 'Street', 'Conditioning', 'Science', 'Social', 'Vehicle', 'Remolding'];
+    const typeOptions = ['All', 'Combat', 'Electronic Warfare', 'Street', 'Conditioning', 'Science', 'Social', 'Vehicle', 'Remolding', 'Command'];
     const rankOptions = ['All', 1, 2, 3];
     const approachOptions = ['All', 'Fortune', 'Power', 'Precision', 'Resilience', 'Swiftness'];
     const skillOptions = ['All', 'Blades', 'Computers', 'Conditioning', 'Deception', 'Explosives', 'Firearms', 'Hand-to-Hand', 'Resolve', 'Science', 'Stealth', 'Subterfuge', 'Survival', 'Tactics'];

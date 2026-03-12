@@ -39,6 +39,8 @@ def apply_shortcodes(obj: object) -> object:
 def transpile_data(data_dir: Path, delete_source: bool = False) -> tuple[list[Path], list[Path]]:
     written_files: list[Path] = []
     deleted_files: list[Path] = []
+    
+    # Process top-level .djson files
     for djson_path in sorted(data_dir.glob("*.djson")):
         output_path = djson_path.with_suffix(".json")
         parsed = docstring_json.load(str(djson_path))
@@ -53,6 +55,27 @@ def transpile_data(data_dir: Path, delete_source: bool = False) -> tuple[list[Pa
         if delete_source:
             djson_path.unlink()
             deleted_files.append(djson_path)
+
+    # Process techniques subdirectory and merge into techniques.json
+    techniques_dir = data_dir / "techniques"
+    if techniques_dir.exists():
+        merged: dict = {}
+        for djson_path in sorted(techniques_dir.glob("*.djson")):
+            parsed = docstring_json.load(str(djson_path))
+            transformed = apply_shortcodes(parsed)
+            if isinstance(transformed, dict):
+                merged.update(transformed)
+
+            if delete_source:
+                djson_path.unlink()
+                deleted_files.append(djson_path)
+
+        output_path = data_dir / "techniques.json"
+        output_path.write_text(
+            json.dumps(merged, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        written_files.append(output_path)
 
     return written_files, deleted_files
 

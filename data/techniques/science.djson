@@ -1,0 +1,21 @@
+{
+  "Jack of All Trades": {
+    "rank": 3,
+    "type": "Science",
+    "approach": "Fortune",
+    "skill": "Science",
+    "flavor": """
+      All skills share the same fundamental principle: the application of knowledge to achieve a desired outcome. A versatile operator can leverage their understanding of one field to enhance their performance in another, treating their proficiency in one area as a proxy for another when the situation calls for it.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per scene as a Support action, you may make a <strong>TN 4 Science (Fortune)</strong> check.</p>
+      <h3>Effects:</h3>
+      <p>On success, choose one skill. Until the end of the scene, when making checks using the chosen skill, treat your rating in that skill as equal to your Science rating if it would otherwise be lower.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op):</strong> This technique applies to one additional skill of your choice.</li>
+      </ul>
+    """
+  }
+}

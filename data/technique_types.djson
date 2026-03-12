@@ -39,5 +39,10 @@
         description: """
             Remolding techniques are the bleeding edge of what's possible, harnessing collapse radiation to bend, break, or rewrite reality itself. Unrpedictable and dangerous, these abilities are the domain of those who are willing to risk everything for a chance at power beyond imagination.
         """
+    },
+    Command: {
+        description: """
+            Command techniques are the art of leadership on the battlefield. These abilities focus on coordinating units, managing morale, and directing the flow of large-scale engagements. From rallying broken formations to orchestrating complex maneuvers, Command techniques turn individual fighters into a cohesive fighting force capable of winning mass battles and managing cohorts effectively.
+        """
     }
 }

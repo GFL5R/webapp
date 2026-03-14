@@ -263,12 +263,11 @@
   },
   "Remolding Unit": {
     type: "Remolding",
-    cost: null,
+    cost: 60000,
     skill: null,
     approach: null,
     description: """
       <p>Remolding is a highly experimental tech that allows the user to harness ambient collapse radiation to affect reality. Taking this module will allow you use Remolding techniques.</p>
-      <p><strong>TODO:</strong> Determine cost.</p>
     """
   }
 }

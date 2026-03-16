@@ -464,18 +464,31 @@
       <div class="home-grid">
         ${homeCard('[SET]', 'Setting & T-Dolls', 'The world of 2072, T-Doll technology, and the pair dynamic.', 'Setting & T-Dolls')}
         ${homeCard('[FAC]', 'Factions & Powers', 'Governments, corporations, bandits, and cults shaping the world of 2072.', 'Factions & Powers')}
-        ${homeCard('[COR]', 'Core Rules', 'Checks, approaches, skills, and the fundamental mechanics.', 'Making a Check')}
-        ${homeCard('[CHR]', 'Character Creation', 'Build your Commander and T-Doll pair through guided questions.', 'Introduction')}
-        ${homeCard('[DSC]', 'Disciplines', 'Class progressions, rank structure, and technique trees.', 'Disciplines')}
-        ${homeCard('[STR]', 'Strife & Conditions', 'Stress mechanics, emotional pressure, and status effects.', 'Strife')}
+        ${homeCard('[APP]', 'Approaches & Attributes', 'The six approaches and derived attributes like Vigor, Focus, and Composure.', 'Approaches & Derived Attributes')}
+        ${homeCard('[SKL]', 'Skills', 'The 13 skills covering combat, technical, and social competencies.', 'Skills')}
+        ${homeCard('[CHK]', 'Making a Check', 'Roll-and-keep mechanics, opportunities, complications, and outcomes.', 'Making a Check')}
+        ${homeCard('[INT]', 'A Boy and His Doll', 'Introduction to the Commander and T-Doll pair dynamic.', 'A Boy and His Doll')}
+        ${homeCard('[CMD]', 'Building a Commander', 'Create your human Commander through guided questions.', 'Building a Commander')}
+        ${homeCard('[TDL]', 'Building Your T-Doll', 'Create your Tactical Doll through guided questions.', 'Building Your T-Doll')}
+        ${homeCard('[HUM]', 'Humanity & Fame', 'Humanity, reputation, and the social standing of your pair.', 'Humanity & Fame')}
+        ${homeCard('[DIS]', 'Disciplines', 'Class progressions, rank structure, and technique trees.', 'Disciplines')}
+        ${homeCard('[EXP]', 'Experience', 'Spending experience points and character advancement.', 'Experience')}
+        ${homeCard('[SCN]', 'Scenes', 'Scene structure, timing, and the rhythm of play.', 'Scenes')}
+        ${homeCard('[STF]', 'Strife', 'Stress mechanics, emotional pressure, and outbursts.', 'Strife')}
         ${homeCard('[RNG]', 'Range & Movement', 'Tactical space, range bands, and movement mechanics.', 'Range & Movement')}
         ${homeCard('[WPN]', 'Weapons & Armor', 'Weapon profiles, categories, armor, and equipment.', 'Weapons & Armor')}
+        ${homeCard('[HRM]', 'Harm & Healing', 'Wounds, critical hits, recovery, and medical treatment.', 'Harm & Healing')}
+        ${homeCard('[CND]', 'Conditions', 'Status effects, injuries, and temporary impairments.', 'Conditions')}
         ${homeCard('[EWR]', 'Electronic Warfare', 'Hacking, networks, nodes, sentries, and digital operations.', 'Electronic Warfare')}
         ${homeCard('[VEH]', 'Driving & Vehicles', 'Chase mechanics, vehicle combat, and positions.', 'Driving & Vehicles')}
         ${homeCard('[RAD]', 'Collapse Radiation', 'Exposure, ELID, contamination zones, and protective measures.', 'Collapse Radiation')}
-        ${homeCard('[CRM]', 'Crime & Investigation', 'Evidence, investigation checks, and accusation mechanics.', 'Crime')}
+        ${homeCard('[POI]', 'Poisons & Drugs', 'Toxins, pharmaceuticals, and their effects on the body.', 'Poisons & Drugs')}
+        ${homeCard('[CRM]', 'Crime', 'Evidence, investigation checks, and accusation mechanics.', 'Crime')}
         ${homeCard('[TCH]', 'Techniques', Object.keys(techniques).length + ' combat, electronic warfare, street, and command techniques.', 'techniques-all')}
-        ${homeCard('[PEC]', 'Peculiarities', Object.keys(advantages).length + ' Advantages, ' + Object.keys(disadvantages).length + ' Disadvantages, ' + Object.keys(passions).length + ' Passions, and ' + Object.keys(anxieties).length + ' Anxieties.', 'advantages-all')}
+        ${homeCard('[ADV]', 'Advantages', Object.keys(advantages).length + ' traits that let you reroll dice when conditions are met.', 'advantages-all')}
+        ${homeCard('[DIS]', 'Disadvantages', Object.keys(disadvantages).length + ' traits that force rerolls of favorable dice.', 'disadvantages-all')}
+        ${homeCard('[PAS]', 'Passions', Object.keys(passions).length + ' emotional anchors that remove Strife when engaged.', 'passions-all')}
+        ${homeCard('[ANX]', 'Anxieties', Object.keys(anxieties).length + ' emotional triggers that add Strife when provoked.', 'anxieties-all')}
         ${homeCard('[MOD]', 'T-Doll Modules', Object.keys(modules).length + ' augmentations, flash training packages, and upgrades.', 'modules-all')}
       </div>
     `;

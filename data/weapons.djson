@@ -58,7 +58,7 @@
     price: 1450,
     qualities: ["Durable", "Concealable", "Mobile"],
     flavor: """
-      <p>The standard issue combat knife of the Austrian military, also serving as a bayonet for the Steyr AUG. Its polymer handle and phosphated carbon steel blade are built for hard use in the field.</p>
+      <p>The standard issue combat knife of the Austrian military through World War III, also serving as a bayonet for the Steyr AUG. Its polymer handle and phosphated carbon steel blade are built for hard use in the field.</p>
     """
   },
   "Gerber Mark II": {
@@ -202,7 +202,7 @@
     price: 1500,
     qualities: ["Mobile"],
     flavor: """
-      <p>The current standard issue sidearm of the U.S. military. Its modular grip module allows the same fire control unit to be transferred between different frame sizes. Chambered in 9×19mm.</p>
+      <p>The standard issue sidearm of the U.S. military through World War III. Its modular grip module allows the same fire control unit to be transferred between different frame sizes. Chambered in 9×19mm.</p>
     """
   },
   "M1911A1": {
@@ -217,7 +217,7 @@
     price: 1700,
     qualities: ["Durable", "Mobile"],
     flavor: """
-      <p>The classic .45 ACP semi-automatic pistol, in service for over a century. Its heavy bullet delivers significant stopping power, though its 7-round magazine and slower follow-up shots limit volume of fire.</p>
+      <p>The classic .45 ACP semi-automatic pistol, in service for well over a century. Its heavy bullet delivers significant stopping power, though its 7-round magazine and slower follow-up shots limit volume of fire.</p>
     """
   },
   "Glock 19": {
@@ -277,7 +277,7 @@
     price: 1600,
     qualities: ["Durable", "Mobile"],
     flavor: """
-      <p>The long-serving standard sidearm of the U.S. military, only recently replaced by the SIG P320. Its open-slide design and 15-round capacity made it a reliable workhorse for decades.</p>
+      <p>The long-serving standard sidearm of the U.S. military, replaced by the SIG P320 before World War III. Its open-slide design and 15-round capacity made it a reliable workhorse for decades.</p>
     """
   },
 
@@ -422,7 +422,7 @@
     price: 1900,
     qualities: ["Durable", "AOE"],
     flavor: """
-      <p>The semi-automatic combat shotgun adopted by the U.S. Marine Corps. Its gas-operated system provides reliable cycling with various loads, and its semi-automatic action allows faster follow-up shots than pump-action designs.</p>
+      <p>The semi-automatic combat shotgun adopted by the U.S. Marine Corps before World War III. Its gas-operated system provides reliable cycling with various loads, and its semi-automatic action allows faster follow-up shots than pump-action designs.</p>
     """
   },
   "Saiga-12": {
@@ -472,7 +472,7 @@
     price: 1800,
     qualities: [],
     flavor: """
-      <p>The standard carbine of the U.S. military. Its 14.5-inch barrel balances compactness with ballistic performance, and its rail system allows extensive customization. Chambered in 5.56×45mm NATO.</p>
+      <p>The standard carbine of the U.S. military through World War III. Its 14.5-inch barrel balances compactness with ballistic performance, and its rail system allows extensive customization. Chambered in 5.56×45mm NATO.</p>
     """
   },
   "M16A4 Rifle": {
@@ -502,7 +502,7 @@
     price: 1800,
     qualities: ["Durable"],
     flavor: """
-      <p>A piston-driven improvement on the AR-15 platform, adopted by special operations forces worldwide. Its gas piston system runs cleaner and cooler than direct impingement designs.</p>
+      <p>A piston-driven improvement on the AR-15 platform, adopted by special operations forces worldwide before World War III. Its gas piston system runs cleaner and cooler than direct impingement designs.</p>
     """
   },
   "AK-74M": {
@@ -517,7 +517,7 @@
     price: 1800,
     qualities: ["Durable"],
     flavor: """
-      <p>The modern Russian assault rifle chambered in 5.45×39mm. Its steel-reinforced polymer furniture and chrome-lined barrel are built for harsh conditions and minimal maintenance.</p>
+      <p>The Russian assault rifle chambered in 5.45×39mm, standard issue through World War III. Its steel-reinforced polymer furniture and chrome-lined barrel was built for harsh conditions and minimal maintenance.</p>
     """
   },
   "FN SCAR-L": {
@@ -802,7 +802,7 @@
     price: 1700,
     qualities: ["Stationary", "Durable"],
     flavor: """
-      <p>The standard medium machine gun of the U.S. military, chambered in 7.62×51mm NATO. Its belt-fed design provides sustained fire capability at extended ranges with greater stopping power than the SAW.</p>
+      <p>The standard medium machine gun of the U.S. military through World War III, chambered in 7.62×51mm NATO. Its belt-fed design provides sustained fire capability at extended ranges with greater stopping power than the SAW.</p>
     """
   },
   "M240L": {
@@ -862,7 +862,7 @@
     price: 1700,
     qualities: ["Stationary", "Durable"],
     flavor: """
-      <p>The modern German general-purpose machine gun, chambered in 7.62×51mm NATO. Its quick-change barrel and robust design provide reliable sustained fire in adverse conditions.</p>
+      <p>The German general-purpose machine gun, chambered in 7.62×51mm NATO. Its quick-change barrel and robust design provide reliable sustained fire in adverse conditions.</p>
     """
   }
 }

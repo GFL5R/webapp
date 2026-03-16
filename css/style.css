@@ -764,6 +764,27 @@ body {
 .technique-card__corner--bl { bottom: 0; left: 0; border-bottom: 2px solid; border-left: 2px solid; }
 .technique-card__corner--br { bottom: 0; right: 0; border-bottom: 2px solid; border-right: 2px solid; }
 
+/* --- Weapon Stats --- */
+.weapon-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px 16px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.weapon-stat {
+  font-size: 0.85rem;
+  color: var(--white-dim);
+}
+
+.weapon-stat strong {
+  color: var(--yellow);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
 /* --- Technique Filters --- */
 .technique-filters {
   display: flex;

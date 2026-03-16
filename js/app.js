@@ -97,6 +97,7 @@
     peculiarityTypes:    'data/peculiarities_types.json',
     moduleTypes:         'data/module_types.json',
     modules:             'data/modules.json',
+    weapons:             'data/weapons.json',
   };
 
   // Section display names for breadcrumbs (used by data pages)
@@ -115,6 +116,7 @@
   let peculiarityTypes = {};
   let moduleTypes = {};
   let modules = {};
+  let weapons = {};
   let currentPage = 'home';
   let allSearchableContent = [];
   let techniqueFilters = {
@@ -249,6 +251,8 @@
       renderAnxietiesPage(page);
     } else if (page.startsWith('modules-')) {
       renderModulesPage(page);
+    } else if (page.startsWith('weapons-')) {
+      renderWeaponsPage(page);
     } else if (HTML_PAGES[page]) {
       await renderHTMLPage(page);
     } else {
@@ -279,7 +283,7 @@
   // ── Load All JSON Data ──────────────────────────────────────────
   async function loadAllData() {
     try {
-      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData] = await Promise.all([
+      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData] = await Promise.all([
         fetch(DATA_FILES.techniqueTypes).then(r => r.json()),
         fetch(DATA_FILES.techniques).then(r => r.json()),
         fetch(DATA_FILES.advantages).then(r => r.json()),
@@ -289,6 +293,7 @@
         fetch(DATA_FILES.peculiarityTypes).then(r => r.json()),
         fetch(DATA_FILES.moduleTypes).then(r => r.json()),
         fetch(DATA_FILES.modules).then(r => r.json()),
+        fetch(DATA_FILES.weapons).then(r => r.json()),
       ]);
       techniqueTypes = typesData || {};
       techniques = techData || {};
@@ -299,6 +304,7 @@
       peculiarityTypes = pecTypesData || {};
       moduleTypes = modTypesData || {};
       modules = modData || {};
+      weapons = weaponsData || {};
     } catch (e) {
       console.error('Failed to load data:', e);
     }
@@ -383,6 +389,17 @@
         page: `modules-${(mod.type || 'all').toLowerCase().replace(/\s+/g, '')}`,
         type: 'module',
         data: mod,
+      });
+    });
+
+    // Add weapons
+    Object.entries(weapons).forEach(([name, wpn]) => {
+      allSearchableContent.push({
+        title: name,
+        section: `Weapon: ${wpn.category || 'General'}`,
+        page: `weapons-${(wpn.category || 'all').toLowerCase()}`,
+        type: 'weapon',
+        data: wpn,
       });
     });
   }
@@ -490,6 +507,7 @@
         ${homeCard('[PAS]', 'Passions', Object.keys(passions).length + ' emotional anchors that remove Strife when engaged.', 'passions-all')}
         ${homeCard('[ANX]', 'Anxieties', Object.keys(anxieties).length + ' emotional triggers that add Strife when provoked.', 'anxieties-all')}
         ${homeCard('[MOD]', 'T-Doll Modules', Object.keys(modules).length + ' augmentations, flash training packages, and upgrades.', 'modules-all')}
+        ${homeCard('[WPN]', 'Weapons', Object.keys(weapons).length + ' firearms, blades, and combat equipment.', 'weapons-all')}
       </div>
     `;
 
@@ -1420,6 +1438,197 @@
         <div class="technique-card__body">
           ${mod.flavor ? `<div class="technique-card__flavor">${mod.flavor}</div>` : ''}
           ${mod.description || '<p>No description available.</p>'}
+        </div>
+      </div>
+    `;
+  }
+
+  // ── Weapons Page ──────────────────────────────────────────────
+  function renderWeaponsPage(page) {
+    const filterType = page.replace('weapons-', '');
+    
+    // Category map for slug resolution
+    const categoryMap = {
+      'all': null,
+      'knf': 'KNF',
+      'bld': 'BLD',
+      'hg': 'HG',
+      'smg': 'SMG',
+      'sg': 'SG',
+      'ar': 'AR',
+      'br': 'BR',
+      'rf': 'RF',
+      'mg': 'MG',
+    };
+
+    const activeCategory = categoryMap[filterType.toLowerCase()] || null;
+
+    // Filter
+    const filtered = Object.entries(weapons).filter(([name, wpn]) => {
+      if (!activeCategory) return true;
+      return wpn.category === activeCategory;
+    });
+
+    // Sort by category order, then by name
+    const categoryOrder = { 'KNF': 0, 'BLD': 1, 'HG': 2, 'SMG': 3, 'SG': 4, 'AR': 5, 'BR': 6, 'RF': 7, 'MG': 8 };
+    filtered.sort((a, b) => {
+      const orderDiff = (categoryOrder[a[1].category] || 9) - (categoryOrder[b[1].category] || 9);
+      if (orderDiff !== 0) return orderDiff;
+      return a[0].localeCompare(b[0]);
+    });
+
+    // Category display names
+    const categoryNames = {
+      'KNF': 'Knives',
+      'BLD': 'Blades',
+      'HG': 'Handguns',
+      'SMG': 'Submachine Guns',
+      'SG': 'Shotguns',
+      'AR': 'Assault Rifles',
+      'BR': 'Battle Rifles',
+      'RF': 'Rifles',
+      'MG': 'Machine Guns',
+    };
+
+    const title = activeCategory ? `${categoryNames[activeCategory] || activeCategory}` : 'All Weapons';
+
+    // Category descriptions
+    const categoryDescriptions = {
+      'KNF': 'Bladed weapons under 30 cm. Silent, concealable, and devastating in close quarters.',
+      'BLD': 'Bladed weapons over 30 cm. Larger cutting tools and swords for melee combat.',
+      'HG': 'Compact one-handed firearms. Low rate of fire, moderate stopping power.',
+      'SMG': 'Automatic pistol-caliber weapons. High rate of fire, lower deadliness.',
+      'SG': 'Close-quarters spread weapons. High damage, area effect, short range.',
+      'AR': 'Intermediate cartridge automatics. Moderate rate of fire, moderate stopping power.',
+      'BR': 'Full-power cartridge automatics. Lower rate of fire, higher stopping power.',
+      'RF': 'Precision long guns. Low rate of fire, very high stopping power.',
+      'MG': 'Sustained fire weapons. Very high rate of fire, moderate deadliness.',
+    };
+
+    const typeDesc = activeCategory
+      ? categoryDescriptions[activeCategory]
+      : 'All available weapons organized by category. Each weapon has unique stats for damage, deadliness, range, and special qualities.';
+
+    const typeIcons = {
+      'KNF': '🗡',
+      'BLD': '⚔',
+      'HG': '🔫',
+      'SMG': '🔫',
+      'SG': '🔫',
+      'AR': '🔫',
+      'BR': '🔫',
+      'RF': '🎯',
+      'MG': '🔫',
+    };
+    const icon = typeIcons[activeCategory] || '◆';
+
+    // Group by category
+    const byCategory = {};
+    filtered.forEach(([name, wpn]) => {
+      const cat = wpn.category || 'Other';
+      if (!byCategory[cat]) byCategory[cat] = [];
+      byCategory[cat].push([name, wpn]);
+    });
+
+    let html = `
+      <div class="breadcrumb">
+        <a href="#home">HOME</a>
+        <span class="sep">›</span>
+        <a href="#weapons-all">ITEMS</a>
+        <span class="sep">›</span>
+        <a href="#weapons-all">WEAPONS</a>
+        ${activeCategory ? `<span class="sep">›</span>${(categoryNames[activeCategory] || activeCategory).toUpperCase()}` : ''}
+      </div>
+
+      <div class="type-header">
+        <div class="type-header__icon">${icon}</div>
+        <div class="type-header__info">
+          <h1>${title.toUpperCase()}</h1>
+          <div class="type-header__desc">${typeDesc}</div>
+        </div>
+      </div>
+
+      <div class="technique-filters">
+        ${filterBtn('ALL', 'weapons-all', !activeCategory)}
+        ${filterBtn('KNIVES', 'weapons-knf', activeCategory === 'KNF')}
+        ${filterBtn('BLADES', 'weapons-bld', activeCategory === 'BLD')}
+        ${filterBtn('HANDGUNS', 'weapons-hg', activeCategory === 'HG')}
+        ${filterBtn('SMG', 'weapons-smg', activeCategory === 'SMG')}
+        ${filterBtn('SHOTGUNS', 'weapons-sg', activeCategory === 'SG')}
+        ${filterBtn('ASSAULT', 'weapons-ar', activeCategory === 'AR')}
+        ${filterBtn('BATTLE', 'weapons-br', activeCategory === 'BR')}
+        ${filterBtn('RIFLES', 'weapons-rf', activeCategory === 'RF')}
+        ${filterBtn('MG', 'weapons-mg', activeCategory === 'MG')}
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--white-dimmer); letter-spacing: 1px; margin-bottom: 20px;">
+        ${filtered.length} WEAPON${filtered.length !== 1 ? 'S' : ''} FOUND
+      </div>
+    `;
+
+    // Render by category group
+    const categoryOrderList = ['KNF', 'BLD', 'HG', 'SMG', 'SG', 'AR', 'BR', 'RF', 'MG'];
+    categoryOrderList.forEach(cat => {
+      const group = byCategory[cat];
+      if (!group || group.length === 0) return;
+
+      if (!activeCategory) {
+        html += `
+          <div class="rank-divider">
+            <div class="rank-divider__line"></div>
+            <div class="rank-divider__label">${(categoryNames[cat] || cat).toUpperCase()}</div>
+            <div class="rank-divider__line"></div>
+          </div>
+        `;
+      }
+
+      html += '<div class="technique-grid">';
+      group.forEach(([name, wpn]) => {
+        html += renderWeaponCard(name, wpn);
+      });
+      html += '</div>';
+    });
+
+    contentInner.innerHTML = html;
+    attachFilterHandlers();
+    attachCardToggleHandlers();
+  }
+
+  function renderWeaponCard(name, wpn) {
+    const qualities = wpn.qualities && wpn.qualities.length > 0 
+      ? wpn.qualities.map(q => escapeHtml(q)).join(', ') 
+      : null;
+    const priceStr = wpn.price ? `${wpn.price.toLocaleString()} ¤` : 'TBD';
+
+    return `
+      <div class="technique-card">
+        <div class="technique-card__corner technique-card__corner--tl"></div>
+        <div class="technique-card__corner technique-card__corner--tr"></div>
+        <div class="technique-card__corner technique-card__corner--bl"></div>
+        <div class="technique-card__corner technique-card__corner--br"></div>
+
+        <div class="technique-card__header">
+          <div class="technique-card__name">${escapeHtml(name)}</div>
+          <div class="technique-card__meta">
+            <span class="technique-card__tag tag-type">${escapeHtml(wpn.category || 'WEAPON')}</span>
+            <span class="technique-card__tag tag-rank">${priceStr}</span>
+            <span class="technique-card__tag tag-approach">DMG ${wpn.damage || 0}</span>
+            <span class="technique-card__tag tag-skill">DEAD ${wpn.deadliness || 0}</span>
+          </div>
+        </div>
+
+        <div class="technique-card__toggle"></div>
+
+        <div class="technique-card__body">
+          ${wpn.flavor ? `<div class="technique-card__flavor">${wpn.flavor}</div>` : ''}
+          <div class="weapon-stats">
+            <div class="weapon-stat"><strong>Skill:</strong> ${escapeHtml(wpn.skill || '—')}</div>
+            <div class="weapon-stat"><strong>Range:</strong> ${wpn.range !== undefined ? wpn.range : '—'}</div>
+            <div class="weapon-stat"><strong>Grip:</strong> ${escapeHtml(wpn.grip || '—')}</div>
+            <div class="weapon-stat"><strong>Threat:</strong> ${wpn.threat !== undefined ? wpn.threat : '—'}</div>
+            <div class="weapon-stat"><strong>Signature:</strong> ${wpn.signature !== undefined ? wpn.signature : '—'}</div>
+            ${qualities ? `<div class="weapon-stat"><strong>Qualities:</strong> ${qualities}</div>` : ''}
+          </div>
         </div>
       </div>
     `;

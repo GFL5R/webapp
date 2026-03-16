@@ -1,14 +1,7 @@
 #!/usr/bin/env python3
 """
 GFL5R Webapp — FastAPI development server
-
-Serves static files and dynamically parses .djson data files into JSON
-responses so no pre-build step is required.
-
-Usage:
-    .venv/bin/python server.py
-    # or with auto-reload:
-    .venv/bin/uvicorn server:app --reload
+...
 """
 
 import re
@@ -51,30 +44,9 @@ def _apply_shortcodes(obj):
     return obj
 
 
-# Data files served dynamically from their .djson source
-DJSON_SOURCES = {
-    "technique_types.json": BASE_DIR / "data" / "technique_types.djson",
-    "advantages.json":      BASE_DIR / "data" / "advantages.djson",
-    "disadvantages.json":   BASE_DIR / "data" / "disadvantages.djson",
-    "passions.json":        BASE_DIR / "data" / "passions.djson",
-    "anxieties.json":       BASE_DIR / "data" / "anxieties.djson",
-    "module_types.json":         BASE_DIR / "data" / "module_types.djson",
-    "modules.json":               BASE_DIR / "data" / "modules.djson",
-    "peculiarities_types.json":   BASE_DIR / "data" / "peculiarities_types.djson",
-}
-
-# Technique files split by type
-TECHNIQUE_FILES = {
-    "combat":              BASE_DIR / "data" / "techniques" / "combat.djson",
-    "electronic_warfare":  BASE_DIR / "data" / "techniques" / "electronic_warfare.djson",
-    "conditioning":        BASE_DIR / "data" / "techniques" / "conditioning.djson",
-    "science":             BASE_DIR / "data" / "techniques" / "science.djson",
-    "social":              BASE_DIR / "data" / "techniques" / "social.djson",
-    "vehicle":             BASE_DIR / "data" / "techniques" / "vehicle.djson",
-    "street":              BASE_DIR / "data" / "techniques" / "street.djson",
-    "remolding":           BASE_DIR / "data" / "techniques" / "remolding.djson",
-    "command":             BASE_DIR / "data" / "techniques" / "command.djson",
-}
+# Directories for data lookups
+DATA_DIR = BASE_DIR / "data"
+TECHNIQUES_DIR = DATA_DIR / "techniques"
 
 app = FastAPI(title="GFL5R Field Manual")
 
@@ -82,21 +54,34 @@ app = FastAPI(title="GFL5R Field Manual")
 @app.get("/data/{filename}")
 async def serve_data(filename: str):
     """Parse the matching .djson file and return it as JSON."""
-    # Handle techniques.json specially - merge all technique files
-    if filename == "techniques.json":
-        merged = {}
-        for tech_type, djson_path in TECHNIQUE_FILES.items():
-            if djson_path.exists():
-                data = docstring_json.load(str(djson_path))
-                data = _apply_shortcodes(data)
-                merged.update(data)
-        return JSONResponse(content=merged)
     
-    djson_path = DJSON_SOURCES.get(filename)
-    if djson_path is None:
-        raise HTTPException(status_code=404, detail=f"Unknown data file: {filename}")
+    # 1. Special handling for techniques.json: merge all .djson files from subdir
+    if filename == "techniques.json":
+        if not TECHNIQUES_DIR.is_dir():
+            raise HTTPException(status_code=404, detail="Techniques directory not found")
+
+        merged = {}
+        # Dynamically find all .djson files in the techniques folder
+        for djson_path in TECHNIQUES_DIR.glob("*.djson"):
+            data = docstring_json.load(str(djson_path))
+            data = _apply_shortcodes(data)
+            merged.update(data)
+        
+        if not merged:
+            raise HTTPException(status_code=404, detail="No technique files found")
+            
+        return JSONResponse(content=merged)
+
+    # 2. Standard handling: map filename.json -> filename.djson in the main data dir
+    if not filename.endswith(".json"):
+        raise HTTPException(status_code=400, detail="Request must end with .json")
+
+    # Simple string replacement to find the source file
+    djson_filename = filename.replace(".json", ".djson")
+    djson_path = DATA_DIR / djson_filename
+
     if not djson_path.exists():
-        raise HTTPException(status_code=404, detail=f"Source file not found: {djson_path.name}")
+        raise HTTPException(status_code=404, detail=f"Source file not found: {djson_filename}")
 
     data = docstring_json.load(str(djson_path))
     data = _apply_shortcodes(data)

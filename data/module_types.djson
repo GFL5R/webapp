@@ -12,6 +12,18 @@
       <p>Each training package increases the associated skill by 1 rank, at a cost of <strong>6,000 URNC Credits</strong>.</p>
     """
   },
+  "EW Augmentation": {
+    description: """
+      <p>EW Augmentation modules extend a T-Doll's native electronic warfare capabilities through dedicated hardware and software packages integrated directly into the frame. These upgrades go beyond general-purpose Computers skill — they tune the Neural Cloud's signal processing, encryption stack, and exploit libraries for active network operations.</p>
+      <p>An <strong>Electronic Warfare Suite</strong> increases EW Rating by 1, at a cost of <strong>10,000 URNC Credits</strong>. A <strong>Hardened Encryption Module</strong> increases Security Rating by 1, at a cost of <strong>8,000 URNC Credits</strong>. T-Dolls begin with a Security Rating of 2 and an EW Rating of 1.</p>
+    """
+  },
+  "Frame Augmentation": {
+    description: """
+      <p>Frame Augmentation modules modify the T-Doll's physical chassis and sensory systems at the hardware level. Unlike Approach Augmentations, which recalibrate the frame's core performance parameters, these modules target derived attributes and specialized capabilities — improving threat awareness, sustained attention, physical protection, and environmental tolerance. Some also add sensory systems absent from the base frame entirely.</p>
+      <p>Module costs vary by function and are listed on each individual module.</p>
+    """
+  },
   Remolding: {
     description: """
       <p>Remolding is a highly experimental tech that allows the user to harness ambient collapse radiation to affect reality. Unpredictable and dangerous, these modules are the domain of those who are willing to risk everything for a chance at power beyond imagination.</p>

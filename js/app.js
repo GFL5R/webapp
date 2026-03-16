@@ -24,6 +24,7 @@
     'Scenes':                           'pages/scenes.html',
     'Strife':                           'pages/strife.html',
     'Weapons & Armor':                  'pages/weapons-and-armor.html',
+    'Range & Movement':                 'pages/range-bands.html',
     'Harm & Healing':                   'pages/harm-and-healing.html',
     'Conditions':                       'pages/conditions.html',
     'Electronic Warfare':               'pages/electronic-warfare.html',
@@ -48,6 +49,7 @@
     'Experience',
     'Scenes',
     'Strife',
+    'Range & Movement',
     'Weapons & Armor',
     'Harm & Healing',
     'Conditions',
@@ -73,6 +75,7 @@
     'Experience':                       'Identity & Growth',
     'Scenes':                           'Gameplay',
     'Strife':                           'Gameplay',
+    'Range & Movement':                 'Combat',
     'Weapons & Armor':                  'Combat',
     'Harm & Healing':                   'Combat',
     'Conditions':                       'Combat',
@@ -465,6 +468,7 @@
         ${homeCard('[CHR]', 'Character Creation', 'Build your Commander and T-Doll pair through guided questions.', 'Introduction')}
         ${homeCard('[DSC]', 'Disciplines', 'Class progressions, rank structure, and technique trees.', 'Disciplines')}
         ${homeCard('[STR]', 'Strife & Conditions', 'Stress mechanics, emotional pressure, and status effects.', 'Strife')}
+        ${homeCard('[RNG]', 'Range & Movement', 'Tactical space, range bands, and movement mechanics.', 'Range & Movement')}
         ${homeCard('[WPN]', 'Weapons & Armor', 'Weapon profiles, categories, armor, and equipment.', 'Weapons & Armor')}
         ${homeCard('[EWR]', 'Electronic Warfare', 'Hacking, networks, nodes, sentries, and digital operations.', 'Electronic Warfare')}
         ${homeCard('[VEH]', 'Driving & Vehicles', 'Chase mechanics, vehicle combat, and positions.', 'Driving & Vehicles')}
@@ -1267,8 +1271,12 @@
       'all': null,
       'approachaugmentation': 'Approach Augmentation',
       'augmentation': 'Approach Augmentation',
+      'frameaugmentation': 'Frame Augmentation',
+      'frame': 'Frame Augmentation',
       'flashtraining': 'Flash Training',
       'training': 'Flash Training',
+      'ewaugmentation': 'EW Augmentation',
+      'ew': 'EW Augmentation',
       'remolding': 'Remolding',
     };
 
@@ -1281,7 +1289,7 @@
     });
 
     // Sort: augmentations first, then flash training (alphabetical), then remolding
-    const typeOrder = { 'Approach Augmentation': 0, 'Flash Training': 1, 'Remolding': 2 };
+    const typeOrder = { 'Approach Augmentation': 0, 'Frame Augmentation': 1, 'Flash Training': 2, 'EW Augmentation': 3, 'Remolding': 4 };
     filtered.sort((a, b) => {
       const orderDiff = (typeOrder[a[1].type] || 9) - (typeOrder[b[1].type] || 9);
       if (orderDiff !== 0) return orderDiff;
@@ -1297,7 +1305,9 @@
 
     const typeIcons = {
       'Approach Augmentation': '◎',
+      'Frame Augmentation': '◎',
       'Flash Training': '⬡',
+      'EW Augmentation': '⬡',
       'Remolding': '✧',
     };
     const icon = typeIcons[activeType] || '◆';
@@ -1330,8 +1340,10 @@
 
       <div class="technique-filters">
         ${filterBtn('ALL', 'modules-all', !activeType)}
-        ${filterBtn('AUGMENTATION', 'modules-augmentation', activeType === 'Approach Augmentation')}
+        ${filterBtn('APPROACH', 'modules-augmentation', activeType === 'Approach Augmentation')}
+        ${filterBtn('FRAME', 'modules-frame', activeType === 'Frame Augmentation')}
         ${filterBtn('FLASH TRAINING', 'modules-training', activeType === 'Flash Training')}
+        ${filterBtn('EW', 'modules-ew', activeType === 'EW Augmentation')}
         ${filterBtn('REMOLDING', 'modules-remolding', activeType === 'Remolding')}
       </div>
 
@@ -1341,7 +1353,7 @@
     `;
 
     // Render by type group
-    const typeLabels = ['Approach Augmentation', 'Flash Training', 'Remolding'];
+    const typeLabels = ['Approach Augmentation', 'Frame Augmentation', 'Flash Training', 'EW Augmentation', 'Remolding'];
     typeLabels.forEach(typeName => {
       const group = byType[typeName];
       if (!group || group.length === 0) return;
@@ -1393,6 +1405,7 @@
         <div class="technique-card__toggle"></div>
 
         <div class="technique-card__body">
+          ${mod.flavor ? `<div class="technique-card__flavor">${mod.flavor}</div>` : ''}
           ${mod.description || '<p>No description available.</p>'}
         </div>
       </div>

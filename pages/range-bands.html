@@ -1,0 +1,130 @@
+<h1>Range &amp; Movement</h1>
+
+<p>Tactical space in GFL5R is measured in <strong>range bands</strong>, abstract zones that represent how close two characters are and what weapons or actions can reach between them. Range bands are not a grid of squares painted on a map; they describe the relationship between combatants. A cramped server room at Band 0 and an open courtyard at Band 3 have wildly different geometry, but the rules treat them through the same lens: what can reach what, and how far does someone need to move to change that?</p>
+
+<h2>The Tactical Map</h2>
+
+<p>Most tactical games treat a map as a literal floor plan, with each square representing a fixed number of meters and movement a matter of counting tiles. GFL5R takes a different approach. The battlefield is a <strong>relational space</strong>: the distance between two characters matters, but the exact path between them does not. Two operators can be in the same range band even if a pillar or a ruined vehicle sits between them. What matters is that they are roughly in the same zone of engagement. Think of it less like a street map and more like the way a soldier actually processes a firefight: "they are close enough to rush," "they are behind that wall at medium range," "the sniper is somewhere far out."</p>
+
+<p>This abstraction scales naturally across environments. A parking garage, a jungle clearing, and a ship's engine room can all be described through the same bands without needing different rulers. The GM lays out relative positions at the start of a scene (who is close, who is at distance, what barriers exist) and characters move through those relationships as the fight develops.</p>
+
+<div class="rules-callout">
+  <h4>Hyperbolic Space</h4>
+  <p>Range bands compress real space into seven workable categories because the granularity that matters in a firefight is not "are you 22 meters away or 27?" but "can a shotgun reach you?" and "can a sniper rifle reach you?" Each band threshold corresponds to a meaningful shift in what weapons are effective, what movement costs, and what actions make sense. Intermediate distances within a band are not tracked.</p>
+</div>
+
+<hr>
+
+<h2>Range Bands</h2>
+
+<p>There are seven range bands, numbered 0 through 6. Band 0 is physical contact while Band 6 is the edge of extreme precision fire.</p>
+
+<table>
+  <thead>
+    <tr><th>Band</th><th>Distance</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>0</strong></td><td>0–3 m</td><td>Arm's reach. You could hit them with a broom. Melee weapons, point-blank firearms, and CQB tools dominate here. This is the distance of grapples, knife fights, and doorway standoffs.</td></tr>
+    <tr><td><strong>1</strong></td><td>3–10 m</td><td>Close-quarters. The distance a trained soldier can sprint in a handful of seconds. Most SMGs and handguns are designed for this band.</td></tr>
+    <tr><td><strong>2</strong></td><td>11–30 m</td><td>Short sprint distance. Interior hallways, alleys, and room-to-room transitions. Shotguns and SMGs start to lose dominance; assault rifles are comfortable here.</td></tr>
+    <tr><td><strong>3</strong></td><td>31–100 m</td><td>The bread-and-butter firefight distance for infantry in open terrain. Assault rifles and battle rifles are optimized for this band.</td></tr>
+    <tr><td><strong>4</strong></td><td>101–300 m</td><td>Long engagement range. Marksman rifles and long-barreled battle rifles perform well here; standard assault rifles take increasing penalties.</td></tr>
+    <tr><td><strong>5</strong></td><td>301–600 m</td><td>Designated marksman and precision rifle territory. Covering fire at this range requires purpose-built tools and skill.</td></tr>
+    <tr><td><strong>6</strong></td><td>601 m–1 km</td><td>Sniper distance. Long-precision fire with minimal room for error. Few weapons reach this band, and those that do often require the operator to be stationary and prepared.</td></tr>
+  </tbody>
+</table>
+
+<div class="rules-callout">
+  <p>Band distances are <strong>representative guidelines, not strict measurements</strong>. What matters is the tactical relationship: can this weapon reach that target, and what does it cost to change that? The GM should use common sense about the environment rather than measuring in real meters.</p>
+</div>
+
+<hr>
+
+<h2>Movement</h2>
+
+<p>Characters move by changing range bands: closing the gap, breaking contact, or repositioning relative to a target or objective. Range bands are bidirectional. Moving from Band 3 to Band 2 means closing in; moving from Band 2 to Band 3 means pulling back.</p>
+
+<h3>Free Movement</h3>
+
+<p>Once per turn, <strong>before or after performing an action</strong>, any character may move 1 range band. This movement is not an action and does not cost any part of the action economy. It represents the baseline tactical repositioning that happens constantly in a real engagement: shifting behind a new piece of cover, pressing forward after a burst, or backing off after a swing misses.</p>
+
+<h3>The Maneuver Action</h3>
+
+<p>When a character needs to cover more ground, they can dedicate their action to <strong>Maneuver</strong>. This moves 1 range band. The character may also make a <strong>TN 2 Conditioning</strong> check as part of the action; on a success, they move 2 range bands instead, plus 1 additional band per 2 bonus successes. Maneuver is used to sprint across an open kill zone, rush a fortified position, or break out of melee range under pressure.</p>
+
+<h3>Mobile Weapons</h3>
+
+<p>Some weapons carry the <strong>Mobile</strong> trait, which allows the bearer to move 2 range bands on their free movement instead of 1. Attacks made after using this enhanced move have their TN increased by 1. Firing accurately while in motion is harder than firing from a stable position.</p>
+
+<div class="rules-callout">
+  <h4>Movement Summary</h4>
+  <table>
+    <thead>
+      <tr><th>Method</th><th>Bands</th><th>Costs Action?</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Free movement</td><td>1</td><td>No</td><td>Once per turn, before or after action</td></tr>
+      <tr><td>Free movement (Mobile weapon)</td><td>2</td><td>No</td><td>Attack TN +1 after enhanced move</td></tr>
+      <tr><td>Maneuver (base)</td><td>1</td><td>Yes</td><td>Dedicate your action to movement</td></tr>
+      <tr><td>Maneuver (with Conditioning check, TN 2)</td><td>2 + 1 per 2 bonus successes</td><td>Yes</td><td>Sprint; requires Conditioning check</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+
+<h2>Range and Weapons</h2>
+
+<p>Each weapon has an <strong>Ideal Range</strong>: the band at which it performs best. Attacking outside that band increases the <strong>TN by +1 per band</strong> beyond the ideal. A handgun optimized for Band 1 attempting to hit a target at Band 3 faces a TN penalty of +2. This is not about physical impossibility but about the practical limits of accuracy and energy delivery at extended ranges.</p>
+
+<p>Melee weapons are an exception to this rule. Rather than incurring a TN penalty, they simply cannot reach targets beyond Band 0 at all. A blade, a baton, or a bare fist requires physical contact, and if your target is not adjacent, the attack cannot be made. Certain techniques may explicitly allow a melee weapon to reach further, but absent such a technique, Band 0 is the hard limit.</p>
+
+<h3>Out of Range</h3>
+
+<p>If a target is outside your weapon's reach, close the gap before you attack. Declaring intent to attack an unreachable target is valid, but the effects cannot land until you are in range. Use free movement or Maneuver to close, then act.</p>
+
+<hr>
+
+<h2>Barriers and Blocked Paths</h2>
+
+<p>Changing range bands sometimes requires crossing a barrier: a locked door, a fortified position, a contested corridor. Free movement and Maneuver move characters through open space; barriers require dedicated actions to bypass.</p>
+
+<p>In standard skirmishes, the GM establishes which paths between bands are open and which require work. A character cannot free-move through a locked steel door or a wall of suppressing fire. They must breach it, find another route, or accept the cost of moving through under fire. The GM adjudicates how much effort a barrier adds based on the fiction.</p>
+
+<h3>Difficult Terrain</h3>
+
+<p>Some terrain is passable but punishing. Any terrain classified as <strong>Difficult</strong> costs an extra range band of movement to pass through, regardless of how the movement is generated. Free movement and Maneuver are both affected. The following terrain types are all considered Difficult, and each carries additional effects beyond the movement cost.</p>
+
+<h4>Dangerous Terrain</h4>
+
+<p>Dangerous terrain is physically hazardous to enter or linger in. Whenever a character performs a check while within Dangerous terrain, they suffer physical damage equal to the <strong>(st) symbols</strong> on their kept dice.</p>
+
+<p><strong>Examples:</strong> Fire, intense cold, thawing ice, steep inclines, jagged rocks, an uncovered foundation, rubble.</p>
+
+<h4>Entangling Terrain</h4>
+
+<p>Entangling terrain seriously hampers the mobility of anyone within it. While within Entangling terrain, a character increases the TN of all checks to move and of all Movement actions by 2.</p>
+
+<p><strong>Examples:</strong> Sucking mud, brier patches, deep snow, icy ground, moving water.</p>
+
+<h4>Obscuring Terrain</h4>
+
+<p>Obscuring terrain limits the visibility of anyone within it, making it difficult to land strikes. Increase the TN of all Attack checks targeting characters within Obscuring terrain by 1. A character within Obscuring terrain generally cannot see beyond Band 2 of their current position into the Obscuring terrain, though they can typically see out of it if they are within Band 2 of an edge. A character outside of Obscuring terrain cannot see into it beyond Band 2 from the edge.</p>
+
+<p><strong>Examples:</strong> Dense foliage, darkness, cramped indoor quarters, heavy rain or snow, choking smoke.</p>
+
+<h4>Radiation</h4>
+
+<p>When a specific range band on the tactical map is designated as a radiation zone, treat it as a miniature Black Zone. Any character within that band gains <strong>+1 to their Collapse Track every round</strong> they remain there. Protective gear reduces effective exposure by one zone step; a character with standard protection in a radiation band treats it as a Red Zone, gaining +1 Collapse per hour instead of per round, a meaningful difference when choosing whether to push through or go around.</p>
+
+<p>Full rules on Collapse exposure, ELID progression, zone tiers, and treatment options are in the <a href="#Collapse Radiation">Collapse Radiation</a> chapter.</p>
+
+<div class="rules-callout">
+  <h4>Range Bands in Electronic Warfare</h4>
+  <p>EW scenes replace physical range bands with <strong>nodes and links</strong>. A character traverses one link per turn as free movement; links with barriers require a Bypass action. The abstraction is the same (relational space, not a precise map) but the terrain is network topology instead of physical ground. See the Electronic Warfare chapter for full details.</p>
+</div>
+
+<div class="example-box labeled">
+  <span class="example-label">◇ EXAMPLE: CLOSING THE GAP</span>
+  <p>An operator is at Band 3 from a guard position with a shotgun (Ideal Range 1). She cannot engage effectively at this distance; attacking would be TN +2 on top of the base TN. She uses her free move to close to Band 2 (still outside ideal), then burns her action on Maneuver and makes a TN 2 Conditioning check. She gets 2 successes, moves 2 more bands, and lands at Band 0. Now inside the guard's shotgun range, the guard faces the penalty instead. She attacks next round from Band 0.</p>
+</div>

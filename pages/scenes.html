@@ -1,165 +1,642 @@
-<h1>Scenes</h1>
+<h1>Scenes and Operations</h1>
 
-<p>Scenes are the building blocks of play. A scene sets expectations for pacing, time, turn structure, what risks are in focus, and how outcomes are decided. The GM declares when a scene starts and ends.</p>
+<p>When an operator gears up for a deployment, they never know if the next hour will be a tense waiting game or a desperate fight for survival. Days might pass in the monotony of base life or transit, punctuated only by maintenance drills and briefings. Then, a single operation can explode into a chaotic melee of noise, adrenaline, and lethal force. This chapter covers the rules for framing the narrative flow of the game, managing the passage of time, and resolving the conflicts that arise when objectives clash with opposition.</p>
+
+<h2>The Structure of Play</h2>
+
+<p>Each session is broken down into <strong>scenes</strong>. A scene is a discrete segment of the game: a briefing, a firefight, a tense negotiation, or a quiet night in the barracks, where the characters interact with the world in pursuit of a specific goal or in reaction to unfolding events.</p>
+
+<p>The GM decides when a scene begins and ends. At the outset, the GM establishes the sensory details of the environment and the stakes at hand. At the end, they provide a resolution and transition the narrative to the next moment of importance.</p>
+
+<h3>Key Properties for Any Scene</h3>
+
+<p>Every scene, whether a quiet conversation or a chaotic breach, shares common elements that define how the game is played. The GM should clarify these elements at the start:</p>
 
 <div class="rules-callout">
-  <h4>Key Properties for Any Scene</h4>
+  <h4>Operational Parameters</h4>
   <ul>
-    <li><strong>Purpose:</strong> what the scene is about.</li>
-    <li><strong>Duration:</strong> how time passes in fiction.</li>
-    <li><strong>Turn order:</strong> whether actions are freeform or structured.</li>
-    <li><strong>Initiative:</strong> how action priority is set when structured.</li>
-    <li><strong>Common actions:</strong> typical moves and checks that resolve tension.</li>
-    <li><strong>Outcomes:</strong> what ends the scene or changes its mode.</li>
+    <li><strong>Purpose:</strong> The objective of the scene. What are the characters trying to achieve or prevent?</li>
+    <li><strong>Duration:</strong> The narrative time scale. Does this scene take minutes, hours, or days?</li>
+    <li><strong>Turn Order:</strong> The flow of action. Is it freeform narrative flow, or is it structured by rounds?</li>
+    <li><strong>Initiative:</strong> How is action priority determined? Who acts first when the shooting starts?</li>
+    <li><strong>Common Actions:</strong> What specific moves or checks are relevant to the tension (e.g., stealth checks, social influence, suppressing fire)?</li>
+    <li><strong>Outcomes:</strong> What ends the scene? Is it a withdrawal, a completed objective, or an escalation into a different scene type?</li>
   </ul>
 </div>
 
-<h2>Structured Time</h2>
+<h3>Scene Transitions</h3>
 
-<p>Conflicts like Intrigues, Duels, Skirmishes, and Mass Battles use structured time: characters act in a regulated order, and each is limited in what they can accomplish before others have a chance to respond.</p>
+<p>The GM calls transitions when the fiction changes what the rules need to track. Escalate to structured play when timing and action sequence become load-bearing; de-escalate when pressure drops.</p>
 
-<p><strong>Actions</strong> are discrete tasks you undertake during a scene, usually by making a check. <strong>Turns</strong> are your chance to perform an action and accomplish small goals. <strong>Rounds</strong> are the span of time in which each character takes one turn.</p>
-
-<h3>Initiative</h3>
-
-<p>Initiative determines the order in which characters act during structured time. When a conflict begins, each participant makes an initiative check using a specific Skill:</p>
-
-<table>
-  <thead>
-    <tr><th>Scene Type</th><th>Initiative Skill</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Intrigues</td><td>Insight</td></tr>
-    <tr><td>Duels</td><td>Resolve</td></tr>
-    <tr><td>Skirmishes &amp; Breaches</td><td>Tactics</td></tr>
-    <tr><td>Mass Battles</td><td>Command</td></tr>
-    <tr><td>Electronic Warfare</td><td>Computers</td></tr>
-  </tbody>
-</table>
-
-<p>Your base initiative value depends on readiness: <strong>Focus</strong> if prepared, <strong>Vigilance</strong> if surprised. On success, add 1 plus bonus successes to your base. Characters act in descending order.</p>
-
-<h4>Approach Effects</h4>
-
-<p>The Approach you use for your initiative check grants a benefit throughout the conflict:</p>
-
-<div class="stat-block">
-  <div class="stat-item">
-    <span class="data-label">Resilience</span>
-    <hr/>
-    <p>Others cannot spend Opportunity on Attack/Scheme checks targeting you to inflict critical strikes or conditions.</p>
-  </div>
-  <div class="stat-item">
-    <span class="data-label">Swiftness</span>
-    <hr/>
-    <p>Perform one additional action that does not require a check (cannot share a type with another action this turn).</p>
-  </div>
-  <div class="stat-item">
-    <span class="data-label">Power</span>
-    <hr/>
-    <p>When you succeed, count each Strife symbol on your kept dice as one additional bonus success.</p>
-  </div>
-  <div class="stat-item">
-    <span class="data-label">Precision</span>
-    <hr/>
-    <p>Increase TN of Attack/Scheme checks targeting you by 1 (or 2 if Discipline rank total is 4+).</p>
-  </div>
-  <div class="stat-item">
-    <span class="data-label">Fortune</span>
-    <hr/>
-    <p>You do not receive Strife from Strife symbols on your kept dice. Other Strife sources still apply.</p>
-  </div>
+<div class="rules-callout">
+  <h4>Escalation Map</h4>
+  <table>
+    <thead>
+      <tr><th>From</th><th>To</th><th>When</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Narrative</td><td>Skirmish</td><td>Weapons come out and both sides need fair action sequencing to resolve the fight</td></tr>
+      <tr><td>Narrative</td><td>Duel</td><td>Two specific combatants step away from the group for a direct one-on-one confrontation</td></tr>
+      <tr><td>Narrative</td><td>Intrigue</td><td>Multiple voices are competing at once and freeform conversation can no longer keep outcomes clear</td></tr>
+      <tr><td>Narrative</td><td>Electronic Warfare</td><td>The network starts actively pushing back: a sentry triggers, a hostile operator engages</td></tr>
+      <tr><td>Narrative</td><td>Mass Battle</td><td>The scale of conflict grows beyond a small unit and command-level decisions drive outcomes</td></tr>
+      <tr><td>Narrative</td><td>Downtime</td><td>Immediate pressure resolves and the story shifts to recovery, travel, or longer-horizon work</td></tr>
+      <tr><td>Downtime</td><td>Any Conflict</td><td>Active opposition emerges and action economy suddenly matters</td></tr>
+      <tr><td>Downtime</td><td>Narrative</td><td>A specific moment needs closer attention; return to Downtime framing after</td></tr>
+      <tr><td>Any Conflict</td><td>Narrative</td><td>One side is defeated, driven off, or the outcome is no longer in meaningful doubt</td></tr>
+      <tr><td>Skirmish</td><td>Duel</td><td>Two combatants narrow the fight to each other while the larger engagement continues around them</td></tr>
+    </tbody>
+  </table>
+  <p>If an outcome can be settled with a single meaningful check, stay in Narrative mode. Structured conflict exists for sustained opposition where fairness requires sequenced turns.</p>
 </div>
 
 <hr>
 
 <h2>Narrative Scenes</h2>
 
-<p>Narrative scenes are for roleplay, exploration, and everyday interactions without formal timing. Time passes at whatever pace feels natural. There is no turn order: conversation and actions flow organically.</p>
+<p>Narrative scenes are the default mode of play, covering moments where characters investigate, negotiate, plan, infiltrate, and manage social pressure without entering structured combat timing. This is where most intelligence gathering, legwork, and relationship play happens.</p>
 
-<p>Make checks when uncertainty matters. Use these scenes to create advantages through preparation that can be carried into later scenes. The scene ends when goals are met, when stakes escalate into Intrigue or Skirmish, or when the fiction demands a time skip.</p>
+<p>Time flows naturally in narrative scenes. The GM does not count rounds unless the fiction demands it; instead, spotlight moves between characters as they act. The goal is to maintain momentum while still giving each player meaningful influence over events.</p>
+
+<h3>Running Narrative Scenes</h3>
+
+<div class="rules-callout">
+  <h4>Narrative Procedure</h4>
+  <ol>
+    <li><strong>Frame the situation:</strong> Establish location, immediate stakes, who is present, and what pressure is building.</li>
+    <li><strong>Set intent:</strong> Ask each player what they are trying to achieve in this scene right now.</li>
+    <li><strong>Follow the fiction:</strong> Resolve actions in conversational order, shifting spotlight as logic and pacing demand.</li>
+    <li><strong>Call for checks selectively:</strong> Roll when outcomes are uncertain, costly, opposed, or time-sensitive.</li>
+    <li><strong>Apply consequences:</strong> Success should change the situation; failure should introduce cost, delay, exposure, or escalation.</li>
+    <li><strong>Close or transition:</strong> End when goals are resolved, momentum drops, or the scene escalates into Downtime or Conflict.</li>
+  </ol>
+</div>
+
+<h3>Checks in Narrative Play</h3>
+
+<p>Do not roll for every statement or simple action. Roll when the answer is genuinely in doubt and the result matters. A check should either open an opportunity or create a new problem. If neither would happen, resolve by narration.</p>
+
+<ul>
+  <li><strong>Unopposed checks:</strong> Used for uncertain tasks against the environment (tailing a suspect, cracking a lock, reading a crowd).</li>
+  <li><strong>Opposed checks:</strong> Used when another character or NPC actively resists (deception vs scrutiny, coercion vs resolve).</li>
+  <li><strong>Assistance and setup:</strong> Characters can create favorable positioning, tools, or intel before a key roll to improve later odds.</li>
+</ul>
+
+<h3>Pacing and Spotlight</h3>
+
+<p>Narrative scenes work best when each player gets short, decisive spotlight turns. Keep actions focused, then hand focus to the next character at a natural beat. If two or more actions become tightly interlocked in time and sequence, consider shifting to structured play.</p>
+
+<div class="rules-callout">
+  <h4>Electronic Warfare in Narrative Scenes</h4>
+  <p>Hacking an undefended or low-security network does not require structured time. Handle it as a standard narrative check: the character states their goal, the GM sets a TN equal to the network's Security Rating, and the result either opens the next door or introduces a complication.</p>
+  <p>Heat is not tracked in narrative EW. The network has no active opposition capable of generating real-time pressure. Failure does not mean disconnection: it means noise, partial access, a longer route, or a flag that might matter later. Use Opportunity on a successful check to represent a cleaner foothold, useful incidental data, or an entry log quietly removed.</p>
+</div>
 
 <div class="example-box labeled">
-  <span class="example-label">◇ EXAMPLE: A QUIET BRIEFING</span>
-  <p>The team meets a handler. You ask questions, make a Precision plus Insight check to read between the lines, and set an approach for the next operation. No turn order is used.</p>
+  <span class="example-label">◇ EXAMPLE: THE DEAD DROP</span>
+  <p>You meet a contact in a rainy, neon-lit alleyway. The GM frames the stakes: confirm whether the data chip is authentic without alerting surveillance. You open with small talk while another operator watches rooftops. A <strong>Precision + Insight</strong> check reads the contact's body language; success reveals coercion, but your visible caution raises suspicion with nearby observers. The team pivots, changes extraction route, and exits before the scene can escalate into a street skirmish.</p>
 </div>
 
 <h2>Downtime Scenes</h2>
 
-<p>Downtime scenes represent extended periods of rest, travel, maintenance, learning, and light activity. These scenes can span days, weeks, or even months. Common uses include recovering Endurance or Composure, training Skills or advancing Disciplines, and managing long-term projects like crafting, repairs, research, or networking.</p>
+<p>Downtime scenes represent the interludes between operations: stretches of rest, travel, maintenance, training, or personal projects that can span hours, days, or weeks. Stakes are usually lower than in active conflicts, but the consequences are still meaningful. This is where characters rebuild, reposition, and prepare for what comes next.</p>
+
+<p>Time in downtime is not tracked in rounds. The GM and players skip over routine stretches and roleplay only the moments that matter. A two-week convoy escort might include only three played interactions: an argument at a checkpoint, a midnight repair under firelight, and a final planning session before contact.</p>
+
+<h3>Running Downtime Step by Step</h3>
+
+<div class="rules-callout">
+  <h4>Downtime Procedure</h4>
+  <ol>
+    <li><strong>Set the scope:</strong> The GM states how much time is passing and what constraints apply (safe base, hostile transit, limited supplies, strict schedule).</li>
+    <li><strong>Choose activities:</strong> Each player declares one primary downtime activity for their character.</li>
+    <li><strong>Play the key beats:</strong> Roleplay only important anecdotes and turning points; summarize routine hours or days.</li>
+    <li><strong>Call for checks when needed:</strong> Roll only when uncertainty or risk matters. Straightforward tasks can be resolved by narration.</li>
+    <li><strong>Resolve outcomes:</strong> Apply gains, setbacks, and project progress, then transition to the next scene.</li>
+  </ol>
+</div>
+
+<h3>Downtime Activities</h3>
+
+<p>At the start of downtime, each character picks what they are pursuing. Activities should be broad, practical goals rather than second-by-second action scripts. Typical choices include recovery, training, social networking, logistics, gear work, investigation, and travel.</p>
+
+<p>The GM is the final arbiter of what can reasonably be completed in the available time. If the scene is only a few hours before an assault, gathering disguises and local intel is plausible; forging a precision weapon from scratch is not.</p>
+
+<h3>How Much Can Be Done?</h3>
+
+<p>Use the scene's duration to set expectations before players commit to plans:</p>
+<ul>
+  <li><strong>Short downtime (hours to one day):</strong> One focused task, light recovery, or quick prep.</li>
+  <li><strong>Long downtime (more than two days):</strong> As a rule of thumb, each character can complete <strong>one downtime activity per two days</strong> of available time.</li>
+  <li><strong>Demanding downtime (forced march, evasive travel, nonstop duty):</strong> The activity may be limited to enduring the journey itself, with little room for side projects.</li>
+</ul>
+
+<p>Characters can attempt to squeeze in extra work by sacrificing rest, safety, or comfort, but the GM should attach appropriate risks, complications, or increased TNs.</p>
+
+<h3>Very Long Time Skips</h3>
+
+<p>For month-scale gaps or longer, do not play every step. The GM can simply advance the timeline, ask each player for a short summary of what their character pursued, then award modest growth (training progress, new contacts, incremental project completion, or earned experience) to reflect the passage of time.</p>
 
 <div class="example-box labeled">
-  <span class="example-label">◇ EXAMPLE: OVERLAND TRAVEL</span>
-  <p>You spend two weeks crossing a collapsed zone. One Fieldcraft check sets the overall success of foraging and route choice. The GM summarizes events. You reach the objective with minor Strife cleared.</p>
+  <span class="example-label">◇ EXAMPLE: MED LEAVE</span>
+  <p>After a botched extraction, the team gets six days of medical leave in a secure rear base. The GM sets constraints: limited workshop access, full hospital support, and one scheduled debrief. You choose recovery and clear accumulated Strife; another operator chooses gear work and tunes their sidearm; a third uses the remaining days to build a local contact network. The GM roleplays two key moments, asks for one check where uncertainty matters, then summarizes the rest of the week before the next briefing scene.</p>
 </div>
+
+<h2>Conflict Scenes</h2>
+
+<p>When two or more characters are in sustained opposition and timing matters, the GM should call for a <strong>Conflict Scene</strong>. This mode is built for extended contests where sequence, pressure, and counterplay all matter: firefights, breaches, hacker duels, command clashes, and other high-stakes engagements.</p>
+
+<p>Not every tense exchange needs full conflict rules. If the outcome can be settled with one meaningful contest, use a single opposed or competitive check and keep the scene in Narrative mode.</p>
+
+<h3>Conflict Types</h3>
+
+<p>All conflict scenes use the same core framework, but each type emphasizes different skills, actions, and win conditions:</p>
+
+<table>
+  <thead>
+    <tr><th>Conflict Type</th><th>Use Case</th><th>Initiative Skill</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Intrigues</td><td>Structured social pressure, negotiation, interrogation, political maneuvering</td><td>Insight</td></tr>
+    <tr><td>Duels</td><td>One-on-one high-stakes confrontations</td><td>Resolve</td></tr>
+    <tr><td>Skirmishes</td><td>Small-unit tactical combat</td><td>Tactics</td></tr>
+    <tr><td>Breaches</td><td>Close-quarters forced entry engagements</td><td>Tactics</td></tr>
+    <tr><td>Electronic Warfare</td><td>Contested cyber operations under pressure</td><td>Computers</td></tr>
+    <tr><td>Mass Battles</td><td>Large-scale command-level engagements</td><td>Command</td></tr>
+  </tbody>
+</table>
+
+<h3>Structured Time</h3>
+
+<p>In structured time, the narrative slows down. Characters act in a regulated order, and each is limited in what they can accomplish before their opponents have a chance to react.</p>
+<ul>
+  <li><strong>Actions:</strong> Discrete tasks undertaken during a scene, usually resolved with a check (e.g., firing a weapon, hacking a door, persuading a guard).</li>
+  <li><strong>Turns:</strong> A character's opportunity to perform an action and accomplish small goals, such as moving or setting a stance.</li>
+  <li><strong>Rounds:</strong> The span of time in which every participant takes one turn.</li>
+</ul>
+
+<h3>Conflict Flow (3 Phases)</h3>
+
+<div class="rules-callout">
+  <h4>Conflict Overview</h4>
+  <ol>
+    <li><strong>Phase 1: Initiative:</strong> Characters assess the situation, roll Initiative checks, and establish action order.</li>
+    <li><strong>Phase 2: Take Turns:</strong> Conflict proceeds round by round; each participant takes one turn in initiative order.</li>
+    <li><strong>Phase 3: Resolution:</strong> Once objectives are secured, broken, or abandoned, resolve end-of-conflict effects and transition scenes.</li>
+  </ol>
+</div>
+
+<h3>Initiative</h3>
+
+<p>Initiative determines who acts first and how momentum unfolds. At conflict start, the GM frames the immediate situation, then each major participant makes an <strong>Initiative Check</strong> to get their bearings. Default checks are <strong>TN 1</strong>; late arrivals entering under fire may face TN 2 or higher.</p>
+
+<div class="rules-callout">
+  <h4>Initiative Rules</h4>
+  <table>
+    <thead>
+      <tr><th>Scene Type</th><th>Initiative Skill</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Intrigues</td><td>Insight (Reading the room)</td></tr>
+      <tr><td>Duels</td><td>Resolve (Mental fortitude)</td></tr>
+      <tr><td>Skirmishes &amp; Breaches</td><td>Tactics (Situational awareness)</td></tr>
+      <tr><td>Mass Battles</td><td>Command (Leadership presence)</td></tr>
+      <tr><td>Electronic Warfare</td><td>Computers (Processing speed)</td></tr>
+    </tbody>
+  </table>
+  <p>Your base value is <strong>Focus</strong> if you were prepared (ambush set, weapons drawn) or <strong>Vigilance</strong> if caught off guard. On a successful check, add 1 plus bonus successes. Characters act in descending order; ties go to situational edge (position, preparedness, narrative logic). If initiative changes mid-conflict, apply at the listed timing and reorder at the start of the next round.</p>
+</div>
+
+<h3>Late Arrivals and Reinforcements</h3>
+
+<p>Characters entering an ongoing conflict generally join at the <strong>start of the next round</strong> and roll initiative then. In especially chaotic entries (hot breach lanes, active kill zones, or contested network layers), the GM may increase TN to reflect the difficulty of entering under fire.</p>
+
+<h3>Rounds and Turns</h3>
+
+<p>Phase 2 runs in rounds. At round start, resolve any "beginning of round" effects. Then each participant takes one turn in initiative order. After the final turn, resolve "end of round" effects and determine whether conflict continues.</p>
+
+<div class="rules-callout">
+  <h4>Turn Sequence</h4>
+  <ol>
+    <li><strong>Beginning of Turn:</strong> Resolve effects that trigger at turn start.</li>
+    <li><strong>Set Stance:</strong> Keep current stance or switch to a new one.</li>
+    <li><strong>Perform Action:</strong> Take one primary action (usually with a check).</li>
+    <li><strong>Reposition:</strong> Once per turn, move a short distance before or after your action.</li>
+    <li><strong>End of Turn:</strong> Resolve turn-end effects and pass initiative.</li>
+  </ol>
+</div>
+
+<h3>Actions in Conflict</h3>
+
+<p>Actions are declared with intent first, then resolved with checks and consequences. If a player proposes something outside listed actions, the GM can still adjudicate it using the same structure: declare intent, set TN/opposition, roll, resolve effects.</p>
+
+<ul>
+  <li><strong>Attack:</strong> Inflict harm, suppress, disable, or force displacement.</li>
+  <li><strong>Scheme:</strong> Manipulate behavior, morale, positioning, or decisions.</li>
+  <li><strong>Support:</strong> Assist allies, improve position, create tactical opportunities.</li>
+  <li><strong>Movement:</strong> Reposition, flank, withdraw, cross danger areas.</li>
+</ul>
+
+<p>If a target is currently unreachable, obscured, or out of action range, a character can still declare intent, but must first secure line of effect, close distance, or spend appropriate opportunities before effects can land.</p>
+
+<h3>Momentum for Complex Objectives</h3>
+
+<p>Some conflict goals take multiple actions to complete (overriding a hardened control node, evacuating civilians under fire, stabilizing a burning vehicle, sealing a breach route). For these, assign a <strong>difficulty value</strong> and track <strong>momentum</strong> toward completion.</p>
+
+<p>Each successful contributing action grants at least 1 momentum; bonus successes may add more at the GM's discretion. When accumulated momentum meets the difficulty value, the objective is achieved. This keeps long tasks visible without stalling turn-by-turn play.</p>
+
+<h4>Combat Approaches</h4>
+
+<p>The Approach chosen for your Initiative check sets your opening stance and tactical posture. You may keep or change stance on later turns, but each stance continues to provide a distinct passive benefit while active.</p>
+
+<div class="stat-block">
+  <div class="stat-item">
+    <span class="data-label">Resilience</span>
+    <hr/>
+    <p><em>Bunkering down.</em> Others cannot spend Opportunity on Attack or Scheme checks targeting you to inflict critical strikes or conditions. You are a fortress.</p>
+  </div>
+  <div class="stat-item">
+    <span class="data-label">Swiftness</span>
+    <hr/>
+    <p><em>Fluid movement.</em> Perform one additional action that does not require a check (cannot share a type with another action this turn). Adapt and overcome.</p>
+  </div>
+  <div class="stat-item">
+    <span class="data-label">Power</span>
+    <hr/>
+    <p><em>Aggressive assault.</em> When you succeed on a check, count each Strife symbol on your kept dice as one additional bonus success. Overwhelm the enemy.</p>
+  </div>
+  <div class="stat-item">
+    <span class="data-label">Precision</span>
+    <hr/>
+    <p><em>Cunning precision.</em> Increase TN of Attack/Scheme checks targeting you by 1 (or 2 if Discipline rank total is 4+). Make yourself a hard target.</p>
+  </div>
+  <div class="stat-item">
+    <span class="data-label">Fortune</span>
+    <hr/>
+    <p><em>Instinct and luck.</em> You do not receive Strife from Strife symbols on your kept dice. You remain cool under pressure; other Strife sources still apply.</p>
+  </div>
+</div>
+
+<hr>
 
 <h2>Intrigues</h2>
 
-<p>Intrigues handle structured social conflict where reactions must be ordered and stakes are contested without violence. Initiative is determined by Insight checks.</p>
+<p>Intrigues are structured social conflicts used to secure support, force concessions, expose vulnerabilities, and shape decisions before violence begins. These scenes cover war councils, tense negotiations, disciplinary hearings, command disputes, interrogations, and influence campaigns.</p>
 
-<p>On your turn you can <strong>Press</strong> to advance your position, <strong>Deflect</strong> to resist pressure, <strong>Observe</strong> to gather tells and openings, <strong>Assist</strong> others, or <strong>Withdraw</strong> to concede some stakes.</p>
+<p>Run an Intrigue when many active voices are competing and freeform conversation no longer keeps outcomes clear. For two-person exchanges or short arguments, a single opposed check is usually enough.</p>
+
+<h3>Social Objectives</h3>
+
+<p>At the start of Phase 1, each participating character selects a <strong>social objective</strong>: a concrete, measurable goal they are trying to achieve in the scene. Objectives define both strategy and end conditions for the intrigue.</p>
+
+<p>Characters can share one objective or pursue different ones. PCs may reveal objectives openly or keep them secret from each other, but they should always communicate them to the GM so the scene can be adjudicated fairly.</p>
+
+<p>Authority is contextual: command rank in military scenes, organizational seniority in workplace scenes, legal jurisdiction in government scenes, political office in civic scenes, and personal leverage in informal circles.</p>
+
+<h3>Momentum in Intrigues</h3>
+
+<p>Social objectives progress through momentum as described in the Conflict rules. The GM may keep difficulty values hidden from participants. If two sides complete opposing objectives in the same round, the side with more total momentum wins; if tied, the side with stronger scene-relevant authority (rank, office, mandate, or sponsor backing) wins unless the fiction dictates otherwise.</p>
+
+<h3>Sample Social Objectives</h3>
+
+<div class="rules-callout">
+  <h4>Common Objective Templates</h4>
+  <ul>
+    <li><strong>Appeal to a Person or Group:</strong> Convince a target to adopt your position or stop resisting it. Starting difficulty guideline: target's Focus.</li>
+    <li><strong>Discern Someone's Qualities:</strong> Uncover hidden priorities, loyalties, strengths, or weaknesses. Starting difficulty guideline: target's Vigilance.</li>
+    <li><strong>Discredit Someone:</strong> Push a target into public loss of face, forcing concession, retreat, or reputational damage.</li>
+    <li><strong>Spread a Rumor:</strong> Seed a narrative through multiple parties until it becomes self-sustaining in the scene.</li>
+  </ul>
+</div>
+
+<p>If a player proposes a custom objective, the GM should approve it when stakes are clear and define what success requires mechanically (check types, momentum threshold, and failure conditions).</p>
+
+<h3>Intrigue Initiative and Turn Flow</h3>
+
+<p>Intrigues use a <strong>TN 1 Insight</strong> Initiative check. Initiative still matters, but unlike a skirmish, speaking order is fluid: each character takes one turn per round when they choose. Initiative resolves timing conflicts when two or more characters try to act at once.</p>
+
+<p>If hierarchy is active in the current scene, preempting a clearly higher-authority speaker can carry narrative penalties (loss of credibility, rebuke, exclusion, disciplinary notice, or formal censure) at GM discretion.</p>
+
+<p>An intrigue continues until objectives are completed, become impossible, or are abandoned for narrative reasons.</p>
+
+<h3>Stance, Movement, and Positioning</h3>
+
+<p>Stances in an intrigue represent rhetorical posture and emotional discipline as much as body language. Players are encouraged to describe tone, cadence, and demeanor that match their stance.</p>
+
+<p>Physical movement is usually abstracted. Unless distance becomes tactically relevant, assume participants can communicate and target each other socially across the scene.</p>
+
+<h3>Core Intrigue Actions</h3>
+
+<p>Characters can always improvise actions, but these are common defaults for smooth play:</p>
+
+<ul>
+  <li><strong>Assist (Support):</strong> Provide an ally with argument framing, intel, or social cover; if accepted, grant assistance to their next relevant check.</li>
+  <li><strong>Calming Breath (Support):</strong> Regain composure and stabilize under pressure before escalating your line of argument.</li>
+  <li><strong>Persuade (Scheme):</strong> Make a social skill check against one or more listeners to advance an objective directly.</li>
+  <li><strong>Unique Action:</strong> Use another relevant skill to create leverage (records, precedent, technical evidence, protocol, cultural context).</li>
+</ul>
+
+<p>For Persuade checks, start from the highest Vigilance among targets and adjust TN for context: clear authority, social position, audience disposition, and leverage already established in the scene.</p>
+
+<h3>Running the Conversation at the Table</h3>
+
+<p>Players may speak in character or summarize intent and tone out of character. Both are valid. The roll determines effectiveness, not performance quality alone. Strong roleplay or tightly reasoned arguments can still earn situational TN reductions or extra momentum at GM discretion.</p>
+
+<h3>Ending an Intrigue</h3>
+
+<p>Move to Resolution once all active objectives are achieved, failed, or dropped. Then apply outcomes immediately: policy shifts, command orders, reputational changes, alliances formed, hostilities escalated, or scene transition to another conflict type.</p>
 
 <div class="example-box labeled">
-  <span class="example-label">◇ EXAMPLE: HOSTILE NEGOTIATION</span>
-  <p>You argue terms with a mercenary captain. Initiative is set by Insight checks: you use Precision to gain the defensive bonus, while the captain uses Power. On your turn you Press with TN 3 to secure better payment. The captain Deflects, raising your future TN unless you Observe and create an opening.</p>
+  <span class="example-label">◇ EXAMPLE: THE INTERROGATION</span>
+  <p>You are questioning a captured operative during a joint command review. Your objective is to <strong>Discern Someone's Qualities</strong> (identify handler loyalty and one hidden weakness), while your political rival's objective is to <strong>Discredit Someone</strong> (make you appear reckless). Initiative is rolled with Insight, but turn timing is conversational. You use <strong>Precision</strong> stance and Persuade carefully to avoid overcommitting. A successful check adds momentum toward your objective; your rival uses Assist to undermine your framing. By round end, you reach the objective threshold first, exposing a contradiction in the detainee's cover story and forcing command to continue the interrogation under your lead.</p>
 </div>
 
 <h2>Duels</h2>
 
-<p>Duels are one-on-one fights with special rules for tempo, space, and openings. Initiative is determined by Resolve checks. During a duel you select Approaches, set stances, create openings and exploit them, and manage Strife carefully since mistakes compound quickly in single combat.</p>
+<p>Duels are one-on-one confrontations where two combatants deliberately narrow the fight to a direct contest of nerve, skill, and commitment. The stakes are personal and practical: command trust, unit confidence, mission authority, reputation for reliability, and sometimes survival.</p>
+
+<p>Because duels spotlight only two participants, consider embedding the duel inside a broader scene so other PCs can still act: covering exits, suppressing interference, securing comms, or managing bystanders.</p>
+
+<h3>Set Terms Before Initiative</h3>
+
+<p>Before rolling, define duel terms clearly. If both sides cannot agree, the GM sets terms according to mission reality and local authority.</p>
+
+<div class="rules-callout">
+  <h4>Duel Terms Checklist</h4>
+  <ul>
+    <li><strong>Objective:</strong> First clean hit, first blood, incapacitation, forced withdrawal, confirmed kill, or surrender.</li>
+    <li><strong>Allowed methods:</strong> Weapon class, fighting style, tools, and whether support tech is legal.</li>
+    <li><strong>Environment:</strong> Starting distance, terrain limits, visibility, and interference risks.</li>
+    <li><strong>Outside interference:</strong> Strictly prohibited, tolerated, or expected as part of real combat.</li>
+    <li><strong>Consequence profile:</strong> Training discipline, command ruling, unit reputation shift, legal fallout, or lethal consequence.</li>
+  </ul>
+</div>
+
+<h3>Common Duel Formats</h3>
+
+<ul>
+  <li><strong>Training Spar:</strong> Nonlethal objective (clean touch, point threshold, or incapacitation with safety control).</li>
+  <li><strong>CQB Challenge:</strong> Confined-space contest with sidearms, blades, or improvised weapons.</li>
+  <li><strong>Sniper Duel:</strong> Long-range detect-and-eliminate contest where patience and concealment are decisive.</li>
+  <li><strong>Field Grudge Match:</strong> Minimal restrictions under live combat conditions; objective is defeat, surrender, or kill.</li>
+  <li><strong>Command Demonstration:</strong> Publicly witnessed duel used to settle credibility, leadership, or tactical doctrine disputes.</li>
+</ul>
+
+<h3>Initiative and Pressure</h3>
+
+<p>Duels use a <strong>TN 1 Resolve</strong> Initiative check.</p>
+
+<p>At the start of each round, both duelists take escalating pressure equal to the round number as Strife (1 in round one, 2 in round two, and so on). After this, each duelist who is not Compromised may secretly bid additional Strife from 0 up to Focus; reveal simultaneously and add that amount to initiative for this round only.</p>
+
+<p>This pressure bid models commitment and tempo control: pushing first at emotional cost, or staying disciplined and conceding timing.</p>
+
+<h3>Duel Round Flow</h3>
+
+<ul>
+  <li><strong>Round start:</strong> Apply pressure Strife, then resolve bids.</li>
+  <li><strong>Turn order:</strong> Higher initiative acts first; if tied, the more exposed combatant or worse tactical position acts first (GM call).</li>
+  <li><strong>Turns:</strong> Each duelist sets stance, may reposition narratively, and performs one action.</li>
+  <li><strong>Round end:</strong> If either objective is achieved, proceed to Resolution. Otherwise, begin next round.</li>
+</ul>
+
+<h3>Finishing Window</h3>
+
+<p>The first time an opponent becomes Compromised or unmasks during a duel, the other duelist may immediately make a <strong>Finishing Blow</strong> as an out-of-turn Attack action. Resolve it immediately; if it meets duel objective, the duel ends at once.</p>
+
+<p>When two finishing blows trigger simultaneously, resolve in the order determined by current initiative for that round.</p>
+
+<h3>Actions in Duels</h3>
+
+<p>All normal conflict actions are valid, but duels especially reward reading and forcing reactions. Typical action choices include:</p>
+
+<ul>
+  <li><strong>Calming Breath (Support):</strong> Shed pressure before committing to a decisive exchange.</li>
+  <li><strong>Center (Support):</strong> Bank execution quality for a later decisive check.</li>
+  <li><strong>Predict (Scheme/Attack):</strong> Call and punish your opponent's likely stance or rhythm.</li>
+  <li><strong>Prepare Item (Support):</strong> Change grip, swap tools, ready backup gear.</li>
+  <li><strong>Strike (Attack):</strong> Deliver the decisive attempt when your opening appears.</li>
+</ul>
+
+<h3>Concession and Mercy</h3>
+
+<p>At the start of any round, a duelist may concede. This is an immediate loss for objective purposes, but concession can preserve life, mission cohesion, and long-term relationships.</p>
+
+<p>The victor may enforce full terms or show restraint. Mercy is often strategic: preserving a useful rival, preventing command backlash, or avoiding escalation that harms civilians or mission integrity.</p>
+
+<h3>Resolving Duel Outcomes</h3>
+
+<p>When the duel ends, determine result severity from both objective completion and battlefield impression:</p>
+
+<ul>
+  <li><strong>Marginal win:</strong> Objective achieved with high cost; reputation effect is mixed.</li>
+  <li><strong>Clear win:</strong> Objective achieved with tactical control; gains trust and authority in the immediate context.</li>
+  <li><strong>Dominant win:</strong> Objective achieved with minimal exposure; major psychological and reputational impact.</li>
+  <li><strong>Mutual break:</strong> Both sides land telling outcomes in the same round; treat as contested or pyrrhic result.</li>
+</ul>
+
+<p>Apply consequences according to the scene's authority framework: chain-of-command response, team morale, media narrative, legal scrutiny, or future intimidation leverage.</p>
+
+<h3>Optional Quick Duel (One Roll)</h3>
+
+<p>For faster pacing, each duelist declares approach and intent, then both make a single competitive check (base TN 1, adjusted by circumstances). Higher net result wins and applies duel objective effects immediately. Use this mode when the table wants dramatic resolution without full tactical rounds.</p>
+
+<div class="example-box labeled">
+  <span class="example-label">◇ EXAMPLE: ROOFTOP COUNTER-SNIPER</span>
+  <p>You and an enemy marksman are pinning each other across adjacent towers while both squads are stalled below. Terms are set: objective is forced withdrawal or incapacitation; no outside shot calls, but spotter chatter is allowed. Initiative uses Resolve. In round two, both of you bid Strife to seize first action; you act first, use Predict to bait a peek angle, then Strike from Precision stance. The hit does not kill, but it forces the target to break line and retreat. The duel ends as a clear win: your team regains movement corridor, and command confidence in your call rises for the next operation.</p>
+</div>
+
+<h3>Hacker Duels (Special Duel Type)</h3>
+
+<p>A hacker duel is a one-on-one cyberspace confrontation using duel structure with electronic warfare rules layered on top. It is used when two hostile operators directly contest control of the same network objective and both can meaningfully attack, disrupt, or force out the other.</p>
+
+<h4>When to Trigger</h4>
+
+<p>Shift from general intrusion play to a hacker duel when opposition becomes personal and immediate: counter-intrusion contact is established, both sides are targeting each other directly, and the conflict is no longer just hacker-versus-system.</p>
+
+<h4>Setup</h4>
+
+<ul>
+  <li><strong>Arena:</strong> The contested network segment (or mirrored virtual combat space) is the duel arena.</li>
+  <li><strong>Objective:</strong> Pick one objective for each side before initiative (forced disconnect, lockout, capture credentials, seize control, or crash opponent process).</li>
+  <li><strong>Capabilities:</strong> Use each participant's normal EW Rating, techniques, and tools.</li>
+  <li><strong>Access:</strong> Both duelists are treated as in-range for duel-targeted EW effects unless a rule specifically requires node control first.</li>
+</ul>
+
+<h4>Initiative and Pressure</h4>
+
+<p>Use a <strong>TN 1 Computers</strong> Initiative check instead of Resolve.</p>
+
+<p>At round start, both duelists gain <strong>Heat equal to the current round number</strong>. Then each duelist who is not Compromised may bid Strife (0 to Focus), reveal simultaneously, and add bid to initiative for that round only.</p>
+
+<p>If a duelist reaches <strong>Burned</strong> from this step, they are forcibly disconnected and the duel ends immediately.</p>
+
+<h4>Turn Flow and Valid Actions</h4>
+
+<p>Use normal duel turn flow, but actions come from electronic warfare play. Common choices are <strong>Crack</strong>, <strong>Bypass</strong>, <strong>Disrupt</strong>, <strong>Scan</strong>, <strong>Defend</strong>, and <strong>Pause</strong>, plus any learned techniques.</p>
+
+<p>Movement is abstract in a hacker duel. Treat both sides as engaged in the same virtual combat space unless the GM is tracking a multi-node chase as part of the objective.</p>
+
+<h4>Finishing Blow in Cyberspace</h4>
+
+<p>When Finishing Blow triggers, the acting duelist executes an immediate out-of-turn EW attack. On success, instead of normal damage, apply one of the following chosen outcomes:</p>
+
+<ul>
+  <li><strong>Spike:</strong> Target gains +3 Heat immediately.</li>
+  <li><strong>Crash:</strong> Target suffers Dazed and cannot Run Silent until end of next turn.</li>
+  <li><strong>Lockout:</strong> Target is barred from one declared objective path or protected node until they succeed at a TN 3 Computers check.</li>
+</ul>
+
+<p>If this outcome fulfills duel objective or pushes target to Burned, the duel ends at once.</p>
+
+<h4>Resolution and Fallout</h4>
+
+<p>A hacker duel ends when one side is disconnected, concedes, is locked out of its objective, or reaches Burned Heat. Apply consequences based on objective and exposure: data loss, credential compromise, network control shift, trace risk, and command consequences for mission security.</p>
+
+<div class="example-box labeled">
+  <span class="example-label">◇ EXAMPLE: COUNTER-INTRUSION LOCKOUT</span>
+  <p>You are exfiltrating target files when an enemy operator engages directly. The duel objective is asymmetric: you need a clean disconnect with data, they need to force your Burned state. Initiative is TN 1 Computers. In round three, both of you spike Heat from pressure; you win initiative with a Strife bid, trigger a Finishing Blow after they unmask, and choose Lockout to block their route to your extraction node. They fail the recovery check, you disconnect cleanly, and the duel resolves as a clear defensive win with your trace footprint intact.</p>
+</div>
 
 <h2>Skirmishes</h2>
 
-<p>Skirmishes are the default form of fighting between multiple combatants. Initiative is determined by Tactics checks. On your turn you can move, take actions, and react using combat actions. Track Endurance, Composure, and Strife throughout the fight.</p>
+<p>Skirmishes are pitched firefights between small units: a handful of operators, a squad at most. They cover the kind of combat that defines field work in the GFL operational theater: ambushes on debris-choked roads, raids on fortified checkpoints, rearguard actions in collapsing structures, desperate stands while an extraction burns in. A skirmish ends when one side is defeated, driven off, or no longer capable of resistance. If the fight can be settled with one meaningful check, keep it in Narrative mode; shift to skirmish structure when both sides are actively contesting the field round by round.</p>
+
+<h3>Initiative</h3>
+
+<p>Skirmishes use a <strong>TN 1 Tactics</strong> Initiative check, representing a fast read of the threat environment: lanes of fire, enemy positions, and the pace of the engagement. Characters may spend Opportunity from the check before the first round begins:</p>
+<ul>
+  <li>Gain useful information about enemy positions, numbers, or equipment.</li>
+  <li>Ready a weapon or swap loadout without burning an action.</li>
+  <li>Dive for nearby cover before the first shots are fired.</li>
+</ul>
+
+<h3>Movement and Range Bands</h3>
+
+<p>Skirmishes make the most active use of <strong>range bands</strong> to represent distances between characters, obstacles, and positions on the battlefield.</p>
+
+<p>Once per turn, before or after performing an action, a character may move <strong>1 range band</strong>. This movement is not an action and does not cost any part of the action economy. Characters who need to cover greater distance can dedicate their action to the Maneuver action instead.</p>
+
+<p>Range bands determine valid targets for weapons and abilities. If a target is currently out of range, a character must close the gap through movement or Maneuver before attacks can land.</p>
+
+<h3>Turn Summary</h3>
+
+<div class="rules-callout">
+  <h4>Skirmish Turn Sequence</h4>
+  <ol>
+    <li><strong>Beginning of Turn:</strong> Resolve any effects that trigger at turn start.</li>
+    <li><strong>Set Stance:</strong> Keep your current stance or switch to a new one. Your stance provides a passive benefit while active.</li>
+    <li><strong>Move:</strong> Move 1 range band before or after your action. This is not an action.</li>
+    <li><strong>Perform an Action:</strong> Take one primary action: attack a target, guard a position, support an ally, maneuver further, issue a challenge, prepare gear, or wait for an opening.</li>
+    <li><strong>End of Turn:</strong> Resolve turn-end effects and pass initiative.</li>
+  </ol>
+</div>
+
+<h3>Skirmish Actions</h3>
+
+<p>The following actions are available to all participants in a skirmish, alongside actions granted by techniques and abilities. Players may also propose actions based on circumstances; the GM adjudicates using the standard structure of declared intent, set TN, roll, and resolve effects.</p>
+
+<h4>Assist <span style="font-weight:normal; font-size:0.9em;">(Attack, Scheme, or Support)</span></h4>
+<p>Call out a firing solution, relay threat data, or apply pressure on a flank to open an opportunity for an ally. Describe how you are helping one other character at range 0–2. If the GM accepts, you provide assistance on the chosen character's next action check.</p>
+
+<h4>Calming Breath <span style="font-weight:normal; font-size:0.9em;">(Support)</span></h4>
+<p>Draw a controlled breath between bursts. Reset your focus before the weight of the engagement compounds further. If your Strife exceeds half your Composure, remove 1 Strife. If your Fatigue exceeds half your Endurance, remove 1 Fatigue.</p>
+
+<h4>Challenge <span style="font-weight:normal; font-size:0.9em;">(Scheme)</span></h4>
+<p>Lock eyes with one specific enemy and call them out in front of both sides. Make a <strong>TN 1 Command</strong> check targeting one character at range 0–5. If you succeed, stake <strong>5 Fame</strong> on the outcome: the challenge is now visible to both units, and its resolution will be remembered.</p>
+<p>The target must choose to accept or decline:</p>
+<ul>
+  <li><strong>Accept:</strong> The target stakes 5 Fame. They commit to the clash and may not take an Attack or Scheme action against any other character before it resolves. At the end of the round, the two combatants fight a clash (see below).</li>
+  <li><strong>Decline:</strong> The target forfeits Fame equal to your ranks in Command plus your bonus successes. Each of their allies with lower Fame than you suffers 2 Strife. You gain 1 Fortune Point.</li>
+</ul>
+<p>If you win the clash, each of your opponent's allies in the skirmish suffers 3 Strife. If you lose, each of your allies suffers 3 Strife.</p>
+
+<h4>Guard <span style="font-weight:normal; font-size:0.9em;">(Support)</span></h4>
+<p>Take up a defensive position covering yourself or an ally. Using a readied weapon, make a <strong>TN 1 Tactics</strong> check targeting yourself or one other character within the weapon's range. If you succeed, the target is guarded until the start of your next turn: increase the TN of Attack checks against them by 1, plus 1 more per 2 bonus successes.</p>
+
+<h4>Maneuver <span style="font-weight:normal; font-size:0.9em;">(Movement)</span></h4>
+<p>Push across the field for greater distance or reach a more advantageous position. Move 1 range band. You may also make a <strong>TN 2 Conditioning</strong> check as part of this action; on success, move 2 range bands instead, plus 1 additional range band per 2 bonus successes.</p>
+
+<h4>Prepare Item <span style="font-weight:normal; font-size:0.9em;">(Support)</span></h4>
+<p>Ready, stow, or change the grip on a weapon or piece of equipment. Covers swapping magazines, holstering a sidearm, activating a piece of kit, switching to a backup weapon, or handing off a tool to an adjacent ally.</p>
+
+<h4>Strike <span style="font-weight:normal; font-size:0.9em;">(Attack)</span></h4>
+<p>Deliver an attack against a single target. Using one readied weapon, make a <strong>TN 2 check with the appropriate combat skill</strong> (Firearms, Blades, or Hand-To-Hand) targeting one character within the weapon's range. On success, deal the weapon's base damage plus bonus successes.</p>
+<p><em>Opportunity:</em> On success, spend Opportunity to inflict a critical strike at severity equal to the weapon's Deadliness.</p>
+
+<h4>Unique Action</h4>
+<p>Use any relevant skill to accomplish a task by narrating intent and making an appropriate check. Covers calling in suppression coordinates, patching a teammate mid-fight, breaching a locked door, reading the terrain for an escape route, or any other action the GM deems appropriate for the circumstances.</p>
+
+<h4>Wait <span style="font-weight:normal; font-size:0.9em;">(Attack, Scheme, or Support)</span></h4>
+<p>Hold your action for a precise moment. Declare a non-Movement action and specify a trigger event that must occur before the end of the round. If the event occurs, perform the declared action immediately. If the event does not occur, you may perform any action of your choice (other than Wait) at the end of the round. You must still use the approach matching your stance for this action.</p>
+
+<h3>Clashes</h3>
+
+<p>A clash is a duel embedded inside a skirmish, running on the same rules: turn flow, Finishing Blow, concession, and outcomes. It can be triggered by a successful Challenge action or by narrative circumstances that isolate two characters while the rest of the engagement continues around them.</p>
+
+<p>At the end of the round in which the clash begins, participants step out of the main initiative order and fight one duel round. At the start of each clash round, both characters gain Strife equal to the current clash round number, then simultaneously bid Strife (0 up to Focus) to set initiative for that round only. The clash continues until one side wins, concedes, or both agree to withdraw.</p>
+
+<h4>Interrupting and Extending a Clash</h4>
+<p>Any character may use the Challenge action on a participant currently in a clash to swap in for that side. Any other form of interruption requires the intervening character to forfeit 5 Fame; the participant they helped must also forfeit their staked Fame.</p>
+<p>After an inconclusive round, both participants may extend by one more round, skipping their normal turns in initiative order until the clash resolves at the end of the next round. If either chooses to withdraw instead, the clash ends.</p>
+
+<h3>Breaches (Skirmish Variant)</h3>
+
+<p>A breach is a skirmish with a physical barrier dividing attacker and defender. The setup, action economy, and resolution all follow standard skirmish rules, with the following modifications.</p>
+
+<p>Before starting, establish the breach point (the barrier and how it will be crossed), attacker and defender objectives, and the range band layout inside. Most breach interiors are range 0–1 dominated: tight corridors, stacked rooms, limited angles.</p>
+
+<h4>Phase 1: Preparation</h4>
+<p>Before the barrier breaks, each side takes one action blind. Neither side knows what the other has done until entry begins. Any standard skirmish action is valid. Effects set up here resolve at the start of Phase 2, before Initiative is determined.</p>
+
+<h4>Phase 2: The Entry</h4>
+<p>The barrier breaks. Roll Initiative (TN 1 Tactics). During this round only, all Attack checks made by <strong>attackers</strong> have their TN increased by 1: bad angles, stacked movement, and the fatal funnel all extract their toll. Defenders are not penalized.</p>
+
+<h4>Phase 3: Clearance</h4>
+<p>After the Entry round concludes, the TN penalty lifts. The engagement becomes a standard skirmish. All conditions, positioning, and initiative values carry forward without reset.</p>
 
 <div class="example-box labeled">
-  <span class="example-label">◇ EXAMPLE: STREET AMBUSH</span>
-  <p>Initiative is set by Tactics checks. You use Swiftness to gain an extra non-check action per turn. You move to cover and fire an Assault Rifle attack at TN 3. Your partner Assists to lower your TN. The GM applies Threat and Signature from the weapon entry.</p>
+  <span class="example-label">◇ EXAMPLE: LOCKED WARD</span>
+  <p>The team needs to pull an asset from a fortified detention block. The breach point is a reinforced security door, hacked open by the team's EW specialist. Setup establishes range 0–1 dominance inside, two guard positions flanking the entry corridor. In Phase 1, the lead operator primes a flashbang; the guards barricade the corridor and set fields of fire. Phase 2: the door opens. Flashbang resolves before initiative: both defenders gain Dazed. Initiative rolls with Tactics. The lead moves in at range 0 and Strikes at TN 3 (base TN 2, +1 Entry penalty). One success still lands. By round end, one guard is Compromised. Phase 3: the penalty lifts and clearance becomes a standard skirmish. The team secures the space in two more rounds.</p>
+</div>
+
+<h3>Electronic Warfare Scenes (Skirmish Variant)</h3>
+
+<p>An EW scene runs on the same phase structure as a skirmish. The following replaces or modifies standard skirmish rules; everything not listed here works as normal.</p>
+
+<ul>
+  <li><strong>Initiative:</strong> TN 1 <strong>Computers</strong> instead of Tactics.</li>
+  <li><strong>Battlefield:</strong> Nodes and links replace range bands. Once per turn, a character may traverse one link before or after their action as free movement. Traversing a link with a barrier requires a Bypass action rather than free movement.</li>
+  <li><strong>Actions:</strong> Characters use EW actions: Crack, Bypass, Disrupt, Scan, Defend, and Pause, plus any learned techniques. Full descriptions are in the Electronic Warfare chapter.</li>
+  <li><strong>Heat:</strong> Heat tracks network exposure. Gain 1 Heat at end of turn when you acted against a hostile system, plus 1 more on a failed check. At Heat 7–9, TN of all your checks increases by 1. At Heat 10 (Burned), you are forcibly disconnected and your intrusion ends immediately.</li>
+  <li><strong>Running Silent:</strong> Declare at turn start. You do not gain Heat from actions that turn, but TN of all your checks increases by 1. Can be ended before making a check.</li>
+</ul>
+
+<div class="example-box labeled">
+  <span class="example-label">◇ EXAMPLE: SENSOR BLACKOUT</span>
+  <p>The team needs sensor blindness to cross an open courtyard. The EW specialist jacks in wirelessly (TN +1 on all checks). Initiative is rolled with Computers; she acts before the Watchdog sentry. She Scans first, revealing the camera node two links away. She Bypasses the intervening barrier and moves to the camera node in one turn, then Cracks the system (Security Rating 3, +1 wireless = TN 4). Two successes: foothold established, Opportunity spent to leave no entry log. Next turn she Disrupts the camera cluster: Dazed and offline for three rounds. Heat sits at 3. She Pauses, drops to 2, and holds while the team crosses. Clean exit before the Watchdog reaches her node.</p>
+</div>
+
+<h3>Resolving a Skirmish</h3>
+
+<p>A skirmish ends when only one side remains capable of holding the field. The GM should call resolution when objectives are secured, opponents are defeated or driven off, or the outcome is no longer in meaningful doubt.</p>
+
+<p>Most combatants do not fight to the last when retreat is possible. Withdrawing from a fight that cannot be won is a practical decision. Fame lost in an operational withdrawal can be recovered through the next mission; a unit eliminated to the last member cannot. The GM should conclude a skirmish cleanly rather than drag out a foregone conclusion.</p>
+
+<div class="example-box labeled">
+  <span class="example-label">◇ EXAMPLE: DUST ROAD AMBUSH</span>
+  <p>The scout element hits the tripwire half a second too late. Initiative is rolled with Tactics. Your team set the ambush, so your base is Focus; the contact element caught flat-footed defaults to Vigilance. You act first. You select <strong>Swiftness</strong> stance and use your free move to reach the ridge crest, then Strike with Firearms, TN 2. Two bonus successes come in; you spend Opportunity to trigger a critical strike. Your fireteam partner Assists from the south slope, adding their successes to the next burst. The hostile unit starts bleeding Strife. By round three, their field commander issues a Challenge: you accept and both stake 5 Fame. The clash resolves at round end with a clean Finishing Blow in your favor. The enemy element breaks. The skirmish ends as a clear tactical success; the GM transitions to recovery.</p>
 </div>
 
 <h2>Mass Battles</h2>
 
-<p>Mass battles handle fights too large for skirmish scale, where squads, companies, or entire armies clash. Initiative is determined by Command checks. Units resolve actions through orders and morale checks. Key engagements can zoom in to skirmish scale as spotlight scenes inside the larger battle.</p>
+<p>Mass battles handle engagements too large for individual skirmishes, where platoons, companies, or armies clash. Initiative is determined by <strong>Command</strong> checks. In these scenes, characters often command units or hold key points. The rules zoom out, focusing on morale, orders, and strategic positioning. Key moments can zoom in to a Skirmish scale as "spotlight scenes" within the larger war.</p>
 
 <hr>
 
-<h2>Special Scenes</h2>
+<h2>Ending Scenes</h2>
 
-<h3>Breaches</h3>
+<p>When a scene ends, all participants reset to half their Strife (rounded up) unless already below that value, and half their Endurance (rounded up) unless already below. This recovery is automatic; it represents the brief window between engagements where operators catch their breath, check their gear, and push the adrenaline back down.</p>
 
-<p>A breach is a special skirmish where defenders hold a threshold without line of sight and attackers must enter, acquire targets, and engage. Breaches unfold in three phases:</p>
+<p>The GM may skip this reset for scenes that ended too quickly to justify a breather. That call is situational.</p>
 
-<div class="rules-callout">
-  <span class="step-indicator">PHASE 1</span>
-  <h4>Preparation</h4>
-  <p>Semi-structured. Every member of both sides takes one action to prepare. Attackers and defenders act without knowing what the other side has done.</p>
-</div>
-
-<div class="rules-callout">
-  <span class="step-indicator">PHASE 2</span>
-  <h4>Door Kick</h4>
-  <p>The barrier is breached and both sides make contact. Initiative is determined by Tactics checks. Attackers suffer a <strong>TN 2 penalty</strong> to any attack during this phase, representing disorientation crossing a fatal funnel.</p>
-</div>
-
-<div class="rules-callout">
-  <span class="step-indicator">PHASE 3</span>
-  <h4>Open Combat</h4>
-  <p>After the first round, the breach transitions to open combat. Initiative is preserved and combat proceeds as a normal Skirmish. All effects and conditions carry forward from Phase 2.</p>
-</div>
-
-<h3>Electronic Warfare Scenes</h3>
-
-<p>Electronic warfare scenes focus on intrusion, defense, and manipulation of electronic systems. A solo hacker in a lightly defended network can be handled as a <strong>Narrative scene</strong>. When structure is needed, the GM frames it as a <strong>Conflict scene</strong>. When two hackers clash, it becomes a <strong>Hacker Duel</strong>.</p>
-
-<div class="example-box labeled">
-  <span class="example-label">◇ EXAMPLE: SIGNAL DUEL</span>
-  <p>You begin by quietly Cracking a control net during a Narrative scene. When your Heat crosses 4, a defender jacks in and the GM shifts into a Hacker Duel. At the start of each round, Heat climbs. You Disrupt the defender's drone relay, inflicting Dazed. The defender Pauses to bleed Heat and Strife, buying time while security converges on your traced location.</p>
-</div>
-
-<h2>Starting and Ending Scenes</h2>
-
-<p>The GM frames the scene with purpose and scope. Signal when stakes change. End a scene when its goals are resolved or when a different scene type is more appropriate.</p>
-<ul>
-  <li><strong>Start:</strong> declare type, set any special rules, clarify time scale, and establish what success looks like.</li>
-  <li><strong>End:</strong> goals met, concessions made, or escalation to a new scene type.</li>
-</ul>
+<p>Once recovery is applied, the GM declares the next scene type and sets the stage: where the characters are, what pressure is building, and what the new situation demands of them.</p>

@@ -22,6 +22,8 @@
     <tr><td><strong>Grip</strong></td><td>How the weapon is held: <strong>1-Handed</strong> or <strong>2-Handed</strong>. Some weapons list alternative grips.</td></tr>
     <tr><td><strong>Threat</strong></td><td>How many range bands away the weapon's fire can be detected. Higher Threat means louder or more visible weapons.</td></tr>
     <tr><td><strong>Signature</strong></td><td>How difficult the weapon is to conceal. Sets the <strong>TN for Subterfuge checks</strong> to hide the weapon on your person.</td></tr>
+    <tr><td><strong>Qualities</strong></td><td>Special traits that modify how the weapon functions, such as being concealable, suppressed, or capable of area effect.</td></tr>
+    <tr><td><strong>Price</strong></td><td>The cost to acquire the weapon, in standard currency. Prices reflect the weapon's combat effectiveness, with more powerful weapons commanding higher prices.</td></tr>
   </tbody>
 </table>
 
@@ -36,6 +38,7 @@
     <tr><td><strong>BLD</strong></td><td>Swords</td><td>Bladed weapons over 30 cm; effective for silent takedowns and melee dominance.</td></tr>
     <tr><td><strong>HG</strong></td><td>Handguns</td><td>Compact firearms for one-handed use; ideal as backup or concealed weapons.</td></tr>
     <tr><td><strong>SMG</strong></td><td>Submachine Guns</td><td>Automatic firearms in pistol calibers; excel in close-quarters.</td></tr>
+    <tr><td><strong>SG</strong></td><td>Shotguns</td><td>Close-quarters spread weapons; devastating at short range with area effect.</td></tr>
     <tr><td><strong>AR</strong></td><td>Assault Rifles</td><td>Automatic firearms using intermediate cartridges; the standard infantry weapon.</td></tr>
     <tr><td><strong>BR</strong></td><td>Battle Rifles</td><td>Automatic firearms firing full-power cartridges; high recoil, long reach.</td></tr>
     <tr><td><strong>RF</strong></td><td>Rifles</td><td>Precision, full-powered long guns for marksman or sniper roles.</td></tr>
@@ -45,12 +48,30 @@
 
 <div class="rules-callout">
   <h4>Suppressors</h4>
-  <p>A suppressor reduces the audible report and muzzle flash of a firearm, making it harder to detect when fired.</p>
+  <p>A suppressor reduces the audible report and muzzle flash of a firearm, making it harder to detect when fired. Suppressors are purchased separately and can be attached to any firearm with a threaded barrel.</p>
   <ul>
-    <li><strong>Threat &minus;2:</strong> The weapon becomes significantly quieter, reducing how far the shot can be noticed. Suppressors do not make a weapon silent; they limit how far its presence carries.</li>
-    <li><strong>Signature +1:</strong> The weapon becomes bulkier and harder to conceal. The extra length also makes drawing or stowing slightly more awkward.</li>
+    <li><strong>Cost:</strong> 500 Credits</li>
+    <li>Applies the <strong>Suppressed</strong> quality to the weapon.</li>
   </ul>
 </div>
+
+<h3>Weapon Qualities</h3>
+
+<p>Weapons may possess one or more qualities that modify how they function in the field:</p>
+
+<table>
+  <thead>
+    <tr><th>Quality</th><th>Effect</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>AOE</strong></td><td>Area of Effect. The weapon targets an entire grid square rather than a single target. All characters within the affected area must defend against the attack.</td></tr>
+    <tr><td><strong>Concealable</strong></td><td>The weapon is small enough that concealing it does not require a Subterfuge check. It can be hidden on the person without drawing attention.</td></tr>
+    <tr><td><strong>Durable</strong></td><td>A utilitarian item that is hard to break. If the weapon would gain the Damaged quality, it loses Durable instead.</td></tr>
+    <tr><td><strong>Mobile</strong></td><td>The weapon is light enough to use on the move. The wielder may move 2 range bands as their free movement (instead of 1), but attacks made after this enhanced movement have their TN increased by 1.</td></tr>
+    <tr><td><strong>Stationary</strong></td><td>The weapon cannot be fired on the same turn as movement. The operator must be stationary to engage targets effectively.</td></tr>
+    <tr><td><strong>Suppressed</strong></td><td>The weapon has a suppressor attached. Threat is reduced by 2, and Signature is increased by 1.</td></tr>
+  </tbody>
+</table>
 
 <hr>
 

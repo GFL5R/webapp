@@ -1,5 +1,5 @@
 {
-    "Suppressor" {
+    "Suppressor": {
         "cost": 500,
         "flavor": "A suppressor reduces the audible report and muzzle flash of a firearm, making it harder to detect when fired.",
         "description": """

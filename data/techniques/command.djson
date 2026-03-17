@@ -85,5 +85,47 @@
         <li><strong>(op)+:</strong> If you succeed, you may expend up to (op) additional explosive devices to add 2 bonus successes per device expended this way.</li>
       </ul>
     """
+  },
+  "Shock and Awe": {
+    "rank": 2,
+    "type": "Command",
+    "approach": "Swiftness",
+    "skill": "Command",
+    "flavor": """
+      Speed is a weapon. A commander who can mobilize their forces faster than the enemy expects creates opportunities where none existed. Quick, decisive action can disrupt enemy formations and create openings for follow-up attacks.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per scene, as an Attack and Movement action, you may make a <strong>TN 3 Command (Swiftness)</strong> check targeting any number of characters in the scene (or one cohort in a mass battle).</p>
+      <h3>Effects:</h3>
+      <p>If you succeed during a skirmish, each target increases their initiative by your Swiftness approach value plus your bonus successes at the beginning of the next round.</p>
+      <p>If you succeed during a mass battle, one enemy leader's cohort suffers panic equal to your Swiftness approach value plus your bonus successes.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op):</strong> During a skirmish, immediately perform a Strike action.</li>
+        <li><strong>Swiftness (op):</strong> During a mass battle, immediately perform an Assault action against the chosen enemy cohort's leader.</li>
+      </ul>
+    """
+  },
+  "Flexible Positioning": {
+    "rank": 2,
+    "type": "Command",
+    "approach": "Swiftness",
+    "skill": "Command",
+    "flavor": """
+      Battlefield conditions change rapidly. A commander who can quickly reposition their forces to exploit new opportunities or respond to emerging threats maintains the initiative and keeps the enemy off-balance.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per round as a Support action, you may make a <strong>TN 3 Command (Swiftness)</strong> check targeting a number of allies equal to your ranks in Command.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, each target may immediately switch to a posture of their choice. Additionally, each target may move 1 range band as part of this effect.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op):</strong> One additional ally may be targeted per (op) spent this way.</li>
+        <li><strong>Swiftness (op)(op):</strong> Targets may move 2 range bands instead of 1.</li>
+        <li><strong>Swiftness (op)+:</strong> Targets gain a bonus die to their next check made before the end of their next turn, plus one additional bonus die per (op) spent beyond the first.</li>
+      </ul>
+    """
   }
 }

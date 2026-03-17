@@ -432,7 +432,7 @@
     """
   },
   "Dramatic Entrance": {
-    "rank": 5,
+    "rank": 3,
     "type": "Social",
     "approach": "Swiftness",
     "skill": "Culture",
@@ -465,7 +465,7 @@
       </ul>
     """
   },
-  "Fanning the Flames": {
+  "Get Under Their Skin": {
     "rank": 1,
     "type": "Social",
     "approach": "Power",
@@ -483,7 +483,7 @@
       </ul>
     """
   },
-  "Flowering Deceptions": {
+  "Social Manipulation": {
     "rank": 1,
     "type": "Social",
     "approach": "Swiftness",
@@ -503,7 +503,7 @@
       </ul>
     """
   },
-  "Fluent Bargaining": {
+  "Negotiation Tactics": {
     "rank": 2,
     "type": "Social",
     "approach": "Fortune",
@@ -517,6 +517,246 @@
       <h3>New Opportunities:</h3>
       <ul>
         <li><strong>Fortune (op)+:</strong> If you succeed, you also convince the client to pay 10% of the fee up front per (op) spent this way.</li>
+      </ul>
+    """
+  },
+  "Prepared for Anything": {
+    "rank": 3,
+    "type": "Science",
+    "approach": "Fortune",
+    "skill": "Crafting",
+    "flavor": """
+      A good operator doesn't just react to problems. They anticipate them. Through careful planning, resource management, and a touch of foresight, they ensure they have the right tool for the job before the job even begins.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, you may make a <strong>TN 1 Crafting (Fortune)</strong> check.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, you recall preparing an item with a rarity equal to 1 plus your bonus successes on the check. Spend 1 Fortune point to instantly produce one item you could have crafted, as long as it is reasonable (you could be carrying it on your person, have it in your quarters, or had access to the resources to craft it over the past month).</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op):</strong> Double the rarity of the target item, but the item must be perishable or have only sentimental value.</li>
+      </ul>
+    """
+  },
+  "Field Fortifications": {
+    "rank": 1,
+    "type": "Command",
+    "approach": "Resilience",
+    "skill": "Command",
+    "flavor": """
+      Not every battlefield offers natural cover. A skilled commander knows when to make their own. With basic tools, local materials, and disciplined labor, a defensive position can be carved from even the most exposed ground.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a downtime activity or a Support action during a mass battle, using adequate supplies and a suitable area, you may make a <strong>TN 3 Command (Resilience)</strong> check targeting a position you can reach.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, you erect a defensive structure of trenches or short barricades in the area. In a mass battle, this structure is treated as a fortification with difficulty value equal to your ranks in Crafting plus your bonus successes, which reduces attrition suffered by the cohort occupying it by 2. In a skirmish, this structure is treated as Obscuring terrain by anyone attacking those inside from outside. This structure is temporary, and degrades completely if left to the elements for more than a few days. It can be maintained with a <strong>TN 2 Crafting (Resilience)</strong> check as a downtime activity, which might need to be made more frequently in harsh weather conditions such as rain or snow.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op):</strong> When you perform the Reinforce action in this fortification during a mass battle, treat the TN as reduced by 1 (to a minimum of 1).</li>
+        <li><strong>Resilience (op)(op)+:</strong> Add one of the following terrain qualities per (op)(op) spent this way to the area extending from range 1-3 around the building: Dangerous, Entangling, Obscuring, or Recessed. During a mass battle, enemies attacking a cohort in the fortification are treated as being in terrain with the added qualities.</li>
+      </ul>
+    """
+  },
+  "Lighten the Mood": {
+    "rank": 1,
+    "type": "Social",
+    "approach": "Swiftness",
+    "skill": "Performance",
+    "flavor": """
+      Tension wears people down. A well-timed game, a clever joke, or a shared moment of levity can break that tension before it breaks the team. The right distraction at the right moment lets everyone breathe again.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a Social skill check using the Swiftness approach during a game or lighthearted activity, you may spend (op) in the following ways:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op)+:</strong> Choose one participant in the game or an observer. Remove 1 strife per opportunity spent from that participant.</li>
+        <li><strong>Swiftness (op)(op)(op):</strong> Remove 1 strife from each participant and observer instead.</li>
+      </ul>
+    """
+  },
+  "Commanding Presence": {
+    "rank": 2,
+    "type": "Social",
+    "approach": "Power",
+    "skill": "Performance",
+    "flavor": """
+      First impressions matter on the battlefield as much as in the boardroom. A commander who enters with authority sets the tone for every interaction that follows, commanding attention and respect from the moment they arrive.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you enter a scene, you may make a <strong>Performance (Power)</strong> check. The TN of this check is equal to the difference between the Fame of the character in the scene with the highest Fame and your Fame, to a minimum of 1.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, reduce the TN of Scheme and Support action checks you make by 1. This effect persists for one round, plus one additional round for every two bonus successes.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)(op)+:</strong> When you receive a Fame award, increase the amount of Fame you gain by 1, plus 1 per additional (op)(op) spent this way.</li>
+        <li><strong>Power (op)(op):</strong> You gain 1 bonus die on your next check made this scene.</li>
+      </ul>
+    """
+  },
+  "Provocative Challenge": {
+    "rank": 2,
+    "type": "Social",
+    "approach": "Power",
+    "skill": [
+      "Performance",
+      "Tactics"
+    ],
+    "flavor": """
+      A well-aimed insult can be more effective than a bullet. By targeting an enemy's pride, insecurities, or tactical sensibilities, you can force them into making mistakes they would otherwise avoid.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per scene as a Scheme action, you may make a <strong>Performance or Tactics (Power)</strong> check targeting one character. The TN of the check is equal to your target's vigilance.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed during an intrigue encounter or a duel, your target receives strife equal to their Humanity divided by 10 (rounded down, minimum 1) unless they forfeit that much Humanity.</p>
+      <p>If you succeed on the check during a skirmish, that character must immediately move 2 range bands toward you unless they choose to receive 3 strife, plus 1 additional strife for every 2 bonus successes.</p>
+      <p>If you succeed on the check during a mass battle, that character must target your cohort with an Assault or Challenge action next turn, unless they choose to receive 3 strife, plus 1 additional strife for every 2 bonus successes.</p>
+      <p>If you succeed or fail, reduce the TN of your target's next check by 1.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)(op):</strong> You may use this technique one additional time this scene.</li>
+      </ul>
+    """
+  },
+  "Misdirection": {
+    "rank": 3,
+    "type": "Social",
+    "approach": "Swiftness",
+    "skill": "Deception",
+    "flavor": """
+      In games of strategy and social maneuvering, the best move is often the one your opponent doesn't see coming. By controlling what information reaches your adversary, you can guide their decisions while pursuing your true objectives unseen.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per scene as a Scheme action, you may make a <strong>Deception (Swiftness)</strong> check targeting one other character. The TN of this check is equal to the target's vigilance.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, you hide your true goal or objective from your opponent. Any action or ability that would reveal your true intentions or objective to the target instead reveals a false, narratively appropriate goal, subject to the GM's approval. This effect persists until the end of the scene.</p>
+      <p>If you succeed, during an intrigue scene, you gain 1 momentum point toward a relevant goal.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op)(op)+:</strong> Choose one additional target with vigilance lower than the original target per (op)(op) spent this way.</li>
+        <li><strong>Swiftness (op)(op)+:</strong> If you succeed, you gain 1 additional momentum point per (op)(op) spent this way.</li>
+      </ul>
+    """
+  },
+  "Tactical Assessment": {
+    "rank": 1,
+    "type": "Social",
+    "approach": "Resilience",
+    "skill": "Insight",
+    "flavor": """
+      Direct criticism often creates defensiveness. A skilled operator presents observations as tactical assessments, framing weaknesses as operational parameters rather than personal failings. This allows allies to address vulnerabilities without losing face.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, you may make a <strong>TN 2 Insight (Resilience)</strong> check to appraise the weaknesses of a character.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, choose one of the target's known disadvantages. The target does not apply that disadvantage to their checks until the end of the scene.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op)+:</strong> Choose one additional disadvantage per (op) spent this way.</li>
+        <li><strong>Resilience (op)(op):</strong> Reduce the TN of the target's next skill check using the Approach the disadvantage is attached to by 2.</li>
+      </ul>
+    """
+  },
+  "Strategic Insight": {
+    "rank": 1,
+    "type": "Social",
+    "approach": "Fortune",
+    "skill": "Science",
+    "flavor": """
+      Knowledge illuminates possibilities that others miss. By sharing expertise or framing information in the right context, an operator can sharpen their team's focus while making threats easier to spot.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per session at the start of a scene, or as a Support action, you may make a <strong>TN 2 Science (Fortune)</strong> check targeting one character.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, that character treats their vigilance as 2 lower (to a minimum of 1) and their focus as 2 higher. This effect persists until the end of the scene.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op)+:</strong> Choose one additional target per (op) spent this way.</li>
+        <li><strong>Fortune (op):</strong> This effect persists until the end of the next scene instead.</li>
+      </ul>
+    """
+  },
+  "Commanding Authority": {
+    "rank": 2,
+    "type": "Social",
+    "approach": "Fortune",
+    "skill": "Command",
+    "flavor": """
+      True authority doesn't need to threaten violence. It establishes boundaries through presence alone, creating social pressure that makes aggression seem unthinkable. A commander with this presence can defuse tensions before they escalate.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per game session as an action, you may make a <strong>Command (Fortune)</strong> check targeting a number of characters up to your ranks in Command. The TN of this check is equal to the vigilance of the character with the highest Fame among your targets.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your targets cannot perform <strong>Attack actions</strong> targeting you. This effect persists for one round, plus additional rounds equal to your bonus successes, or until you perform an Attack action.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op)+:</strong> Choose one additional target with Fame lower than your first target per (op) spent this way.</li>
+        <li><strong>Fortune (op)(op):</strong> Your targets also cannot perform <strong>Scheme actions</strong> targeting you.</li>
+      </ul>
+    """
+  },
+  "Look Out!": {
+    "rank": 2,
+    "type": "Social",
+    "approach": "Resilience",
+    "skill": "Command",
+    "flavor": """
+      A timely warning can prevent disaster. By alerting allies to imminent threats and suggesting optimal defensive positions, an operator can turn potential casualties into prepared defenders.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a check to resist an effect, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op)+:</strong> One character per (op) spent this way may immediately switch to a posture of their choice.</li>
+      </ul>
+    """
+  },
+  "Operational Insight": {
+    "rank": 1,
+    "type": "Social",
+    "approach": "Fortune",
+    "skill": "Insight",
+    "flavor": """
+      Sometimes the answer to a problem isn't found in data or analysis, but in intuition and pattern recognition. A skilled operator can draw on their experience and subconscious processing to identify solutions that elude more methodical approaches.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per session, when you make a check to recall information, solve a puzzle, or understand a complex situation, you may spend (op) in the following ways:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op):</strong> The GM provides you with a hint or clue related to the current situation. The usefulness of this hint is proportional to your ranks in Insight.</li>
+        <li><strong>Fortune (op)(op):</strong> You gain a flash of insight about a character in the scene. The GM reveals one of their Advantages, Disadvantages, or a technique they possess that is relevant to the current situation.</li>
+        <li><strong>Fortune (op)+:</strong> You may ask the GM one yes-or-no question about the current situation per (op) spent this way. The GM must answer truthfully, though the answer may be cryptic or require interpretation.</li>
+      </ul>
+    """
+  },
+  "Mentorship": {
+    "rank": 3,
+    "type": "Command",
+    "approach": "Resilience",
+    "skill": "Command",
+    "flavor": """
+      Experience is the best teacher, but a skilled instructor can accelerate the learning process. By breaking down complex techniques into manageable components and providing clear feedback, a mentor can help others master skills that would otherwise take years to develop.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>During downtime, or once per session as a Support action, you may make a <strong>TN 5 Command (Resilience)</strong> check targeting one character with fewer total technique ranks than you.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, the target may learn one technique you know that they meet the prerequisites for. The target gains temporary access to this technique for the remainder of the session. If used during downtime, the target gains the technique permanently, reducing the experience cost to learn it by an amount equal to your ranks in Command plus your bonus successes.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op):</strong> The target may learn an additional technique you know.</li>
+        <li><strong>Resilience (op)+:</strong> You may target one additional character per (op) spent this way.</li>
+        <li><strong>Resilience (op)(op):</strong> The target reduces the experience cost to learn the technique by an additional amount equal to twice your ranks in Command.</li>
       </ul>
     """
   }

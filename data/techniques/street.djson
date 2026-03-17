@@ -296,5 +296,24 @@
         <li><strong>(op)(op)(op):</strong> Even if you fail, increase the TN of Attack action checks targeting each of your targets by 2. This effect persists until any of your targets performs an Attack action or leaves the terrain.</li>
       </ul>
     """
+  },
+  "Friends in Low Places": {
+    "rank": 1,
+    "type": "Street",
+    "approach": "Fortune",
+    "skill": "Subterfuge",
+    "flavor": """
+      In the shadows of the city, information is currency. A well-connected operator can tap into a network of informants, spies, and contacts to gain insights that others can't access. The right piece of information at the right time can be more valuable than any weapon.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per game session, during a narrative scene or as a downtime activity, you may make a <strong>TN 2 Subterfuge (Fortune)</strong> check to uncover an informant who can give you information about a subject.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, you reveal one informant who can give you information about a topic of your choice. If the informant's profile is required, use an appropriate NPC of the GM's choice.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op):</strong> If you succeed, choose one skill. The informant has a number of ranks in that skill equal to your ranks in Subterfuge and can perform checks with that skill to assist you until the end of the scene.</li>
+      </ul>
+    """
   }
 }

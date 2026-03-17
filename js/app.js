@@ -98,6 +98,7 @@
     moduleTypes:         'data/module_types.json',
     modules:             'data/modules.json',
     weapons:             'data/weapons.json',
+    items:               'data/items.json',
   };
 
   // Section display names for breadcrumbs (used by data pages)
@@ -117,6 +118,7 @@
   let moduleTypes = {};
   let modules = {};
   let weapons = {};
+  let items = {};
   let currentPage = 'home';
   let allSearchableContent = [];
   let techniqueFilters = {
@@ -253,6 +255,8 @@
       renderModulesPage(page);
     } else if (page.startsWith('weapons-')) {
       renderWeaponsPage(page);
+    } else if (page.startsWith('items-')) {
+      renderItemsPage(page);
     } else if (HTML_PAGES[page]) {
       await renderHTMLPage(page);
     } else {
@@ -283,7 +287,7 @@
   // ── Load All JSON Data ──────────────────────────────────────────
   async function loadAllData() {
     try {
-      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData] = await Promise.all([
+      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData, itemsData] = await Promise.all([
         fetch(DATA_FILES.techniqueTypes).then(r => r.json()),
         fetch(DATA_FILES.techniques).then(r => r.json()),
         fetch(DATA_FILES.advantages).then(r => r.json()),
@@ -294,6 +298,7 @@
         fetch(DATA_FILES.moduleTypes).then(r => r.json()),
         fetch(DATA_FILES.modules).then(r => r.json()),
         fetch(DATA_FILES.weapons).then(r => r.json()),
+        fetch(DATA_FILES.items).then(r => r.json()),
       ]);
       techniqueTypes = typesData || {};
       techniques = techData || {};
@@ -305,6 +310,7 @@
       moduleTypes = modTypesData || {};
       modules = modData || {};
       weapons = weaponsData || {};
+      items = itemsData || {};
     } catch (e) {
       console.error('Failed to load data:', e);
     }
@@ -400,6 +406,17 @@
         page: `weapons-${(wpn.category || 'all').toLowerCase()}`,
         type: 'weapon',
         data: wpn,
+      });
+    });
+
+    // Add items
+    Object.entries(items).forEach(([name, item]) => {
+      allSearchableContent.push({
+        title: name,
+        section: `Item: ${item.type || 'General'}`,
+        page: `items-all`,
+        type: 'item',
+        data: item,
       });
     });
   }
@@ -508,6 +525,7 @@
         ${homeCard('[ANX]', 'Anxieties', Object.keys(anxieties).length + ' emotional triggers that add Strife when provoked.', 'anxieties-all')}
         ${homeCard('[MOD]', 'T-Doll Modules', Object.keys(modules).length + ' augmentations, flash training packages, and upgrades.', 'modules-all')}
         ${homeCard('[WPN]', 'Weapons', Object.keys(weapons).length + ' firearms, blades, and combat equipment.', 'weapons-all')}
+        ${homeCard('[ITM]', 'Items', Object.keys(items).length + ' equipment, gear, and accessories.', 'items-all')}
       </div>
     `;
 
@@ -1629,6 +1647,78 @@
             <div class="weapon-stat"><strong>Signature:</strong> ${wpn.signature !== undefined ? wpn.signature : '—'}</div>
             ${qualities ? `<div class="weapon-stat"><strong>Qualities:</strong> ${qualities}</div>` : ''}
           </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // ── Items Page ────────────────────────────────────────────────
+  function renderItemsPage(page) {
+    // Filter (for now, just show all items)
+    const filtered = Object.entries(items);
+
+    // Sort alphabetically
+    filtered.sort((a, b) => a[0].localeCompare(b[0]));
+
+    const title = 'All Items';
+
+    const typeDesc = 'Equipment, gear, and accessories available for purchase or acquisition in the field.';
+
+    let html = `
+      <div class="breadcrumb">
+        <a href="#home">HOME</a>
+        <span class="sep">›</span>
+        <a href="#items-all">ITEMS</a>
+      </div>
+
+      <div class="type-header">
+        <div class="type-header__icon">⬡</div>
+        <div class="type-header__info">
+          <h1>${title.toUpperCase()}</h1>
+          <div class="type-header__desc">${typeDesc}</div>
+        </div>
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--white-dimmer); letter-spacing: 1px; margin-bottom: 20px;">
+        ${filtered.length} ITEM${filtered.length !== 1 ? 'S' : ''} FOUND
+      </div>
+
+      <div class="technique-grid">
+    `;
+
+    filtered.forEach(([name, item]) => {
+      html += renderItemCard(name, item);
+    });
+
+    html += '</div>';
+
+    contentInner.innerHTML = html;
+    attachCardToggleHandlers();
+  }
+
+  function renderItemCard(name, item) {
+    const costStr = item.cost ? `${item.cost.toLocaleString()} ¤` : 'TBD';
+
+    return `
+      <div class="technique-card">
+        <div class="technique-card__corner technique-card__corner--tl"></div>
+        <div class="technique-card__corner technique-card__corner--tr"></div>
+        <div class="technique-card__corner technique-card__corner--bl"></div>
+        <div class="technique-card__corner technique-card__corner--br"></div>
+
+        <div class="technique-card__header">
+          <div class="technique-card__name">${escapeHtml(name)}</div>
+          <div class="technique-card__meta">
+            <span class="technique-card__tag tag-type">${escapeHtml(item.type || 'ITEM')}</span>
+            <span class="technique-card__tag tag-rank">${costStr}</span>
+          </div>
+        </div>
+
+        <div class="technique-card__toggle"></div>
+
+        <div class="technique-card__body">
+          ${item.flavor ? `<div class="technique-card__flavor">${item.flavor}</div>` : ''}
+          ${item.description || '<p>No description available.</p>'}
         </div>
       </div>
     `;

@@ -6,24 +6,17 @@
       <p>Ghosts are experts at infiltration and evasion, trained to slip past security measures and leave little to no trace of their presence. Get in, get out, and leave no one the wiser, that's the Ghost way.</p>
     """,
     "perk": "Disappearing Act",
-    "techniques": {
-      "1": [
-        "Phantom Step",
-        "Scrub",
-        "Field Recon",
-        "Friends in Low Places"
-      ],
-      "2": [
-        "Ghost Step",
-        "Alibi",
-        "Prepared Ambush",
-        "Silent Strike"
-      ],
-      "3": [
-        "Vanishing Act",
-        "Silent Assassin"
-      ]
-    },
+    "techniques": [
+      "Phantom Step",
+      "Scrub",
+      "Field Recon",
+      "Ghost Step",
+      "Alibi",
+      "Prepared Ambush",
+      "Silent Strike",
+      "Vanishing Act",
+      "Silent Assassin"
+    ],
     "capstone": "Absolute Stealth"
   },
 
@@ -34,27 +27,20 @@
       <p>Sicarios are highly skilled in the use of various weapons, including firearms and blades, making them deadly combatants at any range. If someone's dead and you don't know who did it, chances are it was a Sicario.</p>
     """,
     "perk": "Killshot",
-    "techniques": {
-      "1": [
-        "Phantom Step",
-        "Poison Blade",
-        "Throwing Knife",
-        "Sighting-in",
-        "Shoot to Maim"
-      ],
-      "2": [
-        "Silent Strike",
-        "Gap in the Armor",
-        "Closing Strike",
-        "Momentous Strike"
-      ],
-      "3": [
-        "Silent Assassin",
-        "Sniper's Advantage",
-        "Hand of God",
-        "Deflective Defense"
-      ]
-    },
+    "techniques": [
+      "Phantom Step",
+      "Poison Blade",
+      "Throwing Knife",
+      "Sighting-in",
+      "Shoot to Maim",
+      "Silent Strike",
+      "Gap in the Armor",
+      "Closing Strike",
+      "Momentous Strike",
+      "Silent Assassin",
+      "Sniper's Advantage",
+      "Hand of God"
+    ],
     "capstone": "Professional Cleanup"
   },
 
@@ -65,25 +51,148 @@
       <p>Street kids are experts at improvisation, able to make use of whatever they can find to get by. They are also skilled at deception, able to talk their way out of trouble and manipulate others to their advantage.</p>
     """,
     "perk": "Urban Scavenger",
-    "techniques": {
-      "1": [
-        "Clean Hands",
-        "Improvised Hazard",
-        "Friends in Low Places",
-        "Beware the Smallest Mouse"
-      ],
-      "2": [
-        "What's Yours Is Mine",
-        "Volatile Dispersal",
-        "Improvise Weapon",
-        "Alibi"
-      ],
-      "3": [
-        "Call the Wild",
-        "Vanishing Act",
-        "Bend with the Storm"
-      ]
-    },
+    "techniques": [
+      "Clean Hands",
+      "Improvised Hazard",
+      "Friends in Low Places",
+      "Beware the Smallest Mouse",
+      "What's Yours Is Mine",
+      "Volatile Dispersal",
+      "Improvise Weapon",
+      "Alibi",
+      "Call the Wild",
+      "Bend with the Storm"
+    ],
     "capstone": "Born To Survive"
+  },
+
+  "Charmer": {
+    "skills": ["Performance", "Deception", "Insight"],
+    "flavor": """
+      <p>A Charmer knows that the most powerful weapon is a smile, the most effective armor is trust, and the deadliest trap is a promise. They navigate social situations with effortless grace, turning enemies into allies and obstacles into opportunities with nothing but words and wit.</p>
+      <p>Charmers are masters of social manipulation, able to read people like open books and write their own stories in the margins. They understand that truth is flexible, loyalty is negotiable, and everyone has a price, even if that price is just being listened to.</p>
+    """,
+    "perk": "Silver Tongue",
+    "techniques": [
+      "Cadence",
+      "Friends in Low Places",
+      "Just a Joke",
+      "Keep Your Cool",
+      "Read the Room",
+      "Bravado",
+      "Dramatic Entrance",
+      "Everyone Has a Price",
+      "Get Under Their Skin",
+      "Lighten the Mood",
+      "Manners maketh the Man",
+      "Misdirection",
+      "Slip of the Tongue",
+      "Social Manipulation",
+      "Bend with the Storm"
+    ],
+    "capstone": "Irresistible Charisma"
+  },
+
+  "Negotiator": {
+    "skills": ["Negotiation", "Culture", "Insight"],
+    "flavor": """
+      <p>In a world of broken treaties and shattered alliances, the Negotiator is the glue that holds civilization together. They understand that every conflict has a solution that leaves both parties feeling like they won, and every person has needs that can be met without violence.</p>
+      <p>Negotiators are masters of diplomacy and cultural understanding, able to bridge gaps between factions that have been at war for generations. They know that the most important battle is the one that never happens, and the most valuable resource is mutual understanding.</p>
+    """,
+    "perk": "Diplomatic Immunity",
+    "techniques": [
+      "Keep Your Cool",
+      "Read the Room",
+      "Concession",
+      "Everyone Has a Price",
+      "Manners maketh the Man",
+      "Negotiation Tactics",
+      "Operational Insight",
+      "Strategic Insight",
+      "Tactical Assessment",
+      "Two Heads are Better than One",
+      "Bond of Heroes",
+      "Flexible Positioning"
+    ],
+    "capstone": "Master Diplomat"
+  },
+
+  "Commander": {
+    "skills": ["Command", "Tactics", "Resolve"],
+    "flavor": """
+      <p>A Commander doesn't just give orders—they create certainty in chaos. When bullets fly and systems fail, they are the calm voice that cuts through the noise, the steady hand that guides the team through hell and back.</p>
+      <p>Commanders are masters of leadership and battlefield strategy, able to turn a group of individuals into a cohesive unit that moves and fights as one. They understand that morale is as important as ammunition, and that the right word at the right time can be more powerful than any weapon.</p>
+    """,
+    "perk": "Natural Leader",
+    "techniques": [
+      "Borrowed Courage",
+      "Marching Orders",
+      "War Cry",
+      "Commanding Authority",
+      "Commanding Presence",
+      "Field Fortifications",
+      "Look Out!",
+      "Mentorship",
+      "Prepared for Anything",
+      "Provocative Challenge",
+      "No Retreat",
+      "Plant a Seed",
+      "Sacrifice Play",
+      "Scorched Earth",
+      "Shock and Awe"
+    ],
+    "capstone": "Battlefield Genius"
+  },
+
+  "Netrunner": {
+    "skills": ["Computers", "Subterfuge", "Insight"],
+    "flavor": """
+      <p>In the digital shadows of 2072, a Netrunner is both ghost and god. They slip through firewalls like smoke, command systems with a thought, and leave no trace of their passing. While others fight with bullets and blades, the Netrunner wages war in the silent spaces between signals.</p>
+      <p>Netrunners are experts in electronic warfare, able to infiltrate secure networks, manipulate data streams, and turn enemy systems against their owners. They understand that in the modern world, the most dangerous weapon is not a gun, but a well-placed line of code.</p>
+    """,
+    "perk": "Ghost in the Machine",
+    "techniques": [
+      "Blackout",
+      "Dead Drop",
+      "Exfiltrate",
+      "Neural Fortification",
+      "Overclock",
+      "Spoof",
+      "Cleanup Detail",
+      "Falsify Data",
+      "Hijack",
+      "ICE Breaker",
+      "Puppet String",
+      "Rootkit",
+      "Siege Engine",
+      "Strike",
+      "Total Eclipse"
+    ],
+    "capstone": "Total Network Dominance"
+  },
+
+  "Brawler": {
+    "skills": ["Hand-To-Hand", "Conditioning", "Tactics"],
+    "flavor": """
+      <p>When the guns run dry and the knives break, there is only what you were born with: your hands, your feet, your will to survive. A Brawler understands this fundamental truth better than anyone. They are masters of close-quarters combat, turning their own body into a weapon and the environment into an arsenal.</p>
+      <p>Brawlers thrive in chaos, using momentum, leverage, and raw power to overwhelm opponents. They know that sometimes the best defense is a good offense, and sometimes the best offense is making sure your opponent never gets back up.</p>
+    """,
+    "perk": "Iron Fist",
+    "techniques": [
+      "Defensive Maneuver",
+      "Pistol Whip",
+      "Splat!",
+      "Whirling Strike",
+      "Grappler",
+      "Judo Throw",
+      "Last Stand",
+      "Murderous Intent",
+      "Rolling With the Punches",
+      "Wrest Control",
+      "Cleaving Strike",
+      "Counterattack",
+      "Crushing Blow"
+    ],
+    "capstone": "Unstoppable Force"
   }
 }

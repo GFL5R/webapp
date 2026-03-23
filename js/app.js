@@ -1846,18 +1846,28 @@
     const perk = perks[disc.perk] || {};
     const capstone = capstones[disc.capstone] || {};
     
-    // Build techniques table with rank headers
+    // Build techniques table with rank headers (grouped by technique rank)
     let techniquesHtml = '';
-    const ranks = ['1', '2', '3'];
+    const ranks = [1, 2, 3];
+    
+    // Group techniques by their rank from the technique data
+    const techniquesByRank = { 1: [], 2: [], 3: [] };
+    disc.techniques.forEach(techName => {
+      const tech = techniques[techName] || {};
+      const rank = tech.rank || 1;
+      if (techniquesByRank[rank]) {
+        techniquesByRank[rank].push({ name: techName, tech });
+      }
+    });
+    
     ranks.forEach(rank => {
-      if (disc.techniques[rank] && disc.techniques[rank].length > 0) {
+      if (techniquesByRank[rank].length > 0) {
         techniquesHtml += `
           <tr class="discipline-table__rank-header">
             <th colspan="3">Rank ${rank}</th>
           </tr>
         `;
-        disc.techniques[rank].forEach(techName => {
-          const tech = techniques[techName] || {};
+        techniquesByRank[rank].forEach(({ name: techName, tech }) => {
           const techType = tech.type || 'General';
           techniquesHtml += `
             <tr>

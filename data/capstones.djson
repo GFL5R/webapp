@@ -1,0 +1,27 @@
+{
+    "Absolute Stealth": {
+        "flavor": "Invisiblity for many is a pipe dream, but for an operator with a combination of skill, training, and some advanced technology, it can become a reality.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per game session, you may elect to become invisible for the rest of the scene. While concealed, you cannot be targeted by attacks or hostile actions and the TN for any check to hide or move stealthily is reduced by 2. However, you can still be affected by area of effect abilities and environmental hazards.</p>
+            <p>This effect ends if you make an attack or hostile action.</p>
+        """
+    },
+
+    "Professional Cleanup": {
+        "flavor": "A true professional leaves no witnesses. When the job requires absolute discretion, you can eliminate multiple targets with surgical precision, leaving no trace of your presence.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>As an Attack and Movement action, you may make a TN 4 Stealth (Swiftness) check targeting any number of minion NPCs at range 0-4.</p>
+            <p>If you succeed during a narrative scene, you silently eliminate all targets over the course of a few minutes. If you succeed during a conflict scene, at the end of each of your turns, you may silently eliminate one of these targets at range 0-2 (in addition to your other actions).</p>
+        """
+    },
+
+    "Born To Survive": {
+        "flavor": "You've been in tight spots before, and you know how to get out of them. When the odds are against you, you can push yourself to keep going, even when your body is screaming for you to stop.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene when you would suffer an amount of damage that would cause you to exceed your endurance threshold, you may instead suffer that amount of strife instead.</p>
+        """
+    }
+}

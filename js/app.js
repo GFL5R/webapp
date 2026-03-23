@@ -99,6 +99,9 @@
     modules:             'data/modules.json',
     weapons:             'data/weapons.json',
     items:               'data/items.json',
+    disciplines:         'data/disciplines.json',
+    perks:               'data/perks.json',
+    capstones:           'data/capstones.json',
   };
 
   // Section display names for breadcrumbs (used by data pages)
@@ -119,6 +122,9 @@
   let modules = {};
   let weapons = {};
   let items = {};
+  let disciplines = {};
+  let perks = {};
+  let capstones = {};
   let currentPage = 'home';
   let allSearchableContent = [];
   let techniqueFilters = {
@@ -257,6 +263,10 @@
       renderWeaponsPage(page);
     } else if (page.startsWith('items-')) {
       renderItemsPage(page);
+    } else if (page.startsWith('discipline-')) {
+      renderDisciplinePage(page);
+    } else if (page === 'Disciplines') {
+      await renderDisciplinesPage();
     } else if (HTML_PAGES[page]) {
       await renderHTMLPage(page);
     } else {
@@ -287,7 +297,7 @@
   // ── Load All JSON Data ──────────────────────────────────────────
   async function loadAllData() {
     try {
-      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData, itemsData] = await Promise.all([
+      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData, itemsData, disciplinesData, perksData, capstonesData] = await Promise.all([
         fetch(DATA_FILES.techniqueTypes).then(r => r.json()),
         fetch(DATA_FILES.techniques).then(r => r.json()),
         fetch(DATA_FILES.advantages).then(r => r.json()),
@@ -299,6 +309,9 @@
         fetch(DATA_FILES.modules).then(r => r.json()),
         fetch(DATA_FILES.weapons).then(r => r.json()),
         fetch(DATA_FILES.items).then(r => r.json()),
+        fetch(DATA_FILES.disciplines).then(r => r.json()),
+        fetch(DATA_FILES.perks).then(r => r.json()),
+        fetch(DATA_FILES.capstones).then(r => r.json()),
       ]);
       techniqueTypes = typesData || {};
       techniques = techData || {};
@@ -311,6 +324,9 @@
       modules = modData || {};
       weapons = weaponsData || {};
       items = itemsData || {};
+      disciplines = disciplinesData || {};
+      perks = perksData || {};
+      capstones = capstonesData || {};
     } catch (e) {
       console.error('Failed to load data:', e);
     }
@@ -1722,6 +1738,227 @@
         </div>
       </div>
     `;
+  }
+
+  // ── Disciplines Page (with dynamic list) ───────────────────────
+  async function renderDisciplinesPage() {
+    const url = HTML_PAGES['Disciplines'];
+    if (!url) { render404('Disciplines'); return; }
+
+    contentInner.innerHTML = `
+      <div class="loading-spinner" style="padding: 60px 0;">
+        <div class="spinner-ring"></div>
+        <div class="spinner-text">LOADING...</div>
+      </div>
+    `;
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const html = await response.text();
+
+      const section = PAGE_SECTIONS['Disciplines'] || 'Rules';
+
+      // Determine prev/next pages in reading order
+      const pageIdx = PAGE_ORDER.indexOf('Disciplines');
+      const prevPage = pageIdx > 0 ? PAGE_ORDER[pageIdx - 1] : null;
+      const nextPage = pageIdx >= 0 && pageIdx < PAGE_ORDER.length - 1 ? PAGE_ORDER[pageIdx + 1] : null;
+
+      const pageNavHtml = (prevPage || nextPage) ? `
+        <div class="page-nav">
+          ${prevPage ? `<a href="#${prevPage}" class="page-nav__link page-nav__prev">
+            <span class="page-nav__arrow">←</span>
+            <span class="page-nav__label">
+              <span class="page-nav__dir">PREVIOUS</span>
+              <span class="page-nav__title">${prevPage}</span>
+            </span>
+          </a>` : '<span></span>'}
+          ${nextPage ? `<a href="#${nextPage}" class="page-nav__link page-nav__next">
+            <span class="page-nav__label">
+              <span class="page-nav__dir">NEXT</span>
+              <span class="page-nav__title">${nextPage}</span>
+            </span>
+            <span class="page-nav__arrow">→</span>
+          </a>` : '<span></span>'}
+        </div>
+      ` : '';
+
+      contentInner.innerHTML = `
+        <div class="breadcrumb">
+          <a href="#home">HOME</a>
+          <span class="sep">›</span>
+          <a href="#Disciplines">${section.toUpperCase()}</a>
+          <span class="sep">›</span>
+          DISCIPLINES
+        </div>
+        ${html}
+        ${pageNavHtml}
+      `;
+
+      // Populate the discipline list dynamically
+      populateDisciplineList();
+    } catch (e) {
+      console.error('Failed to load Disciplines page:', e);
+      render404('Disciplines');
+    }
+  }
+
+  function populateDisciplineList() {
+    const container = document.getElementById('discipline-list-container');
+    if (!container) return;
+
+    // Sort disciplines alphabetically
+    const sortedDisciplines = Object.keys(disciplines).sort((a, b) => 
+      a.toLowerCase().localeCompare(b.toLowerCase())
+    );
+
+    const listHtml = sortedDisciplines.map(name => {
+      const disc = disciplines[name];
+      const skills = disc.skills ? disc.skills.join(', ') : '';
+      const href = `#discipline-${name.toLowerCase().replace(/\s+/g, '-')}`;
+      
+      return `
+        <a href="${href}" class="discipline-list-item">
+          <span class="discipline-list-name">${escapeHtml(name)}</span>
+          <span class="discipline-list-skills">${escapeHtml(skills)}</span>
+        </a>
+      `;
+    }).join('');
+
+    container.innerHTML = listHtml;
+  }
+
+  // ── Discipline Page ────────────────────────────────────────────
+  function renderDisciplinePage(page) {
+    const disciplineName = page.replace('discipline-', '').replace(/-/g, ' ');
+    
+    // Find the discipline (case-insensitive search)
+    const disciplineKey = Object.keys(disciplines).find(
+      key => key.toLowerCase() === disciplineName.toLowerCase()
+    );
+    
+    if (!disciplineKey) {
+      render404(page);
+      return;
+    }
+    
+    const disc = disciplines[disciplineKey];
+    const perk = perks[disc.perk] || {};
+    const capstone = capstones[disc.capstone] || {};
+    
+    // Build techniques table with rank headers
+    let techniquesHtml = '';
+    const ranks = ['1', '2', '3'];
+    ranks.forEach(rank => {
+      if (disc.techniques[rank] && disc.techniques[rank].length > 0) {
+        techniquesHtml += `
+          <tr class="discipline-table__rank-header">
+            <th colspan="3">Rank ${rank}</th>
+          </tr>
+        `;
+        disc.techniques[rank].forEach(techName => {
+          const tech = techniques[techName] || {};
+          const techType = tech.type || 'General';
+          techniquesHtml += `
+            <tr>
+              <td class="discipline-table__name">
+                <a href="#techniques-all" class="discipline-tech-link" data-tech="${escapeHtml(techName)}">${escapeHtml(techName)}</a>
+              </td>
+              <td class="discipline-table__type">${escapeHtml(techType)}</td>
+            </tr>
+          `;
+        });
+      }
+    });
+    
+    const html = `
+      <div class="breadcrumb">
+        <a href="#home">HOME</a>
+        <span class="sep">›</span>
+        <a href="#Disciplines">DISCIPLINES</a>
+        <span class="sep">›</span>
+        ${escapeHtml(disciplineKey.toUpperCase())}
+      </div>
+
+      <div class="discipline-card">
+        <div class="discipline-card__corner discipline-card__corner--tl"></div>
+        <div class="discipline-card__corner discipline-card__corner--tr"></div>
+        <div class="discipline-card__corner discipline-card__corner--bl"></div>
+        <div class="discipline-card__corner discipline-card__corner--br"></div>
+
+        <div class="discipline-card__header">
+          <h1>${escapeHtml(disciplineKey)}</h1>
+        </div>
+
+        <div class="discipline-card__content">
+          <div class="discipline-card__left">
+            <div class="discipline-card__flavor">
+              ${disc.flavor || ''}
+            </div>
+            
+            <div class="discipline-card__skills">
+              <h3>Associated Skills</h3>
+              <div class="discipline-skills-list">
+                ${disc.skills.map(skill => `<span class="discipline-skill-tag">${escapeHtml(skill)}</span>`).join('')}
+              </div>
+            </div>
+
+            <div class="discipline-card__perk">
+              <h3>Perk: ${escapeHtml(disc.perk)}</h3>
+              ${perk.flavor ? `<p class="discipline-perk-flavor">${escapeHtml(perk.flavor)}</p>` : ''}
+              ${perk.description || '<p>No description available.</p>'}
+            </div>
+          </div>
+
+          <div class="discipline-card__right">
+            <h3>Techniques</h3>
+            <table class="discipline-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${techniquesHtml}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="discipline-card__capstone">
+          <h3>Capstone: ${escapeHtml(disc.capstone)}</h3>
+          ${capstone.flavor ? `<p class="discipline-capstone-flavor">${escapeHtml(capstone.flavor)}</p>` : ''}
+          ${capstone.description || '<p>No description available.</p>'}
+        </div>
+      </div>
+    `;
+
+    contentInner.innerHTML = html;
+    attachDisciplineTechLinks();
+  }
+
+  function attachDisciplineTechLinks() {
+    contentInner.querySelectorAll('.discipline-tech-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const techName = link.dataset.tech;
+        // Navigate to techniques page and scroll to the technique
+        window.location.hash = 'techniques-all';
+        // After a short delay, scroll to the technique
+        setTimeout(() => {
+          const cards = contentInner.querySelectorAll('.technique-card__name');
+          for (const card of cards) {
+            if (card.textContent === techName) {
+              card.closest('.technique-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+              card.closest('.technique-card').classList.add('highlight');
+              setTimeout(() => card.closest('.technique-card').classList.remove('highlight'), 2000);
+              break;
+            }
+          }
+        }, 300);
+      });
+    });
   }
 
   // ── Shared UI Handlers ────────────────────────────────────────

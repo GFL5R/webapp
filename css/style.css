@@ -764,6 +764,290 @@ body {
 .technique-card__corner--bl { bottom: 0; left: 0; border-bottom: 2px solid; border-left: 2px solid; }
 .technique-card__corner--br { bottom: 0; right: 0; border-bottom: 2px solid; border-right: 2px solid; }
 
+/* --- Discipline Card --- */
+.discipline-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  margin: 32px 0;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.discipline-card:hover {
+  border-color: var(--yellow-dim);
+  box-shadow: 0 0 20px var(--yellow-glow);
+}
+
+.discipline-card__corner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-color: var(--yellow-dim);
+}
+
+.discipline-card__corner--tl { top: 0; left: 0; border-top: 2px solid; border-left: 2px solid; }
+.discipline-card__corner--tr { top: 0; right: 0; border-top: 2px solid; border-right: 2px solid; }
+.discipline-card__corner--bl { bottom: 0; left: 0; border-bottom: 2px solid; border-left: 2px solid; }
+.discipline-card__corner--br { bottom: 0; right: 0; border-bottom: 2px solid; border-right: 2px solid; }
+
+.discipline-card__header {
+  padding: 20px 24px;
+  background: var(--bg-panel-alt);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.discipline-card__header h1 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--yellow);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.discipline-card__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.discipline-card__left {
+  padding: 24px;
+  border-right: 1px solid var(--border-color);
+}
+
+.discipline-card__right {
+  padding: 24px;
+}
+
+.discipline-card__flavor {
+  font-style: italic;
+  color: var(--white-dim);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.discipline-card__flavor p {
+  margin-bottom: 12px;
+}
+
+.discipline-card__skills {
+  margin-bottom: 20px;
+}
+
+.discipline-card__skills h3,
+.discipline-card__perk h3,
+.discipline-card__right h3,
+.discipline-card__capstone h3 {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--amber);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.discipline-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.discipline-skill-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border: 1px solid var(--yellow-dim);
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
+.discipline-card__perk {
+  background: var(--bg-panel-alt);
+  padding: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.discipline-perk-flavor {
+  font-style: italic;
+  color: var(--white-dim);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.discipline-card__perk p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.discipline-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.discipline-table thead {
+  background: var(--bg-panel-alt);
+}
+
+.discipline-table th {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--yellow);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.discipline-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.discipline-table__rank-header th {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--amber);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: left;
+  background: var(--bg-panel);
+  border-top: 2px solid var(--border-color);
+}
+
+.discipline-table__rank-header:first-child th {
+  border-top: none;
+}
+
+.discipline-table__name {
+  font-weight: 500;
+}
+
+.discipline-table__type {
+  color: var(--white-dim);
+  font-size: 0.8rem;
+}
+
+.discipline-tech-link {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.discipline-tech-link:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+.discipline-card__capstone {
+  padding: 20px 24px;
+  background: var(--bg-panel-alt);
+  border-top: 1px solid var(--border-color);
+}
+
+.discipline-capstone-flavor {
+  font-style: italic;
+  color: var(--white-dim);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.discipline-card__capstone p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.discipline-card__capstone ul {
+  margin: 8px 0 0 20px;
+}
+
+.discipline-card__capstone li {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+/* Discipline card highlight animation */
+.technique-card.highlight {
+  animation: highlightPulse 2s ease-out;
+}
+
+@keyframes highlightPulse {
+  0% { box-shadow: 0 0 0 0 var(--yellow); }
+  50% { box-shadow: 0 0 30px 10px var(--yellow-glow-strong); }
+  100% { box-shadow: 0 0 0 0 var(--yellow); }
+}
+
+@media (max-width: 768px) {
+  .discipline-card__content {
+    grid-template-columns: 1fr;
+  }
+  
+  .discipline-card__left {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+/* --- Discipline List --- */
+.discipline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.discipline-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.discipline-list-item:hover {
+  border-color: var(--yellow-dim);
+  box-shadow: 0 0 15px var(--yellow-glow);
+  background: var(--bg-hover);
+}
+
+.discipline-list-name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--yellow);
+  letter-spacing: 1px;
+}
+
+.discipline-list-skills {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--white-dim);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  .discipline-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
 /* --- Weapon Stats --- */
 .weapon-stats {
   display: grid;

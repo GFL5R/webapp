@@ -1,0 +1,25 @@
+{
+    "Disappearing Act": {
+        "flavor": "When you need to disappear, you need to disappear. By pushing your body and mind to their limits, an operator can slip by even the most vigilant of guards.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When performing checks to hide, move stealthily, or deceive others about your true identity, you may suffer strife up to your ranks in this discipline to choose that many characters targeted by the check. Treat each chosen character's vigilance as 1 lower while resolving the check.</p>
+        """
+    },
+
+    "Killshot": {
+        "flavor": "A target unaware is at their most vulnerable. By striking before they even know they're threatened, you can ensure that they never have the chance to defend themselves or call for help.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>While performing an Attack action against a target who is Compromised, Incapacitated, Unconscious, or unaware of your presence, treat the damage and deadliness of your weapon as being increased by your ranks in this discipline.</p>
+        """
+    },
+
+    "Urban Scavenger": {
+        "flavor": "Resources are scarce, and the city is a dangerous place. But if you know where to look, you can find what you need to survive.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per game session when performing a downtime activity to craft or repair, you may scavenge supplies worth an amount of resources whose rarity total equals your ranks in this discipline. This might include finding electronic components, scrap metal, power cells, or convincing locals to trade spare parts or access to fabrication tools.</p>
+        """
+    }
+}

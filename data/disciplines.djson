@@ -1,0 +1,89 @@
+{
+  Ghost: {
+    "skills": ["Stealth", "Subterfuge", "Conditioning"],
+    "flavor": """
+      <p>Ghosts don't exist. They're just a tale people assign to unexplained phenomena. No one can prove that you exist either, just the effects you've left behind, usually in the form of a corpse, if anything at all. Unseen operators like you are the stuff of nightmares for any security detail, and the stuff of legends for everyone else.</p>
+      <p>Ghosts are experts at infiltration and evasion, trained to slip past security measures and leave little to no trace of their presence. Get in, get out, and leave no one the wiser, that's the Ghost way.</p>
+    """,
+    "perk": "Disappearing Act",
+    "techniques": {
+      "1": [
+        "Phantom Step",
+        "Scrub",
+        "Field Recon",
+        "Friends in Low Places"
+      ],
+      "2": [
+        "Ghost Step",
+        "Alibi",
+        "Prepared Ambush",
+        "Silent Strike"
+      ],
+      "3": [
+        "Vanishing Act",
+        "Silent Assassin"
+      ]
+    },
+    "capstone": "Absolute Stealth"
+  },
+
+  Sicario: {
+    "skills": ["Stealth", "Blades", "Firearms"],
+    "flavor": """
+      <p>A Sicario, spanish for "hitman", is a professional assassin, specializing in eliminating high-profile targets. They are often hired by powerful individuals or organizations to carry out their dirty work, and are known for their efficiency and discretion.</p>
+      <p>Sicarios are highly skilled in the use of various weapons, including firearms and blades, making them deadly combatants at any range. If someone's dead and you don't know who did it, chances are it was a Sicario.</p>
+    """,
+    "perk": "Killshot",
+    "techniques": {
+      "1": [
+        "Phantom Step",
+        "Poison Blade",
+        "Throwing Knife",
+        "Sighting-in",
+        "Shoot to Maim"
+      ],
+      "2": [
+        "Silent Strike",
+        "Gap in the Armor",
+        "Closing Strike",
+        "Momentous Strike"
+      ],
+      "3": [
+        "Silent Assassin",
+        "Sniper's Advantage",
+        "Hand of God",
+        "Deflective Defense"
+      ]
+    },
+    "capstone": "Professional Cleanup"
+  },
+
+  "Street Kid": {
+    "skills": ["Deception", "Crafting", "Survival"],
+    "flavor": """
+      <p>No one taught the street kid how to survive. They had to learn on their own, and they had to learn fast. The streets are a harsh place, and only the strong survive. Street kids are resourceful and cunning, able to navigate the urban jungle with ease.</p>
+      <p>Street kids are experts at improvisation, able to make use of whatever they can find to get by. They are also skilled at deception, able to talk their way out of trouble and manipulate others to their advantage.</p>
+    """,
+    "perk": "Urban Scavenger",
+    "techniques": {
+      "1": [
+        "Clean Hands",
+        "Improvised Hazard",
+        "Friends in Low Places",
+        "Beware the Smallest Mouse"
+      ],
+      "2": [
+        "What's Yours Is Mine",
+        "Volatile Dispersal",
+        "Improvise Weapon",
+        "Alibi"
+      ],
+      "3": [
+        "Call the Wild",
+        "Vanishing Act",
+        "Bend with the Storm"
+      ]
+    },
+    "capstone": "Born To Survive"
+  }
+}

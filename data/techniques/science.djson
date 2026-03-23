@@ -56,6 +56,55 @@
       </ul>
     """
   },
+  "Emergency Triage": {
+    "rank": 1,
+    "type": "Science",
+    "approach": "Swiftness",
+    "skill": "Medicine",
+    "flavor": """
+      In the aftermath of violence, seconds matter. A trained medic can assess multiple casualties in moments, identifying who needs immediate attention and who can wait. This rapid categorization saves lives when resources are limited and time is short.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>TN 2 Medicine (Swiftness)</strong> check to assess all characters within range 0-1.</p>
+      <h3>Effects:</h3>
+      <p>On a success, you identify which characters are injured and the general severity of their wounds, ordered from most critical to least.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op)+:</strong> Identify one specific injury per (op) spent this way, in order from most life-threatening to least.</li>
+      </ul>
+    """
+  },
+  "Examine for ELID": {
+    "rank": 1,
+    "type": "Science",
+    "approach": "Precision",
+    "skill": "Science",
+    "flavor": """
+      The signs of Collapse infection are distinctive to those who know what to look for. Discoloration of the skin, the texture of emerging crystalline growths, the pattern of silicification. A trained observer can determine how far the disease has progressed without exposing themselves to the radiation the infected emit.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Make a <strong>TN 2 Science (Precision)</strong> check to visually assess a creature or body for signs of ELID infection.</p>
+      <h3>Effects:</h3>
+      <p>On a success, you determine whether the subject is infected and, if so, the current stage of ELID progression (Early, Middle, or Late).</p>
+    """
+  },
+  "Stop the Bleeding" : {
+    "rank": 1,
+    "type": "Science",
+    "approach": "Swiftness",
+    "skill": "Medicine",
+    "flavor": """
+      A rapidly bleeding wound can be fatal in minutes. By applying a tourniquet, pressure bandage, or other emergency measures, you can slow or stop the bleeding and prevent a grievous injury from becoming a fatal one.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>TN 4 Medicine (Swiftness)</strong> check targeting an injured character who is actively bleeding.</p>
+      <h3>Effects:</h3>
+      <p>On a success, you stop the bleeding, preventing the character from suffering further damage from that wound. The character still needs medical attention to properly treat the injury and recover.</p>
+    """
+  },
   "Forensic Analysis": {
     "rank": 2,
     "type": "Science",
@@ -76,6 +125,25 @@
       </ul>
     """
   },
+  "Stabilize the Dying" : {
+    "rank": 2,
+    "type": "Science",
+    "approach": "Resilience",
+    "skill": "Medicine",
+    "flavor": """
+      When someone is on the brink of death, the right treatment can pull them back from the edge. By applying emergency medical techniques, you can stabilize a dying person and buy them precious time to receive proper care.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>TN 4 Medicine (Resilience)</strong> check targeting a dying character with the dying condition.</p>
+      <h3>Effects:</h3>
+      <p>On a success, you stabilize the character, removing the dying condition. The character is no longer at risk of dying from their injuries, but they remain unconscious and require medical attention to recover.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op)(op):</strong> The character regains consciousness and can act immediately, though they are still heavily injured.</li>
+      </ul>
+    """
+  },
   "Jack of All Trades": {
     "rank": 3,
     "type": "Science",
@@ -93,6 +161,21 @@
       <ul>
         <li><strong>Fortune (op):</strong> This technique applies to one additional skill of your choice.</li>
       </ul>
+    """
+  },
+  "Chemical Synthesis": {
+    "rank": 3,
+    "type": "Science",
+    "approach": "Precision",
+    "skill": "Science",
+    "flavor": """
+      With the right knowledge and resources, you can create chemical compounds that have a variety of applications, from improvised explosives to makeshift medicines. By understanding the properties of different substances and how to combine them, you can turn raw materials into tools for survival.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a downtime activity, if you have access to the necessary materials and equipment, make a <strong>Science (Precision)</strong> check to manufacture a chemical substance. The TN is determined by the GM based on the complexity of the substance being created.</p>
+      <h3>Effects:</h3>
+      <p>On a success, you create the desired chemical substance. The GM determines the specific properties and potential uses of the substance based on your description and the context of its creation.</p>
     """
   }
 }

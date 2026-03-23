@@ -1,6 +1,6 @@
 {
     "Absolute Stealth": {
-        "flavor": "Invisiblity for many is a pipe dream, but for an operator with a combination of skill, training, and some advanced technology, it can become a reality.",
+        "flavor": "Most operators consider true invisibility impossible. The right combination of training and technology proves them wrong.",
         "description": """
             <h3>Effect:</h3>
             <p>Once per game session, you may elect to become invisible for the rest of the scene. While concealed, you cannot be targeted by attacks or hostile actions and the TN for any check to hide or move stealthily is reduced by 2. However, you can still be affected by area of effect abilities and environmental hazards.</p>
@@ -22,6 +22,55 @@
         "description": """
             <h3>Effect:</h3>
             <p>Once per scene when you would suffer an amount of damage that would cause you to exceed your endurance threshold, you may instead suffer that amount of strife instead.</p>
+        """
+    },
+
+    "Elementary": {
+        "flavor": "When all the pieces come together, the truth becomes undeniable. Your analysis sharpens everyone around you.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per game session, when you succeed on a Science, Medicine, or Insight check, you may immediately share your analysis with all allies who can hear you. Each ally removes strife equal to your ranks in Science and adds 2 bonus approach dice to the next check they make this scene that is informed by the information you shared.</p>
+        """
+    },
+
+    "Irresistible Charisma": {
+        "flavor": "People see what they want to see. You've learned to weaponize that instinct, presenting exactly the right facade and punishing anyone foolish enough to think they've figured you out.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When you perform a check targeting another character to which one of your advantages or disadvantages applies, you may choose another advantage or disadvantage that shares a type with it. Unless they have clear evidence to the contrary, the target comes to believe that you have the advantage or disadvantage you chose instead of the one you actually have.</p>
+            <p>If the target attempts to seize or exploit this false advantage or disadvantage, their check automatically counts as failing with a shortfall of 3. They suffer 3 strife and the Disoriented condition.</p>
+        """
+    },
+
+    "Master Diplomat": {
+        "flavor": "When the room is on the verge of falling apart, you are the still point at the center. Your composure is contagious.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, you may spend 1 Fortune Point to reduce your strife to 0. When you do, each friendly character in the scene may reduce their strife by your Humanity divided by 10 (rounded down).</p>
+        """
+    },
+
+    "Battlefield Genius": {
+        "flavor": "Failure is not an option when lives depend on you. A true battlefield genius always finds another way through.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per game session during a skirmish or mass battle, after you fail a check, you may attempt the check again, treating the TN as 1.</p>
+        """
+    },
+
+    "Proxy": {
+        "flavor": "Every good netrunner keeps a sacrificial layer between themselves and the network's countermeasures. When the trace closes in, it finds a ghost, and you're already somewhere else.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per game session, when your heat would reach 10 (Burned), you may instead reduce your heat to 5 and burn your proxy. The network's security traces the intrusion to the proxy rather than to you, and you remain connected. The proxy is destroyed and must be replaced before this ability can be used again.</p>
+        """
+    },
+
+    "Unstoppable Force": {
+        "flavor": "When the rage takes hold, every strike becomes a force of nature. Your fists break through any defense as if it weren't there.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per round, when performing an Attack action check while Enraged, you may spend 1 Fortune Point to alter each kept die containing (su) to a result containing (ex).</p>
         """
     }
 }

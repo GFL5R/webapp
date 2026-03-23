@@ -69,8 +69,8 @@
   "Charmer": {
     "skills": ["Performance", "Deception", "Insight"],
     "flavor": """
-      <p>A Charmer knows that the most powerful weapon is a smile, the most effective armor is trust, and the deadliest trap is a promise. They navigate social situations with effortless grace, turning enemies into allies and obstacles into opportunities with nothing but words and wit.</p>
-      <p>Charmers are masters of social manipulation, able to read people like open books and write their own stories in the margins. They understand that truth is flexible, loyalty is negotiable, and everyone has a price, even if that price is just being listened to.</p>
+      <p>A Charmer knows that the right word at the right time can accomplish what a bullet never could. They navigate social situations with effortless grace, turning obstacles into opportunities with nothing but wit.</p>
+      <p>Charmers are masters of social manipulation, able to read people like open books and write their own stories in the margins. Everyone has a price, even if that price is just being listened to.</p>
     """,
     "perk": "Silver Tongue",
     "techniques": [
@@ -120,7 +120,7 @@
   "Commander": {
     "skills": ["Command", "Tactics", "Resolve"],
     "flavor": """
-      <p>A Commander doesn't just give orders—they create certainty in chaos. When bullets fly and systems fail, they are the calm voice that cuts through the noise, the steady hand that guides the team through hell and back.</p>
+      <p>A Commander creates certainty in chaos. When bullets fly and systems fail, they are the calm voice that guides the team through hell and back.</p>
       <p>Commanders are masters of leadership and battlefield strategy, able to turn a group of individuals into a cohesive unit that moves and fights as one. They understand that morale is as important as ammunition, and that the right word at the right time can be more powerful than any weapon.</p>
     """,
     "perk": "Natural Leader",
@@ -147,8 +147,8 @@
   "Netrunner": {
     "skills": ["Computers", "Subterfuge", "Insight"],
     "flavor": """
-      <p>In the digital shadows of 2072, a Netrunner is both ghost and god. They slip through firewalls like smoke, command systems with a thought, and leave no trace of their passing. While others fight with bullets and blades, the Netrunner wages war in the silent spaces between signals.</p>
-      <p>Netrunners are experts in electronic warfare, able to infiltrate secure networks, manipulate data streams, and turn enemy systems against their owners. They understand that in the modern world, the most dangerous weapon is not a gun, but a well-placed line of code.</p>
+      <p>In the digital shadows of 2072, a Netrunner is both ghost and god. They slip through firewalls like smoke and leave no trace of their passing. The Netrunner wages war in the silent spaces between signals.</p>
+      <p>Netrunners are experts in electronic warfare, able to infiltrate secure networks and turn enemy systems against their owners. In 2072, a well-placed line of code is the most dangerous weapon in existence.</p>
     """,
     "perk": "Ghost in the Machine",
     "techniques": [
@@ -168,14 +168,14 @@
       "Strike",
       "Total Eclipse"
     ],
-    "capstone": "Total Network Dominance"
+    "capstone": "Proxy"
   },
 
   "Brawler": {
     "skills": ["Hand-To-Hand", "Conditioning", "Tactics"],
     "flavor": """
-      <p>When the guns run dry and the knives break, there is only what you were born with: your hands, your feet, your will to survive. A Brawler understands this fundamental truth better than anyone. They are masters of close-quarters combat, turning their own body into a weapon and the environment into an arsenal.</p>
-      <p>Brawlers thrive in chaos, using momentum, leverage, and raw power to overwhelm opponents. They know that sometimes the best defense is a good offense, and sometimes the best offense is making sure your opponent never gets back up.</p>
+      <p>When the guns run dry and the knives break, there is only what you were born with. A Brawler understands this fundamental truth better than anyone. They are masters of close-quarters combat, turning their own body into a weapon and the environment into an arsenal.</p>
+      <p>Brawlers thrive in chaos, using raw power to overwhelm opponents. They know that sometimes the best defense is a good offense, and sometimes the best offense is making sure your opponent never gets back up.</p>
     """,
     "perk": "Iron Fist",
     "techniques": [
@@ -194,5 +194,29 @@
       "Crushing Blow"
     ],
     "capstone": "Unstoppable Force"
+  },
+
+  "Analyst": {
+    "skills": ["Science", "Insight", "Medicine"],
+    "flavor": """
+      <p>Every problem has an answer, if you know where to look. The Analyst is the operator who reads what others overlook, connecting scattered data points into a coherent picture while everyone else is still asking questions.</p>
+      <p>Analysts combine scientific expertise with sharp observational instincts, serving as the intellectual backbone of any team. When the mission depends on understanding what happened and why, the Analyst is the one who figures it out.</p>
+    """,
+    "perk": "Analytical Mind",
+    "techniques": [
+      "Ballistic Analysis",
+      "Chemical Analysis",
+      "Emergency Triage",
+      "Strategic Insight",
+      "Operational Insight",
+      "Tactical Assessment",
+      "Forensic Analysis",
+      "Um, Actually",
+      "Stabilize the Dying",
+      "Jack of All Trades",
+      "Slip of the Tongue",
+      "Chemical Synthesis"
+    ],
+    "capstone": "Elementary"
   }
 }

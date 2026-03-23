@@ -21,5 +21,56 @@
             <h3>Effect:</h3>
             <p>Once per game session when performing a downtime activity to craft or repair, you may scavenge supplies worth an amount of resources whose rarity total equals your ranks in this discipline. This might include finding electronic components, scrap metal, power cells, or convincing locals to trade spare parts or access to fabrication tools.</p>
         """
+    },
+
+    "Analytical Mind": {
+        "flavor": "Most people see the world as it appears. You see it as it is. Your trained mind processes details others dismiss, turning raw observation into actionable intelligence.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When you make a Science, Medicine, or Insight check to gather or analyze information, you may suffer strife up to your ranks in this discipline to add that many bonus approach dice to the check.</p>
+        """
+    },
+
+    "Silver Tongue": {
+        "flavor": "Everyone has a weakness. The trick is making them show it to you willingly, so gracefully that they thank you for it.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When you exploit a target's disadvantage as part of a Scheme action, you do not need to spend a Fortune Point, and you may reroll additional dice up to your ranks in this discipline.</p>
+        """
+    },
+
+    "Diplomatic Immunity": {
+        "flavor": "A skilled diplomat communicates more with a pause and a raised eyebrow than most people do with an entire speech. The words left unsaid are always the most dangerous.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, when making a check to persuade or influence another character, you may add a number of kept dice set to (op) results equal to your ranks in this discipline.</p>
+        """
+    },
+
+    "Natural Leader": {
+        "flavor": "When you step between your team and danger, you make sure they're ready to hit back. A good commander turns every moment of protection into a lesson.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When you make a check to perform the Guard action, you may spend (op) as follows:</p>
+            <ul>
+                <li><strong>(op)+:</strong> If you succeed, you may guard one additional character in range per (op) spent this way. You may spend a maximum number of (op) this way equal to your ranks in this discipline.</li>
+            </ul>
+        """
+    },
+
+    "Ghost in the Machine": {
+        "flavor": "You don't break into systems. You were already there. A true netrunner treats digital infrastructure like a second home, and never leaves fingerprints.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When you succeed on a Computers check to access or manipulate a system, you leave no trace of your intrusion. Additionally, you may maintain a number of active system connections equal to your ranks in this discipline without requiring additional checks to sustain them.</p>
+        """
+    },
+
+    "Iron Fist": {
+        "flavor": "A weapon can be taken from you. Your fists cannot. When your hands are your primary tools of violence, every part of your body becomes a delivery system.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Your unarmed attacks have their damage increased by your ranks in this discipline. If you are not wielding a weapon, you also add your ranks in this discipline to your physical resistance.</p>
+        """
     }
 }

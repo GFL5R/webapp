@@ -1,4 +1,81 @@
 {
+  "Ballistic Analysis": {
+    "rank": 1,
+    "type": "Science",
+    "approach": "Precision",
+    "skill": "Science",
+    "flavor": """
+      Every bullet tells a story. The angle of impact, the depth of penetration, the pattern of spatter, all of these reveal information about the weapon that fired the shot and the position of the shooter. A trained eye can reconstruct the events of a firefight from nothing but the aftermath.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Make a <strong>TN 2 Science (Precision)</strong> check to analyze ballistic evidence such as wounds, bullet impacts, or blast patterns.</p>
+      <h3>Effects:</h3>
+      <p>On a success, you determine the approximate location of the attack's origin point.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> Determine additional details about the weapon used, including its Damage and Deadliness.</li>
+      </ul>
+    """
+  },
+  "Chemical Analysis": {
+    "rank": 1,
+    "type": "Science",
+    "approach": "Resilience",
+    "skill": "Science",
+    "flavor": """
+      The modern battlefield is awash in chemical compounds, from industrial pollutants to military-grade toxins. Understanding what a substance is, where it came from, and how to counter it can mean the difference between life and death in contaminated environments.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Make a <strong>TN 2 Science (Resilience)</strong> check to analyze a chemical sample (liquid, powder, aerosol, or residue).</p>
+      <h3>Effects:</h3>
+      <p>On a success, you identify its composition and typical properties, and infer likely origin sources or manufacturing methods.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op):</strong> Determine a method to synthesize or neutralize the substance.</li>
+      </ul>
+    """
+  },
+  "Hazard Detection": {
+    "rank": 1,
+    "type": "Science",
+    "approach": "Fortune",
+    "skill": "Science",
+    "flavor": """
+      The wastes are filled with invisible killers. Radiation from collapsed fluid reactors, biological agents from abandoned research facilities, chemical residues from old battlefields. The ability to detect these threats before they detect you is essential for survival in contaminated zones.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>TN 2 Science (Fortune)</strong> check to scan for hazards.</p>
+      <h3>Effects:</h3>
+      <p>On a success, you detect radiation, biological agents, chemical weapons, or other environmental dangers within range 0-3.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op):</strong> Determine the exact nature and severity of the hazard.</li>
+      </ul>
+    """
+  },
+  "Forensic Analysis": {
+    "rank": 2,
+    "type": "Science",
+    "approach": "Precision",
+    "skill": "Science",
+    "flavor": """
+      The dead cannot speak, but their remains tell stories to those who know how to listen. A thorough examination of a crime scene or corpse can reveal the sequence of events that led to death, providing crucial intelligence about enemy operations, criminal activity, or the nature of a threat.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Make a <strong>TN 2 Science (Precision)</strong> check to inspect a crime scene or body for forensic clues.</p>
+      <h3>Effects:</h3>
+      <p>On a success, you determine what happened to the victim, including cause of death and sequence of events.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> Determine the number of assailants involved.</li>
+        <li><strong>Precision (op):</strong> Discover a physical trail (blood, footprints, fibers) that reveals the direction the assailant fled.</li>
+      </ul>
+    """
+  },
   "Jack of All Trades": {
     "rank": 3,
     "type": "Science",

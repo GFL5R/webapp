@@ -11,7 +11,7 @@
         "flavor": "A target unaware is at their most vulnerable. By striking before they even know they're threatened, you can ensure that they never have the chance to defend themselves or call for help.",
         "description": """
             <h3>Effect:</h3>
-            <p>While performing an Attack action against a target who is Compromised, Incapacitated, Unconscious, or unaware of your presence, treat the damage and deadliness of your weapon as being increased by your ranks in this discipline.</p>
+            <p>While performing an Attack action against a target who is <a href="#Conditions::condition-compromised">Compromised</a>, <a href="#Conditions::condition-incapacitated">Incapacitated</a>, <a href="#Conditions::condition-unconscious">Unconscious</a>, or unaware of your presence, treat the damage and deadliness of your weapon as being increased by your ranks in this discipline.</p>
         """
     },
 
@@ -86,7 +86,7 @@
         "flavor": "'Tis but a scratch.",
         "description": """
             <h3>Effect:</h3>
-            <p>When you make an Attack action with a sword, if your target is biological and you hit them and deal at least one damage, you inflict the bleeding condition on them for a number of rounds equal to your ranks in this discipline.</p>
+            <p>When you make an Attack action with a sword, if your target is biological and you hit them and deal at least one damage, you inflict the <a href="#Conditions::condition-bleeding">bleeding condition</a> on them for a number of rounds equal to your ranks in this discipline.</p>
         """
     },
 

@@ -66,7 +66,7 @@
     """,
     "description": """
       <h3>Activation:</h3>
-      <p>As a Support action, make a <strong>TN 2 Medicine (Swiftness)</strong> check to assess all characters within range 0-1.</p>
+      <p>As a Support action, make a <strong>TN 2 <a href="#Skills::medicine">Medicine</a> (Swiftness)</strong> check to assess all characters within range 0-1.</p>
       <h3>Effects:</h3>
       <p>On a success, you identify which characters are injured and the general severity of their wounds, ordered from most critical to least.</p>
       <h3>New Opportunities:</h3>
@@ -85,9 +85,9 @@
     """,
     "description": """
       <h3>Activation:</h3>
-      <p>Make a <strong>TN 2 Science (Precision)</strong> check to visually assess a creature or body for signs of ELID infection.</p>
+      <p>Make a <strong>TN 2 Science (Precision)</strong> check to visually assess a creature or body for signs of <a href="#Conditions::elid">ELID infection</a>.</p>
       <h3>Effects:</h3>
-      <p>On a success, you determine whether the subject is infected and, if so, the current stage of ELID progression (Early, Middle, or Late).</p>
+      <p>On a success, you determine whether the subject is infected and, if so, the current stage of <a href="#Conditions::elid">ELID</a> progression (Early, Middle, or Late).</p>
     """
   },
   "Stop the Bleeding" : {
@@ -100,9 +100,9 @@
     """,
     "description": """
       <h3>Activation:</h3>
-      <p>As a Support action, make a <strong>TN 4 Medicine (Swiftness)</strong> check targeting an injured character who is actively bleeding.</p>
+      <p>As a Support action, make a <strong>TN 4 Medicine (Swiftness)</strong> check targeting an injured character who is actively <a href="#Conditions::condition-bleeding">bleeding</a>.</p>
       <h3>Effects:</h3>
-      <p>On a success, you stop the bleeding, preventing the character from suffering further damage from that wound. The character still needs medical attention to properly treat the injury and recover.</p>
+      <p>On a success, you stop the <a href="#Conditions::condition-bleeding">bleeding</a>, preventing the character from suffering further damage from that wound. The character still needs medical attention to properly treat the injury and recover.</p>
     """
   },
   "Forensic Analysis": {
@@ -135,9 +135,9 @@
     """,
     "description": """
       <h3>Activation:</h3>
-      <p>As a Support action, make a <strong>TN 4 Medicine (Resilience)</strong> check targeting a dying character with the dying condition.</p>
+      <p>As a Support action, make a <strong>TN 4 Medicine (Resilience)</strong> check targeting a dying character with the <a href="#Conditions::condition-dying">dying condition</a>.</p>
       <h3>Effects:</h3>
-      <p>On a success, you stabilize the character, removing the dying condition. The character is no longer at risk of dying from their injuries, but they remain unconscious and require medical attention to recover.</p>
+      <p>On a success, you stabilize the character, removing the <a href="#Conditions::condition-dying">dying condition</a>. The character is no longer at risk of dying from their injuries, but they remain unconscious and require medical attention to recover.</p>
       <h3>New Opportunities:</h3>
       <ul>
         <li><strong>Resilience (op)(op):</strong> The character regains consciousness and can act immediately, though they are still heavily injured.</li>

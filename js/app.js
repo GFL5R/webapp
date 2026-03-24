@@ -767,7 +767,9 @@
       if (anchor) {
         const target = document.getElementById(anchor);
         if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
         }
       }
     } catch (e) {

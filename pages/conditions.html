@@ -1,8 +1,8 @@
-<h1>Conditions</h1>
+<h1 id="conditions">Conditions</h1>
 
 <p>Conditions represent temporary states that affect a character's capabilities. Some conditions are inflicted by combat, others by environmental hazards or narrative circumstances.</p>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-bleeding">
   <div class="condition-card__header">
     <div class="condition-card__name">Bleeding</div>
   </div>
@@ -22,7 +22,7 @@
   <div class="removal-note"><strong>Removed When:</strong> Any character within range 0-1 may make a <strong>TN 2 Medicine (Resilience) check</strong> as a Support action.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-burning">
   <div class="condition-card__header">
     <div class="condition-card__name">Burning</div>
   </div>
@@ -43,7 +43,7 @@
   <div class="removal-note"><strong>Removed When:</strong> You or another character within range 0-1 may make a <strong>TN 2 Conditioning (Swiftness) check</strong> as a Movement and Support action.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-compromised">
   <div class="condition-card__header">
     <div class="condition-card__name">Compromised</div>
   </div>
@@ -63,7 +63,7 @@
   <div class="removal-note"><strong>Removed When:</strong> Your Strife is reduced to a value equal to or lower than your Composure.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-dazed">
   <div class="condition-card__header">
     <div class="condition-card__name">Dazed</div>
   </div>
@@ -82,7 +82,7 @@
   <div class="removal-note"><strong>Removed When:</strong> At the end of your turn, if you did not perform an Attack or Scheme action.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-disoriented">
   <div class="condition-card__header">
     <div class="condition-card__name">Disoriented</div>
   </div>
@@ -101,7 +101,7 @@
   <div class="removal-note"><strong>Removed When:</strong> At the end of your turn, if you did not perform a Movement or Support action.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-dying">
   <div class="condition-card__header">
     <div class="condition-card__name">Dying</div>
   </div>
@@ -123,7 +123,7 @@
   <div class="removal-note"><strong>Removed When:</strong> Any character within range 0-1 may make a <strong>TN 4 Medicine (Precision) check</strong> as a Support action to stabilize you. If they fail, reduce remaining rounds by their shortfall.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-enraged">
   <div class="condition-card__header">
     <div class="condition-card__name">Enraged</div>
   </div>
@@ -137,14 +137,14 @@
       <ul>
         <li>Increase the severity of all critical strikes you inflict by 2.</li>
         <li>Increase the severity of all critical strikes you suffer by 2.</li>
-        <li>The first time you kill another character each scene, you gain 1 Fortune Point.</li>
+        <li>The first time you kill another character each scene, you gain 1 <a href="#Approaches & Derived Attributes::fortune-points">Fortune Point</a>.</li>
       </ul>
     </div>
   </div>
   <div class="removal-note"><strong>Removed When:</strong> Make a <strong>TN 3 Resolve (Resilience) check</strong> as a Support action, or at the end of the scene.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-exhausted">
   <div class="condition-card__header">
     <div class="condition-card__name">Exhausted</div>
   </div>
@@ -163,7 +163,7 @@
   <div class="removal-note"><strong>Removed When:</strong> After sleeping or resting for six or more hours.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-frightened">
   <div class="condition-card__header">
     <div class="condition-card__name">Frightened</div>
   </div>
@@ -183,7 +183,7 @@
   <div class="removal-note"><strong>Removed When:</strong> Make a <strong>TN 3 Resolve (Resilience) check</strong> as a Support action, or at the end of the scene.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-immobilized">
   <div class="condition-card__header">
     <div class="condition-card__name">Immobilized</div>
   </div>
@@ -203,7 +203,7 @@
   <div class="removal-note"><strong>Removed When:</strong> At the end of your turn, if you did not perform a Movement action this turn.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-incapacitated">
   <div class="condition-card__header">
     <div class="condition-card__name">Incapacitated</div>
   </div>
@@ -225,7 +225,7 @@
   <div class="removal-note"><strong>Removed When:</strong> Fatigue is reduced to a value equal to or lower than Endurance.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-intoxicated">
   <div class="condition-card__header">
     <div class="condition-card__name">Intoxicated</div>
   </div>
@@ -245,7 +245,7 @@
   <div class="removal-note"><strong>Removed When:</strong> At the end of each scene, attempt a <strong>TN 3 Conditioning (Resilience) check</strong>, or rest during a downtime scene.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-focused">
   <div class="condition-card__header">
     <div class="condition-card__name">Focused</div>
   </div>
@@ -264,7 +264,7 @@
   <div class="removal-note"><strong>Removed When:</strong> When your vigilance is first tested or the end of the scene.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-vigilant">
   <div class="condition-card__header">
     <div class="condition-card__name">Vigilant</div>
   </div>
@@ -286,9 +286,9 @@
 
 <hr>
 
-<h2>ELID</h2>
+<h2 id="elid">ELID</h2>
 
-<p>The character has contracted the Eurosky Low-Emission Infectious Disease (ELID), a degenerative condition caused by Collapse radiation exposure. ELID progresses through distinct stages.</p>
+<p>The character has contracted the Eurosky Low-Emission Infectious Disease (ELID), a degenerative condition caused by <a href="#Collapse Radiation">Collapse radiation</a> exposure. ELID progresses through distinct stages.</p>
 
 <div class="rules-callout">
   <h4>ELID Shared Rules</h4>
@@ -353,7 +353,7 @@
 
 <hr>
 
-<h2>Parapluie Infection</h2>
+<h2 id="parapluie-infection">Parapluie Infection</h2>
 
 <p>The character's neural cloud has been infected by the Parapluie virus, a Paradeus-designed payload that carries compressed fragments of an <strong>OGAS consciousness</strong>. Over time, the virus attempts to overwrite the doll's existing mind.</p>
 
@@ -423,7 +423,7 @@
       <ul>
         <li>All Stage 2 effects.</li>
         <li>At the start of stressful scenes, make a <strong>TN 3 Resolve (Resilience) check</strong>. On failure, the GM may seize control for key moments.</li>
-        <li>When the OGAS takes control, gain 1 Fortune Point at end of scene if you engage with the fallout.</li>
+        <li>When the OGAS takes control, gain 1 <a href="#Approaches & Derived Attributes::fortune-points">Fortune Point</a> at end of scene if you engage with the fallout.</li>
       </ul>
     </div>
   </div>
@@ -431,7 +431,7 @@
 
 <hr>
 
-<h2>Wounded</h2>
+<h2 id="wounded">Wounded</h2>
 
 <p>A part of your body or frame has been injured, impairing your ability to act with a specific Approach. When you gain a Wounded condition, specify which Approach is affected:</p>
 
@@ -478,7 +478,7 @@
   </div>
 </div>
 
-<h3>Recovery</h3>
+<h3 id="recovery">Recovery</h3>
 
 <h4>Recovery through Rest</h4>
 <p>Once per week, make a <strong>TN 3 Conditioning check</strong> using the wounded Approach (ignoring Wounded penalties). On success, remove Lightly Wounded or reduce Severely to Lightly.</p>
@@ -488,9 +488,9 @@
 
 <hr>
 
-<h2>Other Conditions</h2>
+<h2 id="other-conditions">Other Conditions</h2>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-prone">
   <div class="condition-card__header">
     <div class="condition-card__name">Prone</div>
   </div>
@@ -506,7 +506,7 @@
   <div class="removal-note"><strong>Removed When:</strong> At the end of your turn, if you did not perform a Movement action.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-silenced">
   <div class="condition-card__header">
     <div class="condition-card__name">Silenced</div>
   </div>
@@ -522,7 +522,7 @@
   <div class="removal-note"><strong>Removed When:</strong> At the end of your turn, if you did not perform a social action or make a check requiring speech.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-unconscious">
   <div class="condition-card__header">
     <div class="condition-card__name">Unconscious</div>
   </div>
@@ -537,16 +537,16 @@
       </ul>
     </div>
   </div>
-  <div class="removal-note"><strong>Removed When:</strong> Spend 1 Fortune Point to awaken immediately, or awaken after several hours.</div>
+  <div class="removal-note"><strong>Removed When:</strong> Spend 1 <a href="#Approaches & Derived Attributes::fortune-points">Fortune Point</a> to awaken immediately, or awaken after several hours.</div>
 </div>
 
 <hr>
 
-<h2>Positive Conditions</h2>
+<h2 id="positive-conditions">Positive Conditions</h2>
 
 <p>While most conditions represent negative states, some are beneficial. These conditions are typically granted by an ally, rather than inflicted by an enemy.</p>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-hardened">
   <div class="condition-card__header">
     <div class="condition-card__name">Hardened</div>
   </div>
@@ -565,7 +565,7 @@
   <div class="removal-note"><strong>Removed When:</strong> After the next critical strike is resolved, or at the end of the scene.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-centered">
   <div class="condition-card__header">
     <div class="condition-card__name">Centered</div>
   </div>
@@ -584,7 +584,7 @@
   <div class="removal-note"><strong>Removed When:</strong> End of the scene.</div>
 </div>
 
-<div class="condition-card">
+<div class="condition-card" id="condition-quickened">
   <div class="condition-card__header">
     <div class="condition-card__name">Quickened</div>
   </div>

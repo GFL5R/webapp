@@ -1,4 +1,4 @@
-<h1>Electronic Warfare</h1>
+<h1 id="electronic-warfare">Electronic Warfare</h1>
 
 <p>In 2072, the global network is a patchwork of point-to-point microwave relays, local mesh networks, and hardened fiber backbones. Satellite links are rare and jealously guarded. Most secure systems are air-gapped, connected to wider networks only at scheduled intervals or through physical terminals. To hack something important, you usually have to be close enough to touch it, or close enough to get shot trying.</p>
 
@@ -8,13 +8,13 @@
 
 <hr>
 
-<h2>Nodes &amp; Connections</h2>
+<h2 id="nodes-and-connections">Nodes &amp; Connections</h2>
 
 <p>Every hackable network is a map of <strong>nodes</strong> connected by <strong>links</strong>. A node represents a single device or cluster of related devices: a camera bank, a locked door, a drone relay, a server, a security panel. Each node is a place in cyberspace where a hacker can act.</p>
 
 <p>Links connect nodes to one another. Some links are open; others are protected by <strong>barriers</strong> that must be bypassed before a hacker can cross them. A hacker's avatar begins at the node corresponding to the device they physically connected to, and must traverse links to reach other nodes.</p>
 
-<h3>Designing a Network</h3>
+<h3 id="designing-a-network">Designing a Network</h3>
 
 <p>When preparing a network for play, the GM should decide:</p>
 <ul>
@@ -27,7 +27,7 @@
 
 <hr>
 
-<h2>Security Rating</h2>
+<h2 id="security-rating">Security Rating</h2>
 
 <p>Every network has a <strong>Security Rating</strong> from 1 to 6:</p>
 
@@ -51,7 +51,7 @@
 
 <hr>
 
-<h2>EW Rating</h2>
+<h2 id="ew-rating">EW Rating</h2>
 
 <p>Characters who engage in electronic warfare have an <strong>EW Rating</strong> representing their hardware, software, and exploits:</p>
 
@@ -76,42 +76,42 @@
 
 <hr>
 
-<h2>The Intrusion Scene</h2>
+<h2 id="the-intrusion-scene">The Intrusion Scene</h2>
 
 <p>An intrusion into a hostile network is a conflict scene using the standard phase structure:</p>
 
-<h3>Phase 1: Initiative</h3>
+<h3 id="phase-1-initiative">Phase 1: Initiative</h3>
 
 <p>Each participant makes a <strong>TN 1 Computers check</strong>. Base initiative is their <strong>Focus</strong> (if prepared) or <strong>Vigilance</strong> (if caught off-guard). On success, add 1 plus bonus successes. The GM also rolls initiative for sentries and operators.</p>
 
-<h3>Phase 2: Take Turns</h3>
+<h3 id="phase-2-take-turns">Phase 2: Take Turns</h3>
 
 <p>Characters act in initiative order, highest to lowest. Each turn follows:</p>
 <ol>
   <li><strong>Beginning of Turn:</strong> Resolve beginning-of-turn effects.</li>
   <li><strong>Set Stance:</strong> Choose your Approach for this turn.</li>
-  <li><strong>Perform Action:</strong> Take one action from the EW Actions list or use a Technique. You may also <strong>traverse one link</strong> before or after your action (equivalent to moving one range band). Traversing a barrier requires an action instead.</li>
+  <li><strong>Perform Action:</strong> Take one action from the EW Actions list or use a Technique. You may also <strong>traverse one link</strong> before or after your action (equivalent to moving one <a href="#Range & Movement::range-bands">range band</a>). Traversing a barrier requires an action instead.</li>
   <li><strong>End of Turn:</strong> Resolve end-of-turn effects. Then gain Heat.</li>
 </ol>
 
-<h3>Phase 3: Resolution</h3>
+<h3 id="phase-3-resolution">Phase 3: Resolution</h3>
 
 <p>The intrusion ends when the hacker achieves their objective, is forced to disconnect, or chooses to withdraw.</p>
 
 <hr>
 
-<h2>Heat</h2>
+<h2 id="heat">Heat</h2>
 
 <p><strong>Heat</strong> is a per-character resource that tracks how much noise you're making on a hostile network. It begins at 0 and rises as you act.</p>
 
-<h3>Gaining Heat</h3>
+<h3 id="gaining-heat">Gaining Heat</h3>
 <ul>
   <li>At the <strong>end of your turn</strong>, if you performed an action against a hostile system, gain 1 Heat.</li>
   <li>If you <strong>failed</strong> a check against a hostile system, gain 1 <em>additional</em> Heat (stacks).</li>
   <li>Some <strong>Techniques</strong> include a heat cost.</li>
 </ul>
 
-<h3>Heat Thresholds</h3>
+<h3 id="heat-thresholds">Heat Thresholds</h3>
 
 <table>
   <thead>
@@ -141,22 +141,19 @@
   </tbody>
 </table>
 
-<h3>Managing Heat</h3>
+<h3 id="managing-heat">Managing Heat</h3>
 
-<dl>
-  <dt>Running Silent</dt>
-  <dd>At the start of your turn, declare you are running silent. While running silent, you do not gain Heat at end of turn for performing actions (you still gain Heat from failed checks). However, increase TN of all your checks by 1. You may stop running silent at any time before making a check.</dd>
+<ul>
+  <li><strong>Running Silent</strong> At the start of your turn, declare you are running silent. While running silent, you do not gain Heat at end of turn for performing actions (you still gain Heat from failed checks). However, increase TN of all your checks by 1. You may stop running silent at any time before making a check.</li>
 
-  <dt>Opportunity</dt>
-  <dd>When you generate Opportunity (<span class="data-label">OP</span>) on a check against a hostile system, spend <span class="data-label">OP</span> to reduce Heat gained from that check by 1 per <span class="data-label">OP</span> spent (can reduce to 0).</dd>
+  <li><strong>Opportunity</strong> When you generate Opportunity <img src="../assets/Opportunity.svg" alt="Opportunity" class="symbol"> on a check against a hostile system, spend <img src="../assets/Opportunity.svg" alt="Opportunity" class="symbol"> to reduce Heat gained from that check by 1 per <img src="../assets/Opportunity.svg" alt="Opportunity" class="symbol"> spent (can reduce to 0).</li>
 
-  <dt>Pause</dt>
-  <dd>The Pause action reduces Heat directly (see EW Actions below).</dd>
-</dl>
+  <li><strong>Pause</strong> The Pause action reduces Heat directly (see EW Actions below).</li>
+  </ul>
 
 <hr>
 
-<h2>Electronic Warfare Actions</h2>
+<h2 id="electronic-warfare-actions">Electronic Warfare Actions</h2>
 
 <p>The following actions are available to <strong>all characters</strong> in an EW scene: no special training required. More specialized capabilities require <strong>Techniques</strong>.</p>
 
@@ -266,9 +263,9 @@
 
 <hr>
 
-<h2>Sentries &amp; Operators</h2>
+<h2 id="sentries-and-operators">Sentries &amp; Operators</h2>
 
-<h3>Sentries</h3>
+<h3 id="sentries">Sentries</h3>
 
 <p>Autonomous defense programs that patrol or guard nodes. They follow programming with rigid precision.</p>
 
@@ -286,19 +283,19 @@
 
 <p>Sentries use simplified initiative equal to their Security Rating. When a sentry attacks, it deals damage equal to half its Attack Rating (rounded up) plus bonus successes.</p>
 
-<h3>Operators</h3>
+<h3 id="operators">Operators</h3>
 
 <p>An <strong>operator</strong> is a human (or T-Doll) hacker defending the network. Operators use full character rules with Approaches, skills, stances, and techniques. They do not need to Crack systems on their own network, can traverse links freely (ignoring barriers), and do not accumulate Heat on their home network.</p>
 
 <hr>
 
-<h2>T-Dolls &amp; Electronic Warfare</h2>
+<h2 id="t-dolls-and-electronic-warfare">T-Dolls &amp; Electronic Warfare</h2>
 
-<h3>Targeting a T-Doll</h3>
+<h3 id="targeting-a-t-doll">Targeting a T-Doll</h3>
 
 <p>A T-Doll can be targeted by EW actions just like any networked device. The attacker must either be on the same network or within range 0&ndash;2 with a wireless-capable deck. The TN for hostile actions is the T-Doll's own Security Rating.</p>
 
-<h3>Level II</h3>
+<h3 id="level-ii">Level II</h3>
 
 <p>T-Dolls can project their neural cloud directly into a network, entering an immersive virtual layer called <strong>Level II</strong>. This commits their full processing power, gaining enormous capability at the cost of physical vulnerability.</p>
 
@@ -325,23 +322,19 @@
 
 <hr>
 
-<h2>Hacker Duels</h2>
+<h2 id="hacker-duels">Hacker Duels</h2>
 
 <p>When two hackers meet with hostile intent, the encounter becomes a <strong>Hacker Duel</strong> (following standard duel rules with modifications):</p>
 
-<dl>
-  <dt>Initiative</dt>
-  <dd>A <strong>TN 1 Computers check</strong> (rather than Resolve).</dd>
+<ul>
+  <li><strong>Initiative</strong> A <strong>TN 1 Computers check</strong> (rather than Resolve).</li>
 
-  <dt>Staredown</dt>
-  <dd>At the start of each round, both participants gain <strong>Heat equal to the current round number</strong>. Then participants who are not Compromised may bid Strife to increase initiative.</dd>
+  <li><strong>Staredown</strong> At the start of each round, both participants gain <strong>Heat equal to the current round number</strong>. Then participants who are not Compromised may bid <a href="#Strife">Strife</a> to increase initiative.</li>
 
-  <dt>Range</dt>
-  <dd>Both hackers are at range for all effects. Physical positioning is irrelevant.</dd>
+  <li><strong>Range</strong> Both hackers are at range for all effects. Physical positioning is irrelevant.</li>
 
-  <dt>Ending</dt>
-  <dd>Ends when one participant disconnects for any reason: Burned Heat, voluntary disconnect, Incapacitated, or physical connection severed.</dd>
-</dl>
+  <li><strong>Ending</strong> Ends when one participant disconnects for any reason: Burned Heat, voluntary disconnect, Incapacitated, or physical connection severed.</li>
+</ul>
 
 <hr>
 
@@ -369,16 +362,13 @@
 
 <h2>EW &amp; Physical Scenes</h2>
 
-<dl>
-  <dt>Splitting Actions</dt>
-  <dd>A jacked-in character can act in <em>either</em> the physical or virtual realm on their turn, but not both. Movement can be spent in whichever realm they act in.</dd>
+<ul>
+  <li><strong>Splitting Actions</strong> A jacked-in character can act in <em>either</em> the physical or virtual realm on their turn, but not both. Movement can be spent in whichever realm they act in.</li>
 
-  <dt>Awareness</dt>
-  <dd>A connected character remains aware of physical surroundings unless in Level II. They can speak, observe, and react, but physical action requires dedicating their turn.</dd>
+  <li><strong>Awareness</strong> A connected character remains aware of physical surroundings unless in Level II. They can speak, observe, and react, but physical action requires dedicating their turn.</li>
 
-  <dt>Embedding EW in Other Scenes</dt>
-  <dd>An intrusion can run concurrently with a skirmish, chase, or intrigue. Use the same initiative order; each character declares which realm they're acting in.</dd>
-</dl>
+  <li><strong>Embedding EW in Other Scenes</strong> An intrusion can run concurrently with a skirmish, chase, or intrigue. Use the same initiative order; each character declares which realm they're acting in.</li>
+</ul>
 
 <hr>
 

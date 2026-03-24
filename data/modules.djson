@@ -446,7 +446,7 @@
     description: """
       <h3>Effects</h3>
       <ul>
-        <li>Increases EW Rating by 1.</li>
+        <li>Increases <a href="#Electronic Warfare::ew-rating">EW Rating</a> by 1.</li>
       </ul>
     """
   },
@@ -461,7 +461,7 @@
     description: """
       <h3>Effects</h3>
       <ul>
-        <li>Increases Security Rating by 1, raising the TN for hostile EW actions targeting her systems.</li>
+        <li>Increases <a href="#Electronic Warfare::security-rating">Security Rating</a> by 1, raising the TN for hostile EW actions targeting her systems.</li>
       </ul>
     """
   },
@@ -506,7 +506,7 @@
     description: """
       <h3>Effects</h3>
       <ul>
-        <li>Increases your armor value by 1. This bonus stacks with any equipped armor.</li>
+        <li>Increases your <a href="#Weapons & Armor::armor">armor value</a> by 1. This bonus stacks with any equipped armor.</li>
       </ul>
     """
   },
@@ -521,7 +521,7 @@
     description: """
       <h3>Effects</h3>
       <ul>
-        <li>Reduces your effective Collapse exposure tier by 1 for all mechanical purposes. This cannot reduce your exposure below 0.</li>
+        <li>Reduces your effective <a href="#Collapse Radiation::gaining-collapse-by-zone">Collapse Zone</a> exposure tier by 1 for all mechanical purposes. This cannot reduce your exposure below 0.</li>
       </ul>
     """
   },
@@ -536,7 +536,7 @@
     description: """
       <h3>Effects</h3>
       <ul>
-        <li>You may take Passions related to food, drink, scent, or taste. Without this unit, such Passions are unavailable to T-Dolls.</li>
+        <li>You may take <a href="#Passions">Passions</a> related to food, drink, scent, or taste. Without this unit, such Passions are unavailable to T-Dolls.</li>
       </ul>
     """
   },
@@ -566,7 +566,7 @@
     description: """
       <h3>Effects</h3>
       <ul>
-        <li>Allows you to use Remolding techniques.</li>
+        <li>Allows you to use <a href="#techniques-remolding">Remolding techniques</a>.</li>
       </ul>
     """
   }

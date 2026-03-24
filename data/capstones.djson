@@ -38,7 +38,7 @@
         "description": """
             <h3>Effect:</h3>
             <p>When you perform a check targeting another character to which one of your advantages or disadvantages applies, you may choose another advantage or disadvantage that shares a type with it. Unless they have clear evidence to the contrary, the target comes to believe that you have the advantage or disadvantage you chose instead of the one you actually have.</p>
-            <p>If the target attempts to seize or exploit this false advantage or disadvantage, their check automatically counts as failing with a shortfall of 3. They suffer 3 strife and the Disoriented condition.</p>
+            <p>If the target attempts to seize or exploit this false advantage or disadvantage, their check automatically counts as failing with a shortfall of 3. They suffer 3 strife and the <a href="#Conditions::condition-disoriented">Disoriented condition</a>.</p>
         """
     },
 
@@ -99,7 +99,7 @@
             <p>Once per scene, before making an Attack action with a pistol, you may declare a called shot. Choose one of the following effects. On a successful hit, the chosen effect triggers in addition to normal damage:</p>
             <ul>
                 <li><strong>Disarm:</strong> The target drops one item they are holding.</li>
-                <li><strong>Cripple:</strong> The target suffers Lightly Wounded in a chosen Approach.</li>
+                <li><strong>Cripple:</strong> The target suffers <a href="#Conditions::wounded">Lightly Wounded</a> in a chosen Approach.</li>
                 <li><strong>Disable:</strong> One piece of equipment on the target is rendered inoperable until repaired.</li>
             </ul>
         """

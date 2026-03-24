@@ -1033,10 +1033,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   background: var(--bg-panel);
   border: 1px solid var(--border-color);
   padding: 16px 20px;
   text-decoration: none;
+  cursor: pointer;
   transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
@@ -2495,3 +2497,56 @@ body {
 .wip-modal__corner--tr { top: 0; right: 0; border-width: 2px 2px 0 0; }
 .wip-modal__corner--bl { bottom: 0; left: 0; border-width: 0 0 2px 2px; }
 .wip-modal__corner--br { bottom: 0; right: 0; border-width: 0 2px 2px 0; }
+
+/* --- Discipline Modal --- */
+.discipline-modal-overlay {
+  position: fixed;
+  top: var(--topbar-height);
+  left: var(--sidebar-width);
+  right: 0;
+  bottom: 0;
+  background: rgba(6, 10, 18, 0.88);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 500;
+  backdrop-filter: blur(4px);
+  opacity: 1;
+  transition: opacity 0.25s;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+
+.discipline-modal-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.discipline-modal__content {
+  width: 100%;
+  max-width: 860px;
+}
+
+.discipline-modal__content .discipline-card {
+  margin-top: 0;
+}
+
+.discipline-modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--white-dim);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: color 0.2s;
+  z-index: 1;
+}
+
+.discipline-modal__close:hover {
+  color: var(--yellow);
+}

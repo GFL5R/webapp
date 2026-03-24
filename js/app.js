@@ -143,6 +143,8 @@
   const searchResults = document.getElementById('searchResults');
   const loadingOverlay = document.getElementById('loadingOverlay');
   const wipModalOverlay = document.getElementById('wipModalOverlay');
+  const disciplineModalOverlay = document.getElementById('disciplineModalOverlay');
+  const disciplineModalContent = document.getElementById('disciplineModalContent');
 
   // ── Initialize ─────────────────────────────────────────────────
   async function init() {
@@ -152,6 +154,7 @@
     setupBackToTop();
     setupSidebarCollapse();
     setupWipModal();
+    setupDisciplineModal();
 
     // Load all JSON data
     await loadAllData();
@@ -180,6 +183,123 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') dismiss();
     }, { once: true });
+  }
+
+  // ── Discipline Modal ───────────────────────────────────────────
+  function closeDisciplineModal() {
+    disciplineModalOverlay.classList.add('hidden');
+  }
+
+  function setupDisciplineModal() {
+    disciplineModalOverlay.addEventListener('click', (e) => {
+      if (e.target === disciplineModalOverlay) closeDisciplineModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !disciplineModalOverlay.classList.contains('hidden')) closeDisciplineModal();
+    });
+  }
+
+  function openDisciplineModal(page) {
+    const disciplineName = page.replace('discipline-', '').replace(/-/g, ' ');
+    const disciplineKey = Object.keys(disciplines).find(
+      key => key.toLowerCase() === disciplineName.toLowerCase()
+    );
+
+    if (!disciplineKey) return;
+
+    const disc = disciplines[disciplineKey];
+    const perk = perks[disc.perk] || {};
+    const capstone = capstones[disc.capstone] || {};
+
+    const techniquesByRank = { 1: [], 2: [], 3: [] };
+    disc.techniques.forEach(techName => {
+      const tech = techniques[techName] || {};
+      const rank = tech.rank || 1;
+      if (techniquesByRank[rank]) techniquesByRank[rank].push({ name: techName, tech });
+    });
+
+    let techniquesHtml = '';
+    [1, 2, 3].forEach(rank => {
+      if (techniquesByRank[rank].length > 0) {
+        techniquesHtml += `<tr class="discipline-table__rank-header"><th colspan="2">Rank ${rank}</th></tr>`;
+        techniquesByRank[rank].forEach(({ name: techName, tech }) => {
+          techniquesHtml += `
+            <tr>
+              <td class="discipline-table__name">
+                <a href="#techniques-all" class="discipline-tech-link" data-tech="${escapeHtml(techName)}">${escapeHtml(techName)}</a>
+              </td>
+              <td class="discipline-table__type">${escapeHtml(tech.type || 'General')}</td>
+            </tr>
+          `;
+        });
+      }
+    });
+
+    disciplineModalContent.innerHTML = `
+      <div class="discipline-card">
+        <div class="discipline-card__corner discipline-card__corner--tl"></div>
+        <div class="discipline-card__corner discipline-card__corner--tr"></div>
+        <div class="discipline-card__corner discipline-card__corner--bl"></div>
+        <div class="discipline-card__corner discipline-card__corner--br"></div>
+        <button class="discipline-modal__close" id="disciplineModalClose" aria-label="Close">[✕]</button>
+
+        <div class="discipline-card__header">
+          <h1>${escapeHtml(disciplineKey)}</h1>
+        </div>
+
+        <div class="discipline-card__content">
+          <div class="discipline-card__left">
+            <div class="discipline-card__flavor">${disc.flavor || ''}</div>
+            <div class="discipline-card__skills">
+              <h3>Associated Skills</h3>
+              <div class="discipline-skills-list">
+                ${disc.skills.map(skill => `<span class="discipline-skill-tag">${escapeHtml(skill)}</span>`).join('')}
+              </div>
+            </div>
+            <div class="discipline-card__perk">
+              <h3>Perk: ${escapeHtml(disc.perk)}</h3>
+              ${perk.flavor ? `<p class="discipline-perk-flavor">${escapeHtml(perk.flavor)}</p>` : ''}
+              ${perk.description || '<p>No description available.</p>'}
+            </div>
+          </div>
+          <div class="discipline-card__right">
+            <h3>Techniques</h3>
+            <table class="discipline-table">
+              <thead><tr><th>Name</th><th>Type</th></tr></thead>
+              <tbody>${techniquesHtml}</tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="discipline-card__capstone">
+          <h3>Capstone: ${escapeHtml(disc.capstone)}</h3>
+          ${capstone.flavor ? `<p class="discipline-capstone-flavor">${escapeHtml(capstone.flavor)}</p>` : ''}
+          ${capstone.description || '<p>No description available.</p>'}
+        </div>
+      </div>
+    `;
+
+    disciplineModalOverlay.classList.remove('hidden');
+    document.getElementById('disciplineModalClose').addEventListener('click', closeDisciplineModal);
+    disciplineModalContent.querySelectorAll('.discipline-tech-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeDisciplineModal();
+        window.location.hash = 'techniques-all';
+        setTimeout(() => {
+          const techName = link.dataset.tech;
+          const cards = contentInner.querySelectorAll('.technique-card__name');
+          for (const card of cards) {
+            if (card.textContent === techName) {
+              card.closest('.technique-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+              card.closest('.technique-card').classList.add('highlight');
+              setTimeout(() => card.closest('.technique-card').classList.remove('highlight'), 2000);
+              break;
+            }
+          }
+        }, 300);
+      });
+    });
   }
 
   // ── Navigation ─────────────────────────────────────────────────
@@ -263,8 +383,6 @@
       renderWeaponsPage(page);
     } else if (page.startsWith('items-')) {
       renderItemsPage(page);
-    } else if (page.startsWith('discipline-')) {
-      renderDisciplinePage(page);
     } else if (page === 'Disciplines') {
       await renderDisciplinesPage();
     } else if (HTML_PAGES[page]) {
@@ -1823,12 +1941,11 @@
       return names.map(name => {
         const disc = disciplines[name];
         const skills = disc.skills ? disc.skills.join(', ') : '';
-        const href = `#discipline-${name.toLowerCase().replace(/\s+/g, '-')}`;
         return `
-          <a href="${href}" class="discipline-list-item">
+          <button class="discipline-list-item" data-discipline="${escapeHtml(name)}">
             <span class="discipline-list-name">${escapeHtml(name)}</span>
             <span class="discipline-list-skills">${escapeHtml(skills)}</span>
-          </a>
+          </button>
         `;
       }).join('');
     }
@@ -1845,147 +1962,12 @@
         </div>
       </div>
     `;
-  }
 
-  // ── Discipline Page ────────────────────────────────────────────
-  function renderDisciplinePage(page) {
-    const disciplineName = page.replace('discipline-', '').replace(/-/g, ' ');
-    
-    // Find the discipline (case-insensitive search)
-    const disciplineKey = Object.keys(disciplines).find(
-      key => key.toLowerCase() === disciplineName.toLowerCase()
-    );
-    
-    if (!disciplineKey) {
-      render404(page);
-      return;
-    }
-    
-    const disc = disciplines[disciplineKey];
-    const perk = perks[disc.perk] || {};
-    const capstone = capstones[disc.capstone] || {};
-    
-    // Build techniques table with rank headers (grouped by technique rank)
-    let techniquesHtml = '';
-    const ranks = [1, 2, 3];
-    
-    // Group techniques by their rank from the technique data
-    const techniquesByRank = { 1: [], 2: [], 3: [] };
-    disc.techniques.forEach(techName => {
-      const tech = techniques[techName] || {};
-      const rank = tech.rank || 1;
-      if (techniquesByRank[rank]) {
-        techniquesByRank[rank].push({ name: techName, tech });
-      }
-    });
-    
-    ranks.forEach(rank => {
-      if (techniquesByRank[rank].length > 0) {
-        techniquesHtml += `
-          <tr class="discipline-table__rank-header">
-            <th colspan="3">Rank ${rank}</th>
-          </tr>
-        `;
-        techniquesByRank[rank].forEach(({ name: techName, tech }) => {
-          const techType = tech.type || 'General';
-          techniquesHtml += `
-            <tr>
-              <td class="discipline-table__name">
-                <a href="#techniques-all" class="discipline-tech-link" data-tech="${escapeHtml(techName)}">${escapeHtml(techName)}</a>
-              </td>
-              <td class="discipline-table__type">${escapeHtml(techType)}</td>
-            </tr>
-          `;
-        });
-      }
-    });
-    
-    const html = `
-      <div class="breadcrumb">
-        <a href="#home">HOME</a>
-        <span class="sep">›</span>
-        <a href="#Disciplines">DISCIPLINES</a>
-        <span class="sep">›</span>
-        ${escapeHtml(disciplineKey.toUpperCase())}
-      </div>
-
-      <div class="discipline-card">
-        <div class="discipline-card__corner discipline-card__corner--tl"></div>
-        <div class="discipline-card__corner discipline-card__corner--tr"></div>
-        <div class="discipline-card__corner discipline-card__corner--bl"></div>
-        <div class="discipline-card__corner discipline-card__corner--br"></div>
-
-        <div class="discipline-card__header">
-          <h1>${escapeHtml(disciplineKey)}</h1>
-        </div>
-
-        <div class="discipline-card__content">
-          <div class="discipline-card__left">
-            <div class="discipline-card__flavor">
-              ${disc.flavor || ''}
-            </div>
-            
-            <div class="discipline-card__skills">
-              <h3>Associated Skills</h3>
-              <div class="discipline-skills-list">
-                ${disc.skills.map(skill => `<span class="discipline-skill-tag">${escapeHtml(skill)}</span>`).join('')}
-              </div>
-            </div>
-
-            <div class="discipline-card__perk">
-              <h3>Perk: ${escapeHtml(disc.perk)}</h3>
-              ${perk.flavor ? `<p class="discipline-perk-flavor">${escapeHtml(perk.flavor)}</p>` : ''}
-              ${perk.description || '<p>No description available.</p>'}
-            </div>
-          </div>
-
-          <div class="discipline-card__right">
-            <h3>Techniques</h3>
-            <table class="discipline-table">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Type</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${techniquesHtml}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="discipline-card__capstone">
-          <h3>Capstone: ${escapeHtml(disc.capstone)}</h3>
-          ${capstone.flavor ? `<p class="discipline-capstone-flavor">${escapeHtml(capstone.flavor)}</p>` : ''}
-          ${capstone.description || '<p>No description available.</p>'}
-        </div>
-      </div>
-    `;
-
-    contentInner.innerHTML = html;
-    attachDisciplineTechLinks();
-  }
-
-  function attachDisciplineTechLinks() {
-    contentInner.querySelectorAll('.discipline-tech-link').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const techName = link.dataset.tech;
-        // Navigate to techniques page and scroll to the technique
-        window.location.hash = 'techniques-all';
-        // After a short delay, scroll to the technique
-        setTimeout(() => {
-          const cards = contentInner.querySelectorAll('.technique-card__name');
-          for (const card of cards) {
-            if (card.textContent === techName) {
-              card.closest('.technique-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
-              card.closest('.technique-card').classList.add('highlight');
-              setTimeout(() => card.closest('.technique-card').classList.remove('highlight'), 2000);
-              break;
-            }
-          }
-        }, 300);
+    container.querySelectorAll('.discipline-list-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.dataset.discipline;
+        const key = `discipline-${name.toLowerCase().replace(/\s+/g, '-')}`;
+        openDisciplineModal(key);
       });
     });
   }

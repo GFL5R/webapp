@@ -345,17 +345,23 @@
 
   function handleRoute() {
     const hash = decodeURIComponent(window.location.hash.slice(1)) || 'home';
-    navigateTo(hash);
+    // Separate page key from in-page anchor (e.g. "Setting & T-Dolls::t-doll-generations")
+    const sepIdx = hash.indexOf('::');
+    if (sepIdx !== -1) {
+      navigateTo(hash.slice(0, sepIdx), hash.slice(sepIdx + 2));
+    } else {
+      navigateTo(hash);
+    }
   }
 
-  async function navigateTo(page) {
+  async function navigateTo(page, anchor) {
     currentPage = page;
     setActiveNav(page);
     contentInner.style.animation = 'none';
     contentInner.offsetHeight; // force reflow
     contentInner.style.animation = '';
 
-    window.scrollTo({ top: 0 });
+    if (!anchor) window.scrollTo({ top: 0 });
 
     if (page === 'home') {
       renderHomePage();
@@ -386,7 +392,7 @@
     } else if (page === 'Disciplines') {
       await renderDisciplinesPage();
     } else if (HTML_PAGES[page]) {
-      await renderHTMLPage(page);
+      await renderHTMLPage(page, anchor);
     } else {
       render404(page);
     }
@@ -686,7 +692,7 @@
   }
 
   // ── HTML Page ───────────────────────────────────────────────────
-  async function renderHTMLPage(page) {
+  async function renderHTMLPage(page, anchor) {
     const url = HTML_PAGES[page];
     if (!url) { render404(page); return; }
 
@@ -756,6 +762,14 @@
       });
 
       initTabComponents(contentInner);
+
+      // Scroll to anchor if provided
+      if (anchor) {
+        const target = document.getElementById(anchor);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
     } catch (e) {
       console.error('Failed to load page:', e);
       contentInner.innerHTML = `
@@ -792,17 +806,32 @@
   }
 
   function resolvePageLink(href) {
+    // Separate anchor fragment from path
+    let anchor = '';
+    let path = decodeURIComponent(href);
+    const hashIdx = path.indexOf('#');
+    if (hashIdx !== -1) {
+      anchor = '::' + path.slice(hashIdx + 1); // '::anchorId' for SPA routing
+      path = path.slice(0, hashIdx);
+    }
+
     // Try to match common link patterns to known pages
-    let clean = decodeURIComponent(href).replace(/\.html$/, '').replace(/\.md$/, '');
+    let clean = path.replace(/\.html$/, '').replace(/\.md$/, '');
     // Strip relative path prefixes
     clean = clean.replace(/^(\.\.\/)+/, '').replace(/^\.\//, '');
 
     // Direct match against HTML_PAGES keys
-    if (HTML_PAGES[clean]) return clean;
+    if (HTML_PAGES[clean]) return clean + anchor;
 
-    // Try matching the last parts of the path
+    // Try matching the last parts of the path (by key)
     for (const key of Object.keys(HTML_PAGES)) {
-      if (key.endsWith(clean)) return key;
+      if (key.endsWith(clean)) return key + anchor;
+    }
+
+    // Try matching against HTML_PAGES values (file paths)
+    const cleanWithExt = clean + '.html';
+    for (const [key, val] of Object.entries(HTML_PAGES)) {
+      if (val === 'pages/' + cleanWithExt || val.endsWith('/' + cleanWithExt)) return key + anchor;
     }
 
     return null;

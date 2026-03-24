@@ -1002,10 +1002,31 @@ body {
 
 /* --- Discipline List --- */
 .discipline-list {
+  margin-top: 16px;
+}
+
+.discipline-list-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.discipline-list-column {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 16px;
+}
+
+.discipline-list-column-header {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--white-dim);
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 4px;
 }
 
 .discipline-list-item {
@@ -1041,6 +1062,10 @@ body {
 }
 
 @media (max-width: 600px) {
+  .discipline-list-columns {
+    grid-template-columns: 1fr;
+  }
+
   .discipline-list-item {
     flex-direction: column;
     align-items: flex-start;

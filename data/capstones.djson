@@ -72,5 +72,84 @@
             <h3>Effect:</h3>
             <p>Once per round, when performing an Attack action check while Enraged, you may spend 1 Fortune Point to alter each kept die containing (su) to a result containing (ex).</p>
         """
+    },
+
+    // ── Weapon Discipline Capstones ─────────────────────────────────────
+
+    "Death's Whisper": {
+        "flavor": "A knife doesn't need power. It needs placement. One inch in the right direction and nothing else matters.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, when you hit a target with a knife attack, you may spend 1 Fortune Point. Instead of dealing normal damage, the attack becomes a critical strike with severity equal to your weapon's deadliness plus your bonus successes on the attack.</p>
+        """
+    },
+
+    "Living Blade": {
+        "flavor": "A master swordsman doesn't block. They redirect. The blade goes where it was always going to go.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, when a melee attack targeting you misses, you may immediately make a free Attack action against that attacker as a reaction. This does not count as your action for the round.</p>
+        """
+    },
+
+    "Deadeye": {
+        "flavor": "Anyone can point a gun. Fewer can put a round exactly where they want it, every time, under pressure.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, before making an Attack action with a pistol, you may declare a called shot. Choose one of the following effects. On a successful hit, the chosen effect triggers in addition to normal damage:</p>
+            <ul>
+                <li><strong>Disarm:</strong> The target drops one item they are holding.</li>
+                <li><strong>Cripple:</strong> The target suffers Lightly Wounded in a chosen Approach.</li>
+                <li><strong>Disable:</strong> One piece of equipment on the target is rendered inoperable until repaired.</li>
+            </ul>
+        """
+    },
+
+    "Bullet Storm": {
+        "flavor": "Trigger discipline is a virtue. Knowing when to throw it out the window is a skill.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When you succeed on an Attack action with an SMG, you may spend 1 Fortune Point to immediately make a second Attack action against any target within range 2 as a free action.</p>
+        """
+    },
+
+    "Thunderclap": {
+        "flavor": "It's not the shot that breaks them. It's the sound, the smoke, and the thing that used to be standing next to them.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, when you kill a target with a shotgun, every other character within range 1 of that target must make a TN 3 Resolve (Resilience) check or become Frightened of you until the end of the scene.</p>
+        """
+    },
+
+    "Lead Rain": {
+        "flavor": "The best weapon is the right weapon. With enough time and the right parts, yours is always both.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>During a downtime activity, if you have reasonable access to supplies, you may apply one weapon quality to your assault rifle that it does not already have. If you use this ability again, the new quality replaces the previous one.</p>
+        """
+    },
+
+    "Stopping Power": {
+        "flavor": "Cover is a suggestion. At this caliber, the wall is just something that slows the round down slightly.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Your battle rifle attacks ignore all TN bonuses and damage reduction granted by cover. If your attack kills its target, any excess damage is applied to the nearest target directly behind them at range 0-1.</p>
+        """
+    },
+
+    "One Shot": {
+        "flavor": "You don't fire until you're certain. And when you're certain, you don't miss.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, before making an Attack action with a sniper rifle, you may declare One Shot. Increase the TN of the attack by 2. If you still hit, the attack inflicts a critical strike of severity 5 + your weapon's deadliness + your bonus successes instead of dealing normal damage.</p>
+        """
+    },
+
+    "Wall of Lead": {
+        "flavor": "Suppression isn't about hitting them. It's about making them very aware that you could.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When you make an Attack action with a machine gun, you may spend (op) to increase the attack's damage as though they were additional bonus successes, up to a maximum equal to your ranks in this discipline.</p>
+        """
     }
 }

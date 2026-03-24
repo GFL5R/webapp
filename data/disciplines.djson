@@ -222,102 +222,212 @@
 
   // ── Weapon Disciplines ──────────────────────────────────────────────
 
-  "Knife Fighter": {
+  "Knives": {
     "skills": ["Blades", "Stealth", "Subterfuge"],
     "flavor": """
-      <p>A knife is the oldest weapon in the world, and in 2072 it remains the most personal. Knife fighters train to close distance before their target can react, turning a few inches of steel into a decisive advantage. In a world of smart weapons and electronic countermeasures, a blade has no signal to jam and no magazine to empty.</p>
-      <p>Knife fighters specialize in concealment and ambush, keeping their weapons hidden until the moment they strike. They are at their deadliest in confined spaces where firearms become liabilities and reaction time is measured in fractions of a second.</p>
+      <p>Knives are a weapon as old as humanity itself. A utilitarian tool for the masses that unlocked humanity's potential, making it possible to hunt, build, and defend ourselves.</p>
+      <p>A knife is an extension of the body, a silent instrument of death that can strike with deadly precision.</p>
     """,
     "perk": "Sleight of Hand",
-    "techniques": [],
+    "techniques": [
+      "Throwing Knife",
+      "Defensive Maneuver",
+      "Shoot to Maim",
+      "Closing Strike",
+      "Gap in the Armor",
+      "Momentous Strike",
+      "Feigned Opening",
+      "Cleaving Strike",
+      "Deflective Defense",
+      "Counterattack"
+    ],
     "capstone": "Death's Whisper"
   },
 
-  "Swordsman": {
+  "Swords": {
     "skills": ["Blades", "Conditioning", "Resolve"],
     "flavor": """
-      <p>Carrying a sword in 2072 is a statement. It tells the world that you are fast enough, strong enough, and disciplined enough to close the gap against gunfire and win. Swordsmen are students of an ancient craft adapted for modern warfare, combining physical conditioning with a relentless will to close and cut.</p>
-      <p>Swordsmen excel in sustained melee engagements, using reach and edge alignment to control the space around them. Where a knife fighter strikes once from the shadows, a swordsman holds the line in the open, daring anyone to step within range.</p>
+      <p>Using a sword in 2072 is a statement. Heroes of myth and legend wielded swords, and so now do you as well, perhaps as a nod to the past, or perhaps as a symbol of your own code of honor.</p>
+      <p>A sword is a versatile weapon that can be used for both offense and defense, allowing for a wide range of techniques and strategies in combat.</p>
     """,
-    "perk": "Edge Alignment",
-    "techniques": [],
+    "perk": "Razor Edged",
+    "techniques": [
+      "Defensive Maneuver",
+      "Let It Ride",
+      "Eyes Up!",
+      "Aggressive Escort",
+      "Closing Strike",
+      "Gap in the Armor",
+      "Momentous Strike",
+      "Acrobatic Recovery",
+      "Distraction Tactics",
+      "Cleaving Strike",
+      "Deflective Defense",
+      "Counterattack"
+    ],
     "capstone": "Living Blade"
   },
 
-  "Pistoleer": {
+  "Pistols": {
     "skills": ["Firearms", "Subterfuge", "Tactics"],
     "flavor": """
-      <p>The handgun is the last line of defense. When the primary weapon jams, the cover collapses, or the mission goes sideways at a diplomatic function, the pistoleer is already drawing. They train to put rounds on target faster than thought, turning a sidearm into a primary weapon through sheer speed and precision.</p>
-      <p>Pistoleers thrive in environments where discretion matters as much as firepower. A concealed handgun gets through doors that a rifle never could, and a well-placed shot from a compact frame is just as lethal as one from a full-sized weapon.</p>
+      <p>Pistols are the most common firearm in 2072, and for good reason. They're compact, easy to use, and effective at close to medium range. A pistol is a reliable sidearm that can be used in a variety of situations, making it a staple for any operator.</p>
+      <p>However, to specialize in pistols is to master them, making them a maneuverable and deadly weapon that can be drawn and fired before an opponent even realizes what's happening.</p>
     """,
     "perk": "Quick Draw",
-    "techniques": [],
+    "techniques": [
+      "Shoot to Maim",
+      "Eyes Up!",
+      "Aggressive Escort",
+      "Let It Ride",
+      "Guns Akimbo",
+      "Disarming Shot",
+      "Eyes on the Prize",
+      "Feigned Opening",
+      "Acrobatic Recovery",
+      "Hand of God",
+      "Silent Assassin"
+      // TODO: needs 1 more rank 3 technique
+    ],
     "capstone": "Deadeye"
   },
 
-  "CQB Specialist": {
+  "Submachine Guns": {
     "skills": ["Firearms", "Stealth", "Tactics"],
     "flavor": """
-      <p>Close Quarters Battle is where firefights are measured in meters and milliseconds. CQB specialists train to dominate hallways, stairwells, and rooms, moving through confined spaces with a submachine gun as a natural extension of their body. Every corner is a potential contact, and every doorway is a fatal funnel.</p>
-      <p>CQB specialists pair their weapon handling with tactical movement, clearing spaces methodically while maintaining the element of surprise. Their submachine guns offer the rate of fire needed to overwhelm threats at conversational distance without the bulk that slows operators down in tight quarters.</p>
+      <p>Submachine guns are the weapon of choice for close-quarters combat, offering a high rate of fire and excellent maneuverability. They are ideal for operators who need to move quickly and engage targets at close range.</p>
+      <p>They are especially effective in tight spaces where volume of fire matters more than precision, making them a favorite among operators who prefer a more aggressive posture.</p>
     """,
     "perk": "Room Presence",
-    "techniques": [],
+    "techniques": [
+      "Shoot to Maim",
+      "Phantom Step",
+      "Eyes Up!",
+      "Aggressive Escort",
+      "Guns Akimbo",
+      "Airborne Assault",
+      "Distraction Tactics",
+      "Battle in the Mind",
+      "Anchor Point",
+      "Silent Assassin"
+      // TODO: needs 2 more rank 3 techniques
+    ],
     "capstone": "Bullet Storm"
   },
 
-  "Breacher": {
+  "Shotguns": {
     "skills": ["Firearms", "Conditioning", "Survival"],
     "flavor": """
-      <p>Breachers are the first through the door and the last to flinch. Armed with shotguns, they specialize in forced entry and close-range violence, turning the raw destructive power of buckshot and slugs into a tactical advantage. When the team needs a wall turned into a doorway or a locked room turned into an open one, the breacher steps forward.</p>
-      <p>Breachers combine physical toughness with an intimate understanding of their weapon's spread and penetration characteristics. They train to absorb the punishing recoil of repeated blasts and stay effective in the smoke and debris of a fresh breach.</p>
+      <p>Shotguns have been around for centuries, and they continue to be a powerful weapon in 2072. They are devastating at close range, capable of taking down multiple targets with a single blast.</p>
+      <p>There is no weapon more powerful at point blank than a shotgun, a rifle can put a hole in a target, but a shotgun can completely remove it from existence.</p>
     """,
     "perk": "Point Blank",
-    "techniques": [],
+    "techniques": [
+      "Aggressive Escort",
+      "Shoot to Maim",
+      "Pistol Whip",
+      "Eyes Up!",
+      "Distraction Tactics",
+      "Last Stand",
+      "Murderous Intent",
+      "Anchor Point"
+      // TODO: needs 3 rank 3 techniques
+    ],
     "capstone": "Thunderclap"
   },
 
-  "Rifleman": {
+  "Assault Rifles": {
     "skills": ["Firearms", "Tactics", "Conditioning"],
     "flavor": """
-      <p>The rifleman is the backbone of any fighting force. Armed with an assault rifle, they are trained to engage targets across a wide range of distances and conditions, adapting their fire to whatever the situation demands. Every squad needs someone who can reliably put rounds where they need to go, and the rifleman fills that role with consistency.</p>
-      <p>Riflemen focus on fundamentals: marksmanship, magazine management, and fire discipline. Where specialists excel in narrow scenarios, the rifleman performs everywhere. Their versatility makes them the foundation upon which more specialized operators build.</p>
+      <p>The rifleman is the backbone of any combat unit, and the assault rifle is their weapon of choice. It offers a balance of range, accuracy, and firepower that makes it effective in a wide variety of combat situations.</p>
+      <p>Assault rifles are versatile weapons, capable of engaging targets at almost any range. It's never the best choice for any specific situation, but it's never the worst choice either.</p>
     """,
-    "perk": "Steady Platform",
-    "techniques": [],
+    "perk": "Versatile",
+    "techniques": [
+      "Shoot to Maim",
+      "Eyes Up!",
+      "Sighting-in",
+      "Aggressive Escort",
+      "Let It Ride",
+      "Disarming Shot",
+      "Distraction Tactics",
+      "Battle in the Mind",
+      "Anchor Point",
+      "No Retreat",
+      "Airborne Assault",
+      "Hand of God",
+      "Silent Assassin"
+      // TODO: needs 1 more rank 3 technique
+    ],
     "capstone": "Lead Rain"
   },
 
-  "Designated Marksman": {
+  "Battle Rifles": {
     "skills": ["Firearms", "Resolve", "Tactics"],
     "flavor": """
-      <p>The designated marksman bridges the gap between a standard rifleman and a sniper. Armed with a battle rifle firing full-power cartridges, they deliver precise, heavy hits at extended range while still operating as part of a squad. Where the rifleman engages at medium range, the designated marksman reaches out and punishes targets that think they are safe behind distance.</p>
-      <p>Designated marksmen train to manage the heavy recoil of their weapons while maintaining accuracy under pressure. Their battle rifles hit harder than anything else a squad carries on foot, and a well-placed shot can disable targets that shrug off lighter calibers.</p>
+      <p>Battle Rifles are Assault Rifles' older, more powerful sibling. Unlike Assault Rifles which fire an intermediate cartridge, Battle Rifles retained the full power cartridges of their bolt-action ancestors, giving them superior range and stopping power at the cost of increased recoil and reduced magazine capacity.</p>
+      <p>Battle Rifles are the weapon of choice for marksmen and snipers who need to engage targets at longer ranges, but they can also be effective in close quarters with the right training and techniques.</p>
     """,
     "perk": "Heavy Hitter",
-    "techniques": [],
+    "techniques": [
+      "Shoot to Maim",
+      "Eyes Up!",
+      "Sighting-in",
+      "Let It Ride",
+      "Disarming Shot",
+      "Eyes on the Prize",
+      "Battle in the Mind",
+      "Landmine",
+      "Distraction Tactics",
+      "Hand of God",
+      "Sniper's Advantage",
+      "Silent Assassin"
+    ],
     "capstone": "Stopping Power"
   },
 
-  "Sniper": {
+  "Snipers": {
     "skills": ["Firearms", "Stealth", "Survival"],
     "flavor": """
-      <p>A sniper is patience given purpose. They wait for hours in concealed positions, enduring weather, fatigue, and isolation for the single moment when the crosshairs align. One shot delivered from beyond the target's awareness can change the course of an entire operation. The sniper ensures that moment is never wasted.</p>
-      <p>Snipers combine precision marksmanship with fieldcraft, selecting positions that maximize their range advantage while minimizing their exposure. They are as much survivalists as they are shooters, trained to operate independently in hostile territory for extended periods.</p>
+      <p>Sniper Rifles encompass everything from your great grandpa's hunting rifle to the most advanced anti-materiel rifles of 2072. They are designed for precision shooting at long ranges, allowing snipers to take out targets from a distance with deadly accuracy.</p>
+      <p>Snipers trade volume of fire for extreme precision, making them the premier choice for an operator who wants to reach out and touch someone without ever being seen.</p>
     """,
-    "perk": "Spotter's Eye",
-    "techniques": [],
+    "perk": "Patience",
+    "techniques": [
+      "Eyes Up!",
+      "Sighting-in",
+      "Phantom Step",
+      "Field Recon",
+      "Battle in the Mind",
+      "Eyes on the Prize",
+      "Prepared Ambush",
+      "Landmine",
+      "Distraction Tactics",
+      "Hand of God",
+      "Sniper's Advantage",
+      "Vanishing Act"
+    ],
     "capstone": "One Shot"
   },
 
-  "Gunner": {
+  "Machine Guns": {
     "skills": ["Firearms", "Conditioning", "Resolve"],
     "flavor": """
-      <p>The gunner carries the heaviest firearm the squad can field and the physical conditioning required to keep it fed and firing. Machine guns are tools of suppression and area denial, designed to pin entire formations behind cover while the rest of the team maneuvers. The gunner's job is to make the enemy afraid to move.</p>
-      <p>Gunners train to manage sustained fire without burning through ammunition recklessly, balancing volume with discipline. The physical demands of hauling a machine gun and its ammunition into position require exceptional endurance, and the mental demands of maintaining fire while under return fire require iron resolve.</p>
+      <p>Machine Guns changed warfare forever, and they continue to be a dominant force on the battlefield in 2072. They are designed for sustained automatic fire, providing suppressive firepower that can pin down enemies and control the flow of battle.</p>
+      <p>Machine Guns are the weapon of choice for operators who want to dominate the battlefield with overwhelming firepower, capable of mowing down waves of enemies and breaking through fortified positions.</p>
     """,
     "perk": "Suppressive Instinct",
-    "techniques": [],
+    "techniques": [
+      "Eyes Up!",
+      "Aggressive Escort",
+      "Shoot to Maim",
+      "Sighting-in",
+      "Distraction Tactics",
+      "Anchor Point",
+      "No Retreat",
+      "Last Stand"
+      // TODO: needs 2 more rank 3 techniques
+    ],
     "capstone": "Wall of Lead"
   }
 }

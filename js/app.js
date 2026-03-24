@@ -1807,25 +1807,44 @@
     const container = document.getElementById('discipline-list-container');
     if (!container) return;
 
-    // Sort disciplines alphabetically
-    const sortedDisciplines = Object.keys(disciplines).sort((a, b) => 
+    const WEAPON_DISCIPLINES = new Set([
+      'Knives', 'Swords', 'Pistols', 'Submachine Guns', 'Shotguns',
+      'Assault Rifles', 'Battle Rifles', 'Snipers', 'Machine Guns'
+    ]);
+
+    const allNames = Object.keys(disciplines).sort((a, b) =>
       a.toLowerCase().localeCompare(b.toLowerCase())
     );
 
-    const listHtml = sortedDisciplines.map(name => {
-      const disc = disciplines[name];
-      const skills = disc.skills ? disc.skills.join(', ') : '';
-      const href = `#discipline-${name.toLowerCase().replace(/\s+/g, '-')}`;
-      
-      return `
-        <a href="${href}" class="discipline-list-item">
-          <span class="discipline-list-name">${escapeHtml(name)}</span>
-          <span class="discipline-list-skills">${escapeHtml(skills)}</span>
-        </a>
-      `;
-    }).join('');
+    const weaponNames = allNames.filter(n => WEAPON_DISCIPLINES.has(n));
+    const generalNames = allNames.filter(n => !WEAPON_DISCIPLINES.has(n));
 
-    container.innerHTML = listHtml;
+    function renderItems(names) {
+      return names.map(name => {
+        const disc = disciplines[name];
+        const skills = disc.skills ? disc.skills.join(', ') : '';
+        const href = `#discipline-${name.toLowerCase().replace(/\s+/g, '-')}`;
+        return `
+          <a href="${href}" class="discipline-list-item">
+            <span class="discipline-list-name">${escapeHtml(name)}</span>
+            <span class="discipline-list-skills">${escapeHtml(skills)}</span>
+          </a>
+        `;
+      }).join('');
+    }
+
+    container.innerHTML = `
+      <div class="discipline-list-columns">
+        <div class="discipline-list-column">
+          <div class="discipline-list-column-header">WEAPON DISCIPLINES</div>
+          ${renderItems(weaponNames)}
+        </div>
+        <div class="discipline-list-column">
+          <div class="discipline-list-column-header">GENERAL DISCIPLINES</div>
+          ${renderItems(generalNames)}
+        </div>
+      </div>
+    `;
   }
 
   // ── Discipline Page ────────────────────────────────────────────

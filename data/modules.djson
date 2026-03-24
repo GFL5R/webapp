@@ -546,7 +546,7 @@
     skill: null,
     approach: null,
     flavor: """
-      <p>The hip actuators and thrust-distribution systems are rebuilt for rapid lateral repositioning. Free movement feels almost effortless — until the increased power draw makes itself known.</p>
+      <p>The hip actuators and thrust-distribution systems are rebuilt for rapid lateral repositioning. Free movement feels almost effortless, until the increased power draw makes itself known.</p>
     """,
     description: """
       <h3>Effects</h3>

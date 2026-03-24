@@ -68,7 +68,7 @@
       <p>As a downtime activity, you may make a <strong>TN 4 Performance (Precision)</strong> check targeting an army or a number of characters who can hear you up to your ranks in Insight. You may stake up to 3 Fame to reduce the TN by that amount (minimum 1) to embroider the truth.</p>
       <h3>Effects:</h3>
       <p>If you succeed, you spread a powerful rumor of your enemy's weakness, of reinforcements certain to arrive, or of some other hidden advantage. The first time each target would receive panic or Strife during the next scene, reduce the amount they receive by your ranks in Performance (minimum 0).</p>
-      <p>Whether you succeed or fail, if your side loses the battle, you lose your staked Fame — your promises proved empty. There may also be narrative consequences if individuals remember what you told them.</p>
+      <p>Whether you succeed or fail, if your side loses the battle, you lose your staked Fame (your promises proved empty). There may also be narrative consequences if individuals remember what you told them.</p>
       <h3>New Opportunities:</h3>
       <ul>
         <li><strong>Precision (op):</strong> If you fail, no one can quite recall the specifics of what you said. There are no narrative social consequences for the fabrication.</li>
@@ -489,7 +489,7 @@
     "approach": "Swiftness",
     "skill": "Culture",
     "flavor": """
-      Social dynamics are a delicate ecosystem. A well-placed compliment here, a subtle criticism there—you can shape conversations without anyone realizing they're being guided. The art isn't in controlling people, but in arranging the circumstances so they control themselves.
+      Social dynamics are a delicate ecosystem. A well-placed compliment here, a subtle criticism there: you can shape conversations without anyone realizing they're being guided. The art isn't in controlling people, but in arranging the circumstances so they control themselves.
     """,
     "description": """
       <h3>Activation:</h3>

@@ -231,15 +231,10 @@
     "perk": "Sleight of Hand",
     "techniques": [
       "Throwing Knife",
-      "Defensive Maneuver",
-      "Shoot to Maim",
-      "Closing Strike",
+      "Silent Strike",
       "Gap in the Armor",
-      "Momentous Strike",
-      "Feigned Opening",
-      "Cleaving Strike",
-      "Deflective Defense",
-      "Counterattack"
+      "Closing Strike",
+      "Momentous Strike"
     ],
     "capstone": "Death's Whisper"
   },
@@ -252,17 +247,9 @@
     """,
     "perk": "Razor Edged",
     "techniques": [
-      "Defensive Maneuver",
-      "Let It Ride",
-      "Eyes Up!",
-      "Aggressive Escort",
-      "Closing Strike",
-      "Gap in the Armor",
-      "Momentous Strike",
       "Acrobatic Recovery",
-      "Distraction Tactics",
-      "Cleaving Strike",
       "Deflective Defense",
+      "Cleaving Strike",
       "Counterattack"
     ],
     "capstone": "Living Blade"
@@ -276,18 +263,10 @@
     """,
     "perk": "Quick Draw",
     "techniques": [
+      "Sighting-in",
       "Shoot to Maim",
-      "Eyes Up!",
-      "Aggressive Escort",
-      "Let It Ride",
       "Guns Akimbo",
-      "Disarming Shot",
-      "Eyes on the Prize",
-      "Feigned Opening",
-      "Acrobatic Recovery",
-      "Hand of God",
-      "Silent Assassin"
-      // TODO: needs 1 more rank 3 technique
+      "Disarming Shot"
     ],
     "capstone": "Deadeye"
   },
@@ -300,17 +279,9 @@
     """,
     "perk": "Room Presence",
     "techniques": [
-      "Shoot to Maim",
-      "Phantom Step",
-      "Eyes Up!",
       "Aggressive Escort",
-      "Guns Akimbo",
-      "Airborne Assault",
-      "Distraction Tactics",
-      "Battle in the Mind",
-      "Anchor Point",
-      "Silent Assassin"
-      // TODO: needs 2 more rank 3 techniques
+      "Acrobatic Recovery",
+      "Distraction Tactics"
     ],
     "capstone": "Bullet Storm"
   },
@@ -323,15 +294,8 @@
     """,
     "perk": "Point Blank",
     "techniques": [
-      "Aggressive Escort",
-      "Shoot to Maim",
       "Pistol Whip",
-      "Eyes Up!",
-      "Distraction Tactics",
-      "Last Stand",
-      "Murderous Intent",
-      "Anchor Point"
-      // TODO: needs 3 rank 3 techniques
+      "Crushing Blow"
     ],
     "capstone": "Thunderclap"
   },
@@ -344,20 +308,10 @@
     """,
     "perk": "Versatile",
     "techniques": [
-      "Shoot to Maim",
-      "Eyes Up!",
       "Sighting-in",
-      "Aggressive Escort",
-      "Let It Ride",
-      "Disarming Shot",
-      "Distraction Tactics",
-      "Battle in the Mind",
-      "Anchor Point",
-      "No Retreat",
       "Airborne Assault",
-      "Hand of God",
-      "Silent Assassin"
-      // TODO: needs 1 more rank 3 technique
+      "Anchor Point",
+      "Eyes on the Prize"
     ],
     "capstone": "Lead Rain"
   },
@@ -370,18 +324,9 @@
     """,
     "perk": "Heavy Hitter",
     "techniques": [
-      "Shoot to Maim",
       "Eyes Up!",
       "Sighting-in",
-      "Let It Ride",
-      "Disarming Shot",
-      "Eyes on the Prize",
-      "Battle in the Mind",
-      "Landmine",
-      "Distraction Tactics",
-      "Hand of God",
-      "Sniper's Advantage",
-      "Silent Assassin"
+      "Hand of God"
     ],
     "capstone": "Stopping Power"
   },
@@ -394,18 +339,10 @@
     """,
     "perk": "Patience",
     "techniques": [
-      "Eyes Up!",
       "Sighting-in",
-      "Phantom Step",
-      "Field Recon",
       "Battle in the Mind",
-      "Eyes on the Prize",
-      "Prepared Ambush",
-      "Landmine",
-      "Distraction Tactics",
-      "Hand of God",
       "Sniper's Advantage",
-      "Vanishing Act"
+      "Hand of God"
     ],
     "capstone": "One Shot"
   },
@@ -418,15 +355,9 @@
     """,
     "perk": "Suppressive Instinct",
     "techniques": [
-      "Eyes Up!",
-      "Aggressive Escort",
-      "Shoot to Maim",
-      "Sighting-in",
-      "Distraction Tactics",
       "Anchor Point",
-      "No Retreat",
+      "Landmine",
       "Last Stand"
-      // TODO: needs 2 more rank 3 techniques
     ],
     "capstone": "Wall of Lead"
   }

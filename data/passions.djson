@@ -887,7 +887,7 @@
     "description": """
       <h3>Effects</h3>
             <ul>
-                <li>You find a strange relief in neglecting your own wellbeing. Sacrificing your health, safety, or resources for others — or for nothing at all — quiets something inside you that self-preservation never could. Others may find your disregard for yourself alarming, but some may be drawn to care for you because of it.</li>
+                <li>You find a strange relief in neglecting your own wellbeing. Sacrificing your health, safety, or resources for others (or for nothing at all) quiets something inside you that self-preservation never could. Others may find your disregard for yourself alarming, but some may be drawn to care for you because of it.</li>
                 <li>After performing a check in which you willingly sacrifice your own wellbeing (such as a check to give away something you need, endure harm without resisting, or volunteer for a task no one else would accept), you remove 3 strife.</li>
             </ul>
     """

@@ -56,7 +56,7 @@
     "rank": 1,
     "type": "Combat",
     "approach": "Power",
-    "skill": "Rifle Combat",
+    "skill": "Conditioning",
     "flavor": """
       A gun is not just a tool for shooting. It can also be a blunt instrument, a symbol of authority, and a source of intimidation. A well-placed pistol whip can disarm an opponent, break their concentration, or simply remind them who's in charge.
     """,

@@ -88,7 +88,7 @@
         "flavor": "A master swordsman doesn't block. They redirect. The blade goes where it was always going to go.",
         "description": """
             <h3>Effect:</h3>
-            <p>Once per scene, when a melee attack targeting you misses, you may immediately make a free Attack action against that attacker as a reaction. This does not count as your action for the round.</p>
+            <p>Once per scene, while wielding a sword and a melee attack targeting you misses, you may immediately make a free Attack action against that attacker as a reaction. This does not count as your action for the round.</p>
         """
     },
 

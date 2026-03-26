@@ -134,6 +134,11 @@
     skill: null,
     sortBy: 'rank'
   };
+  let itemFilters = {
+    minRarity: null,
+    maxRarity: null,
+    sortBy: 'name'
+  };
 
   // ── DOM References ─────────────────────────────────────────────
   const contentInner = document.getElementById('contentInner');
@@ -375,6 +380,19 @@
         sortBy: 'rank'
       };
       renderTechniquesPage(page);
+      if (anchor) {
+        setTimeout(() => {
+          const cards = contentInner.querySelectorAll('.technique-card__name');
+          for (const card of cards) {
+            if (card.textContent === anchor) {
+              card.closest('.technique-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+              card.closest('.technique-card').classList.add('highlight');
+              setTimeout(() => card.closest('.technique-card').classList.remove('highlight'), 2000);
+              break;
+            }
+          }
+        }, 300);
+      }
     } else if (page.startsWith('advantages-')) {
       renderAdvantagesPage(page);
     } else if (page.startsWith('disadvantages-')) {
@@ -388,6 +406,7 @@
     } else if (page.startsWith('weapons-')) {
       renderWeaponsPage(page);
     } else if (page.startsWith('items-')) {
+      itemFilters = { minRarity: null, maxRarity: null, sortBy: 'name' };
       renderItemsPage(page);
     } else if (page === 'Disciplines') {
       await renderDisciplinesPage();
@@ -1819,15 +1838,28 @@
 
   // ── Items Page ────────────────────────────────────────────────
   function renderItemsPage(page) {
-    // Filter (for now, just show all items)
-    const filtered = Object.entries(items);
+    // Filter by rarity range
+    let filtered = Object.entries(items).filter(([, item]) => {
+      const r = item.rarity;
+      if (itemFilters.minRarity !== null && (r === undefined || r < itemFilters.minRarity)) return false;
+      if (itemFilters.maxRarity !== null && (r === undefined || r > itemFilters.maxRarity)) return false;
+      return true;
+    });
 
-    // Sort alphabetically
-    filtered.sort((a, b) => a[0].localeCompare(b[0]));
+    // Sort
+    filtered.sort((a, b) => {
+      if (itemFilters.sortBy === 'price') {
+        const diff = (a[1].cost || 0) - (b[1].cost || 0);
+        return diff !== 0 ? diff : a[0].localeCompare(b[0]);
+      } else if (itemFilters.sortBy === 'rarity') {
+        const diff = (a[1].rarity || 0) - (b[1].rarity || 0);
+        return diff !== 0 ? diff : a[0].localeCompare(b[0]);
+      }
+      return a[0].localeCompare(b[0]);
+    });
 
-    const title = 'All Items';
-
-    const typeDesc = 'Equipment, gear, and accessories available for purchase or acquisition in the field.';
+    const rarityOptions = ['Any', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    const sortOptions = [['name', 'Name'], ['price', 'Price'], ['rarity', 'Rarity']];
 
     let html = `
       <div class="breadcrumb">
@@ -1839,9 +1871,23 @@
       <div class="type-header">
         <div class="type-header__icon">⬡</div>
         <div class="type-header__info">
-          <h1>${title.toUpperCase()}</h1>
-          <div class="type-header__desc">${typeDesc}</div>
+          <h1>ALL ITEMS</h1>
+          <div class="type-header__desc">Equipment, gear, and accessories available for purchase or acquisition in the field.</div>
         </div>
+      </div>
+
+      <div class="technique-filters">
+        <select id="item-min-rarity" class="filter-dropdown">
+          <option value="">Min Rarity</option>
+          ${rarityOptions.slice(1).map(r => `<option value="${r}" ${itemFilters.minRarity === parseInt(r) ? 'selected' : ''}>R${r}+</option>`).join('')}
+        </select>
+        <select id="item-max-rarity" class="filter-dropdown">
+          <option value="">Max Rarity</option>
+          ${rarityOptions.slice(1).map(r => `<option value="${r}" ${itemFilters.maxRarity === parseInt(r) ? 'selected' : ''}>R${r} max</option>`).join('')}
+        </select>
+        <select id="item-sort-by" class="filter-dropdown">
+          ${sortOptions.map(([val, label]) => `<option value="${val}" ${itemFilters.sortBy === val ? 'selected' : ''}>Sort by ${label}</option>`).join('')}
+        </select>
       </div>
 
       <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--white-dimmer); letter-spacing: 1px; margin-bottom: 20px;">
@@ -1858,11 +1904,13 @@
     html += '</div>';
 
     contentInner.innerHTML = html;
+    attachItemFilterHandlers();
     attachCardToggleHandlers();
   }
 
   function renderItemCard(name, item) {
     const costStr = item.cost ? `${item.cost.toLocaleString()} ¤` : 'TBD';
+    const rarityStr = item.rarity !== undefined ? `R${item.rarity}` : null;
 
     return `
       <div class="technique-card">
@@ -1876,6 +1924,7 @@
           <div class="technique-card__meta">
             <span class="technique-card__tag tag-type">${escapeHtml(item.type || 'ITEM')}</span>
             <span class="technique-card__tag tag-rank">${costStr}</span>
+            ${rarityStr ? `<span class="technique-card__tag tag-approach">RARITY ${rarityStr}</span>` : ''}
           </div>
         </div>
 
@@ -2028,6 +2077,21 @@
     document.getElementById('sort-by').addEventListener('change', (e) => {
       techniqueFilters.sortBy = e.target.value;
       renderTechniquesPage(currentPage);
+    });
+  }
+
+  function attachItemFilterHandlers() {
+    document.getElementById('item-min-rarity').addEventListener('change', (e) => {
+      itemFilters.minRarity = e.target.value ? parseInt(e.target.value) : null;
+      renderItemsPage(currentPage);
+    });
+    document.getElementById('item-max-rarity').addEventListener('change', (e) => {
+      itemFilters.maxRarity = e.target.value ? parseInt(e.target.value) : null;
+      renderItemsPage(currentPage);
+    });
+    document.getElementById('item-sort-by').addEventListener('change', (e) => {
+      itemFilters.sortBy = e.target.value;
+      renderItemsPage(currentPage);
     });
   }
 

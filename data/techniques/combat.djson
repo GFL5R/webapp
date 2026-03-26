@@ -628,6 +628,55 @@
       </ul>
     """
   },
+  "Trench Sweeper": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Power",
+    "skill": "Firearms",
+    "flavor": """
+      The shotgun is a weapon designed to clear out trenches and tight spaces. A fighter who can use it to its full potential can turn a close-quarters fight into a massacre.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>While you perform a Strike action with a shotgun, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op):</strong> Decrease the TN to hit your targets by 1.</li>
+      </ul>
+    """
+  },
+  "Swiss Cheese": {
+    "rank": 2,
+    "type": "Combat",
+    "approach": "Power",
+    "skill": "Firearms",
+    "flavor": """
+      Armor holds up fine against the first shell. The second one finds the gaps the first one made. By the third, the question isn't whether the protection is working, it's whether there's any left.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>While you perform a Strike action with a shotgun, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)(op)+:</strong> Decrease all your targets' physical resistance by 1 per (op)(op) spent this way until the start of your next turn.</li>
+      </ul>
+    """
+  },
+  "Quick Draw: Keep One In the Chamber": {
+    "rank": 3,
+    "type": "Combat",
+    "approach": null,
+    "skill": "Firearms",
+    "flavor": """
+      A quick draw is only as good as the first shot. By keeping a round in the chamber, a skilled shooter can ensure that they are always ready to fire, even if they are caught off guard or have to draw their weapon in a hurry.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Strike action using a holstered shotgun, make a <strong>Firearms check</strong> targeting one area within your effective range. The TN of this check is equal to the highest Vigilance among your targets.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your target suffers a critical strike equal to your weapon's Deadliness, plus 1 per bonus success.</p>
+    """
+  },
   "Anchor Point": {
     "rank": 2,
     "type": "Combat",

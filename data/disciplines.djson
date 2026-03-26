@@ -295,7 +295,10 @@
     "perk": "Point Blank",
     "techniques": [
       "Pistol Whip",
-      "Crushing Blow"
+      "Crushing Blow",
+      "Trench Sweeper",
+      "Swiss Cheese",
+      "Quick Draw: Keep One In the Chamber"
     ],
     "capstone": "Thunderclap"
   },

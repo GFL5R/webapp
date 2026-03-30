@@ -3,6 +3,12 @@ name: Build and Publish to GHCR
 on:
   push:
     branches: [main]
+    paths:
+      - 'data/**'
+      - 'assets/**'
+      - 'js/**'
+      - 'pages/**'
+      - 'index.html'
   workflow_dispatch:
 
 env:

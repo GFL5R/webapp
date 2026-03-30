@@ -47,7 +47,27 @@
 
 <div class="formula">TN = Security Rating</div>
 
-<p>The GM may adjust by +1 or &minus;1 for specific circumstances (especially hardened node, outdated firmware, insider credentials), but the Security Rating is the baseline. Non-hostile actions on authorized systems are TN 1 or require no check.</p>
+<p>The GM may adjust by +1 or &minus;1 for specific circumstances (especially hardened node, outdated firmware, insider credentials), but the Security Rating is the baseline.</p>
+
+<h3 id="network-disposition">Network Disposition</h3>
+
+<p>Every network has a <strong>disposition</strong> toward each operator on it: either <strong>Hostile</strong> or <strong>Friendly</strong>.</p>
+
+<p>A network is <strong>Hostile</strong> by default for anyone who has not been granted access. Acting on a Hostile network accumulates Heat, requires footholds, and uses the network's Security Rating as TN.</p>
+
+<p>A network is <strong>Friendly</strong> toward you if you have legitimate credentials or authorization to be there. This includes your own team's network, networks where you have been provisioned access for a mission, and nodes temporarily granted Friendly status by techniques such as Privilege Escalation. While on a Friendly network:</p>
+<ul>
+  <li>You do not accumulate Heat for actions taken there.</li>
+  <li>You may traverse links freely without a Crack check.</li>
+  <li>The network's Security Rating does not apply. Instead, TN for any check is the <strong>EW Rating</strong> of the specific sentry, operator, or device you are acting against.</li>
+  <li>Passive devices with no listed EW Rating (doors, cameras, control panels) use a default <strong>EW Rating of 2</strong>.</li>
+  <li>Techniques that require a Friendly network (such as Spider techniques) are available.</li>
+</ul>
+
+<div class="rules-callout">
+  <h4>Operators on Their Home Network</h4>
+  <p>A network operator defending their own system is always Friendly on that network. They do not need to Crack systems, can traverse links freely, and do not accumulate Heat.</p>
+</div>
 
 <hr>
 
@@ -271,17 +291,17 @@
 
 <table>
   <thead>
-    <tr><th>Sentry</th><th>Integrity</th><th>Attack</th><th>Security</th><th>Typical Behavior</th></tr>
+    <tr><th>Sentry</th><th>Integrity</th><th>Attack</th><th>EW Rating</th><th>Security</th><th>Typical Behavior</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>Watchdog</strong></td><td>4</td><td>3</td><td>2</td><td>Alert, then attack intruders</td></tr>
-    <tr><td><strong>Cerberus</strong></td><td>8</td><td>4</td><td>3</td><td>Alert, attack, pursue intruders</td></tr>
-    <tr><td><strong>Manticore</strong></td><td>12</td><td>5</td><td>4</td><td>Alert, attack, lock barriers, pursue</td></tr>
-    <tr><td><strong>Hydra</strong></td><td>18</td><td>6</td><td>5</td><td>Alert, attack all in node, pursue, reboot devices</td></tr>
+    <tr><td><strong>Watchdog</strong></td><td>4</td><td>3</td><td>2</td><td>2</td><td>Alert, then attack intruders</td></tr>
+    <tr><td><strong>Cerberus</strong></td><td>8</td><td>4</td><td>3</td><td>3</td><td>Alert, attack, pursue intruders</td></tr>
+    <tr><td><strong>Manticore</strong></td><td>12</td><td>5</td><td>4</td><td>4</td><td>Alert, attack, lock barriers, pursue</td></tr>
+    <tr><td><strong>Hydra</strong></td><td>18</td><td>6</td><td>5</td><td>5</td><td>Alert, attack all in node, pursue, reboot devices</td></tr>
   </tbody>
 </table>
 
-<p>Sentries use simplified initiative equal to their Security Rating. When a sentry attacks, it deals damage equal to half its Attack Rating (rounded up) plus bonus successes.</p>
+<p>Sentries use simplified initiative equal to their Security Rating. When a sentry attacks, it deals damage equal to half its Attack Rating (rounded up) plus bonus successes. On a Friendly network, a sentry's <strong>EW Rating</strong> is the TN for all checks made against it.</p>
 
 <h3 id="operators">Operators</h3>
 

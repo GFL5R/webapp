@@ -127,3 +127,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+## AI models
+models/
+*.gguf

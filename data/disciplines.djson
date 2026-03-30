@@ -66,11 +66,11 @@
     "capstone": "Born To Survive"
   },
 
-  "Charmer": {
+  "Heartbreaker": {
     "skills": ["Performance", "Deception", "Insight"],
     "flavor": """
-      <p>A Charmer knows that the right word at the right time can accomplish what a bullet never could. They navigate social situations with effortless grace, turning obstacles into opportunities with nothing but wit.</p>
-      <p>Charmers are masters of social manipulation, able to read people like open books and write their own stories in the margins. Everyone has a price, even if that price is just being listened to.</p>
+      <p>A Heartbreaker knows that the right word at the right time can accomplish what a bullet never could. They navigate social situations with effortless grace, turning obstacles into opportunities with nothing but wit.</p>
+      <p>Heartbreakers are masters of social manipulation, able to read people like open books and write their own stories in the margins. Everyone has a price, even if that price is just being listened to.</p>
     """,
     "perk": "Silver Tongue",
     "techniques": [
@@ -93,11 +93,11 @@
     "capstone": "Irresistible Charisma"
   },
 
-  "Negotiator": {
+  "Smooth Talker": {
     "skills": ["Negotiation", "Culture", "Insight"],
     "flavor": """
-      <p>In a world of broken treaties and shattered alliances, the Negotiator is the glue that holds civilization together. They understand that every conflict has a solution that leaves both parties feeling like they won, and every person has needs that can be met without violence.</p>
-      <p>Negotiators are masters of diplomacy and cultural understanding, able to bridge gaps between factions that have been at war for generations. They know that the most important battle is the one that never happens, and the most valuable resource is mutual understanding.</p>
+      <p>A Smooth Talker can walk into a room full of people who want them dead and walk out with a contract and a dinner invitation. Whether defusing a standoff or negotiating terms that somehow favor everyone at the table, they always find the angle.</p>
+      <p>Smooth Talkers understand people the way a locksmith understands locks. Every person has a mechanism, and with the right touch, they open right up.</p>
     """,
     "perk": "Diplomatic Immunity",
     "techniques": [
@@ -144,38 +144,55 @@
     "capstone": "Battlefield Genius"
   },
 
-  "Netrunner": {
-    "skills": ["Computers", "Subterfuge", "Insight"],
+  "Script Wizard": {
+    "skills": ["Computers", "Subterfuge", "Tactics"],
     "flavor": """
-      <p>In the digital shadows of 2072, a Netrunner is both ghost and god. They slip through firewalls like smoke and leave no trace of their passing. The Netrunner wages war in the silent spaces between signals.</p>
-      <p>Netrunners are experts in electronic warfare, able to infiltrate secure networks and turn enemy systems against their owners. In 2072, a well-placed line of code is the most dangerous weapon in existence.</p>
+      <p>Networks are doors, and a Script Wizard doesn't wait for an invitation. They find the service entrance, the loading dock, the ventilation shaft, and if none of those work, they make a new opening.</p>
+      <p>A Script Wizard's advantage is asymmetric. A defender has to protect everything. A Script Wizard only has to find one way in.</p>
     """,
-    "perk": "Ghost in the Machine",
+    "perk": "Zero Day",
     "techniques": [
       "Blackout",
-      "Dead Drop",
-      "Exfiltrate",
-      "Neural Fortification",
-      "Overclock",
-      "Spoof",
-      "Cleanup Detail",
-      "Falsify Data",
       "Hijack",
       "ICE Breaker",
+      "Overclock",
+      "Payload Injection",
+      "Privilege Escalation",
       "Puppet String",
-      "Rootkit",
       "Siege Engine",
       "Strike",
       "Total Eclipse"
     ],
-    "capstone": "Proxy"
+    "capstone": "Root Access"
   },
 
-  "Brawler": {
+  "Spider": {
+    "skills": ["Computers", "Insight", "Science"],
+    "flavor": """
+      <p>Every network someone is paid to protect has someone else trying to get through it. The Spider's job is to make sure that person fails, and to make sure everyone knows why.</p>
+      <p>Defense runs on information. A Spider who knows where an intrusion is coming from has already won half the fight before the attacker knows they've been detected.</p>
+    """,
+    "perk": "Watchdog",
+    "techniques": [
+      "Active Scan",
+      "Cleanup Detail",
+      "Dead Drop",
+      "Exfiltrate",
+      "Falsify Data",
+      "Honeypot",
+      "Neural Fortification",
+      "Rootkit",
+      "Spoof",
+      "System Rollback"
+    ],
+    "capstone": "Citadel"
+  },
+
+  "Knuckle Dragger": {
     "skills": ["Hand-To-Hand", "Conditioning", "Tactics"],
     "flavor": """
-      <p>When the guns run dry and the knives break, there is only what you were born with. A Brawler understands this fundamental truth better than anyone. They are masters of close-quarters combat, turning their own body into a weapon and the environment into an arsenal.</p>
-      <p>Brawlers thrive in chaos, using raw power to overwhelm opponents. They know that sometimes the best defense is a good offense, and sometimes the best offense is making sure your opponent never gets back up.</p>
+      <p>When the guns run dry and the knives break, there is only what you were born with. A Knuckle Dragger has made peace with this fact and, honestly, prefers it that way.</p>
+      <p>Knuckle Draggers thrive in chaos, using raw power to overwhelm opponents. The philosophy is simple: if it's still moving, hit it again.</p>
     """,
     "perk": "Iron Fist",
     "techniques": [
@@ -196,28 +213,70 @@
     "capstone": "Unstoppable Force"
   },
 
-  "Analyst": {
-    "skills": ["Science", "Insight", "Medicine"],
+  "Velma": {
+    "skills": ["Science", "Insight", "Computers"],
     "flavor": """
-      <p>Every problem has an answer, if you know where to look. The Analyst is the operator who reads what others overlook, connecting scattered data points into a coherent picture while everyone else is still asking questions.</p>
-      <p>Analysts combine scientific expertise with sharp observational instincts, serving as the intellectual backbone of any team. When the mission depends on understanding what happened and why, the Analyst is the one who figures it out.</p>
+      <p>You've explained things one too many times. Now the squad just says "okay, Velma" and moves on. The nickname sticks, but so do the results.</p>
+      <p>No one else on the team noticed the discrepancy in the patrol logs, traced it back to a maintenance schedule, and cross-referenced it with the facility's construction permits. You did. Okay, Velma.</p>
     """,
     "perk": "Analytical Mind",
     "techniques": [
       "Ballistic Analysis",
       "Chemical Analysis",
-      "Emergency Triage",
-      "Strategic Insight",
-      "Operational Insight",
-      "Tactical Assessment",
+      "Chemical Synthesis",
       "Forensic Analysis",
-      "Um, Actually",
-      "Stabilize the Dying",
       "Jack of All Trades",
+      "Operational Insight",
       "Slip of the Tongue",
-      "Chemical Synthesis"
+      "Strategic Insight",
+      "Tactical Assessment",
+      "Um, Actually"
     ],
     "capstone": "Elementary"
+  },
+
+  "Sawbones": {
+    "skills": ["Medicine", "Conditioning", "Science"],
+    "flavor": """
+      <p>When a teammate goes down, the clock starts. The Sawbones is the person who knows how to stop it.</p>
+      <p>Field medicine is not clean or controlled. It's performed under fire, with inadequate supplies, on patients who can't stay still. What matters is outcome, and a good Sawbones gets people back on their feet in conditions where most would just be writing the after-action report.</p>
+    """,
+    "perk": "Triage",
+    "techniques": [
+      "Emergency Aid",
+      "Combat Stimulant",
+      "Emergency Triage",
+      "Field Dressing",
+      "Field Surgery",
+      "Pain Management",
+      "Group Treatment",
+      "Resuscitation",
+      "Stabilize the Dying",
+      "Stop the Bleeding"
+    ],
+    "capstone": "Miracle Worker"
+  },
+
+  "Grease Monkey": {
+    "skills": ["Crafting", "Mechanics", "Explosives"],
+    "flavor": """
+      <p>A Grease Monkey looks at a battlefield and sees infrastructure. Defensible positions, structural weaknesses, killzones waiting to be established. The terrain isn't fixed; it's a starting condition.</p>
+      <p>Given time and materials, a Grease Monkey can change the conditions of any engagement. Given less time, they'll improvise. The outcome is the same.</p>
+    """,
+    "perk": "Field Kit",
+    "techniques": [
+      "Breach Charge",
+      "Device Modification",
+      "Emergency Patch",
+      "Field Repair",
+      "Improvised Fortification",
+      "Jury-Rig",
+      "Remote Detonator",
+      "Sensor Array",
+      "Structural Analysis",
+      "Trip Wire"
+    ],
+    "capstone": "On the Fly"
   },
 
   // ── Weapon Disciplines ──────────────────────────────────────────────
@@ -311,8 +370,8 @@
     """,
     "perk": "Versatile",
     "techniques": [
-      "Sighting-in",
       "Airborne Assault",
+      "Sighting-in",
       "Anchor Point",
       "Eyes on the Prize"
     ],
@@ -327,6 +386,7 @@
     """,
     "perk": "Heavy Hitter",
     "techniques": [
+      "Airborne Assault",
       "Eyes Up!",
       "Sighting-in",
       "Hand of God"
@@ -363,5 +423,21 @@
       "Last Stand"
     ],
     "capstone": "Wall of Lead"
+  },
+
+  "Frontliner": {
+    "skills": ["Exotic Weapons", "Tactics", "Conditioning"],
+    "flavor": """
+      <p>Someone has to go first. The Frontliner is the operator who volunteers for that role, armed with a shield and the training to use it. They are the wall between their team and the enemy, absorbing damage that would devastate anyone else.</p>
+      <p>Frontliners excel at close-quarters protection, using shields and defensive positioning to control the battlefield. They understand that the best way to protect their team is to make themselves the most obvious target, and the hardest one to bring down.</p>
+    """,
+    "perk": "Shield Wall",
+    "techniques": [
+      "Shield Bash",
+      "Intercept",
+      "Breach and Clear",
+      "Bulwark"
+    ],
+    "capstone": "Unbreakable"
   }
 }

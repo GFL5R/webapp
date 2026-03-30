@@ -151,5 +151,13 @@
             <h3>Effect:</h3>
             <p>When you make an Attack action with a machine gun, you may spend (op) to increase the attack's damage as though they were additional bonus successes, up to a maximum equal to your ranks in this discipline.</p>
         """
+    },
+
+    "Unbreakable": {
+        "flavor": "They threw everything they had at you. It wasn't enough. When you stand between your team and the enemy, you become an immovable object.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, when you would suffer damage from an attack while wielding a shield, you may spend 1 Fortune Point to reduce that damage to 0. Additionally, until the end of your next turn, you cannot be moved, knocked prone, or forced to relinquish your grip on your shield by any means.</p>
+        """
     }
 }

@@ -260,5 +260,117 @@
       <h3>Effects:</h3>
       <p>On success, you assume administrative control of the entire network for a number of rounds equal to your bonus successes (minimum 1). While in control, you may issue one command per round to any device on the network as a free action, sentries treat you as an authorized operator and obey your commands, and barriers open or close at your will. At the end of the duration, the network crashes and reboots: all connections are severed, all sentries reboot, and the network goes offline for the remainder of the scene. Your Heat immediately goes to 10 (Burned) when the duration ends, but the crash means there is no network left to trace you on; the physical security response, if any, depends on how fast they can figure out what happened.</p>
     """
+  },
+
+  // ── Hacker Techniques ────────────────────────────────────────
+
+  "Payload Injection": {
+    "rank": 2,
+    "type": "Electronic Warfare",
+    "approach": "Power",
+    "skill": "Computers",
+    "flavor": """
+      Access without purpose is just exposure. A well-designed payload leaves the door it entered by undetectable while the damage compounds behind it.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, make a <strong>Computers (Power) check</strong> at the network's TN, targeting one node where you hold a foothold.</p>
+      <h3>Effects:</h3>
+      <p>On a success, deploy a payload with one of the following effects (choose when activating):</p>
+      <ul>
+        <li><strong>Disruptive:</strong> All checks made on the node have their TN increased by 1 until the end of the scene.</li>
+        <li><strong>Destructive:</strong> The node's Security Rating is reduced by 1 for the remainder of the scene (minimum 1).</li>
+        <li><strong>Corruptive:</strong> One file or dataset on the node gains the Corrupted quality and is unusable until cleansed.</li>
+      </ul>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op):</strong> Increase the potency of the chosen effect (TN penalty to 2, Security Rating reduction to 2, or corrupt one additional dataset).</li>
+      </ul>
+    """
+  },
+
+  "Privilege Escalation": {
+    "rank": 3,
+    "type": "Electronic Warfare",
+    "approach": "Swiftness",
+    "skill": "Computers",
+    "flavor": """
+      Admin credentials look the same as legitimate ones. The system doesn't ask why you have them. It just opens every door.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, make a <strong>Computers (Swiftness) check</strong> at the network's TN +1, targeting one node where you hold a foothold.</p>
+      <h3>Effects:</h3>
+      <p>On a success, the node treats you as a <strong>Friendly</strong> operator for 1 + bonus successes rounds. While Friendly on that node, you do not accumulate Heat for actions taken there and may use Spider techniques that require a Friendly network.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op)(op):</strong> The Friendly status extends to one additional node directly connected to the current node.</li>
+      </ul>
+    """
+  },
+
+  // ── Spider Techniques ────────────────────────────────────────
+
+  "Active Scan": {
+    "rank": 1,
+    "type": "Electronic Warfare",
+    "approach": "Precision",
+    "skill": "Computers",
+    "flavor": """
+      A network under attack does not look like a healthy one. An operator who knows what normal traffic patterns look like can read the signs of intrusion before the attacker knows they've been seen.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>Computers (Precision) check</strong> at the network's TN, targeting one node.</p>
+      <h3>Effects:</h3>
+      <p>On a success, reveal the location of all footholds, rootkits, and planted data on the target node. For each threat found, you may spend (op) to negate one of them.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> Extend the scan to one adjacent connected node.</li>
+        <li><strong>Precision (op)(op):</strong> Trace one detected intruder's origin node.</li>
+      </ul>
+    """
+  },
+
+  "Honeypot": {
+    "rank": 1,
+    "type": "Electronic Warfare",
+    "approach": "Precision",
+    "skill": "Computers",
+    "flavor": """
+      A honeypot works because intruders expect to find what they came for. The trap is the expectation of reward, held long enough to spring.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, make a <strong>Computers (Precision) check</strong> at the network's TN, targeting one node you have access to.</p>
+      <h3>Effects:</h3>
+      <p>On a success, designate the target node as a Honeypot. The node appears to contain high-value data or administrative access. The next character who attempts to establish a foothold or access data on the Honeypot node must resist with a <strong>Computers check</strong> at a TN equal to your ranks in Computers, or have their foothold immediately negated and suffer the Disoriented condition.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> You are alerted when the Honeypot is triggered, even if the attacker succeeds their resistance check.</li>
+        <li><strong>Precision (op)(op):</strong> The attacker's origin node is revealed to you regardless of whether they succeed.</li>
+      </ul>
+    """
+  },
+
+  "System Rollback": {
+    "rank": 2,
+    "type": "Electronic Warfare",
+    "approach": "Resilience",
+    "skill": "Computers",
+    "flavor": """
+      Closing a breach after an intruder has entered accomplishes little. A full rollback treats the network as if the intrusion never happened.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, make a <strong>Computers (Resilience) check</strong> at the network's TN, targeting one node.</p>
+      <h3>Effects:</h3>
+      <p>On a success, remove all footholds, rootkits, payloads, and planted data from the target node. The node's Security Rating is restored to its base value. Each character with a foothold on the node must resist with a <strong>Computers check</strong> at a TN equal to your bonus successes (minimum TN 2) or lose their foothold and suffer the Disoriented condition.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op)+:</strong> Increase the TN of the resistance check by 1 per (op) spent this way.</li>
+        <li><strong>Resilience (op)(op):</strong> The node's Security Rating is increased by 1 above its base value until the end of the scene.</li>
+      </ul>
+    """
   }
 }

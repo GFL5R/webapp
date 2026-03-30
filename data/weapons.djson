@@ -864,5 +864,55 @@
     flavor: """
       <p>The German general-purpose machine gun, chambered in 7.62×51mm NATO. Its quick-change barrel and robust design provide reliable sustained fire in adverse conditions.</p>
     """
+  },
+
+  /* ============================================
+     SHIELDS (SHD) - Defensive melee equipment
+     Provides protection and bash attacks
+     ============================================ */
+  "Tactical Riot Shield": {
+    category: "SHD",
+    skill: "Exotic Weapons",
+    range: 0,
+    damage: 3,
+    deadliness: 1,
+    grip: "1-Handed",
+    threat: 0,
+    signature: 4,
+    price: 1200,
+    qualities: ["Defensive 2", "Durable", "Cumbersome"],
+    flavor: """
+      <p>A transparent polycarbonate shield designed for riot control. While not rated for rifle fire, it provides excellent protection against pistols, melee weapons, and thrown objects. Standard issue for military police and security forces.</p>
+    """
+  },
+  "Ballistic Shield": {
+    category: "SHD",
+    skill: "Exotic Weapons",
+    range: 0,
+    damage: 4,
+    deadliness: 2,
+    grip: "1-Handed",
+    threat: 0,
+    signature: 5,
+    price: 2500,
+    qualities: ["Defensive 3", "Durable", "Cumbersome"],
+    flavor: """
+      <p>A heavy composite shield rated to stop pistol and rifle rounds. Used by special weapons and tactics teams for high-risk entries. The weight limits mobility, but the protection is unmatched for close-quarters breaching operations.</p>
+    """
+  },
+  "Deployable Cover": {
+    category: "SHD",
+    skill: "Exotic Weapons",
+    range: 0,
+    damage: 2,
+    deadliness: 1,
+    grip: "1-Handed",
+    threat: 0,
+    signature: 3,
+    price: 1800,
+    qualities: ["Defensive 2", "Mobile", "Deployable"],
+    flavor: """
+      <p>A compact ballistic barrier that can be carried folded and deployed into a waist-high wall. Popular with forward operators who need mobile cover in open terrain. Less durable than a rigid shield but far more portable.</p>
+    """
   }
 }

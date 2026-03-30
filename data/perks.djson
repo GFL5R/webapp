@@ -147,5 +147,13 @@
                 <li><strong>(op)+:</strong> If you succeed, choose a number of characters within range 1 of the target equal to (op) spent this way, up to your ranks in this discipline. They must choose to either take strife equal to the damage dealt, or forfeit their movement this round.</li>
             </ul>
         """
+    },
+
+    "Shield Wall": {
+        "flavor": "Behind me. Always behind me.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When you perform a Guard action while wielding a shield, you may Reduce the damage of an attack you intercept by an amount equal to your ranks in this discipline per (op) spent.</p>
+        """
     }
 }

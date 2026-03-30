@@ -694,5 +694,173 @@
         <li><strong>Resilience (op)+ (Reinforce):</strong> Choose any number of leaders in the scene with Focus lower than or equal to your ranks in Performance plus 2 per (op) spent this way. The enemy army receives panic equal to your ranks in Performance each time any of those leaders performs an Attack or Scheme action targeting any cohort other than yours. This effect persists until the end of your next turn.</li>
       </ul>
     """
+  },
+
+  // ── Frontliner Techniques ─────────────────────────────────────
+
+  "Shield Bash": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Power",
+    "skill": "Exotic Weapons",
+    "flavor": """
+      A shield is not just for blocking. In the right hands, it becomes a battering ram, a blunt instrument capable of staggering opponents and creating openings for follow-up attacks.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As an Attack action while wielding a readied shield, you may make a <strong>TN 3 Exotic Weapons (Power)</strong> check targeting one character at range 0.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your target suffers physical damage equal to your shield's base damage plus your bonus successes. The target must resist with a <strong>TN 4 Conditioning check (Swiftness 3, Precision 5)</strong> or suffer the Dazed condition and be pushed 1 range band away from you.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op):</strong> If the target fails their resistance check, they also suffer the Prone condition.</li>
+        <li><strong>Power (op):</strong> Increase the damage dealt by your ranks in Conditioning.</li>
+      </ul>
+    """
+  },
+  "Intercept": {
+    "rank": 2,
+    "type": "Combat",
+    "approach": "Resilience",
+    "skill": "Tactics",
+    "flavor": """
+      When an ally is in danger, a true protector does not hesitate. They move without thinking, placing themselves between the threat and their teammate. The shield is not just equipment, it is an extension of that instinct.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When an Attack action targets a character at range 0 of you, you may spend 1 Fortune Point to intercept the attack. You become the target of the attack instead.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op):</strong> If you succeed on your resistance check, reduce the damage you suffer by an amount equal to your ranks in Conditioning.</li>
+        <li><strong>Resilience (op)(op):</strong> If you succeed on your resistance check, the attacker suffers strife equal to your ranks in Tactics.</li>
+      </ul>
+    """
+  },
+  "Breach and Clear": {
+    "rank": 2,
+    "type": "Combat",
+    "approach": "Swiftness",
+    "skill": "Tactics",
+    "flavor": """
+      Distance is the enemy of a shield operator. The faster they can close the gap, the sooner they can bring their protection to bear on the enemy position.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Movement and Attack action while wielding a readied shield, you may make a <strong>TN 3 Tactics (Swiftness)</strong> check targeting one character at range 1–3.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, you move into range 0 of your target. Your target must resist with a <strong>TN 4 Conditioning check (Swiftness 2, Precision 5)</strong> or suffer the Dazed condition.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op):</strong> You may immediately perform a Strike action with your shield or a readied one-handed weapon.</li>
+        <li><strong>Swiftness (op):</strong> The target suffers the Disoriented condition in addition to Dazed.</li>
+      </ul>
+    """
+  },
+  "Bulwark": {
+    "rank": 3,
+    "type": "Combat",
+    "approach": "Resilience",
+    "skill": "Tactics",
+    "flavor": """
+      A master of defensive combat becomes an immovable object on the battlefield. Their shield is not just a piece of equipment, it is a declaration that nothing will pass without their permission.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>Once per scene, as a Support action while wielding a readied shield, you may make a <strong>TN 4 Tactics (Resilience)</strong> check.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, choose a number of characters at range 0–1 equal to your ranks in Tactics. Until the end of your next turn, those characters add your shield's Defensive quality to their physical resistance, and any Attack action targeting them must target you instead if you are a valid target. You cannot move from your current position while this effect is active.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op):</strong> Increase the range at which you can protect characters by 1 range band.</li>
+        <li><strong>Resilience (op):</strong> You may move up to 1 range band without ending this effect.</li>
+        <li><strong>Resilience (op)(op):</strong> This effect persists until the end of the scene instead.</li>
+      </ul>
+    """
+  },
+
+  // ── Engineer Techniques ──────────────────────────────────────
+
+  "Breach Charge": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Power",
+    "skill": "Explosives",
+    "flavor": """
+      A locked door stops most things. A properly placed charge stops nothing. The engineering is in the placement: enough force to open the path without losing the team on the other side.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, expend one explosive device and make a <strong>TN 3 Explosives (Power)</strong> check targeting one door, wall, or structural barrier at range 0.</p>
+      <h3>Effects:</h3>
+      <p>On a success, the barrier is destroyed or made passable. Each character at range 0–1 of the breach point not behind cover must resist with a <strong>TN 3 Conditioning check (Resilience 2, Swiftness 5)</strong> or suffer the Dazed condition and 3 strife.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op):</strong> The blast also deals physical damage equal to your ranks in Explosives to each character who fails the resistance check.</li>
+        <li><strong>Power (op)(op):</strong> The breach creates Difficult Terrain at range 0–1 of the breach point.</li>
+      </ul>
+    """
+  },
+
+  "Improvised Fortification": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Power",
+    "skill": "Crafting",
+    "flavor": """
+      A flat piece of terrain favors the attacker. An engineer with a few minutes and whatever is at hand can change that equation in ways that matter when the shooting starts.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>TN 3 Crafting (Power)</strong> check.</p>
+      <h3>Effects:</h3>
+      <p>On a success, construct a piece of cover at one position within range 0–1. Characters at range 0 of the cover position gain physical resistance equal to your ranks in Crafting against attacks originating from one direction (chosen when constructing). The fortification persists until destroyed or the end of the scene.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op):</strong> The cover also provides concealment from the protected direction, increasing the TN of Attack actions targeting characters behind it by 1.</li>
+        <li><strong>Power (op)(op):</strong> The fortification requires a <strong>TN 4 Explosives or Mechanics check</strong> to destroy.</li>
+      </ul>
+    """
+  },
+
+  "Remote Detonator": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Precision",
+    "skill": "Explosives",
+    "flavor": """
+      Placement and timing are the two variables in demolition. The detonator solves the timing problem. Everything else is engineering.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you have one or more explosive devices placed in the scene (such as from Landmine or Breach Charge), as a Support action, you may detonate one or more of them simultaneously from any range.</p>
+      <h3>Effects:</h3>
+      <p>Each triggered device detonates according to its normal effects. You do not need to be within any range of the devices to trigger them this way.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> Delay the detonation of one device until a trigger condition you specify occurs (a character enters a position, a door opens, etc.). The condition must be observable from the device's location.</li>
+        <li><strong>Precision (op)(op):</strong> Trigger up to 2 additional placed devices with the same action.</li>
+      </ul>
+    """
+  },
+
+  "Trip Wire": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Precision",
+    "skill": "Crafting",
+    "flavor": """
+      A trip wire is patience made physical. It does not matter where you are when it goes off. What matters is that you were there to set it.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>TN 2 Crafting (Precision)</strong> check to place a concealed trip wire at any position within range 0–1.</p>
+      <h3>Effects:</h3>
+      <p>On a success, the trip wire is hidden at the target position until triggered or the scene ends. When any character moves through the trapped position, they must resist with a <strong>TN 3 Conditioning check (Swiftness 2, Resilience 4)</strong> or suffer the Prone condition. Triggering the trap also creates an audible disturbance, alerting all characters within range 0–3.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> Attach a small explosive or noisemaking device; a character who fails the resistance check also suffers physical damage equal to your ranks in Crafting.</li>
+        <li><strong>Precision (op)(op):</strong> The trip wire is well-concealed; detecting it requires a <strong>TN 3 Survival or Insight check</strong>, with the TN increased by 1 per bonus success you rolled.</li>
+      </ul>
+    """
   }
 }

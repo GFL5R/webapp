@@ -74,6 +74,30 @@
         """
     },
 
+    "Emergency Shutdown": {
+        "flavor": "Offense finds one way in. Defense has to cover all of them. You've covered all of them.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per game session, when a network you are actively defending would be compromised, you may spend 1 Fortune Point to trigger an emergency shutdown, immediately severing all connections and leaving the network offline for the rest of the scene.</p>
+        """
+    },
+
+    "Miracle Worker": {
+        "flavor": "You don't accept the assessment. You work the problem.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per game session, when a character would die from their injuries, you may spend 1 Fortune Point as a reaction and make a <strong>TN 5 Medicine (Resilience)</strong> check. On a success, the character is stabilized and does not die — they remain <a href="#Conditions::condition-incapacitated">Incapacitated</a> but are no longer in danger of death. The severity of their most severe critical strike is reduced by your bonus successes.</p>
+        """
+    },
+
+    "On the Fly": {
+        "flavor": "Given a week and a proper workshop, anyone could do this. You have neither, and it's still getting done.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>Once per scene, you may spend 1 Fortune Point to perform a downtime crafting or modification activity as a Support action. The result is functional but temporary, degrading or requiring proper maintenance after the scene ends. If you succeed with 2 or more bonus successes, the modification is permanent.</p>
+        """
+    },
+
     // ── Weapon Discipline Capstones ─────────────────────────────────────
 
     "Death's Whisper": {

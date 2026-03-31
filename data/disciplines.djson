@@ -13,9 +13,12 @@
       "Ghost Step",
       "Alibi",
       "Prepared Ambush",
+      "Dead Air",
       "Silent Strike",
       "Vanishing Act",
-      "Silent Assassin"
+      "Silent Assassin",
+      "Hunter's Patience",
+      "Dead Angle"
     ],
     "capstone": "Absolute Stealth"
   },
@@ -33,6 +36,7 @@
       "Throwing Knife",
       "Sighting-in",
       "Shoot to Maim",
+      "Dead Air",
       "Silent Strike",
       "Gap in the Armor",
       "Closing Strike",
@@ -163,7 +167,7 @@
       "Strike",
       "Total Eclipse"
     ],
-    "capstone": "Root Access"
+    "capstone": "Proxy"
   },
 
   "Spider": {
@@ -185,7 +189,7 @@
       "Spoof",
       "System Rollback"
     ],
-    "capstone": "Citadel"
+    "capstone": "Emergency Shutdown"
   },
 
   "Knuckle Dragger": {
@@ -213,11 +217,11 @@
     "capstone": "Unstoppable Force"
   },
 
-  "Velma": {
+  "Analyst": {
     "skills": ["Science", "Insight", "Computers"],
     "flavor": """
-      <p>You've explained things one too many times. Now the squad just says "okay, Velma" and moves on. The nickname sticks, but so do the results.</p>
-      <p>No one else on the team noticed the discrepancy in the patrol logs, traced it back to a maintenance schedule, and cross-referenced it with the facility's construction permits. You did. Okay, Velma.</p>
+      <p>Information is power, and an Analyst is a master of both. They can take a pile of data and turn it into actionable intelligence that can change the course of a mission.</p>
+      <p>Analysts are the brains behind the brawn, using their knowledge and insight to outthink opponents and stay one step ahead. They understand that in the information age, the right piece of data can be more valuable than any weapon.</p>
     """,
     "perk": "Analytical Mind",
     "techniques": [
@@ -235,11 +239,11 @@
     "capstone": "Elementary"
   },
 
-  "Sawbones": {
+  "Field Medic": {
     "skills": ["Medicine", "Conditioning", "Science"],
     "flavor": """
-      <p>When a teammate goes down, the clock starts. The Sawbones is the person who knows how to stop it.</p>
-      <p>Field medicine is not clean or controlled. It's performed under fire, with inadequate supplies, on patients who can't stay still. What matters is outcome, and a good Sawbones gets people back on their feet in conditions where most would just be writing the after-action report.</p>
+      <p>When a teammate goes down, the clock starts. The Field Medic is the person who knows how to stop it.</p>
+      <p>Field medicine is not clean or controlled. It's performed under fire, with inadequate supplies, on patients who can't stay still. What matters is outcome, and a good Field Medic gets people back on their feet in conditions where most would just be writing the after-action report.</p>
     """,
     "perk": "Triage",
     "techniques": [
@@ -290,10 +294,15 @@
     "perk": "Sleight of Hand",
     "techniques": [
       "Throwing Knife",
-      "Silent Strike",
       "Gap in the Armor",
       "Closing Strike",
-      "Momentous Strike"
+      "Momentous Strike",
+      "Wrest Control",
+      "Evasive Footwork",
+      "Weapon Lock",
+      "Hunter's Patience",
+      "Dead Air",
+      "Sever the Artery"
     ],
     "capstone": "Death's Whisper"
   },
@@ -309,7 +318,18 @@
       "Acrobatic Recovery",
       "Deflective Defense",
       "Cleaving Strike",
-      "Counterattack"
+      "Counterattack",
+      "Gap in the Armor",
+      "Closing Strike",
+      "Momentous Strike",
+      "Judo Throw",
+      "Murderous Intent",
+      "Wrest Control",
+      "Evasive Footwork",
+      "Weapon Lock",
+      "Forced Hand",
+      "Takedown",
+      "Hunter's Patience"
     ],
     "capstone": "Living Blade"
   },
@@ -325,7 +345,14 @@
       "Sighting-in",
       "Shoot to Maim",
       "Guns Akimbo",
-      "Disarming Shot"
+      "Disarming Shot",
+      "Suppressive Fire",
+      "Ricochet",
+      "Forced Hand",
+      "AP Round",
+      "Dead Angle",
+      "Murderous Intent",
+      "Evasive Footwork"
     ],
     "capstone": "Deadeye"
   },
@@ -340,7 +367,14 @@
     "techniques": [
       "Aggressive Escort",
       "Acrobatic Recovery",
-      "Distraction Tactics"
+      "Distraction Tactics",
+      "Shoot to Maim",
+      "Suppressive Fire",
+      "Ricochet",
+      "Evasive Footwork",
+      "Airborne Assault",
+      "Pistol Whip",
+      "Shoot and Scoot"
     ],
     "capstone": "Bullet Storm"
   },
@@ -357,7 +391,12 @@
       "Crushing Blow",
       "Trench Sweeper",
       "Swiss Cheese",
-      "Quick Draw: Keep One In the Chamber"
+      "Quick Draw: Keep One In the Chamber",
+      "Aggressive Escort",
+      "Suppressive Fire",
+      "Ricochet",
+      "Takedown",
+      "Last Stand"
     ],
     "capstone": "Thunderclap"
   },
@@ -373,7 +412,13 @@
       "Airborne Assault",
       "Sighting-in",
       "Anchor Point",
-      "Eyes on the Prize"
+      "Eyes on the Prize",
+      "Shoot to Maim",
+      "Suppressive Fire",
+      "Hunter's Patience",
+      "Dead Angle",
+      "AP Round",
+      "Distraction Tactics"
     ],
     "capstone": "Lead Rain"
   },
@@ -389,7 +434,13 @@
       "Airborne Assault",
       "Eyes Up!",
       "Sighting-in",
-      "Hand of God"
+      "Hand of God",
+      "Shoot to Maim",
+      "Hunter's Patience",
+      "Dug In",
+      "AP Round",
+      "Dead Angle",
+      "Eyes on the Prize"
     ],
     "capstone": "Stopping Power"
   },
@@ -405,7 +456,13 @@
       "Sighting-in",
       "Battle in the Mind",
       "Sniper's Advantage",
-      "Hand of God"
+      "Hand of God",
+      "Hunter's Patience",
+      "Dead Angle",
+      "Dug In",
+      "Glass Case",
+      "Shoot to Maim",
+      "Eyes on the Prize"
     ],
     "capstone": "One Shot"
   },
@@ -420,7 +477,14 @@
     "techniques": [
       "Anchor Point",
       "Landmine",
-      "Last Stand"
+      "Last Stand",
+      "Suppressive Fire",
+      "Dug In",
+      "Glass Case",
+      "AP Round",
+      "Distraction Tactics",
+      "Aggressive Escort",
+      "Shoot to Maim"
     ],
     "capstone": "Wall of Lead"
   },
@@ -436,7 +500,14 @@
       "Shield Bash",
       "Intercept",
       "Breach and Clear",
-      "Bulwark"
+      "Bulwark",
+      "Judo Throw",
+      "Grappler",
+      "Wrest Control",
+      "Rolling With the Punches",
+      "Weapon Lock",
+      "Dug In",
+      "Takedown"
     ],
     "capstone": "Unbreakable"
   }

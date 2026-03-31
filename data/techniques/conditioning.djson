@@ -1,45 +1,4 @@
 /* This file is a djson type file, and can be parsed using the docstring-json library found at https://github.com/JackBinary/docstring-json */
 {
-  // ── Medic Techniques ─────────────────────────────────────────
 
-  "Combat Stimulant": {
-    "rank": 1,
-    "type": "Conditioning",
-    "approach": "Power",
-    "skill": "Medicine",
-    "flavor": """
-      Stimulants borrow capability from the future. A medic who understands the pharmacology knows how much to borrow and when to stop.
-    """,
-    "description": """
-      <h3>Activation:</h3>
-      <p>As a Support action, make a <strong>TN 2 Medicine (Power)</strong> check targeting one willing character at range 0 (including yourself).</p>
-      <h3>Effects:</h3>
-      <p>On a success, until the end of the scene, once per round the target may reduce the TN of one check by 1 before rolling. Each time they activate this benefit, they gain 2 strife.</p>
-      <h3>New Opportunities:</h3>
-      <ul>
-        <li><strong>Power (op):</strong> The target also removes 3 fatigue immediately.</li>
-        <li><strong>Power (op)(op):</strong> The TN reduction is 2 instead of 1 each time the target activates this benefit.</li>
-      </ul>
-    """
-  },
-
-  "Pain Management": {
-    "rank": 1,
-    "type": "Conditioning",
-    "approach": "Resilience",
-    "skill": "Medicine",
-    "flavor": """
-      Pain is information. Suppressing it is a calculated risk: the patient can function, but the feedback telling them when they are making things worse is gone. A medic who administers pain management accepts responsibility for what the patient can no longer feel.
-    """,
-    "description": """
-      <h3>Activation:</h3>
-      <p>As a Support action, make a <strong>TN 2 Medicine (Resilience)</strong> check targeting one character at range 0 (including yourself).</p>
-      <h3>Effects:</h3>
-      <p>On a success, until the end of the scene, the target ignores the TN penalties from the Lightly Wounded condition. Additionally, until the start of your next turn, the target also ignores the TN penalties from the Heavily Wounded condition.</p>
-      <h3>New Opportunities:</h3>
-      <ul>
-        <li><strong>Resilience (op)(op):</strong> Extend the Heavily Wounded benefit until the end of the scene. When the effect ends, the target gains 3 fatigue.</li>
-      </ul>
-    """
-  }
 }

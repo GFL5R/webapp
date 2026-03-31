@@ -862,5 +862,260 @@
         <li><strong>Precision (op)(op):</strong> The trip wire is well-concealed; detecting it requires a <strong>TN 3 Survival or Insight check</strong>, with the TN increased by 1 per bonus success you rolled.</li>
       </ul>
     """
+  },
+
+  // ── New Techniques ──────────────────────────────────────────────
+
+  "Suppressive Fire": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": null,
+    "skill": "Firearms",
+    "flavor": """
+      A single target is easy enough to reason about. But when rounds start clipping the people around them, everyone in the vicinity has to choose between their objective and their survival.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a Firearms Attack action check, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op)+:</strong> Choose one character at range 0–2 of your target per (op) spent this way whose Vigilance is lower than your target's. Each chosen character suffers strife equal to your weapon's base damage.</li>
+      </ul>
+    """
+  },
+
+  "Hunter's Patience": {
+    "rank": 2,
+    "type": "Combat",
+    "approach": null,
+    "skill": null,
+    "flavor": """
+      Every operator has their finishing move. The smart ones wait until the target cannot avoid it.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make an Attack action check, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op)(op):</strong> If your target is Disoriented or Prone, treat your weapon's damage and deadliness as increased by your ranks in Survival for this check.</li>
+      </ul>
+    """
+  },
+
+  "Ricochet": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": null,
+    "skill": "Firearms",
+    "flavor": """
+      A miss is not wasted if it finds someone else. Rounds fired into a cluster rarely stop at the intended target.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a Firearms Attack action check, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op)(op):</strong> If you fail the check, choose one character at range 0–2 of your target whose Vigilance is lower than your target's. That character suffers physical damage equal to your weapon's base damage.</li>
+      </ul>
+    """
+  },
+
+  "Dead Angle": {
+    "rank": 2,
+    "type": "Combat",
+    "approach": "Fortune",
+    "skill": "Firearms",
+    "flavor": """
+      Corners exist to protect people. Someone who has spent enough time reading a battlefield can visualize the shape of a target without seeing them directly, and put a round exactly where they know it will land.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Firearms Attack and Movement action, you may make a <strong>Firearms (Fortune)</strong> check targeting one character within your weapon's range to whom you do not have direct line of sight. The TN of this check is equal to the target's Vigilance.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, the target suffers physical damage equal to your weapon's base damage and strife equal to your bonus successes.</p>
+    """
+  },
+
+  "Evasive Footwork": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": null,
+    "skill": null,
+    "flavor": """
+      Standing still in a gunfight is a habit the dead share with the untrained. Controlled movement, constant repositioning, makes you a harder target and keeps your options open.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Movement and Support action, you may spend 2 fatigue.</p>
+      <h3>Effects:</h3>
+      <p>Until the end of your next turn, increase the TN of Attack action checks targeting you by 1. Additionally, after any such check fails, you may move 1 range band in any direction as a free action.</p>
+    """
+  },
+
+  "Dug In": {
+    "rank": 2,
+    "type": "Combat",
+    "approach": "Fortune",
+    "skill": null,
+    "flavor": """
+      An operator who picks their spot and refuses to leave it is not a stationary target. They are a fixed problem that has to be solved before anything else in the fight gets done.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you perform a Guard action without moving any range bands this turn, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Fortune (op)(op)+:</strong> Choose one character you can perceive per (op)(op) spent this way. On the next check to defend against that character's physical damage before the start of your next turn, your fatigue cannot exceed your Endurance as a result of that attack.</li>
+      </ul>
+    """
+  },
+
+  "Takedown": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": null,
+    "skill": null,
+    "flavor": """
+      Not every fight ends with a bullet. Sometimes the requirement is a person on the ground, breathing, and unable to get back up without help.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As an Attack and Scheme action using a readied melee weapon or unarmed, you may make a <strong>Blades or Hand-to-Hand check</strong> targeting one character at range 0. The TN is equal to the target's Vigilance, reduced to 1 if either character is currently in Dangerous, Entangling, or Obscuring terrain.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your target suffers the Prone condition and fatigue equal to your ranks in Conditioning.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)(op):</strong> Your target suffers the Immobilized condition instead of Prone.</li>
+      </ul>
+    """
+  },
+
+  "Forced Hand": {
+    "rank": 2,
+    "type": "Combat",
+    "approach": null,
+    "skill": null,
+    "flavor": """
+      People will tell you what they value when you make them choose fast enough. Put a blade or a barrel on someone and their priorities clarify immediately.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As an Attack and Scheme action using a readied ranged or bladed weapon, you may make a <strong>Firearms or Blades check</strong> targeting one character within your weapon's range. The TN is equal to the target's Vigilance.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, your target must immediately choose one of the following:</p>
+      <ul>
+        <li>Suffer strife equal to your ranks in Performance and the Dazed condition.</li>
+        <li>Accept a critical strike with severity equal to your weapon's deadliness.</li>
+      </ul>
+    """
+  },
+
+  "Weapon Lock": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": null,
+    "skill": null,
+    "flavor": """
+      Taking a weapon away is one way to neutralize a threat. Trapping it in their hand is faster, and leaves them holding a problem they cannot use.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a Blades or Hand-to-Hand Attack action check, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op):</strong> If you succeed, choose one of your target's readied weapons. Your target cannot use that weapon for Attack actions until the end of your next turn.</li>
+        <li><strong>(op)(op):</strong> If you succeed, your target suffers the Immobilized condition instead.</li>
+      </ul>
+    """
+  },
+
+  "Glass Case": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Power",
+    "skill": null,
+    "flavor": """
+      Enough force delivered to the right spot does not just cause damage. It interrupts the target's ability to process what is happening, and that window is all you need.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a Power Attack action check, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)+:</strong> Your target must resist with a <strong>TN 3 Conditioning check (Swiftness 1, Resilience 2)</strong>, plus 1 to all TNs per additional Power (op) spent this way. If they fail, they suffer the Dazed condition and fatigue equal to their shortfall.</li>
+      </ul>
+    """
+  },
+
+  "AP Round": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Power",
+    "skill": null,
+    "flavor": """
+      Armor stops most things. Enough rounds at the right velocity, enough firepower behind the shot, and the math changes.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a Power Attack action check, you may spend (op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Power (op)+:</strong> Reduce your target's physical resistance by 1 per (op) spent this way. This effect persists until the end of your next turn.</li>
+      </ul>
+    """
+  },
+
+  "Sever the Artery": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Swiftness",
+    "skill": "Blades",
+    "flavor": """
+      A clean kill is for professionals with time. A messy kill bleeds out in under a minute and is just as dead. Sometimes the second option is the only one available.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a Blades Attack action check, you may spend (op)(op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op)(op):</strong> Your target must resist with a <strong>TN 3 Conditioning (Resilience 4, Swiftness 1)</strong> check. On failure, they suffer the <a href="#Conditions::condition-bleeding">Bleeding</a> condition and fatigue equal to their shortfall.</li>
+      </ul>
+    """
+  },
+
+  "Sever the Artery": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": "Swiftness",
+    "skill": "Blades",
+    "flavor": """
+      Most cuts hurt. The right cut ends things. There are seven places on the body where a blade can go and guarantee a clock is now running. A knife fighter who knows those seven places fights differently than one who doesn't.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you succeed on a Blades Attack action check, you may spend (op)(op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Swiftness (op)(op):</strong> The target must resist with a <strong>TN 3 Conditioning (Resilience 4, Swiftness 1)</strong> check. On failure, the target suffers the <a href="#Conditions::condition-bleeding">Bleeding</a> condition and fatigue equal to their shortfall.</li>
+      </ul>
+    """
+  },
+
+  "Shoot and Scoot": {
+    "rank": 1,
+    "type": "Combat",
+    "approach": null,
+    "skill": "Firearms",
+    "flavor": """
+      Staying put after firing is how you become a target. The whole point of a short barrel is that you can be somewhere else before anyone gets a fix on where you were.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>When you make a Firearms Attack action check, you may spend (op)(op) in the following way:</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op)(op):</strong> Move up to 1 range band away from your target, then perform a Strike action with your readied weapon targeting a character you moved away from. The TN of this Strike is equal to that character's Vigilance.</li>
+      </ul>
+    """
   }
 }

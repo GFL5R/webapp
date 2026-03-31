@@ -58,11 +58,11 @@
         """
     },
 
-    "Ghost in the Machine": {
-        "flavor": "You don't break into systems. You were already there. A true netrunner treats digital infrastructure like a second home, and never leaves fingerprints.",
+    "Zero Day": {
+        "flavor": "The most dangerous moment for any system is before it knows it's under attack. By the time the alerts fire, you're already inside.",
         "description": """
             <h3>Effect:</h3>
-            <p>When you succeed on a Computers check to access or manipulate a system, you leave no trace of your intrusion. Additionally, you may maintain a number of active system connections equal to your ranks in this discipline without requiring additional checks to sustain them.</p>
+            <p>When making your first Computers check against a network you have not accessed this scene, add a number of bonus approach dice equal to your ranks in this discipline to the check. If that check succeeds, it generates no heat.</p>
         """
     },
 
@@ -146,6 +146,35 @@
             <ul>
                 <li><strong>(op)+:</strong> If you succeed, choose a number of characters within range 1 of the target equal to (op) spent this way, up to your ranks in this discipline. They must choose to either take strife equal to the damage dealt, or forfeit their movement this round.</li>
             </ul>
+        """
+    },
+
+    "Watchdog": {
+        "flavor": "A network under attack is never quiet. Traffic spikes, timing anomalies, requests from addresses that shouldn't exist. You read these the way a sailor reads weather.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When another character makes a Computers check against a network you are actively monitoring, you are immediately alerted to the attempt regardless of its success. You may make a <strong>Computers (Precision)</strong> check as a free action; on a success, you learn the intruder's current heat level and the last technique they used against the network.</p>
+            <p>Once per scene, when you detect an intrusion this way, you may immediately attempt to counter it as a reaction before the intruder resolves their action.</p>
+        """
+    },
+
+    "Triage": {
+        "flavor": "You stop the bleeding before you ask what happened. In the field, sequence matters more than thoroughness.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When making a Medicine check to treat a character's injuries, you may spend (op) as follows:</p>
+            <ul>
+                <li><strong>(op)(op):</strong> Remove one critical strike affecting the target with severity equal to or lower than twice the (op) spent this way. You may spend a maximum number of (op)(op) this way equal to your ranks in this discipline.</li>
+            </ul>
+        """
+    },
+
+    "Field Kit": {
+        "flavor": "A proper toolkit is a luxury. What you have is a multi-tool, electrical tape, and a very specific understanding of what can be skipped.",
+        "description": """
+            <h3>Effect:</h3>
+            <p>When performing checks to repair or modify equipment without access to proper tools or materials, reduce any improvised penalty to the check by your ranks in this discipline (minimum 0).</p>
+            <p>Once per scene, you may perform a quick repair as a free action, restoring one Damaged item in hand or on your person to a functional state. Items repaired this way are not fully restored and require proper maintenance between scenes.</p>
         """
     },
 

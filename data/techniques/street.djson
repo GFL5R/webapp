@@ -176,13 +176,13 @@
       </ul>
     """
   },
-  "Silent Strike": {
+  "Dead Air": {
     "rank": 2,
     "type": "Street",
     "approach": "Precision",
     "skill": null,
     "flavor": """
-      A shuriken to the trachea. A knuckle pressed hard against the carotid until the blood pressure drops. These are not improvised solutions. They are practiced techniques, applied to a single objective: remove the target without letting them warn anyone. The work is efficient, quiet, and over fast.
+      Most engagements fail at the moment of contact. The sound draws attention, the attention draws response, and the responders close the window. Cut the sound and the window stays open.
     """,
     "description": """
       <h3>Activation:</h3>
@@ -193,6 +193,27 @@
       <h3>New Opportunities:</h3>
       <ul>
         <li><strong>Precision (op)+:</strong> If you succeed, the target suffers a critical strike with severity equal to your weapon's deadliness plus 1 per (op) spent beyond the first.</li>
+      </ul>
+    """
+  },
+
+  "Silent Strike": {
+    "rank": 2,
+    "type": "Street",
+    "approach": "Precision",
+    "skill": null,
+    "flavor": """
+      There is no such thing as a fair fight. There is only the fight you walked into and the one you set up. A disoriented target, a suppressed barrel, and a clear angle: one of these is a circumstance. All three is a decision.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As an Attack action using a readied <strong>suppressed firearm</strong> or <strong>bladed weapon</strong>, you may make a <strong>Precision</strong> check using the appropriate Combat skill for your weapon with a TN equal to your target's Vigilance, targeting one <strong>unaware</strong> or <strong>Disoriented</strong> character within the weapon's range.</p>
+      <h3>Effects:</h3>
+      <p>If you succeed, the target suffers physical damage equal to your weapon's base damage and a critical strike with severity equal to your weapon's deadliness.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op)+:</strong> Increase the severity of the critical strike by 1 per (op) spent this way.</li>
+        <li><strong>Precision (op)(op):</strong> The target gains the <a href="#Conditions::condition-silenced">Silenced</a> condition. Other characters at range 3 or greater do not perceive that the target has been struck for 1 round.</li>
       </ul>
     """
   },

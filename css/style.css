@@ -14,7 +14,7 @@
   --yellow-dim:      #8a7200;
   --yellow-glow:     rgba(255, 225, 53, 0.15);
   --yellow-glow-strong: rgba(255, 225, 53, 0.35);
-  --teal:          #FFC107;
+  --dandelion:          #FFC107;
   --amber:         #ff9100;
   --amber-dim:     #b36500;
   --red:           #ff3d3d;
@@ -47,6 +47,15 @@ body {
   color: var(--white);
   overflow-x: hidden;
   min-height: 100vh;
+}
+
+a {
+  color: var(--dandelion);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 ::selection {
@@ -502,7 +511,7 @@ body {
   font-family: var(--font-heading);
   font-size: 1.15rem;
   font-weight: 600;
-  color: var(--teal);
+  color: var(--dandelion);
   margin-top: 24px;
   margin-bottom: 10px;
   letter-spacing: 0.5px;

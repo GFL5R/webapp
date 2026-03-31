@@ -178,7 +178,7 @@
   // ── Medic Techniques ─────────────────────────────────────────
     "Combat Stimulant": {
     "rank": 1,
-    "type": "Conditioning",
+    "type": "Science",
     "approach": "Power",
     "skill": "Medicine",
     "flavor": """
@@ -199,7 +199,7 @@
 
   "Pain Management": {
     "rank": 1,
-    "type": "Conditioning",
+    "type": "Science",
     "approach": "Resilience",
     "skill": "Medicine",
     "flavor": """

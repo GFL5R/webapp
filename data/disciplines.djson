@@ -148,15 +148,20 @@
     "capstone": "Battlefield Genius"
   },
 
-  "Script Wizard": {
+  "Black Hat": {
     "skills": ["Computers", "Subterfuge", "Tactics"],
     "flavor": """
-      <p>Networks are doors, and a Script Wizard doesn't wait for an invitation. They find the service entrance, the loading dock, the ventilation shaft, and if none of those work, they make a new opening.</p>
-      <p>A Script Wizard's advantage is asymmetric. A defender has to protect everything. A Script Wizard only has to find one way in.</p>
+      <p>Networks are doors, and a Black Hat doesn't wait for an invitation. They find the service entrance, the loading dock, the ventilation shaft, and if none of those work, they make a new opening.</p>
+      <p>A Black Hat's advantage is asymmetric. A defender has to protect everything. A Black Hat only has to find one way in.</p>
     """,
     "perk": "Zero Day",
     "techniques": [
       "Blackout",
+      "Cleanup Detail",
+      "Cloak",
+      "Dead Drop",
+      "Exfiltrate",
+      "Falsify Data",
       "Hijack",
       "ICE Breaker",
       "Overclock",
@@ -164,8 +169,10 @@
       "Privilege Escalation",
       "Puppet String",
       "Siege Engine",
-      "Strike",
-      "Total Eclipse"
+      "Spoof",
+      "Spike",
+      "Total Eclipse",
+      "Trace"
     ],
     "capstone": "Proxy"
   },
@@ -178,16 +185,18 @@
     """,
     "perk": "Watchdog",
     "techniques": [
-      "Active Scan",
-      "Cleanup Detail",
-      "Dead Drop",
-      "Exfiltrate",
-      "Falsify Data",
+      "Cloak",
+      "Forensics",
       "Honeypot",
       "Neural Fortification",
+      "Overclock",
+      "Patch",
+      "Quarantine",
       "Rootkit",
-      "Spoof",
-      "System Rollback"
+      "Spike",
+      "Sweep",
+      "System Rollback",
+      "Trace"
     ],
     "capstone": "Emergency Shutdown"
   },

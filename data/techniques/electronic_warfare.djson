@@ -1,4 +1,24 @@
 {
+  "Cloak": {
+    "rank": 1,
+    "type": "Electronic Warfare",
+    "approach": null,
+    "skill": "Computers",
+    "flavor": """
+      A visible avatar is a target. The simplest form of digital camouflage masks your presence on a node, blending your traffic into the network's background noise. It holds up as long as you hold still.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>Computers check</strong> at the network's TN.</p>
+      <h3>Effects:</h3>
+      <p>On success, your avatar becomes hidden. Sentries and operators cannot detect or target you unless they succeed on a Scan or Sweep that covers your node. The cloak persists until you perform any action other than Pause. Traversing links does not break the cloak.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>(op):</strong> You do not gain Heat from activating this technique.</li>
+        <li><strong>(op)(op):</strong> Traversing a barrier does not break the cloak.</li>
+      </ul>
+    """
+  },
   "Dead Drop": {
     "rank": 1,
     "type": "Electronic Warfare",
@@ -64,7 +84,7 @@
       <p>Increase your EW Rating by 1 until the end of your next turn. At the end of that turn, your deck suffers the <strong>Damaged</strong> quality.</p>
     """
   },
-  "Strike": {
+  "Spike": {
     "rank": 1,
     "type": "Electronic Warfare",
     "approach": null,
@@ -208,6 +228,26 @@
       </ul>
     """
   },
+  "Trace": {
+    "rank": 2,
+    "type": "Electronic Warfare",
+    "approach": "Precision",
+    "skill": "Computers",
+    "flavor": """
+      Finding a hacker on a network is like finding a needle in a haystack. Tracing them is like finding the person who dropped the needle in the haystack. It is not easy, but it is possible with the right tools and enough skill.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, make a <strong>Computers (Precision) check</strong> at the network's TN, targeting one revealed rootkit or one hacker's avatar on your current node.</p>
+      <h3>Effects:</h3>
+      <p>If the target is a <strong>rootkit</strong>, you learn which node on the network the rootkit's owner currently occupies.</p>
+      <p>If the target is a <strong>hacker's avatar</strong>, you learn their physical location in realspace: the device they are connected through and their approximate position.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op)(op):</strong> The target is unaware they have been traced.</li>
+      </ul>
+    """
+  },
   "Blackout": {
     "rank": 3,
     "type": "Electronic Warfare",
@@ -311,7 +351,7 @@
 
   // ── Spider Techniques ────────────────────────────────────────
 
-  "Active Scan": {
+  "Sweep": {
     "rank": 1,
     "type": "Electronic Warfare",
     "approach": "Precision",
@@ -370,6 +410,69 @@
       <ul>
         <li><strong>Resilience (op)+:</strong> Increase the TN of the resistance check by 1 per (op) spent this way.</li>
         <li><strong>Resilience (op)(op):</strong> The node's Security Rating is increased by 1 above its base value until the end of the scene.</li>
+      </ul>
+    """
+  },
+
+  "Forensics": {
+    "rank": 2,
+    "type": "Electronic Warfare",
+    "approach": "Precision",
+    "skill": "Computers",
+    "flavor": """
+      An intrusion leaves evidence the same way a break-in does: scratches on the lock, mud on the floor, a drawer left open. Reading the evidence tells you what was taken, how they got in, and where they went next.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>Computers (Precision) check</strong> at the network's TN, targeting one node.</p>
+      <h3>Effects:</h3>
+      <p>On success, the GM reveals what actions have been performed on the target node during the current scene: which files were accessed, whether data was copied or modified, what devices were interacted with, and what commands were issued. You also learn the number of distinct intruders who have acted on the node, though not their identities.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Precision (op):</strong> You identify the skill and approach used for one action taken on the node.</li>
+        <li><strong>Precision (op)(op):</strong> You identify the specific operator responsible for one action taken on the node.</li>
+      </ul>
+    """
+  },
+
+  "Patch": {
+    "rank": 1,
+    "type": "Electronic Warfare",
+    "approach": "Resilience",
+    "skill": "Computers",
+    "flavor": """
+      A fragged sentry or a bricked camera does not fix itself. Someone has to restart the process, reload the firmware, and verify the system comes back clean. It is unglamorous work, and it keeps everything running.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Support action, make a <strong>Computers (Resilience) check</strong> at the network's TN, targeting one fragged sentry or disabled device on your current node.</p>
+      <h3>Effects:</h3>
+      <p>On success, restore the target. A fragged sentry returns with Integrity equal to half its maximum (rounded up). A disabled device is reactivated and functions normally. The restored target acts on its next available turn.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op):</strong> The sentry returns with Integrity equal to its full maximum instead.</li>
+        <li><strong>Resilience (op)(op):</strong> The restored sentry or device gains +1 to its Security Rating until the end of the scene.</li>
+      </ul>
+    """
+  },
+
+  "Quarantine": {
+    "rank": 3,
+    "type": "Electronic Warfare",
+    "approach": "Resilience",
+    "skill": "Computers",
+    "flavor": """
+      When containment fails, isolation is the next best thing. Cutting a compromised node off from the rest of the network stops lateral movement cold. Whatever is on that node stays on that node.
+    """,
+    "description": """
+      <h3>Activation:</h3>
+      <p>As a Scheme action, make a <strong>Computers (Resilience) check</strong> at the network's TN, targeting one node within two links of your current position.</p>
+      <h3>Effects:</h3>
+      <p>On success, all links to and from the target node are sealed with barriers for a number of rounds equal to 1 plus your bonus successes. Characters on the quarantined node cannot traverse links in any direction, and characters outside cannot enter. Sentries on the quarantined node remain active. The barriers created by Quarantine cannot be removed by the Bypass action; only another Spider's System Rollback or the end of the duration removes them.</p>
+      <h3>New Opportunities:</h3>
+      <ul>
+        <li><strong>Resilience (op):</strong> You may designate one character (yourself or an ally) who is exempt from the quarantine and may traverse its barriers freely.</li>
+        <li><strong>Resilience (op)(op):</strong> The quarantine also suppresses all active rootkits on the target node for its duration.</li>
       </ul>
     """
   }

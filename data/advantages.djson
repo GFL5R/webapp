@@ -1,24 +1,24 @@
 {
-  "Harmless Appearance": {
-    "type": [
-        "Interpersonal", "Social"
-    ],
-    "flavor": """
-        <p><em>The checkpoint guard leaned out of his booth, hand already moving toward his radio.</em></p>
-        <p><em>Harpsy smiled at him. It came out wrong, too wide, a little desperate, the smile of someone who had just realized they'd used the wrong door and were hoping nobody noticed. She clutched her clipboard to her chest.</em></p>
-        <p>"Sorry! Sorry, I'm so sorry, I think I took the wrong corridor again, they moved the maintenance access and I just..." She gestured vaguely behind her. Her voice cracked slightly on the last word.</p>
-        <p><em>The guard looked at her. Then at the clipboard. Then at the very specific expression of a person who was definitely not a threat and possibly a little lost.</em></p>
-        <p>"Maintenance is back the way you came. Left at the junction."</p>
-    """,
-    "description": """
-        <h3>Effects</h3>
-        <ul>
-            <li>You appear earnest and perhaps a bit hapless, and your flaws generally come off as charming, at least at first glance. People tend to underestimate you, and you can use this to your advantage.</li>
-            <li>When performing a check that benefits from your harmless appearance (such as cozying up to a stranger or hiding your true intentions), you can reroll up to two dice.</li>
-        </ul>
-    """
-  },
-  "Ally [Name]": {
+    "Harmless Appearance": {
+        "type": [
+            "Interpersonal", "Social"
+        ],
+        "flavor": """
+            <p><em>The checkpoint guard leaned out of his booth, hand already moving toward his radio.</em></p>
+            <p><em>Harpsy smiled at him. It came out wrong, too wide, a little desperate, the smile of someone who had just realized they'd used the wrong door and were hoping nobody noticed. She clutched her clipboard to her chest.</em></p>
+            <p>"Sorry! Sorry, I'm so sorry, I think I took the wrong corridor again, they moved the maintenance access and I just..." She gestured vaguely behind her. Her voice cracked slightly on the last word.</p>
+            <p><em>The guard looked at her. Then at the clipboard. Then at the very specific expression of a person who was definitely not a threat and possibly a little lost.</em></p>
+            <p>"Maintenance is back the way you came. Left at the junction."</p>
+        """,
+        "description": """
+            <h3>Effects</h3>
+            <ul>
+                <li>You appear earnest and perhaps a bit hapless, and your flaws generally come off as charming, at least at first glance. People tend to underestimate you, and you can use this to your advantage.</li>
+                <li>When performing a check that benefits from your harmless appearance (such as cozying up to a stranger or hiding your true intentions), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    "Ally [Name]": {
     "type": [
         "Interpersonal", "Social"
     ],
@@ -35,41 +35,41 @@
             <li>When performing a check that benefits from your close relationship with the character (such as requisitioning an item through them or trying to convince a mutual friend), you can reroll up to two dice.</li>
         </ul>
     """
-  },
-  Ambidexterity: {
-    "type": [
-        "Physical"
-    ],
-    "flavor": """
-        <p>"I bet you can't do that with your left hand."</p>
-        <p>"How much do you want to bet?"</p>
-        <p><em>With a proud expression, Sgt. Mason switched the handgun to his left, and drilled three shots into the target with his off hand.</em></p>
-        <p>"Ambidexterity, sir, I can do it with either hand."</p>
-    """,
-    "description": """
-        <h3>Effects</h3>
-        <ul>
-            <li>You are equally adept at using both hands, and can easily compensate if either hand is injured or occupied.</li>
-            <li>When performing a check that benefits from your ambidexterity (such as wielding two weapons or using both hands to misdirect an opponent), you can reroll up to two dice.</li>
-        </ul>
-    """
-  },
-  "Animal Trainer": {
-    "type": [
-        "Interpersonal"
-    ],
-    "flavor": """
-        <p><em>When the dog started barking, Krolik remembered the bunny she had been training for the past few months.</em></p>
-        <p><em>Surprising everyone, she knelt down and pet the dog, who immediately stopped barking and wagged its tail. Krolik smiled and stood up, meeting everyone's stares.</em></p>
-        <p>"What?"</p>
-    """,
-    "description": """
-        <h3>Effects</h3>
-        <ul>
-            <li>You are well versed in animal behaviors and effective techniques for training animals. You also know the telltale signs of hostility in both wild and domesticated animals.</li>
-            <li>When performing a check that benefits from your animal training skills (such as calming a wild animal or teaching a pet a new trick), you can reroll up to two dice.</li>
-        </ul>
-    """
+    },
+    Ambidexterity: {
+        "type": [
+            "Physical"
+        ],
+        "flavor": """
+            <p>"I bet you can't do that with your left hand."</p>
+            <p>"How much do you want to bet?"</p>
+            <p><em>With a proud expression, Sgt. Mason switched the handgun to his left, and drilled three shots into the target with his off hand.</em></p>
+            <p>"Ambidexterity, sir, I can do it with either hand."</p>
+        """,
+        "description": """
+            <h3>Effects</h3>
+            <ul>
+                <li>You are equally adept at using both hands, and can easily compensate if either hand is injured or occupied.</li>
+                <li>When performing a check that benefits from your ambidexterity (such as wielding two weapons or using both hands to misdirect an opponent), you can reroll up to two dice.</li>
+            </ul>
+        """
+    },
+    "Animal Trainer": {
+        "type": [
+            "Interpersonal"
+        ],
+        "flavor": """
+            <p><em>When the dog started barking, Krolik remembered the bunny she had been training for the past few months.</em></p>
+            <p><em>Surprising everyone, she knelt down and pet the dog, who immediately stopped barking and wagged its tail. Krolik smiled and stood up, meeting everyone's stares.</em></p>
+            <p>"What?"</p>
+        """,
+        "description": """
+            <h3>Effects</h3>
+            <ul>
+                <li>You are well versed in animal behaviors and effective techniques for training animals. You also know the telltale signs of hostility in both wild and domesticated animals.</li>
+                <li>When performing a check that benefits from your animal training skills (such as calming a wild animal or teaching a pet a new trick), you can reroll up to two dice.</li>
+            </ul>
+        """
     },
     "Commanding Presence": {
         "type": [
@@ -558,7 +558,7 @@
         type: ["Mental"],
         flavor: """
             <p><em>The interrogator had switched tactics three times. Threats, bargains, isolation. Now he was trying sympathy, speaking softly about how much easier things would be if she just cooperated.</em></p>
-            <p><em>AK-Alfa sat with her hands folded, expression flat, and said nothing. She had said nothing for six hours.</em></p>
+            <p><em>Alva sat with her hands folded, expression flat, and said nothing. She had said nothing for six hours.</em></p>
             <p>"You realize we can keep you here indefinitely."</p>
             <p><em>She looked at him the way someone looks at weather. Present, unavoidable, irrelevant.</em></p>
             <p>"Your colleagues have been more forthcoming."</p>

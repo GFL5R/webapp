@@ -1171,5 +1171,50 @@
                 <li>The first time this anxiety applies in a scene, you gain 1 fortune point.</li>
             </ul>
         """
-    }
+    },
+    Tsundere: {
+        type: ["Interpersonal", "Social"],
+        flavor: """
+            <p><em>Cheeta found her workspace completely reorganized. Tools sorted by size, spare parts labeled, the coffee mug she'd been using as a pencil holder emptied, cleaned, and returned with the pencils sharpened. She looked at Makiatto, who was reading a manual at the next bench over and very deliberately not making eye contact.</em></p>
+            <p>"Did you clean my desk?"</p>
+            <p>"Your desk was a hazard. I couldn't find the soldering iron last week because it was buried under your garbage."</p>
+            <p>"You don't use my soldering iron."</p>
+            <p>"I might need to. And I shouldn't have to excavate for it."</p>
+            <p>"You sharpened my pencils."</p>
+            <p><em>A very long pause.</em></p>
+            <p>"Dull pencils are inefficient."</p>
+        """,
+        description: """
+            <h3>Effects</h3>
+            <ul>
+                <li>You care deeply about the people close to you, but something in you refuses to let that show. Every kind gesture needs a practical justification. Every compliment comes wrapped in a complaint. You will stay up all night fixing someone's gear and then tell them it was because their sloppy maintenance was keeping you awake.</li>
+                <li>You gain 3 strife whenever you are caught being genuinely kind, whenever someone sincerely thanks you and expects you to accept it, or whenever you are forced to express affection without a plausible excuse.</li>
+                <li>The first time this anxiety applies in a scene, you gain 1 fortune point.</li>
+            </ul>
+        """
+    },
+    Yandere: {
+        type: ["Interpersonal"],
+        flavor: """
+            <p><em>The new liaison officer arrived at 0800. By 0803, she'd introduced herself to the Commander, shaken hands, and made a comment about the office being cozier than expected. By 0804, the doll in the adjacent room had memorized her name, rank, previous postings, and the exact duration of the handshake.</em></p>
+            <p>"Basti, the Commander needs the patrol logs from last week."</p>
+            <p>"Already on the desk. Who's the new one?"</p>
+            <p>"Liaison from regional command. Temporary posting."</p>
+            <p>"How temporary?"</p>
+            <p><em>She brought coffee to the Commander's office at 0830, same as every morning. The liaison was still there. Basti set the mug down, positioning it exactly where it always went, and smiled.</em></p>
+            <p>"I only brought one. I didn't know we had company."</p>
+            <p><em>The liaison left at 0900. Basti stayed. She always stayed.</em></p>
+            <p><em>That evening, the squad's intel analyst found a complete dossier on the liaison officer in the shared drive. Service history, known associates, communication patterns. Thorough, professional, and completely unsolicited.</em></p>
+            <p>"This is a background check on a friendly liaison."</p>
+            <p>"Every liaison is friendly until they aren't."</p>
+        """,
+        description: """
+            <h3>Effects</h3>
+            <ul>
+                <li>Your attachment to one specific person is total, consuming, and impossible to moderate. You organize your life around their proximity, their safety, their attention. When someone else occupies space in their world that you consider yours, the reaction is immediate and visceral. You know this is too much. Knowing doesn't help.</li>
+                <li>You gain 3 strife whenever someone else commands significant attention or affection from the person you're devoted to, whenever you are separated from them against your will, or whenever your devotion is called out as excessive or inappropriate.</li>
+                <li>The first time this anxiety applies in a scene, you gain 1 fortune point.</li>
+            </ul>
+        """
+    },
 }

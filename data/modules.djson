@@ -569,5 +569,20 @@
         <li>Allows you to use <a href="#techniques-remolding">Remolding techniques</a>.</li>
       </ul>
     """
+  },
+  "Overclocking Unit": {
+    type: "Frame Augmentation",
+    cost: 9000,
+    skill: null,
+    approach: null,
+    flavor: """
+      <p>Core systems are overclocked, pushing the frame beyond its original limits, but also increasing the risk of critical failure.</p>
+    """,
+    description: """
+      <h3>Effects</h3>
+      <ul>
+        <li>You may take one additional advantage from the list of advantages at the cost of one additional disadvantage.</li>
+      </ul>
+    """
   }
 }

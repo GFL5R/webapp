@@ -584,5 +584,20 @@
         <li>You may take one additional advantage from the list of advantages at the cost of one additional disadvantage.</li>
       </ul>
     """
+  },
+  "Trauma Buffer": {
+    type: "Frame Augmentation",
+    cost: 18000,
+    skill: null,
+    approach: null,
+    flavor: """
+      <p>Dense composite layers and reactive hydraulic dampeners are fitted across the frame's most vulnerable structural junctions. The result is a chassis that absorbs the worst of any impact before it reaches the systems underneath.</p>
+    """,
+    description: """
+      <h3>Effects</h3>
+      <ul>
+        <li>Whenever you suffer a critical strike, reduce its severity by 2 before applying any other reductions.</li>
+      </ul>
+    """
   }
 }

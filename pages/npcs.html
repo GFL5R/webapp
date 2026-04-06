@@ -1,0 +1,95 @@
+<h1 id="npcs">NPCs</h1>
+
+<p>NPCs in GFL5R use a simplified stat block compared to player characters. Where a T-Doll or Commander has a full list of individual skills, NPCs operate with broad <strong>Skill Groups</strong> that cover entire categories of action. This keeps NPC sheets compact while still providing GMs with enough mechanical detail to run varied encounters, whether that encounter is a firefight with ELIDs or a tense negotiation with a NOMFA operative.</p>
+
+<hr>
+
+<h2 id="npc-stat-blocks">NPC Stat Blocks</h2>
+
+<p>Every NPC has the following components:</p>
+
+<table>
+  <thead>
+    <tr><th>Component</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Type</strong></td><td>The broad category of the NPC: ELID, Human, T-Doll, Mech, etc.</td></tr>
+    <tr><td><strong>Approaches</strong></td><td>All five Approaches (Power, Precision, Swiftness, Resilience, Fortune), rated 1–6, same as player characters.</td></tr>
+    <tr><td><strong>Skill Groups</strong></td><td>Four broad skill values: Combat, Fieldcraft, Technical, and Social. Each replaces the individual skills within that category.</td></tr>
+    <tr><td><strong>Derived Attributes</strong></td><td>Endurance, Composure, Vigilance, and Focus, calculated using the same formulas as player characters.</td></tr>
+    <tr><td><strong>Armor</strong></td><td>Flat damage reduction applied to incoming physical attacks.</td></tr>
+    <tr><td><strong>Behaviors</strong></td><td>A written guide for how the NPC approaches combat and social situations. This is the GM's primary tool for running the NPC.</td></tr>
+    <tr><td><strong>Techniques</strong></td><td>Any techniques the NPC can use. NPCs are not bound by discipline restrictions.</td></tr>
+    <tr><td><strong>Perk</strong></td><td>Some NPCs have a perk from the standard perk list. Non-sentient creatures (such as ELIDs) typically do not.</td></tr>
+  </tbody>
+</table>
+
+<h3 id="skill-groups">Skill Groups</h3>
+
+<p>Instead of tracking 24 individual skills, NPCs have four <strong>Skill Groups</strong>. Whenever an NPC makes a check that would use a specific skill, they use the value of the Skill Group that contains it.</p>
+
+<table>
+  <thead>
+    <tr><th>Skill Group</th><th>Covers</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Combat</strong></td><td>Blades, Exotic Weapons, Explosives, Firearms, Hand-To-Hand, Tactics</td></tr>
+    <tr><td><strong>Fieldcraft</strong></td><td>Conditioning, Resolve, Crafting, Insight, Stealth, Survival</td></tr>
+    <tr><td><strong>Technical</strong></td><td>Computers, Mechanics, Medicine, Piloting, Science, Subterfuge</td></tr>
+    <tr><td><strong>Social</strong></td><td>Arts, Command, Culture, Deception, Negotiation, Performance</td></tr>
+  </tbody>
+</table>
+
+<div class="example-box labeled">
+  <span class="example-label">◇ EXAMPLE: SKILL GROUPS IN PLAY</span>
+  <p>A Crocodeer attacks a character with its bite. Normally a melee attack would use a skill like Hand-To-Hand, but since the Crocodeer is an NPC, it uses its Combat skill group value instead. Its dice pool is Power (4) + Combat (3) = 7 dice.</p>
+  <p>Later, the same Crocodeer tries to track a fleeing target through rubble. That would normally require Survival, which falls under Fieldcraft. The check becomes Precision (1) + Fieldcraft (2) = 3 dice.</p>
+</div>
+
+<h3 id="peculiarities">Peculiarities</h3>
+
+<p>Sentient NPCs (humans, T-Dolls, rogue AIs) have the full set of four peculiarities: an Advantage, a Disadvantage, a Passion, and an Anxiety. These function identically to how they work for player characters.</p>
+
+<p>Non-sentient creatures (ELIDs, automated drones, wildlife) carry only an Advantage and a Disadvantage. They do not experience Strife in a meaningful way, so Passions and Anxieties are omitted from their stat blocks.</p>
+
+<h2 id="threat-ratings">Threat Ratings</h2>
+
+<p>Each NPC has two <strong>Threat Ratings</strong> that give GMs a quick estimate of how significant the NPC is in a given context.</p>
+
+<table>
+  <thead>
+    <tr><th>Rating</th><th>Calculation</th><th>Use</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Combat Threat</strong></td><td>Highest Approach + Combat Skill Group</td><td>How dangerous this NPC is in a firefight or melee.</td></tr>
+    <tr><td><strong>Social Threat</strong></td><td>Highest Approach + Social Skill Group</td><td>How effective this NPC is in negotiation, deception, or persuasion.</td></tr>
+  </tbody>
+</table>
+
+<p>A Combat Threat of 5 or below represents a minor combatant, easily handled by a single character. A rating of 6–8 is a serious opponent that demands coordinated teamwork. Anything above 8 is a significant threat that should give an entire squad pause.</p>
+
+<div class="rules-callout">
+  <h4>Threat Ratings Are Guidelines</h4>
+  <p>Threat Ratings are a rough planning tool, not a precise balance metric. A pack of low-threat Obshares can overwhelm a squad through numbers and coordination, while a single high-threat Crocodeer might be manageable if the squad has range advantage. Terrain, positioning, and preparation matter as much as the numbers on the stat block. Social Threat works the same way: a seemingly low-threat contact might hold critical leverage that stats alone do not reflect.</p>
+</div>
+
+<h2 id="behaviors">Behaviors</h2>
+
+<p>The Behaviors field is the most important part of an NPC stat block. Raw stats tell you what an NPC <em>can</em> do; Behaviors tell you what they <em>will</em> do.</p>
+
+<p>Each Behavior entry describes the NPC's preferred tactics, what triggers aggression or retreat, and how they react to common situations. For hostile NPCs, a GM should read the Behaviors entry before the fight starts. For friendly or neutral NPCs, Behaviors describe their social tendencies, how they respond to requests, and what lines they will not cross.</p>
+
+<p>Behaviors are written as descriptions, not prescriptions. They tell you how the NPC tends to act, not how they must act. A GM is always free to deviate from the listed behavior when the situation calls for it.</p>
+
+<hr>
+
+<h2 id="elids">ELIDs</h2>
+
+<p>Eurosky Low-Emission Infectious Disease transforms living organisms into something between mineral and animal. Silicified tissue, crystalline growths, and bodies warped beyond recognition. The creatures listed here are the ones field teams encounter most frequently in Yellow and Red Zone operations.</p>
+
+<p>ELIDs are non-sentient. They have no Social skill group, carry no Passions or Anxieties, and cannot be reasoned with. Their behavior is driven by hunger, territory, and instinct. They are immune to Strife, social techniques, and any effect that requires the target to understand language.</p>
+
+<div class="rules-callout">
+  <h4>Collapse Contamination</h4>
+  <p>All ELIDs are saturated with Collapse radiation. Close combat with ELIDs exposes characters to contamination. At the GM's discretion, melee engagements with ELIDs may add Collapse to a character's Collapse Track, particularly if the ELID is damaged and leaking irradiated fluid. See <a href="#Collapse Radiation::the-collapse-track">The Collapse Track</a> for details.</p>
+</div>

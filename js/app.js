@@ -58,6 +58,7 @@
     'Collapse Radiation',
     'Poisons & Drugs',
     'Crime',
+    'NPCs',
   ];
 
   // Maps each page to its sidebar section for breadcrumbs
@@ -84,6 +85,7 @@
     'Collapse Radiation':               'Subsystems',
     'Poisons & Drugs':                  'Subsystems',
     'Crime':                            'Subsystems',
+    'NPCs':                             'GM Tools',
   };
 
   // JSON data files (built from djson by build.py)
@@ -102,6 +104,7 @@
     disciplines:         'data/disciplines.json',
     perks:               'data/perks.json',
     capstones:           'data/capstones.json',
+    npcs:                'data/npcs.json',
   };
 
   // Section display names for breadcrumbs (used by data pages)
@@ -125,6 +128,7 @@
   let disciplines = {};
   let perks = {};
   let capstones = {};
+  let npcs = {};
   let currentPage = 'home';
   let allSearchableContent = [];
   let techniqueFilters = {
@@ -408,6 +412,8 @@
     } else if (page.startsWith('items-')) {
       itemFilters = { minRarity: null, maxRarity: null, sortBy: 'name' };
       renderItemsPage(page);
+    } else if (page.startsWith('npcs-')) {
+      renderNPCsPage(page);
     } else if (page === 'Disciplines') {
       await renderDisciplinesPage();
     } else if (HTML_PAGES[page]) {
@@ -440,7 +446,7 @@
   // ── Load All JSON Data ──────────────────────────────────────────
   async function loadAllData() {
     try {
-      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData, itemsData, disciplinesData, perksData, capstonesData] = await Promise.all([
+      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData, itemsData, disciplinesData, perksData, capstonesData, npcsData] = await Promise.all([
         fetch(DATA_FILES.techniqueTypes).then(r => r.json()),
         fetch(DATA_FILES.techniques).then(r => r.json()),
         fetch(DATA_FILES.advantages).then(r => r.json()),
@@ -455,6 +461,7 @@
         fetch(DATA_FILES.disciplines).then(r => r.json()),
         fetch(DATA_FILES.perks).then(r => r.json()),
         fetch(DATA_FILES.capstones).then(r => r.json()),
+        fetch(DATA_FILES.npcs).then(r => r.json()),
       ]);
       techniqueTypes = typesData || {};
       techniques = techData || {};
@@ -470,6 +477,7 @@
       disciplines = disciplinesData || {};
       perks = perksData || {};
       capstones = capstonesData || {};
+      npcs = npcsData || {};
     } catch (e) {
       console.error('Failed to load data:', e);
     }
@@ -593,6 +601,17 @@
         page: `items-all`,
         type: 'item',
         data: item,
+      });
+    });
+
+    // Add NPCs
+    Object.entries(npcs).forEach(([name, npc]) => {
+      allSearchableContent.push({
+        title: name,
+        section: `NPC: ${npc.type || 'General'}`,
+        page: `npcs-${(npc.type || 'all').toLowerCase().replace(/\s+/g, '')}`,
+        type: 'npc',
+        data: npc,
       });
     });
   }
@@ -2067,6 +2086,146 @@
         openDisciplineModal(key);
       });
     });
+  }
+
+  // ── NPCs Page ─────────────────────────────────────────────────
+  function renderNPCsPage(page) {
+    const filterSlug = page.replace('npcs-', '');
+
+    // Build unique types from data
+    const allTypes = [...new Set(
+      Object.values(npcs).map(e => e.type).filter(Boolean)
+    )].sort();
+
+    // Resolve active type from slug
+    const activeType = allTypes.find(
+      t => t.toLowerCase().replace(/\s+/g, '') === filterSlug
+    ) || null;
+
+    // Filter
+    const filtered = Object.entries(npcs).filter(([name, npc]) => {
+      if (!activeType) return true;
+      return npc.type === activeType;
+    });
+
+    // Sort alphabetically
+    filtered.sort((a, b) => a[0].localeCompare(b[0]));
+
+    const title = activeType ? `${activeType} NPCs` : 'All NPCs';
+
+    const typeDescs = {
+      'ELID': 'Organisms transformed by Collapse radiation. Non-sentient, driven by hunger and instinct. Immune to social techniques and Strife.',
+      'T-Doll': 'Autonomous combat androids. Sentient, with full peculiarities and social capabilities.',
+    };
+    const typeDesc = activeType
+      ? (typeDescs[activeType] || '')
+      : 'All catalogued NPCs. Select a type to filter by category.';
+
+    const typeIcons = { 'ELID': '\u2623', 'Human': '\u2b21', 'T-Doll': '\u25ce', 'Mech': '\u2b22' };
+    const icon = typeIcons[activeType] || '\u25c6';
+
+    let html = `
+      <div class="breadcrumb">
+        <a href="#home">HOME</a>
+        <span class="sep">\u203a</span>
+        <a href="#npcs-all">NPCS</a>
+        ${activeType ? `<span class="sep">\u203a</span>${activeType.toUpperCase()}` : ''}
+      </div>
+
+      <div class="type-header">
+        <div class="type-header__icon">${icon}</div>
+        <div class="type-header__info">
+          <h1>${title.toUpperCase()}</h1>
+          <div class="type-header__desc">${typeDesc}</div>
+        </div>
+      </div>
+
+      <div class="technique-filters">
+        ${filterBtn('ALL', 'npcs-all', !activeType)}
+        ${allTypes.map(t => filterBtn(t.toUpperCase(), `npcs-${t.toLowerCase().replace(/\s+/g, '')}`, activeType === t)).join('')}
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--white-dimmer); letter-spacing: 1px; margin-bottom: 20px;">
+        ${filtered.length} NPC${filtered.length !== 1 ? 'S' : ''} FOUND
+      </div>
+
+      <div class="technique-grid">
+    `;
+
+    filtered.forEach(([name, npc]) => {
+      html += renderNPCCard(name, npc);
+    });
+
+    html += '</div>';
+
+    contentInner.innerHTML = html;
+    attachFilterHandlers();
+    attachCardToggleHandlers();
+  }
+
+  function renderNPCCard(name, npc) {
+    const approaches = npc.approaches || {};
+    const skills = npc.skills || {};
+    const highestApproach = Math.max(...Object.values(approaches));
+    const combatThreat = highestApproach + (skills.combat || 0);
+    const socialThreat = highestApproach + (skills.social || 0);
+
+    const approachList = ['power', 'precision', 'swiftness', 'resilience', 'fortune']
+      .map(a => `<span class="npc-approach">${a.charAt(0).toUpperCase() + a.slice(1)} ${approaches[a] || 0}</span>`)
+      .join(' ');
+
+    const skillList = ['combat', 'fieldcraft', 'technical', 'social']
+      .filter(s => (skills[s] || 0) > 0)
+      .map(s => `<span class="npc-skill">${s.charAt(0).toUpperCase() + s.slice(1)} ${skills[s]}</span>`)
+      .join(' ');
+
+    const advList = (npc.advantages || []).map(a => escapeHtml(a)).join(', ');
+    const disadvList = (npc.disadvantages || []).map(d => escapeHtml(d)).join(', ');
+    const passion = npc.passion ? escapeHtml(npc.passion) : '';
+    const anxiety = npc.anxiety ? escapeHtml(npc.anxiety) : '';
+
+    return `
+      <div class="technique-card">
+        <div class="technique-card__corner technique-card__corner--tl"></div>
+        <div class="technique-card__corner technique-card__corner--tr"></div>
+        <div class="technique-card__corner technique-card__corner--bl"></div>
+        <div class="technique-card__corner technique-card__corner--br"></div>
+
+        <div class="technique-card__header">
+          <div class="technique-card__name">${escapeHtml(name)}</div>
+          <div class="technique-card__meta">
+            <span class="technique-card__tag tag-type">${escapeHtml(npc.type || 'UNKNOWN')}</span>
+            <span class="technique-card__tag tag-rank">CT ${combatThreat}</span>
+            ${socialThreat > 0 ? `<span class="technique-card__tag tag-approach">ST ${socialThreat}</span>` : ''}
+            ${npc.armor ? `<span class="technique-card__tag tag-skill">ARM ${npc.armor}</span>` : ''}
+          </div>
+        </div>
+
+        <div class="technique-card__toggle"></div>
+
+        <div class="technique-card__body">
+          ${npc.flavor ? `<div class="technique-card__flavor">${npc.flavor}</div>` : ''}
+
+          <div class="npc-stats">
+            <div class="npc-stats__row">
+              <span class="npc-stats__label">APPROACHES</span>
+              <span class="npc-stats__values">${approachList}</span>
+            </div>
+            <div class="npc-stats__row">
+              <span class="npc-stats__label">SKILLS</span>
+              <span class="npc-stats__values">${skillList || '<em>None</em>'}</span>
+            </div>
+            ${advList ? `<div class="npc-stats__row"><span class="npc-stats__label">ADV</span><span class="npc-stats__values">${advList}</span></div>` : ''}
+            ${disadvList ? `<div class="npc-stats__row"><span class="npc-stats__label">DIS</span><span class="npc-stats__values">${disadvList}</span></div>` : ''}
+            ${passion ? `<div class="npc-stats__row"><span class="npc-stats__label">PASSION</span><span class="npc-stats__values">${passion}</span></div>` : ''}
+            ${anxiety ? `<div class="npc-stats__row"><span class="npc-stats__label">ANXIETY</span><span class="npc-stats__values">${anxiety}</span></div>` : ''}
+          </div>
+
+          ${npc.behaviors ? `<div class="npc-behaviors"><h3>Behaviors</h3>${npc.behaviors}</div>` : ''}
+          ${npc.description || '<p>No description available.</p>'}
+        </div>
+      </div>
+    `;
   }
 
   // ── Shared UI Handlers ────────────────────────────────────────

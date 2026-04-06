@@ -432,6 +432,42 @@
       <p>The iconic Israeli open-bolt submachine gun. Its telescoping bolt design allows for a compact weapon with a full-length barrel. Simple, reliable, and devastating in close quarters.</p>
     """
   },
+  "HK UMP9": {
+    category: "SMG",
+    skill: "Firearms",
+    range: 1,
+    damage: 6,
+    deadliness: 3,
+    grip: "2-Handed",
+    threat: 3,
+    signature: 2,
+    price: 1800,
+    qualities: [
+      "Durable",
+      "Mobile"
+    ],
+    flavor: """
+      <p>The 9×19mm variant of the Heckler & Koch Universal Machine Pistol. Its simple blowback operation and polymer construction make it lighter, tougher, and cheaper to produce than the roller-delayed MP5. Accepts standard UMP accessories and suppressor attachments.</p>
+    """
+  },
+  "HK UMP45": {
+    category: "SMG",
+    skill: "Firearms",
+    range: 1,
+    damage: 5,
+    deadliness: 4,
+    grip: "2-Handed",
+    threat: 3,
+    signature: 2,
+    price: 1800,
+    qualities: [
+      "Durable",
+      "Mobile"
+    ],
+    flavor: """
+      <p>The original .45 ACP variant of the Heckler & Koch Universal Machine Pistol. Its heavier cartridge trades rate of fire for stopping power, delivering greater per-round impact than its 9mm sibling. The polymer lower receiver and folding stock keep the weight manageable despite the larger caliber.</p>
+    """
+  },
   /* ============================================
      SHOTGUNS (SG) - Close-quarters spread weapons
      High damage, AOE, short range

@@ -165,7 +165,7 @@
     await loadAllData();
 
     // Build search index
-    buildSearchIndex();
+    await buildSearchIndex();
 
     // Route from hash or show home
     handleRoute();
@@ -476,18 +476,35 @@
   }
 
   // ── Search ─────────────────────────────────────────────────────
-  function buildSearchIndex() {
+  async function buildSearchIndex() {
     allSearchableContent = [];
 
-    // Add HTML pages
-    Object.keys(HTML_PAGES).forEach(page => {
+    // Add HTML pages and their headings
+    await Promise.all(Object.keys(HTML_PAGES).map(async page => {
       allSearchableContent.push({
         title: page,
         section: PAGE_SECTIONS[page] || 'Rules',
         page: page,
         type: 'page',
       });
-    });
+
+      try {
+        const response = await fetch(HTML_PAGES[page]);
+        if (!response.ok) return;
+        const html = await response.text();
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        doc.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach(heading => {
+          allSearchableContent.push({
+            title: heading.textContent.trim(),
+            section: page,
+            page: `${page}::${heading.id}`,
+            type: 'heading',
+          });
+        });
+      } catch (e) {
+        // silently skip pages that fail to load
+      }
+    }));
 
     // Add techniques
     Object.entries(techniques).forEach(([name, tech]) => {

@@ -6,7 +6,40 @@
     "description": """
       <h3>Effects</h3>
       <ul>
-        <li>Applies the <strong>Suppressed</strong> quality to the weapon.</li>
+        <li>Applies the <a href="#Weapons & Armor::weapon-qualities">Suppressed</a> quality to the weapon.</li>
+      </ul>
+    """
+  },
+  "Scope": {
+    "cost": 500,
+    "rarity": 2,
+    "flavor": "A scope is an optical device that provides magnification and improved aiming capabilities for firearms.",
+    "description": """
+      <h3>Effects</h3>
+      <ul>
+        <li>Applies the <a href="#Weapons & Armor::weapon-qualities">Scoped</a> quality to the weapon.</li>
+      </ul>
+    """
+  },
+  "Heavy Barrel": {
+    "cost": 500,
+    "rarity": 3,
+    "flavor": "A heavy barrel is a reinforced barrel that can withstand higher pressures, but the weight reduces the user's ability to sustain fire.",
+    "description": """
+      <h3>Effects</h3>
+      <ul>
+        <li>Applies the <a href="#Weapons & Armor::weapon-qualities">Heavy Barrel</a> quality to the weapon.</li>
+      </ul>
+    """
+  },
+  "Compensator": {
+    "cost": 500,
+    "rarity": 3,
+    "flavor": "A compensator is a device attached to the muzzle of a firearm that redirects propellant gases to counter recoil and unwanted rising of the barrel during rapid fire.",
+    "description": """
+      <h3>Effects</h3>
+      <ul>
+        <li>Applies the <a href="#Weapons & Armor::weapon-qualities">Compensated</a> quality to the weapon.</li>
       </ul>
     """
   },

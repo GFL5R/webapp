@@ -32,6 +32,7 @@
     'Collapse Radiation':               'pages/collapse-radiation.html',
     'Poisons & Drugs':                  'pages/poisons-and-drugs.html',
     'Crime':                            'pages/crime.html',
+    'NPCs':                             'pages/npcs.html',
   };
 
   // Defines the reading order for rulebook-style navigation
@@ -384,27 +385,19 @@
         sortBy: 'rank'
       };
       renderTechniquesPage(page);
-      if (anchor) {
-        setTimeout(() => {
-          const cards = contentInner.querySelectorAll('.technique-card__name');
-          for (const card of cards) {
-            if (card.textContent === anchor) {
-              card.closest('.technique-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
-              card.closest('.technique-card').classList.add('highlight');
-              setTimeout(() => card.closest('.technique-card').classList.remove('highlight'), 2000);
-              break;
-            }
-          }
-        }, 300);
-      }
+      if (anchor) scrollToCard(anchor);
     } else if (page.startsWith('advantages-')) {
       renderAdvantagesPage(page);
+      if (anchor) scrollToCard(anchor);
     } else if (page.startsWith('disadvantages-')) {
       renderDisadvantagesPage(page);
+      if (anchor) scrollToCard(anchor);
     } else if (page.startsWith('passions-')) {
       renderPassionsPage(page);
+      if (anchor) scrollToCard(anchor);
     } else if (page.startsWith('anxieties-')) {
       renderAnxietiesPage(page);
+      if (anchor) scrollToCard(anchor);
     } else if (page.startsWith('modules-')) {
       renderModulesPage(page);
     } else if (page.startsWith('weapons-')) {
@@ -2179,10 +2172,10 @@
       .map(s => `<span class="npc-skill">${s.charAt(0).toUpperCase() + s.slice(1)} ${skills[s]}</span>`)
       .join(' ');
 
-    const advList = (npc.advantages || []).map(a => escapeHtml(a)).join(', ');
-    const disadvList = (npc.disadvantages || []).map(d => escapeHtml(d)).join(', ');
-    const passion = npc.passion ? escapeHtml(npc.passion) : '';
-    const anxiety = npc.anxiety ? escapeHtml(npc.anxiety) : '';
+    const advList = (npc.advantages || []).map(a => `<a href="#advantages-all::${encodeURIComponent(a)}">${escapeHtml(a)}</a>`).join(', ');
+    const disadvList = (npc.disadvantages || []).map(d => `<a href="#disadvantages-all::${encodeURIComponent(d)}">${escapeHtml(d)}</a>`).join(', ');
+    const passion = npc.passion ? `<a href="#passions-all::${encodeURIComponent(npc.passion)}">${escapeHtml(npc.passion)}</a>` : '';
+    const anxiety = npc.anxiety ? `<a href="#anxieties-all::${encodeURIComponent(npc.anxiety)}">${escapeHtml(npc.anxiety)}</a>` : '';
 
     return `
       <div class="technique-card">
@@ -2229,6 +2222,20 @@
   }
 
   // ── Shared UI Handlers ────────────────────────────────────────
+  function scrollToCard(name) {
+    setTimeout(() => {
+      const cards = contentInner.querySelectorAll('.technique-card__name');
+      for (const card of cards) {
+        if (card.textContent === name) {
+          card.closest('.technique-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.closest('.technique-card').classList.add('highlight');
+          setTimeout(() => card.closest('.technique-card').classList.remove('highlight'), 2000);
+          break;
+        }
+      }
+    }, 300);
+  }
+
   function filterBtn(label, page, active) {
     return `<button class="filter-btn ${active ? 'active' : ''}" data-page="${page}">${label}</button>`;
   }

@@ -90,7 +90,7 @@
       <p>On a success, you determine whether the subject is infected and, if so, the current stage of <a href="#Conditions::elid">ELID</a> progression (Early, Middle, or Late).</p>
     """
   },
-  "Stop the Bleeding" : {
+  "Stop the Bleeding": {
     "rank": 1,
     "type": "Science",
     "approach": "Swiftness",
@@ -125,7 +125,7 @@
       </ul>
     """
   },
-  "Stabilize the Dying" : {
+  "Stabilize the Dying": {
     "rank": 2,
     "type": "Science",
     "approach": "Resilience",
@@ -174,9 +174,8 @@
       <p>On a success, you create the desired chemical substance. The GM determines the specific properties and potential uses of the substance based on your description and the context of its creation.</p>
     """
   },
-
   // ── Medic Techniques ─────────────────────────────────────────
-    "Combat Stimulant": {
+  "Combat Stimulant": {
     "rank": 1,
     "type": "Science",
     "approach": "Power",
@@ -196,7 +195,6 @@
       </ul>
     """
   },
-
   "Pain Management": {
     "rank": 1,
     "type": "Science",
@@ -216,7 +214,6 @@
       </ul>
     """
   },
-  
   "Emergency Aid": {
     "rank": 1,
     "type": "Science",
@@ -237,7 +234,6 @@
       </ul>
     """
   },
-
   "Field Dressing": {
     "rank": 1,
     "type": "Science",
@@ -257,7 +253,6 @@
       </ul>
     """
   },
-
   "Field Surgery": {
     "rank": 2,
     "type": "Science",
@@ -278,7 +273,6 @@
       </ul>
     """
   },
-
   "Group Treatment": {
     "rank": 1,
     "type": "Science",
@@ -298,7 +292,6 @@
       </ul>
     """
   },
-
   "Resuscitation": {
     "rank": 1,
     "type": "Science",
@@ -319,9 +312,7 @@
       </ul>
     """
   },
-
   // ── Engineer Techniques (T-Doll Repair) ─────────────────────
-
   "Emergency Frame Stabilization": {
     "rank": 1,
     "type": "Science",
@@ -342,7 +333,6 @@
       </ul>
     """
   },
-
   "Grease The Joints": {
     "rank": 1,
     "type": "Science",
@@ -362,7 +352,6 @@
       </ul>
     """
   },
-
   "Reserve Power": {
     "rank": 1,
     "type": "Science",
@@ -383,7 +372,6 @@
       </ul>
     """
   },
-
   "Emergency Repair": {
     "rank": 2,
     "type": "Science",
@@ -404,9 +392,7 @@
       </ul>
     """
   },
-
   // ── Engineer Techniques (Items) ───────────────────────────────
-
   "Device Modification": {
     "rank": 1,
     "type": "Science",
@@ -427,7 +413,6 @@
       </ul>
     """
   },
-
   "Emergency Patch": {
     "rank": 1,
     "type": "Science",
@@ -447,7 +432,6 @@
       </ul>
     """
   },
-
   "Field Repair": {
     "rank": 1,
     "type": "Science",
@@ -467,7 +451,6 @@
       </ul>
     """
   },
-
   "Jury-Rig": {
     "rank": 1,
     "type": "Science",
@@ -487,7 +470,6 @@
       </ul>
     """
   },
-
   "Sensor Array": {
     "rank": 1,
     "type": "Science",
@@ -508,7 +490,6 @@
       </ul>
     """
   },
-
   "Structural Analysis": {
     "rank": 1,
     "type": "Science",

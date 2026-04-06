@@ -301,9 +301,7 @@
       <p>On success, you assume administrative control of the entire network for a number of rounds equal to your bonus successes (minimum 1). While in control, you may issue one command per round to any device on the network as a free action, sentries treat you as an authorized operator and obey your commands, and barriers open or close at your will. At the end of the duration, the network crashes and reboots: all connections are severed, all sentries reboot, and the network goes offline for the remainder of the scene. Your Heat immediately goes to 10 (Burned) when the duration ends, but the crash means there is no network left to trace you on; the physical security response, if any, depends on how fast they can figure out what happened.</p>
     """
   },
-
   // ── Hacker Techniques ────────────────────────────────────────
-
   "Payload Injection": {
     "rank": 2,
     "type": "Electronic Warfare",
@@ -328,7 +326,6 @@
       </ul>
     """
   },
-
   "Privilege Escalation": {
     "rank": 3,
     "type": "Electronic Warfare",
@@ -348,9 +345,7 @@
       </ul>
     """
   },
-
   // ── Spider Techniques ────────────────────────────────────────
-
   "Sweep": {
     "rank": 1,
     "type": "Electronic Warfare",
@@ -371,7 +366,6 @@
       </ul>
     """
   },
-
   "Honeypot": {
     "rank": 1,
     "type": "Electronic Warfare",
@@ -392,7 +386,6 @@
       </ul>
     """
   },
-
   "System Rollback": {
     "rank": 2,
     "type": "Electronic Warfare",
@@ -413,7 +406,6 @@
       </ul>
     """
   },
-
   "Forensics": {
     "rank": 2,
     "type": "Electronic Warfare",
@@ -434,7 +426,6 @@
       </ul>
     """
   },
-
   "Patch": {
     "rank": 1,
     "type": "Electronic Warfare",
@@ -455,7 +446,6 @@
       </ul>
     """
   },
-
   "Quarantine": {
     "rank": 3,
     "type": "Electronic Warfare",

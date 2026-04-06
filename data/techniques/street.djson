@@ -87,7 +87,7 @@
       <p>As an Attack action, you may use one dose of a <a href="#Poisons & Drugs::substances">poison or drug</a> you have on hand and make a <strong>TN 3 Blades (Precision)</strong> check targeting one character at range 0.</p>
       <h3>Effects:</h3>
       <p>If you succeed, the target is affected by the chosen substance and suffers physical damage equal to the weapon's deadliness plus your bonus successes.</p>
-       <h3>New Opportunities:</h3>
+      <h3>New Opportunities:</h3>
       <ul>
         <li><strong>Precision (op):</strong> If you succeed,  the target suffers a critical strike with severity 2 plus 1 per (op) spent this way.</li>
         <li><strong>Precision (op)(op):</strong> If you succeed, the target is unaware of the substance until they suffer the first adverse effect caused by it.</li>
@@ -196,7 +196,6 @@
       </ul>
     """
   },
-
   "Silent Strike": {
     "rank": 2,
     "type": "Street",

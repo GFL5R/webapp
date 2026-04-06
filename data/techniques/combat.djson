@@ -274,7 +274,7 @@
       <p>Once per Scene, as a support action using one readied weapon, you may make a <strong>Tactics (Resilience)</strong> check.</p>
       <h3>Effects:</h3>
       <p>If you succeed, other characters in the scene cannot select your allies as a target if they could select you instead. This effect persists for a number of rounds equal to your Fortification Value (minimum 1).</p>
-       <h3>New Opportunities:</h3>
+      <h3>New Opportunities:</h3>
       <ul>
         <li><strong>Resilience (op)+:</strong> If you succeed, increase the TN of Attack and Scheme actions targeting you by 1 per (op) spent this way.</li>
       </ul>
@@ -309,7 +309,7 @@
       <h3>Activation:</h3>
       <p>When you make an Attack Action using a Bladed weapon, you may spend (op) as follows:</p>
       <ul>
-          <li><strong>(op)+:</strong> Your weapon ignores an amount of your target's armor equal to (op) spent this way.</li>
+        <li><strong>(op)+:</strong> Your weapon ignores an amount of your target's armor equal to (op) spent this way.</li>
       </ul>
     """
   },
@@ -367,7 +367,7 @@
         <li><strong>Swiftness (op)(op):</strong> You may immediately perform a Strike action using the readied weapon.</li>
         <li><strong>Swiftness (op)(op)(op):</strong> If you succeed, choose one of the following item qualities:
         <strong>Cumbersome</strong>, <strong>Razor-Edged</strong>, or <strong>Snaring</strong>. The readied weapon gains that quality for the duration.</li>
-        </ul>
+      </ul>
     """
   },
   "Judo Throw": {
@@ -563,7 +563,7 @@
       <p>As an Attack action, make a <strong>Firearms (Precision)</strong> check targeting one character at a range greater than 3. The TN of the attack is equal to the normal TN of the weapon at that range plus the target's vigilance.</p>
       <h3>Effects:</h3>
       <p>If you succeed, the target suffers damage equal to two times the weapon’s base damage plus your bonus successes.</p>
-       <h3>New Opportunities:</h3>
+      <h3>New Opportunities:</h3>
       <ul>
         <li><strong>Precision (op):</strong>If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon’s deadliness damage plus your bonus successes.</li>
       </ul>
@@ -695,9 +695,7 @@
       </ul>
     """
   },
-
   // ── Frontliner Techniques ─────────────────────────────────────
-
   "Shield Bash": {
     "rank": 1,
     "type": "Combat",
@@ -777,9 +775,7 @@
       </ul>
     """
   },
-
   // ── Engineer Techniques ──────────────────────────────────────
-
   "Breach Charge": {
     "rank": 1,
     "type": "Combat",
@@ -800,7 +796,6 @@
       </ul>
     """
   },
-
   "Improvised Fortification": {
     "rank": 1,
     "type": "Combat",
@@ -821,7 +816,6 @@
       </ul>
     """
   },
-
   "Remote Detonator": {
     "rank": 1,
     "type": "Combat",
@@ -842,7 +836,6 @@
       </ul>
     """
   },
-
   "Trip Wire": {
     "rank": 1,
     "type": "Combat",
@@ -863,9 +856,7 @@
       </ul>
     """
   },
-
   // ── New Techniques ──────────────────────────────────────────────
-
   "Suppressive Fire": {
     "rank": 1,
     "type": "Combat",
@@ -883,7 +874,6 @@
       </ul>
     """
   },
-
   "Hunter's Patience": {
     "rank": 2,
     "type": "Combat",
@@ -901,7 +891,6 @@
       </ul>
     """
   },
-
   "Ricochet": {
     "rank": 1,
     "type": "Combat",
@@ -919,7 +908,6 @@
       </ul>
     """
   },
-
   "Dead Angle": {
     "rank": 2,
     "type": "Combat",
@@ -935,7 +923,6 @@
       <p>If you succeed, the target suffers physical damage equal to your weapon's base damage and strife equal to your bonus successes.</p>
     """
   },
-
   "Evasive Footwork": {
     "rank": 1,
     "type": "Combat",
@@ -951,7 +938,6 @@
       <p>Until the end of your next turn, increase the TN of Attack action checks targeting you by 1. Additionally, after any such check fails, you may move 1 range band in any direction as a free action.</p>
     """
   },
-
   "Dug In": {
     "rank": 2,
     "type": "Combat",
@@ -969,7 +955,6 @@
       </ul>
     """
   },
-
   "Takedown": {
     "rank": 1,
     "type": "Combat",
@@ -989,7 +974,6 @@
       </ul>
     """
   },
-
   "Forced Hand": {
     "rank": 2,
     "type": "Combat",
@@ -1009,7 +993,6 @@
       </ul>
     """
   },
-
   "Weapon Lock": {
     "rank": 1,
     "type": "Combat",
@@ -1028,7 +1011,6 @@
       </ul>
     """
   },
-
   "Glass Case": {
     "rank": 1,
     "type": "Combat",
@@ -1046,7 +1028,6 @@
       </ul>
     """
   },
-
   "AP Round": {
     "rank": 1,
     "type": "Combat",
@@ -1064,7 +1045,6 @@
       </ul>
     """
   },
-
   "Sever the Artery": {
     "rank": 1,
     "type": "Combat",
@@ -1082,7 +1062,6 @@
       </ul>
     """
   },
-
   "Sever the Artery": {
     "rank": 1,
     "type": "Combat",
@@ -1100,7 +1079,6 @@
       </ul>
     """
   },
-
   "Shoot and Scoot": {
     "rank": 1,
     "type": "Combat",

@@ -1,6 +1,7 @@
 {
   "Bellflea": {
     "type": "ELID",
+    "image": "assets/npcs/ELIDs/Bellflea_Type_I_S.png",
     "approaches": {
       "power": 1,
       "precision": 1,
@@ -28,12 +29,6 @@
       <p><em>Formerly a common parasite, now a colossal organism dedicated to hunting, with an impossibly diverse palate. Toxins accumulate in its bloated abdomen, which can burst at any moment after intense exertion or overeating, splashing across the battlefield's horizon.</em></p>
     """,
     "description": """
-      <h3>Threat Profile</h3>
-      <table>
-        <tr><td><strong>Endurance</strong></td><td>4</td></tr>
-        <tr><td><strong>Composure</strong></td><td>8</td></tr>
-        <tr><td><strong>Vigilance</strong></td><td>2</td></tr>
-      </table>
       <h3>Attacks</h3>
       <h4>Rupture (Melee)</h4>
       <p><strong>Swiftness + Combat</strong> at range 0. On a hit, the target suffers Fatigue and Collapse equal to bonus successes. The Bellflea dies immediately after this attack, and the tile it occupied becomes Dangerous terrain.</p>
@@ -47,6 +42,7 @@
   },
   "Crocodeer": {
     "type": "ELID",
+    "image": "assets/npcs/ELIDs/Crocodeer_Type_I_S.png",
     "approaches": {
       "power": 4,
       "precision": 1,
@@ -73,12 +69,6 @@
       <p><em>A menacing creature with a crocodile-like elongated mouth. Compared to other ELIDs whose calls are of a frequency too high to be heard by humans, its call is of a much lower frequency, taking on a unique yet bright timbre. It can even use it as an offensive weapon.</em></p>
     """,
     "description": """
-      <h3>Threat Profile</h3>
-      <table>
-        <tr><td><strong>Endurance</strong></td><td>21</td></tr>
-        <tr><td><strong>Composure</strong></td><td>10</td></tr>
-        <tr><td><strong>Vigilance</strong></td><td>2</td></tr>
-      </table>
       <h3>Attacks</h3>
       <h4>Bite (Melee)</h4>
       <p><strong>Power + Combat</strong> at range 0. Deals 6 Fatigue with Deadliness 4.</p>
@@ -93,6 +83,7 @@
   },
   "Crysmole": {
     "type": "ELID",
+    "image": "assets/npcs/ELIDs/Crysmole_S.png",
     "approaches": {
       "power": 4,
       "precision": 1,
@@ -119,12 +110,6 @@
       <p><em>A blind and unreasonable mole that's been piling on the creatine. It's ill-natured and its gigantic body means it's always hungry.</em></p>
     """,
     "description": """
-      <h3>Threat Profile</h3>
-      <table>
-        <tr><td><strong>Endurance</strong></td><td>24</td></tr>
-        <tr><td><strong>Composure</strong></td><td>10</td></tr>
-        <tr><td><strong>Vigilance</strong></td><td>1</td></tr>
-      </table>
       <h3>Attacks</h3>
       <h4>Slam (Melee)</h4>
       <p><strong>Power + Combat</strong> at range 0. Deals 7 Fatigue with Deadliness 5.</p>
@@ -138,6 +123,7 @@
   },
   "Sneaker Crysmole": {
     "type": "ELID",
+    "image": "assets/npcs/ELIDs/Sneaker_Crysmole_S.png",
     "approaches": {
       "power": 3,
       "precision": 2,
@@ -164,12 +150,6 @@
       <p><em>These Crysmoles have relearned how to dig pits to set traps and have constantly topped the "Most Hated ELID" lists in the Yellow Zones for a while now. It has ruined countless places with its digging, putting the icing on the cake of desolation that is the Yellow Zone.</em></p>
     """,
     "description": """
-      <h3>Threat Profile</h3>
-      <table>
-        <tr><td><strong>Endurance</strong></td><td>18</td></tr>
-        <tr><td><strong>Composure</strong></td><td>10</td></tr>
-        <tr><td><strong>Vigilance</strong></td><td>2</td></tr>
-      </table>
       <h3>Attacks</h3>
       <h4>Eruption Strike (Melee)</h4>
       <p><strong>Power + Combat</strong> at range 0. Deals 5 Fatigue with Deadliness 4. If used from ambush, this attack gains +2 bonus successes.</p>
@@ -183,6 +163,7 @@
   },
   "Obshare": {
     "type": "ELID",
+    "image": "assets/npcs/ELIDs/300px-Obshare_Type_I_S.png",
     "approaches": {
       "power": 2,
       "precision": 3,
@@ -209,12 +190,6 @@
       <p><em>Diminutive rabbits adept in the art of ambush. Scattered shards of obsidian-like Collapse Crystals carpet its body. Do not let their size fool you into underestimating them. A hungry Obshare will tear through anything and everything with their immense teeth.</em></p>
     """,
     "description": """
-      <h3>Threat Profile</h3>
-      <table>
-        <tr><td><strong>Endurance</strong></td><td>6</td></tr>
-        <tr><td><strong>Composure</strong></td><td>10</td></tr>
-        <tr><td><strong>Vigilance</strong></td><td>4</td></tr>
-      </table>
       <h3>Attacks</h3>
       <h4>Crystal Bite (Melee)</h4>
       <p><strong>Swiftness + Combat</strong> at range 0. Deals 3 Fatigue with Deadliness 3. This attack has Armor Piercing: reduce the target's effective armor by 2 when calculating damage.</p>
@@ -228,6 +203,7 @@
   },
   "Rushbat": {
     "type": "ELID",
+    "image": "assets/npcs/ELIDs/Rushbat_Type_I_S.png",
     "approaches": {
       "power": 2,
       "precision": 2,
@@ -254,12 +230,6 @@
       <p><em>The accumulated Collapse Crystals upon its wings have robbed it of the ability to fly, but its powerful limbs allow it to run at great speeds. With a robust echolocation system, it can pursue targets with perfect precision in darkness.</em></p>
     """,
     "description": """
-      <h3>Threat Profile</h3>
-      <table>
-        <tr><td><strong>Endurance</strong></td><td>12</td></tr>
-        <tr><td><strong>Composure</strong></td><td>14</td></tr>
-        <tr><td><strong>Vigilance</strong></td><td>4</td></tr>
-      </table>
       <h3>Attacks</h3>
       <h4>Lunge (Melee)</h4>
       <p><strong>Swiftness + Combat</strong> at range 0. Deals 4 Fatigue with Deadliness 3.</p>
@@ -276,6 +246,7 @@
 
   "Lenna": {
     "type": "T-Doll",
+    "image": "assets/npcs/T-Dolls/1024px-Lenna_Whole.png",
     "approaches": {
       "power": 1,
       "precision": 2,
@@ -309,12 +280,6 @@
       <p><em>"I know." She finally glanced over, grinning. "But you were going to."</em></p>
     """,
     "description": """
-      <h3>Threat Profile</h3>
-      <table>
-        <tr><td><strong>Endurance</strong></td><td>8</td></tr>
-        <tr><td><strong>Composure</strong></td><td>14</td></tr>
-        <tr><td><strong>Vigilance</strong></td><td>3</td></tr>
-      </table>
       <h3>Attacks</h3>
       <h4>HK UMP9 (Ranged)</h4>
       <p><strong>Swiftness + Combat</strong> at range 1. Deals 6 Fatigue with Deadliness 3. Lenna only fights when cornered or when teammates are in immediate danger.</p>
@@ -332,6 +297,7 @@
 
   "Leva": {
     "type": "T-Doll",
+    "image": "assets/npcs/T-Dolls/1024px-Leva_Whole.png",
     "approaches": {
       "power": 1,
       "precision": 4,
@@ -365,12 +331,6 @@
       <p><em>"Now I'm good."</em></p>
     """,
     "description": """
-      <h3>Threat Profile</h3>
-      <table>
-        <tr><td><strong>Endurance</strong></td><td>10</td></tr>
-        <tr><td><strong>Composure</strong></td><td>16</td></tr>
-        <tr><td><strong>Vigilance</strong></td><td>4</td></tr>
-      </table>
       <h3>Attacks</h3>
       <h4>Spike (Electronic Warfare)</h4>
       <p><strong>Precision + Technical</strong> against a target on the same network node. Deals 3 Fatigue directly to a character or sentry operator. This attack does not require line of sight and ignores physical armor.</p>
@@ -386,7 +346,7 @@
       </ul>
       <h3>Background</h3>
       <p>Formerly designated UMP45, Leva is the strategic backbone of H.I.D.E. Squad 404. She operates as a long-term NOMFA intelligence asset, conducting investigations, recruiting personnel, and managing the political relationships that keep her squad funded and operational. She changes her appearance periodically for cover, favoring professional attire appropriate to her administrative role.</p>
-      <p>Leva carries the consciousness of UMP40 embedded in her neural cloud, a condition that prevents her from replacing her deteriorating frame. She lost her memories of UMP40 during an operation in Odesa, a sacrifice she keeps hidden from nearly everyone. She chose her personal name after Lenna created it for her, tying them together through sound and meaning.</p>
+      <p>Leva carries the consciousness of UMP40 embedded in her neural cloud, a condition that prevents her from replacing her deteriorating frame, opting for additional modules rather than a full frame replacement. She chose her personal name after Lenna created it for her, tying them together through sound and meaning.</p>
     """
   }
 }

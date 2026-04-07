@@ -2163,19 +2163,34 @@
     const combatThreat = highestApproach + (skills.combat || 0);
     const socialThreat = highestApproach + (skills.social || 0);
 
-    const approachList = ['power', 'precision', 'swiftness', 'resilience', 'fortune']
-      .map(a => `<span class="npc-approach">${a.charAt(0).toUpperCase() + a.slice(1)} ${approaches[a] || 0}</span>`)
-      .join(' ');
+    const pow = approaches.power || 0;
+    const pre = approaches.precision || 0;
+    const swi = approaches.swiftness || 0;
+    const res = approaches.resilience || 0;
+    const enduranceMult = npc.type === 'T-Doll' ? 3 : 2;
+    const endurance = (pow + res) * enduranceMult;
+    const composure = (res + swi) * 2;
+    const vigilance = Math.ceil((pre + swi) / 2);
 
-    const skillList = ['combat', 'fieldcraft', 'technical', 'social']
+    const approachIcons = ['power', 'precision', 'swiftness', 'resilience', 'fortune']
+      .map(a => `<div class="npc-stat-icon npc-stat-icon--${a}"><span class="npc-stat-icon__value">${approaches[a] || 0}</span><span class="npc-stat-icon__label">${a.charAt(0).toUpperCase() + a.slice(1)}</span></div>`)
+      .join('');
+
+    const skillIcons = ['combat', 'fieldcraft', 'technical', 'social']
       .filter(s => (skills[s] || 0) > 0)
-      .map(s => `<span class="npc-skill">${s.charAt(0).toUpperCase() + s.slice(1)} ${skills[s]}</span>`)
-      .join(' ');
+      .map(s => `<div class="npc-stat-icon npc-stat-icon--${s}"><span class="npc-stat-icon__value">${skills[s]}</span><span class="npc-stat-icon__label">${s.charAt(0).toUpperCase() + s.slice(1)}</span></div>`)
+      .join('');
 
     const advList = (npc.advantages || []).map(a => `<a href="#advantages-all::${encodeURIComponent(a)}">${escapeHtml(a)}</a>`).join(', ');
     const disadvList = (npc.disadvantages || []).map(d => `<a href="#disadvantages-all::${encodeURIComponent(d)}">${escapeHtml(d)}</a>`).join(', ');
     const passion = npc.passion ? `<a href="#passions-all::${encodeURIComponent(npc.passion)}">${escapeHtml(npc.passion)}</a>` : '';
     const anxiety = npc.anxiety ? `<a href="#anxieties-all::${encodeURIComponent(npc.anxiety)}">${escapeHtml(npc.anxiety)}</a>` : '';
+
+    const attacksSection = npc.description || '';
+
+    const imageHtml = npc.image
+      ? `<div class="npc-image"><img src="${npc.image}" alt="${escapeHtml(name)}"></div>`
+      : '';
 
     return `
       <div class="technique-card">
@@ -2199,23 +2214,35 @@
         <div class="technique-card__body">
           ${npc.flavor ? `<div class="technique-card__flavor">${npc.flavor}</div>` : ''}
 
-          <div class="npc-stats">
-            <div class="npc-stats__row">
-              <span class="npc-stats__label">APPROACHES</span>
-              <span class="npc-stats__values">${approachList}</span>
+          <div class="npc-main-layout">
+            <div class="npc-left-col">
+              <div class="npc-stat-icons">
+                <div class="npc-stat-icons__group">
+                  <span class="npc-stat-icons__label">APPROACHES</span>
+                  <div class="npc-stat-icons__row">${approachIcons}</div>
+                </div>
+                ${skillIcons ? `<div class="npc-stat-icons__group">
+                  <span class="npc-stat-icons__label">SKILLS</span>
+                  <div class="npc-stat-icons__row">${skillIcons}</div>
+                </div>` : ''}
+              </div>
+
+              <div class="npc-derived">
+                <span class="npc-derived__item"><span class="npc-derived__label">END</span><span class="npc-derived__value">${endurance}</span></span>
+                <span class="npc-derived__item"><span class="npc-derived__label">COM</span><span class="npc-derived__value">${composure}</span></span>
+                <span class="npc-derived__item"><span class="npc-derived__label">VIG</span><span class="npc-derived__value">${vigilance}</span></span>
+                ${advList ? `<span class="npc-derived__item"><span class="npc-derived__label">ADV</span><span class="npc-derived__value npc-derived__value--text">${advList}</span></span>` : ''}
+                ${disadvList ? `<span class="npc-derived__item"><span class="npc-derived__label">DIS</span><span class="npc-derived__value npc-derived__value--text">${disadvList}</span></span>` : ''}
+                ${passion ? `<span class="npc-derived__item"><span class="npc-derived__label">PAS</span><span class="npc-derived__value npc-derived__value--text">${passion}</span></span>` : ''}
+                ${anxiety ? `<span class="npc-derived__item"><span class="npc-derived__label">ANX</span><span class="npc-derived__value npc-derived__value--text">${anxiety}</span></span>` : ''}
+              </div>
+
+              ${npc.behaviors ? `<div class="npc-behaviors"><h3>Behaviors</h3>${npc.behaviors}</div>` : ''}
             </div>
-            <div class="npc-stats__row">
-              <span class="npc-stats__label">SKILLS</span>
-              <span class="npc-stats__values">${skillList || '<em>None</em>'}</span>
-            </div>
-            ${advList ? `<div class="npc-stats__row"><span class="npc-stats__label">ADV</span><span class="npc-stats__values">${advList}</span></div>` : ''}
-            ${disadvList ? `<div class="npc-stats__row"><span class="npc-stats__label">DIS</span><span class="npc-stats__values">${disadvList}</span></div>` : ''}
-            ${passion ? `<div class="npc-stats__row"><span class="npc-stats__label">PASSION</span><span class="npc-stats__values">${passion}</span></div>` : ''}
-            ${anxiety ? `<div class="npc-stats__row"><span class="npc-stats__label">ANXIETY</span><span class="npc-stats__values">${anxiety}</span></div>` : ''}
+            ${imageHtml}
           </div>
 
-          ${npc.behaviors ? `<div class="npc-behaviors"><h3>Behaviors</h3>${npc.behaviors}</div>` : ''}
-          ${npc.description || '<p>No description available.</p>'}
+          ${attacksSection ? `<div class="npc-attacks-section">${attacksSection}</div>` : ''}
         </div>
       </div>
     `;

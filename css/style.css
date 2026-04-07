@@ -2561,41 +2561,139 @@ a:hover {
 }
 
 /* ── NPC Cards ──────────────────────────────────────────────── */
-.npc-stats {
+.npc-main-layout {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: start;
+}
+
+.npc-left-col {
+  min-width: 0;
+}
+
+.npc-image {
+  width: 360px;
+  flex-shrink: 0;
+}
+
+.npc-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+}
+
+.npc-attacks-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.npc-stat-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin: 12px 0;
   padding: 10px 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
-.npc-stats__row {
+.npc-stat-icons__group {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
-  margin-bottom: 4px;
-  font-size: 0.8rem;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.npc-stats__label {
+.npc-stat-icons__label {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   letter-spacing: 1px;
   color: var(--white-dimmer);
-  min-width: 80px;
-  flex-shrink: 0;
 }
 
-.npc-stats__values {
+.npc-stat-icons__row {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 12px;
+  gap: 6px;
 }
 
-.npc-approach,
-.npc-skill {
+.npc-stat-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 56px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised, rgba(255,255,255,0.03));
+}
+
+.npc-stat-icon__value {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--white);
+}
+
+.npc-stat-icon__label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.5px;
+  color: var(--white-dimmer);
+  margin-top: 4px;
+}
+
+/* Approach colors */
+.npc-stat-icon--power      { border-color: #e8503a44; }
+.npc-stat-icon--power      .npc-stat-icon__value { color: #e8503a; }
+.npc-stat-icon--precision  { border-color: #e8c23a44; }
+.npc-stat-icon--precision  .npc-stat-icon__value { color: #e8c23a; }
+.npc-stat-icon--swiftness  { border-color: #4a9edd44; }
+.npc-stat-icon--swiftness  .npc-stat-icon__value { color: #4a9edd; }
+.npc-stat-icon--resilience { border-color: #5cb85c44; }
+.npc-stat-icon--resilience .npc-stat-icon__value { color: #5cb85c; }
+.npc-stat-icon--fortune    { border-color: #a06cd544; }
+.npc-stat-icon--fortune    .npc-stat-icon__value { color: #a06cd5; }
+
+/* Skill colors */
+.npc-stat-icon--combat     { border-color: #d4606044; }
+.npc-stat-icon--combat     .npc-stat-icon__value { color: #d46060; }
+.npc-stat-icon--fieldcraft { border-color: #c8a05a44; }
+.npc-stat-icon--fieldcraft .npc-stat-icon__value { color: #c8a05a; }
+.npc-stat-icon--technical  { border-color: #3dcfcf44; }
+.npc-stat-icon--technical  .npc-stat-icon__value { color: #3dcfcf; }
+.npc-stat-icon--social     { border-color: #e07ab044; }
+.npc-stat-icon--social     .npc-stat-icon__value { color: #e07ab0; }
+
+.npc-derived {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-bottom: 10px;
+}
+
+.npc-derived__item {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-family: var(--font-mono);
+}
+
+.npc-derived__label {
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  color: var(--white-dimmer);
+}
+
+.npc-derived__value {
+  font-size: 0.85rem;
   color: var(--white-dim);
+}
+
+.npc-derived__value--text {
+  font-size: 0.75rem;
 }
 
 .npc-behaviors {

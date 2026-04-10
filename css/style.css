@@ -369,6 +369,20 @@ a:hover {
   border-top: 1px solid var(--border-color);
 }
 
+.sidebar__attribution {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--white-dimmer);
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.sidebar__attribution:hover {
+  color: var(--yellow);
+}
+
 .sidebar__version {
   font-family: var(--font-mono);
   font-size: 0.6rem;

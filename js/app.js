@@ -33,6 +33,7 @@
     'Poisons & Drugs':                  'pages/poisons-and-drugs.html',
     'Crime':                            'pages/crime.html',
     'NPCs':                             'pages/npcs.html',
+    'Attribution':                       'pages/attribution.html',
   };
 
   // Defines the reading order for rulebook-style navigation
@@ -87,6 +88,7 @@
     'Poisons & Drugs':                  'Subsystems',
     'Crime':                            'Subsystems',
     'NPCs':                             'GM Tools',
+    'Attribution':                       'About',
   };
 
   // JSON data files (built from djson by build.py)
@@ -101,6 +103,7 @@
     moduleTypes:         'data/module_types.json',
     modules:             'data/modules.json',
     weapons:             'data/weapons.json',
+    armor:               'data/armor.json',
     items:               'data/items.json',
     disciplines:         'data/disciplines.json',
     perks:               'data/perks.json',
@@ -125,6 +128,7 @@
   let moduleTypes = {};
   let modules = {};
   let weapons = {};
+  let armor = {};
   let items = {};
   let disciplines = {};
   let perks = {};
@@ -439,7 +443,7 @@
   // ── Load All JSON Data ──────────────────────────────────────────
   async function loadAllData() {
     try {
-      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData, itemsData, disciplinesData, perksData, capstonesData, npcsData] = await Promise.all([
+      const [typesData, techData, advData, disData, pasData, anxData, pecTypesData, modTypesData, modData, weaponsData, armorData, itemsData, disciplinesData, perksData, capstonesData, npcsData] = await Promise.all([
         fetch(DATA_FILES.techniqueTypes).then(r => r.json()),
         fetch(DATA_FILES.techniques).then(r => r.json()),
         fetch(DATA_FILES.advantages).then(r => r.json()),
@@ -450,6 +454,7 @@
         fetch(DATA_FILES.moduleTypes).then(r => r.json()),
         fetch(DATA_FILES.modules).then(r => r.json()),
         fetch(DATA_FILES.weapons).then(r => r.json()),
+        fetch(DATA_FILES.armor).then(r => r.json()),
         fetch(DATA_FILES.items).then(r => r.json()),
         fetch(DATA_FILES.disciplines).then(r => r.json()),
         fetch(DATA_FILES.perks).then(r => r.json()),
@@ -466,6 +471,7 @@
       moduleTypes = modTypesData || {};
       modules = modData || {};
       weapons = weaponsData || {};
+      armor = armorData || {};
       items = itemsData || {};
       disciplines = disciplinesData || {};
       perks = perksData || {};

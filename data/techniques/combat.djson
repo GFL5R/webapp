@@ -42,7 +42,7 @@
     """,
     "description": """
       <h3>Activation:</h3>
-      Once per scene, after you perform an action that does not require a check, while in a Fortune Posture, you may make a <strong> TN 1 Resolve (Fortune)</strong> check.</p>
+      Once per scene, after you perform an action that does not require a check, while in a Fortune Stance, you may make a <strong> TN 1 Resolve (Fortune)</strong> check.</p>
       <h3>Effects:</h3>
       <p>If you succeed, the next time you would gain strife, reduce the amount you recieve by 3, plus 1 per two bonus successes. This effect persists until the start of your next turn.</p>
       <h3>New Opportunities:</h3>
@@ -206,7 +206,7 @@
       <h3>Activation:</h3>
       <p>When you make an Initiative check for a duel using your Fortune Approach, you may spend (op) in the following way:</p>
       <ul>
-        <li><strong>Fortune (op):</strong> Name two approaches. Your opponent must choose one, and cannot select it as their posture during their first turn of the duel.</li>
+        <li><strong>Fortune (op):</strong> Name two approaches. Your opponent must choose one, and cannot select it as their stance during their first turn of the duel.</li>
         <li><strong>Fortune (op)+:</strong> Choose a technique category. Learn one of your opponent's known techniques of that category (chosen by the opponent) per (op) spent this way.</li>
       </ul>
     """

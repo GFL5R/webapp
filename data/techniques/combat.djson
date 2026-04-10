@@ -214,7 +214,7 @@
   "Closing Strike": {
     "rank": 2,
     "type": "Combat",
-    "approach": null,
+    "approach": "Swiftness",
     "skill": "Blades",
     "flavor": """
       Many would mistake distance from a blade user for safety, but a true master of the sword can cover ground in the blink of an eye, crossing surprising gaps.

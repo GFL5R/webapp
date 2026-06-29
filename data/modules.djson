@@ -561,12 +561,15 @@
     skill: null,
     approach: null,
     flavor: """
-      <p>Remolding is a highly experimental tech that allows the user to harness ambient collapse radiation to affect reality. Unpredictable and dangerous, these modules are the domain of those willing to risk everything for a chance at power beyond imagination.</p>
+      <p>A Remolding Unit is a highly experimental implant that channels ambient collapse radiation to bend reality. Each unit can hold only a single technique — the hardware is specialized, not general-purpose. Unpredictable and dangerous, these modules are the domain of those willing to risk everything for a chance at power beyond imagination.</p>
     """,
     description: """
       <h3>Effects</h3>
       <ul>
         <li>Allows you to use <a href="#techniques-remolding">Remolding techniques</a>.</li>
+        <li>The unit holds exactly <strong>one Remolding technique</strong>. It comes installed with a <strong>rank 1 technique</strong> of your choice at no additional XP cost.</li>
+        <li>Upgrading the held technique to <strong>rank 2</strong> or <strong>rank 3</strong> costs <strong>5 XP</strong> and requires your <strong>Fortification</strong> to be at least equal to the new rank.</li>
+        <li>A T-Doll may normally install only <strong>one Remolding Unit</strong>. Installing a second unit requires paying the full installation cost (60,000 URNC Credits) plus an additional <strong>24 XP</strong>, or receiving explicit GM permission.</li>
       </ul>
     """
   },

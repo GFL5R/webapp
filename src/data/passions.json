@@ -1,0 +1,669 @@
+[
+  {
+    "id": "adrenaline-junkie",
+    "name": "Adrenaline Junkie",
+    "types": [
+      "Physical",
+      "Thrill"
+    ],
+    "flavor": "The bridge was out. A thirty-meter gap yawned over a river choked with collapsed rubble and rusted rebar. The squad stopped to assess. SOP-II did not stop. SOP-II, wait... we need to find another... She was already sprinting, boots hammering the fractured concrete. She launched off the broken edge, sailed across the gap, hit the other side in a roll, and popped up grinning, bits of gravel in her hair. It's fine! The landing's soft-ish! That was a *thirty-meter gap*. I know! Come on, you guys are gonna love it!",
+    "effects": [
+      "You can risk your life without consideration or hesitation, even if the potential consequences are obvious and dire.",
+      "After performing a check to risk your life (such as resisting a critical strike), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "ammosexual",
+    "name": "Ammosexual",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The burst stitched across the rooftop and the whole squad fell flat on the ground, concrete dust pelting their backs. The commander looked to the side, and one T-doll had stars in her eyes. MG-42! It's an MG-42! Seven-point-nine-two Mauser, roller-locked, recoil-operated, twelve-hundred rounds per minute- **Remi.** It's shooting at us. A pause. Another burst tore through the air above them. I know, isn't it awesome?",
+    "effects": [
+      "You have an extensive knowlege of firearms that most would call concering, and can easily identify the manufacturer and country of origin of any firearm you come across in the field.",
+      "After interacting with a new weapon for the first time in any capacity (even being shot at with it), you lose three strife."
+    ]
+  },
+  {
+    "id": "animal-companion",
+    "name": "Animal Companion",
+    "types": [
+      "Interpersonal"
+    ],
+    "flavor": "After a long mission, the squad was resting at the base. Most of the T-dolls went off to mantain their weapons and recharge, but one remained in the lounge, playing with a cat, while another observed. You're always playing with that cat, where'd you even find it? It followed us home after we found it on the street. I guess it just really likes me. Weird.",
+    "effects": [
+      "A small, mundane animal of some kind has attached itself to you. Choose one silhouette 0 or 1 animal, it follows you around wherever you go and acts as your companion. It can be convinced to do what you want, but might need incentives (usually food) to perform a difficult task.",
+      "After performing a check to interact with an animal, you remove 3 strife."
+    ]
+  },
+  {
+    "id": "attention",
+    "name": "Attention",
+    "types": [
+      "Social"
+    ],
+    "flavor": "The squad gathered in the briefing room, waiting for the commander to arrive. C-93 had rearranged all the chairs so that one sat slightly elevated at the front, facing the others. C-93, what are you doing? That's not your seat. Of course it's not my seat. It's my *stage*. I've prepared a tactical presentation. ...We don't have a mission yet. Exactly! So everyone's free to watch. I even made slides. She held up a series of hand-drawn posters, each one featuring herself in increasingly dramatic poses.",
+    "effects": [
+      "At the start of each scene, you can always determine the most effective way to gain the attention of those around you.",
+      "After performing a check to capture someone’s attention (such as a check to draw a crowd with a daring move), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "celebrations",
+    "name": "Celebrations",
+    "types": [
+      "Social",
+      "Hedonic"
+    ],
+    "flavor": "The base's annual morale event had been planned for weeks, but the turnout was low. Most dolls had drifted back to their quarters. Then UMP9 arrived with a portable speaker, three cases of supplies she'd \"requisitioned\" from logistics, and a grin that spelled trouble. Nine, the party's basically over. No it isn't. It hasn't started yet.\" *She cranked the volume.* \"Someone go get 45. Tell her I said it's mandatory fun. Within the hour, the lounge was packed.",
+    "effects": [
+      "You can always find the best activities at any celebration or gathering, and you never have trouble finding someone specific in a crowded place.",
+      "After performing a check to interact at a celebration (such as a check to determine where clandestine dealings are happening at a crowded event or ensure a guest has a good time), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "charity",
+    "name": "Charity",
+    "types": [
+      "Interpersonal"
+    ],
+    "flavor": "It was well past midnight when the commander passed by the café. The lights were still on. Inside, Springfield was wrapping a small package, a fresh muffin and a handwritten note tucked inside. Springfield? It's almost 0200. Oh, commander. I heard Galil's been having trouble adjusting after her transfer. I thought something warm might help her feel welcome. You've already made six of those tonight. Springfield smiled, tying the ribbon with practiced fingers. There are six dolls who could use a little kindness right now.",
+    "effects": [
+      "Your charitable nature makes those who have witnessed or heard of your generosity more likely to accept your reasonable requests for aid, even if giving you aid does not directly benefit the other party.",
+      "After performing a check to help someone (such as check to provide aid or comfort), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "coffee",
+    "name": "Coffee",
+    "types": [
+      "Mental",
+      "Hedonic"
+    ],
+    "flavor": "WA2000 stood behind the counter of the empty café, measuring beans with a scale she'd brought from her own quarters. Springfield watched from the doorway with quiet amusement. You know you're welcome to use the house blend. Your house blend is over-roasted by at least thirty seconds. I can taste the char.\" *She adjusted the grinder by a single click.* \"And your water temperature is two degrees too high. It's not complicated. You could just ask me to make it differently. I could. But then it wouldn't be right.\" *The kettle whistled. She poured in a slow, precise spiral, and for a few seconds, the furrow between her brows disappeared entirely. Springfield said nothing. She knew better than to interrupt the only moment in the day when WA2000 looked at peace.",
+    "effects": [
+      "You can identify regional variations in coffee and tea, and you know a great deal about the process of preparing them. In the field, you can acquire natural ingredients to brew effective beverages with relative ease.",
+      "After performing a check involving coffee or tea (such as a check to brew a restorative blend with medicinal properties or prepare a drink that helps the recipients relax and reflect), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "collecting",
+    "name": "Collecting",
+    "types": [
+      "Mental",
+      "Reflective"
+    ],
+    "flavor": "SOP-II's quarters were... curated. That was the charitable word for it. Shelves lined with salvaged components, enemy optics, servo motors, and things that had once been attached to Sangvis Ferri units. Each one labeled with a date and location in her careful handwriting. SOP, is that a Ringleader's voice modulator? Executioner's! From the raid on Sector 8. See the scoring on the housing? That's from when I... I don't need to know how you got it. But that's the best part!",
+    "effects": [
+      "You are a compulsive collector. You always notice items of interest that others would overlook, and you can recall the exact provenance of every item in your collection.",
+      "After performing a check to find, acquire, or catalog an interesting item (such as a check to scavenge useful components from wreckage or identify the origin of an unusual artifact), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "commerce",
+    "name": "Commerce",
+    "types": [
+      "Social",
+      "Mental"
+    ],
+    "flavor": "The vendor wanted six hundred for the parts. Stechkin wanted to pay two hundred. Twenty minutes later, she walked away with the parts, three hundred credits still in her pocket, and the vendor somehow feeling like he'd won. How do you do that?\" the commander asked. Do what? Make people feel good about losing money. Stechkin counted her credits with a speed that bordered on affectionate.* \"He didn't lose money, commander. He lost *less* money than he expected to. That's practically the same as profit. It's all about framing.",
+    "effects": [
+      "You always know the fair market value of any item or service, and you can haggle effectively in any market, bazaar, or back-alley deal. People who trade with you walk away satisfied even when the math doesn't favor them.",
+      "After performing a check involving trade, negotiation, or financial assessment (such as a check to haggle for a better price or appraise the value of salvaged goods), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "communal-meals",
+    "name": "Communal Meals",
+    "types": [
+      "Interpersonal",
+      "Hedonic"
+    ],
+    "flavor": "The mission had gone badly. No casualties, but everyone was rattled. The squad filed back into the Elmo in silence. Springfield was already in the galley, and the smell hit them before they rounded the corner: something warm, rich, and entirely too good for what should have been a ration night. Springfield, where did you get fresh vegetables? I have my sources. Sit down, all of you. Nobody debriefs on an empty stomach. Nobody argued. Within twenty minutes, the silence had turned into murmuring, then conversation, then something that almost sounded like laughter. Springfield refilled bowls without being asked and said nothing, but she was smiling.",
+    "effects": [
+      "You know how to prepare a hearty, comforting meal in a communal setting, even with limited ingredients. Because of the strong associations, sharing a meal you've prepared helps you recall memories connected to the people you've shared food with before.",
+      "After performing a check involving the preparation of a communal meal (such as a check to stretch limited rations into something satisfying or make a guest feel at ease over dinner), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "companionship",
+    "name": "Companionship",
+    "types": [
+      "Interpersonal"
+    ],
+    "flavor": "RO635 found SOP-II sitting alone in the cargo bay, knees pulled up, staring at nothing. She didn't ask what was wrong. She just sat down next to her, close enough that their shoulders touched. They stayed like that for a long time. Eventually, SOP-II leaned over until her head rested against RO's shoulder. RO? Mm? Thanks for not asking. Anytime. They sat in the cargo bay until the lights dimmed for the night cycle, and neither of them moved.",
+    "effects": [
+      "Your presence calms others. You have an intuitive sense for when someone needs company and when they need space, and people trust you instinctively because you make them feel seen.",
+      "After performing a check to comfort, support, or simply be present for someone (such as a check to calm a panicking ally or convince someone they're not alone), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "contraband",
+    "name": "Contraband",
+    "types": [
+      "Social",
+      "Mental",
+      "Taboo"
+    ],
+    "flavor": "The squad needed parts that didn't exist on the legal market anymore. Pre-war doll components, military-grade encryption modules, and a very specific caliber of ammunition that hadn't been manufactured in a decade. The broker listened to the list without expression. I can get all of it. The components will take three days. The encryption modules, one week. The ammunition...\" *She paused.* \"That depends on whether you want it clean or whether you want it fast. What's the difference? Clean means I source it through four intermediaries and nobody traces it back to you. Fast means I know a Varjager crew that has a crate of it and owes me a favor.\" *She smiled.* \"Everything has a price, commander. My job is making sure you can afford it.",
+    "effects": [
+      "You always know where the black market operates in any settlement, and you can estimate the street value of any item or service. You have a network of contacts who deal in goods that don't officially exist.",
+      "After performing a check involving illicit trade (such as a check to locate a specific contraband item or negotiate a deal with a black market dealer), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "control",
+    "name": "Control",
+    "types": [
+      "Social",
+      "Taboo"
+    ],
+    "flavor": "The negotiation had gone exactly as she'd planned. Not because she was the most powerful person in the room (she wasn't), but because she'd spent three days before the meeting ensuring that every person at the table owed her something, feared something she knew, or wanted something only she could provide. The deal closed in her favor. She didn't smile. Smiling was for people who were surprised by outcomes. You're terrifying,\" the commander said afterward. I'm efficient. Terrifying is a side effect.",
+    "effects": [
+      "You need to be in command of every situation you enter. You can always identify the power dynamics in a room: who holds real authority, who is pretending, and what leverage exists to shift the balance.",
+      "After performing a check to assert dominance or manipulate a situation to your advantage (such as a check to take command of a chaotic scene or maneuver someone into doing what you want), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "cosplay",
+    "name": "Cosplay",
+    "types": [
+      "Creative",
+      "Physical"
+    ],
+    "flavor": "Careful, commander. You never know if the t-doll you're talking to is actually her, it might just be P90 in a really good costume.",
+    "effects": [
+      "You enjoy creating and wearing costumes, and can always identify the needed resources to create or replicate any costume you come across.",
+      "After performing a check to disguise yourself (such as deception or performance), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "decorum",
+    "name": "Decorum",
+    "types": [
+      "Social",
+      "Mental"
+    ],
+    "flavor": "The commander tugged at his collar, scanning the crowded reception hall. Delegates from three PMCs and a government liaison milled about with drinks in hand. G36 materialized at his elbow. Master. You are holding your glass in your dominant hand. ...So? Your dominant hand should remain free to offer handshakes. Additionally, your posture suggests you are about to lean against that pillar. You will not. G36, I outrank everyone here. And you will *continue* to, provided you do not disgrace yourself with a two-handed finger-food grip in front of the Minister of the Interior.",
+    "effects": [
+      "Formal society is your natural habitat. Etiquette, protocol, and all the subtle minutiae of diplomatic and professional conduct are second nature to you.",
+      "After performing a check to ensure that you or your allies adhere to proper social protocol (such as a check to navigate a tense diplomatic reception or correct a faux pas before it causes an incident), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "drinking",
+    "name": "Drinking",
+    "types": [
+      "Hedonic",
+      "Social"
+    ],
+    "flavor": "The mission was over. The squad was alive. A-91 produced a flask from somewhere on her person (nobody could ever figure out where she kept them all) and took a long pull. A-91, it's 0900. And we're alive. That's worth celebrating.\" *She offered the flask.* \"Vodka. Good stuff, not that recycled coolant they sell in the Yellow Zone. Where did you even get real vodka out here? She tapped her nose and took another drink.* \"A girl has her secrets, commander. And her priorities.",
+    "effects": [
+      "You always know where to find alcohol, no matter how remote or dry the location. You can identify the quality, origin, and approximate proof of any drink by taste alone.",
+      "After performing a check involving alcohol (such as a check to drink someone under the table or track down a source of liquor in an unfamiliar settlement), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "driving",
+    "name": "Driving",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The road through the contamination zone was barely a road: cracked asphalt, collapsed overpasses, debris everywhere. The squad's transport had stalled twice already. Then Sakura climbed into the driver's seat, adjusted the mirrors, and put it in gear. Sakura, are you sure about this? Your file says you have... bad luck. With everything else, yes. Not with driving.\" *She threaded the transport through a gap between two wrecked cars that shouldn't have fit, without slowing down.* \"Sakura Lucky Delivery had a one hundred percent completion rate across three contamination zones. ...And the 'Lucky' in the name? Aspirational.",
+    "effects": [
+      "You don't just enjoy speed, you understand the bond between driver and machine in motion. You know how to read a vehicle's limits and push them, whether in a race, a pursuit, or a desperate escape.",
+      "After performing a check to push a vehicle to its limits (such as a check to weave through a dangerous obstacle course or coax a damaged transport through hostile terrain), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "fashion",
+    "name": "Fashion",
+    "types": [
+      "Social",
+      "Creative"
+    ],
+    "flavor": "The squad had thirty minutes before deployment. Most were doing final equipment checks. DSR-50 was adjusting her hair ribbon in a compact mirror. DSR, we're about to drop into a combat zone. And? Looking good and shooting straight aren't mutually exclusive.\" *She snapped the compact shut.* \"Besides, have you seen what Springfield is wearing to the liaison dinner tonight? Someone has to uphold standards around here.",
+    "effects": [
+      "You always know the current trends in your region, and you can identify what is in vogue (and how to take advantage of that fact) in a new place after spending one or more scenes there.",
+      "After performing a check to interact with clothes, jewelry, or other worn works of art (such as a check to assess someone's taste from their outfit or design a stunning ensemble), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "fortune-telling",
+    "name": "Fortune-Telling",
+    "types": [
+      "Reflective"
+    ],
+    "flavor": "Nemesis sat cross-legged on the deck of the Elmo, her prism catching the low light as she turned it slowly between her fingers. Krolik watched from a respectful distance. The commander did not. Nemesis, I need the patrol route for tomorrow, not a horoscope. The prism shows a forking of paths. One is bathed in amber: caution, but warmth. The other is silver: swift, but cold. The stars counsel patience. Krolik, translate. Krolik sighed.* \"She's saying take the southern route. It's slower but safer. The prism has spoken,\" *Nemesis confirmed serenely.",
+    "effects": [
+      "You can identify common portents and signs (stellar phenomena, patterns in nature, symbolic configurations, and other omens) along with their implications for the future, whether or not anyone else takes them seriously.",
+      "After performing a check to discern the future (such as a check to perform a divination ritual or interpret signs and omens in your surroundings), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "gambling",
+    "name": "Gambling",
+    "types": [
+      "Social",
+      "Mental",
+      "Thrill"
+    ],
+    "flavor": "Friday night at the café. The rifles were gathered around the corner table: Springfield, Lee-Enfield, Mosin-Nagant, WA2000. Five Card Stud. Springfield's face was as serene as ever. I'll raise.\" *She pushed her chips forward with the same gentle precision she used to pour coffee. WA2000 slammed her cards down. \"You're bluffing. You have to be bluffing. Nobody gets three hands in a row. Springfield smiled.* \"Call me and find out. WA2000 did. Springfield was not bluffing. Springfield was never bluffing.",
+    "effects": [
+      "You can always find a game wherever you go: cards, dice, fighting rings, or anything else people wager on. You have a keen eye for reading opponents and understanding odds.",
+      "After performing a check involving games of chance or skill (such as a check to win a high-stakes poker hand or read an opponent's tells), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "gardening",
+    "name": "Gardening",
+    "types": [
+      "Mental",
+      "Reflective"
+    ],
+    "flavor": "The rooftop of the Elmo wasn't designed for it, but someone had bolted planter boxes to the railing anyway. Colphne was up there most mornings, watering, pruning, murmuring to the plants in a way that made the other dolls uncomfortable. Colphne, do the tomatoes actually grow faster when you talk to them? No. But I grow calmer when I talk to them, and calm hands make fewer mistakes with the pruning shears.\" *She held up a sprig of something green.* \"Lemon balm. It shouldn't be able to grow at this latitude, but it doesn't seem to mind. Would you like some for your tea?",
+    "effects": [
+      "You can always identify a plant by any of its parts, and you know its physical properties, including which are medicinal, which are poisonous, and which indicate environmental conditions like contamination.",
+      "After performing a check related to plants or gardening (such as a check to identify a useful herb in the wild or cultivate something in difficult conditions), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "generosity",
+    "name": "Generosity",
+    "types": [
+      "Interpersonal"
+    ],
+    "flavor": "Kalina set a small wrapped package on the commander's desk. What's this? A gift for the liaison officer from the 3rd District. She collects antique fountain pens. This one's a 2038 Pelikan, pre-war manufacture, still has the original nib. I found it in a salvage lot marked for recycling. ...How do you know she collects fountain pens? Kalina smiled in that way that meant the question would not be answered. Just trust me, commander. This meeting is going to go very well.",
+    "effects": [
+      "You can always identify a proper gift for a particular person that does not risk giving offense or sending the wrong message.",
+      "After performing a check to acquire or give a gift (such as a check to select an item that complements someone's interests or find the perfect gift in a market), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "glory",
+    "name": "Glory",
+    "types": [
+      "Physical",
+      "Social"
+    ],
+    "flavor": "The after-action report was filed, the wounded were patched, and the squad was debriefing. HK416 sat cleaning her rifle with mechanical precision while the others talked. That charge across the bridge was insane, 416. You could've been scrapped. But I wasn't. You did it because the commander was watching, didn't you. 416 didn't look up from her rifle. But she didn't deny it either.",
+    "effects": [
+      "You find risking your life to be a simple matter, as long as there is a witness to remember your actions. No threat or challenge deters you if you might be remembered for it, making even the most daunting tasks easy ones for which to prepare.",
+      "After performing a check to improve your reputation or gain recognition (such as a check to impress observers with a daring feat or execute a bold tactical maneuver), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "gossip",
+    "name": "Gossip",
+    "types": [
+      "Social"
+    ],
+    "flavor": "Five-seveN leaned against the doorframe of the comms room, watching two dolls from another squad walk past, then turned back inside. The tall one  (Recon Squad 3) has been filing extra maintenance requests. Three in two weeks. So? Equipment wears out. Not hers. She's filing them for someone in Squad 7. Someone she shouldn't even know well enough to do favors for.\" *Five-seveN's smile was razor-thin.* \"Interesting, isn't it?",
+    "effects": [
+      "At the start of each scene, you can always identify the character present who will know the juiciest rumors (besides yourself, obviously).",
+      "After performing a check to spread or receive rumors (such as a check to cast someone in a certain light when telling a story about them or read people's current anxieties from the subtle ways they behave), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "gourmet",
+    "name": "Gourmet",
+    "types": [
+      "Mental",
+      "Hedonic"
+    ],
+    "flavor": "The squad stopped to rest in an abandoned settlement. While the others set up a perimeter, SPAS-12 had vanished into what remained of a convenience store. She emerged ten minutes later, cradling an armful of dusty cans and packets like they were made of gold. SPAS, you don't need to eat. That is the most depressing thing anyone has ever said to me.\" *She held up a dented tin.* \"This is canned duck confit. Pre-war French import. And *this* is genuine black pepper, not that synthetic stuff they put in the ration packs. You literally do not have a digestive system. And yet I have *taste*, which is more than I can say for you. Give me fifteen minutes and a heat source.",
+    "effects": [
+      "You can identify regional variations in cuisine and know a great deal about techniques of food preparation. You can always identify the ingredients in a dish, including those that are potentially dangerous.",
+      "After performing a check involving high-quality food (such as a check to locate a place to eat in an unfamiliar area or prepare a fine meal), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "graffiti",
+    "name": "Graffiti",
+    "types": [
+      "Creative",
+      "Physical"
+    ],
+    "flavor": "Banxsy was perched on her stool, spray can in hand, staring at the wall. It was a blank canvas, but she had a vision for it. She just needed to figure out how to get it there.",
+    "effects": [
+      "You have an extensive knowledge of graffiti styles and techniques, and can easily identify the artist and location of any graffiti you come across.",
+      "After performing a check to study or practice graffiti (such as check to identify a graffiti artist, or tag something yourself), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "hacking",
+    "name": "Hacking",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The door was sealed with military-grade encryption. The squad's demo expert was reaching for a breaching charge when Harpsy put her hand on his arm. W-wait. Give me a minute.\" *She plugged into the access panel, her eyes going distant as she interfaced with the lock. Harpsy, we're on a clock. Thirty seconds. The encryption is pre-war KCCO standard. They reused the same key architecture for...\" *Click.* *The door slid open.* \"...everything. She unplugged, blinking rapidly, and looked genuinely surprised by the squad staring at her. I-it wasn't that hard...",
+    "effects": [
+      "You can interface with and manipulate digital systems, from simple security locks to complex neural cloud architectures. You always recognize the telltale signs of electronic warfare, intrusion countermeasures, and compromised systems.",
+      "After performing a check to hack, decrypt, or defend a digital system (such as a check to breach a security network or detect a Parapluie-style intrusion), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "history",
+    "name": "History",
+    "types": [
+      "Mental",
+      "Reflective"
+    ],
+    "flavor": "The squad was picking through the ruins of a pre-war university when Andoris stopped in front of a crumbling notice board, still pinned with faded flyers. Andoris, we're looking for the supply cache, not souvenirs. This building was requisitioned by the Ministry of Defense in 2045. You can tell from the bolt holes where the military signage was mounted.\" *She traced a line of filled-in screw holes along the wall.* \"But these flyers are from before that. Student organizations. Concert announcements. Someone's lost cat. So? So people lived here once. Not soldiers. Not dolls. Students, worried about exams and missing pets.\" *She carefully peeled one flyer free and folded it into her bag.* \"Someone should remember that.",
+    "effects": [
+      "After a short time spent studying it, you can discern the era and context of any object, structure, or text you encounter, or else you know for certain that no record you've ever come across has mentioned this thing before.",
+      "After performing a check to recall or apply historical knowledge (such as a check to draw parallels to past events or identify the origins and purpose of a pre-war artifact), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "honest-work",
+    "name": "Honest Work",
+    "types": [
+      "Physical",
+      "Mental"
+    ],
+    "flavor": "The motor pool was quiet. Most of the dolls had clocked out hours ago, but PPSh-41 was still underneath the transport, wrench in hand, grease up to her elbows. PPSh, the mechanics can finish that in the morning. The mechanics will replace the whole assembly. This just needs a new gasket and a recalibrated torque arm.\" *There was a satisfying click from under the vehicle.* \"Wasteful to scrap what you can fix. You've been at this for four hours. She slid out, wiped her hands on a rag, and looked at the commander with genuine confusion. Has it been that long?",
+    "effects": [
+      "You are always able to determine how much work is needed to complete a physical, hands-on task, and your work on such tasks is always markedly better than that of others due to your eye for detail.",
+      "After performing a check that requires physical labor (such as a check to repair damaged equipment or construct field fortifications), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "introspection",
+    "name": "Introspection",
+    "types": [
+      "Reflective"
+    ],
+    "flavor": "The others had gone to recharge, but M4A1 remained on the rooftop, watching the sky. RO635 found her there an hour later. M4, the commander wants lights out in ten. RO... do you ever wonder if what we feel is real? Or if it's just code pretending to be something it isn't? RO sat down beside her. I think if you're asking the question, that's already your answer. M4 didn't respond. But after a while, some of the tension left her shoulders.",
+    "effects": [
+      "You feel no attachment to mundane items and earthly concerns; you cannot be tempted with material wealth or the promise of power or status.",
+      "After performing a check to detach yourself from material concerns (such as a check to contemplate the nature of your own existence or find clarity in a quiet moment), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "manga",
+    "name": "Manga",
+    "types": [
+      "Reflective",
+      "Hedonic"
+    ],
+    "flavor": "Klukai angrily stormed through the quarters, picking up things that Mechty had left lying around, one of which was a manga. She rolled it up, and bonked Mechty on the head with it. Wake up, Mechty! Mission in 15. Uwaah! Don't damage that manga! It's a first edition copy of \"Joe Joe's Strange Journey\"!",
+    "effects": [
+      "You have an encyclopedic knowledge of manga genres, series, and artists, and can bond quickly with anyone who shares the hobby.",
+      "At the end of any scene in which you read manga, you remove 3 strife."
+    ]
+  },
+  {
+    "id": "marksmanship",
+    "name": "Marksmanship",
+    "types": [
+      "Mental",
+      "Physical"
+    ],
+    "flavor": "The range was empty. Lee-Enfield had been there since dawn, firing single rounds at intervals so measured they could have kept time. The commander watched from the observation booth as she worked the bolt, chambered a round, breathed, and fired. A hole appeared in the center of the target, indistinguishable from the last twelve. Lee, you qualified expert six months ago. You don't need the practice. Practice isn't the point, commander.\" *She worked the bolt again.* \"The point is that for one moment, everything (breath, heartbeat, wind, gravity) is in alignment. Everything makes sense.\" *She fired. Another perfect hole.* \"It's the closest thing I know to peace.",
+    "effects": [
+      "You are deeply familiar with the art and discipline of precision shooting, and can assess the relative skill of anyone who handles a firearm simply by how they hold it.",
+      "After performing a check to practice or demonstrate the discipline of marksmanship (such as a check to attune to a new weapon at the range or instruct another in proper technique), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "medicine",
+    "name": "Medicine",
+    "types": [
+      "Mental",
+      "Physical"
+    ],
+    "flavor": "The operative had taken a round through the shoulder. The squad medic was dead. Colphne knelt beside the wounded human, hands already moving (tourniquet, pressure, assessment), with a speed that made the others step back. Through-and-through. No arterial involvement. You're lucky. Doesn't feel lucky. That's because you're in shock. You'll feel lucky in about thirty seconds when the painkiller kicks in.\" *The needle went in, smooth and precise.* \"There. Now hold still and let me work. I didn't keep you alive this long to lose you to an infection.",
+    "effects": [
+      "You can diagnose injuries and illnesses with a glance, and you always know the most effective treatment given available resources. Your patients trust you instinctively, even when the treatment hurts.",
+      "After performing a check to heal or diagnose (such as a check to stabilize a critically wounded ally or identify the cause of an unknown illness), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "military-history",
+    "name": "Military History",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The tactical display showed the enemy advancing through a narrow valley. The squad leaders were arguing about whether to hold position or fall back. The commander's aide, a quiet officer named Vasily who spent his downtime reading old after-action reports, cleared his throat. Third Manpower War. KCCO tried the same approach through the Carpathian passes in '58. Armored column, narrow valley, superiority in numbers.\" *He tapped the display.* \"Angelia's irregulars collapsed the hillside onto them with pre-placed charges and cut off the retreat. The room went quiet. We have demolition charges,\" someone said. Vasily shrugged.* \"History doesn't repeat, but it rhymes.",
+    "effects": [
+      "You can quickly identify historical or traditional military strategies from memory and can almost always suggest an appropriate tactic for the situation at hand based on a similar past engagement.",
+      "After performing a check related to your knowledge of military history (such as a check to bolster troops' resolve with an account of a similar past battle or prepare a defense based on an attacker's known historical strategies), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "monsters",
+    "name": "Monsters",
+    "types": [
+      "Mental",
+      "Reflective"
+    ],
+    "flavor": "The squad came upon the remains of a collapsed ELID creature in the ruins, its warped limbs still faintly twitching. Most of the operatives gave it a wide berth. One did not. Don't get close to that thing, Mikhail. Stage three, but look at the crystalline growth pattern on the dorsal side: that's not consistent with standard ELID progression at all! This might be a transitional form between stage three and four! He was already sketching furiously in a battered notebook, his rifle dangling forgotten at his side. It's still moving. Only reflexive motor impulses! Probably! ...Could someone cover me for about five minutes?",
+    "effects": [
+      "You keep a detailed record of various monsters you come across, and can easily identify the various stages of ELID and classes of monsters. Tales of monsters from folklore enamor you, and you are always eager to learn more.",
+      "After performing a check to study or hear tales of monsters, you remove 3 strife."
+    ]
+  },
+  {
+    "id": "navigator",
+    "name": "Navigator",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The Elmo's GPS had been offline for three days. The last reliable map they had was a pre-war road atlas with half the pages water-damaged. The squad leader spread it on the table and stared at it like it owed her money. This shows a highway that doesn't exist anymore. No, it exists.\" *The navigator traced a line with her finger.* \"It's under about two meters of silicified soil, but the foundation is still solid; the collapse crystallization actually preserved the roadbed. We can drive on it if we keep to the median. How do you know that? Terrain reading. The soil discoloration follows a straight line for eight kilometers. Nature doesn't make straight lines.\" *She folded the map.* \"Also, I can see the highway signs if you know where to dig.",
+    "effects": [
+      "You can quickly make sense of even the most archaic, damaged, or unfamiliar maps, and you always know which direction is north.",
+      "After performing a check to navigate (such as a check to chart a route through unfamiliar contaminated territory or determine your location from environmental landmarks), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "novelty",
+    "name": "Novelty",
+    "types": [
+      "Mental",
+      "Thrill"
+    ],
+    "flavor": "UMP45 was staring at the vending machine, trying to decide what to get. The commander had already made their choice and was waiting for her. UMP, what do you want? I don't know, there are so many options! I want to try something new! She finally settled on a can of soda she'd never tried before, and took a sip. Her eyes widened. Wow! This is amazing! Why have I never tried this before?!",
+    "effects": [
+      "The first time you attempt a new task and fail, you always think of another route you could take to try to overcome or learn more about the problem.",
+      "After performing a check to do a task you've never attempted before, you remove 3 strife."
+    ]
+  },
+  {
+    "id": "ownership",
+    "name": "Ownership",
+    "types": [
+      "Social",
+      "Taboo"
+    ],
+    "flavor": "The man's office was lined with display cases. Inside each one, a doll's neural core, carefully labeled with a name and a date. His current attendant, a slender thing with blank, compliant eyes, poured his drink without being asked. You collect them?\" the commander asked, keeping their voice neutral. I invest in them. There's a difference.\" *He swirled his glass.* \"A doll without an owner is just hardware waiting to depreciate. I give them purpose. Structure. A place in the world.\" *He looked at the attendant.* \"Isn't that right? The attendant nodded. The commander couldn't tell if she meant it.",
+    "effects": [
+      "You find deep comfort in the idea of possession: of things, of people, of situations. What belongs to you is cared for, maintained, and controlled. You always know the current status and location of anything you consider yours.",
+      "After performing a check to assert ownership or control over something you possess (such as a check to command a subordinate or protect your property from being taken), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "painting",
+    "name": "Painting",
+    "types": [
+      "Creative",
+      "Reflective"
+    ],
+    "flavor": "Vector sat contemplatively, mulling over what her next stroke would be. Like the others, it would probably end up depicting something on fire, but it calmed her nonetheless.",
+    "effects": [
+      "You can identify the signature styles of numerous different schools and individual artists, as well as common motifs and techniques.",
+      "After performing a check to study or practice painting (such as check to assess a painting's qualities and artist or add the finishing touches to your own work), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "performance",
+    "name": "Performance",
+    "types": [
+      "Creative",
+      "Social"
+    ],
+    "flavor": "The bar in the Yellow Zone settlement was half-empty and all the way hostile. The squad needed information from the locals, but nobody was talking. Then Daiyan unslung the guzheng from her back, sat down in the corner, and began to play. It wasn't anything flashy. An old melody, the kind that stirred something in the chest before the mind could name it. By the second phrase, the room had gone quiet. By the third, someone at the bar had set down their drink and was just listening. By the time she finished, three people had bought the squad drinks and one of them was talking freely about the convoy they'd come to ask about. Daiyan said nothing. She just smiled and began another piece.",
+    "effects": [
+      "You are a seasoned performer, and you know how to read and work a crowd. You have many connections in the world of entertainment and civilian life.",
+      "After performing a check to engage with performance (such as a check to make an insightful comment about a show or put on an impromptu performance to distract or disarm someone), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "playfulness",
+    "name": "Playfulness",
+    "types": [
+      "Social",
+      "Interpersonal"
+    ],
+    "flavor": "The debriefing was tense. The mission had gone sideways, and the commander was not happy. HK416 was stiff-backed and furious. G11 was asleep. UMP9 was fidgeting. UMP45 looked at the room and decided it needed fixing. So what I'm hearing is that 416 saved us all through the power of being too angry to die. 416 turned to glare at her. Don't look at me like that. It's a compliment! You were very heroically furious. G11 snorted in her sleep. Even 9's fidgeting settled into a grin. The tension in the room cracked, just enough. 45 smiled. It was the same smile as always, the one that never quite reached her eyes, but kept everyone else's spirits afloat.",
+    "effects": [
+      "When you say something cheeky or irreverent to someone of equal or lower status, they write it off as your playful nature instead of being significantly angered or hurt by it.",
+      "After performing a check to gently mock or tease someone (such as a check to defuse a tense situation with humor or needle a rival with a clever jab they can't help but laugh at), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "pot-stirrer",
+    "name": "Pot Stirrer",
+    "types": [
+      "Social",
+      "Mental"
+    ],
+    "flavor": "UMP45 watched the two PMC liaisons argue across the negotiating table, a faint smile on her lips. The commander leaned over. Did you tell the Galant Group rep that Stryker Solutions was underbidding them? I mentioned it in passing. Over coffee. Very casually. And did you tell the Stryker rep that Galant was questioning their operational competence? Also in passing. Different coffee.\" *The smile widened by a millimeter.* \"Isn't it interesting how they're now both so focused on each other that neither is paying attention to our bid?",
+    "effects": [
+      "After spending a few minutes studying a room, you can determine who has a grudge against whom, which two people are on edge around each other, and other social pressure points you could exploit.",
+      "After performing a check to stir up social chaos (such as a check to incite anger in someone about a perceived slight or encourage two parties to argue about a point of contention), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "provocation",
+    "name": "Provocation",
+    "types": [
+      "Social"
+    ],
+    "flavor": "The enemy squad had dug in behind heavy cover. The commander needed them to break position. HK416 keyed her external speaker. 416, what are you... Your suppressive fire pattern is a textbook Sangvis delta spread. Did you learn tactics from a manual printed before the war, or did someone actually teach you to shoot that badly? The enemy fire shifted: tighter, angrier, more concentrated. On her position. Exactly where she wanted it. They're focused on me. Flank left. You have about thirty seconds before they realize they've been had.",
+    "effects": [
+      "You can always identify a point of sensitivity that you can push upon in another person, though not necessarily whether they'll take your comment as aggressive banter or a grave insult.",
+      "After performing a check to get a rise out of someone (such as a check to taunt an enemy into breaking cover or rally a group into being angry enough to storm a position), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "restoration",
+    "name": "Restoration",
+    "types": [
+      "Creative",
+      "Mental",
+      "Physical"
+    ],
+    "flavor": "The rifle had been pulled from rubble, stock cracked, barrel scratched, action fouled with grit. Anyone else would have stripped it for parts. The armorer turned it over in her hands, studying it like a surgeon studying a patient. This is a waste of time. Just requisition a new one. This is a Type 56. Original manufacture, not a reproduction. See the serial number? Pre-war Norinco stampings.\" *She ran a thumb along the cracked stock.* \"Someone carried this for a long time. You can see where their grip wore the finish. It's still broken. Broken things are just things that haven't been fixed yet.\" *She set it on her workbench and reached for her tools.* \"Give me a week.",
+    "effects": [
+      "You have a particular fondness and skill for restoring damaged objects: not just to working condition, but in a way that honors their history. Your repairs are always markedly more careful and beautiful than strictly necessary.",
+      "After performing a check to mend or restore a damaged object (such as a check to repair a weapon while preserving its original character or restore a piece of pre-war technology to working order), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "service",
+    "name": "Service",
+    "types": [
+      "Interpersonal"
+    ],
+    "flavor": "The other dolls had been offered freedom after Griffin's dissolution. Most took it. G36 did not understand the appeal. You could go anywhere,\" Springfield had said, gently. \"Do anything. I could.\" *G36 straightened the commander's collar without being asked.* \"But I was built to serve. Not because I was forced to, but because it is what I do best, and doing it well is the only thing that has ever made sense to me. Springfield looked at her for a long moment.* \"You're sure? I have never been more sure of anything.\" *She smoothed a crease in the commander's jacket that only she could see.* \"A blade does not envy the hand that wields it. It simply cuts.",
+    "effects": [
+      "You find profound peace in serving another person or cause. Your identity and sense of self are strongest when you have a clear role, a clear master, and a clear purpose. You always anticipate the needs of whoever you serve before they voice them.",
+      "After performing a check to serve or protect the person or cause you are devoted to (such as a check to fulfill a command or shield your master from harm), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "self-destruction",
+    "name": "Self-Destruction",
+    "types": [
+      "Reflective",
+      "Taboo"
+    ],
+    "flavor": "They found Thunder hanging from the rafters again. Thunder, what are you doing? Just... hanging out. Thunder, you know you can't actually die from that, right? She sighed. Cut me down.",
+    "effects": [
+      "You find a strange relief in neglecting your own wellbeing. Sacrificing your health, safety, or resources for others (or for nothing at all) quiets something inside you that self-preservation never could. Others may find your disregard for yourself alarming, but some may be drawn to care for you because of it.",
+      "After performing a check in which you willingly sacrifice your own wellbeing (such as a check to give away something you need, endure harm without resisting, or volunteer for a task no one else would accept), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "sexuality",
+    "name": "Sexuality",
+    "types": [
+      "Social",
+      "Interpersonal",
+      "Taboo"
+    ],
+    "flavor": "The commander found Florence leaning against the medbay doorframe, a syringe twirling lazily between her fingers, wearing a smile that meant someone was about to have a very complicated evening. Florence. What's in the syringe. Vitamins. Florence. Mostly vitamins.\" *She tucked it away and closed the distance by a step. Then another.* \"You look tense, commander. I'm a medical professional. I could help with that. The last person you 'helped' woke up in the brig. And they said they'd never slept better.\" *The smile widened.* \"I take my work very seriously.",
+    "effects": [
+      "You understand desire: your own and others'. You can read attraction, discomfort, and longing in body language and tone, and you know how to use that knowledge, whether to seduce, disarm, or simply make someone deeply uncomfortable.",
+      "After performing a check to seduce, fluster, or leverage someone's attraction (such as a check to distract a guard or extract information through intimacy), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "substance-use",
+    "name": "Substance Use",
+    "types": [
+      "Mental",
+      "Physical",
+      "Taboo"
+    ],
+    "flavor": "The operative's hands were shaking again. Not badly. Not enough for anyone else to notice. He noticed. He found a quiet corner, away from the squad, and opened the small case in his breast pocket. Two ampoules. One for focus. One for calm. He'd told himself he'd only use them before missions. That was three months and a lot of missions ago. The needle went in clean. Two seconds later, the shaking stopped. The world snapped into focus: sharp, bright, manageable. He closed the case, tucked it away, and rejoined the squad with steady hands and clear eyes. Nobody noticed. That was the whole point.",
+    "effects": [
+      "You are intimately familiar with the effects, interactions, and acquisition of chemical substances: stimulants, depressants, hallucinogens, and everything in between. You can identify any substance by sight, smell, or effect.",
+      "After performing a check involving substances (such as a check to identify an unknown chemical compound or find a source of a specific substance in an unfamiliar area), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "survival",
+    "name": "Survival",
+    "types": [
+      "Mental",
+      "Physical"
+    ],
+    "flavor": "The transport was wrecked. Comms were down. The contamination zone stretched in every direction, featureless and hostile. Most of the squad was panicking. The operative was already building a shelter from the wreckage. What are you doing? The wind is coming from the northeast, which means the collapse dust will drift south. We set up on the leeward side of the wreck, use the hull as a windbreak. There's groundwater about two meters down, as you can tell from the soil color.\" *He was already digging.* \"We have enough rations for three days if we half them. Rescue will come in two. How do you know rescue will come in two? Because I activated the emergency beacon before I started digging. Priorities.",
+    "effects": [
+      "You can always find water, shelter, and food in even the most hostile environments. Contamination zones, urban ruins, and barren wasteland are all just problems with solutions you've already memorized.",
+      "After performing a check to survive in hostile conditions (such as a check to find potable water in a contaminated zone or build a shelter from available materials), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "travel",
+    "name": "Travel",
+    "types": [
+      "Mental",
+      "Physical"
+    ],
+    "flavor": "The Elmo had crossed into unfamiliar territory: a Yellow Zone settlement built inside the husk of a pre-war shopping mall. The squad was on edge. The operative who'd been riding with them for the past week stepped off the transport and stretched like she was coming home. You've been here before? Never. But I've been to a dozen places like it.\" *She pointed.* \"Market's on the second floor; always is, because the ground floor floods. Local authority will be whoever controls the generator. And that smell is lamb fat and rosemary, which means someone here trades with the Green Zone.\" *She grinned.* \"New places aren't strange. They're just puzzles you haven't solved yet.",
+    "effects": [
+      "You are not unsettled by unfamiliar customs or strange environments, and you can comfortably adapt to new surroundings even when others are disoriented.",
+      "After performing a check to travel to a new location or interact with something novel (such as a check to identify an unfamiliar plant or phenomenon, or navigate an unknown settlement's social dynamics), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "violence",
+    "name": "Violence",
+    "types": [
+      "Physical",
+      "Thrill",
+      "Taboo"
+    ],
+    "flavor": "The engagement lasted eleven minutes. When it was over, Negev was standing in a field of spent casings, barrel glowing, breathing hard. Not from exhaustion. From something else. The squad medic approached cautiously.* \"Negev? You hit? No.\" *She lowered the MG. Her hands were steady. Her eyes were calm, calmer than anyone had seen them all week.* \"No. I'm fine. And she meant it. For once, she actually meant it.",
+    "effects": [
+      "You are a student of violence in all its forms. You can always identify the most decisive way to incapacitate or destroy any target, and you can quickly assess the relative threat and combat capability of anyone you observe.",
+      "After performing a check in which the violence is total and decisive (such as a check to score a critical hit or deliver a killing blow), you remove 3 strife."
+    ]
+  },
+  {
+    "id": "wordplay",
+    "name": "Wordplay",
+    "types": [
+      "Mental",
+      "Social"
+    ],
+    "flavor": "The intercepted message read: \"The baker confirms the bread will rise on Thursday. Expect a warm delivery. The squad stared at it. The signals analyst smiled. 'Baker' is their handler, old Sangvis nomenclature. 'Bread rising' means an operation is escalating. 'Warm delivery' is armed personnel. They're launching on Thursday. How do you get all that from a sentence about bread? Because language is never just language. Every word is a choice, and every choice tells you something about the person who made it.\" *She was already drafting a response in the same cipher.* \"Now, do we want to warn them we're listening, or do we want to have some fun with this?",
+    "effects": [
+      "You can always identify rhetorical patterns, coded language, and layered meanings in the words of others, whether spoken or written.",
+      "After performing a check to interpret or create clever uses of language (such as a check to draft a message with a hidden meaning or subtly imply something to your audience through a double entendre), you remove 3 strife."
+    ]
+  }
+]

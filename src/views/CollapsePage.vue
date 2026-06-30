@@ -1,0 +1,235 @@
+<template>
+  <ContentFrame>
+    <Breadcrumb :crumbs="crumbs" />
+
+    <h1>Collapse Radiation</h1>
+
+    <SectionDivider label="COLLAPSE FLUID" />
+
+    <h2>Collapse Fluid &amp; Radiation</h2>
+
+    <p>Collapse Fluid is an exotic particle-wave engineered by a civilization that went extinct before the dinosaurs, designed to disrupt the attractive and repulsive forces between subatomic particles. When released into ordinary matter, it propagates outward until it reaches quantum stability, at which point its expansion halts.</p>
+
+    <p>When Collapse Fluid permeates matter, it emits <strong>Collapse radiation</strong>: an energy that destabilizes biological and electronic systems alike. In organic tissue, it rewrites DNA, spurs aggressive cancerous growth, and degrades neurological function. In electronics, it corrupts data integrity, sensor coherence, and long-term system stability.</p>
+
+    <p>Matter exposed to Collapse radiation undergoes silicification, forming crystalline structures similar to silica: jagged, glassy growths that erupt from soil, concrete, bone, and steel. Purified, these crystals are highly insulating against further radiation, making them the basis for most protective equipment.</p>
+
+    <p>In the underground economy of the 2072s, Eastern European brokers mint Collapse crystals into a fiat currency called Collapse Pieces. Some bounty hunters make their living harvesting crystals from the bodies of the dead and the infected.</p>
+
+    <RulesCallout>
+      <p>Collapse radiation does not dissipate harmlessly. Exposure accumulates. Survival is measured by how long degradation can be managed before the body gives out.</p>
+    </RulesCallout>
+
+    <h3>Effects on Humans</h3>
+
+    <p>High-dose exposure produces rapid, catastrophic failure. Coughing blood. Pain behind the eyes and deep in the abdomen. Vision loss, convulsions, scorch-like lesions across exposed skin, periods of unconsciousness. The body's amino acids decompose. Connective tissues break down. Red blood cell count plummets, starving the blood of oxygen. Under heavy radiation, transformation into an infected takes minutes. Under moderate doses, the onset period stretches to 24 to 48 hours, but the body must be healthy enough to survive the DNA recombination. Most people are not. Most people just die.</p>
+
+    <p>Lower doses accumulated over time look like accelerated aging: physical weakness, impaired cognition, skin that thins and cracks. Eventually the silicification begins and the victim becomes immobile, prone to hallucinations, and then stops being a person at all. This is <strong>ELID</strong> (Eurosky Low-Emission Infectious Disease).</p>
+
+    <h3>Effects on T-Dolls</h3>
+
+    <p>T-Dolls do not develop ELID. Their bodies are mechanical, not biological. Collapse radiation still degrades their electronics: memory corruption, phantom sensor readings, hallucinations projected into the neural cloud, cascading system faults. In Yellow Zones, a T-Doll can operate freely while her Commander sweats inside a sealed suit. In Red Zones, both of them are on borrowed time. At extreme levels, full system shutdown or irreversible data loss; the Doll's neural cloud fragments and whatever was stored there is gone.</p>
+
+    <ExampleBox>
+      <h4>Exposure at a Blast Site</h4>
+      <p>A Collapse Bomb detonates near a rail spur. You sprint for cover as the shockwave passes. Your T-Doll catches you as you cough blood and stumble. Moments later, she looks at you and asks, "Wait, who are you, again?"</p>
+    </ExampleBox>
+
+    <SectionDivider label="EXPOSURE RULES" />
+
+    <h2>Collapse Exposure Rules</h2>
+
+    <p>Collapse exposure is <strong>cumulative and persistent</strong>. It does not fade with rest, time, or narrative relief. It is tracked explicitly, because the world tracks it explicitly. Every PMC outfit, every military unit, every licensed Yellow Zone contractor keeps dosimetry logs. The question is never "have you been exposed?" It is always "how much?"</p>
+
+    <h3>The Collapse Track</h3>
+
+    <RulesCallout>
+      <ul>
+        <li><strong>Capacity:</strong> (Sum of all Approaches) x 5</li>
+        <li><strong>Collapse Value:</strong> Starts at 0</li>
+        <li><strong>Persistence:</strong> Never decreases naturally</li>
+        <li><strong>Reset Condition:</strong> Only resets when it fills completely</li>
+      </ul>
+    </RulesCallout>
+
+    <h3>Gaining Collapse by Zone</h3>
+
+    <table>
+      <thead>
+        <tr><th>Zone</th><th>Collapse Gain</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Green</td><td>None</td></tr>
+        <tr><td>Purification</td><td>+1 per month</td></tr>
+        <tr><td>Yellow</td><td>+1 per day</td></tr>
+        <tr><td>Red</td><td>+1 per hour</td></tr>
+        <tr><td>Black</td><td>+1 per round (6 seconds)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Protective Gear</h3>
+
+    <p>Protective equipment reduces effective exposure severity by <strong>one zone step</strong>: Black counts as Red, Red as Yellow, Yellow as Green. Gear is built from purified Collapse crystals woven into sealed suits and respirators. Zone downgrades do not stack unless explicitly stated. If characters have different protection levels, track effective zones separately.</p>
+
+    <ExampleBox>
+      <p>A Commander with Approaches totaling 15 has a Collapse Track Capacity of 75. They spend 12 hours operating in a Red Zone while fully protected, treating it as Yellow. They gain +1 Collapse. Unprotected, the same time would result in +12 Collapse.</p>
+    </ExampleBox>
+
+    <h3>Consequences of Track Completion</h3>
+
+    <p>When a Collapse Track fills, resolve immediately: apply the next ELID stage Condition if the character is human, then reset the Collapse Track to 0. ELID progression begins or continues from that point. Each cycle pushes the character closer to turning.</p>
+
+    <SectionDivider label="ELID" />
+
+    <h2>ELID</h2>
+
+    <p>ELID is what happens when Collapse radiation rewrites a living body and the body survives. Tissues silicify. Muscles and blood vessels harden into something closer to stone than flesh. The epidermal layer develops a thick shell of crystalline silica. Skeletal calcification drives bone density beyond conventional steel.</p>
+
+    <p>The mind goes last. Higher cognition gives way to feral aggression, and eventually there is nothing left except the impulse to attack anything that moves and is not another infected. Mutated cells generate new organelles that release Collapse radiation, making every infected a walking transmitter. The disease propagates itself through its hosts.</p>
+
+    <h3>ELID Stages</h3>
+
+    <p>ELID progresses through three stages, each defined as a Condition (see <router-link to="/conditions">Conditions</router-link>).</p>
+
+    <p><strong>Early-Stage ELID:</strong> Bluish-green discoloration of the skin. Accelerated aging: wrinkles, crow's feet, thinning hair. Difficulty breathing. Muscular weakness and unstable vitals. The infected is still recognizably human and still capable of rational thought, though both are slipping. At this stage, many infected cannot flex their fingers well enough to operate a weapon, even if they still want to.</p>
+
+    <p><strong>Middle-Stage ELID:</strong> Silicification is visible and spreading. The skin hardens into a rough, crystalline shell. Cognitive decline accelerates; the infected responds to stimuli with increasing aggression and decreasing comprehension. Speech becomes fragmented or stops entirely. Some retain muscle memory from their former lives: infected soldiers have been observed firing rifles haphazardly, though they cannot perform complex actions like priming grenades.</p>
+
+    <p><strong>Late-Stage ELID:</strong> The person is gone. What remains is a silicified shell of hardened tissue wrapped around feral aggression. Late-stage infected are attracted to sound and movement, attack everything that is not another infected, and migrate with Collapse storms through contamination zones. In high-radiation areas with no prey, they cannibalize each other. Vaccines no longer work. Surgery can reduce Late to Middle, but by this point the question is whether anyone would spend the resources.</p>
+
+    <h3>Beyond Late-Stage</h3>
+
+    <p>Infected who survive long enough in high-radiation environments undergo further mutation. Soldiers severely irradiated become gigantified: larger, more resilient, spewing acidic fluids. The longest-surviving infected, designated Type-D, are no longer recognizably human. They are monstrous in form, require assault artillery platforms to kill, and can act as pack leaders for lesser infected. Reports from Black Zone expeditions suggest that worse things than Type-D exist. Nobody has survived long enough to classify them.</p>
+
+    <p>Animals and plants contract ELID too. Bears with hardened hides and protruding tusks. Deer with four-meter antlers. Acid-spitting spiders the size of dogs.</p>
+
+    <p>In the worst zones, multiple carbon-based organisms fuse together into creatures called Boojum: classified as Threat Level IV minimum by the URNC, rare enough that most people think they are rumor, large enough that the people who know better wish they were.</p>
+
+    <h3>ELID Progression</h3>
+
+    <p>Progression is checked weekly. Each stage uses the same <strong>Resolve check</strong>, and the TN is based on <strong>weeks since last effective treatment</strong>, not total time since infection. A character who gets vaccinated in week 2 resets that counter; their next check uses TN 1, not TN 3.</p>
+
+    <ExampleBox>
+      <h4>Living With It</h4>
+      <p>Your Commander contracted Early-Stage ELID three weeks ago. Week 1 passed with no treatment; the check was TN 1 and she passed. Week 2, still no treatment; TN 2, barely passed. In week 3, a contact in the Green Zone got her a vaccine. The timer resets. Week 4's check will be TN 1 again. She has not gotten better. She has bought time.</p>
+    </ExampleBox>
+
+    <SectionDivider label="TREATMENT" />
+
+    <h2>Treatment &amp; Access</h2>
+
+    <p>Before the 21st century, doctors treated ELID with standard radiation sickness protocols. None of it worked. Between 1976 and 1980, an estimated 150,000 ELID infections occurred worldwide, roughly 10,000 of which turned fully infected. Research into effective treatment did not begin in earnest until the Relic Arms Limitation Treaty enabled international cooperation in 1983.</p>
+
+    <p>By 2064, severe Collapse Fluid irradiation is treatable, provided the patient has not fully turned. The primary therapy strengthens the patient's antibodies to fight the illness over weeks and months. Nobody has found a cure. Treatment means slowing the decay, stretching out the interval between one stage and the next.</p>
+
+    <h3>Vaccines</h3>
+
+    <p>Vaccines reset the progression timer for the current ELID stage. They buy time; they do not reverse damage. A vaccinated character's weekly TN resets to 1 as though they were freshly infected at that stage. Vaccines have no effect at Late-Stage ELID. By then, there is nothing left to slow down.</p>
+
+    <p>In Green Zone street markets, cheap fraudulent ELID cures and "protective supplements" are sold to frightened residents who do not know the difference. Real vaccines are controlled supply, distributed through military channels, corporate medical programs, and the black market. The price reflects the desperation of the buyer.</p>
+
+    <h3>Surgical Intervention</h3>
+
+    <p>Surgery reduces ELID severity by one stage. Early-Stage surgery removes ELID entirely. Middle reduces to Early. Late reduces to Middle. The procedure does not alter Collapse exposure history or track behavior; the character's body remembers everything the surgeon cut out.</p>
+
+    <p>Access to surgery is a strategic asset. The GM should treat it as leverage, not routine care. The people who can perform this work are rare, they know what their skills are worth, and they have their own agendas. Paradeus recruits in Yellow Zones by promising ELID cures. Whether those cures are real is a separate question.</p>
+
+    <h3>Immunity</h3>
+
+    <p>A vanishingly small number of people are partially or fully immune to ELID. A <strong>semi-immunosome</strong> can tolerate close contact with Collapse radiation or infected for extended periods with no adverse effects; this trait can be innate or acquired, and carries no special connection to Relic Technology. A <strong>pan-immunosome</strong> can survive in any level of Collapse radiation indefinitely, and their existence implies a privileged relationship with the alien technology that created the Fluid in the first place. Finding one is the kind of thing organizations will burn cities to accomplish.</p>
+
+    <SectionDivider label="CONTAINMENT ZONES" />
+
+    <h2>Containment Zones</h2>
+
+    <p>After the Beilan Island Incident leveled Shanghai and killed an estimated 870 million people in the first hour, Collapse particles launched into the stratosphere and trade winds pushed the cloud across the globe. The UN used low-orbit detection satellites to map radiation intensity, initially defining three contamination levels. These became Green, Yellow, and Red Zones. Black and White were added later by the URNC as the full scope of the catastrophe became clear.</p>
+
+    <p>Radiation intensity is measured in <strong>Vebryans</strong>. Zone boundaries are not static; they shift with weather patterns, seismic activity, and Collapse storms. Barrier Walls constructed at great height prevent roaming infected from entering habitable zones and blunt the force of storm systems. Purification towers cleanse contamination through mechanisms that remain poorly understood.</p>
+
+    <ZoneCard title="White Zone (0 Vebryans)" zone="white" :points="[
+      'Radiation is functionally non-detectable. Infrastructure supports long-term human life without protective equipment.',
+      'The closest thing left to the old world. Advanced medicine, cultural continuity, public infrastructure that does not feel temporary.',
+      'Access is purchased through wealth, service, or extreme value extraction. Citizenship is transactional. The scarcity of entry permits is by design; these enclaves function because most people are kept out of them.'
+    ]" />
+
+    <ZoneCard title="Green Zone (0-1 Vebryan)" zone="green" :points="[
+      'Low, stable radiation profiles with routine monitoring confirming levels below clinical thresholds. Perfectly habitable.',
+      'Technically safe and functionally oppressive. Residents are factory workers for White Zone cities, bounty hunters, PMCs, black market merchants. Everyone is implanted with ID chips that track biological and social data.',
+      'Demography is controlled by the corresponding White Zone administration. The streets are dense, surveilled, and economically sharp-edged.',
+      'Green Zones remain stable because the desperate self-select out into the danger zones, and because the walls keep the infected on the other side.'
+    ]" />
+
+    <ZoneCard title="Yellow Zone (1-150 Vebryans)" zone="yellow" :points="[
+      'The frontier. Radiation is moderate and variable. Wastelands of barren desert, salt flat, and skeletal ruin.',
+      'T-Dolls move freely here while humans sweat inside protective equipment. Collapse storms hit occasionally. ELID infected wander the edges, but so do bounty hunters, raiders, scavengers, and civilians who fell through the cracks of Green Zone society.',
+      'Paradeus recruiters work the settlements, promising cures for ELID to anyone willing to listen. Long-term habitation is officially discouraged, rarely sanctioned, and happens anyway.',
+      'Access is licensed, monitored, and contingent on corporate or military contracts that most operators cannot afford to lose.'
+    ]" />
+
+    <ZoneCard title="Purification Zone" zone="purification" :points="[
+      'Between Yellow and Green classifications, under active remediation. Radiation trends downward but fluctuates locally.',
+      'Habitation is transient and restricted to authorized personnel. These zones feel like a construction site that never finishes: temporary fencing, dosimetry checkpoints, purification towers humming at frequencies you feel in your teeth.',
+      'The promise is that this land will be Green someday. The reality is that someday keeps getting pushed back.'
+    ]" />
+
+    <ZoneCard title="Red Zone (150-10,000 Vebryans)" zone="red" :points="[
+      'Cities and industrial belts that absorbed direct Collapse bomb detonations. Radiation is high and unstable. Collapse storms are frequent.',
+      'No permanent habitation beyond heavily shielded research or containment sites. Humans and T-Dolls both require heavy protection.',
+      'The ruins are full of wandering infected, and the infected grow worse the longer they stay. Human presence demands full protective suits, strict time limits, and extraction readiness.',
+      'T-Dolls can operate for days but accumulate system faults and corrupted logs that compound with every hour.',
+      'Access is mission-specific, tightly controlled, and often classified. What happens in Red Zones stays in Red Zones.'
+    ]" />
+
+    <ZoneCard title="Black Zone (10,000+ Vebryans)" zone="black" :points="[
+      'Ground Zero. Dozen-kilometer-wide impact craters emitting lethal Collapse radiation. Places where reality never finished breaking.',
+      'Near-constant Collapse storm. Luminous dust, static-laced fog, airborne crystal shards. The ground erupts in jagged crystalline growths that shift and surge without warning.',
+      'Only ELID infected and mutated flora survive here, and survive is generous. All protection fails eventually; survival without immediate medical extraction is measured in minutes.',
+      'T-Dolls suffer rapid disablement without heavy hardening and frequent resets. Entry is prohibited except under sovereign directive or extraordinary emergency.',
+      'The things that come out of Black Zones are worse than the things that went in.'
+    ]" />
+
+    <SectionDivider label="COLLAPSE STORMS" />
+
+    <h2>Collapse Storms</h2>
+
+    <p>Collapse storms are a weather phenomenon that did not exist before the Beilan Island Incident. They form when Collapse radiation contaminates weather systems, producing violent fronts that race along transit lines, flare across ruined industrial belts, or roll out of Black Zone horizons with no warning and no mercy.</p>
+
+    <p>Standard meteorological methods cannot predict them. They hit occasionally in Yellow Zones, frequently in Red Zones, near-constantly in Black Zones. ELID infected migrate with the storms, drifting through contamination zones like debris in a current.</p>
+
+    <p>When a storm passes through a settled area, everything caught in the open dies or wishes it had.</p>
+
+    <RulesCallout>
+      <ul>
+        <li><strong>Onset:</strong> Minutes to tens of minutes, often with little warning</li>
+        <li><strong>Duration:</strong> 30 to 120 minutes, occasionally longer in heavily contaminated regions</li>
+        <li><strong>Footprint:</strong> Blocks to districts (urban) or whole valleys/coastal shelves (open terrain)</li>
+      </ul>
+    </RulesCallout>
+
+    <RulesCallout>
+      <p><strong>Storm Exposure Rule:</strong> During a Collapse storm, treat the affected area as <strong>one zone higher</strong> for exposure purposes. A Yellow Zone becomes Red. A Red Zone becomes Black. A Black Zone during a storm is not a place where player characters should be.</p>
+    </RulesCallout>
+
+    <p>Standard protocol is immediate shelter, suspension of nonessential activity, and rapid extraction once conditions stabilize or a secure corridor is verified. Barrier Walls along Green Zone perimeters help blunt the force of approaching storms, but they do not stop them entirely. Characters caught in the open when a storm hits face a race against their Collapse Track and whatever infected the storm dragged in with it.</p>
+
+    <PageNav :prev="prev" :next="next" />
+  </ContentFrame>
+</template>
+
+<script setup>
+import ContentFrame from '@/components/layout/ContentFrame.vue'
+import Breadcrumb from '@/components/layout/Breadcrumb.vue'
+import SectionDivider from '@/components/layout/SectionDivider.vue'
+import RulesCallout from '@/components/callouts/RulesCallout.vue'
+import ExampleBox from '@/components/callouts/ExampleBox.vue'
+import ZoneCard from '@/components/cards/ZoneCard.vue'
+import PageNav from '@/components/layout/PageNav.vue'
+
+const crumbs = [
+  { label: 'Home', to: '/' },
+  { label: 'Collapse Radiation' }
+]
+
+const prev = { to: '/a-boy-and-his-doll', label: 'A Boy & His Doll' }
+const next = { to: '/conditions', label: 'Conditions' }
+</script>

@@ -4,11 +4,15 @@ on:
   push:
     branches: [main]
     paths:
-      - 'data/**'
-      - 'assets/**'
-      - 'js/**'
-      - 'pages/**'
+      - 'src/**'
+      - 'public/**'
       - 'index.html'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.js'
+      - 'Containerfile'
+      - 'nginx.conf'
+      - '.github/workflows/publish.yml'
   workflow_dispatch:
 
 env:

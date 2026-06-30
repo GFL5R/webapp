@@ -1,0 +1,484 @@
+[
+  {
+    "id": "love-blind",
+    "name": "Love Blind",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The flowers had been appearing outside Helian's office every morning for two weeks. Kalina had counted. Today there were seven, arranged in a neat row along the doorframe. Someone has a secret admirer Helian stepped over them without looking down. Logistics left them. Something about base beautification. Kalina looked at the flowers. She looked at Helian. She opened her mouth. Right, Beautification...",
+    "effects": [
+      "You are completely and utterly blind to the intricacies of romance and romantic cues. This can lead to misunderstandings and missed opportunities in social interactions involving romantic interests.",
+      "When performing a check that involves understanding or responding to romantic signals, you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "threatening-demeanor",
+    "name": "Threatening Demeanor",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The refugees had gathered near the south gate, waiting for someone to tell them where to go. Command sent Vasquez to direct them to the temporary shelters. She made it three steps into the crowd before a woman pulled her children behind her. A man near the front raised both hands, palms out, and backed away. The whole group shifted like a school of fish spotting a shadow overhead. I'm here to help.\" *She kept her voice level.* \"Shelters are this way. Nobody moved. A child started crying. I could have sent someone else,\" *the Commander offered over the radio, too late. Yeah. You could have.",
+    "effects": [
+      "Something about your appearance, posture, or demeanor makes people instinctively wary of you. Even when your intentions are entirely benign, strangers tend to assume the worst, and first impressions rarely land in your favor.",
+      "When performing a check where appearing non-threatening would help (such as approaching a stranger peacefully or trying to calm a tense situation), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "rival-name",
+    "name": "Rival [Name]",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The requisition form came back denied for the third time. Same clerk, same stamp, same vague citation of \"inventory discrepancies.\" Leva stared at the paperwork. He's doing this on purpose. You don't know that. I beat him for the liaison posting eight months ago. He's been losing my paperwork ever since.\" *She set the form down carefully, as if it might bite.* \"Last week he told the quartermaster I'd already drawn my ammunition allotment. I hadn't. So go over his head. His supervisor plays cards with him every Thursday.\" *Leva smiled, thinly.* \"He's patient. I'll give him that.",
+    "effects": [
+      "Someone has a personal vendetta against you, and they will go out of their way to make your life difficult. They may not be openly hostile, but they will use their influence and resources to undermine you whenever the opportunity arises.",
+      "When performing a check where your rival's interference could complicate matters (such as requisitioning supplies through their department or persuading a mutual acquaintance), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "missing-arm",
+    "name": "Missing Arm",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The crate was jammed against the wall at an angle, and Mack couldn't get the leverage he needed. He braced his shoulder against it and pushed, boots scraping on concrete, but without a second hand to grip the edge it kept slipping. Need a hand?\" *One of the new recruits jogged over, then froze, eyes dropping to the pinned sleeve.* \"I, uh... sorry, I didn't mean... Just grab the other side. They moved the crate in silence. The recruit kept glancing at him like he wanted to say something. Mack saved him the trouble. It's fine. Everyone says it.",
+    "effects": [
+      "You are missing one of your arms, either from birth, injury, or surgical removal. You have learned to compensate in most daily tasks, but certain physical activities remain significantly harder for you.",
+      "When performing a check that would normally benefit from two hands (such as climbing a wall, steadying a heavy weapon, or carrying bulky equipment), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "animal-aversion",
+    "name": "Animal Aversion",
+    "types": [
+      "Interpersonal"
+    ],
+    "flavor": "The stray had been friendly with everyone in the squad. It ate from Volya's hand, slept at the foot of Harpsy's cot, and followed the Commander around the compound like a shadow. Then Nika rounded the corner, and the dog's ears went flat. Easy, boy. I'm not going to... The growl started low and built until the dog was backing away, hackles raised, teeth bared. Nika hadn't moved. It's not personal,\" *the Commander offered. It's always personal.\" *Nika watched the dog retreat behind a supply pallet.* \"Every animal I've ever met has hated me. Cats, dogs, horses. A parrot tried to bite my ear off once.",
+    "effects": [
+      "Animals react to you with instinctive hostility or fear. Dogs growl, cats hiss, horses shy away. You have no idea why, and no amount of patience or gentle behavior seems to change it.",
+      "When performing a check that involves interacting with an animal (such as calming a guard dog or riding a horse), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "insignificant",
+    "name": "Insignificant",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The briefing had been going for twenty minutes. Twice now, Petra had raised her hand. Twice, the officer's gaze had swept past her like she was part of the furniture. Sir, the northern approach is... Hold that thought.\" *He turned to the sergeant.* \"Kowalski, what's your read on the northern approach? Kowalski said exactly what Petra had been trying to say. The officer nodded approvingly. Good eye, Kowalski. Petra closed her mouth. Next to her, Harpsy winced in sympathy.",
+    "effects": [
+      "People tend to look right through you. In conversations, your points get attributed to whoever speaks next. In crowds, you are the first person forgotten. It is not that people dislike you; they simply never register that you were there.",
+      "When performing a check where being taken seriously matters (such as giving orders, making a persuasive argument, or trying to hold someone's attention), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "lingering-fatigue",
+    "name": "Lingering Fatigue",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "Mechty had slept for eleven hours. Klukai had counted, because Klukai counted everything. Eleven hours, and when Mechty finally sat up, she looked exactly the same as when she had laid down. I was going to wake you earlier. Commander intervened. You've slept for 11 whole hours. Mm.\" *Mechty rubbed her eyes with the heel of her palm.* \"Didn't help. Eleven hours didn't help. It never helps.\" *She reached for the manga on her nightstand, fumbled it, and let it fall open on her lap instead of picking it up again.* \"I wake up and it's like I never slept. Every morning. Klukai watched her for a moment. Mechty's eyes were already half-closed again.",
+    "effects": [
+      "Your body holds onto exhaustion longer than it should. After exertion that would leave others winded for minutes, you are drained for hours. Recovery is slow, and pushing through only makes it worse.",
+      "When performing a check where physical recovery matters (such as bouncing back after a forced march, staying alert after a long shift, or shaking off the effects of a recent injury), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "blackmailed",
+    "name": "Blackmailed",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The message arrived at 0200, same as last week. No sender ID, no signature. Just a time, a place, and a reminder. Mosin stared at the screen for a long time. Then she got dressed, quietly, and slipped out of the barracks. You've been disappearing a lot lately,\" *the Commander mentioned the next morning, casually enough that it wasn't casual at all. Trouble sleeping. Every Tuesday? Mosin held the Commander's gaze for exactly two seconds too long, then looked away. Every Tuesday.",
+    "effects": [
+      "Someone has leverage over you, and they are not shy about using it. You do not know when the next demand will come, only that it will, and that refusal carries consequences you are not prepared to face.",
+      "When performing a check where your blackmailer's influence could interfere (such as acting freely in their territory, keeping a secret they know, or refusing one of their demands), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "dependent",
+    "name": "Dependent",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The mission briefing was clear: seventy-two hours in the field, no exceptions. Groza was already packed when Helena sat down in front of the door. Helena. Please move. No. Groza stared at her. Helena stared back. The Commander will check on you. Krolik will be here. Krolik doesn't read to me right. She does the voices wrong. Groza opened her mouth, closed it, and stood there for a long time. She picked up her radio. Convoy, Groza. I need fifteen minutes. We leave in ten. Then I need ten minutes. She set her pack down, sat on the floor next to Helena, and opened the book to where they'd left off. She didn't do the voices right either, but Helena leaned against her arm anyway.",
+    "effects": [
+      "Someone in your life relies on you in a way you cannot ignore. Their needs create obligations that pull you away from your duties, and the guilt of neglecting either side is a weight that never fully lifts.",
+      "When performing a check where your dependent's needs conflict with the task at hand (such as choosing between a mission and a personal emergency, or staying focused when you know they need you), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "criminal-record",
+    "name": "Criminal Record",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The checkpoint officer scanned the ID twice, then looked up. Step aside, please. There a problem? Your file's flagged. I need to make a call. The rest of the squad walked through without stopping. Colphne stood in the holding area for forty-five minutes while two officers confirmed what the system already knew: discharged, reinstated, conditionally cleared. All of it legal, all of it on paper, and none of it fast enough to keep her from feeling like a suspect every time she crossed a district line. You're clear. I know.",
+    "effects": [
+      "Your past includes a criminal conviction, a dishonorable discharge, or some other official black mark that follows you through every database and background check. Even people who know you have moved on may not fully trust you.",
+      "When performing a check where your record could work against you (such as passing a background check, gaining someone's trust, or dealing with law enforcement), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "easy-mark",
+    "name": "Easy Mark",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "Kalina spread the haul out on the table, beaming. Four crates of \"premium\" rations, a case of \"military-grade\" batteries, and what she had been assured was a \"rare\" signal amplifier. How much did you pay for all this? A steal! Only eight hundred credits. The Commander picked up the signal amplifier. It was a civilian radio antenna with the serial number filed off and \"MILSPEC\" written on it in marker. Kalina. ...It's not military-grade, is it. The batteries are expired, too.",
+    "effects": [
+      "You are a terrible judge of value. Merchants see you coming, con artists love you, and your friends have learned to intervene before you make purchases. You are not stupid; you simply have no instinct for when you are being cheated.",
+      "When performing a check that involves evaluating a deal, negotiating a price, or detecting a commercial deception, you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "off-putting",
+    "name": "Off-Putting",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The liaison mixer was supposed to be a chance to build connections. Thirty minutes in, the Commander noticed a familiar pattern forming around one corner of the room. AEK-999 was standing alone by the refreshments, drink in hand, watching the crowd with an expression that was, by any objective measure, pleasant. Friendly, even. And yet the nearest person was a full three meters away, and the gap was growing. You're doing it again,\" *the Commander murmured as she passed. Doing what? I'm smiling. I know. That might be the problem.",
+    "effects": [
+      "Something about you makes people instinctively keep their distance. It is not hostility; it is more like discomfort. You might not even know what it is, but social warmth does not come naturally to those around you when you are present.",
+      "When performing a check where personal appeal would help (such as making a good first impression, flirting, or putting someone at ease), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "absent-minded",
+    "name": "Absent-Minded",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "Has anyone seen my sidearm? The squad exchanged looks. Peritya was already patting down her vest pockets, checking under her cot, lifting papers off the desk. You had it at the briefing. I know I had it at the briefing. I also had my notebook at the briefing, and that turned up in the refrigerator. ...Why was your notebook in the refrigerator? If I knew that, I wouldn't be looking for my sidearm. They found it in the bathroom. She had set it on the shelf while washing her hands and walked out thinking about something else entirely.",
+    "effects": [
+      "You lose track of immediate details with alarming regularity. You can recall obscure facts from years ago, but where you put your keys five minutes ago is a genuine mystery. Important things slip through the cracks when you are not actively focusing on them.",
+      "When performing a check where keeping track of immediate details matters (such as remembering where you left something or following a sequence of rapid instructions), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "squeamish",
+    "name": "Squeamish",
+    "types": [
+      "Physical",
+      "Mental"
+    ],
+    "flavor": "The casualty was conscious, which was the good news. The bad news was that the wound was open and needed pressure, and the closest person was Harpsy. Harpsy, put your hands on the wound. Harpsy looked at the wound. She looked at her hands. She looked at the wound again. Her face went the color of old paper. I can... I'll get the medic. The medic is busy. You need to apply pressure. Now. She put her hands on the wound. She applied pressure. She also threw up on the patient's boots, but the pressure held.",
+    "effects": [
+      "The sight of blood, open wounds, or severe injury triggers a visceral reaction in you. You do not choose to freeze or feel sick; your body simply does it, and overriding that response takes real effort.",
+      "When performing a check where exposure to graphic injury is involved (such as treating a wound or maintaining composure at a grisly scene), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "heavy-sleeper",
+    "name": "Heavy Sleeper",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The alarm had been going for four minutes. The rest of the squad was dressed and at their posts. Volya was still in bed. Volya. VOLYA. Nothing. Krolik shook him. Nothing. She pulled the blanket off. He curled up tighter. How is this possible. There is a siren. She dumped a canteen of water on his head. He blinked, slowly, like a man surfacing from the deep end of a pool. ...Is it morning? It is an emergency. Oh.\" *He sat up, water dripping off his chin.* \"How bad? You slept through the siren, Volya. So... medium?",
+    "effects": [
+      "You sleep like the dead. Alarms, shouting, even physical shaking sometimes fails to rouse you. Once you are out, you are out, and waking up is a slow, disorienting process.",
+      "When performing a check where waking quickly matters (such as responding to a nighttime alarm or reacting to danger while asleep), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "open-book",
+    "name": "Open Book",
+    "types": [
+      "Social"
+    ],
+    "flavor": "The Commander told Makiatto the plan was to throw a surprise party for Krolik. Makiatto nodded seriously and promised to keep it secret. Twenty minutes later, Krolik walked into the common room. Makiatto made eye contact, immediately looked at the ceiling, and started humming. What's wrong with you? Nothing! Everything's normal! Why would anything be happening? Krolik squinted at her. Who's throwing me a party? THE COMMANDER.\" *Makiatto slapped both hands over her mouth.",
+    "effects": [
+      "Every thought you have plays across your face in real time. Surprise, disgust, affection, deception; anyone watching can read you like a broadsheet. You are physically incapable of a convincing bluff.",
+      "When performing a check where concealing your true feelings matters (such as lying, hiding your reaction, or maintaining a neutral expression under pressure), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "butterfingers",
+    "name": "Butterfingers",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The Commander asked Dandelion to grab a replacement fuse from the supply shelf. A reasonable request. A simple task. She pulled the fuse box forward. It knocked into the box behind it. That box tipped sideways into a stack of battery packs, which cascaded off the shelf and onto a crate of smoke grenades, which fell off the table. Everyone froze. One grenade rolled to a stop against the Commander's boot. ...Those aren't armed. I know they're not armed, Dandelion. So technically nothing bad happened. Technically.",
+    "effects": [
+      "You have a talent for knocking things over, dropping things at the worst moment, and creating chain reactions of minor disasters with your hands. Delicate tasks require your full concentration, and even then the results are not guaranteed.",
+      "When performing a check that requires careful physical handling (such as picking a lock, disarming a device, or handling fragile equipment), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "tongue-tied",
+    "name": "Tongue-Tied",
+    "types": [
+      "Mental",
+      "Social"
+    ],
+    "flavor": "The debrief should have been straightforward. Gager had the information. She knew what happened. She opened her mouth. The hostiles came from the... the side. The left side. No, the east. East-adjacent? There was a building, and they were behind... near... the building had a sign, I think it was red... The intelligence officer waited patiently. They flanked us. From the east.\" *She exhaled.* \"That's what I meant. That took you a while. It always does.",
+    "effects": [
+      "The gap between what you know and what comes out of your mouth is wide and persistent. You lose words mid-sentence, circle around your point, and struggle to express clear thoughts under any kind of pressure.",
+      "When performing a check where clear verbal communication is critical (such as delivering a report, explaining a plan under time pressure, or giving precise directions), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "low-pain-threshold",
+    "name": "Low Pain Threshold",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The medic pulled the splinter out with tweezers. It was maybe two centimeters long. C-93 screamed like she'd been shot. It's out. You're fine. It is NOT fine, that was INSIDE ME. It was a splinter. It was a wooden IMPALEMENT.\" *She cradled her hand against her chest, glaring at the tweezers like they were a torture instrument. The medic put a bandage on it. It did not require a bandage.",
+    "effects": [
+      "Pain hits you harder and faster than it does most people. Injuries that others shrug off leave you gasping, and pushing through discomfort requires genuine willpower rather than simple endurance.",
+      "When performing a check where enduring pain is a factor (such as continuing to fight after being wounded or resisting the effects of a painful procedure), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "tunnel-vision",
+    "name": "Tunnel Vision",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The sniper had been watching the east window for thirty-seven minutes. Perfectly still, perfectly focused, breathing measured and slow. The target would appear any second. Contact, south alley!\" *The radio crackled. She didn't move. M200, south alley! They're flanking! I see the east window. Forget the east window, we need you on the south alley NOW. She blinked. Shifted. The south alley was full of hostiles. They had been there for at least two minutes. She hadn't noticed.",
+    "effects": [
+      "When you focus on something, everything else disappears. This makes you excellent at sustained concentration, but it also means you miss what is happening around you, and redirecting your attention takes real effort.",
+      "When performing a check where broad awareness matters (such as scanning a room for multiple threats or noticing something outside your current focus), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "foot-in-mouth",
+    "name": "Foot in Mouth",
+    "types": [
+      "Social"
+    ],
+    "flavor": "The liaison dinner was going well until Krolik decided to make conversation. So, how long have you been stationed here? You look like you've been here a while.\" *She paused.* \"Not that you look old! You just look... experienced. Weathered? In a good way. Like leather. The diplomat's smile had frozen somewhere around \"weathered. Like good leather. Expensive leather. Krolik.\" *The Commander's voice was very quiet. I'm going to stop talking now. Please.",
+    "effects": [
+      "You have an unerring instinct for saying exactly the wrong thing. It is never malicious; you simply open your mouth and the worst possible version of your thought falls out, often followed by increasingly desperate attempts to fix it that make everything worse.",
+      "When performing a check where saying the right thing matters (such as making a diplomatic impression, de-escalating a tense situation, or delivering sensitive news), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "all-thumbs",
+    "name": "All Thumbs",
+    "types": [
+      "Mental",
+      "Physical"
+    ],
+    "flavor": "Just reconnect the blue wire to the terminal on the left. Harpsy touched the blue wire. The radio sparked, popped, and began emitting a thin trail of smoke. The other left. You said left! Your other left, Harpsy. The radio was, technically speaking, no longer a radio. It was now a small, expensive paperweight that smelled like burned solder. I can fix it. Please do not fix it.",
+    "effects": [
+      "Mechanical and technical tasks have a way of going wrong in your hands. You understand the theory; the execution simply does not cooperate. Things you try to repair tend to end up in worse condition than when you started.",
+      "When performing a check that involves repairing, building, or delicately manipulating a mechanical or electronic device, you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "sensitive-stomach",
+    "name": "Sensitive Stomach",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The field rations were standard issue. Everyone else was eating. Makiatto opened hers, took one look at the color, and set it down. I can't. It's the same thing we ate yesterday. Yesterday's was a different color. This one is... greenish. It's pesto flavored. It's *suspicious*.\" *She pushed it away.* \"Last time I ate something that color I was in the latrine for six hours. That was a completely different meal. My stomach doesn't make those distinctions.",
+    "effects": [
+      "Your body rejects anything it finds even slightly suspicious. Unfamiliar food, impure water, mild chemical exposure; where others power through, your system rebels immediately and without mercy.",
+      "When performing a check where ingesting something questionable is involved (such as eating unfamiliar field rations, resisting a mild toxin, or drinking untreated water), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "conspicuous",
+    "name": "Conspicuous",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The plan was simple: blend in with the crowd at the market, make contact, leave quietly. PKP was given civilian clothes and a hat. PKP was also a hundred and eighty-three centimeters tall, built like a blast door, and had a stride that cleared a path through foot traffic like a snowplow. Try to look casual,\" *the Commander said over the radio. I am looking casual. Three people just crossed the street to avoid you. ...That is how people normally react to me. That's the problem.",
+    "effects": [
+      "Your size, build, or general presence makes you impossible to overlook. You stand out in every crowd, fill every doorframe, and draw every eye. Stealth and subtlety are not your strong suits.",
+      "When performing a check where going unnoticed matters (such as blending into a crowd, hiding, or moving without attracting attention), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "empty-handed",
+    "name": "Empty-Handed",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "Suomi was sent to check the abandoned depot for anything useful. She came back two hours later, empty-handed and slightly damp. There was nothing? There was a collapsed ceiling. And a flooded basement. And a raccoon. A raccoon. It was guarding a crate.\" *She paused.* \"The crate was empty. The Commander looked at the supply list, then back at Suomi. Dandelion found three MRE cases in that same depot yesterday. ...Where in the depot? She said they were in the ceiling tiles. Suomi stared at him for a very long time.",
+    "effects": [
+      "Useful things seem to vanish in your presence. You check the obvious places, and sometimes the less obvious ones, but supplies, parts, and hidden stashes consistently elude you. Others find what you missed within minutes of arriving.",
+      "When performing a check where finding something useful is the goal (such as searching a looted area for supplies, locating a hidden item, or scrounging for parts), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "deer-in-headlights",
+    "name": "Deer in Headlights",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The ambush came from two directions at once. Klukai was already calling positions. The squad was moving. Andoris was not. She stood in the middle of the street, rifle half-raised, eyes wide, watching the situation unfold the way a person watches a car accident. Processing. Trying to process. Failing to process. Andoris, MOVE. She moved. In the wrong direction. Klukai grabbed her by the collar and pulled her behind the wall. What happened? There were too many variables.\" *Her hands were shaking.* \"I had them all mapped out and then they changed and I couldn't... Next time, follow me. Don't think. Follow.",
+    "effects": [
+      "When a situation shifts rapidly, your mind tries to account for every variable at once and locks up. Instead of reacting, you freeze, and by the time you start moving again, the moment has passed.",
+      "When performing a check where quick tactical thinking is required (such as reacting to an ambush, adapting to a sudden change in a plan, or making a split-second decision under fire), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "slow-on-the-draw",
+    "name": "Slow on the Draw",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The drill was simple. Targets appear, you draw, you fire. Speed matters. Dushevnaya's hand moved toward her weapon with the measured deliberateness of someone reaching for a teacup. The target had been up for four full seconds before her rifle cleared the holster. Dushevnaya. Faster. I cannot rush the summoning of the dragon, it arrives when it arrives! It needs to arrive in under two seconds. She tried again. Three and a half seconds. The range instructor watched with the expression of a man who had been patient for a very long time and was running out. Again. The target is not going anywhere. In the field, it will be.",
+    "effects": [
+      "Your draw-to-fire time leaves something to be desired. When a situation turns violent, others have their weapons up while you are still reaching for yours.",
+      "When performing a check where weapon readiness matters (such as drawing during a surprise encounter or getting a shot off before an opponent), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "oblivious",
+    "name": "Oblivious",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The street was too quiet. No vendors, no foot traffic. Shutters closed in the middle of the afternoon. The rest of the squad had slowed, hands drifting to weapons. Vepley was humming. Vepley. Read the street. It's very peaceful today! It's not peaceful. It's empty. Why is it empty? She looked around as if noticing for the first time.* \"Maybe it's a holiday? The first shot hit the wall six inches from her head. She blinked at the impact crater with genuine curiosity. Oh. Not a holiday.",
+    "effects": [
+      "You have no instinct for danger. Warning signs that put others on edge pass through your awareness without leaving a mark. By the time you realize something is wrong, everyone else has known for a while.",
+      "When performing a check where sensing danger is important (such as detecting an ambush, noticing a trap, or reading a situation that is about to turn hostile), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "technophobe",
+    "name": "Technophobe",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The operation required remote access to the building's security feed. Nagant sat down at the terminal and stared at it the way one stares at a chess problem with too many pieces. Just log in with the credentials I gave you. I see a blinking cursor. Type the username. Which keys are the username? Ksenia walked over and typed it in four seconds. Nagant watched her fingers like a person witnessing a magic trick. How did you know which ones to press? They're labeled. Some of them have two labels.",
+    "effects": [
+      "Technology resists you, or you resist it. Unfamiliar systems, modern interfaces, and electronic devices become obstacles rather than tools in your hands. You can learn specific procedures by rote, but intuition abandons you the moment something unexpected appears on screen.",
+      "When performing a check that involves operating unfamiliar technology (such as interfacing with a new system, troubleshooting an electronic device, or navigating a digital interface under pressure), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "night-blind",
+    "name": "Night Blind",
+    "types": [
+      "Physical",
+      "Mental"
+    ],
+    "flavor": "The power went out at 2300. Lotta stopped walking immediately. Just keep moving down the hallway. It's a straight line. I can't see anything. Your eyes will adjust. They will not adjust. My eyes do not adjust. This is a known issue. She bumped into a doorframe. Then a chair. Then something that turned out to be a squad member who had been standing still for the last thirty seconds. Was that a person? That was me, Lotta. Why were you standing in the dark? I was waiting for you to stop walking into things.",
+    "effects": [
+      "Darkness is your enemy. Where others adapt to low light and find their footing, you lose all sense of space and orientation. Nighttime operations and unlit environments reduce you to guesswork.",
+      "When performing a check where operating in darkness or low-light conditions matters (such as navigating without illumination, staying alert on a night watch, or functioning during a power outage), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "suggestible",
+    "name": "Suggestible",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "Springfield had said not to agree to anything until she got back. Sharkry had nodded firmly. Absolutely. She would hold the line. The broker leaned forward.* \"Look, if you just sign here, it expedites the whole thing. Saves everyone time. Springfield said to wait. Sure, but this is routine paperwork. ...It does look routine. It is. Very routine. She signed. When Springfield returned, she read the form once and closed her eyes. You traded our fuel allocation for a case of novelty mugs. He said it was routine! Sharkry. They're nice mugs.",
+    "effects": [
+      "Pressure bends you. A firm voice, a confident assertion, a reasonable-sounding argument; these are enough to override your own judgment, even when you know better. You can be convinced of almost anything if the person saying it sounds sure enough.",
+      "When performing a check where resisting persuasion or coercion matters (such as holding firm under interrogation, refusing a manipulative request, or maintaining your position against social pressure), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "uncoordinated",
+    "name": "Uncoordinated",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The obstacle course was optional. Mayling had volunteered anyway, because she was trying to keep up with the dolls. This was her third attempt at the balance beam. She made it four steps before her left foot found her right ankle. The fall was not graceful. The landing was worse. You okay? I'm fine.\" *She was already getting up, dirt on her knees and both elbows.* \"The beam is uneven. Krolik just ran it backward. Krolik has gyroscopic stabilizers or something. She does not. Then the beam is out to get me personally.",
+    "effects": [
+      "Your body does not move the way you tell it to. Balance is a negotiation, coordination is a struggle, and physical tasks that others handle without thinking require your full attention and still come out wrong.",
+      "When performing a check where physical coordination matters (such as maintaining your balance on an unstable surface, scaling a wall, or navigating an obstacle course), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "risk-averse",
+    "name": "Risk-Averse",
+    "types": [
+      "Physical"
+    ],
+    "flavor": "The catwalk was the only way across. Thirty meters, no railing, rusted through in places. The squad went one at a time. Lotta was last. She put one foot on the grating. It groaned. She pulled her foot back. Lotta, everyone else made it across. It holds. Everyone else weighs less than me with full kit. You weigh the same as Ullrid, and she jogged it. Lotta looked at the catwalk. She looked at the gap beneath it, four stories of open air and concrete. She had the numbers; the structure was sound. She knew it was sound. Knowing did not help. I need a minute. We don't have a minute. She crossed. Slowly, hands white on the guide cable, every step a negotiation between what she knew and what her legs were willing to do. On the other side, she sat down and did not stand up for a while.",
+    "effects": [
+      "When the stakes climb, you hesitate. Extreme physical risk does not sharpen your focus; it scatters it. The higher the danger, the harder it is to commit, and the delay can cost you and your squad precious seconds.",
+      "When performing a check where committing to a dangerous physical action is required (such as making a risky jump, charging under fire, or pushing through a collapsing structure), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "tone-deaf",
+    "name": "Tone Deaf",
+    "types": [
+      "Interpersonal"
+    ],
+    "flavor": "The squad had been quiet since the casualty report. No one was talking. Robella looked up from her terminal. Morale assessment: the squad appears to be functioning within normal parameters. No one responded. I should note that mission performance was not affected by the loss. Tactically, this was a success. The silence that followed was a different kind of quiet. The Commander caught her eye and shook their head, slightly. Robella looked around the room, trying to identify what she had missed. She did not find it.",
+    "effects": [
+      "Other people's emotional states are a foreign language you never learned. You miss the grief behind a smile, the anger beneath politeness, the discomfort in a room full of silence. Your responses land wrong because you are responding to what was said, not what was felt.",
+      "When performing a check where reading someone's emotional state matters (such as sensing hidden distress, gauging the mood of a room, or knowing when to stop talking), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "thin-skinned",
+    "name": "Thin-Skinned",
+    "types": [
+      "Social"
+    ],
+    "flavor": "The performance review was standard. Three areas for improvement, two commendations. Overall, positive. The reviewer delivered it in a neutral, professional tone. Sharkry heard none of the commendations. They said my coordination needs work. They also said your marksmanship was excellent. They said it needs WORK.\" *She had been pacing for ten minutes.* \"What does that even mean? Compared to who? I've been drilling coordination every day for three months. Sharkry, it was a good review. It wasn't perfect. She drilled coordination exercises for the next six hours. She did not eat dinner.",
+    "effects": [
+      "Criticism cuts deep and stays. A single negative comment can eclipse a dozen compliments, and even constructive feedback feels like a personal indictment. You carry slights long after they were intended to be forgotten.",
+      "When performing a check where absorbing criticism or social pressure is necessary (such as enduring a harsh review, shrugging off an insult, or maintaining composure when publicly corrected), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "volatile-presence",
+    "name": "Volatile Presence",
+    "types": [
+      "Interpersonal",
+      "Social"
+    ],
+    "flavor": "The negotiation between the two patrol squads had been going well. Disagreement over route assignments, nothing unusual. Both leads were close to a compromise. Then Cheeta walked in. I heard shouting. Are we fighting? I have opinions about the route. We weren't shouting. It sounded like shouting. Anyway, the eastern route is faster if you cut through the old market, but that's a terrible idea because of the mines, which is a problem somebody should have fixed by now, and I'm looking at both of you. The compromise evaporated. Twenty minutes later, both leads were shouting for real, and Cheeta was sitting on a crate, eating an energy bar, watching with what she considered to be a helpful expression. See? Now it's a real discussion. Get out, Cheeta.",
+    "effects": [
+      "Your presence in tense situations makes them worse. You interject when silence would serve better, escalate when others are de-escalating, and turn simmering disagreements into open conflicts. You rarely intend to cause trouble; it just follows you into the room.",
+      "When performing a check where calming a situation matters (such as mediating a dispute, de-escalating a confrontation, or steadying a panicking ally), you must reroll two dice showing (su) or (ex).",
+      "If the reroll causes you to fail the check, you gain 1 fortune point."
+    ]
+  }
+]

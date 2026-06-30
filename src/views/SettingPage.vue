@@ -1,0 +1,90 @@
+<template>
+  <ContentFrame>
+    <Breadcrumb :crumbs="crumbs" />
+    <h1>Setting &amp; T-Dolls</h1>
+
+    <h2>The World of Girls' Frontline</h2>
+    <p><strong>Girls' Frontline</strong> is a military science fiction setting that explores what happens after the world ends and then starts to heal. It blends near-future tactical combat with post-apocalyptic survival, corporate power struggles with questions of artificial consciousness, and hopeful reconstruction with authoritarian control.</p>
+
+    <p>The world ended not with a bang but with <strong>Collapse Radiation</strong>, a mysterious contamination that spread across the globe in the mid-21st century. This ecological catastrophe rendered vast territories uninhabitable, triggering resource wars, mass displacement, and ultimately World War Three. Billions died. Civilization shattered. Half the planet became a toxic wasteland.</p>
+
+    <p>But by 2072, <strong>things are genuinely getting better.</strong> The world never stopped turning, and the mail still gets delivered. Even the containment zones are slowly getting pushed back by the combined efforts of humanity, reclaiming what was once lost.</p>
+
+    <p>This recovery comes with complications. The <strong>United Reactive Nationalist Coalition</strong> (URNC), an authoritarian world government born in 2064, now dominates most of the recovering world. They deliver results: the Purification Project works, refugees find safety, infrastructure expands. But they also suppress dissent, regulate independent forces through agencies like NOMFA, surveil populations through twin AIs named Heli and Iphi, and maintain cozy relationships with megacorporations like the Girard Group that profit from reconstruction.</p>
+
+    <p>The URNC is effective. It's also oppressive. Good things happen under its rule, weighted with surveillance and the slow erosion of freedom. This is a world rebuilding itself, but the question remains: what kind of world is being built, and who decides?</p>
+
+    <p>Private military companies once filled the power vacuum after the war, but their golden age has passed. By 2072, former titans like Griffin &amp; Kryuger exist as shadows of their former selves, regulated contractors under NOMFA oversight. The frontier still holds space for independent operators, bounty hunters carving freedom from contaminated zones beyond the Coalition's reach, but that space shrinks every year.</p>
+
+    <p>This is military science fiction with a human (and post-human) heart. It's a story about <strong>good people surviving under the thumb of bad</strong>, finding meaning, loyalty, and hope amid the ruins while navigating the moral complexities of a world that trades freedom for safety.</p>
+
+    <SectionDivider label="What is a T-Doll?" />
+
+    <p>The setting's signature element is the <strong>Tactical Doll</strong>: autonomous combat androids that serve as soldiers, security personnel, and companions in this recovering world.</p>
+
+    <p><strong>Tactical Dolls</strong> (shortened to <strong>T-Dolls</strong>) are combat androids powered by sophisticated AI neural networks. Initially conceived as disposable weapons platforms during World War Three, T-Dolls evolved from obvious mechanical constructs into humanoid forms to facilitate natural interaction with human operators. Following the war's end, military-grade T-Dolls entered civilian circulation alongside purpose-built non-combat models. By 2072, IOP Manufacturing dominates the market, supplying everyone from national defense forces to private security firms to individual households.</p>
+
+    <p>The humanoid android walking past you might be a veteran soldier, a corporate security guard, a domestic assistant, or someone's personal companion. T-Dolls are living characters in their own right. They have wants, goals, and dreams. They experience emotions, form relationships, and grow as individuals. Some have vices. Some have quirks. They are people who happen to be artificial.</p>
+
+    <p>The world, however, tends to treat them as property. They serve as expendable soldiers and second-class citizens in a society still grappling with what artificial consciousness actually means. That tension between personhood and property sits at the heart of the setting's themes.</p>
+
+    <h3>The Neural Cloud</h3>
+    <p>What makes a Doll a Doll is the <strong>Neural Cloud</strong>: the actual AI consciousness housed within the physical body. Unlike the machine learning systems and neural networks of earlier decades, Neural Clouds are <strong>true artificial intelligence</strong>, sentient constructs capable of abstract thought, genuine emotion, and autonomous self-learning.</p>
+
+    <p>A Doll's body is, in a very real sense, just an avatar for its Neural Cloud. This distinction carries profound practical implications. A Doll's body can be destroyed, but as long as the <strong>neural core</strong> (the physical hardware housing the Neural Cloud) survives, it can be extracted and installed into a new body. The Doll continues, memories intact, as though they had simply changed clothes. Even if the neural core itself is destroyed, recovery may still be possible: with specialized equipment, Neural Clouds can be <strong>backed up</strong> to external storage. If a recent backup exists, it can be loaded into a fresh core and body, and the Doll lives on, albeit without any memories formed since the last backup was taken.</p>
+
+    <p>This resilience is not without philosophical cost. An entire field of debate surrounds whether a restored backup is truly the same Doll or merely a copy that believes it is, similar to the <strong>teleporter paradox</strong>. If the original Neural Cloud was destroyed, did the Doll die? Is the backup a continuation or a replacement? These questions have no settled answers, and opinions vary wildly among both humans and Dolls. Still, backup technology is common enough that most Dolls have made their peace with it, choosing to believe that continuity of identity survives the process rather than confronting the alternative.</p>
+
+    <h3>T-Doll Generations</h3>
+    <p>T-Doll technology evolved through three broad generations across three decades of development. The lines between them are not always clean; some units blur the boundaries in ways that complicate tidy classification.</p>
+
+    <p><strong>First-Generation Dolls</strong> were products of World War Three. These were utilitarian military platforms designed for mass production and battlefield effectiveness. They were skeletal, obviously robotic, and built around limited AI that could follow orders but lacked true consciousness. However, some particularly advanced models were fitted with prototype neural clouds that would form the basis for later generations. Notable examples include Uranus, a Svarog Heavy Industries model OBJ-9420 with a neural cloud. Some of these advanced first-gen units are still around in 2072, though they are increasingly rare.</p>
+
+    <p><strong>Second-Generation Dolls</strong> are the norm in 2072. Developed in the mid-2050s and released in the 2060s, these Dolls were designed with the civilian market in mind. Built with humanoid appearances and more sophisticated neural clouds, they are capable of genuine emotion and personality development, though their characters remain largely shaped by the programming and roles they were built to fill. They are still fully sentient beings, capable of growth and change over time. Most second-gen Dolls present female appearances, though there are many exceptions. They are found in military, corporate, and private settings across the recovering world, and are the most common type of T-Doll most people will ever encounter. As with the first generation, a handful of advanced outliers point toward what came next: units hand-built by Persica at 16Lab as research platforms for what would eventually become third-gen technology. Notable among these are <strong>Lenna</strong>, a rebuilt IOP SSD-62 model with a 3rd gen neural cloud, and <strong>Robella</strong>, a purpose-built PPD-02.</p>
+
+    <p><strong>Third-Generation Dolls</strong> are experimental and, in 2072, extraordinarily rare. Where earlier Dolls received a preset personality framework at manufacture, third-gen Dolls begin with a blank core, and their personality emerges organically through experience and self-determination. 16Lab introduced the technology commercially in 2071, though the Girard Group had already brought inferior reverse-engineered models to market. Both are priced beyond anything a private contractor could reasonably afford. Most people in 2072 have never encountered one, and those that have likely mistook them for humans.</p>
+
+    <SectionDivider label="Playing in This World" />
+
+    <h3>Character Structure: The Pair</h3>
+
+    <StatBlock :stats="pairStructure" />
+
+    <p><strong>Players are intended to play both a human and a T-Doll as a pair.</strong> This dual-character structure allows you to explore the setting from complementary perspectives and engage with its central themes from multiple angles.</p>
+
+    <p>Typically, your <strong>T-Doll represents your combat capability</strong> while your <strong>human represents your social ability</strong>, though this is not a hard and fast rule. Both characters can be built with different strengths depending on your concept. The relationship between them is yours to define: commander and subordinate, handler and agent, partners, friends, or something more complex.</p>
+
+    <p>This structure creates natural opportunities to explore the game's thematic questions. How does your human view artificial life? How does your T-Doll understand their own existence? What compromises do they make to survive under the URNC's control? Where do they draw their lines?</p>
+
+    <h3>T-Dolls in Game Mechanics</h3>
+    <p>In GFL5R, <strong>T-Doll characters start with 40 Humanity</strong> (compared to 50 for human characters), reflecting their unique relationship with emotional development and social integration. However, T-Dolls and humans use identical mechanical frameworks for Approaches, Skills, and advancement: reinforcing that both are equally valid protagonists with full agency and capability.</p>
+
+    <h3>Themes and Play</h3>
+    <p>This roleplaying game engages with themes of <strong>identity, sacrifice, loyalty, and what it means to be a person</strong>. It asks whether T-Dolls count as human, and whether their treatment as expendable soldiers and second-class citizens is acceptable. It explores survival under oppressive systems, the moral costs of security, and finding hope in a world rebuilding from catastrophe.</p>
+
+    <p>These themes form a core part of the narrative experience. Players are encouraged to explore them through their characters' perspectives, choices, and relationships as they navigate the complexities of 2072's recovering world.</p>
+
+    <PageNav :prev="prev" :next="next" />
+  </ContentFrame>
+</template>
+
+<script setup>
+import ContentFrame from '@/components/layout/ContentFrame.vue'
+import Breadcrumb from '@/components/layout/Breadcrumb.vue'
+import SectionDivider from '@/components/layout/SectionDivider.vue'
+import StatBlock from '@/components/data/StatBlock.vue'
+import PageNav from '@/components/layout/PageNav.vue'
+
+const crumbs = [
+  { label: 'Home', to: '/' },
+  { label: 'Setting & T-Dolls' }
+]
+
+const pairStructure = [
+  { name: 'Human Commander', value: 'Social', desc: 'Social capability, connections, influence, navigation of the URNC\'s bureaucratic world. Starts with 50 Humanity.' },
+  { name: 'T-Doll Partner', value: 'Combat', desc: 'Combat capability, tactical skills, weapon proficiency, effectiveness in dangerous situations. Starts with 40 Humanity.' }
+]
+
+const prev = { to: '/', label: 'Home' }
+const next = { to: '/making-a-check', label: 'Making a Check' }
+</script>

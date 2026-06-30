@@ -1,0 +1,101 @@
+<template>
+  <ContentFrame>
+    <Breadcrumb :crumbs="crumbs" />
+    <h1>Driving &amp; Vehicles</h1>
+
+    <SectionDivider label="What Are Vehicles?" />
+    <p>Vehicles allow characters to travel faster than on foot and engage in high-speed chases. In chase scenes, vehicles are treated as extensions of their drivers, with their own damage thresholds and armor values.</p>
+    <ul>
+      <li><strong>Driver</strong> &mdash; Controls the vehicle, makes all acceleration decisions, and performs driving techniques during chases.</li>
+      <li><strong>Passengers</strong> &mdash; May use normal "on foot" techniques, provided they can be performed from within the vehicle.</li>
+    </ul>
+
+    <SectionDivider label="Vehicle Combat & Chases" />
+
+    <h2>Scene Speed</h2>
+    <p>Rather than tracking individual vehicle speeds, each chase has a <strong>scene speed</strong> that represents the relative intensity and pace of the entire chase. Scene speed is abstract: scene speed 5 on a motorcycle looks wildly different than scene speed 5 in a cargo truck, but both represent the same level of chase intensity.</p>
+
+    <RulesCallout>
+      <p>The scene speed determines the <strong>TN for all techniques</strong> used during the chase.</p>
+    </RulesCallout>
+
+    <h2>Driver Actions</h2>
+    <p>Each round, on their turn, every driver can choose one of the following as a <strong>movement action</strong>:</p>
+
+    <table>
+      <thead>
+        <tr><th>Action</th><th>Effect</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Accelerate</strong></td><td>Increase the scene speed by 1 (if it hasn't increased this round). Any driver who doesn't also accelerate gains 1 stack of <strong>Losing Ground</strong>.</td></tr>
+        <tr><td><strong>Hold Steady</strong></td><td>Maintain current pace. If any other driver accelerated this round, you gain 1 stack of Losing Ground.</td></tr>
+        <tr><td><strong>Decelerate</strong></td><td>Willingly gain 1 stack of Losing Ground (typically to reduce the difficulty of techniques).</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Losing Ground</h2>
+
+    <RulesCallout>
+      <h3>Losing Ground Stacks</h3>
+      <ul>
+        <li><strong>3 stacks = Out of the chase.</strong> Chasers lose their quarry. Pursued characters are caught.</li>
+        <li><strong>TN Reduction:</strong> Your stacks of Losing Ground reduce the TN of techniques you perform during the chase (maneuvers are easier at slower relative speeds).</li>
+        <li><strong>Failed Checks:</strong> Failing a technique check during a chase gives you 1 stack of Losing Ground.</li>
+      </ul>
+    </RulesCallout>
+
+    <RulesCallout>
+      <h3>Optional Rule: Extended Chases</h3>
+      <p>If all vehicles in the scene have at least 1 stack of Losing Ground, the GM may remove 1 stack from all participants and reduce the scene speed by 1. Use this rule if you want chases to last longer.</p>
+    </RulesCallout>
+
+    <h2>Vehicle Durability</h2>
+    <ul>
+      <li><strong>Armor Value</strong> &mdash; Damage dealt to a vehicle is reduced by its armor value (minimum 0).</li>
+      <li><strong>Damage Threshold</strong> &mdash; If a vehicle reaches its damage threshold, it is knocked out of the chase.</li>
+      <li><strong>Targeting the Driver</strong> &mdash; Drivers can be targeted directly but benefit from their vehicle's armor value <em>in addition</em> to any personal armor. If the driver becomes incapacitated, the vehicle is knocked out of the chase.</li>
+    </ul>
+
+    <h2>Ending a Chase</h2>
+    <p>A chase ends when:</p>
+    <ol>
+      <li><strong>All pursuers or pursued are knocked out</strong> (through Losing Ground, vehicle destruction, or driver incapacitation).</li>
+      <li><strong>A Finishing Technique is successfully used:</strong>
+        <ul>
+          <li><strong>Chased-type:</strong> Can only be used by the pursued to evade the chase.</li>
+          <li><strong>Chaser-type:</strong> Can be used by any participant to knock out a vehicle.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Being Knocked Out</h2>
+
+    <table>
+      <thead>
+        <tr><th>Exit Type</th><th>Consequence</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Losing Ground (3 stacks)</strong></td><td>Relatively controlled exit. Occupants suffer no immediate harm, though narrative consequences may apply (being caught, losing the target, etc.).</td></tr>
+        <tr><td><strong>Violent Knockout</strong></td><td>All occupants take a Critical Strike with severity equal to the current scene speed. The vehicle crashes, spins out, or otherwise comes to a sudden, dangerous stop.</td></tr>
+      </tbody>
+    </table>
+
+    <PageNav :prev="prev" :next="next" />
+  </ContentFrame>
+</template>
+
+<script setup>
+import ContentFrame from '@/components/layout/ContentFrame.vue'
+import Breadcrumb from '@/components/layout/Breadcrumb.vue'
+import SectionDivider from '@/components/layout/SectionDivider.vue'
+import RulesCallout from '@/components/callouts/RulesCallout.vue'
+import PageNav from '@/components/layout/PageNav.vue'
+
+const crumbs = [
+  { label: 'Home', to: '/' },
+  { label: 'Driving & Vehicles' }
+]
+
+const prev = { to: '/poisons-and-drugs', label: 'Poisons & Drugs' }
+const next = { to: '/electronic-warfare', label: 'Electronic Warfare' }
+</script>

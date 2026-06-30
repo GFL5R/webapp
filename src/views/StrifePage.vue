@@ -1,0 +1,124 @@
+<template>
+  <ContentFrame>
+    <Breadcrumb :crumbs="crumbs" />
+    <h1>Strife &amp; Emotional Pressure</h1>
+    <p>Strife represents the mounting emotional pressure on your characters: the mix of stress, suppressed feeling, battlefield adrenaline, moral compromise, and cognitive load created by life in 2072 under URNC surveillance. It is universal: humans and T-Dolls accumulate and resolve Strife the same way.</p>
+
+    <h2>What Strife Does</h2>
+    <p>As Strife rises you edge toward an emotional tipping point. Past your <strong>Composure</strong> rating you are <strong>Compromised</strong>: your character is saturated with unprocessed emotion and must either play through that tension or vent it.</p>
+
+    <ExampleBox>
+      <h4>Mounting Pressure</h4>
+      <p>A player notices that they have gained a lot of strife recently on their T-doll sheet. It is approaching their Composure limit, signaling that their character is nearing a tipping point. The GM may prompt the player to describe how their character is showing signs of strain, such as fidgeting, talking too much, or going silent.</p>
+    </ExampleBox>
+
+    <SectionDivider label="Gaining Strife" />
+
+    <h3>From Checks</h3>
+    <p>When you keep dice that show the Strife symbol you gain 1 Strife per such symbol. Choosing to keep a die with Strife confirms that the attempt costs emotional energy or neural stability.</p>
+
+    <h3>From Triggers and Situations</h3>
+    <p>Gain Strife when:</p>
+    <ul>
+      <li>You encounter an <strong>Anxiety</strong> and push through it.</li>
+      <li>You are blocked from pursuing a <strong>Passion</strong> you just invoked.</li>
+      <li>You witness cruelty, injustice, or needless loss tied to your values.</li>
+      <li>You accept collateral damage, friendly injury, or destructive shortcuts.</li>
+      <li>You override ethical protocols (T-Doll) or personal boundaries (human) for tactical gain.</li>
+      <li>The GM introduces harsh environmental pressure.</li>
+      <li>You voluntarily lean into drama: take 1–3 Strife for strong emotional portrayal.</li>
+    </ul>
+
+    <h3>From Social and Interpersonal Play</h3>
+    <p>Gain Strife when you suppress a genuine response to maintain tactical calm, when you swallow an argument, or when you perform a role inconsistent with internal belief. The GM can offer 1 Strife as a prompt when you gloss over emotion. You may decline.</p>
+
+    <SectionDivider label="Comparing Strife to Composure" />
+
+    <p><strong>Composure</strong> is a derived attribute expressing how much emotional pressure you can absorb before performance degradation. While Strife is less than or equal to Composure you are <strong>Stable</strong>. When Strife exceeds Composure you become <strong>Compromised</strong>.</p>
+
+    <SectionDivider label="Narrating Strife" />
+
+    <p>You are encouraged to narrate sensory and behavioral tells as Strife accumulates: breathing rhythm shifts, clipped answers, eye tracking variance, motor overcorrection, microtremor, ritual fidget, loss of conversational patience, harsh magazine slap, protective posture near a bonded ally.</p>
+
+    <h3>Stress Tells</h3>
+    <p>During character creation define at least one stress tell: a subtle outward sign that mounting pressure is bleeding through the facade. Examples: tapping a knuckle against a sidearm, reciting serial numbers under breath, compulsive weapon wipe, forced smile that never reaches the eyes, vocal flattening, brief static pop in a T-Doll's speech synthesis.</p>
+
+    <SectionDivider label="Removing Strife" />
+
+    <h3>Scene Boundary Relief</h3>
+    <p>At the end of a scene reduce Strife until it equals half your Composure (rounded up) if it was higher.</p>
+
+    <h3>Restful or Centering Activities</h3>
+    <p>The following can remove additional Strife (often all):</p>
+    <ul>
+      <li>Pursue a <strong>Passion</strong> meaningfully during downtime.</li>
+      <li>Engage in quiet maintenance or calibration (T-Doll) with supportive dialogue.</li>
+      <li>Meditate, pray, journal, or decompress in a safe space.</li>
+      <li>Honest bonding conversation between pair members acknowledging recent strain.</li>
+      <li>Structured ritual (tea, cleaning weapons, music practice) performed mindfully.</li>
+    </ul>
+
+    <h3>Venting While Compromised</h3>
+    <p>While Compromised you can remove all Strife by performing a <strong>Vent</strong> once per scene. Venting is an intentional dramatic release chosen by the player.</p>
+
+    <SectionDivider label="Being Compromised" />
+
+    <RulesCallout>
+      <h4>Mechanical Effects</h4>
+      <ul>
+        <li><strong>Vigilance</strong> counts as 1.</li>
+        <li>When making a check you cannot keep dice that show Strife symbols. If all kept dice show Strife you may keep 0 dice (automatic failure).</li>
+        <li>Opponents attempting to read you treat your Strife as +1 TN resistance: paradoxically you are harder to read because you clamp down.</li>
+      </ul>
+      <p>You cease being Compromised as soon as Strife drops to Composure or lower. Vent always clears all Strife.</p>
+    </RulesCallout>
+
+    <SectionDivider label="Vent Actions" />
+
+    <p>Venting is the process in which you release accumulated Strife through a deliberate action or expression. It is played out in two steps: First, the player describes what they do and how they do it. Second, the GM describes the consequences of that action, and any resulting changes to their humanity or fame values.</p>
+
+    <p><strong>Consequences:</strong> Venting is an extreme display of emotion, some good, some bad. Usually, these will have a negative effect on your Fame and Humanity, however, sometimes they can lead to unexpected positive outcomes. The GM decides the specific consequences based on the context and narrative.</p>
+
+    <p>The following are examples of Vent actions. They are not exhaustive, and the player is encouraged to be creative in describing their own unique way of venting.</p>
+
+    <VentCard title="Lockdown" description="You cease. Doing things just becomes too hard, and you withdraw into yourself, shutting out the world for a moment of reprieve. It lasts as long as it makes narrative sense to." />
+
+    <VentCard title="Confession" description="Something you have been holding inside comes out. You admit a truth, share a secret, or reveal a hidden feeling. The act of confessing can be cathartic and may change the dynamics of your relationships." />
+
+    <VentCard title="Retreat" description="You simply run away. The situation in front of you is insurmountable, and escape becomes your only option. You remove yourself from the situation, seeking safety or distance to regain composure." />
+
+    <VentCard title="Fixation" description="You focus all your attention on a single task or objective, ignoring everything else. This intense concentration can lead to remarkable achievements, but it also means you may miss important details or opportunities around you." />
+
+    <VentCard title="Outburst" description="You release your emotions in a sudden and intense manner. This can be verbal, physical, or a combination of both. The outburst is a way to let off steam and can have immediate effects on those around you, as well as on your own state of mind." />
+
+    <ExampleBox>
+      <h4>Venting Under Pressure</h4>
+      <p><em>Sergeant Liang's squad has been pinned behind a collapsed overpass for six hours. KCCO drones swept the road twice already. Two of his four soldiers are wounded, ammunition is low, and command stopped responding on the radio forty minutes ago. His Strife has been climbing all session: he gained strife trying to stabilize Private Okafor's shrapnel wound, picked up more on a Tactics check to find an exit route, and gained another two when he attempted to fix the radio. He's now at 8 out of 10.</em></p>
+      <p><em>A third drone pass lights up the rubble fifty meters east. The GM asks for a Survival check to keep the squad concealed. Liang's player rolls well enough to succeed, but the dice show two more Strife symbols. That puts him at 11. He's over his composure: Compromised.</em></p>
+      <p><strong>Liang's player:</strong> "He snaps. He grabs the dead radio handset and starts screaming into it. Full volume, no code words, just his callsign and 'we are dying out here' over and over. He knows nobody's listening. He doesn't care. He keeps going until his voice cracks."</p>
+      <p><em>This is an Outburst. The GM considers the situation: they're in a combat zone, noise discipline matters, and Liang is an NCO responsible for four lives.</em></p>
+      <p><strong>GM:</strong> "Your voice echoes off the overpass. Okafor and the others stare at you. Nobody says anything for a long moment. Then Private Vasquez quietly picks up her rifle and moves to a better firing position without being told. Your Strife drops to 0, but your Fame decreases by 5. Word will travel that Sergeant Liang lost it on the radio during the retreat from Tallinn. Command may hear a different version of this story than the one you lived."</p>
+      <p><em>Liang vented his Strife, but his squad saw their leader break. Some of them, like Vasquez, responded by stepping up. Others will remember it differently. The GM has new narrative threads to pull on: does Okafor lose faith in Liang? Does the outburst get mentioned in an after-action report? The story moves forward, shaped by a moment of very human failure.</em></p>
+    </ExampleBox>
+
+    <PageNav :prev="prev" :next="next" />
+  </ContentFrame>
+</template>
+
+<script setup>
+import ContentFrame from '@/components/layout/ContentFrame.vue'
+import Breadcrumb from '@/components/layout/Breadcrumb.vue'
+import SectionDivider from '@/components/layout/SectionDivider.vue'
+import RulesCallout from '@/components/callouts/RulesCallout.vue'
+import ExampleBox from '@/components/callouts/ExampleBox.vue'
+import VentCard from '@/components/cards/VentCard.vue'
+import PageNav from '@/components/layout/PageNav.vue'
+
+const crumbs = [
+  { label: 'Home', to: '/' },
+  { label: 'Strife' }
+]
+
+const prev = { to: '/conditions', label: 'Conditions' }
+const next = { to: '/weapons-and-armor', label: 'Weapons & Armor' }
+</script>

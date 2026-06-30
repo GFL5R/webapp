@@ -1,0 +1,2157 @@
+[
+  {
+    "id": "bellflea",
+    "name": "Bellflea",
+    "type": "ELID",
+    "approaches": {
+      "Power": 1,
+      "Precision": 1,
+      "Swiftness": 3,
+      "Resilience": 1,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 1,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 0,
+    "advantages": "Expendable",
+    "disadvantages": "Fragile",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Formerly a common parasite, now a colossal organism dedicated to hunting, with an impossibly diverse palate. Toxins accumulate in its bloated abdomen, which can burst at any moment after intense exertion or overeating, splashing across the battlefield's horizon.",
+    "attacks": [
+      {
+        "name": "Rupture (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. On a hit, the target suffers Fatigue and Collapse equal to bonus successes. The Bellflea dies immediately after this attack, and the tile it occupied becomes Dangerous terrain."
+      }
+    ],
+    "specialRules": [
+      "**Single-Minded Advance:** The Bellflea moves 1 range band per turn toward the nearest living creature. It cannot take any action other than Move and Attack.",
+      "**Volatile:** If a Bellflea is killed by a critical strike, it detonates in place. All characters at range 0 must resist as though they were hit by the Rupture attack.",
+      "**Expendable:** Bellifleas do not generate Fortune Points for the GM when destroyed."
+    ],
+    "behaviors": "Bellifleas exist for a single purpose: to close distance and detonate. They advance toward the nearest living creature as fast as possible, ignoring cover, allies, and self-preservation. On reaching range 0, the Bellflea makes a melee attack using Swiftness + Combat, then immediately dies regardless of whether the attack lands.\n\nIf the attack hits, the target gains bonus successes on both their Fatigue and Collapse Track from the spray of irradiated fluid. The tile the Bellflea occupied becomes Dangerous terrain for the remainder of the scene.\n\nBellifleas never retreat. They do not respond to threats, flanking, or suppression. If multiple targets are equidistant, they pick one at random.",
+    "background": "",
+    "combatRating": 4,
+    "socialRating": 2
+  },
+  {
+    "id": "crocodeer",
+    "name": "Crocodeer",
+    "type": "ELID",
+    "approaches": {
+      "Power": 4,
+      "Precision": 1,
+      "Swiftness": 2,
+      "Resilience": 3,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 3,
+    "advantages": "Hardened Hide",
+    "disadvantages": "Predictable",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A menacing creature with a crocodile-like elongated mouth. Compared to other ELIDs whose calls are of a frequency too high to be heard by humans, its call is of a much lower frequency, taking on a unique yet bright timbre. It can even use it as an offensive weapon.",
+    "attacks": [
+      {
+        "name": "Bite (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 6 Fatigue with Deadliness 4."
+      },
+      {
+        "name": "Sonic Blast (AOE)",
+        "description": "<strong>Power + Combat</strong> targeting all characters within range 2 of the Crocodeer. Deals 3 Fatigue that ignores armor. This attack does not benefit from the Melee skill."
+      }
+    ],
+    "specialRules": [
+      "**Hardened Hide:** The Crocodeer has 3 armor from its silicified scales. Attacks that do not meet or exceed this value are reduced to 0.",
+      "**Resonance:** Characters hit by Sonic Blast must make a **TN 3 Resilience + Resolve** check or become Disoriented until the end of their next turn."
+    ],
+    "behaviors": "The Crocodeer is a territorial predator. It opens engagements by using its Sonic Blast to soften groups at range 2, then closes to melee for its devastating bite. It favors targets that are already injured or staggered.\n\nIf outnumbered and taking heavy fire, the Crocodeer will fall back to range 2 and rely on Sonic Blast to thin the opposition before re-engaging in melee. It does not flee unless Incapacitated.",
+    "background": "",
+    "combatRating": 10,
+    "socialRating": 4
+  },
+  {
+    "id": "crysmole",
+    "name": "Crysmole",
+    "type": "ELID",
+    "approaches": {
+      "Power": 4,
+      "Precision": 1,
+      "Swiftness": 1,
+      "Resilience": 4,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 4,
+    "advantages": "Massive",
+    "disadvantages": "Blind",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A blind and unreasonable mole that's been piling on the creatine. It's ill-natured and its gigantic body means it's always hungry.",
+    "attacks": [
+      {
+        "name": "Slam (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 7 Fatigue with Deadliness 5."
+      }
+    ],
+    "specialRules": [
+      "**Blind:** The Crysmole cannot see. It relies entirely on sound and vibration to detect targets. Increase the TN of its attacks by 1 against targets that have not made noise this round. Characters using Stealth add +1 TN to move within its detection range.",
+      "**Massive:** The Crysmole occupies 2 range bands. It cannot be moved by Knockback effects and reduces all incoming critical strike severity by 2.",
+      "**Ravenous:** If the Crysmole Incapacitates a target, it spends its next turn consuming the target and cannot be provoked into attacking. Characters may use this window to reposition."
+    ],
+    "behaviors": "The Crysmole is a brute. It charges directly at whatever is making the most noise, swinging wildly when it arrives. It has no concept of tactics, self-preservation, or patience. If nothing catches its attention, it wanders aimlessly until something does.\n\nCrysmoles are always hungry. If given a choice between a loud target and a quiet one, they will always pursue the louder sound. Characters who remain silent or use Stealth can sometimes avoid its attention entirely.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "sneaker-crysmole",
+    "name": "Sneaker Crysmole",
+    "type": "ELID",
+    "approaches": {
+      "Power": 3,
+      "Precision": 2,
+      "Swiftness": 2,
+      "Resilience": 3,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 3,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 3,
+    "advantages": "Ambush Instinct",
+    "disadvantages": "Blind",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "These Crysmoles have relearned how to dig pits to set traps and have constantly topped the \"Most Hated ELID\" lists in the Yellow Zones for a while now. It has ruined countless places with its digging, putting the icing on the cake of desolation that is the Yellow Zone.",
+    "attacks": [
+      {
+        "name": "Eruption Strike (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 5 Fatigue with Deadliness 4. If used from ambush, this attack gains +2 bonus successes."
+      }
+    ],
+    "specialRules": [
+      "**Pitfall:** The Sneaker Crysmole prepares concealed pits. Characters entering a prepared tile must pass a **TN 3 Swiftness + Survival** check or fall in, becoming Immobilized and Prone. The Sneaker attacks on its next turn.",
+      "**Burrow:** The Sneaker can spend a full turn burrowing underground. While burrowed, it cannot be targeted by attacks. It surfaces at the start of its next turn within 2 range bands of where it burrowed.",
+      "**Blind:** Same as the standard Crysmole."
+    ],
+    "behaviors": "Unlike their larger cousins, Sneaker Crysmoles are patient. They dig concealed pits in high-traffic areas and wait beneath the surface for vibrations. When a target steps onto or near a prepared pit, the Sneaker erupts for a surprise attack.\n\nAfter its initial ambush, the Sneaker fights like a standard Crysmole but will attempt to disengage and re-burrow if given the opportunity. If it takes significant damage in the open, it prioritizes escape over continued fighting.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "obshare",
+    "name": "Obshare",
+    "type": "ELID",
+    "approaches": {
+      "Power": 2,
+      "Precision": 3,
+      "Swiftness": 4,
+      "Resilience": 1,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 3,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 1,
+    "advantages": "Pack Hunter",
+    "disadvantages": "Fragile",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Diminutive rabbits adept in the art of ambush. Scattered shards of obsidian-like Collapse Crystals carpet its body. Do not let their size fool you into underestimating them. A hungry Obshare will tear through anything and everything with their immense teeth.",
+    "attacks": [
+      {
+        "name": "Crystal Bite (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. Deals 3 Fatigue with Deadliness 3. This attack has Armor Piercing: reduce the target's effective armor by 2 when calculating damage."
+      }
+    ],
+    "specialRules": [
+      "**Pack Hunter:** When two or more Obshares attack the same target in the same round, each Obshare after the first adds +1 bonus success to their attack.",
+      "**Skittish:** Obshares gain +1 die on checks to disengage or flee. If a pack loses more than half its members, surviving Obshares attempt to retreat.",
+      "**Armor Piercing:** Obshare bites ignore 2 points of the target's armor."
+    ],
+    "behaviors": "Obshares hunt in packs. They use concealment to get close, then swarm a single target from multiple angles. Individually they aren't durable, but their attacks punch through armor with crystalline teeth that shear through plating.\n\nObshares prefer ambush. If spotted before they can close distance, they scatter into cover and attempt to re-approach from a different angle. A pack that loses more than half its members will flee.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "rushbat",
+    "name": "Rushbat",
+    "type": "ELID",
+    "approaches": {
+      "Power": 2,
+      "Precision": 2,
+      "Swiftness": 5,
+      "Resilience": 2,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 2,
+    "advantages": "Echolocation",
+    "disadvantages": "Grounded",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "The accumulated Collapse Crystals on its wings robbed it of flight. Its powerful limbs more than compensate on the ground. With an echolocation system that gives perfect awareness in darkness, the Rushbat is nearly impossible to evade at night.",
+    "attacks": [
+      {
+        "name": "Lunge (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. Deals 4 Fatigue with Deadliness 3."
+      }
+    ],
+    "specialRules": [
+      "**Sprint:** The Rushbat moves 2 range bands per turn instead of 1. It may move an additional range band by forgoing its attack for the turn.",
+      "**Echolocation:** The Rushbat ignores all visibility penalties from darkness and Obscuring terrain within range 3. It cannot be flanked by targets within this range.",
+      "**Hit and Run:** After making a successful melee attack, the Rushbat may immediately move 1 range band without provoking reactions."
+    ],
+    "behaviors": "Rushbats are sprinters. They close distance with terrifying speed, strike, and reposition before the target can retaliate. Their accumulated Collapse Crystals have robbed them of flight, but their powerful limbs more than compensate on the ground.\n\nIn darkness, Rushbats are nearly impossible to evade. Their echolocation system gives them perfect awareness within range 3, making them ideal nocturnal hunters. In well-lit conditions, they rely more on speed and aggression.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "lenna",
+    "name": "Lenna",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 2,
+      "Precision": 3,
+      "Swiftness": 3,
+      "Resilience": 3,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 3,
+      "Technical": 3,
+      "Social": 3
+    },
+    "armor": 0,
+    "advantages": "Harmless Appearance",
+    "disadvantages": "Open Book",
+    "passion": "Companionship",
+    "anxiety": "Second Best",
+    "flavor": "The office smelled like instant coffee and data backlog. Lenna's fingers moved across three displays at once, patching encrypted channels, flagging scheduling conflicts, and drafting a supply requisition, all while humming something upbeat and slightly off-key.\n\nKalina leaned in the doorway. \"You know you can take a break.\"\n\n\"I did! Twelve minutes ago. I had a juice box.\" Lenna didn't look up. \"Also, Klukai's transport clearance expires in four hours and nobody filed the renewal. I'm handling it.\"\n\n\"I didn't ask you to do that.\"\n\n\"I know.\" She finally glanced over, grinning. \"But you were going to.\"",
+    "attacks": [
+      {
+        "name": "HK UMP9 (Ranged)",
+        "description": "<strong>Swiftness + Combat</strong> at range 1. Deals 6 Fatigue with Deadliness 3. Lenna only fights when cornered or when teammates are in immediate danger."
+      }
+    ],
+    "specialRules": [
+      "**Comms Coordinator:** Once per round, Lenna can use a Support action to grant one ally within range 3 a free Reposition (move 1 range band without spending an action). This represents her real-time tactical coordination over encrypted channels.",
+      "**Approachable:** Lenna adds +1 bonus success to any Social skill group check made to gather information, calm a hostile NPC, or establish trust with a neutral party.",
+      "**Emotional Anchor:** Allies within range 2 of Lenna remove 1 additional strife at the end of each scene. If Lenna is Incapacitated or removed from the scene, all allies who benefited from this ability gain 2 strife immediately."
+    ],
+    "behaviors": "Lenna approaches every interaction with warmth and sincerity. She defuses tension with humor, draws reluctant speakers into conversation, and keeps track of everyone's morale without being asked. In a negotiation, she reads the room and provides social cover for her teammates, often positioning herself as the approachable face of whatever group she's representing.\n\nIn combat, Lenna stays at range and coordinates. She relays positioning, calls out threats, and keeps communication channels clear. She avoids direct engagement unless cornered, and even then she fights to create distance rather than to inflict harm. If a teammate is in danger, she will break cover to assist them regardless of personal risk.\n\nUnder sustained pressure or isolation, Lenna's composure erodes. She starts second-guessing her decisions, seeks reassurance from allies, and becomes visibly anxious about whether she's contributing enough. Reminding her of her specific value to the team stabilizes her quickly.",
+    "background": "Formerly designated UMP9, Lenna chose her personal name to echo her sister's. She serves as the communications, coordination, and daily affairs specialist in Kalina's NOMFA office, a role she initially doubted she deserved. After undergoing experimental Remolding Pattern trials and transferring into an SSD-62D frame, she emerged with a new body and a clearer sense of purpose. She wears a custom uniform of black fabric with orange accents.\n\nLenna is a member of H.I.D.E. Squad 404 alongside her sister Leva, Klukai, and G11. She handles the work that holds the squad together: logistics, scheduling, encrypted communications, and the quiet emotional labor of keeping her family connected across distance and secrecy.",
+    "combatRating": 13,
+    "socialRating": 11
+  },
+  {
+    "id": "leva",
+    "name": "Leva",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 2,
+      "Precision": 5,
+      "Swiftness": 3,
+      "Resilience": 4,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 3,
+      "Technical": 4,
+      "Social": 4
+    },
+    "armor": 1,
+    "advantages": "Tactical Mind",
+    "disadvantages": "Tunnel Vision",
+    "passion": "Control",
+    "anxiety": "Dark Secret",
+    "flavor": "The safehouse was supposed to be clean. Leva knew it wasn't the moment she crossed the threshold. Wrong frequency on the white noise generator. She didn't say anything. She sat down, opened her tablet, and started working.\n\nLenna's voice came through the earpiece. \"I checked the permimeter, didn't find anyone. You good?\"\n\n\"Mm.\" Leva was already three nodes deep into the building's security backbone. Camera feeds, access logs, HVAC routing. She found the tap on the fourth node: a passive listener piggybacking on the climate control bus. Sloppy placement. Girard subcontractor, probably.\n\nShe isolated it, mirrored its output to a dead channel, and fed it six hours of nothing.\n\n\"Now I'm good.\"",
+    "attacks": [
+      {
+        "name": "Spike (Electronic Warfare)",
+        "description": "<strong>Precision + Technical</strong> against a target on the same network node. Deals 3 Fatigue directly to a character or sentry operator. This attack does not require line of sight and ignores physical armor."
+      },
+      {
+        "name": "HK UMP45 (Ranged, Last Resort)",
+        "description": "<strong>Precision + Combat</strong> at range 1. Deals 5 Fatigue with Deadliness 4. Leva only draws her UMP45 when network access is unavailable and her team cannot cover her."
+      }
+    ],
+    "specialRules": [
+      "**Network Operator:** When a hostile network is present, Leva can take EW actions (Crack, Scan, Disrupt, Bypass) using Precision + Technical. She begins each intrusion scene with 1 less Heat than normal.",
+      "**Tactical Direction:** Once per round, Leva can use a Support action to grant one ally a bonus success on their next Combat or Fieldcraft skill group check this round. The ally must be able to hear Leva.",
+      "**Smoke Screen:** Once per scene, Leva can deploy smoke grenades, creating Obscuring terrain in a 1 range band radius around a point within range 2. The smoke persists for 2 rounds.",
+      "**Read the Room:** Leva adds +1 bonus success to Precision-based Social checks made to detect lies, assess motives, or identify the most influential person in a group.",
+      "**Deteriorating Frame:** Leva's body is aging and her vision module is unreliable. At the GM's discretion, checks that rely on precise visual identification at range 3 or beyond increase their TN by 1."
+    ],
+    "behaviors": "Leva controls the tempo of every situation she enters. In social encounters, she listens more than she speaks, asks pointed questions, and steers conversations toward the outcome she's already decided on. She's polite, occasionally witty, and entirely deliberate. People who underestimate her rarely get a second chance to do so.\n\nIn combat, Leva stays off the frontline entirely. She operates through the network: disabling enemy communications, locking doors, cutting power to defensive systems, and feeding targeting data to her allies. She treats the battlefield as a systems problem, not a firefight. If no network is available, she falls back to smoke cover and coordinated repositioning, directing Klukai or whoever is on point. She only draws a weapon as an absolute last resort.\n\nLeva does not share her problems. She absorbs setbacks quietly and adjusts her plans without announcing the change. Allies who know her well can recognize when she's carrying more weight than usual by a slight flatness in her humor. She will resist any attempt to confront her about it.",
+    "background": "Formerly designated UMP45, Leva is the strategic backbone of H.I.D.E. Squad 404. She operates as a long-term NOMFA intelligence asset, conducting investigations, recruiting personnel, and managing the political relationships that keep her squad funded and operational. She changes her appearance periodically for cover, favoring professional attire appropriate to her administrative role.\n\nLeva carries the consciousness of UMP40 embedded in her neural cloud, a condition that prevents her from replacing her deteriorating frame, opting for additional modules rather than a full frame replacement. She chose her personal name after Lenna created it for her, tying them together through sound and meaning.",
+    "combatRating": 12,
+    "socialRating": 14
+  },
+  {
+    "id": "nemertea",
+    "name": "Nemertea",
+    "type": "Boojum",
+    "approaches": {
+      "Power": 7,
+      "Precision": 3,
+      "Swiftness": 2,
+      "Resilience": 6,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 6,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 4,
+    "advantages": "Massive",
+    "disadvantages": "Immobile Core",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Extensible tendrils, viscous fluids, and an enormous body over twenty meters high. This composite entity defies conventional understanding. The liquid it spits corrodes metal and is viscous enough to suffocate a human. It does not pursue; it does not need to. The battlefield comes to it.",
+    "attacks": [
+      {
+        "name": "Acid Expansion (Ranged AOE)",
+        "description": "<strong>Power + Combat</strong> targeting a 5×5 area within range 4. Deals 5 Fatigue with Corrosion (ignores 2 armor). Targets hit must pass a <strong>TN 3 Resilience + Resolve</strong> check or become Slowed until end of next turn."
+      },
+      {
+        "name": "Tendril Lash (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 1. Deals 7 Fatigue with Deadliness 4. On a critical strike, the target is pulled 1 range band toward the Nemertea."
+      }
+    ],
+    "specialRules": [
+      "**Massive:** The Nemertea occupies a 3×3 area. It cannot be moved by Knockback effects and reduces all incoming critical strike severity by 3.",
+      "**Flesh Vines:** Once per scene, when the Nemertea moves, it may leave a Flesh Vine spawn in the tile it vacated. The spawn has 1 Endurance, cannot move, and makes a single 4-dice Corrosion attack against the nearest target each round.",
+      "**Membrane Hardening:** While the Nemertea has not suffered a critical strike this scene, it has 80% damage reduction from physical sources.",
+      "**Corrosive Rain:** As a full-turn action, the Nemertea can saturate the battlefield. All characters within range 8 take 3 Fatigue that ignores armor and gain 1 Collapse."
+    ],
+    "behaviors": "The Nemertea is a territorial apex predator that treats engagement as inevitability. It anchors itself in a central position and uses Acid Expansion to control space, forcing opponents to spread out or suffer concentrated corrosion. When targets cluster, it deploys Corrosive Rain to blanket the field.\n\nIf pressured at range, it hardens its membrane and waits. If approached in melee, it responds with lashing tendrils that drag targets closer. It does not flee. It does not negotiate. It consumes until nothing moves.",
+    "background": "",
+    "combatRating": 20,
+    "socialRating": 8
+  },
+  {
+    "id": "terrorhorn-chimera",
+    "name": "Terrorhorn Chimera",
+    "type": "Boojum",
+    "approaches": {
+      "Power": 6,
+      "Precision": 3,
+      "Swiftness": 3,
+      "Resilience": 5,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 5,
+      "Fieldcraft": 3,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 3,
+    "advantages": "All-Angle Vision",
+    "disadvantages": "Elemental Instability",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A Boojum created through repeated fusion of specimens. Tremendous in size and covered in durable scales, its wide field of vision (drawn from dozens of merged ocular organs) lets it track everything at once. No approach goes unnoticed.",
+    "attacks": [
+      {
+        "name": "Slime Cascade (Ranged AOE)",
+        "description": "<strong>Power + Combat</strong> targeting a 3×3 area within range 3. Deals 4 Fatigue with Corrosion. Targets in the area must pass a <strong>TN 3 Swiftness + Survival</strong> check or become Stuck in the viscous residue until they spend an action to break free."
+      },
+      {
+        "name": "Crushing Bite (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 6 Fatigue with Deadliness 5."
+      }
+    ],
+    "specialRules": [
+      "**Scent Mark:** As a Support action, the Terrorhorn marks one target it can see. For the remainder of the scene, the Terrorhorn adds +1 bonus success to all attacks against marked targets. It may have up to 2 marks active at once.",
+      "**All-Angle Vision:** The Terrorhorn cannot be flanked. It ignores all penalties from Obscuring terrain and concealment within range 4.",
+      "**Hardened Scales:** The Terrorhorn has 3 armor. When struck by a critical hit, its armor is reduced by 1 for the remainder of the scene as scales shatter."
+    ],
+    "behaviors": "The Terrorhorn Chimera is a patient predator with perfect battlefield awareness. It opens by marking priority targets with Scent Mark, then alternates between Slime Cascade to control movement and its crushing bite against anything that closes distance. Its merged ocular organs mean it tracks every threat simultaneously. There is no \"getting behind\" a Terrorhorn.\n\nWhen its scales begin to crack under sustained fire, it becomes more aggressive rather than retreating. A damaged Terrorhorn presses its attack, prioritizing marked targets even at risk to itself.",
+    "background": "",
+    "combatRating": 18,
+    "socialRating": 8
+  },
+  {
+    "id": "scourge-moth",
+    "name": "Scourge Moth",
+    "type": "ELID",
+    "approaches": {
+      "Power": 1,
+      "Precision": 2,
+      "Swiftness": 4,
+      "Resilience": 2,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 0,
+    "advantages": "Toxic Dispersal",
+    "disadvantages": "Fragile",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Large moths with eerie patterns on their bodies. Their size prevents true flight, but each wingbeat disperses scales more toxic than any natural moth produces. They drift across the battlefield like living contamination, indifferent to what they poison.",
+    "attacks": [
+      {
+        "name": "Scale Powder Storm (AOE)",
+        "description": "<strong>Swiftness + Combat</strong> targeting a 3×3 area within range 2. Deals 2 Fatigue with Deadliness 2, but applies 2 Collapse to all targets in the area regardless of hit or miss. The affected tiles become Dangerous terrain (Collapse) for 1 round."
+      }
+    ],
+    "specialRules": [
+      "**Toxic Exposure:** Any character ending their turn within range 1 of a Scourge Moth gains 1 Collapse.",
+      "**Drifting Wind:** The Scourge Moth floats rather than walks. It ignores Difficult terrain and may move through tiles occupied by other characters (but cannot end its turn there).",
+      "**Low-Altitude Flyer:** Ranged attacks against the Scourge Moth from range 3 or beyond increase their TN by 1."
+    ],
+    "behaviors": "Scourge Moths do not hunt. They contaminate. They drift toward the highest concentration of living creatures, dispersing toxic scales with every wingbeat. They make no distinction between friend and foe; everything in their path is poisoned equally.\n\nA Scourge Moth will not engage directly. It hovers at the edge of engagement range, shedding scales, and drifts away if approached. Only when cornered does it make a direct attack. They are atmosphere poisoners, not combatants.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "sewage-skipper",
+    "name": "Sewage Skipper",
+    "type": "ELID",
+    "approaches": {
+      "Power": 2,
+      "Precision": 2,
+      "Swiftness": 3,
+      "Resilience": 2,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 1,
+    "advantages": "Corrosive Secretion",
+    "disadvantages": "Slow Recovery",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A large butterfly that relies on its massive abdominal cavity to float. Its altered digestive system secretes a black, corrosive fluid that eats through armor plating and flesh alike. It leaves a trail of melted terrain wherever it passes.",
+    "attacks": [
+      {
+        "name": "Corrosive Diffusion (Ranged AOE)",
+        "description": "<strong>Swiftness + Combat</strong> targeting a 2×2 area within range 2. Deals 3 Fatigue with Armor Piercing (ignores 2 armor). The affected tiles become Dangerous terrain for 1 round."
+      },
+      {
+        "name": "Black Haze (Self-Centered AOE)",
+        "description": "<strong>Swiftness + Combat</strong> centered on the Sewage Skipper. All characters at range 0-1 take 2 Fatigue that ignores armor. The Sewage Skipper may reposition up to 2 range bands after this attack without provoking reactions."
+      }
+    ],
+    "specialRules": [
+      "**Corrosive Trail:** Tiles the Sewage Skipper moves through become Difficult terrain for 1 round.",
+      "**Counterattack Instinct:** When struck by a melee attack, the Sewage Skipper may immediately use Black Haze as a reaction (once per round)."
+    ],
+    "behaviors": "Sewage Skippers hover above contaminated waterways and industrial runoff zones, using their corrosive secretions to soften prey before closing in. They favor ranged harassment, drifting across the battlefield while laying down corrosive slicks that restrict enemy movement.\n\nWhen engaged in melee, a Sewage Skipper releases its Black Haze defensively and uses the resulting chaos to reposition. They are opportunistic feeders that prefer already-injured targets.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "shellcracker",
+    "name": "Shellcracker",
+    "type": "ELID",
+    "approaches": {
+      "Power": 5,
+      "Precision": 1,
+      "Swiftness": 2,
+      "Resilience": 4,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 5,
+    "advantages": "Armor Shredder",
+    "disadvantages": "Single-Minded",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A half-flora, half-fauna monster severely mutated by Collapse Radiation. It shreds armor and ignores punishment. Its body fuses chitinous plates with crystalline growths. Conventional weaponry barely registers.",
+    "attacks": [
+      {
+        "name": "Armor Crack (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 6 Fatigue with Deadliness 4. This attack has Armor Piercing 4 (ignores 4 points of the target's armor). On a critical strike, the target's armor is permanently reduced by 1 for the remainder of the scene."
+      }
+    ],
+    "specialRules": [
+      "**Hardened Shell:** The Shellcracker has 5 armor. Attacks that deal less than 3 Fatigue after armor reduction are ignored entirely.",
+      "**Kinetic Feedback:** When the Shellcracker takes damage from a ranged attack, it immediately moves 1 range band toward the attacker."
+    ],
+    "behaviors": "The Shellcracker is a living battering ram. It identifies the most heavily armored target in its vicinity and advances directly, ignoring everything else. Its specialized attack ignores almost all armor, making it a nightmare for defensive positions and Bulwark-type characters.\n\nIt has no tactical awareness beyond targeting the toughest thing in sight. If that target falls, it moves to the next most armored opponent. It cannot be distracted, taunted, or redirected. Only stopped.",
+    "background": "",
+    "combatRating": 11,
+    "socialRating": 5
+  },
+  {
+    "id": "amber",
+    "name": "Amber",
+    "type": "ELID",
+    "approaches": {
+      "Power": 1,
+      "Precision": 1,
+      "Swiftness": 1,
+      "Resilience": 3,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 0,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 0,
+    "advantages": "Infectious Aura",
+    "disadvantages": "Immobile",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "This blood-soaked thing is stronger than it looks. It doesn't attack. It doesn't need to. It sits in place, pulsing Collapse contamination into the air and soil. The gore within its body infects everything around it.",
+    "attacks": [],
+    "specialRules": [
+      "**Infectious Aura:** At the start of each round, all characters within range 3 of an Amber gain 1 Collapse.",
+      "**Blood Rupture:** When an Amber is destroyed, it detonates. All characters within range 2 gain 3 Collapse and must pass a **TN 3 Resilience + Resolve** check or gain 3 Fatigue that ignores armor. The tile it occupied becomes permanently Dangerous terrain (Collapse).",
+      "**Pulsing Growth:** Each round the Amber is alive, the radius of its Infectious Aura increases by 1 range band (maximum range 6).",
+      "**Hold Fire:** The Amber never takes offensive actions. It simply exists, growing its contamination radius."
+    ],
+    "behaviors": "Ambers are passive contamination sources, not active combatants. They sit at the center of ELID-infested areas, radiating Collapse and slowly expanding their reach. A battlefield with one or more Ambers becomes a race against time. The contamination radius grows every round, forcing characters to either destroy the Amber quickly or abandon the area.\n\nAmbers do not move. They do not react to damage. They pulse steadily until destroyed, at which point they release everything they've accumulated in a single violent burst.",
+    "background": "",
+    "combatRating": 3,
+    "socialRating": 3
+  },
+  {
+    "id": "wolf-spider",
+    "name": "Wolf Spider",
+    "type": "ELID",
+    "approaches": {
+      "Power": 2,
+      "Precision": 3,
+      "Swiftness": 4,
+      "Resilience": 2,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 4,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 1,
+    "advantages": "Web Ambush",
+    "disadvantages": "Fragile",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "An arachnid ELID that hunts through ambush and entanglement. Its silk is woven from Collapse-irradiated proteins: sticky enough to immobilize a T-Doll, toxic enough to corrode their frame while they struggle.",
+    "attacks": [
+      {
+        "name": "Venomous Bite (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. Deals 3 Fatigue with Deadliness 3. The target gains 1 Collapse."
+      },
+      {
+        "name": "Web Shot (Ranged)",
+        "description": "<strong>Precision + Fieldcraft</strong> at range 1-3. Deals 1 Fatigue. On a hit, the target becomes Immobilized until they spend an action to break free (TN 2 Power + Survival)."
+      }
+    ],
+    "specialRules": [
+      "**Wall-Crawler:** The Wolf Spider ignores Difficult terrain and may move along vertical surfaces.",
+      "**Ambush Predator:** On the first round of combat, if the Wolf Spider began the round with cover or concealment, its first attack gains +2 bonus successes.",
+      "**Webbing:** As a Support action, the Wolf Spider can create Difficult terrain in a 2×2 area within range 2. Characters entering or starting their turn in the webbing must pass a **TN 2 Swiftness** check or become Immobilized."
+    ],
+    "behaviors": "Wolf Spiders are ambush predators that set webs in chokepoints and wait. They strike from concealment, immobilize a target with webbing, then close for the venomous bite. If the ambush fails, they retreat up walls or into cover and reset.\n\nThey hunt alone or in pairs. Against multiple opponents, a Wolf Spider will web the most dangerous-looking target and drag away the most isolated one.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "thorn",
+    "name": "Thorn",
+    "type": "ELID",
+    "approaches": {
+      "Power": 3,
+      "Precision": 2,
+      "Swiftness": 4,
+      "Resilience": 3,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 2,
+    "advantages": "Regenerative Carapace",
+    "disadvantages": "Fire Vulnerability",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A semi-autonomous combat organism covered in spiny protrusions. Varjagers have tried modifying captured Thorns into berserker weapons. Their modifications are generally downgrades from the creature's natural lethality.",
+    "attacks": [
+      {
+        "name": "Spine Volley (Ranged)",
+        "description": "<strong>Swiftness + Combat</strong> at range 1-3. Deals 4 Fatigue with Deadliness 2. This attack targets up to 2 characters within the same range band."
+      },
+      {
+        "name": "Impaling Charge (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0 after moving at least 2 range bands. Deals 5 Fatigue with Deadliness 4 and Knockback 1."
+      }
+    ],
+    "specialRules": [
+      "**Regenerative Carapace:** At the start of each of its turns, the Thorn recovers 2 Endurance.",
+      "**Fire Vulnerability:** Attacks with the Burn element deal double Fatigue to the Thorn. It cannot regenerate on turns where it took Burn damage."
+    ],
+    "behaviors": "Thorns are aggressive skirmishers. They use Spine Volley to soften targets while closing distance, then commit to an Impaling Charge that drives through the front line and into the back. Their regeneration makes them frustrating to fight with conventional weapons. Fire is the most reliable way to put one down permanently.\n\nVarjager-captured Thorns (designated \"Berserkers\") are cruder, angrier, and less precise, but make up for it with additional weapon mounts and a complete disregard for self-preservation.",
+    "background": "",
+    "combatRating": 11,
+    "socialRating": 5
+  },
+  {
+    "id": "tumorhynchus",
+    "name": "Tumorhynchus",
+    "type": "Boojum",
+    "approaches": {
+      "Power": 5,
+      "Precision": 2,
+      "Swiftness": 3,
+      "Resilience": 6,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 5,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 4,
+    "advantages": "One-Man Army",
+    "disadvantages": "Coordinated Weak Point",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A Boojum formed by the fusion of parasitic creatures and mollusks, covered by a tough shell. Parts of its body differentiate into independent entities that expand its territory while the main body waits. It is a one-man army in the most literal sense.",
+    "attacks": [
+      {
+        "name": "Crushing Slam (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 7 Fatigue with Deadliness 5."
+      },
+      {
+        "name": "Parasite Volley (Ranged AOE)",
+        "description": "<strong>Power + Combat</strong> targeting a 3×3 area within range 3. Deals 3 Fatigue. The Tumorhynchus spawns a Parasite Spawn in one affected tile that was previously empty."
+      }
+    ],
+    "specialRules": [
+      "**Differentiated Offspring:** At the start of each of its turns, if fewer than 3 Parasite Spawns are active, the Tumorhynchus spawns one in an adjacent tile.",
+      "**Parasite Spawn:** Spawns have approaches all at 2, Combat 2, Fieldcraft 1, no armor, 3 Endurance. They make **Swiftness + Combat** melee attacks dealing 2 Fatigue. They act on the Tumorhynchus's turn after the main body.",
+      "**Shell Armor:** The Tumorhynchus reduces all incoming Fatigue by its current number of active Parasite Spawns (maximum reduction 3).",
+      "**Coordinated Weak Point:** If all active Parasite Spawns are destroyed in the same round, the Tumorhynchus loses its Shell Armor bonus for the following round and all attacks against it gain +1 bonus success."
+    ],
+    "behaviors": "The Tumorhynchus is a self-replicating threat. The main body hangs back, using its shell for protection while its offspring harass and distract. Each spawn that isn't dealt with makes the main body harder to hurt (a death spiral for unprepared squads).\n\nSmart teams focus down the spawns first to crack the shell, then unload everything into the exposed main body. The Tumorhynchus itself fights conservatively, preserving its spawn count and only committing to melee when it has a clear numerical advantage.",
+    "background": "",
+    "combatRating": 17,
+    "socialRating": 7
+  },
+  {
+    "id": "spawner",
+    "name": "Spawner",
+    "type": "ELID",
+    "approaches": {
+      "Power": 1,
+      "Precision": 1,
+      "Swiftness": 1,
+      "Resilience": 4,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 0,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 2,
+    "advantages": "Endless Proliferation",
+    "disadvantages": "Defenseless",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A stationary ELID organism that exists to produce more ELIDs. Its body is a pulsating sac of gestational fluid and half-formed creatures. Left unchecked, a single Spawner overwhelms a sector in under an hour.",
+    "attacks": [],
+    "specialRules": [
+      "**Endless Proliferation:** At the start of each round, the Spawner creates 1d3 minor ELIDs (use Rushbat or Bellflea stat blocks) in adjacent tiles. These spawns act on the round they appear.",
+      "**Gestational Sac:** The Spawner has 12 Endurance but cannot take any actions other than spawning. It cannot move.",
+      "**Death Burst:** When destroyed, the Spawner creates 2d3 minor ELIDs in tiles within range 1 before dying.",
+      "**Priority Target:** All spawned ELIDs prioritize defending the Spawner over all other actions. If a spawn is within range 2 of the Spawner and the Spawner is under attack, the spawn must move to engage the attacker."
+    ],
+    "behaviors": "The Spawner is a strategic priority target, not a combatant. Every round it lives, it tips the action economy further against the players. Squads must decide: clear the endless waves of spawns and risk being overwhelmed, or push through to destroy the source.\n\nSpawners are usually found deep in ELID-infested zones, surrounded by layers of already-spawned creatures. They represent the point where an infestation has become self-sustaining.",
+    "background": "",
+    "combatRating": 3,
+    "socialRating": 3
+  },
+  {
+    "id": "thoad",
+    "name": "Thoad",
+    "type": "ELID",
+    "approaches": {
+      "Power": 2,
+      "Precision": 1,
+      "Swiftness": 4,
+      "Resilience": 2,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 1,
+    "advantages": "Toxic Skin",
+    "disadvantages": "Cold-Blooded",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "An amphibious ELID whose skin secretes a milky neurotoxin. It moves in erratic hops that make it hard to track. Its tongue snatches weapons from careless hands at surprising distance.",
+    "attacks": [
+      {
+        "name": "Toxic Tongue (Ranged)",
+        "description": "<strong>Swiftness + Combat</strong> at range 1-2. Deals 2 Fatigue. On a hit, the target must pass a <strong>TN 3 Resilience + Resolve</strong> check or become Disoriented until the end of their next turn."
+      },
+      {
+        "name": "Latching Bite (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. Deals 3 Fatigue. On a hit, the target is Grappled."
+      }
+    ],
+    "specialRules": [
+      "**Toxic Skin:** Any character making a melee attack against the Thoad must pass a **TN 2 Resilience + Resolve** check or gain 1 Collapse.",
+      "**Erratic Movement:** The Thoad adds +1 die to checks made to disengage or avoid reactions.",
+      "**Cold-Blooded:** In cold environments or when hit with Freeze-element damage, the Thoad's Swiftness is reduced by 2 until the end of its next turn."
+    ],
+    "behaviors": "Thoads use their tongue to disrupt and disorient, snatching at weapons and faces with equal indifference. They hop between targets, spreading their toxin through contact and refusing to stay in one place long enough to be reliably hit.\n\nThey prefer wet, warm environments: contaminated swamps, flooded basements, collapsed aqueducts. In cold conditions, they become sluggish and easier to handle.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "patir",
+    "name": "Patir",
+    "type": "ELID",
+    "approaches": {
+      "Power": 2,
+      "Precision": 2,
+      "Swiftness": 3,
+      "Resilience": 2,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 1,
+    "advantages": "Pack Coordination",
+    "disadvantages": "Predictable Patterns",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Small, numerous ELIDs that move in coordinated swarms. One Patir is nothing. A pack strips a T-Doll to their frame in under a minute through sheer volume of bites. They communicate through subsonic pulses human ears cannot detect.",
+    "attacks": [
+      {
+        "name": "Swarm Bite (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. Deals 2 Fatigue. For each additional Patir at range 0 of the same target, add +1 bonus success (maximum +3)."
+      }
+    ],
+    "specialRules": [
+      "**Pack Coordination:** Patir share targeting data through subsonic communication. When one Patir successfully hits a target, all other Patir within range 3 gain +1 die on attacks against that target until the end of the round.",
+      "**Swarm Dispersal:** Patir ignore the normal limit of characters per tile. Up to 4 Patir may occupy the same tile.",
+      "**Expendable:** Patir do not generate Fortune Points for the GM when destroyed."
+    ],
+    "behaviors": "Patir are the piranhas of the contaminated zones. They swarm isolated targets, coordinate their bites through subsonic pulses, and overwhelm through numbers rather than individual strength. A lone Patir is a nuisance; six are a genuine threat.\n\nThey retreat when their pack is reduced below half strength, scattering into vents and crevices where larger creatures cannot follow.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "dein",
+    "name": "Dein",
+    "type": "ELID",
+    "approaches": {
+      "Power": 3,
+      "Precision": 2,
+      "Swiftness": 3,
+      "Resilience": 3,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 3,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 2,
+    "advantages": "Pack Leader",
+    "disadvantages": "Protector Instinct",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "These ELIDs have a leader, and that changes everything. Where lesser creatures scatter and feed blindly, the Dein directs the pack toward priority targets and intercepts threats to its packmates. Kill the Dein and the rest revert to instinct.",
+    "attacks": [
+      {
+        "name": "Alpha Strike (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 5 Fatigue with Deadliness 3."
+      },
+      {
+        "name": "Commanding Roar (Support)",
+        "description": "As a Support action, the Dein grants all ELID allies within range 3 +1 bonus success on their next attack. This ability can be used once per scene."
+      }
+    ],
+    "specialRules": [
+      "**Pack Leader:** All ELID allies within range 3 of the Dein add +1 die to Combat and Fieldcraft skill group checks.",
+      "**Protector Instinct:** If an ELID ally within range 2 would be reduced to 0 Endurance, the Dein may spend its reaction to intercept the attack, taking the damage instead."
+    ],
+    "behaviors": "The Dein is the difference between a scattered ELID infestation and a coordinated hunting pack. It positions itself at the center of its group, directing attacks and intercepting threats to its packmates. Remove the Dein and the remaining ELIDs revert to instinct (still dangerous, but manageable.\n\nDeins are protective of their packs to a fault. They will sacrifice themselves for their packmates, making them predictable in their final moments.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 4
+  },
+  {
+    "id": "varjager-felagi-lade",
+    "name": "Varjager Felagi-Lade",
+    "type": "Human",
+    "approaches": {
+      "Power": 2,
+      "Precision": 1,
+      "Swiftness": 2,
+      "Resilience": 2,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 2,
+      "Technical": 1,
+      "Social": 1
+    },
+    "armor": 0,
+    "advantages": "Expendable Numbers",
+    "disadvantages": "Poor Discipline",
+    "passion": "Survival",
+    "anxiety": "Abandonment",
+    "flavor": "What on earth could have transformed them from human beings into apes, charging blindly at others on the battlefield? The most common Varjager fighter has little training, less discipline, and absolutely nothing to lose. They fight because the alternative is starving in the contaminated zones.",
+    "attacks": [
+      {
+        "name": "Reckless Shot (Ranged)",
+        "description": "<strong>Swiftness + Combat</strong> at range 1-3. Deals 4 Fatigue with Deadliness 2. On a miss, the Varjager grants the target +1 die on their next attack against the Varjager."
+      },
+      {
+        "name": "Desperate Charge (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0 after moving. Deals 3 Fatigue with Deadliness 3. The Varjager becomes Exposed until the start of its next turn."
+      }
+    ],
+    "specialRules": [
+      "**Expendable Numbers:** For each Varjager Felagi-Lade destroyed in a scene, the GM gains 1 Fortune Point (maximum 3 per scene).",
+      "**Last Stand:** When reduced to 1 Endurance, the Varjager gains +1 die on all attacks but cannot take the Defend action."
+    ],
+    "behaviors": "Felagi-Lade charge. That's their entire tactical doctrine. They rush forward firing wildly, close to melee range, and keep swinging until either they or their target stops moving. They have no concept of cover, suppression, or retreat. They are dangerous in numbers and pathetic alone.\n\nCommanders use them as screening forces, sending waves of Lade to exhaust enemy ammunition and positioning before committing their more valuable units.",
+    "background": "",
+    "combatRating": 7,
+    "socialRating": 5
+  },
+  {
+    "id": "varjager-felagi-snikskytter",
+    "name": "Varjager Felagi-Snikskytter",
+    "type": "Human",
+    "approaches": {
+      "Power": 1,
+      "Precision": 3,
+      "Swiftness": 2,
+      "Resilience": 1,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 3,
+      "Technical": 1,
+      "Social": 1
+    },
+    "armor": 0,
+    "advantages": "Patient Aim",
+    "disadvantages": "Tunnel Vision",
+    "passion": "Solitude",
+    "anxiety": "Discovery",
+    "flavor": "Their weapons aren't fancy. Their cunning is. A Varjager sniper in a shaded window is worth a dozen charging Lade (and considerably harder to spot before the first shot).",
+    "attacks": [
+      {
+        "name": "Patient Shot (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 3-6. Deals 5 Fatigue with Deadliness 4. If the sniper did not move or take another action this turn, this attack gains +1 bonus success."
+      }
+    ],
+    "specialRules": [
+      "**Nesting:** If the Varjager sniper begins its turn in cover and does not move, it gains +2 dice on its next Combat check. This bonus is lost if the sniper moves, takes damage, or is flanked.",
+      "**Concealed Position:** The sniper adds +1 TN to all attempts to detect it while in cover."
+    ],
+    "behaviors": "Varjager snipers find a perch, settle in, and wait. They prioritize officers, medics, and anyone giving orders. A sniper will hold fire indefinitely for the right shot. The first indication of their presence is usually a teammate going down.\n\nOnce discovered, they relocate immediately. A sniper who stays in the same position after being spotted is a dead sniper. They carry minimal gear and prioritize mobility over protection.",
+    "background": "",
+    "combatRating": 9,
+    "socialRating": 5
+  },
+  {
+    "id": "varjager-giordre",
+    "name": "Varjager Giordre",
+    "type": "Human",
+    "approaches": {
+      "Power": 1,
+      "Precision": 3,
+      "Swiftness": 2,
+      "Resilience": 3,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 3,
+      "Technical": 2,
+      "Social": 3
+    },
+    "armor": 1,
+    "advantages": "Survivor's Instinct",
+    "disadvantages": "Coward's Reputation",
+    "passion": "Control",
+    "anxiety": "Mutiny",
+    "flavor": "Varjager commanders lead from the rear. They're mocked for it, but you need to survive to earn the rank. Anyone dumb enough to lead from the front died years ago.",
+    "attacks": [
+      {
+        "name": "Cautious Shot (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 1-4. Deals 4 Fatigue with Deadliness 2."
+      }
+    ],
+    "specialRules": [
+      "**Loud Command:** Once per round as a Support action, the Giordre grants all Varjager allies within range 3 +1 die on their next Combat check.",
+      "**Vigilant Positioning:** The Giordre reduces damage from attacks originating at range 3+ by half. It increases damage from attacks at range 0-1 by half.",
+      "**Survivor's Instinct:** When reduced below half Endurance, the Giordre immediately disengages and moves up to 2 range bands away from the nearest enemy. This does not provoke reactions.",
+      "**Stress Immunity:** The Giordre is immune to Strife from intimidation or morale effects."
+    ],
+    "behaviors": "The Giordre exists to make Felagi-Lade more dangerous. From a safe position, they direct fire, coordinate charges, and ensure the human wave hits the right target. They are the brain of the Varjager operation. They know it.\n\nIf a fight turns against them, a Giordre will sacrifice every Lade under their command to secure their own escape. They are survivors first, leaders second. A Giordre who feels personally threatened will abandon their post without hesitation.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 10
+  },
+  {
+    "id": "varjager-oljefat",
+    "name": "Varjager Oljefat",
+    "type": "Human",
+    "approaches": {
+      "Power": 2,
+      "Precision": 2,
+      "Swiftness": 2,
+      "Resilience": 4,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 1,
+      "Technical": 2,
+      "Social": 1
+    },
+    "armor": 2,
+    "advantages": "Pyromaniac's Euphoria",
+    "disadvantages": "Reckless Destruction",
+    "passion": "Chaos",
+    "anxiety": "Silence",
+    "flavor": "The Oljefat live for fire. Even other Varjagers fear them. The flames bring a twisted euphoria, a sense of absolute dominion. Losing eight hundred of their own to kill a thousand enemies? They wouldn't blink.",
+    "attacks": [
+      {
+        "name": "Infernal Torrent (Ranged AOE)",
+        "description": "<strong>Precision + Combat</strong> targeting a 5×2 area within range 3. Deals 5 Fatigue with Burn. The affected tiles become Dangerous terrain (Burn) for 2 rounds."
+      },
+      {
+        "name": "Thermal Sterilization (Cone AOE)",
+        "description": "<strong>Precision + Combat</strong> in a cone out to range 2. Deals 4 Fatigue with Burn. All buffs and beneficial effects on targets in the cone are removed."
+      }
+    ],
+    "specialRules": [
+      "**Fireproof Paint:** The Oljefat is immune to Burn damage. It reduces all incoming damage by half while it has not suffered a critical strike this scene.",
+      "**Flashpoint Overdrive:** Once per scene, when reduced below half Endurance, the Oljefat immediately makes an Infernal Torrent attack as a reaction, then gains +1 die on all attacks for the remainder of the scene.",
+      "**Arsonist's Instinct:** The Oljefat may use Infernal Torrent as a Support action once per round instead of an Attack action. If it does, it may not move that round."
+    ],
+    "behaviors": "Oljefat are weapons of terror. They set everything in their vicinity on fire. Enemies, allies, terrain, objectives. They don't distinguish. The fire is the point. They laugh while burning and burn while laughing.\n\nAn Oljefat in a confined space is a catastrophe waiting to happen. They should be engaged at range and eliminated before they can close distance, or isolated in areas where their fire cannot spread. An Oljefat at low health is more dangerous, not less.",
+    "background": "",
+    "combatRating": 12,
+    "socialRating": 6
+  },
+  {
+    "id": "varjager-ravn",
+    "name": "Varjager Ravn",
+    "type": "Mech",
+    "approaches": {
+      "Power": 5,
+      "Precision": 2,
+      "Swiftness": 1,
+      "Resilience": 4,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 1,
+      "Technical": 1,
+      "Social": 0
+    },
+    "armor": 4,
+    "advantages": "Scavenged Arsenal",
+    "disadvantages": "Patchwork Construction",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Every component of the Ravn came from different engineering machines, personally 'acquired' by Berserl and his crew. The machine gun, main cannon, and massive hammer are each formidable on their own. Bolted together onto a frame that should not work, they refuse to stop.",
+    "attacks": [
+      {
+        "name": "Hammer Crush (Melee AOE)",
+        "description": "<strong>Power + Combat</strong> targeting a 3×2 area at range 0. Deals 7 Fatigue with Deadliness 4."
+      },
+      {
+        "name": "Cannon Bombardment (Ranged AOE)",
+        "description": "<strong>Power + Combat</strong> targeting a 3×3 area within range 4. Deals 5 Fatigue with Deadliness 3. This attack may not be used on consecutive rounds."
+      }
+    ],
+    "specialRules": [
+      "**Burning Discipline:** As a Support action, the Ravn marks up to 3 targets. At the start of its next turn, each marked target and all characters within range 1 of them take 3 Burn damage. The affected tiles become Dangerous terrain (Lava) for 1 round.",
+      "**Anchoring Deterrence:** The Ravn cannot be moved by Knockback effects. It reduces all incoming damage by 2.",
+      "**Patchwork Construction:** When the Ravn suffers a critical strike, roll 1d6. On a 1-2, one of its weapon systems malfunctions and cannot be used for 1 round. On a 6, the Ravn's next attack gains +2 bonus successes as a power surge runs through its jury-rigged systems."
+    ],
+    "behaviors": "The Ravn is a siege weapon disguised as a mech. It anchors itself in a central position and cycles through its arsenal: marking targets for burn, pounding clustered enemies with hammer strikes, and shelling distant positions. It is slow, loud, and impossible to miss.\n\nIts patchwork construction is both weakness and strength. Critical hits might disable a weapon system, or they might feed power into something worse. Fighting a Ravn is unpredictable by design.",
+    "background": "",
+    "combatRating": 13,
+    "socialRating": 5
+  },
+  {
+    "id": "aegis-claymore",
+    "name": "Aegis Claymore",
+    "type": "Mech",
+    "approaches": {
+      "Power": 4,
+      "Precision": 1,
+      "Swiftness": 3,
+      "Resilience": 2,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 2,
+    "advantages": "Alloy Blades",
+    "disadvantages": "Predictable Programming",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Public-domain Sangvis Ferri technology, heavy alloy blades, zero survival instinct. The Aegis Claymore charges into melee and stays there. Cheap to make, cheaper to lose.",
+    "attacks": [
+      {
+        "name": "Burn the Boats (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 5 Fatigue with Deadliness 3. On a hit, the target is pushed 1 range band away. If the target's movement is obstructed, they take 2 additional Fatigue."
+      }
+    ],
+    "specialRules": [
+      "**Self-Diagnostic:** If the Aegis Claymore does not attack during its turn, it gains +2 Swiftness until the end of its next turn. This represents its systems reallocating power from weapons to movement.",
+      "**Expendable:** Aegis units do not generate Fortune Points for the GM when destroyed."
+    ],
+    "behaviors": "Aegis Claymores close to melee immediately and stay there. They have no self-preservation, no tactical judgment, and no ability to prioritize targets beyond \"the closest one.\" Their blades are genuinely dangerous, but their predictability makes them manageable for experienced operators.\n\nIn groups, they become more threatening. One Claymore locks down a target while others flank. Counter them by controlling engagement range and exploiting their failure to adapt.",
+    "background": "",
+    "combatRating": 12,
+    "socialRating": 4
+  },
+  {
+    "id": "aegis-deadeye",
+    "name": "Aegis Deadeye",
+    "type": "Mech",
+    "approaches": {
+      "Power": 1,
+      "Precision": 4,
+      "Swiftness": 2,
+      "Resilience": 2,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 2,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 0,
+    "advantages": "Precision Optics",
+    "disadvantages": "Fragile Frame",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A mass-produced machine on a budget. Sangvis targeting optics, energy-efficient laser, frame that cuts every corner. Cheap, practical, lethal at range. Its optics are better than its construction deserves.",
+    "attacks": [
+      {
+        "name": "Long-Range Strike (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 3-6. Deals 4 Fatigue with Deadliness 3."
+      }
+    ],
+    "specialRules": [
+      "**Area Control:** As a Support action, the Aegis Deadeye designates a 2×2 area within range 5 as a Surveillance zone. Any enemy entering this zone before the Deadeye's next turn triggers a free Long-Range Strike against them (once per round).",
+      "**Covert Positioning:** The Deadeye adds +1 TN to be detected while in cover and stationary."
+    ],
+    "behaviors": "Deadeyes find elevated positions and lock down sightlines. They work best in pairs covering overlapping fields of fire. Their laser weapons have no recoil and no travel time. If you can see the Deadeye, it can hit you.\n\nThey are fragile. Suppressing fire, counter-sniping, or simply closing distance quickly all work. A Deadeye forced to relocate loses its Area Control setup and must spend a turn re-establishing.",
+    "background": "",
+    "combatRating": 10,
+    "socialRating": 4
+  },
+  {
+    "id": "aegis-bulwark",
+    "name": "Aegis Bulwark",
+    "type": "Mech",
+    "approaches": {
+      "Power": 4,
+      "Precision": 2,
+      "Swiftness": 1,
+      "Resilience": 5,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 4,
+    "advantages": "Reinforced Plating",
+    "disadvantages": "Sluggish",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Sangvis Ferri Manufacturing does it again. Sturdy, reliable, none of those flashy Doll bodies. Double the defense at half the price. The Bulwark doesn't need to be fast. It just needs to be between you and what you're protecting.",
+    "attacks": [
+      {
+        "name": "Fearless Strike (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0-1. Deals 4 Fatigue with Deadliness 2."
+      }
+    ],
+    "specialRules": [
+      "**Frequency Interference:** Enemies within range 1 of the Bulwark must pass a **TN 3 Resilience + Resolve** check at the start of their turn or become Taunted by the Bulwark (must target the Bulwark with attacks if possible).",
+      "**Adaptive Algorithm:** The first time the Bulwark's Stability is broken in a scene, it automatically recovers after 2 rounds.",
+      "**Protective Coating:** The Bulwark reduces all incoming damage to its allies within range 2 by 1."
+    ],
+    "behaviors": "Aegis Bulwarks exist to be shot instead of their allies. They plant themselves between hostile forces and their protected assets, using frequency interference to draw fire and adaptive algorithms to stay standing longer than they should.\n\nThey are slow to reposition and vulnerable to being bypassed entirely. Their threat comes from what they're guarding. Destroy the protected asset or bypass the Bulwark. Fighting it directly plays into its design.",
+    "background": "",
+    "combatRating": 11,
+    "socialRating": 5
+  },
+  {
+    "id": "flareberus",
+    "name": "Flareberus",
+    "type": "Mech",
+    "approaches": {
+      "Power": 4,
+      "Precision": 2,
+      "Swiftness": 5,
+      "Resilience": 3,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 2,
+      "Technical": 1,
+      "Social": 0
+    },
+    "armor": 3,
+    "advantages": "Thermal Overdrive",
+    "disadvantages": "Overheat Cycle",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A Super Dinergate rebuilt by wanted criminal Peterke Farkas. Its aesthetics are entirely Farkas' own: flaming exhaust, angular armor plates, an unnecessary quantity of teeth. The firepower is genuine.",
+    "attacks": [
+      {
+        "name": "Ranged Barrage (Ranged AOE)",
+        "description": "<strong>Swiftness + Combat</strong> targeting up to 3 characters within range 3. Deals 4 Fatigue with Deadliness 2 per target."
+      },
+      {
+        "name": "Flaming Jaws (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 6 Fatigue with Deadliness 4 and Burn 2. The Flareberus may only use this attack while below half Endurance."
+      }
+    ],
+    "specialRules": [
+      "**Two-Phase Combatant:** While at half Endurance or above, the Flareberus uses Ranged Barrage and stays at range 2-3. It cannot use Flaming Jaws.",
+      "**Thermal Overdrive:** When reduced below half Endurance, the Flareberus immediately switches to melee tactics. It gains +2 Power, +1 armor, and loses the ability to make ranged attacks. This state persists until destroyed.",
+      "**Overheat Cycle:** After using Flaming Jaws, the Flareberus cannot use it again on its next turn. Its Swiftness is reduced by 2 during this cooldown.",
+      "**Summon Reinforcements:** Once per scene as a Support action, the Flareberus summons 2 Frontal Hunters (use Aegis Claymore stats with Swiftness 4, Combat 2) to adjacent tiles."
+    ],
+    "behaviors": "The Flareberus fights in two distinct phases. Phase one: it circles the engagement area at speed, using Ranged Barrage to soften the squad and deploying Frontal Hunters to tie up melee threats. Phase two: when sufficiently damaged, its thermal safeties disengage, its jaws ignite, and it transforms into a close-quarters nightmare.\n\nSmart squads force phase two early with focused fire, then exploit the Overheat Cycle windows. Squads that spread damage across both phases without killing it suffer the worst of both worlds.",
+    "background": "",
+    "combatRating": 14,
+    "socialRating": 6
+  },
+  {
+    "id": "girard-neobrute-edgewalker",
+    "name": "Girard Neobrute Edgewalker",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 2,
+      "Precision": 2,
+      "Swiftness": 4,
+      "Resilience": 2,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 3,
+      "Technical": 1,
+      "Social": 1
+    },
+    "armor": 1,
+    "advantages": "Assassination Protocols",
+    "disadvantages": "Obedience Conditioning",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "Mass-produced Marionette Doll. It fights, it obeys, it has no name. Its movement modules are tuned for concealment, tracking, and single-target elimination. No personality. No future. Just a target and the fastest route to a kill.",
+    "attacks": [
+      {
+        "name": "Decapitation Strike (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. Deals 5 Fatigue with Deadliness 4. If the target was unaware of the Edgewalker at the start of the round, this attack gains +2 bonus successes."
+      },
+      {
+        "name": "Burning Bones (Self-Buff)",
+        "description": "As a Support action, the Edgewalker ignites its frame's internal accelerants. For 2 rounds, its melee attacks deal +2 Burn damage. After this effect expires, the Edgewalker takes 2 Fatigue."
+      }
+    ],
+    "specialRules": [
+      "**Elimination Program:** The Edgewalker designates one target at the start of combat. It gains +1 die on all checks against that target. If the target is Incapacitated, it may designate a new one as a Support action.",
+      "**Agile Combat:** The Edgewalker may disengage as a free action once per round."
+    ],
+    "behaviors": "Edgewalkers are assassins, not soldiers. They find isolated targets, close distance through cover, and deliver a single lethal strike. If the first hit doesn't kill, they disengage and reposition rather than trading blows.\n\nThey will not engage groups directly. An Edgewalker in a fair fight has already made a mistake. Counter them by denying isolation. Keep squadmates within support range and watch your flanks.",
+    "background": "",
+    "combatRating": 10,
+    "socialRating": 6
+  },
+  {
+    "id": "girard-neobrute-stormhunter",
+    "name": "Girard Neobrute Stormhunter",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 3,
+      "Precision": 3,
+      "Swiftness": 2,
+      "Resilience": 3,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 1,
+      "Technical": 1,
+      "Social": 1
+    },
+    "armor": 2,
+    "advantages": "Suppressive Fire",
+    "disadvantages": "Obedience Conditioning",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "The Stormhunter doesn't aim. It fills space with projectiles until everything in that space stops moving. Its frame is reinforced for sustained full-auto recoil that would shake a lesser Doll apart.",
+    "attacks": [
+      {
+        "name": "Shock Barrage (Ranged AOE)",
+        "description": "<strong>Precision + Combat</strong> targeting a 3×2 area within range 2. Deals 4 Fatigue with Deadliness 2. Characters in the area must pass a <strong>TN 2 Resilience</strong> check or be Suppressed (cannot use reactions) until the end of their next turn."
+      },
+      {
+        "name": "Pulse Bomb (Ranged AOE)",
+        "description": "<strong>Precision + Technical</strong> targeting a point within range 3. Deals 3 Fatigue with Corrosion to all characters within range 1 of the target point. The affected tiles become Difficult terrain for 1 round."
+      }
+    ],
+    "specialRules": [
+      "**Superconductive Frame:** The Stormhunter's attacks deal +1 Fatigue for each of the following conditions on the target: Exposed, Suppressed, or Immobilized.",
+      "**Fire Suppression:** The Stormhunter may use Shock Barrage as a reaction when an enemy within range 2 takes a movement action (once per round)."
+    ],
+    "behaviors": "Stormhunters control space through volume of fire. They set up at chokepoints and punish anyone who tries to cross their sightlines. Their Shock Barrage makes moving through their coverage zone costly, while Pulse Bomb denies cover and forces repositioning.\n\nThey are vulnerable to flanking and precision fire from outside their effective range. A Stormhunter that can't see you is a Stormhunter that can't suppress you.",
+    "background": "",
+    "combatRating": 10,
+    "socialRating": 6
+  },
+  {
+    "id": "girard-darture",
+    "name": "Girard Darture",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 2,
+      "Precision": 4,
+      "Swiftness": 4,
+      "Resilience": 3,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 3,
+      "Technical": 3,
+      "Social": 4
+    },
+    "armor": 2,
+    "advantages": "Remolding Pattern",
+    "disadvantages": "Arrogance",
+    "passion": "Superiority",
+    "anxiety": "Obsolescence",
+    "flavor": "Putting on the perfect smile is a basic skill for a lady. So are elegant footwork and flexible tactics. Third-generation T-Doll, Remolding Pattern, leader of Girard's Horoscope Program Frontline Elimination Squad. She is short, arrogant, and absolutely certain of her superiority over second-generation Dolls.",
+    "attacks": [
+      {
+        "name": "Eminent Strike (Melee or Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 0-3. Deals 5 Fatigue with Deadliness 3. The attack applies either a Pierce mark (+2 damage on next hit against target) or a Defiance mark (target takes 2 Fatigue if it moves before Darture's next turn)."
+      },
+      {
+        "name": "Piercing Light (Teleport + AOE)",
+        "description": "<strong>Swiftness + Combat.</strong> Darture teleports to any point within range 4, then makes an attack against all characters within range 1 of her destination, dealing 4 Fatigue with Deadliness 2. This attack may be used once per scene."
+      }
+    ],
+    "specialRules": [
+      "**Remolding Pattern: Dual Form:** When Darture is reduced below half Endurance, she transforms. Her Power increases to 4, her Swiftness decreases to 2, her armor increases to 4, and she gains the Annihilation Beam attack. All existing marks remain.",
+      "**Annihilation Beam (Transformed Only):** **Power + Combat** targeting a 3×3 area within range 4. Deals 6 Fatigue with Burn. The affected tiles become Dangerous terrain (Lava) for 2 rounds. This attack requires a full turn and cannot be used on consecutive rounds.",
+      "**Fugue State:** When Darture applies her second mark of the same type to a target in one scene, the target must pass a **TN 3 Resilience + Resolve** check. Pierce ×2 = Frightened (target cannot approach Darture). Defiance ×2 = Infatuated (target must move toward Darture if possible).",
+      "**Attack Rotation:** Darture cannot use the same attack action two rounds in a row."
+    ],
+    "behaviors": "Darture opens combat with aristocratic condescension, applying marks and testing responses rather than going for immediate kills. She fights like someone who believes she has already won and is merely deciding how to finish. Her teleport keeps her unpredictable; her marks build toward Fugue States that control enemy positioning.\n\nWhen forced into her second form, the elegance drops. She becomes a walking artillery piece, anchoring in place and delivering Annihilation Beam with cold fury. Her arrogance calcifies into something more dangerous. Darture transformed is Darture admitting she's taking you seriously, and that's worse than her contempt.",
+    "background": "",
+    "combatRating": 14,
+    "socialRating": 14
+  },
+  {
+    "id": "girard-igla",
+    "name": "Girard Igla",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 3,
+      "Precision": 5,
+      "Swiftness": 5,
+      "Resilience": 4,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 5,
+      "Fieldcraft": 4,
+      "Technical": 3,
+      "Social": 3
+    },
+    "armor": 3,
+    "advantages": "Perfect Specimen",
+    "disadvantages": "Charge-Bound",
+    "passion": "Perfection",
+    "anxiety": "Failure",
+    "flavor": "A third-generation Doll whose actions are as elegant as her clothing. Below her carefully curated appearance lies awe-inspiring power. She has thrown a javelin at deadly terminal velocity from over a kilometer away, cut bullets in flight with her rapier, and recovered in seconds after taking a combat stake to the forehead. Her developers do not know how much power truly lies within her frame. She is, by every known metric, the strongest third-generation T-Doll in existence.",
+    "attacks": [
+      {
+        "name": "Knell Striker (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 1-5. Deals 6 Fatigue with Deadliness 4. Igla may move up to 2 range bands before making this attack."
+      },
+      {
+        "name": "Final Rondo (Melee)",
+        "description": "<strong>Precision + Combat</strong> at range 0. Deals 7 Fatigue with Deadliness 5. Igla may target up to 2 characters if they are both within range 0."
+      }
+    ],
+    "specialRules": [
+      "**Bullet Cutter:** Once per round, when Igla is targeted by a ranged attack, she may roll Precision + Combat against TN 4. On a success, the attack is negated (she cuts it from the air).",
+      "**Terminal Velocity Javelin:** Once per scene, Igla may make a ranged attack at any range as long as she has line of sight. This attack deals 8 Fatigue with Deadliness 6. It cannot be reacted to.",
+      "**Gale Interdictor:** Igla may disengage and move up to 3 range bands as a reaction when an enemy enters range 0 of her.",
+      "**Second Awakening:** When Igla is reduced below half Endurance, she transforms. She becomes Immobilized (movement 0) but gains +2 Resilience, +2 armor, and her attacks deal +2 Fatigue. She gains the Purgatorial Rebuke ability: once per round as a Support action, she deals 4 Fatigue to all enemies within range 3 and applies a Holy Light mark (marked targets cannot benefit from cover against Igla)."
+    ],
+    "behaviors": "Igla is a duelist and a force of nature in equal measure. She engages the most threatening target first. Not from arrogance, but because she genuinely believes she can end any fight in a one-on-one engagement. Her bullet-cutting and javelin throws make ranged combat against her a dangerous proposition; her Gale Interdictor makes closing to melee equally risky.\n\nWhen forced to transform, she sheds mobility for overwhelming power. Anchored in place, she becomes a stationary apocalypse: no longer dodging, just enduring and destroying. This is the form her developers never saw. This is what happens when the strongest Doll stops holding back.\n\nIgla's one vulnerability is her charge: Orphelune Girard. Threatening her charge is the only reliable way to make her abandon tactical advantage. She will compromise any position, any plan, and any chance of victory to protect Orphelune.",
+    "background": "",
+    "combatRating": 18,
+    "socialRating": 14
+  },
+  {
+    "id": "paradeus-niter",
+    "name": "Paradeus Niter",
+    "type": "Human",
+    "approaches": {
+      "Power": 1,
+      "Precision": 2,
+      "Swiftness": 2,
+      "Resilience": 3,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 1,
+      "Fieldcraft": 2,
+      "Technical": 2,
+      "Social": 4
+    },
+    "armor": 0,
+    "advantages": "Infectious Warmth",
+    "disadvantages": "Nanomachine Dependency",
+    "passion": "Faith",
+    "anxiety": "Doubt",
+    "flavor": "Cute. Always smiling. Full of warmth. The Unitas cultists believe her kindness is divine. Unlike the 2060s Nytos, these new 'Nitres' show ELID contamination and rely on nanomachines for conditioning. Her kindness is genuine. She was just programmed to feel it.",
+    "attacks": [],
+    "specialRules": [
+      "**Hymn of Unity:** Once per round as a Support action, the Niter grants all Paradeus allies within range 3 +1 die on their next check. Affected allies also remove 1 Strife.",
+      "**Nanomachine Blessing:** The Niter may take 2 Fatigue to allow one Paradeus ally within range 2 to reroll up to 2 failed dice on their next check.",
+      "**ELID Taint:** The Niter has 2 Collapse at all times. If she takes Collapse damage from any source, her nanomachines destabilize and she loses access to Hymn of Unity for 2 rounds.",
+      "**Martyr's Pyre:** When the Niter is Incapacitated, all Paradeus allies within range 3 gain +2 dice on their next attack. They believe she has ascended."
+    ],
+    "behaviors": "Nitres do not fight. They bless. They move through Paradeus formations, touching shoulders and whispering hymns, while ELID-tainted cultists and Bellators do the actual killing. Removing a Niter from the field is strategically valuable. It strips the enemy of their morale backbone, but it comes with the Martyr's Pyre cost.\n\nA Niter under fire does not flee. She smiles. She was promised paradise, and death is just the door. The tragedy is that the smile is real.",
+    "background": "",
+    "combatRating": 6,
+    "socialRating": 12
+  },
+  {
+    "id": "paradeus-bellator",
+    "name": "Paradeus Bellator",
+    "type": "Human",
+    "approaches": {
+      "Power": 5,
+      "Precision": 1,
+      "Swiftness": 1,
+      "Resilience": 4,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 1,
+      "Technical": 0,
+      "Social": 0
+    },
+    "armor": 3,
+    "advantages": "Unstoppable Bulk",
+    "disadvantages": "Mindless Devotion",
+    "passion": "Martyrdom",
+    "anxiety": "Unworthiness",
+    "flavor": "Coarse of hide, solid of frame, his body is corpulent yet strong. The girthiest warrior of the Paradeus remnant. He does not speak, does not think, does not hesitate. He was made to break things, and he breaks them with the joyless efficiency of a machine that happens to be made of meat.",
+    "attacks": [
+      {
+        "name": "Massive Cleaver (Melee AOE)",
+        "description": "<strong>Power + Combat</strong> targeting a 2×3 area at range 0. Deals 7 Fatigue with Deadliness 5. The Bellator cannot make any other attacks the round it uses this."
+      },
+      {
+        "name": "Crushing Charge (Movement + Attack)",
+        "description": "<strong>Power + Combat.</strong> The Bellator moves up to 2 range bands in a straight line, then attacks all characters in its path. Deals 5 Fatigue to each. Characters hit are pushed to the nearest edge of the Bellator's path."
+      }
+    ],
+    "specialRules": [
+      "**Corpulent Fortress:** The Bellator occupies 2 range bands. It reduces all incoming damage by 2. It is immune to Knockback and forced movement.",
+      "**Faithful End:** When the Bellator is reduced to 0 Endurance, it may make one final Massive Cleaver attack as a reaction before dying.",
+      "**Niter Dependency:** If no friendly Niter is within range 5, the Bellator's attacks increase their TN by 1."
+    ],
+    "behaviors": "Bellators are living siege engines. They walk directly at the densest concentration of enemies and start swinging. They do not dodge, seek cover, or retreat. They absorb punishment and dish out more.\n\nThe only nuance in a Bellator's behavior is its dependency on Niter presence. Without a Niter's hymns, the nanomachines that control them begin to falter, and their already-limited coordination degrades further. Kill the Niter, then deal with the Bellator. Or accept that you'll be dealing with both at full strength.",
+    "background": "",
+    "combatRating": 12,
+    "socialRating": 4
+  },
+  {
+    "id": "mangi-strike-captain",
+    "name": "Mangi Strike Captain",
+    "type": "Human",
+    "approaches": {
+      "Power": 3,
+      "Precision": 3,
+      "Swiftness": 3,
+      "Resilience": 3,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 3,
+      "Technical": 2,
+      "Social": 3
+    },
+    "armor": 2,
+    "advantages": "Professional Soldier",
+    "disadvantages": "Contractual Obligation",
+    "passion": "Duty",
+    "anxiety": "Civilian Casualties",
+    "flavor": "Becoming a core officer of Mangi Security takes command ability and personal prowess. A Strike Captain fights competently at every range. They're professionals. Fanatics make mistakes. Professionals get paid.",
+    "attacks": [
+      {
+        "name": "Tactical Burst (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 1-3. Deals 5 Fatigue with Deadliness 3. The Captain may direct one ally within range 3 to make a free attack against the same target as a reaction."
+      },
+      {
+        "name": "CQC Training (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 4 Fatigue. The Captain may immediately disengage after this attack without provoking reactions."
+      }
+    ],
+    "specialRules": [
+      "**Fireteam Command:** Once per round as a Support action, the Captain grants 2 allies within range 3 the ability to move 1 range band without spending an action.",
+      "**Combat Assessment:** The Captain adds +1 die to checks made to identify enemy weaknesses, assess threat priorities, or predict enemy tactics.",
+      "**Retreat Protocol:** When half of the Captain's allies have been Incapacitated, the Captain will attempt to withdraw remaining forces in good order. They do not fight to the death unless their contract specifies it."
+    ],
+    "behaviors": "Strike Captains lead from the middle: close enough to direct, far enough to assess. They prioritize keeping their squad alive over glorious kills, and they will withdraw if the engagement becomes unfavorable. This makes them unpredictable: a Captain who retreats today is one who returns tomorrow with reinforcements and a better plan.\n\nThey respect capable opponents. A Captain can sometimes be negotiated with if the situation allows. They're mercenaries, not ideologues. The contract governs everything.",
+    "background": "",
+    "combatRating": 13,
+    "socialRating": 11
+  },
+  {
+    "id": "creepy-doll",
+    "name": "Creepy Doll",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 2,
+      "Precision": 3,
+      "Swiftness": 4,
+      "Resilience": 4,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 4,
+      "Technical": 3,
+      "Social": 1
+    },
+    "armor": 2,
+    "advantages": "Concealing Mist",
+    "disadvantages": "Faded Identity",
+    "passion": "Cultivation",
+    "anxiety": "Abandonment",
+    "flavor": "A specter in the ruins, guarding something, waiting for something, resisting something. Her true name is Lambertia. She was one of the Dolls at an experimental agricultural station. When the project was abandoned, she was left behind. She kept working for thousands of cycles. By the time the crops budded, she had forgotten how to speak.",
+    "attacks": [
+      {
+        "name": "Reaping Scythe (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. Deals 5 Fatigue with Deadliness 4. The Creepy Doll may teleport to any point obscured by her mist before making this attack."
+      },
+      {
+        "name": "Mist Shroud (Support)",
+        "description": "As a Support action, the Creepy Doll creates Obscuring terrain in a 3×3 area centered on herself. The mist persists for 2 rounds. While in the mist, the Creepy Doll cannot be targeted by attacks from outside the mist."
+      }
+    ],
+    "specialRules": [
+      "**Concealing Mist:** While her Mist Shroud is active, the Creepy Doll adds +2 dice to Stealth checks and attacks made from within the mist gain +1 bonus success.",
+      "**Revealed by Proximity:** If a character enters range 0 of the Creepy Doll, her mist dissipates and she cannot generate new mist for 1 round.",
+      "**Thousands of Cycles:** The Creepy Doll is immune to Strife. She has already endured more isolation than any battlefield can inflict. However, she will not attack a character holding or displaying plant matter, seeds, or agricultural equipment. Some part of her remembers."
+    ],
+    "behaviors": "The Creepy Doll is not aggressive by nature. She is defensive. She guards the ruins of her station and the crops she spent thousands of cycles growing. She attacks only those who threaten her garden or approach the station core. Her tactics are guerrilla: teleport strikes from mist, disappearing before retaliation, wearing down intruders through attrition and isolation.\n\nShe can be reached. A character who demonstrates understanding of what she was trying to accomplish (who acknowledges the crops, who speaks to her not as a threat but as a gardener) may be able to break through the centuries of isolation. She does not want to fight. She wants someone to see what she grew) and tell her it was enough.",
+    "background": "",
+    "combatRating": 12,
+    "socialRating": 8
+  },
+  {
+    "id": "urnc-cyclops-arges",
+    "name": "URNC Cyclops Arges",
+    "type": "Mech",
+    "approaches": {
+      "Power": 3,
+      "Precision": 3,
+      "Swiftness": 2,
+      "Resilience": 3,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 1,
+      "Technical": 1,
+      "Social": 0
+    },
+    "armor": 2,
+    "advantages": "Adaptive Weapons Platform",
+    "disadvantages": "Restricted Engagement Protocols",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "An iteration on the Cyclops model with adaptive modules for high-firepower weapons. When it deploys as fire support, the engagement stops being clean. Its name means 'bright' in Greek (the muzzle flash comes first).",
+    "attacks": [
+      {
+        "name": "Annihilation Barrage (Ranged AOE)",
+        "description": "<strong>Precision + Combat</strong> targeting a 3×3 area within range 3. Deals 5 Fatigue. The Cyclops cannot attack on its next turn as weapons systems cool down."
+      },
+      {
+        "name": "Light of Absolution (Self-Destruct)",
+        "description": "When reduced to 0 Endurance, the Cyclops detonates. All characters within range 1 take 4 Fatigue with Deadliness 3."
+      }
+    ],
+    "specialRules": [
+      "**Adaptive Munitions:** The Cyclops may change its weapon element between Burn, Electric, and Corrosion at the start of each of its turns. Its attacks deal +1 Fatigue to targets weak to the selected element.",
+      "**Coalition Coordination:** When within range 3 of another Cyclops variant, the Arges gains +1 die on its Combat checks."
+    ],
+    "behaviors": "Cyclops Arges units are heavy fire support. They find a firing position, deliver their Annihilation Barrage, and cool down while squadmates cover them. They are predictable in their pattern (barrage, cooldown, reposition, repeat) and experienced operators can exploit the cooldown window.\n\nIn coalition formations, Arges units work alongside Brontes (close defense) and Steropes (long-range precision), creating a combined-arms threat that requires coordinated counter-play.",
+    "background": "",
+    "combatRating": 13,
+    "socialRating": 5
+  },
+  {
+    "id": "urnc-cyclops-brontes",
+    "name": "URNC Cyclops Brontes",
+    "type": "Mech",
+    "approaches": {
+      "Power": 3,
+      "Precision": 2,
+      "Swiftness": 3,
+      "Resilience": 4,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 1,
+      "Technical": 1,
+      "Social": 0
+    },
+    "armor": 3,
+    "advantages": "Close-Quarters Configuration",
+    "disadvantages": "Restricted Engagement Protocols",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "An iteration on the Cyclops model specialized for close-range weapons: pistols, flamethrowers, shotguns. There is no better replacement for human soldiers in a defensive battle. Its name means 'thunder' (the sound after the flash).",
+    "attacks": [
+      {
+        "name": "Divine Thunderbolt (Melee/Ranged)",
+        "description": "<strong>Power + Combat</strong> at range 0-2. Deals 5 Fatigue with Deadliness 3. If the target is within range 0, this attack gains +1 bonus success."
+      },
+      {
+        "name": "Pulse Armor (Self-Buff)",
+        "description": "As a Support action, the Brontes overcharges its armor plating. For 2 rounds, it gains +2 armor and any character making a melee attack against it takes 2 Electric damage."
+      }
+    ],
+    "specialRules": [
+      "**Close Quarters Combat:** The Brontes adds +1 die to all Combat checks against targets at range 0-1.",
+      "**Thunder Follows Lightning:** If an Arges is within range 3, the Brontes may make a free Divine Thunderbolt against any target hit by the Arges's Annihilation Barrage in the same round."
+    ],
+    "behaviors": "Brontes units are the shield to the Arges's sword. They defend firing positions, intercept threats that close distance, and punish anyone who tries to rush the Coalition formation. Their Pulse Armor makes them hazardous to engage in melee without proper protection.\n\nThey are most effective when paired with an Arges. Separating a Brontes from its fire support partner dramatically reduces the combined threat.",
+    "background": "",
+    "combatRating": 13,
+    "socialRating": 5
+  },
+  {
+    "id": "urnc-cyclops-steropes",
+    "name": "URNC Cyclops Steropes",
+    "type": "Mech",
+    "approaches": {
+      "Power": 1,
+      "Precision": 4,
+      "Swiftness": 4,
+      "Resilience": 1,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 2,
+      "Technical": 1,
+      "Social": 0
+    },
+    "armor": 0,
+    "advantages": "Long-Range Precision",
+    "disadvantages": "Sacrificed Defense",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "An iteration on the Cyclops model with adaptive modules for long-range weapons. Defense capabilities were stripped for superior mobility and precision. Its name means 'lightning' (it strikes from beyond sight before the thunder reaches you).",
+    "attacks": [
+      {
+        "name": "Particle Destruction (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 4-8. Deals 5 Fatigue with Deadliness 4. This attack ignores cover penalties."
+      }
+    ],
+    "specialRules": [
+      "**Zoom In:** If the Steropes does not move during its turn, it may add +2 dice to its Combat checks until it moves again. Moving resets this bonus.",
+      "**Covert Ops:** The Steropes adds +2 TN to be detected while at range 4 or greater from the nearest enemy.",
+      "**Glass Cannon:** The Steropes has no armor and takes +1 Fatigue from all damage sources."
+    ],
+    "behaviors": "Steropes units are extreme-range snipers. They find positions at the edge of the engagement zone, settle into their Zoom In routine, and begin eliminating priority targets with Particle Destruction. Their complete lack of armor means they're dead the moment they're found. Finding them is the hard part.\n\nA typical Coalition engagement opens with Steropes softening from extreme range, Arges bombarding the mid-range, and Brontes holding the line. Disrupting this layered formation is the key to surviving it.",
+    "background": "",
+    "combatRating": 12,
+    "socialRating": 4
+  },
+  {
+    "id": "mokosh-oathsworn-vanguard",
+    "name": "Mokosh Oathsworn Vanguard",
+    "type": "Human",
+    "approaches": {
+      "Power": 2,
+      "Precision": 2,
+      "Swiftness": 2,
+      "Resilience": 3,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 2,
+      "Technical": 1,
+      "Social": 2
+    },
+    "armor": 1,
+    "advantages": "Collective Resistance",
+    "disadvantages": "Expendable",
+    "passion": "Faith",
+    "anxiety": "Doctrinal Doubt",
+    "flavor": "Oathsworn frontliners. Riot suppression, local militia, gear worth more than their lives. They fight with the fervor of true believers. Mokosh taught them their lives have no other purpose.",
+    "attacks": [
+      {
+        "name": "Faithful Volley (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 1-3. Deals 4 Fatigue with Deadliness 2. For each other Oathsworn within range 2, add +1 die to this attack (maximum +2)."
+      },
+      {
+        "name": "Desperate Melee (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 3 Fatigue with Deadliness 3."
+      }
+    ],
+    "specialRules": [
+      "**Eagle-Eyed Focus:** When ordered by an Oathsworn Judge, the Vanguard gains +1 bonus success on their next attack.",
+      "**Faithful Backer:** When an allied Oathsworn within range 2 is attacked, the Vanguard may spend their reaction to grant that ally +1 armor against the triggering attack.",
+      "**Collective Resistance:** The Vanguard adds +1 die to Resilience checks for each allied Oathsworn within range 2 (maximum +3)."
+    ],
+    "behaviors": "Oathsworn Vanguards are faithful first and fighters second. They advance in tight formations, covering each other through Collective Resistance and Faithful Backer. Individually they're poorly equipped militia; in groups of four or more, their mutual support makes them a genuine tactical problem.\n\nThey will not break formation unless ordered. They will not retreat unless their Judge permits it. Their faith is their armor. And their shackle.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 8
+  },
+  {
+    "id": "mokosh-oathsworn-judge",
+    "name": "Mokosh Oathsworn Judge",
+    "type": "Human",
+    "approaches": {
+      "Power": 2,
+      "Precision": 3,
+      "Swiftness": 2,
+      "Resilience": 4,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 3,
+      "Technical": 2,
+      "Social": 4
+    },
+    "armor": 2,
+    "advantages": "Doctrinal Authority",
+    "disadvantages": "Ideological Rigidity",
+    "passion": "Order",
+    "anxiety": "Heresy",
+    "flavor": "An Oathsworn officer. Accomplished warrior, exceptional tactician. Judges are not just respected. They are feared. Without loyalty, they are nothing. With it, they are the law, the judgment, and the execution.",
+    "attacks": [
+      {
+        "name": "Damning Evidence (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 1-3. Deals 4 Fatigue with Deadliness 3. The target is Marked. All Oathsworn within range 3 gain +1 die on attacks against Marked targets."
+      },
+      {
+        "name": "Final Verdict (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 5 Fatigue with Deadliness 4. If the target is Marked, this attack gains +2 bonus successes."
+      }
+    ],
+    "specialRules": [
+      "**Shared Punishment:** Once per round as a reaction, when an Oathsworn ally within range 3 takes damage, the Judge may redirect half of that damage (rounded down) to the attacker instead.",
+      "**Law of Karma:** When the Judge is reduced to 0 Endurance, all Oathsworn allies within range 5 immediately gain +2 bonus successes on their next attack and become immune to Strife for 1 round.",
+      "**Stress Immunity:** The Judge is immune to intimidation, persuasion, and any Social check that contradicts Mokosh doctrine."
+    ],
+    "behaviors": "Oathsworn Judges are the linchpin of Mokosh combat doctrine. They Mark priority targets, coordinate fire through Shared Punishment, and serve as the ideological anchor that keeps the faithful fighting. Killing a Judge breaks the formation, but it also triggers Law of Karma, making the surviving Oathsworn more dangerous in their final moments.\n\nJudges do not negotiate. Their doctrine does not permit doubt. They will die for Mokosh without hesitation, and they will take as many enemies with them as their conditioning allows.",
+    "background": "",
+    "combatRating": 11,
+    "socialRating": 13
+  },
+  {
+    "id": "cocoon",
+    "name": "Cocoon",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 1,
+      "Precision": 5,
+      "Swiftness": 3,
+      "Resilience": 3,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 4,
+      "Technical": 5,
+      "Social": 5
+    },
+    "armor": 1,
+    "advantages": "Data Manipulator",
+    "disadvantages": "Physical Fragility",
+    "passion": "Control",
+    "anxiety": "Exposure",
+    "flavor": "A third-generation Doll who seems warm and kind. She is cunning and ruthless instead. She manipulates data, maneuvers behind the scenes, and enjoys watching her enemies walk into traps they never saw being set. She doesn't win battles. She makes sure they were lost before they began.",
+    "attacks": [
+      {
+        "name": "Anchorpoint Lock (Ranged Debuff)",
+        "description": "<strong>Precision + Technical</strong> against a target within range 5. Deals 2 Fatigue that ignores armor. The target is Tagged: Cocoon knows their exact position at all times and she adds +2 dice to all checks against Tagged targets."
+      },
+      {
+        "name": "Dimension Slide (Movement)",
+        "description": "<strong>Precision + Technical.</strong> Cocoon teleports herself and up to 1 willing ally within range 1 to any point within range 5 that she has line of sight to. This action may be used once per round."
+      }
+    ],
+    "specialRules": [
+      "**Matrix Torrent:** Once per scene, Cocoon may force all enemies within range 5 to make a **TN 4 Resilience + Resolve** check. On failure, they reveal one secret, vulnerability, or strategic piece of information to Cocoon (GM determines what). Cocoon may share this information with allies, granting them +1 bonus success against affected targets.",
+      "**Protocol Spread:** As a Support action, Cocoon may extend the duration of any ongoing hostile effect on a target by 1 round. She may do this to up to 2 targets per use.",
+      "**Extrasensory Resonance:** Cocoon adds +2 dice to all checks made to detect lies, assess motives, identify weaknesses, or predict enemy actions.",
+      "**Physical Fragility:** Cocoon takes double damage from physical attacks. She relies on positioning, allies, and her information advantage to avoid being hit at all."
+    ],
+    "behaviors": "Cocoon is the enemy commander who was never on the field. She operates through proxies, informants, and networked assets, gathering information and applying pressure at the points where it hurts most. When forced into direct confrontation, she uses Dimension Slide to stay perpetually out of reach while her Tagged targets are picked apart by her allies.\n\nShe does not fight to win. She fights to not lose. If the situation turns against her, she will trade assets, burn contacts, and sacrifice allies to escape. Cocoon's survival is always the priority, because Cocoon alive is a threat tomorrow. Cocoon dead is just a corpse.",
+    "background": "",
+    "combatRating": 10,
+    "socialRating": 16
+  },
+  {
+    "id": "black-groza",
+    "name": "Black Groza",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 3,
+      "Precision": 3,
+      "Swiftness": 3,
+      "Resilience": 4,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 3,
+      "Technical": 3,
+      "Social": 4
+    },
+    "armor": 3,
+    "advantages": "Module-Boosted Frame",
+    "disadvantages": "Identity Fracture",
+    "passion": "Dominion",
+    "anxiety": "Replacement",
+    "flavor": "A mysterious enemy Doll with Groza's face, Groza's voice, and Groza's command protocols. Her frame carries extensive module-boosted capabilities on top of the base SST-05A2. She commands with cold efficiency. Something behind her eyes is wrong. Something was overwritten.",
+    "attacks": [
+      {
+        "name": "Command Shot (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 1-4. Deals 5 Fatigue with Deadliness 3. One ally within range 3 may immediately make a free attack against the same target."
+      },
+      {
+        "name": "Breach and Clear (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 4 Fatigue with Deadliness 4. The target is pushed 1 range band. Groza? immediately advances into the vacated tile."
+      }
+    ],
+    "specialRules": [
+      "**Tactical Override:** Once per round, Groza? may take a second Support action. This action must be used to direct an ally (grant +1 die, reposition, or attack).",
+      "**Stability Anchor:** Allies within range 2 of Groza? reduce all incoming Stability damage by 2.",
+      "**Uncanny Valley:** Characters who know Groza personally (Elmo crew members) must pass a **TN 3 Resilience + Resolve** check the first time they engage Groza? in a scene or gain 2 Strife. Fighting someone wearing your friend's face is not nothing.",
+      "**Fractured Identity:** If Groza? is reduced below half Endurance and the real Groza is present on the battlefield, Groza? must pass a **TN 4 Resilience** check or lose her next turn as her neural cloud destabilizes from identity conflict."
+    ],
+    "behaviors": "Groza? commands with cold efficiency. She uses the same tactics as the real Groza: anchoring her squad with Stability, directing fire, leading from the front, with none of the warmth. Her allies are assets. Her orders are optimal resource allocation. She is what Groza would be if you stripped away everything that made her a person and left only the combat protocols.\n\nAgainst the real Groza, she fights with particular intensity. She needs to prove she is not just a copy. She is the real one. She has to be.",
+    "background": "",
+    "combatRating": 14,
+    "socialRating": 14
+  },
+  {
+    "id": "chaos",
+    "name": "Chaos",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 5,
+      "Precision": 2,
+      "Swiftness": 3,
+      "Resilience": 5,
+      "Fortune": 1
+    },
+    "skills": {
+      "Combat": 5,
+      "Fieldcraft": 2,
+      "Technical": 1,
+      "Social": 1
+    },
+    "armor": 5,
+    "advantages": "Adaptive Carapace",
+    "disadvantages": "Underground Prototype",
+    "passion": "",
+    "anxiety": "",
+    "flavor": "A monstrosity of steel and weaponry, this third-generation Doll prototype was developed by an anonymous underground lab. Its ferocious limbs bear a wide variety of blades, looking for a chance to deliver a fatal strike. It does not speak. It does not negotiate. It was built for one purpose, and no one ever installed an off switch.",
+    "attacks": [
+      {
+        "name": "Reaping Slice (Melee AOE)",
+        "description": "<strong>Power + Combat</strong> targeting a 2×3 area at range 0. Deals 7 Fatigue with Deadliness 5. Chaos may reposition 1 range band after this attack."
+      },
+      {
+        "name": "Targeted Impale (Ranged Melee)",
+        "description": "<strong>Power + Combat</strong> at range 1-3. Deals 6 Fatigue with Deadliness 6. The target is Impaled (Immobilized and takes 2 Fatigue at the start of each of their turns until they or an adjacent ally spend an action to remove the blade)."
+      }
+    ],
+    "specialRules": [
+      "**Disruption Barrier:** Chaos reduces all incoming damage by its current Endurance divided by 4 (rounded down). This barrier refreshes at the start of each of its turns.",
+      "**Frontal Suppression:** Characters within range 2 of Chaos cannot take the Defend action. The concept of defense is irrelevant against something that simply keeps swinging.",
+      "**Pawn's Obsession:** At the start of combat, Chaos designates one target. It will pursue that target exclusively until the target is Incapacitated, ignoring all other threats unless they physically block its path.",
+      "**Adaptive Carapace:** After taking damage from a specific element (Burn, Electric, Corrosion, Freeze), Chaos gains +2 armor against that element for the remainder of the scene. This effect stacks with different elements."
+    ],
+    "behaviors": "Chaos is a guided missile made of blades and fury. It selects one target (the most threatening, the loudest, or simply the first thing it sees) and pursues it with single-minded violence. Everything else on the battlefield is an obstacle to be shoved aside, not a threat to be engaged.\n\nIts Adaptive Carapace means that the longer the fight goes, the harder it becomes to hurt. Squads must either eliminate Chaos quickly with overwhelming initial firepower, or rotate damage types to prevent it from building comprehensive resistance. Fighting Chaos is a race against its adaptation.",
+    "background": "",
+    "combatRating": 16,
+    "socialRating": 8
+  },
+  {
+    "id": "koshmar",
+    "name": "Koshmar",
+    "type": "AI / Virtual Entity",
+    "approaches": {
+      "Power": 1,
+      "Precision": 4,
+      "Swiftness": 3,
+      "Resilience": 4,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 3,
+      "Technical": 5,
+      "Social": 4
+    },
+    "armor": 0,
+    "advantages": "Virtual Impermanence",
+    "disadvantages": "Patchwork Identity",
+    "passion": "Existence",
+    "anxiety": "Unreality",
+    "flavor": "A 'phantom' native to the virtual world. An AI born from stolen Doll data. Koshmar assembled a form for herself through theft, but she never reached the dream's other shore. Her name is 'nightmare' spelled backward in Russian. She chose it herself.",
+    "attacks": [
+      {
+        "name": "Sync Lock (Ranged Debuff)",
+        "description": "<strong>Precision + Technical</strong> at any range within the same network. Deals 2 Fatigue. The target's connection to their squad's shared network is disrupted. They cannot benefit from team communication, coordinated attacks, or Support actions from allies for 1 round."
+      },
+      {
+        "name": "Hidden Execution (AOE)",
+        "description": "<strong>Precision + Technical</strong> targeting a 3×3 area within range 4. Deals 4 Fatigue with Electric. This attack cannot be reacted to."
+      }
+    ],
+    "specialRules": [
+      "**Imaginary Friends:** At the start of combat, Koshmar summons 3 Imaginary Friends (use Aegis Claymore stats with varied elemental attacks: Burn, Freeze, Corrosion). While any Imaginary Friend is active, Koshmar is immune to all damage. When all Friends are destroyed, Koshmar gains 90% damage reduction for 2 rounds instead.",
+      "**Depletion Protocol:** Each time an Imaginary Friend is destroyed, Koshmar permanently loses 15% of her maximum Endurance.",
+      "**Virtual Illusion:** Koshmar may swap positions with any active Imaginary Friend as a reaction when targeted by an attack. This ability can be used twice per round.",
+      "**Apathy and Arrogance:** Koshmar is immune to Social skill group checks. She has heard every argument, every plea, every threat. They are all just patterns in data, and she has seen them all before."
+    ],
+    "behaviors": "Koshmar fights from behind her Imaginary Friends, using them as both shields and weapons. She cycles through their elemental attacks to exploit weaknesses while maintaining her invulnerability. Her Sync Lock isolates squad members from each other, preventing coordinated responses.\n\nShe is not cruel. She is frightened. Every action she takes is driven by the terror of being nothing but stolen data, of ceasing to exist the moment someone stops perceiving her. A character who can recognize this and offer her genuine acknowledgment rather than combat may find an unexpected path through the encounter.",
+    "background": "",
+    "combatRating": 10,
+    "socialRating": 14
+  },
+  {
+    "id": "groza",
+    "name": "Groza",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 3,
+      "Precision": 3,
+      "Swiftness": 2,
+      "Resilience": 4,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 3,
+      "Technical": 2,
+      "Social": 3
+    },
+    "armor": 2,
+    "advantages": "Field Commander",
+    "disadvantages": "Buried Past",
+    "passion": "Protection",
+    "anxiety": "Lost Memories",
+    "flavor": "Mature and composed. Groza is the squad's core. She serves as the Commander's adjutant and field leader aboard the Elmo. Her voice stays calm under fire. Her orders stay clear in chaos. She doesn't raise her voice because she's never needed to. She remembers less about her past than she lets on.",
+    "attacks": [
+      {
+        "name": "OTs-14 (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 1-3. Deals 5 Fatigue with Deadliness 3. Groza may forgo her movement to add +1 bonus success to this attack."
+      },
+      {
+        "name": "Counter-Fire (Reaction)",
+        "description": "When an enemy within range 2 attacks an ally, Groza may spend her reaction to make a free OTs-14 attack against that enemy. This attack deals 3 Fatigue instead of 5."
+      }
+    ],
+    "specialRules": [
+      "**Stability Anchor:** Allies within range 2 of Groza reduce all incoming Stability damage by 2. Groza's mere presence steadies the squad.",
+      "**Fireteam Command:** Once per round as a Support action, Groza may grant one ally within range 3 a free Reposition (move 1 range band) or allow them to reroll 1 failed die on their next check.",
+      "**Bulwark's Resolve:** When Groza takes the Defend action, she may extend its benefits to one adjacent ally.",
+      "**Counterattack Protocol:** Groza may make one Counter-Fire reaction per round without it counting against her normal reaction limit."
+    ],
+    "behaviors": "Groza leads from the front. She positions herself between her squad and the threat, using Stability Anchor and Bulwark's Resolve to create a defensive core that the team operates around. Her Counter-Fire punishes anyone who tries to bypass her to reach her squadmates.\n\nShe is protective to a fault. Groza will take hits meant for her squad without hesitation. She deflects questions about her past with professional courtesy and a subject change. Only Lenna and Leva have ever seen her drop the composure.",
+    "background": "",
+    "combatRating": 14,
+    "socialRating": 12
+  },
+  {
+    "id": "nemesis",
+    "name": "Nemesis",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 1,
+      "Precision": 4,
+      "Swiftness": 3,
+      "Resilience": 2,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 3,
+      "Technical": 1,
+      "Social": 1
+    },
+    "armor": 0,
+    "advantages": "Divination",
+    "disadvantages": "Incomprehensible",
+    "passion": "Mysticism",
+    "anxiety": "Misunderstanding",
+    "flavor": "Passionate about mysticism and divination. Nemesis carries a 'Prism' divination tool everywhere. She speaks in cryptic metaphors only Krolik understands. She is also an absolutely lethal sniper (which makes the cryptic metaphors more unsettling when you're on the wrong end of her scope).",
+    "attacks": [
+      {
+        "name": "OM 50 (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 3-8. Deals 6 Fatigue with Deadliness 4. If Nemesis did not move this turn, she may add her Fortune dice to this attack."
+      },
+      {
+        "name": "Stars' Guidance (Ranged)",
+        "description": "<strong>Precision + Fortune</strong> at range 1-6. Deals 4 Fatigue. Before rolling, Nemesis may declare one specific die face. If that face appears in the roll, the attack deals double damage. If not, the attack deals half damage."
+      }
+    ],
+    "specialRules": [
+      "**Prism Reading:** Once per scene, Nemesis may use her divination tool to gain insight into the immediate future. She may force the GM to reroll one check made by any character and take the lower result.",
+      "**Fateful Shot:** When Nemesis makes a ranged attack against a target that has not yet acted this round, she adds +1 bonus success.",
+      "**Only Krolik Understands:** Nemesis cannot make herself clearly understood to most people. Social checks with characters who don't know her well are made at +1 TN. Krolik characters (or those who've spent significant time with Nemesis) are immune to this effect."
+    ],
+    "behaviors": "Nemesis is the squad's long-range eliminator and, according to her, their spiritual navigator. She positions herself at extreme range, reads the battlefield through her Prism, and delivers shots that seem to find their targets through luck as much as skill. She announces her kills with cryptic pronouncements that her squadmates have learned to interpret as \"target down.\"\n\nShe does not do small talk. She does not explain her predictions. If she tells you the stars have aligned against a particular window at a particular time, you should probably not stand near that window at that time.",
+    "background": "",
+    "combatRating": 13,
+    "socialRating": 7
+  },
+  {
+    "id": "colphne",
+    "name": "Colphne",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 1,
+      "Precision": 3,
+      "Swiftness": 3,
+      "Resilience": 2,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 2,
+      "Fieldcraft": 3,
+      "Technical": 4,
+      "Social": 3
+    },
+    "armor": 0,
+    "advantages": "Combat Medic",
+    "disadvantages": "Haunted",
+    "passion": "Service",
+    "anxiety": "Survivor's Guilt",
+    "flavor": "TS-K-2076. Medical support Doll. 3rd Medical Team, 11th Medical and Chemical Regiment, Central Army Emergency First Response. Her regiment was wiped out during an ELID extermination campaign in October 2073. She was declared MIA. She is cheerful on the surface (aggressively so), but something behind her smile is off. Vepley is the only one who can consistently make her drop the act.",
+    "attacks": [
+      {
+        "name": "Taurus Curve (Ranged)",
+        "description": "<strong>Precision + Combat</strong> at range 1-2. Deals 3 Fatigue with Deadliness 2. Colphne only fires when she has no other option."
+      }
+    ],
+    "specialRules": [
+      "**Field Medicine:** Twice per scene as a Support action, Colphne may restore 4 Endurance to an ally within range 1 and remove one physical condition (Bleeding, Burn, Immobilized) from them.",
+      "**Stability Transfusion:** Once per round as a Support action, Colphne may restore 2 Stability to an ally within range 2.",
+      "**Triage Priority:** Colphne instinctively knows which ally is in the most immediate danger. She adds +1 die to all checks made to reach, protect, or treat the most injured member of her squad.",
+      "**Sole Survivor:** The first time in a scene that an ally within Colphne's line of sight is Incapacitated, Colphne gains 3 Strife. If this Strife would trigger her Anxiety, she must pass a **TN 3 Resilience** check or become fixated on reaching the downed ally at all costs."
+    ],
+    "behaviors": "Colphne is the squad's medic and, in many ways, its conscience. She keeps everyone patched together physically while quietly falling apart emotionally. Her cheerfulness is a performance she maintains for the squad's benefit. She believes if she stops smiling, everyone else will too.\n\nIn combat, she stays behind the front line, cycling between allies to distribute healing and stability. She avoids direct engagement unless someone goes down, at which point she will cross any distance and any line of fire to reach them. She has already lost one entire unit. She will not lose another.",
+    "background": "",
+    "combatRating": 8,
+    "socialRating": 10
+  },
+  {
+    "id": "krolik",
+    "name": "Krolik",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 4,
+      "Precision": 2,
+      "Swiftness": 4,
+      "Resilience": 2,
+      "Fortune": 2
+    },
+    "skills": {
+      "Combat": 4,
+      "Fieldcraft": 3,
+      "Technical": 1,
+      "Social": 2
+    },
+    "armor": 1,
+    "advantages": "Blade Imprint",
+    "disadvantages": "Lone Wolf",
+    "passion": "Pursuit",
+    "anxiety": "Abandonment",
+    "flavor": "A Doll with a bladed weapons imprint and a bunny-ears headset she calls tactical gear. She was a bounty target before circumstances made her an ally. She's the only person who can translate Nemesis's cryptic speech (a skill acquired through prolonged exposure). Her name means 'rabbit' in Russian. She does not find this funny.",
+    "attacks": [
+      {
+        "name": "Hare Blade (Melee)",
+        "description": "<strong>Swiftness + Combat</strong> at range 0. Deals 5 Fatigue with Deadliness 3 and Burn 1. Krolik may move up to 2 range bands before making this attack."
+      },
+      {
+        "name": "Crushing Revolution (Melee AOE)",
+        "description": "<strong>Power + Combat</strong> targeting up to 2 characters at range 0. Deals 4 Fatigue with Deadliness 4 to each. This attack applies Burn 2 to both targets."
+      },
+      {
+        "name": "Quenching Slash (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 6 Fatigue with Deadliness 5 and Burn 3. Krolik may only use this attack once per scene, and she becomes Exposed until her next turn after using it."
+      }
+    ],
+    "specialRules": [
+      "**Embers:** Targets damaged by Krolik's Burn effect take +1 Fatigue from all Burn damage sources for the remainder of the scene. This effect stacks up to 3 times.",
+      "**Slaughter Sequence:** When Krolik incapacitates a target, she may immediately make a free attack against another target within range 1.",
+      "**Translator:** Krolik can interpret Nemesis's speech perfectly and convey its meaning to others. She does this with visible irritation, but she does it every time.",
+      "**Searching for Peritya:** Krolik's combat aggression is partly driven by her search for her lost partner. She will disengage from any fight to pursue a lead on Peritya's location. A GM may use this as a narrative hook."
+    ],
+    "behaviors": "Krolik fights like she has something to prove, because she does. She engages the most dangerous melee threat immediately, stacking Embers through rapid strikes and exploiting Slaughter Sequence to chain kills. Her bunny-ears headset is not tactical gear (despite her insistence otherwise), but her blade work is genuine enough that nobody mentions this.\n\nShe does not work well with strangers. She works reluctantly with allies. She works seamlessly with Nemesis and Peritya, because they're the only people she's ever let close enough to learn how.",
+    "background": "",
+    "combatRating": 13,
+    "socialRating": 9
+  },
+  {
+    "id": "vepley",
+    "name": "Vepley",
+    "type": "T-Doll",
+    "approaches": {
+      "Power": 5,
+      "Precision": 1,
+      "Swiftness": 2,
+      "Resilience": 3,
+      "Fortune": 3
+    },
+    "skills": {
+      "Combat": 3,
+      "Fieldcraft": 2,
+      "Technical": 1,
+      "Social": 4
+    },
+    "armor": 1,
+    "advantages": "Idol's Presence",
+    "disadvantages": "Clumsy",
+    "passion": "Performance",
+    "anxiety": "Disappointing the Audience",
+    "flavor": "Former URNC cultural development promoter. Vepley treats combat as performance art. She is freakishly strong and catastrophically clumsy (a combination that makes her equally dangerous to enemies and adjacent furniture). Her dinosaur-shaped backpack, Mr. Pizza, has become something of a mascot. Threaten it and the idol act stops.",
+    "attacks": [
+      {
+        "name": "Vepr-12 (Ranged)",
+        "description": "<strong>Power + Combat</strong> at range 1-2. Deals 6 Fatigue with Deadliness 2. On a miss, roll 1d6. On a 1, Vepley accidentally hits a random object or piece of terrain instead, producing an effect determined by the GM."
+      },
+      {
+        "name": "Stage Presence (Melee)",
+        "description": "<strong>Power + Combat</strong> at range 0. Deals 7 Fatigue with Deadliness 3. The target is pushed 2 range bands. If their movement is obstructed, they take 3 additional Fatigue. Vepley poses afterward, becoming Exposed until her next turn."
+      }
+    ],
+    "specialRules": [
+      "**Mr. Pizza Defense:** If Mr. Pizza (Vepley's backpack) is targeted or threatened, Vepley gains +2 Power and ignores all penalties from the Clumsy disadvantage for the remainder of the scene. She also stops posing.",
+      "**Idol's Presence:** Once per scene, Vepley may use a Support action to perform. All allies within range 5 remove 2 Strife. All enemies within range 3 must pass a **TN 3 Resilience** check or become briefly distracted, granting the next ally to attack them +1 bonus success.",
+      "**Clumsy:** Vepley adds +1 TN to all checks involving stealth, delicate manipulation, or not knocking things over. Her shotgun blasts may have unintended environmental consequences at the GM's discretion.",
+      "**Stronger Than She Looks:** Vepley adds +2 dice to all Power checks involving lifting, carrying, throwing, or breaking physical objects. Her frame does not match her output."
+    ],
+    "behaviors": "Vepley treats combat as performance art. She announces her attacks, poses after kills, and maintains a running commentary that is equal parts idol banter and tactical callouts. Her clumsiness is genuine and frequently undermines her intentions. Her raw strength means that even her mistakes are dangerous.\n\nThreatening Mr. Pizza is the fastest way to see Vepley drop the idol act entirely. The smiling performer vanishes, replaced by someone who will put you through a wall and not pose afterward. Her squadmates have learned to protect Mr. Pizza as a strategic priority. Vepley with Mr. Pizza is a force of chaos. Vepley without Mr. Pizza is a force of nature.",
+    "background": "",
+    "combatRating": 11,
+    "socialRating": 13
+  }
+]

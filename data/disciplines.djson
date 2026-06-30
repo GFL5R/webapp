@@ -585,5 +585,63 @@
       "Takedown"
     ],
     "capstone": "Unbreakable"
+  },
+  "Baby Driver": {
+    "skills": [
+      "Piloting",
+      "Firearms",
+      "Resolve"
+    ],
+    "flavor": """
+      <p>A Baby Driver slots into the driver's seat the way a magazine locks into a receiver. The wheel turns before conscious thought. The throttle answers questions the driver has not finished asking.</p>
+      <p>Speed settles arguments. Tight gaps are invitations. When the chase ends, the other driver fills out the paperwork. Always.</p>
+    """,
+    "perk": "Redline",
+    "techniques": [
+      "J-Turn",
+      "Bumper Tag",
+      "Lead Foot",
+      "Drive-By Directive",
+      "Dirty Windshield",
+      "Shoot and Scoot",
+      "Suppressive Fire",
+      "Evasive Footwork",
+      "Ricochet",
+      "Chicken",
+      "Ride the Line",
+      "Totaled",
+      "Push It to the Limit",
+      "Ghost Ride"
+    ],
+    "capstone": "One Last Run"
+  },
+  "Chauffeur": {
+    "skills": [
+      "Piloting",
+      "Tactics",
+      "Insight"
+    ],
+    "flavor": """
+      <p>A Chauffeur treats the vehicle like a mobile safe room. Every input is measured. Every shift is invisible. Passengers arrive without remembering the drive.</p>
+      <p>Pursuers lose the tail without knowing when they lost it. Road hazards become alternate routes before the passenger notices the lane change. The Chauffeur picks the cleanest line through the chaos. The car behind eats the wrong turn.</p>
+    """,
+    "perk": "Smooth Operator",
+    "techniques": [
+      "Rapid Transit",
+      "Read the Room",
+      "Keep Your Cool",
+      "Defensive Maneuver",
+      "Evasive Footwork",
+      "PIT Maneuver",
+      "Thread the Needle",
+      "Rolling Fortress",
+      "Tactical Assessment",
+      "Look Out!",
+      "Flexible Positioning",
+      "Dug In",
+      "Ride the Line",
+      "Smoke and Mirrors"
+    ],
+    "capstone": "The Professional"
   }
 }

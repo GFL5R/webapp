@@ -179,6 +179,13 @@ const rulePages = [
     keywords: ['discipline', 'rank', 'progression', 'fortification', 'capstone', 'perk', 'XP']
   },
   {
+    route: '/transhumanism',
+    title: 'Transhumanism',
+    category: 'World',
+    headings: ['Transhumanism', 'Partial Augmentation', 'Full-Body Conversion', 'Neural Bridge', 'Artificial Limbs', 'T-Doll Modules', 'Remoulding Units', 'Containment Unit', 'Humanity', 'Surgery', 'Conversion', 'ELID'],
+    keywords: ['transhumanism', 'transhuman', 'augmentation', 'neural bridge', 'artificial limbs', 'full-body conversion', 'containment unit', 'surgery', 'ELID', 'humanity', 'modules', 'remoulding', 'chrome', 'cybernetics']
+  },
+  {
     route: '/remoulding-failure-table',
     title: 'Remoulding Failure Table',
     category: 'Reference',

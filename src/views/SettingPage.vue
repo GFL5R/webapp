@@ -85,6 +85,6 @@ const pairStructure = [
   { name: 'T-Doll Partner', value: 'Combat', desc: 'Combat capability, tactical skills, weapon proficiency, effectiveness in dangerous situations. Starts with 40 Humanity.' }
 ]
 
-const prev = { to: '/', label: 'Home' }
-const next = { to: '/making-a-check', label: 'Making a Check' }
+const prev = { to: '/humanity-and-fame', label: 'Humanity & Fame' }
+const next = { to: '/factions', label: 'Factions' }
 </script>

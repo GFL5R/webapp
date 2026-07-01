@@ -74,6 +74,6 @@ const crumbs = [
   { label: 'A Boy & His Doll' }
 ]
 
-const prev = { to: '/building-your-t-doll', label: 'Building Your T-Doll' }
-const next = { to: '/collapse-radiation', label: 'Collapse Radiation' }
+const prev = { to: '/electronic-warfare', label: 'Electronic Warfare' }
+const next = { to: '/building-a-commander', label: 'Building a Commander' }
 </script>

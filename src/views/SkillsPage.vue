@@ -69,5 +69,5 @@ const socialSkills = [
 ]
 
 const prev = { to: '/approaches-and-derived-attributes', label: 'Approaches & Attributes' }
-const next = { to: '/building-a-commander', label: 'Building a Commander' }
+const next = { to: '/range-bands', label: 'Range Bands' }
 </script>

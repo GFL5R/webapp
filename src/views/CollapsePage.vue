@@ -230,6 +230,6 @@ const crumbs = [
   { label: 'Collapse Radiation' }
 ]
 
-const prev = { to: '/a-boy-and-his-doll', label: 'A Boy & His Doll' }
-const next = { to: '/conditions', label: 'Conditions' }
+const prev = { to: '/weapons-and-armor', label: 'Weapons & Armor' }
+const next = { to: '/poisons-and-drugs', label: 'Poisons & Drugs' }
 </script>

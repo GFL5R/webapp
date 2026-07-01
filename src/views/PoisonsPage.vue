@@ -164,6 +164,6 @@ const administration = [
   }
 ]
 
-const prev = { to: '/electronic-warfare', label: 'Electronic Warfare' }
+const prev = { to: '/collapse-radiation', label: 'Collapse & Radiation' }
 const next = { to: '/driving-and-vehicles', label: 'Driving & Vehicles' }
 </script>

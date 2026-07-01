@@ -65,6 +65,7 @@ const sections = [
       { to: '/crime', label: 'Crime' },
       { to: '/remoulding', label: 'Remoulding' },
       { to: '/remoulding-failure-table', label: 'Remoulding Failure Table' },
+      { to: '/transhumanism', label: 'Transhumanism' },
     ]
   },
   {

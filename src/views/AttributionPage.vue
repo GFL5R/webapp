@@ -47,6 +47,6 @@ const crumbs = [
   { label: 'Attribution & Licensing' }
 ]
 
-const prev = { to: '/approaches-and-derived-attributes', label: 'Approaches & Derived Attributes' }
-const next = { to: '/building-a-commander', label: 'Building a Commander' }
+const prev = { to: '/capstones', label: 'Capstones' }
+const next = null
 </script>

@@ -82,7 +82,7 @@ const crumbs = [
 ]
 
 const prev = { to: '/disadvantages', label: 'Disadvantages' }
-const next = { to: '/attribution', label: 'Attribution' }
+const next = { to: '/techniques', label: 'Techniques' }
 
 // State
 const search = ref('')

@@ -404,6 +404,6 @@ const crumbs = [
   { label: 'Conditions' }
 ]
 
-const prev = { to: '/collapse-radiation', label: 'Collapse Radiation' }
-const next = { to: '/crime', label: 'Crime' }
+const prev = { to: '/harm-and-healing', label: 'Harm & Healing' }
+const next = { to: '/strife', label: 'Strife' }
 </script>

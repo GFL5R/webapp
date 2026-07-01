@@ -94,8 +94,8 @@ const crumbs = [
   { label: 'Approaches & Derived Attributes' }
 ]
 
-const prev = { to: '/', label: 'Home' }
-const next = { to: '/attribution', label: 'Attribution' }
+const prev = { to: '/making-a-check', label: 'Making a Check' }
+const next = { to: '/skills', label: 'Skills' }
 
 const approaches = [
   {

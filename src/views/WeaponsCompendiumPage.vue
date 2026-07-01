@@ -122,7 +122,7 @@ const crumbs = [
   { label: 'Weapons' }
 ]
 
-const prev = { to: '/anxieties', label: 'Anxieties' }
+const prev = { to: '/techniques', label: 'Techniques' }
 const next = { to: '/armor', label: 'Armor' }
 
 const weapons = Object.entries(rawWeapons).map(([name, data]) => ({

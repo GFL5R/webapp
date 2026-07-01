@@ -716,6 +716,46 @@
     ]
   },
   {
+    "id": "delusion",
+    "name": "Delusion",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The new medic arrived with the last supply drop: a 2nd-gen civilian model, repurposed for field work. Competent, efficient, polite. She introduced herself as Maris, shook hands with the squad, and immediately started inventorying the medical kit. On day three, one of the operators made an offhand comment about maintenance cycles. Maris looked up. Maintenance? Like a vehicle. My body doesn't need maintenance. There was a pause. The squad exchanged glances. You're a doll, right? The chassis, the neural cloud, the- I'm human. The silence stretched. Her expression didn't change. Her hands kept sorting bandages. No, seriously. I mean you're great, we all think you're great, but you're a- I'm human. She said it the same way someone says their own name. Flat. Certain. The kind of certainty that cracks if you push it. Nobody pushed. The squad learned to avoid certain words. Maintenance. Chassis. Frame. Cloud. Each time someone slipped, Maris would stop. Not angry. Not sad. Just perfectly still, like a system waiting for input to resolve, until someone changed the subject. She was the best medic the squad ever had. Nobody ever asked again.",
+    "effects": [
+      "You know you are human. The fact that other people insist otherwise is their problem, not yours. You do not discuss it. You do not entertain questions about it. The subject is closed.",
+      "You gain 3 strife whenever someone implies or states that you are a T-Doll, whenever you are treated as property rather than a person, or whenever circumstances force you to confront evidence of your synthetic nature.",
+      "The first time this anxiety applies in a scene, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "cyberpsychosis",
+    "name": "Cyberpsychosis",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "Rourke had been augmented for six years when the mirror started lying. Partial conversion: both arms, spinal reinforcement, optical suite, neural bridge. Standard Yellow Zone operator kit. He'd paid for it with four years of hazard contracts and never regretted a credit. Then one morning he looked at his reflection and didn't recognize the man looking back. The face was his. The arms weren't. They'd never been his. They were IOP model 7s, manufactured in a factory in Sector 12, originally designed for a Doll frame two generations obsolete. He'd read the spec sheet a hundred times and never thought about it. Now he couldn't stop thinking about it. His squad noticed the change before he did. He stopped eating with them. Stopped playing cards. Stopped everything that wasn't mission-critical and then some of that too. When the squad's Doll mechanic offered to run diagnostics on his optical suite, Rourke flinched. I'm fine. You've been staring at walls for three days. I said I'm fine. The mechanic backed off. Nobody knew how to help someone whose problem was that they couldn't tell where the chrome ended and the person began. Rourke didn't know either.",
+    "effects": [
+      "The boundary between yourself and your augmentations has blurred. You no longer trust that the person making decisions is you, rather than the hardware interpreting your intentions through a dozen layers of translation. Some days you feel like a pilot in your own skull. Other days you aren't sure there's a pilot at all.",
+      "You gain 3 strife whenever your augmentations malfunction, whenever you see your reflection unexpectedly, or whenever someone treats you as more machine than person.",
+      "The first time this anxiety applies in a scene, you gain 1 fortune point."
+    ]
+  },
+  {
+    "id": "harvest-fear",
+    "name": "Harvest Fear",
+    "types": [
+      "Mental",
+      "Social"
+    ],
+    "flavor": "The clinic was clean. Too clean. White Zone medical facility, all glass and soft lighting, the kind of place where the staff wear shoes without soles because the floors sterilize themselves. Chen sat in the consultation room, waiting for the pre-op screening. Partial augmentation. Both legs. He'd saved for three years. The surgeon entered, smiled, pulled up Chen's file on a wall display. Everything looks good, Mister Chen. We'll run the standard blood panel, confirm compatibility with the neural bridge, and schedule you for next week. Chen nodded. Then his optical suite flagged something. A transaction ID embedded in the clinic's network traffic, routed through a holding company he recognized. He'd seen that holding company before, in a report about organ trafficking out of the Yellow Zones. The file had been dismissed as fearmongering. The clinic's surgeon was still smiling. Is something wrong, Mister Chen? No, Chen lied. Everything's fine. He scheduled the surgery. He never showed up.",
+    "effects": [
+      "You have seen or heard enough to believe that forced conversion is real. Every clinic is a potential harvesting front. Every surgeon could be sizing up your organs. You cannot shake the conviction that someone, somewhere, has decided your body is worth more in pieces than it is whole.",
+      "You gain 3 strife whenever you are in a medical facility, whenever someone with surgical authority examines you or discusses a procedure, or whenever you encounter evidence that the organ trade exists.",
+      "The first time this anxiety applies in a scene, you gain 1 fortune point."
+    ]
+  },
+  {
     "id": "yandere",
     "name": "Yandere",
     "types": [

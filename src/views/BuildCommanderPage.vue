@@ -344,7 +344,7 @@ const crumbs = [
   { label: 'Building a Commander' }
 ]
 
-const prev = { to: '/attribution', label: 'Attribution & Licensing' }
+const prev = { to: '/a-boy-and-his-doll', label: 'A Boy & His Doll' }
 const next = { to: '/building-your-t-doll', label: 'Building Your T-Doll' }
 
 const nationalityTabs = [

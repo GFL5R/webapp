@@ -12,6 +12,7 @@ const routes = [
   { path: '/crime', name: 'crime', component: () => import('@/views/CrimePage.vue') },
   { path: '/remoulding', name: 'remoulding', component: () => import('@/views/RemouldingPage.vue') },
   { path: '/remoulding-failure-table', name: 'remoulding-failure-table', component: () => import('@/views/RemouldingFailureTablePage.vue') },
+  { path: '/transhumanism', name: 'transhumanism', component: () => import('@/views/TranshumanismPage.vue') },
   { path: '/disciplines', name: 'disciplines', component: () => import('@/views/DisciplinesPage.vue') },
   { path: '/driving-and-vehicles', name: 'driving', component: () => import('@/views/DrivingPage.vue') },
   { path: '/electronic-warfare', name: 'ewar', component: () => import('@/views/EWarPage.vue') },

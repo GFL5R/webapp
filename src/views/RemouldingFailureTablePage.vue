@@ -183,7 +183,7 @@ const crumbs = [
 ]
 
 const prev = { to: '/remoulding', label: 'Remoulding' }
-const next = { to: '/poisons-and-drugs', label: 'Poisons & Drugs' }
+const next = { to: '/transhumanism', label: 'Transhumanism' }
 </script>
 
 <style scoped>

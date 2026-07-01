@@ -116,7 +116,7 @@ const crumbs = [
 ]
 
 const prev = { to: '/anxieties', label: 'Anxieties' }
-const next = { to: '/attribution', label: 'Attribution' }
+const next = { to: '/weapons', label: 'Weapons' }
 
 // Type slugs to display names
 const TYPE_NAMES = {

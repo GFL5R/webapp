@@ -124,7 +124,7 @@ const crumbs = [
   { label: 'Disciplines' }
 ]
 
-const prev = { to: '/a-boy-and-his-doll', label: 'A Boy & His Doll' }
+const prev = { to: '/building-your-t-doll', label: 'Building Your T-Doll' }
 const next = { to: '/experience', label: 'Experience' }
 
 const selected = ref(null)

@@ -205,8 +205,8 @@ const crumbs = [
   { label: 'NPCs' }
 ]
 
-const prev = { to: '/crime', label: 'Crime' }
-const next = { to: '/attribution', label: 'Attribution' }
+const prev = { to: '/transhumanism', label: 'Transhumanism' }
+const next = { to: '/passions', label: 'Passions' }
 
 // State
 const search = ref('')

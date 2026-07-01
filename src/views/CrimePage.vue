@@ -182,5 +182,5 @@ const crumbs = [
 ]
 
 const prev = { to: '/conditions', label: 'Conditions' }
-const next = { to: '/disciplines', label: 'Disciplines' }
+const next = { to: '/remoulding', label: 'Remoulding' }
 </script>

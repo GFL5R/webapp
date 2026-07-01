@@ -2231,61 +2231,17 @@
       "type": "Electronic Warfare"
     }
   ],
-  "remolding": [
-    {
-      "id": "battlefield-logistics",
-      "name": "Battlefield Logistics",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "A burst of collapse energy applied to your own frame gets you where you need to be. Tactical repositioning stops being an action tax when the energy is free.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "elemental-aegis",
-      "name": "Elemental Aegis",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "Collapse energy can be turned inward as easily as it's directed out. The practical result is a sustained field that makes you considerably harder to put down.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
+  "remoulding": [
     {
       "id": "line-of-absolute-attack",
       "name": "Line of Absolute Attack",
-      "rank": 0,
+      "rank": 1,
       "approach": "—",
       "skill": "Resolve",
       "flavor": "A remolding unit sweeps energy in a directed band, not a single point. Two adjacent spaces take the hit simultaneously. By the time the targets realize they were in the pattern, the damage is done.",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces.",
       "opportunities": [],
-      "type": "Remolding"
+      "type": "Remoulding"
     },
     {
       "id": "activation",
@@ -2301,181 +2257,18 @@
         "(op): Extend the range of this technique to 1–4 range bands.",
         "---"
       ],
-      "type": "Remolding"
-    },
-    {
-      "id": "terraforming",
-      "name": "Terraforming",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "A shockwave of collapse energy doesn't just damage what it touches. It changes it. An open path becomes a hazard in under a second, and the enemy spends the rest of the fight working around it.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [
-        "(op)(op): Designate one additional area within 0–1 range bands to also become Entangling Terrain.",
-        "---"
-      ],
-      "type": "Remolding"
-    },
-    {
-      "id": "unstable-discharge",
-      "name": "Unstable Discharge",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "The first time you flood a remolding unit past its limits, the surge doesn't discriminate. Friend or enemy, anything in the immediate area takes the hit. You learn fast to warn your team before you do it again.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "vampirism",
-      "name": "Vampirism",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "The remolding unit pulls energy out of a target and routes it back through you. Simple in principle. The enemy gets less; you get more. First lesson in applied remolding.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "channeled-sacrifice",
-      "name": "Channeled Sacrifice",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "Routing drained energy through yourself and then out to someone else takes more precision than keeping it. You give up the recovery. Someone else gets back on their feet instead.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "denial-zone",
-      "name": "Denial Zone",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "Entanglement slows people down. Dangerous ground and radiation keep them out entirely. When you need to hold a position rather than just slow someone through it, the distinction matters.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [
-        "(op)(op): Designate one additional area within 0–1 range bands to become terrain of the same type.",
-        "---"
-      ],
-      "type": "Remolding"
-    },
-    {
-      "id": "energy-overflow",
-      "name": "Energy Overflow",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "Controlled output means the wave goes out, not back in. A shaped emission doesn't care about range; it cares about who it's aimed at.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [
-        "(op)(op): Each enemy hit also suffers the Burning condition.",
-        "---"
-      ],
-      "type": "Remolding"
-    },
-    {
-      "id": "projected-aegis",
-      "name": "Projected Aegis",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "Extending the field to someone else means giving up your own coverage. You take the risk. They take the protection. That's the trade.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
+      "type": "Remoulding"
     },
     {
       "id": "sweeping-advance",
       "name": "Sweeping Advance",
-      "rank": 0,
+      "rank": 2,
       "approach": "—",
       "skill": "Resolve",
       "flavor": "Obstacles stop being obstacles once you've run enough collapse energy through them. The sweep doesn't slow down for cover that isn't there anymore.",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost.",
       "opportunities": [],
-      "type": "Remolding"
+      "type": "Remoulding"
     },
     {
       "id": "activation",
@@ -2490,84 +2283,18 @@
         "(op): Extend the range of this technique to 1–4 range bands.",
         "---"
       ],
-      "type": "Remolding"
-    },
-    {
-      "id": "tactical-relay",
-      "name": "Tactical Relay",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "Getting your team into position matters more than getting there yourself. A well-placed ally is worth two who are stuck in the wrong spot.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "forced-displacement",
-      "name": "Forced Displacement",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "The collapse burst doesn't care whether the target wants to move. Sending an enemy into a worse position is logistics applied to the other side of the board, and the landing hurts.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "iron-sky",
-      "name": "Iron Sky",
-      "rank": 0,
-      "approach": "—",
-      "skill": "Resolve",
-      "flavor": "A full-coverage field costs everything the unit has. The squad walks through whatever comes next wearing that cost.",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
-    },
-    {
-      "id": "activation",
-      "name": "Activation:",
-      "rank": 0,
-      "approach": "",
-      "skill": "",
-      "flavor": "",
-      "activation": "",
-      "opportunities": [],
-      "type": "Remolding"
+      "type": "Remoulding"
     },
     {
       "id": "scorched-horizon",
       "name": "Scorched Horizon",
-      "rank": 0,
+      "rank": 3,
       "approach": "—",
       "skill": "Resolve",
       "flavor": "Elevated positions offer a tactical advantage right up until the ground beneath them stops existing. Collapse energy doesn't respect high ground.",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost. You may also remove elevated terrain from any target space; any creature or doll that was in that elevated terrain suffers a critical strike.",
       "opportunities": [],
-      "type": "Remolding"
+      "type": "Remoulding"
     },
     {
       "id": "activation",
@@ -2582,18 +2309,62 @@
         "(op): Extend the range of this technique to 1–4 range bands.",
         "---"
       ],
-      "type": "Remolding"
+      "type": "Remoulding"
+    },
+    {
+      "id": "vampirism",
+      "name": "Vampirism",
+      "rank": 1,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "The remolding unit pulls energy out of a target and routes it back through you. Simple in principle. The enemy gets less; you get more. First lesson in applied remolding.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting one enemy 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the target equal to your ranks in Resolve. You recover fatigue equal to your bonus successes.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "channeled-sacrifice",
+      "name": "Channeled Sacrifice",
+      "rank": 2,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "Routing drained energy through yourself and then out to someone else takes more precision than keeping it. You give up the recovery. Someone else gets back on their feet instead.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 3 Resolve check targeting one enemy 1–3 range bands away and one ally 0–2 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
     },
     {
       "id": "the-power-to-take-and-give-life",
       "name": "The Power to Take and Give Life",
-      "rank": 0,
+      "rank": 3,
       "approach": "—",
       "skill": "Resolve",
       "flavor": "A practiced operator can split the output three ways and not lose a step. The enemy pays the cost. The team collects.",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check targeting one enemy 1–3 range bands away and one ally 0–2 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
       "opportunities": [],
-      "type": "Remolding"
+      "type": "Remoulding"
     },
     {
       "id": "activation",
@@ -2607,18 +2378,65 @@
         "(op)(op): Select one additional ally within 0–2 range bands. That ally also recovers fatigue equal to your bonus successes.",
         "---"
       ],
-      "type": "Remolding"
+      "type": "Remoulding"
+    },
+    {
+      "id": "unstable-discharge",
+      "name": "Unstable Discharge",
+      "rank": 1,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "The first time you flood a remolding unit past its limits, the surge doesn't discriminate. Friend or enemy, anything in the immediate area takes the hit. You learn fast to warn your team before you do it again.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every creature and doll within 1 range band, including allies.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "energy-overflow",
+      "name": "Energy Overflow",
+      "rank": 2,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "Controlled output means the wave goes out, not back in. A shaped emission doesn't care about range; it cares about who it's aimed at.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every enemy within 2 range bands.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [
+        "(op)(op): Each enemy hit also suffers the Burning condition.",
+        "---"
+      ],
+      "type": "Remoulding"
     },
     {
       "id": "total-saturation",
       "name": "Total Saturation",
-      "rank": 0,
+      "rank": 3,
       "approach": "—",
       "skill": "Resolve",
       "flavor": "At full output, collapse energy doesn't just burn. It tears. Whatever survives the initial wave is still bleeding, disoriented, and on fire.",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 5 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every enemy within 3 range bands. Each enemy hit also suffers the Burning condition.",
       "opportunities": [],
-      "type": "Remolding"
+      "type": "Remoulding"
     },
     {
       "id": "activation",
@@ -2632,18 +2450,200 @@
         "(op)(op): Each enemy hit also suffers the Bleeding and Dazed conditions.",
         "---"
       ],
-      "type": "Remolding"
+      "type": "Remoulding"
+    },
+    {
+      "id": "elemental-aegis",
+      "name": "Elemental Aegis",
+      "rank": 1,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "Collapse energy can be turned inward as easily as it's directed out. The practical result is a sustained field that makes you considerably harder to put down.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Resolve check targeting yourself.\n\nEffects:\n\nIf you succeed, you gain the Resilient and Hardened conditions.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "projected-aegis",
+      "name": "Projected Aegis",
+      "rank": 2,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "Extending the field to someone else means giving up your own coverage. You take the risk. They take the protection. That's the trade.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 3 Resolve check targeting one ally within 0–2 range bands.\n\nEffects:\n\nIf you succeed, your target gains the Resilient and Hardened conditions.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "iron-sky",
+      "name": "Iron Sky",
+      "rank": 3,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "A full-coverage field costs everything the unit has. The squad walks through whatever comes next wearing that cost.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check targeting yourself and all allies within 2 range bands.\n\nEffects:\n\nIf you succeed, you and each target ally gain the Resilient and Hardened conditions.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "battlefield-logistics",
+      "name": "Battlefield Logistics",
+      "rank": 1,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "A burst of collapse energy applied to your own frame gets you where you need to be. Tactical repositioning stops being an action tax when the energy is free.",
+      "activation": "Activation:\n\nAs a Movement action, make a TN 3 Resolve check.\n\nEffects:\n\nIf you succeed, move up to 2 range bands from your starting position. Alternatively, you may enter elevated terrain adjacent to you without paying any movement penalty.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "tactical-relay",
+      "name": "Tactical Relay",
+      "rank": 2,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "Getting your team into position matters more than getting there yourself. A well-placed ally is worth two who are stuck in the wrong spot.",
+      "activation": "Activation:\n\nAs a Movement action, make a TN 3 Resolve check targeting yourself or one ally within 2 range bands.\n\nEffects:\n\nIf you succeed, the target moves up to 3 range bands from their starting position. Alternatively, the target may enter elevated terrain adjacent to them without paying any movement penalty.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "forced-displacement",
+      "name": "Forced Displacement",
+      "rank": 3,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "The collapse burst doesn't care whether the target wants to move. Sending an enemy into a worse position is logistics applied to the other side of the board, and the landing hurts.",
+      "activation": "Activation:\n\nAs a Movement action, make a TN 4 Resolve check targeting one character within 3 range bands.\n\nEffects:\n\nIf you succeed, move the target up to 3 range bands from their starting position. If the target is an enemy, they also suffer elemental damage equal to your ranks in Resolve.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "terraforming",
+      "name": "Terraforming",
+      "rank": 1,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "A shockwave of collapse energy doesn't just damage what it touches. It changes it. An open path becomes a hazard in under a second, and the enemy spends the rest of the fight working around it.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–1 range bands. That area becomes Entangling Terrain until the end of the scene.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [
+        "(op)(op): Designate one additional area within 0–1 range bands to also become Entangling Terrain.",
+        "---"
+      ],
+      "type": "Remoulding"
+    },
+    {
+      "id": "denial-zone",
+      "name": "Denial Zone",
+      "rank": 2,
+      "approach": "—",
+      "skill": "Resolve",
+      "flavor": "Entanglement slows people down. Dangerous ground and radiation keep them out entirely. When you need to hold a position rather than just slow someone through it, the distinction matters.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–1 range bands. That area becomes Entangling, Dangerous, or Radiation Terrain (your choice) until the end of the scene.",
+      "opportunities": [],
+      "type": "Remoulding"
+    },
+    {
+      "id": "activation",
+      "name": "Activation:",
+      "rank": 0,
+      "approach": "",
+      "skill": "",
+      "flavor": "",
+      "activation": "",
+      "opportunities": [
+        "(op)(op): Designate one additional area within 0–1 range bands to become terrain of the same type.",
+        "---"
+      ],
+      "type": "Remoulding"
     },
     {
       "id": "total-terrain-dominance",
       "name": "Total Terrain Dominance",
-      "rank": 0,
+      "rank": 3,
       "approach": "—",
       "skill": "Resolve",
       "flavor": "At full output, the environment stops being a backdrop and starts being a piece you control. Raised ground, blinded sight lines, denied zones: the battlefield becomes whatever you need it to be.",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–2 range bands. That area becomes Entangling, Dangerous, Radiation, Elevated, or Obscuring Terrain (your choice) until the end of the scene.",
       "opportunities": [],
-      "type": "Remolding"
+      "type": "Remoulding"
     },
     {
       "id": "activation",
@@ -2657,7 +2657,7 @@
         "(op)(op): Designate one additional area within 0–2 range bands to become terrain of the same type.",
         "---"
       ],
-      "type": "Remolding"
+      "type": "Remoulding"
     }
   ],
   "science": [

@@ -124,7 +124,7 @@ const TYPE_NAMES = {
   command: 'Command',
   conditioning: 'Conditioning',
   electronic_warfare: 'Electronic Warfare',
-  remolding: 'Remolding',
+  remoulding: 'Remoulding',
   science: 'Science',
   social: 'Social',
   street: 'Street',

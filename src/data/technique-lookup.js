@@ -8,7 +8,7 @@ const KEY_TO_SLUG = {
   combat: 'combat',
   command: 'command',
   electronic_warfare: 'electronic-warfare',
-  remolding: 'remolding',
+  remoulding: 'remoulding',
   science: 'science',
   social: 'social',
   street: 'street',

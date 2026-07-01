@@ -3,7 +3,7 @@
     <Breadcrumb :crumbs="crumbs" />
     <h1>Modules</h1>
 
-    <p>T-Doll modules are aftermarket hardware and software packages that enhance a frame's capabilities. From Approach Augmentations that boost core stats to specialized EW suites and experimental Remolding Units, modules allow operators to customize their T-Doll for any mission profile.</p>
+    <p>T-Doll modules are aftermarket hardware and software packages that enhance a frame's capabilities. From Approach Augmentations that boost core stats to specialized EW suites and experimental Remoulding Units, modules allow operators to customize their T-Doll for any mission profile.</p>
 
     <!-- Toolbar -->
     <div class="db-toolbar">

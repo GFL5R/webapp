@@ -3,7 +3,7 @@
     <Breadcrumb :crumbs="crumbs" />
     <h1>Capstones</h1>
 
-    <p>Capstones are the ultimate expression of mastery in a Discipline. Available only at rank 5, each capstone represents a legendary ability that few operators ever achieve.</p>
+    <p>Capstones are the ultimate expression of mastery in a Discipline. Available only after completing rank 3 in a discipline, each capstone represents a legendary ability that few operators ever achieve.</p>
 
     <!-- Toolbar -->
     <div class="db-toolbar">

@@ -123,6 +123,13 @@ const rulePages = [
     keywords: ['crime', 'underworld', 'criminal', 'black market', 'illegal', 'smuggling']
   },
   {
+    route: '/remoulding',
+    title: 'Remoulding',
+    category: 'World',
+    headings: ['Remoulding', 'Remoulding Unit', 'Module Installation', 'Upgrading', 'Fortification', 'Technique Trees', 'Attack Tree', 'Life Drain Tree', 'Blast Tree', 'Barrier Tree', 'Mobility Tree', 'Terrain Control Tree', 'Resolve', 'GM Guidance', 'Failure Table'],
+    keywords: ['remoulding', 'remould', 'remoulding unit', 'module', 'technique tree', 'skill tree', 'spell', 'fortification', 'upgrade', 'xp', 'resolve', 'collapse radiation', 'reverse collapse', 'failure table', 'mishap']
+  },
+  {
     route: '/driving-and-vehicles',
     title: 'Driving & Vehicles',
     category: 'Combat & Harm',
@@ -170,6 +177,13 @@ const rulePages = [
     category: 'Characters',
     headings: ['Disciplines', 'Structure', 'Progression', 'Adding a Discipline', 'Techniques', 'Fortification', 'Rank Thresholds'],
     keywords: ['discipline', 'rank', 'progression', 'fortification', 'capstone', 'perk', 'XP']
+  },
+  {
+    route: '/remoulding-failure-table',
+    title: 'Remoulding Failure Table',
+    category: 'Reference',
+    headings: ['Remoulding Failure Table', 'Failure Table', 'Running the Table', 'GM Guidance', 'Frequency', 'Narrative Framing', 'Adapting Severity', 'Player Agency'],
+    keywords: ['remoulding', 'failure', 'mishap', 'backlash', 'bloom', 'collapse leak', 'd20', 'table', 'hardlock', 'thermal overload', 'neural static', 'gravity glitch', 'lingering bloom', 'unexpected overclock', 'fizzle', 'scramble', 'uncontrollable honesty', 'displaced', 'power sink', 'backflow', 'bloom flash', 'epiphyllum rejection', 'cosmetic remoulding', 'GM guidance', 'roll']
   },
   {
     route: '/attribution',
@@ -260,7 +274,7 @@ function buildCorpus() {
     command: '/techniques/command',
     conditioning: '/techniques',  // fallback — conditioning has no entries
     electronic_warfare: '/techniques/electronic-warfare',
-    remolding: '/techniques/remolding',
+    remoulding: '/techniques/remoulding',
     science: '/techniques/science',
     social: '/techniques/social',
     street: '/techniques/street',

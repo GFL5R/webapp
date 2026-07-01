@@ -7,7 +7,7 @@
  *   /techniques/combat
  *   /techniques/command
  *   /techniques/electronic-warfare
- *   /techniques/remolding
+ *   /techniques/remoulding
  *   /techniques/science
  *   /techniques/social
  *   /techniques/street
@@ -42,15 +42,15 @@ export const TECHNIQUE_TYPES = {
     intro: 'In a world where data is power, Electronic Warfare techniques determine who controls the flow of information. Whether cracking ICE on a hostile network, ghosting through corporate security, or locking down your own systems against intrusion, these abilities are the weapons of the invisible battlefield.',
     searchPlaceholder: 'Search EW techniques…',
     prev: { to: '/techniques/command', label: 'Command Techniques' },
-    next: { to: '/techniques/remolding', label: 'Remolding Techniques' }
+    next: { to: '/techniques/remoulding', label: 'Remoulding Techniques' }
   },
 
-  remolding: {
-    slug: 'remolding',
-    title: 'Remolding Techniques',
-    dataKey: 'remolding',
-    intro: 'Remolding techniques are the bleeding edge of what\'s possible, harnessing collapse radiation to bend, break, or rewrite reality itself. Unpredictable and dangerous, these abilities are the domain of those who are willing to risk everything for a chance at power beyond imagination.',
-    searchPlaceholder: 'Search remolding techniques…',
+  remoulding: {
+    slug: 'remoulding',
+    title: 'Remoulding Techniques',
+    dataKey: 'remoulding',
+    intro: 'Remoulding techniques are the bleeding edge of what\'s possible, harnessing collapse radiation to bend, break, or rewrite reality itself. Unpredictable and dangerous, these abilities are the domain of those who are willing to risk everything for a chance at power beyond imagination.',
+    searchPlaceholder: 'Search remoulding techniques…',
     prev: { to: '/techniques/electronic-warfare', label: 'EW Techniques' },
     next: { to: '/techniques/science', label: 'Science Techniques' }
   },
@@ -61,7 +61,7 @@ export const TECHNIQUE_TYPES = {
     dataKey: 'science',
     intro: 'Knowledge is a weapon. Science techniques represent a character\'s ability to read the world around them, breaking down compounds, reverse-engineering technology, or making intuitive leaps that leave others behind. Where others see chaos, a scientist sees data.',
     searchPlaceholder: 'Search science techniques…',
-    prev: { to: '/techniques/remolding', label: 'Remolding Techniques' },
+    prev: { to: '/techniques/remoulding', label: 'Remoulding Techniques' },
     next: { to: '/techniques/social', label: 'Social Techniques' }
   },
 
@@ -104,7 +104,7 @@ export const TECHNIQUE_TYPE_ORDER = [
   'combat',
   'command',
   'electronic-warfare',
-  'remolding',
+  'remoulding',
   'science',
   'social',
   'street',

@@ -5,6 +5,7 @@
       :key="section.label"
       :label="section.label"
       :links="section.links"
+      :sub-sections="section.subSections"
       :default-open="section.defaultOpen"
     />
   </nav>
@@ -47,9 +48,9 @@ const sections = [
     label: 'Characters',
     defaultOpen: false,
     links: [
+      { to: '/a-boy-and-his-doll', label: 'A Boy & His Doll' },
       { to: '/building-a-commander', label: 'Building a Commander' },
       { to: '/building-your-t-doll', label: 'Building Your T-Doll' },
-      { to: '/a-boy-and-his-doll', label: 'A Boy & His Doll' },
       { to: '/disciplines', label: 'Disciplines' },
       { to: '/experience', label: 'Experience' },
       { to: '/humanity-and-fame', label: 'Humanity & Fame' },
@@ -62,6 +63,8 @@ const sections = [
       { to: '/setting-and-t-dolls', label: 'Setting & T-Dolls' },
       { to: '/factions', label: 'Factions' },
       { to: '/crime', label: 'Crime' },
+      { to: '/remoulding', label: 'Remoulding' },
+      { to: '/remoulding-failure-table', label: 'Remoulding Failure Table' },
     ]
   },
   {
@@ -69,24 +72,44 @@ const sections = [
     defaultOpen: false,
     links: [
       { to: '/npcs', label: 'NPCs' },
-      { to: '/passions', label: 'Passions' },
-      { to: '/advantages', label: 'Advantages' },
-      { to: '/disadvantages', label: 'Disadvantages' },
-      { to: '/anxieties', label: 'Anxieties' },
-      { to: '/techniques/combat', label: 'Combat Techniques' },
-      { to: '/techniques/command', label: 'Command Techniques' },
-      { to: '/techniques/electronic-warfare', label: 'EW Techniques' },
-      { to: '/techniques/remolding', label: 'Remolding Techniques' },
-      { to: '/techniques/science', label: 'Science Techniques' },
-      { to: '/techniques/social', label: 'Social Techniques' },
-      { to: '/techniques/street', label: 'Street Techniques' },
-      { to: '/techniques/vehicle', label: 'Vehicle Techniques' },
-      { to: '/weapons', label: 'Weapons' },
-      { to: '/armor', label: 'Armor' },
-      { to: '/items', label: 'Items' },
-      { to: '/modules', label: 'Modules' },
-      { to: '/perks', label: 'Perks' },
-      { to: '/capstones', label: 'Capstones' },
+    ],
+    subSections: [
+      {
+        label: 'Peculiarities',
+        defaultOpen: true,
+        links: [
+          { to: '/passions', label: 'Passions' },
+          { to: '/advantages', label: 'Advantages' },
+          { to: '/disadvantages', label: 'Disadvantages' },
+          { to: '/anxieties', label: 'Anxieties' },
+        ]
+      },
+      {
+        label: 'Techniques',
+        defaultOpen: false,
+        links: [
+          { to: '/techniques/combat', label: 'Combat' },
+          { to: '/techniques/command', label: 'Command' },
+          { to: '/techniques/electronic-warfare', label: 'EW' },
+          { to: '/techniques/remoulding', label: 'Remoulding' },
+          { to: '/techniques/science', label: 'Science' },
+          { to: '/techniques/social', label: 'Social' },
+          { to: '/techniques/street', label: 'Street' },
+          { to: '/techniques/vehicle', label: 'Vehicle' },
+          { to: '/perks', label: 'Perks' },
+          { to: '/capstones', label: 'Capstones' },
+        ]
+      },
+      {
+        label: 'Equipment',
+        defaultOpen: false,
+        links: [
+          { to: '/weapons', label: 'Weapons' },
+          { to: '/armor', label: 'Armor' },
+          { to: '/items', label: 'Items' },
+          { to: '/modules', label: 'Modules' },
+        ]
+      },
     ]
   },
   {

@@ -271,7 +271,7 @@
       "**Emotional Anchor:** Allies within range 2 of Lenna remove 1 additional strife at the end of each scene. If Lenna is Incapacitated or removed from the scene, all allies who benefited from this ability gain 2 strife immediately."
     ],
     "behaviors": "Lenna approaches every interaction with warmth and sincerity. She defuses tension with humor, draws reluctant speakers into conversation, and keeps track of everyone's morale without being asked. In a negotiation, she reads the room and provides social cover for her teammates, often positioning herself as the approachable face of whatever group she's representing.\n\nIn combat, Lenna stays at range and coordinates. She relays positioning, calls out threats, and keeps communication channels clear. She avoids direct engagement unless cornered, and even then she fights to create distance rather than to inflict harm. If a teammate is in danger, she will break cover to assist them regardless of personal risk.\n\nUnder sustained pressure or isolation, Lenna's composure erodes. She starts second-guessing her decisions, seeks reassurance from allies, and becomes visibly anxious about whether she's contributing enough. Reminding her of her specific value to the team stabilizes her quickly.",
-    "background": "Formerly designated UMP9, Lenna chose her personal name to echo her sister's. She serves as the communications, coordination, and daily affairs specialist in Kalina's NOMFA office, a role she initially doubted she deserved. After undergoing experimental Remolding Pattern trials and transferring into an SSD-62D frame, she emerged with a new body and a clearer sense of purpose. She wears a custom uniform of black fabric with orange accents.\n\nLenna is a member of H.I.D.E. Squad 404 alongside her sister Leva, Klukai, and G11. She handles the work that holds the squad together: logistics, scheduling, encrypted communications, and the quiet emotional labor of keeping her family connected across distance and secrecy.",
+    "background": "Formerly designated UMP9, Lenna chose her personal name to echo her sister's. She serves as the communications, coordination, and daily affairs specialist in Kalina's NOMFA office, a role she initially doubted she deserved. After undergoing experimental Remoulding Pattern trials and transferring into an SSD-62D frame, she emerged with a new body and a clearer sense of purpose. She wears a custom uniform of black fabric with orange accents.\n\nLenna is a member of H.I.D.E. Squad 404 alongside her sister Leva, Klukai, and G11. She handles the work that holds the squad together: logistics, scheduling, encrypted communications, and the quiet emotional labor of keeping her family connected across distance and secrecy.",
     "combatRating": 13,
     "socialRating": 11
   },
@@ -1316,11 +1316,11 @@
       "Social": 4
     },
     "armor": 2,
-    "advantages": "Remolding Pattern",
+    "advantages": "Remoulding Pattern",
     "disadvantages": "Arrogance",
     "passion": "Superiority",
     "anxiety": "Obsolescence",
-    "flavor": "Putting on the perfect smile is a basic skill for a lady. So are elegant footwork and flexible tactics. Third-generation T-Doll, Remolding Pattern, leader of Girard's Horoscope Program Frontline Elimination Squad. She is short, arrogant, and absolutely certain of her superiority over second-generation Dolls.",
+    "flavor": "Putting on the perfect smile is a basic skill for a lady. So are elegant footwork and flexible tactics. Third-generation T-Doll, Remoulding Pattern, leader of Girard's Horoscope Program Frontline Elimination Squad. She is short, arrogant, and absolutely certain of her superiority over second-generation Dolls.",
     "attacks": [
       {
         "name": "Eminent Strike (Melee or Ranged)",
@@ -1332,7 +1332,7 @@
       }
     ],
     "specialRules": [
-      "**Remolding Pattern: Dual Form:** When Darture is reduced below half Endurance, she transforms. Her Power increases to 4, her Swiftness decreases to 2, her armor increases to 4, and she gains the Annihilation Beam attack. All existing marks remain.",
+      "**Remoulding Pattern: Dual Form:** When Darture is reduced below half Endurance, she transforms. Her Power increases to 4, her Swiftness decreases to 2, her armor increases to 4, and she gains the Annihilation Beam attack. All existing marks remain.",
       "**Annihilation Beam (Transformed Only):** **Power + Combat** targeting a 3×3 area within range 4. Deals 6 Fatigue with Burn. The affected tiles become Dangerous terrain (Lava) for 2 rounds. This attack requires a full turn and cannot be used on consecutive rounds.",
       "**Fugue State:** When Darture applies her second mark of the same type to a target in one scene, the target must pass a **TN 3 Resilience + Resolve** check. Pierce ×2 = Frightened (target cannot approach Darture). Defiance ×2 = Infatuated (target must move toward Darture if possible).",
       "**Attack Rotation:** Darture cannot use the same attack action two rounds in a row."

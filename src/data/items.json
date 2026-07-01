@@ -53,17 +53,41 @@
     "flavor": "A smoke grenade is a non-lethal device that emits a cloud of smoke to obscure vision and provide cover.",
     "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the smoke grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>Create a cloud of smoke in the target area, converting the area into<a href=\"#Range & Movement\">Obscuring Terrain</a> for 1 round.</li>\n      </ul>"
   },
-  "Collapse Bomb": {
-    "cost": 200000,
-    "rarity": 9,
-    "flavor": "A collapse bomb is a powerful explosive device that detonates with collapse radiation, causing severe damage to targets within its blast radius and leaving behind a hazardous zone.",
-    "description": "<h3>Activation</h3>\n      <ul>\n        <li>Place the collapse bomb at your current location. Arming requires a full round action. At the start of your next turn, it detonates.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>All targets within range 6 of the detonation point take take a <strong><a href=\"#Harm & Healing::suffering-critical-strikes\">Severity 15 Critical</a></strong>, and immediately fill the remainder of their collapse track's current level. The entire area within range 6 becomes a <a href=\"#Collapse Radiation::collapse-storms\">Collapse Storm</a> for the rest of the scene.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Bulky:</strong> Requires at least 2 characters to carry. While carrying it, those characters cannot take attack actions.</li>\n        <li><strong>Illegal:</strong> Being caught with one is reason enough for summary execution in many places.</li>\n      </ul>"
+  "Incendiary Grenade": {
+    "cost": 400,
+    "rarity": 4,
+    "flavor": "An incendiary grenade fills an area with burning chemicals that cling to surfaces and continue burning. Used for area denial and clearing fortified positions.",
+    "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the incendiary grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>The target area becomes burning terrain for 2 rounds. Characters who enter or start their turn in the area take 3 damage.</li>\n      </ul>"
+  },
+  "Tear Gas Canister": {
+    "cost": 350,
+    "rarity": 4,
+    "flavor": "A canister that releases a cloud of tear gas, causing severe eye and respiratory irritation. Standard crowd control equipment for urban security forces.",
+    "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, deploy the tear gas canister at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>Creates a cloud of irritant gas in the target area for 2 rounds.</li>\n        <li>Characters in the area must make a <strong>TN 3 Resolve check</strong> or gain the <strong>Disoriented</strong> <a href=\"#Conditions\">condition</a> for as long as they remain in the area and 1 round after leaving.</li>\n        <li>T-Dolls with Olfactory Units installed are affected normally. T-Dolls without are unaffected.</li>\n      </ul>"
+  },
+  "Breaching Charge": {
+    "cost": 300,
+    "rarity": 4,
+    "flavor": "A breaching charge is an explosive device designed to breach doors, walls, or other barriers, allowing for quick entry into a secured area.",
+    "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, place the breaching charge on a door, wall, or other barrier at range 0. Arming requires a full round action. At the start of your next turn, it detonates.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>Destroy the targeted barrier and create a clear path through it. Any characters within range 1 of the blast take 3 damage.</li>\n      </ul>"
+  },
+  "EMP Grenade": {
+    "cost": 500,
+    "rarity": 6,
+    "flavor": "An EMP grenade is a device that emits a burst of electromagnetic energy, disrupting or damaging electronic devices within its blast radius.",
+    "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the EMP grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>T-Dolls and other automata within range 1 of the blast gain the <strong><a href=\"#Conditions::condition-incapacitated\">incapacitated</a></strong> condition effect for 1 round.</li>\n      </ul>"
   },
   "Collapse Grenade": {
     "cost": 20000,
     "rarity": 7,
     "flavor": "A collapse grenade is a powerful explosive device that explodes with collapse radiation, causing severe damage to targets within its blast radius and leaving behind a hazardous zone.",
     "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the collapse grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>All targets within range 2 of the target area take a<strong><a href=\"#Harm & Healing::suffering-critical-strikes\">Severity 10 Critical</a></strong> and immediately gain 12 points on their Collapse Track. The target area becomes a <a href=\"#Collapse Radiation::collapse-storms\">Collapse Storm</a> for the rest of the scene.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Illegal:</strong> Being caught with one is reason enough for summary execution in many places.</li>\n      </ul>"
+  },
+  "Collapse Bomb": {
+    "cost": 200000,
+    "rarity": 9,
+    "flavor": "A collapse bomb is a powerful explosive device that detonates with collapse radiation, causing severe damage to targets within its blast radius and leaving behind a hazardous zone.",
+    "description": "<h3>Activation</h3>\n      <ul>\n        <li>Place the collapse bomb at your current location. Arming requires a full round action. At the start of your next turn, it detonates.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>All targets within range 6 of the detonation point take take a <strong><a href=\"#Harm & Healing::suffering-critical-strikes\">Severity 15 Critical</a></strong>, and immediately fill the remainder of their collapse track's current level. The entire area within range 6 becomes a <a href=\"#Collapse Radiation::collapse-storms\">Collapse Storm</a> for the rest of the scene.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Bulky:</strong> Requires at least 2 characters to carry. While carrying it, those characters cannot take attack actions.</li>\n        <li><strong>Illegal:</strong> Being caught with one is reason enough for summary execution in many places.</li>\n      </ul>"
   },
   "Portable Chemistry Kit": {
     "cost": 500,
@@ -89,17 +113,95 @@
     "flavor": "A pack of cigarettes is a small, portable item that can provide a moment of comfort and distraction in the harsh realities of the wastes.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>Smoking provides no mechanical benefits, but can be a source of psychological comfort and a small morale boost in stressful situations.</li>\n        <li>Gives your character cancer in ~20 years if they live that long.</li>\n      </ul>"
   },
-  "ELID Vaccine": {
-    "cost": 5000,
-    "rarity": 7,
-    "flavor": "An ELID vaccine is a medical treatment designed to prevent or mitigate the effects of ELID infection. It works by stimulating the immune system to recognize and fight the virus, providing protection against infection or reducing the severity of symptoms if infection occurs.",
-    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Resets the progression of the Collapse Track to 0. Does not remove existing ELID conditions.</li>\n      </ul>"
+  "Hamburger": {
+    "cost": 8,
+    "rarity": 1,
+    "flavor": "A hamburger from a street vendor in a Green Zone market. The meat may or may not be beef, but the sauce is decent and the bread is fresh enough. It is a small taste of normalcy in a broken world.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits. It is a good hamburger.</li>\n      </ul>"
   },
-  "Collapse Protective Equipment": {
-    "cost": 10000,
-    "rarity": 6,
-    "flavor": "Collapse protective equipment is specialized gear designed to shield the wearer from the harmful effects of collapse radiation. It typically includes a full-body suit made of radiation-resistant materials, along with a helmet and respirator to protect the head and respiratory system.",
-    "description": "<h3>Effects</h3>\n      <ul>\n        <li>While wearing this equipment, you reduce effective exposure to collapse radiation by one zone step.</li>\n      </ul>"
+  "Chocolate Bar": {
+    "cost": 8,
+    "rarity": 1,
+    "flavor": "A small bar of chocolate, wrapped in slightly worn foil. Real cacao is hard to come by these days, but synthetic chocolate has come a long way since the war. It is sweet, and that is enough.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits, but can be a small comfort in difficult moments.</li>\n      </ul>"
+  },
+  "Bottled Water": {
+    "cost": 3,
+    "rarity": 1,
+    "flavor": "A sealed bottle of clean drinking water. In the Yellow Zones, this is worth more than its price suggests. In the Green Zones, it comes from a vending machine.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Quenches thirst. Safe to drink.</li>\n      </ul>"
+  },
+  "Hard Candy": {
+    "cost": 3,
+    "rarity": 1,
+    "flavor": "A small handful of individually wrapped hard candies. They last a long time in the mouth, which is the whole point. A moment of sweetness when there is not much else.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits, but can be a small comfort or a gesture of goodwill when offered to others.</li>\n      </ul>"
+  },
+  "Can of Beans": {
+    "cost": 10,
+    "rarity": 1,
+    "flavor": "A can of beans is the backbone of post-war cuisine. It is filling, keeps forever, and comes in a dozen varieties that all taste roughly the same. A reliable meal when there is nothing else.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides a filling meal. Can be eaten cold, but is better heated.</li>\n      </ul>"
+  },
+  "Instant Noodles": {
+    "cost": 5,
+    "rarity": 1,
+    "flavor": "A packet of instant noodles with a tiny sachet of seasoning powder. It is not a good meal, but it is a hot meal, and in the field that distinction matters.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides a hot meal when boiling water is available. No mechanical benefits, but warm food improves morale.</li>\n      </ul>"
+  },
+  "Duct Tape": {
+    "cost": 25,
+    "rarity": 1,
+    "flavor": "A roll of silver duct tape. The universal fixer. Holds gear together, patches holes, secures splints, and silences captives. Every operator knows to carry at least one roll.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used for field repairs, binding objects, or improvised restraints. With a successful Crafting check, can temporarily repair damaged equipment.</li>\n      </ul>"
+  },
+  "Road Flare": {
+    "cost": 15,
+    "rarity": 1,
+    "flavor": "A bright red road flare that burns for several minutes. Useful for signaling, marking landing zones, or starting fires in wet conditions.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>When ignited, produces a bright red light visible at long range for 10 minutes.</li>\n        <li>Can be used to start fires. Burns hot enough to ignite damp materials.</li>\n      </ul>"
+  },
+  "Flashlight": {
+    "cost": 30,
+    "rarity": 1,
+    "flavor": "A sturdy handheld flashlight. Not military grade, but reliable enough for urban exploration and navigating dark buildings.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides illumination in dark environments out to a reasonable distance.</li>\n        <li>Can be used to signal or disorient targets in low light.</li>\n      </ul>"
+  },
+  "Disposable Lighter": {
+    "cost": 5,
+    "rarity": 1,
+    "flavor": "A cheap plastic lighter with a vague brand name printed on the side. It works until it doesn't. Useful for starting fires, lighting candles, or burning the ends of cut ropes.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used to start fires, light cigarettes, or heat small objects.</li>\n        <li>Contains enough fuel for roughly a month of regular use before running dry.</li>\n      </ul>"
+  },
+  "Bar of Soap": {
+    "cost": 10,
+    "rarity": 1,
+    "flavor": "A plain bar of soap. Cleanliness is one of those small luxuries that separates the civilized from the desperate. A hot shower and a fresh bar of soap can change a person's whole outlook.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits, but helps maintain hygiene and morale during extended field operations.</li>\n      </ul>"
+  },
+  "Sewing Kit": {
+    "cost": 15,
+    "rarity": 1,
+    "flavor": "A small tin containing needles, thread, buttons, and a thimble. Mending a torn uniform or patching a backpack is a small skill that makes a big difference over time.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used to repair clothing, webbing, or fabric equipment.</li>\n      </ul>"
+  },
+  "Journal and Pen": {
+    "cost": 12,
+    "rarity": 1,
+    "flavor": "A blank notebook with a sturdy cover and a reliable pen. Some operators keep mission logs. Others write letters they will never send. A few keep track of the faces they have seen along the way.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits, but can be used to record information, keep a personal journal, or leave messages.</li>\n      </ul>"
+  },
+  "Dice Set": {
+    "cost": 8,
+    "rarity": 1,
+    "flavor": "A small pouch containing a set of polyhedral dice in a variety of colors. Useful for resolving disputes, playing games of chance, or settling who pulls the first watch.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits, but can be a source of entertainment and morale during downtime.</li>\n      </ul>"
+  },
+  "Canned Stew": {
+    "cost": 25,
+    "rarity": 2,
+    "flavor": "A can of hearty stew with actual chunks of meat and vegetables. Not gourmet by any measure, but a step up from a ration brick. Best eaten warm.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides a filling meal. Tastes better when heated.</li>\n      </ul>"
   },
   "Ration Brick": {
     "cost": 20,
@@ -107,17 +209,83 @@
     "flavor": "Tastes like cardboard, but it'll keep you alive when there's nothing else to eat.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides you with all the calories you need to survive for a day.</li>\n      </ul>"
   },
-  "EMP Grenade": {
-    "cost": 500,
-    "rarity": 6,
-    "flavor": "An EMP grenade is a device that emits a burst of electromagnetic energy, disrupting or damaging electronic devices within its blast radius.",
-    "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the EMP grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>T-Dolls and other automata within range 1 of the blast gain the <strong><a href=\"#Conditions::condition-incapacitated\">incapacitated</a></strong> condition effect for 1 round.</li>\n      </ul>"
+  "Bottle of Spirits": {
+    "cost": 60,
+    "rarity": 2,
+    "flavor": "A bottle of cheap but drinkable liquor. Whiskey, vodka, or whatever the local distiller managed to make this month. Good for celebrating, commiserating, or disinfecting wounds in a pinch.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits, but can be a source of comfort and morale during downtime.</li>\n        <li>In a pinch, can be used as a makeshift antiseptic.</li>\n      </ul>"
   },
-  "Breaching Charge": {
-    "cost": 300,
-    "rarity": 4,
-    "flavor": "A breaching charge is an explosive device designed to breach doors, walls, or other barriers, allowing for quick entry into a secured area.",
-    "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, place the breaching charge on a door, wall, or other barrier at range 0. Arming requires a full round action. At the start of your next turn, it detonates.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>Destroy the targeted barrier and create a clear path through it. Any characters within range 1 of the blast take 3 damage.</li>\n      </ul>"
+  "Sleeping Bag": {
+    "cost": 120,
+    "rarity": 2,
+    "flavor": "A compact sleeping bag rated for mild to moderate temperatures. Provides a clean, insulated place to sleep when the nearest bed is a contaminated ruin.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides protection from the elements during rest. Improves quality of sleep in field conditions.</li>\n      </ul>"
+  },
+  "Pocket Radio": {
+    "cost": 80,
+    "rarity": 2,
+    "flavor": "A small battery-powered radio that picks up local broadcasts. News, music, propaganda, and emergency alerts from the URNC's state channels, if you can tolerate the static.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Allows you to listen to local broadcasts for news, weather, and emergency alerts.</li>\n        <li>Can be a source of comfort and entertainment during downtime.</li>\n      </ul>"
+  },
+  "Handcuffs": {
+    "cost": 60,
+    "rarity": 2,
+    "flavor": "Standard issue restraint cuffs, stout steel with a double-lock mechanism to prevent tightening. Comes with two keys that you will immediately lose.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used to restrain a willing or subdued target.</li>\n        <li>Escaping requires a <strong>TN 4 Subterfuge check</strong> or outside assistance.</li>\n      </ul>"
+  },
+  "Emergency Blanket": {
+    "cost": 25,
+    "rarity": 2,
+    "flavor": "A thin reflective sheet that reflects body heat. Not comfortable, but it will keep you alive through a cold night when folded properly.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides emergency insulation against cold. Can also be used as a signal mirror.</li>\n      </ul>"
+  },
+  "Compass": {
+    "cost": 40,
+    "rarity": 2,
+    "flavor": "A magnetic compass in a rugged metal case. Does not require batteries, does not rely on satellites, and does not care about URNC signal blackouts. It always points north.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Allows you to navigate without GPS or electronic aids.</li>\n      </ul>"
+  },
+  "Signal Whistle": {
+    "cost": 15,
+    "rarity": 2,
+    "flavor": "A metal whistle that produces a piercing tone audible from a considerable distance. Simple, reliable, and louder than shouting.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be heard from a great distance. Useful for signaling, coordinating movement in low visibility, or summoning help.</li>\n      </ul>"
+  },
+  "Board Game": {
+    "cost": 35,
+    "rarity": 2,
+    "flavor": "A complete board game in a battered box, missing exactly one piece that everyone has learned to improvise around. A good way to pass the time during long watches or forced downtime.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits, but can be a source of entertainment and bonding during downtime.</li>\n      </ul>"
+  },
+  "Collapse Protective Equipment": {
+    "cost": 10000,
+    "rarity": 6,
+    "flavor": "Collapse protective equipment is specialized gear designed to shield the wearer from the harmful effects of collapse radiation. It typically includes a full-body suit made of radiation-resistant materials, along with a helmet and respirator to protect the head and respiratory system.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>While wearing this equipment, you reduce effective exposure to collapse radiation by one zone step.</li>\n      </ul>"
+  },
+  "Gas Mask": {
+    "cost": 800,
+    "rarity": 5,
+    "flavor": "A full-face respirator with a replaceable filter canister. Protects the wearer from tear gas, smoke, airborne toxins, and most chemical agents.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides immunity to airborne toxins, tear gas, and smoke effects.</li>\n        <li>Filter canister lasts for 8 hours of continuous use before needing replacement.</li>\n      </ul>"
+  },
+  "Hazmat Suit": {
+    "cost": 5000,
+    "rarity": 6,
+    "flavor": "A fully sealed protective suit with an integrated air supply. Provides comprehensive protection against chemical, biological, and radiological hazards.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides immunity to airborne toxins, chemical agents, and biological hazards.</li>\n        <li>Integrated air supply lasts for 2 hours.</li>\n        <li>Bulky: imposes a penalty of 1 on all Swiftness checks while worn.</li>\n      </ul>"
+  },
+  "ELID Vaccine": {
+    "cost": 5000,
+    "rarity": 7,
+    "flavor": "An ELID vaccine is a medical treatment designed to prevent or mitigate the effects of ELID infection. It works by stimulating the immune system to recognize and fight the virus, providing protection against infection or reducing the severity of symptoms if infection occurs.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Resets the progression of the Collapse Track to 0. Does not remove existing ELID conditions.</li>\n      </ul>"
+  },
+  "Collapse Radiation Detector": {
+    "cost": 10000,
+    "rarity": 7,
+    "flavor": "A handheld device that measures ambient collapse radiation levels and provides alerts when dangerous thresholds are reached. Essential for Yellow and Red Zone operations.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides precise readings of collapse radiation levels in the current area.</li>\n        <li>Alerts the user when radiation levels reach dangerous thresholds.</li>\n      </ul>"
   },
   "Tourniquet": {
     "cost": 50,
@@ -143,17 +311,101 @@
     "flavor": "Zip ties are a type of fastener used to secure items together. They are commonly used for bundling cables, but can also be used for a variety of other purposes in the field.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used to tie objects together or create makeshift restraints. Not as strong as paracord, but more compact and easier to carry.</li>\n      </ul>"
   },
+  "Folding Shovel": {
+    "cost": 250,
+    "rarity": 3,
+    "flavor": "A collapsible entrenching tool with a hardened steel blade that folds into a compact carry configuration. Useful for digging fighting positions or clearing debris.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used to dig, clear debris, or create defensive positions.</li>\n        <li>In a pinch, can be used as an improvised weapon (treat as a club with damage 2).</li>\n      </ul>"
+  },
+  "Portable Battery Pack": {
+    "cost": 350,
+    "rarity": 3,
+    "flavor": "A high-capacity rechargeable battery pack with multiple output ports. Enough juice to keep a radio, flashlight, or portable electronics running for days in the field.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can recharge electronic devices in the field. Provides enough power for roughly one week of normal device usage before needing recharging itself.</li>\n      </ul>"
+  },
+  "Climbing Carabiners": {
+    "cost": 200,
+    "rarity": 3,
+    "flavor": "A set of four locking carabiners with screw-gate mechanisms. Each is rated for significant static weight. Essential for rappelling or securing loads.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used for climbing, rappelling, securing gear, or creating anchored positions.</li>\n      </ul>"
+  },
+  "Camouflage Net": {
+    "cost": 350,
+    "rarity": 3,
+    "flavor": "A lightweight mesh net printed with a multi-spectrum camouflage pattern. Draped over equipment or a position, it breaks up the visual outline and provides concealment from aerial observation.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be deployed to conceal a position, vehicle, or equipment.</li>\n      </ul>"
+  },
+  "Portable Water Filter": {
+    "cost": 300,
+    "rarity": 3,
+    "flavor": "A compact pump-action water filter that removes bacteria, protozoa, and sediment from natural water sources. Turns a muddy puddle into drinkable water in about a minute.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can purify water from natural sources, making it safe to drink. Does not remove chemical contaminants or collapse radiation.</li>\n      </ul>"
+  },
+  "Survival Knife": {
+    "cost": 400,
+    "rarity": 4,
+    "flavor": "A full-tang fixed-blade knife with a textured grip and a thick spine suitable for light prying. Designed to handle the abuse of field survival tasks.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used for heavy utility tasks: prying, splitting wood, batoning, and other survival applications.</li>\n        <li>In combat, treat as an improvised knife (damage 2, deadliness 3).</li>\n      </ul>"
+  },
+  "Camp Axe": {
+    "cost": 350,
+    "rarity": 4,
+    "flavor": "A compact forest axe with a 60 cm handle and a sharpened steel head. Splits firewood, clears brush, and in a desperate situation, serves as a capable melee weapon.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used for cutting wood, clearing vegetation, or breaching light barriers.</li>\n        <li>In combat, treat as an improvised axe (damage 3, deadliness 4).</li>\n      </ul>"
+  },
+  "Long Range Radio": {
+    "cost": 500,
+    "rarity": 4,
+    "flavor": "A military-grade portable radio transceiver with encrypted frequency hopping and extended range. Essential for maintaining contact across significant distances.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Allows secure communication over long distances (up to 50 km in ideal conditions).</li>\n        <li>Encrypted frequency hopping makes interception difficult.</li>\n      </ul>"
+  },
   "Night Vision Goggles": {
     "cost": 1000,
     "rarity": 5,
     "flavor": "Night vision goggles are a device that allows the wearer to see in low-light conditions by amplifying available light. They can be a crucial tool for navigating and operating in dark environments.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>May be used to negate the effects of darkness, allowing the wearer to see in low-light conditions.</li>\n      </ul>"
   },
+  "Thermal Goggles": {
+    "cost": 2000,
+    "rarity": 6,
+    "flavor": "Goggles that detect heat signatures, allowing the wearer to see living beings through smoke, darkness, and light cover.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Allows the wearer to see heat signatures through smoke, darkness, and light cover.</li>\n        <li>Can detect hidden living creatures within range, making Stealth checks against thermal detection more difficult.</li>\n      </ul>"
+  },
   "Binoculars": {
     "cost": 200,
     "rarity": 2,
     "flavor": "Binoculars are a pair of lenses that allow the user to see distant objects more clearly. They can be a valuable tool for scouting and reconnaissance in the field.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>Allows you to see distant objects more clearly, effectively increasing your visual range.</li>\n      </ul>"
+  },
+  "Handheld Spotlight": {
+    "cost": 600,
+    "rarity": 5,
+    "flavor": "A high-intensity searchlight that can illuminate targets at considerable distance. Heavy and draws significant power, but turns night into day.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides powerful illumination out to long range.</li>\n        <li>Can be used to blind or disorient targets at range. Targets caught in the beam must make a <strong>TN 2 Resolve check</strong> or be <strong>Disoriented</strong> for 1 round.</li>\n      </ul>"
+  },
+  "Consumer Drone": {
+    "cost": 4000,
+    "rarity": 6,
+    "flavor": "A civilian quadcopter drone with a camera and basic stabilization. Slow and fragile, but provides an aerial perspective invaluable for reconnaissance.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be deployed for aerial reconnaissance. Provides a bird's-eye view of the area.</li>\n        <li>Flight time of approximately 30 minutes. Range of 1 km from the operator.</li>\n        <li>Fragile: easily destroyed by gunfire or electronic countermeasures.</li>\n      </ul>"
+  },
+  "Portable Signal Jammer": {
+    "cost": 4000,
+    "rarity": 6,
+    "flavor": "A compact device that broadcasts noise across a wide range of frequencies, disrupting wireless communications and drone control signals within its radius.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>When activated, creates a zone of signal interference in a radius of 3 range bands.</li>\n        <li>Prevents wireless communication and drone operation within the zone.</li>\n        <li>Lasts for 1 hour of continuous operation before the battery is depleted.</li>\n      </ul>"
+  },
+  "Motion Detector": {
+    "cost": 8000,
+    "rarity": 7,
+    "flavor": "A portable radar-based motion detector that alerts the user to movement within its scanning arc. Essential for perimeter security in hostile territory.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Detects moving creatures and vehicles within a 60-degree arc out to 4 range bands.</li>\n        <li>Provides early warning of approaching threats. Battery lasts for 6 hours.</li>\n      </ul>"
+  },
+  "Portable Generator": {
+    "cost": 6000,
+    "rarity": 6,
+    "flavor": "A gasoline-powered generator that provides enough electricity to run equipment, recharge batteries, and power lights. Heavy and loud, but indispensable for extended field ops.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides continuous power to equipment and devices in the field.</li>\n        <li>Operates for 8 hours on a full tank of fuel.</li>\n        <li>Loud: audible from a considerable distance while running.</li>\n        <li>Bulky: requires a vehicle or multiple people to transport.</li>\n      </ul>"
   },
   "Multitool": {
     "cost": 100,
@@ -166,6 +418,12 @@
     "rarity": 4,
     "flavor": "A lock picking set is a collection of tools used to manipulate the components of a lock to open it without the original key. It can be an essential tool for gaining access to secured areas or containers in the field.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>Allows you to attempt to pick locks on doors, containers, or other secured objects. The TN for picking a lock is determined by the GM based on the complexity of the lock.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Suspicious:</strong> While not illegal, being caught with a lock picking set without a good excuse can open you up to further scrutiny.</li>\n      </ul>"
+  },
+  "Exterior Paint Kit": {
+    "cost": 400,
+    "rarity": 3,
+    "flavor": "Spray cans, stencils, and sealant for applying custom paint jobs to T-Doll frames and equipment. A splash of color in a gray world, or practical camouflage for field operations.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used to customize the appearance of a T-Doll frame or equipment.</li>\n        <li>With a successful Arts check, can apply effective camouflage patterns.</li>\n      </ul>"
   },
   "Photo of Someone You Care About": {
     "cost": 0,
@@ -227,11 +485,17 @@
     "flavor": "Inserted in place of a neural core, allows a nearby T-doll to control the frame as if it were her own. In practice only resulted in a 30% improvement to combat efficiency compared to the T-doll alone.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>When installed in a T-Doll frame, allows you to link it to another T-doll with a working neural core.</li>\n        <li>While linked, The T doll can choose which frame to perform an action with, and can perform any action they otherwise would know.</li>\n        <li>Does not grant more actions.</li>\n      </ul>"
   },
-  "Maintainece Kit": {
+  "Maintenance Kit": {
     "cost": 1000,
     "rarity": 4,
     "flavor": "A maintenance kit contains the tools and materials necessary for performing repairs and upkeep on T-Dolls in the field. It can be a valuable resource for keeping your forces in top condition.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used to perform maintenance on a T-Doll, repairing damage and restoring functionality. The specific effects and amount of repair provided are determined by the GM based on the condition of the T-Doll and the quality of the maintenance performed.</li>\n      </ul>"
+  },
+  "Emergency Neural Cloud Backup": {
+    "cost": 25000,
+    "rarity": 7,
+    "flavor": "A compact, hardened storage device that can create and store a complete backup of a T-Doll's Neural Cloud. Can be loaded into a new core if the original is destroyed.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can create a full backup of a T-Doll's Neural Cloud. Backup process takes 10 minutes.</li>\n        <li>If the T-Doll's neural core is destroyed, the backup can be loaded into a blank core, restoring all memories up to the backup point.</li>\n        <li>One-time use: the storage device is consumed in the backup process.</li>\n      </ul>"
   },
   "Water Purification Tablets": {
     "cost": 50,
@@ -256,5 +520,23 @@
     "rarity": 4,
     "flavor": "Makeup, wigs, fake facial hair, and other materials for creating disguises to blend in with different groups or evade detection.",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>Can be used to create and apply disguises, allowing you to blend in with different groups or evade detection. The specific effects and quality of the disguise are determined by the GM based on the materials used and the skill of the user.</li>\n      </ul>"
+  },
+  "Pre-War Vintage Wine": {
+    "cost": 30000,
+    "rarity": 8,
+    "flavor": "A bottle of genuine pre-war wine from a Bordeaux vineyard that no longer exists. The label is faded, the cork is dry, and the bottle is worth more than most people make in a year.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>Provides no mechanical benefits. It is a bottle of wine that has survived the end of the world.</li>\n        <li>As a luxury item, it can be traded for favors, sold to collectors, or shared on a very special occasion.</li>\n      </ul>"
+  },
+  "Active Camouflage Module": {
+    "cost": 35000,
+    "rarity": 8,
+    "flavor": "An experimental optical camouflage system that bends light around the wearer, rendering them nearly invisible. Unstable, power-hungry, and illegal.",
+    "description": "<h3>Effects</h3>\n      <ul>\n        <li>When activated, the wearer becomes nearly invisible for 1 scene.</li>\n        <li>While active, the wearer gains a significant bonus to Stealth checks and cannot be targeted by attacks that require line of sight.</li>\n        <li>Power draw is extreme: the module requires a scene of recharge between uses.</li>\n        <li><strong>Illegal:</strong> possession carries severe penalties under URNC law.</li>\n      </ul>"
+  },
+  "Orbital Beacon": {
+    "cost": 500000,
+    "rarity": 9,
+    "flavor": "A military-grade orbital targeting beacon that designates coordinates for a kinetic strike from a URNC orbital platform. The consequences of using it without authorization are severe.",
+    "description": "<h3>Activation</h3>\n      <ul>\n        <li>Deploy the beacon at your current location. Arming and calibration requires a full round action.</li>\n        <li>Once calibrated, the beacon transmits targeting data for 3 rounds, emitting a bright pulsing light and audible signal tone.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>After 3 rounds of transmission, an orbital kinetic strike impacts the designated area.</li>\n        <li>All targets within range 10 suffer a <strong>Severity 20 Critical</strong> and are killed instantly.</li>\n        <li>The blast creates a crater that becomes difficult terrain.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Bulky:</strong> Requires at least 2 characters to carry.</li>\n        <li><strong>Illegal:</strong> Possession is a capital offense under URNC law.</li>\n        <li><strong>Traceable:</strong> Transmission can be traced by URNC signals intelligence.</li>\n      </ul>"
   }
 }

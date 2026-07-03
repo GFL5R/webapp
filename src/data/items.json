@@ -592,5 +592,89 @@
   "rarity": 9,
   "flavor": "A military-grade orbital targeting beacon that designates coordinates for a kinetic strike from a URNC orbital platform. The consequences of using it without authorization are severe.",
   "description": "<h3>Activation</h3>\n      <ul>\n        <li>Deploy the beacon at your current location. Arming and calibration requires a full round action.</li>\n        <li>Once calibrated, the beacon transmits targeting data for 3 rounds, emitting a bright pulsing light and audible signal tone.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>After 3 rounds of transmission, an orbital kinetic strike impacts the designated area.</li>\n        <li>All targets within range 10 suffer a <strong>Severity 20 Critical</strong> and are killed instantly.</li>\n        <li>The blast creates a crater that becomes difficult terrain.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Bulky:</strong> Requires at least 2 characters to carry.</li>\n        <li><strong>Illegal:</strong> Possession is a capital offense under URNC law.</li>\n        <li><strong>Traceable:</strong> Transmission can be traced by URNC signals intelligence.</li>\n      </ul>"
+},
+  "Standard Doll Limb (Used)": {
+  "cost": 750,
+  "rarity": 2,
+  "flavor": "A standard T-Doll limb assembly, salvaged or surplus. Intended for installation in a Doll frame, the limb connects to standard synthetic interfaces and performs at full specification. Scuffs, cosmetic damage, and minor wear are common. The function is sound.",
+  "description": "<h3>Notes</h3>\n      <ul>\n        <li>Compatible with standard T-Doll frame interfaces only. Requires a Doll frame or a neural bridge for operation.</li>\n        <li>Used condition: may show cosmetic wear, but mechanical function is at full specification.</li>\n      </ul>"
+},
+  "Standard Doll Limb (New)": {
+  "cost": 1500,
+  "rarity": 3,
+  "flavor": "A brand-new T-Doll limb assembly in factory-sealed packaging. Unblemished, full warranty, no prior service history. The clean lines of a limb that has never been used, never been damaged, never been carried into a zone it was not designed for.",
+  "description": "<h3>Notes</h3>\n      <ul>\n        <li>Compatible with standard T-Doll frame interfaces only. Requires a Doll frame or a neural bridge for operation.</li>\n        <li>New condition: pristine, never installed.</li>\n      </ul>"
+},
+  "Adapted Doll Limb (Used)": {
+  "cost": 3000,
+  "rarity": 3,
+  "flavor": "A standard T-Doll limb assembly adapted for human installation. The hardware is the same as any Doll limb: identical motors, identical actuators, identical weapon interface points. What changes is the mount and the cleanliness. A bio-compatible skeletal graft replaces the standard frame connector, and the entire assembly has been sterilized to medical-grade standards. The wiring runs straight to the neural bridge, bypassing the existing nervous system entirely. Previously owned, but the adaptation is the expensive part.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Same hardware as a standard Doll limb: identical performance and capabilities.</li>\n        <li>Equipped with a bio-compatible skeletal mount for grafting onto human bone.</li>\n        <li>Wiring bypasses the existing nervous system and connects directly to a neural bridge.</li>\n        <li>Requires a neural bridge (sold separately) and a recovery period of 2-4 weeks for the brain to remap its body schema.</li>\n      </ul>"
+},
+  "Adapted Doll Limb (New)": {
+  "cost": 6000,
+  "rarity": 4,
+  "flavor": "A brand-new T-Doll limb, adapted for human installation straight from the workshop. The bio-compatible mount has been machined and fitted. The wiring harness terminates in neural bridge-standard connectors. The assembly has been sterilized, sealed, and certified. The part is indistinguishable from a standard Doll limb in combat. The difference is that it will not reject when grafted to a living skeleton.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Same hardware as a standard Doll limb: identical performance and capabilities.</li>\n        <li>Equipped with a bio-compatible skeletal mount for grafting onto human bone.</li>\n        <li>Wiring bypasses the existing nervous system and connects directly to a neural bridge.</li>\n        <li>Requires a neural bridge (sold separately) and a recovery period of 2-4 weeks for the brain to remap its body schema.</li>\n      </ul>"
+},
+  "Doll Limb with Installation (Used)": {
+  "cost": 5000,
+  "rarity": 4,
+  "flavor": "An adapted Doll limb and the surgery to install it, bundled as a package. The limb is pre-owned but the adaptation work is sound: bio-compatible mount, sterilized assembly, neural bridge-ready wiring. Whoever had it before upgraded or died. Either way, a surgeon will find it a new home at the end of a human humerus.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Includes an adapted Doll limb (used) and the surgical installation procedure.</li>\n        <li>Grafts the bio-compatible mount to the patient's skeleton and connects limb wiring to the neural bridge.</li>\n        <li>Requires a neural bridge (sold separately). Recovery period of 2-4 weeks post-surgery.</li>\n        <li>The patient experiences phantom sensations during recovery as the brain remaps its body schema.</li>\n      </ul>"
+},
+  "Doll Limb with Installation (New)": {
+  "cost": 10000,
+  "rarity": 4,
+  "flavor": "A new adapted Doll limb and full surgical installation package. The limb has never been used, the bio-compatible mount has never been grafted, and the surgeon's calendar has an opening. All that is missing is the neural bridge and a patient willing to trade a limb for something better.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Includes a new adapted Doll limb and the surgical installation procedure.</li>\n        <li>Grafts the bio-compatible mount to the patient's skeleton and connects limb wiring to the neural bridge.</li>\n        <li>Requires a neural bridge (sold separately). Recovery period of 2-4 weeks post-surgery.</li>\n        <li>The patient experiences phantom sensations during recovery as the brain remaps its body schema.</li>\n      </ul>"
+},
+  "Neural Bridge (Used)": {
+  "cost": 8000,
+  "rarity": 5,
+  "flavor": "A pre-owned neural bridge, removed from a previous host. The microfilament conduits have been sterilized, the junction unit tested, and the firmware wiped. Second-hand neurohardware carries no memories, only the faint possibility that the previous owner did not survive the recovery period.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Required for any transhuman augmentation. Translates electrochemical nerve signals into T-Doll digital protocols and vice versa.</li>\n        <li>Surgically implanted at the brainstem, wired into the central nervous system through microfilament conduits.</li>\n        <li>Requires a 12-hour surgery and months of recovery. Some patients never fully adapt.</li>\n        <li>Enables installation of adapted Doll limbs and compatible T-Doll modules (maximum 2 module slots for partial augmentation).</li>\n      </ul>"
+},
+  "Neural Bridge (New)": {
+  "cost": 15000,
+  "rarity": 5,
+  "flavor": "A neural bridge, fresh from the manufacturer. Factory calibration, sterile packaging, full warranty. The bridge has never been touched by human cerebrospinal fluid. That changes at the discretion of the buyer and the skill of the surgeon.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Required for any transhuman augmentation. Translates electrochemical nerve signals into T-Doll digital protocols and vice versa.</li>\n        <li>Surgically implanted at the brainstem, wired into the central nervous system through microfilament conduits.</li>\n        <li>Requires a 12-hour surgery and months of recovery. Some patients never fully adapt.</li>\n        <li>Enables installation of adapted Doll limbs and compatible T-Doll modules (maximum 2 module slots for partial augmentation).</li>\n      </ul>"
+},
+  "Neural Bridge with Installation (Used)": {
+  "cost": 18000,
+  "rarity": 5,
+  "flavor": "A neural bridge and the surgery to implant it, as a package deal. The hardware is pre-owned but certified functional. The surgical team has done this before. The price includes the operating theater, the anesthesia, and the twelve hours on the table. Recovery is not included because recovery cannot be bought.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Includes a neural bridge and full surgical implantation procedure.</li>\n        <li>12-hour surgery, months of recovery.</li>\n        <li>Enables installation of adapted Doll limbs and compatible T-Doll modules.</li>\n      </ul>"
+},
+  "Neural Bridge with Installation (New)": {
+  "cost": 30000,
+  "rarity": 5,
+  "flavor": "Everything you need to cross the line between human and transhuman: a brand-new neural bridge, a certified surgical team, and a scheduled slot in a licensed operating theater. The price covers the hardware, the procedure, and the hospital stay. All you bring is your fear and your consent form.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Includes a new neural bridge and full surgical implantation procedure.</li>\n        <li>12-hour surgery, months of recovery.</li>\n        <li>Enables installation of adapted Doll limbs and compatible T-Doll modules.</li>\n      </ul>"
+},
+  "Containment Unit (Used)": {
+  "cost": 50000,
+  "rarity": 7,
+  "flavor": "A pre-owned containment unit, previously occupied. The nutrient bath has been drained, the circulation pump serviced, and the biological traces scrubbed. The unit is empty and ready for a new tenant. The previous occupant is not included. Whether they survived the conversion or not is not listed in the specifications.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Houses the brain, spinal column, heart, and lungs in a sterile nutrient bath for full-body conversion.</li>\n        <li>Sealed against Collapse radiation. Halts ELID progression entirely.</li>\n        <li>Connects to a fully synthetic Doll frame, granting full T-Doll module capacity and capabilities.</li>\n        <li>Requires maintenance: nutrient bath refreshed every 6 months, circulation pump has a rated lifespan.</li>\n        <li>If the unit is breached, the occupant's organs are exposed to ambient radiation.</li>\n      </ul>"
+},
+  "Containment Unit (New)": {
+  "cost": 80000,
+  "rarity": 7,
+  "flavor": "A brand-new containment unit, fresh from the assembly line. Zero service hours, unused nutrient seals, and the faint sterile smell of a machine that has never held a human life inside it. The purchase order alone is enough to make most people reconsider their priorities.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Houses the brain, spinal column, heart, and lungs in a sterile nutrient bath for full-body conversion.</li>\n        <li>Sealed against Collapse radiation. Halts ELID progression entirely.</li>\n        <li>Connects to a fully synthetic Doll frame, granting full T-Doll module capacity and capabilities.</li>\n        <li>Requires maintenance: nutrient bath refreshed every 6 months, circulation pump has a rated lifespan.</li>\n        <li>If the unit is breached, the occupant's organs are exposed to ambient radiation.</li>\n      </ul>"
+},
+  "Containment Unit with Installation (Used)": {
+  "cost": 120000,
+  "rarity": 8,
+  "flavor": "A pre-owned containment unit paired with a full-body conversion surgery. The hardware has been used before, but the surgical protocol is current. The cost is still more than most people earn in a lifetime, just slightly less than a new unit. Survival is not guaranteed. The surgeon's fee is paid in advance.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Includes a used containment unit and the full-body conversion surgical procedure.</li>\n        <li>30-40 hour surgery performed by multiple surgical teams. ~40% survival rate.</li>\n        <li>On success: fully synthetic Doll frame, halts ELID progression, full T-Doll module capacity.</li>\n        <li>Humanity drops to 30 upon waking. Months of adjustment and recalibration follow.</li>\n      </ul>"
+},
+  "Containment Unit with Installation (New)": {
+  "cost": 200000,
+  "rarity": 8,
+  "flavor": "The complete package: a new containment unit, a top-tier surgical team, a White Zone medical facility, and a dedicated recovery suite. The price is what you pay for the best possible odds of surviving full-body conversion. The forty percent survival rate does not change, but at least the equipment is pristine.",
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Includes a new containment unit and the full-body conversion surgical procedure.</li>\n        <li>30-40 hour surgery performed by multiple surgical teams. ~40% survival rate.</li>\n        <li>On success: fully synthetic Doll frame, halts ELID progression, full T-Doll module capacity.</li>\n        <li>Humanity drops to 30 upon waking. Months of adjustment and recalibration follow.</li>\n      </ul>"
 }
 }

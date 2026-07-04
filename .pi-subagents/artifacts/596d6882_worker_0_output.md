@@ -1,1 +1,0 @@
-Build passes. Let me now produce the acceptance report.

@@ -1,1 +1,0 @@
-All clean — no staged files, only working-tree changes. Let me present the acceptance report.

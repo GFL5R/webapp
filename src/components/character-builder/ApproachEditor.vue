@@ -2,14 +2,14 @@
   <div class="builder-section">
     <div class="builder-section-title">Approaches</div>
 
-    <!-- Approach dots — read-only, colored like NPC compendium -->
-    <div class="builder-approach-row" v-for="approach in APPROACH_IDS" :key="approach">
-      <span class="builder-approach-dot" :style="{ borderColor: approachColor(approach) }">
-        {{ character.system.approaches[approach] }}
-      </span>
-      <span class="builder-approach-name" :style="{ color: approachColor(approach) }">
-        {{ capitalize(approach) }}
-      </span>
+    <!-- Approach dots — read-only, colored like NPC compendium, horizontal row -->
+    <div class="builder-approaches">
+      <span
+        v-for="approach in APPROACH_IDS"
+        :key="approach"
+        class="builder-approach-dot"
+        :style="{ borderColor: approachColor(approach) }"
+      >{{ character.system.approaches[approach] }}</span>
     </div>
 
     <!-- Derived attributes grid -->
@@ -56,23 +56,18 @@ const approachColors = {
 function approachColor(approach) {
   return approachColors[approach] || 'var(--cyan)'
 }
-
-function capitalize(s) {
-  return s.charAt(0).toUpperCase() + s.slice(1)
-}
 </script>
 
 <style scoped>
-.builder-approach-row {
+.builder-approaches {
   display: flex;
+  gap: 6px;
   align-items: center;
-  gap: 8px;
-  padding: 2px 0;
 }
 
 .builder-approach-dot {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,14 +77,5 @@ function capitalize(s) {
   color: #fff;
   border: 1px solid;
   background: rgba(0,0,0,0.3);
-  flex-shrink: 0;
-}
-
-.builder-approach-name {
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 </style>

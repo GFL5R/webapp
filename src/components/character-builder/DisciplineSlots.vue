@@ -1,79 +1,81 @@
 <template>
   <div class="builder-section">
-    <div class="builder-section-title">Disciplines</div>
+    <div class="builder-section-title">Discipline</div>
 
+    <!-- Single discipline slot (0 XP characters start with one) -->
     <div
-      v-for="slotKey in SLOT_KEYS"
-      :key="slotKey"
       class="builder-discipline-slot"
       :class="{
-        empty: !slots[slotKey].disciplineId,
-        'drag-over': dragOver === slotKey
+        empty: !slot.disciplineId,
+        'drag-over': dragOver
       }"
-      @dragover.prevent="onDragOver(slotKey)"
-      @dragleave="onDragLeave"
-      @drop.prevent.stop="onDrop($event, slotKey)"
+      @dragover.prevent="dragOver = true"
+      @dragleave="dragOver = false"
+      @drop.prevent.stop="onDrop($event)"
     >
       <!-- Empty slot -->
-      <template v-if="!slots[slotKey].disciplineId">
-        Drop discipline here
+      <template v-if="!slot.disciplineId">
+        {{ isTDoll ? 'Drop a weapon discipline here' : 'Drop a discipline here' }}
       </template>
 
       <!-- Filled slot -->
       <template v-else>
         <div class="builder-discipline-name">
-          <span>{{ disciplineTitle(slotKey) }}</span>
+          <span>{{ slot.disciplineId }}</span>
           <span
             class="remove"
-            @click.stop="builder.removeDiscipline(slotKey)"
+            @click.stop="builder.removeDiscipline('slot1')"
             title="Remove discipline"
           >&times;</span>
         </div>
 
         <div class="builder-discipline-meta">
-          <span>Rank {{ slots[slotKey].currentRank }}</span>
-          <span>{{ slots[slotKey].xpSpent }} XP</span>
+          <span>Rank {{ slot.currentRank }}</span>
+          <span>{{ slot.xpSpent }} XP</span>
         </div>
 
         <!-- Perk -->
-        <div v-if="perkName(slotKey)" class="builder-discipline-perk">
-          {{ perkName(slotKey) }}
+        <div v-if="perkName" class="builder-discipline-perk">
+          {{ perkName }}
         </div>
 
         <!-- Capstone -->
-        <div v-if="capstoneName(slotKey)" class="builder-discipline-capstone">
-          {{ capstoneName(slotKey) }}
-        </div>
-
-        <!-- Technique drop zone within the slot -->
-        <div
-          class="builder-drop-zone"
-          :class="{
-            'drag-over': techDragOver === slotKey,
-            'empty': slots[slotKey].techniquesLearned.length === 0
-          }"
-          @dragover.prevent="onTechDragOver(slotKey)"
-          @dragleave="onTechDragLeave"
-          @drop.prevent.stop="onTechDrop($event, slotKey)"
-        >
-          <template v-if="slots[slotKey].techniquesLearned.length === 0">
-            Drop techniques here
-          </template>
-          <div
-            v-for="tech in slots[slotKey].techniquesLearned"
-            :key="tech.id"
-            class="builder-discipline-tech"
-          >
-            <span>{{ tech.name }}</span>
-            <span
-              class="remove"
-              @click.stop="builder.removeTechniqueFromSlot(slotKey, tech.id)"
-              title="Remove technique"
-            >&times;</span>
-          </div>
+        <div v-if="capstoneName" class="builder-discipline-capstone">
+          {{ capstoneName }}
         </div>
       </template>
     </div>
+
+    <!-- Technique drop zone — T-Doll only -->
+    <template v-if="isTDoll && slot.disciplineId">
+      <div class="builder-section-title" style="margin-top:8px">Techniques</div>
+      <div
+        class="builder-drop-zone"
+        :class="{
+          'drag-over': techDragOver,
+          'empty': slot.techniquesLearned.length === 0
+        }"
+        @dragover.prevent="techDragOver = true"
+        @dragleave="techDragOver = false"
+        @drop.prevent.stop="onTechDrop($event)"
+      >
+        <template v-if="slot.techniquesLearned.length === 0">
+          Drop techniques here
+        </template>
+        <div
+          v-for="tech in slot.techniquesLearned"
+          :key="tech.id"
+          class="builder-discipline-tech"
+        >
+          <span>{{ tech.name }}</span>
+          <span
+            class="remove"
+            @click.stop="builder.removeTechniqueFromSlot('slot1', tech.id)"
+            title="Remove technique"
+          >&times;</span>
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -83,12 +85,17 @@ import { useCharacterBuilder, DRAG_TYPES } from '@/composables/useCharacterBuild
 import disciplines from '@/data/disciplines.js'
 
 const builder = useCharacterBuilder()
+const dragOver = ref(false)
+const techDragOver = ref(false)
 
-const SLOT_KEYS = ['slot1', 'slot2', 'slot3', 'slot4', 'slot5']
-const dragOver = ref(null)
-const techDragOver = ref(null)
+const slot = computed(() => builder.character.system.disciplines.slot1)
+const isTDoll = computed(() => builder.character.system.identity.characterType === 't-doll')
 
-const slots = computed(() => builder.character.system.disciplines)
+// Weapon disciplines — only these are valid for T-Dolls
+const WEAPON_DISCIPLINE_TITLES = [
+  'Knives', 'Swords', 'Pistols', 'Submachine Guns',
+  'Shotguns', 'Assault Rifles', 'Battle Rifles', 'Snipers', 'Machine Guns',
+]
 
 // Build a lookup map from discipline title to the full discipline object
 const disciplineMap = computed(() => {
@@ -99,31 +106,14 @@ const disciplineMap = computed(() => {
   return map
 })
 
-function disciplineTitle(slotKey) {
-  return slots.value[slotKey]?.disciplineId || ''
-}
+const discData = computed(() => disciplineMap.value[slot.value.disciplineId] || null)
 
-function perkName(slotKey) {
-  const disc = disciplineMap.value[slots.value[slotKey]?.disciplineId]
-  return disc?.perk?.title || ''
-}
+const perkName = computed(() => discData.value?.perk?.title || '')
+const capstoneName = computed(() => discData.value?.capstone?.title || '')
 
-function capstoneName(slotKey) {
-  const disc = disciplineMap.value[slots.value[slotKey]?.disciplineId]
-  return disc?.capstone?.title || ''
-}
-
-// -- Discipline slot drag handlers --
-function onDragOver(slotKey) {
-  dragOver.value = slotKey
-}
-
-function onDragLeave() {
-  dragOver.value = null
-}
-
-function onDrop(event, slotKey) {
-  dragOver.value = null
+// -- Discipline drop --
+function onDrop(event) {
+  dragOver.value = false
   try {
     const raw = event.dataTransfer.getData('application/json')
     if (!raw) return
@@ -131,23 +121,20 @@ function onDrop(event, slotKey) {
 
     if (dragType !== DRAG_TYPES.DISCIPLINE) return
 
-    builder.setDiscipline(slotKey, data)
+    // T-Doll validation: only weapon disciplines allowed
+    if (isTDoll.value && !WEAPON_DISCIPLINE_TITLES.includes(data.title)) {
+      return
+    }
+
+    builder.setDiscipline('slot1', data)
   } catch {
     // Ignore malformed drag data
   }
 }
 
-// -- Technique drop handlers (within a discipline slot) --
-function onTechDragOver(slotKey) {
-  techDragOver.value = slotKey
-}
-
-function onTechDragLeave() {
-  techDragOver.value = null
-}
-
-function onTechDrop(event, slotKey) {
-  techDragOver.value = null
+// -- Technique drop --
+function onTechDrop(event) {
+  techDragOver.value = false
   try {
     const raw = event.dataTransfer.getData('application/json')
     if (!raw) return
@@ -155,7 +142,7 @@ function onTechDrop(event, slotKey) {
 
     if (dragType !== DRAG_TYPES.TECHNIQUE) return
 
-    builder.addTechniqueToSlot(slotKey, data)
+    builder.addTechniqueToSlot('slot1', data)
   } catch {
     // Ignore malformed drag data
   }

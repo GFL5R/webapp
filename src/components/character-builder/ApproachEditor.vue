@@ -58,11 +58,17 @@ const abbreviations = {
   fortune: 'FOR',
 }
 
+// Derived attribute colors: 50/50 RGB blend of the two source approaches
+// Endurance: Power(#ff3d3d) + Resilience(#39ff14) = #9c9e28 (mustard)
+// Composure: Resilience(#39ff14) + Swiftness(#4aa8ff) = #41d389 (teal)
+// Focus:     Power(#ff3d3d) + Precision(#ffc107)  = #ff7f22 (orange)
+// Vigilance: Precision(#ffc107) + Swiftness(#4aa8ff) = #a4b483 (sage)
+// Fortune:   Fortune(#9c27b0) only = #9c27b0
 const derivedAttrs = computed(() => [
-  { key: 'endurance', label: 'END', value: derived.value.endurance, color: 'var(--success)' },
-  { key: 'composure', label: 'COM', value: derived.value.composure, color: '#4aa8ff' },
-  { key: 'focus', label: 'FOC', value: derived.value.focus, color: 'var(--amber)' },
-  { key: 'vigilance', label: 'VIG', value: derived.value.vigilance, color: 'var(--rose)' },
+  { key: 'endurance', label: 'END', value: derived.value.endurance, color: '#9c9e28' },
+  { key: 'composure', label: 'COM', value: derived.value.composure, color: '#41d389' },
+  { key: 'focus', label: 'FOC', value: derived.value.focus, color: '#ff7f22' },
+  { key: 'vigilance', label: 'VIG', value: derived.value.vigilance, color: '#a4b483' },
   { key: 'fortune', label: 'FOR', value: derived.value.fortunePointsMax, color: '#9c27b0' },
 ])
 

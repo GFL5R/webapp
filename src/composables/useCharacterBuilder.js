@@ -391,7 +391,13 @@ export function useCharacterBuilder() {
 
   function setFreeSkills(skillsList) {
     // skillsList: ['firearms', 'tactics']
+    // Replaces all free skills — used by IdentityEditor for background/frame
     SKILL_IDS.forEach(s => { character.system.skills_free[s] = 0 })
+    skillsList.forEach(s => { addFreeSkill(s, 1) })
+  }
+
+  function addFreeSkills(skillsList) {
+    // Additive — does not wipe existing free skills. Used by discipline grants.
     skillsList.forEach(s => { addFreeSkill(s, 1) })
   }
 
@@ -416,7 +422,8 @@ export function useCharacterBuilder() {
     // Auto-assign free skill ranks from discipline's associated skills (first 2)
     if (disciplineData.skills?.length) {
       const free = disciplineData.skills.slice(0, 2).map(s => s.toLowerCase().replace(/\s+/g, '_'))
-      setFreeSkills(free)
+      slot.grantedSkills = free
+      addFreeSkills(free)
     }
 
     return true
@@ -433,8 +440,15 @@ export function useCharacterBuilder() {
     slot.currentRank = 1
     slot.ranksCompleted = 0
     slot.techniquesLearned = []
-    // Clear free skills
-    SKILL_IDS.forEach(s => { character.system.skills_free[s] = 0 })
+    // Only remove free skills granted by this discipline
+    if (slot.grantedSkills) {
+      slot.grantedSkills.forEach(s => {
+        if (character.system.skills_free[s] !== undefined) {
+          character.system.skills_free[s] = Math.max(0, (character.system.skills_free[s] || 0) - 1)
+        }
+      })
+      slot.grantedSkills = null
+    }
   }
 
   function addTechniqueToSlot(slotKey, techniqueData) {
@@ -823,6 +837,7 @@ export function useCharacterBuilder() {
     setSkill,
     addFreeSkill,
     setFreeSkills,
+    addFreeSkills,
 
     // Social
     setSocial,

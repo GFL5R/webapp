@@ -9,7 +9,7 @@
         :key="approach"
         class="builder-approach-col"
       >
-        <span class="builder-approach-label">{{ abbr(approach) }}</span>
+        <span class="builder-approach-label" :style="{ color: approachColor(approach) }">{{ abbr(approach) }}</span>
         <span
           class="builder-approach-dot"
           :style="{ borderColor: approachColor(approach) }"

@@ -152,11 +152,13 @@ function applyHumanBonuses() {
 
 function onNationalityChange(value) {
   builder.setIdentity('nationality', value)
+  builder.applyNationalityGear(value)
   applyHumanBonuses()
 }
 
 function onBackgroundChange(value) {
   builder.setIdentity('background', value)
+  builder.applyBackgroundGear(value)
   applyHumanBonuses()
 }
 

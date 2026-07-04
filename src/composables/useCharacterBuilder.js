@@ -10,6 +10,11 @@
  */
 
 import { reactive, ref, computed, watch } from 'vue'
+import {
+  NATIONALITY_ITEMS,
+  BACKGROUND_GEAR,
+  DISCIPLINE_WEAPON_GRANTS,
+} from '@/data/starting-equipment.js'
 
 // ---------------------------------------------------------------------------
 // Drag type constants — used by drag sources and drop targets
@@ -744,6 +749,39 @@ export function useCharacterBuilder() {
     }
   }
 
+  // ---- Equipment grants at character creation ----
+
+  function applyNationalityGear(nationalityKey) {
+    const itemNames = NATIONALITY_ITEMS[nationalityKey]
+    if (!itemNames) return
+    itemNames.forEach(name => {
+      if (!character.items.find(i => i.name === name)) {
+        addItem('item', { name })
+      }
+    })
+  }
+
+  function applyBackgroundGear(backgroundKey) {
+    const gear = BACKGROUND_GEAR[backgroundKey]
+    if (!gear) return
+    if (gear.items) {
+      gear.items.forEach(name => {
+        if (!character.items.find(i => i.name === name)) {
+          addItem('item', { name })
+        }
+      })
+    }
+    if (gear.armor) {
+      if (!character.items.find(i => i.name === gear.armor)) {
+        addItem('armor', { name: gear.armor })
+      }
+    }
+  }
+
+  function getDisciplineWeaponGrant(disciplineTitle) {
+    return DISCIPLINE_WEAPON_GRANTS[disciplineTitle] || null
+  }
+
   // ---- Reset ----
   function reset() {
     const fresh = makeDefaultCharacter()
@@ -868,6 +906,11 @@ export function useCharacterBuilder() {
 
     // Drop handler (universal entry point for drag-and-drop)
     handleDrop,
+
+    // Equipment grants at character creation
+    applyNationalityGear,
+    applyBackgroundGear,
+    getDisciplineWeaponGrant,
 
     // Reset & Export
     reset,

@@ -4,12 +4,17 @@
 
     <!-- Approach dots — read-only, colored like NPC compendium, horizontal row -->
     <div class="builder-approaches">
-      <span
+      <div
         v-for="approach in APPROACH_IDS"
         :key="approach"
-        class="builder-approach-dot"
-        :style="{ borderColor: approachColor(approach) }"
-      >{{ character.system.approaches[approach] }}</span>
+        class="builder-approach-col"
+      >
+        <span class="builder-approach-label">{{ abbr(approach) }}</span>
+        <span
+          class="builder-approach-dot"
+          :style="{ borderColor: approachColor(approach) }"
+        >{{ character.system.approaches[approach] }}</span>
+      </div>
     </div>
 
     <!-- Derived attributes grid -->
@@ -53,16 +58,43 @@ const approachColors = {
   fortune: '#9c27b0',
 }
 
+const abbreviations = {
+  power: 'POW',
+  precision: 'PRE',
+  swiftness: 'SWI',
+  resilience: 'RES',
+  fortune: 'FOR',
+}
+
 function approachColor(approach) {
   return approachColors[approach] || 'var(--cyan)'
+}
+
+function abbr(approach) {
+  return abbreviations[approach] || approach
 }
 </script>
 
 <style scoped>
 .builder-approaches {
   display: flex;
-  gap: 6px;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.builder-approach-col {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 3px;
+}
+
+.builder-approach-label {
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
 }
 
 .builder-approach-dot {

@@ -34,6 +34,8 @@
         :id="t.id"
         class="db-item"
         :class="{ expanded: expanded === t.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, t)"
         @click="toggleTechnique(t.id)"
       >
         <div class="db-item-header">
@@ -93,6 +95,7 @@ import PageNav from '@/components/layout/PageNav.vue'
 import OpText from '@/components/data/OpText.vue'
 import rawTechniques from '@/data/techniques.json'
 import { TECHNIQUE_TYPES } from '@/data/technique-types.js'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -205,6 +208,16 @@ const filtered = computed(() => {
 
   return results
 })
+
+function onDragStart(event, t) {
+  const dragData = {
+    dragType: DRAG_TYPES.TECHNIQUE,
+    id: t.id,
+    data: t,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 
 // ---- Toggle ----
 function toggleTechnique(id) {

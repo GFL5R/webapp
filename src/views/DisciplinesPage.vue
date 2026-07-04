@@ -83,6 +83,8 @@
         v-for="d in disciplines"
         :key="d.title"
         class="disc-list-item"
+        draggable="true"
+        @dragstart="onDragStart($event, d)"
         @click="selected = d"
       >
         <div class="disc-list-name">{{ d.title }}</div>
@@ -118,6 +120,7 @@ import DisciplineCard from '@/components/cards/DisciplineCard.vue'
 import DisciplineModal from '@/components/modals/DisciplineModal.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import disciplines from '@/data/disciplines'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const crumbs = [
   { label: 'Home', to: '/' },
@@ -128,4 +131,21 @@ const prev = { to: '/building-your-t-doll', label: 'Building Your T-Doll' }
 const next = { to: '/experience', label: 'Experience' }
 
 const selected = ref(null)
+
+function onDragStart(event, disc) {
+  const dragData = {
+    dragType: DRAG_TYPES.DISCIPLINE,
+    id: disc.title,
+    data: {
+      title: disc.title,
+      flavor: disc.flavor,
+      skills: disc.skills,
+      techniques: disc.techniques,
+      perk: disc.perk,
+      capstone: disc.capstone,
+    },
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 </script>

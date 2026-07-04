@@ -17,34 +17,26 @@
       </div>
     </div>
 
-    <!-- Derived attributes grid -->
-    <div class="builder-section-title" style="margin-top:12px">Derived Attributes</div>
-    <div class="builder-derived">
-      <div class="builder-derived-item">
-        <span class="builder-derived-label">Endurance</span>
-        <span class="builder-derived-value">{{ derived.endurance }}</span>
-      </div>
-      <div class="builder-derived-item">
-        <span class="builder-derived-label">Composure</span>
-        <span class="builder-derived-value">{{ derived.composure }}</span>
-      </div>
-      <div class="builder-derived-item">
-        <span class="builder-derived-label">Focus</span>
-        <span class="builder-derived-value">{{ derived.focus }}</span>
-      </div>
-      <div class="builder-derived-item">
-        <span class="builder-derived-label">Vigilance</span>
-        <span class="builder-derived-value">{{ derived.vigilance }}</span>
-      </div>
-      <div class="builder-derived-item">
-        <span class="builder-derived-label">Fortune Max</span>
-        <span class="builder-derived-value">{{ derived.fortunePointsMax }}</span>
+    <!-- Derived attributes — same row style as approaches -->
+    <div class="builder-section-title" style="margin-top:12px">Derived</div>
+    <div class="builder-approaches">
+      <div
+        v-for="attr in derivedAttrs"
+        :key="attr.key"
+        class="builder-approach-col"
+      >
+        <span class="builder-approach-label" :style="{ color: attr.color }">{{ attr.label }}</span>
+        <span
+          class="builder-approach-dot"
+          :style="{ borderColor: attr.color }"
+        >{{ attr.value }}</span>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useCharacterBuilder } from '@/composables/useCharacterBuilder.js'
 
 const builder = useCharacterBuilder()
@@ -65,6 +57,14 @@ const abbreviations = {
   resilience: 'RES',
   fortune: 'FOR',
 }
+
+const derivedAttrs = computed(() => [
+  { key: 'endurance', label: 'END', value: derived.value.endurance, color: 'var(--success)' },
+  { key: 'composure', label: 'COM', value: derived.value.composure, color: '#4aa8ff' },
+  { key: 'focus', label: 'FOC', value: derived.value.focus, color: 'var(--amber)' },
+  { key: 'vigilance', label: 'VIG', value: derived.value.vigilance, color: 'var(--rose)' },
+  { key: 'fortune', label: 'FOR', value: derived.value.fortunePointsMax, color: '#9c27b0' },
+])
 
 function approachColor(approach) {
   return approachColors[approach] || 'var(--cyan)'

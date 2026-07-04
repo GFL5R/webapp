@@ -29,6 +29,8 @@
         :id="c.id"
         class="db-item"
         :class="{ expanded: expanded === c.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, c)"
         @click="toggleCapstone(c.id)"
       >
         <div class="db-item-header">
@@ -63,6 +65,7 @@ import ContentFrame from '@/components/layout/ContentFrame.vue'
 import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import rawCapstones from '@/data/capstones.json'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -106,6 +109,16 @@ const filtered = computed(() => {
 
   return results
 })
+
+function onDragStart(event, item) {
+  const dragData = {
+    dragType: DRAG_TYPES.CAPSTONE,
+    id: item.id,
+    data: item,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 
 function toggleCapstone(id) {
   if (expanded.value === id) {

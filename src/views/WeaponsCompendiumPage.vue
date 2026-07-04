@@ -1,3 +1,16 @@
+<!--
+  REFERENCE IMPLEMENTATION — Database Page Drag Source
+  =====================================================
+  This is the canonical pattern for making db-item rows draggable.
+  All ~13 database pages (ArmorPage, ItemsPage, ModulesPage, PerksPage,
+  CapstonesPage, PassionsPage, AdvantagesPage, DisadvantagesPage,
+  AnxietiesPage) follow this identical pattern:
+    1. Import DRAG_TYPES from @/composables/useCharacterBuilder.js
+    2. Add draggable="true" on each .db-item div
+    3. Add @dragstart="onDragStart($event, item)" on each .db-item div
+    4. Define onDragStart(event, item) that builds { dragType, id, data }
+    5. Use @click.stop on the copy-link button if it overlaps with drag
+-->
 <template>
   <ContentFrame>
     <Breadcrumb :crumbs="crumbs" />
@@ -34,6 +47,8 @@
         :id="w.id"
         class="db-item"
         :class="{ expanded: expanded === w.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, w)"
         @click="toggleWeapon(w.id)"
       >
         <div class="db-item-header">
@@ -113,6 +128,7 @@ import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import FilterBar from '@/components/data/FilterBar.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import rawWeapons from '@/data/weapons.json'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -173,6 +189,25 @@ const filtered = computed(() => {
 
   return results
 })
+
+// -- Drag source (reference pattern for all database pages) --
+/**
+ * @param {DragEvent} event
+ * @param {Object} item — the weapon/item/armor/etc. object
+ *
+ * To adapt for another page (e.g. ArmorPage):
+ *   1. Change DRAG_TYPES.WEAPON to DRAG_TYPES.ARMOR
+ *   2. The item object is passed directly as data
+ */
+function onDragStart(event, item) {
+  const dragData = {
+    dragType: DRAG_TYPES.WEAPON,
+    id: item.id,
+    data: item,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 
 function toggleWeapon(id) {
   if (expanded.value === id) {

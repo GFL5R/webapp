@@ -32,6 +32,8 @@
         :id="p.id"
         class="db-item"
         :class="{ expanded: expanded === p.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, p)"
         @click="togglePassion(p.id)"
       >
         <div class="db-item-header">
@@ -72,6 +74,7 @@ import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import FilterBar from '@/components/data/FilterBar.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import passions from '@/data/passions.json'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -133,6 +136,16 @@ const filtered = computed(() => {
 })
 
 // Toggle expand
+function onDragStart(event, item) {
+  const dragData = {
+    dragType: DRAG_TYPES.PASSION,
+    id: item.id,
+    data: item,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
+
 function togglePassion(id) {
   if (expanded.value === id) {
     expanded.value = null

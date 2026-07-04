@@ -27,8 +27,13 @@
       </div>
     </div>
 
-    <h3>Approach Limit</h3>
-    <p>No single Approach may exceed the combined value of a character's two lowest Approaches. This ensures that each character maintains a balanced foundation and cannot specialize beyond what their overall capability supports.</p>
+    <h3>Approach Limits</h3>
+
+    <h4>At Character Creation</h4>
+    <p>No single Approach may exceed <strong>3</strong> during character creation. Your nationality, background, and frame set your starting values; no combination pushes any Approach past this ceiling.</p>
+
+    <h4>During Advancement</h4>
+    <p>When spending XP to increase an Approach, no Approach may exceed the combined value of a character's two lowest Approaches. This ensures that each character maintains a balanced foundation and cannot specialize beyond what their overall capability supports.</p>
 
     <ExampleBox>
       <h4>Approaches in Action</h4>

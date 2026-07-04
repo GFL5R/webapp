@@ -8,6 +8,14 @@
         <span class="status-dot"></span>
         SECURE LINK
       </div>
+      <button
+        class="top-bar-builder-btn"
+        :class="{ active: isOpen }"
+        @click="toggle"
+        :title="isOpen ? 'Hide Builder' : 'Character Builder'"
+      >
+        {{ isOpen ? '×' : 'CHAR' }}
+      </button>
       <input
         type="text"
         class="top-bar-search"
@@ -22,9 +30,11 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { useCharacterBuilder } from '@/composables/useCharacterBuilder.js'
 
 const router = useRouter()
 const query = ref('')
+const { isOpen, toggle } = useCharacterBuilder()
 
 function doSearch() {
   const q = query.value.trim()

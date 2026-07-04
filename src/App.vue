@@ -15,11 +15,14 @@
     <!-- Sidebar -->
     <Sidebar :open="sidebarOpen" @close="sidebarOpen = false" />
 
+    <!-- Character Builder (right panel) -->
+    <CharacterBuilder />
+
     <!-- Loading overlay -->
     <LoadingOverlay :visible="loading" text="INITIALIZING…" />
 
     <!-- Content area -->
-    <main class="content-area">
+    <main class="content-area" :class="{ 'builder-open': isBuilderOpen }">
       <router-view v-slot="{ Component, route }">
         <transition name="page" mode="out-in">
           <component :is="Component" :key="route.path" />
@@ -36,6 +39,10 @@ import TopBar from '@/components/layout/TopBar.vue'
 import Sidebar from '@/components/layout/Sidebar.vue'
 import LoadingOverlay from '@/components/layout/LoadingOverlay.vue'
 import WipModal from '@/components/modals/WipModal.vue'
+import CharacterBuilder from '@/components/character-builder/CharacterBuilder.vue'
+import { useCharacterBuilder } from '@/composables/useCharacterBuilder.js'
+
+const { isOpen: isBuilderOpen } = useCharacterBuilder()
 
 const route = useRoute()
 const sidebarOpen = ref(false)

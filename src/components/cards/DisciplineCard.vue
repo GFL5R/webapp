@@ -1,5 +1,16 @@
+<!--
+  REFERENCE IMPLEMENTATION — Card Drag Source
+  ============================================
+  This is the canonical pattern for making a card component draggable.
+  TechniqueCard.vue and ModuleCard.vue follow this identical pattern:
+    1. Import DRAG_TYPES from @/composables/useCharacterBuilder.js
+    2. Add draggable="true" on the root element
+    3. Add @dragstart="onDragStart" handler
+    4. In onDragStart: build { dragType, id, data } object, set as JSON on dataTransfer
+    5. set effectAllowed = 'copy'
+-->
 <template>
-  <div class="card">
+  <div class="card" draggable="true" @dragstart="onDragStart">
     <!-- Header bar full-width -->
     <div class="disc-card-header">
       <span class="disc-card-name">{{ title }}</span>
@@ -50,6 +61,7 @@
 <script setup>
 import { computed } from 'vue'
 import lookupTechnique from '@/data/technique-lookup.js'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const props = defineProps({
   title: { type: String, required: true },
@@ -66,6 +78,24 @@ const resolvedTechniques = computed(() =>
     info: lookupTechnique(tech.name)
   }))
 )
+
+// -- Drag source (reference pattern for all card components) --
+function onDragStart(event) {
+  const dragData = {
+    dragType: DRAG_TYPES.DISCIPLINE,
+    id: props.title,
+    data: {
+      title: props.title,
+      flavor: props.flavor,
+      skills: props.skills,
+      techniques: props.techniques,
+      perk: props.perk,
+      capstone: props.capstone,
+    },
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 </script>
 
 <style scoped>

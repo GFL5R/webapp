@@ -31,6 +31,8 @@
         :id="a.id"
         class="db-item"
         :class="{ expanded: expanded === a.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, a)"
         @click="toggleArmor(a.id)"
       >
         <div class="db-item-header">
@@ -80,6 +82,7 @@ import ContentFrame from '@/components/layout/ContentFrame.vue'
 import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import rawArmor from '@/data/armor.json'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -125,6 +128,16 @@ const filtered = computed(() => {
 
   return results
 })
+
+function onDragStart(event, item) {
+  const dragData = {
+    dragType: DRAG_TYPES.ARMOR,
+    id: item.id,
+    data: item,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 
 function toggleArmor(id) {
   if (expanded.value === id) {

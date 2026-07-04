@@ -29,6 +29,8 @@
         :id="p.id"
         class="db-item"
         :class="{ expanded: expanded === p.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, p)"
         @click="togglePerk(p.id)"
       >
         <div class="db-item-header">
@@ -63,6 +65,7 @@ import ContentFrame from '@/components/layout/ContentFrame.vue'
 import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import rawPerks from '@/data/perks.json'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -106,6 +109,16 @@ const filtered = computed(() => {
 
   return results
 })
+
+function onDragStart(event, item) {
+  const dragData = {
+    dragType: DRAG_TYPES.PERK,
+    id: item.id,
+    data: item,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 
 function togglePerk(id) {
   if (expanded.value === id) {

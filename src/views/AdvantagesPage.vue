@@ -32,6 +32,8 @@
         :id="p.id"
         class="db-item"
         :class="{ expanded: expanded === p.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, p)"
         @click="toggleAdvantage(p.id)"
       >
         <div class="db-item-header">
@@ -72,6 +74,7 @@ import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import FilterBar from '@/components/data/FilterBar.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import advantages from '@/data/advantages.json'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -131,6 +134,17 @@ const filtered = computed(() => {
 
   return results
 })
+
+// -- Drag source --
+function onDragStart(event, item) {
+  const dragData = {
+    dragType: DRAG_TYPES.ADVANTAGE,
+    id: item.id,
+    data: item,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 
 // Toggle expand
 function toggleAdvantage(id) {

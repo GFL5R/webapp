@@ -32,6 +32,8 @@
         :id="d.id"
         class="db-item"
         :class="{ expanded: expanded === d.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, d)"
         @click="toggleDisadvantage(d.id)"
       >
         <div class="db-item-header">
@@ -72,6 +74,7 @@ import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import FilterBar from '@/components/data/FilterBar.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import disadvantages from '@/data/disadvantages.json'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -131,6 +134,17 @@ const filtered = computed(() => {
 
   return results
 })
+
+// -- Drag source --
+function onDragStart(event, item) {
+  const dragData = {
+    dragType: DRAG_TYPES.DISADVANTAGE,
+    id: item.id,
+    data: item,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 
 // Toggle expand
 function toggleDisadvantage(id) {

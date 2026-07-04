@@ -18,7 +18,7 @@
       <p>Every Doll begins with a Frame: the factory that produced you and the model designation stamped into your chassis. Your Frame determines baseline Approaches, gives you two starting Skills, and tells you something about where you came from before you had a say in the matter.</p>
 
       <RulesCallout>
-        <p>Select a <strong>manufacturer</strong> and a <strong>model</strong>. Your model sets your starting Approaches and grants two Skills.</p>
+        <p>Select a <strong>manufacturer</strong> and a <strong>model</strong>. Your model sets your starting Approaches and grants two Skills. No single Approach may exceed <strong>3</strong> at character creation.</p>
       </RulesCallout>
 
       <SectionDivider label="IOP MANUFACTURING" />

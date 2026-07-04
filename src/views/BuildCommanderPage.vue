@@ -12,7 +12,7 @@
       <p>In 2072, most surviving Green Zones are nominally under the URNC umbrella. But most people still hold onto the idea of nationality. Where you were born shapes how others see you, and how you see the world.</p>
 
       <RulesCallout>
-        <p>Every Commander begins with all Approaches at <strong>1</strong>. Your nationality grants <strong>+1 to two Approaches</strong>.</p>
+        <p>Every Commander begins with all Approaches at <strong>1</strong>. Your nationality grants <strong>+1 to two Approaches</strong>. No single Approach may exceed <strong>3</strong> at character creation.</p>
       </RulesCallout>
 
       <TabCard :tabs="nationalityTabs">

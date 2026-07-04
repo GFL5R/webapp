@@ -30,6 +30,8 @@
         :id="item.id"
         class="db-item"
         :class="{ expanded: expanded === item.id }"
+        draggable="true"
+        @dragstart="onDragStart($event, item)"
         @click="toggleItem(item.id)"
       >
         <div class="db-item-header">
@@ -75,6 +77,7 @@ import ContentFrame from '@/components/layout/ContentFrame.vue'
 import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import PageNav from '@/components/layout/PageNav.vue'
 import rawItems from '@/data/items.json'
+import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -118,6 +121,16 @@ const filtered = computed(() => {
 
   return results
 })
+
+function onDragStart(event, item) {
+  const dragData = {
+    dragType: DRAG_TYPES.ITEM,
+    id: item.id,
+    data: item,
+  }
+  event.dataTransfer.setData('application/json', JSON.stringify(dragData))
+  event.dataTransfer.effectAllowed = 'copy'
+}
 
 function toggleItem(id) {
   if (expanded.value === id) {

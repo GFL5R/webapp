@@ -2,35 +2,14 @@
   <div class="builder-section">
     <div class="builder-section-title">Approaches</div>
 
-    <!-- Approach rows -->
-    <div class="builder-approach-list">
-      <div
-        v-for="approach in APPROACH_IDS"
-        :key="approach"
-        class="builder-approach-row"
-      >
-        <span class="builder-approach-name">{{ capitalize(approach) }}</span>
-        <div class="builder-approach-stepper">
-          <button
-            class="builder-approach-btn"
-            :disabled="character.system.approaches[approach] <= 1"
-            @click="builder.decrementApproach(approach)"
-          >&minus;</button>
-          <span class="builder-approach-value">
-            {{ character.system.approaches[approach] }}
-          </span>
-          <button
-            class="builder-approach-btn"
-            :disabled="character.system.approaches[approach] >= MAX_APPROACH_AT_CREATION"
-            @click="builder.incrementApproach(approach)"
-          >&#43;</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Chargen limit note -->
-    <div class="builder-approach-warning" style="margin-top: 6px">
-      Max {{ MAX_APPROACH_AT_CREATION }} at character creation
+    <!-- Approach dots — read-only, colored like NPC compendium -->
+    <div class="builder-approach-row" v-for="approach in APPROACH_IDS" :key="approach">
+      <span class="builder-approach-dot" :style="{ borderColor: approachColor(approach) }">
+        {{ character.system.approaches[approach] }}
+      </span>
+      <span class="builder-approach-name" :style="{ color: approachColor(approach) }">
+        {{ capitalize(approach) }}
+      </span>
     </div>
 
     <!-- Derived attributes grid -->
@@ -64,7 +43,19 @@
 import { useCharacterBuilder } from '@/composables/useCharacterBuilder.js'
 
 const builder = useCharacterBuilder()
-const { character, APPROACH_IDS, derived, MAX_APPROACH_AT_CREATION } = builder
+const { character, APPROACH_IDS, derived } = builder
+
+const approachColors = {
+  power: 'var(--rose)',
+  precision: 'var(--amber)',
+  swiftness: '#4aa8ff',
+  resilience: 'var(--success)',
+  fortune: '#9c27b0',
+}
+
+function approachColor(approach) {
+  return approachColors[approach] || 'var(--cyan)'
+}
 
 function capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1)
@@ -72,11 +63,33 @@ function capitalize(s) {
 </script>
 
 <style scoped>
-.builder-approach-warning {
+.builder-approach-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+}
+
+.builder-approach-dot {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-mono);
-  font-size: 0.56rem;
-  color: var(--rose);
-  margin-top: 2px;
-  padding-left: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid;
+  background: rgba(0,0,0,0.3);
+  flex-shrink: 0;
+}
+
+.builder-approach-name {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 </style>

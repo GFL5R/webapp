@@ -24,9 +24,6 @@ defineEmits(['close'])
 }
 
 .modal-backdrop {
-  z-index: 88;
-  top: var(--topbar-height);
-  left: var(--sidebar-width);
-  right: var(--sidebar-width);
+  clip-path: inset(var(--topbar-height) var(--sidebar-width) 0 var(--sidebar-width));
 }
 </style>

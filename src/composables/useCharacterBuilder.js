@@ -751,7 +751,21 @@ export function useCharacterBuilder() {
 
   // ---- Equipment grants at character creation ----
 
+  let _lastNationalityKey = null
+  let _lastBackgroundKey = null
+
   function applyNationalityGear(nationalityKey) {
+    // Revoke previous nationality items
+    if (_lastNationalityKey && _lastNationalityKey !== nationalityKey) {
+      const oldNames = NATIONALITY_ITEMS[_lastNationalityKey] || []
+      oldNames.forEach(name => {
+        const idx = character.items.findIndex(i => i.name === name && i.type === 'item')
+        if (idx >= 0) character.items.splice(idx, 1)
+      })
+    }
+    _lastNationalityKey = nationalityKey
+
+    // Grant new nationality items
     const itemNames = NATIONALITY_ITEMS[nationalityKey]
     if (!itemNames) return
     itemNames.forEach(name => {
@@ -762,6 +776,25 @@ export function useCharacterBuilder() {
   }
 
   function applyBackgroundGear(backgroundKey) {
+    // Revoke previous background items + armor
+    if (_lastBackgroundKey && _lastBackgroundKey !== backgroundKey) {
+      const oldGear = BACKGROUND_GEAR[_lastBackgroundKey]
+      if (oldGear) {
+        if (oldGear.items) {
+          oldGear.items.forEach(name => {
+            const idx = character.items.findIndex(i => i.name === name && i.type === 'item')
+            if (idx >= 0) character.items.splice(idx, 1)
+          })
+        }
+        if (oldGear.armor) {
+          const idx = character.items.findIndex(i => i.name === oldGear.armor && i.type === 'armor')
+          if (idx >= 0) character.items.splice(idx, 1)
+        }
+      }
+    }
+    _lastBackgroundKey = backgroundKey
+
+    // Grant new background items + armor
     const gear = BACKGROUND_GEAR[backgroundKey]
     if (!gear) return
     if (gear.items) {
@@ -807,6 +840,8 @@ export function useCharacterBuilder() {
     character.system.conflict = { ...fresh.system.conflict }
     character.system.harm = JSON.parse(JSON.stringify(fresh.system.harm))
     character.items.splice(0)
+    _lastNationalityKey = null
+    _lastBackgroundKey = null
     updateXP()
     syncConflict()
   }

@@ -26,5 +26,6 @@ defineEmits(['close'])
 .modal-backdrop {
   top: var(--topbar-height);
   left: var(--sidebar-width);
+  right: var(--sidebar-width);
 }
 </style>

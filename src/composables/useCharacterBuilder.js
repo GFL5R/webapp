@@ -885,8 +885,12 @@ export function useCharacterBuilder() {
       system: JSON.parse(JSON.stringify(character.system)),
       items: JSON.parse(JSON.stringify(character.items)),
       prototypeToken: {
+        name: character.name || 'Character',
         actorLink: true,
         disposition: 1,
+        texture: { src: character.img },
+        width: 1,
+        height: 1,
         depth: 0,
         bar1: { attribute: 'fatigue' },
         bar2: { attribute: 'strife' },

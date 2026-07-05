@@ -53,6 +53,7 @@
             :value="n.key"
           >{{ n.label }}</option>
         </select>
+        <span class="builder-gear-hint" v-if="nationalityGear">Gear: {{ nationalityGear }}</span>
       </div>
 
       <div class="builder-identity-row">
@@ -68,6 +69,7 @@
             :value="b.key"
           >{{ b.label }}</option>
         </select>
+        <span class="builder-gear-hint" v-if="backgroundGear">Gear: {{ backgroundGear }}</span>
       </div>
     </template>
 
@@ -112,10 +114,22 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useCharacterBuilder } from '@/composables/useCharacterBuilder.js'
 import { NATIONALITIES, BACKGROUNDS, FRAMES } from './character-data.js'
 
 const builder = useCharacterBuilder()
+
+// ---- Gear display helpers ----
+const nationalityGear = computed(() => {
+  const nat = NATIONALITIES.find(n => n.key === builder.character.system.identity.nationality)
+  return nat?.gear || ''
+})
+
+const backgroundGear = computed(() => {
+  const bg = BACKGROUNDS.find(b => b.key === builder.character.system.identity.background)
+  return bg?.gear || ''
+})
 
 // ---- Character type ----
 function selectType(type) {
@@ -182,5 +196,12 @@ function onFrameChange(value) {
 input.readonly {
   opacity: 0.6;
   cursor: default;
+}
+
+.builder-gear-hint {
+  font-family: var(--font-mono);
+  font-size: 0.54rem;
+  color: var(--amber);
+  margin-top: 2px;
 }
 </style>

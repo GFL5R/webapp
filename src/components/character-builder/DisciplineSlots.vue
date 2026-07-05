@@ -34,6 +34,11 @@
           <span>{{ slot.xpSpent }} XP</span>
         </div>
 
+        <!-- Weapon grant -->
+        <div v-if="weaponGrantText" class="builder-discipline-weapon">
+          {{ weaponGrantText }}
+        </div>
+
         <!-- Perk -->
         <div v-if="perkName" class="builder-discipline-perk">
           {{ perkName }}
@@ -111,6 +116,22 @@ const discData = computed(() => disciplineMap.value[slot.value.disciplineId] || 
 const perkName = computed(() => discData.value?.perk?.title || '')
 const capstoneName = computed(() => discData.value?.capstone?.title || '')
 
+const CATEGORY_NAMES = {
+  HG: 'Handguns', SMG: 'Submachine Guns', SG: 'Shotguns',
+  AR: 'Assault Rifles', BR: 'Battle Rifles', RF: 'Sniper Rifles',
+  MG: 'Machine Guns', BLD: 'Blades', KNF: 'Knives', SHD: 'Shields',
+  BOW: 'Bows',
+}
+
+const weaponGrantText = computed(() => {
+  const discId = slot.value.disciplineId
+  if (!discId) return ''
+  const grant = builder.getDisciplineWeaponGrant(discId)
+  if (!grant) return ''
+  const cat = CATEGORY_NAMES[grant.category] || grant.category
+  return `Weapon: ${cat} ≤ ${grant.maxPrice} cr`
+})
+
 // -- Discipline drop --
 function onDrop(event) {
   dragOver.value = false
@@ -148,3 +169,12 @@ function onTechDrop(event) {
   }
 }
 </script>
+
+<style scoped>
+.builder-discipline-weapon {
+  font-family: var(--font-mono);
+  font-size: 0.54rem;
+  color: var(--amber);
+  margin-bottom: 4px;
+}
+</style>

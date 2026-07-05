@@ -4,27 +4,27 @@
  */
 
 export const NATIONALITIES = [
-    { key: "united-states", label: "United States", approaches: ["swiftness", "power"] },
-    { key: "neo-soviet-union", label: "Neo-Soviet Union (NUSSR)", approaches: ["resilience", "power"] },
-    { key: "china", label: "China", approaches: ["precision", "fortune"] },
-    { key: "latin-america", label: "Latin America Alliance", approaches: ["precision", "power"] },
-    { key: "japan", label: "Japan", approaches: ["resilience", "swiftness"] },
-    { key: "pan-europe", label: "Pan-European Union", approaches: ["precision", "swiftness"] },
-    { key: "yugoslavian-federation", label: "Yugoslavian Federation", approaches: ["fortune", "swiftness"] },
-    { key: "north-african-union", label: "North African Union", approaches: ["precision", "resilience"] },
-    { key: "australia", label: "Australia", approaches: ["fortune", "resilience"] },
-    { key: "yellow-zone", label: "Yellow Zone Native", approaches: ["fortune", "power"] },
+    { key: "united-states", label: "United States", approaches: ["swiftness", "power"], gear: "Duct Tape, Road Flare, Pocket Knife" },
+    { key: "neo-soviet-union", label: "Neo-Soviet Union (NUSSR)", approaches: ["resilience", "power"], gear: "Canteen, Disposable Lighter, Paracord" },
+    { key: "china", label: "China", approaches: ["precision", "fortune"], gear: "Compass, Ration Brick, Bottled Water" },
+    { key: "latin-america", label: "Latin America Alliance", approaches: ["precision", "power"], gear: "Flashlight, Zip Ties, Hard Candy" },
+    { key: "japan", label: "Japan", approaches: ["resilience", "swiftness"], gear: "Chemlight, Basic Medical Supplies" },
+    { key: "pan-europe", label: "Pan-European Union", approaches: ["precision", "swiftness"], gear: "Binoculars, Pocket Knife" },
+    { key: "yugoslavian-federation", label: "Yugoslavian Federation", approaches: ["fortune", "swiftness"], gear: "Disposable Lighter, Pack of Cigarettes, Duct Tape" },
+    { key: "north-african-union", label: "North African Union", approaches: ["precision", "resilience"], gear: "Canteen, Sleeping Bag, Road Flare" },
+    { key: "australia", label: "Australia", approaches: ["fortune", "resilience"], gear: "Compass, Sleeping Bag, Hard Candy" },
+    { key: "yellow-zone", label: "Yellow Zone Native", approaches: ["fortune", "power"], gear: "Gas Mask, Bottled Water, Paracord" },
 ]
 
 export const BACKGROUNDS = [
-    { key: "military", label: "Military", approach: "resilience", skill: "tactics" },
-    { key: "pmc-commander", label: "PMC Commander", approach: "power", skill: "command" },
-    { key: "corporate-drone", label: "Corporate Drone", approach: "precision", skill: "negotiation" },
-    { key: "scavenger", label: "Scavenger", approach: "swiftness", skill: "survival" },
-    { key: "technician", label: "Technician", approach: "precision", skill: "mechanics" },
-    { key: "medic", label: "Medic", approach: "resilience", skill: "medicine" },
-    { key: "criminal", label: "Criminal", approach: "fortune", skill: "stealth" },
-    { key: "scholar", label: "Scholar", approach: "swiftness", skill: "computers" },
+    { key: "military", label: "Military", approach: "resilience", skill: "tactics", gear: "Basic Medical Supplies, Flashlight; Armor: Tactical Vest" },
+    { key: "pmc-commander", label: "PMC Commander", approach: "power", skill: "command", gear: "Binoculars, Paracord; Armor: Concealable Vest" },
+    { key: "corporate-drone", label: "Corporate Drone", approach: "precision", skill: "negotiation", gear: "Multitool, Zip Ties" },
+    { key: "scavenger", label: "Scavenger", approach: "swiftness", skill: "survival", gear: "Crowbar, Duct Tape, Road Flare" },
+    { key: "technician", label: "Technician", approach: "precision", skill: "mechanics", gear: "Multitool, Duct Tape, Chemlight" },
+    { key: "medic", label: "Medic", approach: "resilience", skill: "medicine", gear: "Medical Kit, Paracord" },
+    { key: "criminal", label: "Criminal", approach: "fortune", skill: "stealth", gear: "Lock Picking Set, Zip Ties" },
+    { key: "scholar", label: "Scholar", approach: "swiftness", skill: "computers", gear: "Compass, Journal and Pen, Bottled Water" },
 ]
 
 export const FRAMES = [

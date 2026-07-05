@@ -146,25 +146,6 @@
         </tr>
       </tbody>
     </table>
-
-    <SectionDivider label="GM GUIDANCE" />
-
-    <h2>Running the Table</h2>
-
-    <p>This table is a tool, not a punishment. Remoulding is a high-risk, high-reward system; the threat of consequences makes successful technique use feel earned. That said, rolling on this table should feel tense, not spiteful.</p>
-
-    <h3>Frequency</h3>
-    <p>Not every failed remoulding check triggers the table. Reserve it for failures that happen at pivotal moments, when the stakes are high and the dice have already told a story. A rank 1 technique failing during a routine check does not need a table roll. A rank 3 technique failing while the party is pinned down by ELID infected in a Red Zone collapse storm absolutely does.</p>
-
-    <h3>Narrative Framing</h3>
-    <p>Describe the result in terms of what the character experiences. "You roll a 4, system cascade" is a mechanic. "The Remoulding Unit shrieks against your spine as the bloom backfires; your HUD fractures into static, your limbs go heavy, and for three terrifying seconds you cannot feel your own frame" is a moment. The table gives you the effect; your narration gives it weight.</p>
-
-    <h3>Adapting Severity</h3>
-    <p>Most results are self-contained scene-level effects. The harshest entries (Hardlock at result 3, Resonance Pulse at result 9) require the GM to judge whether the outcome fits the moment. The table is calibrated so that the worst results are recoverable with downtime, credits, or clever play. The core experience is "something unexpected happened," not "the game ground to a halt."</p>
-
-    <h3>Player Agency</h3>
-    <p>A character with high Resolve or relevant expertise (Science, Computers) may attempt to mitigate a result with a follow-up check, at the GM's discretion. A TN 3 Resolve check to vent excess heat before the unit hardlocks. A TN 2 Science check to flush saturated regulation circuitry before the backflow penalty locks in. These checks are not guaranteed and consume actions, but they give the player something to do other than simply endure the result.</p>
-
     <PageNav :prev="prev" :next="next" />
   </ContentFrame>
 </template>

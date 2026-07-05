@@ -17,6 +17,7 @@
   <div>
     <div v-for="section in sections" :key="section.itemType" class="builder-section">
       <div class="builder-section-title">{{ section.title }}</div>
+      <div v-if="section.hint" class="builder-weapon-hint">{{ section.hint }}</div>
       <div
         class="builder-drop-zone"
         :class="{
@@ -57,6 +58,27 @@ import { useCharacterBuilder, DRAG_TYPES } from '@/composables/useCharacterBuild
 const builder = useCharacterBuilder()
 const dragOver = ref(null)
 
+// Weapon category display names (from weapons.json categories)
+const CATEGORY_NAMES = {
+  HG: 'Handguns', SMG: 'Submachine Guns', SG: 'Shotguns',
+  AR: 'Assault Rifles', BR: 'Battle Rifles', RF: 'Sniper Rifles',
+  MG: 'Machine Guns', BLD: 'Blades', KNF: 'Knives', SHD: 'Shields',
+  BOW: 'Bows',
+}
+
+const weaponGrant = computed(() => {
+  const discId = builder.character.system.disciplines.slot1.disciplineId
+  if (!discId) return null
+  return builder.getDisciplineWeaponGrant(discId) || null
+})
+
+const weaponGrantText = computed(() => {
+  const g = weaponGrant.value
+  if (!g) return null
+  const cat = CATEGORY_NAMES[g.category] || g.category
+  return `Discipline grants: ${cat} ≤ ${g.maxPrice} cr`
+})
+
 // ---------------------------------------------------------------------------
 // Section definitions — the ONLY thing that changes between panels
 // ---------------------------------------------------------------------------
@@ -65,7 +87,8 @@ const sections = computed(() => [
     dragType: DRAG_TYPES.WEAPON,
     itemType: 'weapon',
     title: 'Weapons',
-    emptyText: 'Drag weapons here',
+    emptyText: weaponGrantText.value || 'Drag weapons here',
+    hint: weaponGrantText.value,
     items: builder.getItemsByType('weapon'),
   },
   {
@@ -127,3 +150,13 @@ function onDrop(event, section) {
   }
 }
 </script>
+
+<style scoped>
+.builder-weapon-hint {
+  font-family: var(--font-mono);
+  font-size: 0.54rem;
+  color: var(--amber);
+  margin-bottom: 6px;
+  padding-left: 2px;
+}
+</style>

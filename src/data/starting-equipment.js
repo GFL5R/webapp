@@ -60,40 +60,41 @@ export const BACKGROUND_GEAR = {
 }
 
 // ---------------------------------------------------------------------------
-// Discipline → { skill: string, maxPrice: number }
+// Discipline → { category: string, maxPrice: number } | null
 //
-// The skill is the weapon skill (snake_case) that the discipline's weapon
-// must use. maxPrice is the most expensive weapon allowed at creation.
+// category is the weapon category code from weapons.json (HG, SMG, SG, AR, BR,
+// RF, MG, BLD, KNF, SHD). maxPrice is the most expensive weapon allowed.
+// null means no weapon grant (Knuckle Dragger fights unarmed).
 //
-// Commander disciplines get a weapon matching their theme.
+// Commander disciplines get a sidearm or thematic weapon.
 // T-Doll weapon disciplines match the weapon category exactly.
 // ---------------------------------------------------------------------------
 export const DISCIPLINE_WEAPON_GRANTS = {
   // === Commander disciplines ===
-  "Ghost":              { skill: "firearms",    maxPrice: 1800 },
-  "Sicario":            { skill: "firearms",    maxPrice: 1800 },
-  "Street Kid":         { skill: "blades",      maxPrice: 1500 },
-  "Heartbreaker":       { skill: "firearms",    maxPrice: 1700 },
-  "Smooth Talker":      { skill: "firearms",    maxPrice: 1700 },
-  "Commander":          { skill: "firearms",    maxPrice: 1800 },
-  "Black Hat":          { skill: "firearms",    maxPrice: 1700 },
-  "Spider":             { skill: "firearms",    maxPrice: 1700 },
-  "Knuckle Dragger":    { skill: "hand_to_hand", maxPrice: 0 },
-  "Analyst":            { skill: "firearms",    maxPrice: 1700 },
-  "Field Medic":        { skill: "firearms",    maxPrice: 1700 },
-  "Grease Monkey":      { skill: "firearms",    maxPrice: 1700 },
-  "Frontliner":         { skill: "exotic_weapons", maxPrice: 2500 },
-  "Baby Driver":        { skill: "firearms",    maxPrice: 1700 },
-  "Chauffeur":          { skill: "firearms",    maxPrice: 1700 },
+  "Ghost":              { category: "HG",  maxPrice: 1700 },  // sidearm — quiet, concealable
+  "Sicario":            { category: "HG",  maxPrice: 1700 },  // sidearm — versatile assassin
+  "Street Kid":         { category: "KNF", maxPrice: 1500 },  // knife — street brawler
+  "Heartbreaker":       { category: "HG",  maxPrice: 1700 },  // sidearm — charm and a backup
+  "Smooth Talker":      { category: "HG",  maxPrice: 1700 },  // sidearm — diplomat's piece
+  "Commander":          { category: "HG",  maxPrice: 1700 },  // sidearm — officer's weapon
+  "Black Hat":          { category: "HG",  maxPrice: 1700 },  // sidearm — hacker's backup
+  "Spider":             { category: "HG",  maxPrice: 1700 },  // sidearm — EW specialist
+  "Knuckle Dragger":    null,                                 // unarmed fighter
+  "Analyst":            { category: "HG",  maxPrice: 1700 },  // sidearm — analyst's backup
+  "Field Medic":        { category: "HG",  maxPrice: 1700 },  // sidearm — medic's sidearm
+  "Grease Monkey":      { category: "HG",  maxPrice: 1700 },  // sidearm — mechanic's backup
+  "Frontliner":         { category: "SHD", maxPrice: 2500 },  // shield — frontline defender
+  "Baby Driver":        { category: "HG",  maxPrice: 1700 },  // sidearm — driver's piece
+  "Chauffeur":          { category: "HG",  maxPrice: 1700 },  // sidearm — driver's piece
 
   // === T-Doll weapon disciplines ===
-  "Knives":             { skill: "blades",      maxPrice: 1500 },
-  "Swords":             { skill: "blades",      maxPrice: 1500 },
-  "Pistols":            { skill: "firearms",    maxPrice: 1700 },
-  "Submachine Guns":    { skill: "firearms",    maxPrice: 2000 },
-  "Shotguns":           { skill: "firearms",    maxPrice: 2400 },
-  "Assault Rifles":     { skill: "firearms",    maxPrice: 1950 },
-  "Battle Rifles":      { skill: "firearms",    maxPrice: 1800 },
-  "Snipers":            { skill: "firearms",    maxPrice: 2600 },
-  "Machine Guns":       { skill: "firearms",    maxPrice: 1750 },
+  "Knives":             { category: "KNF", maxPrice: 1500 },
+  "Swords":             { category: "BLD", maxPrice: 1500 },
+  "Pistols":            { category: "HG",  maxPrice: 1700 },
+  "Submachine Guns":    { category: "SMG", maxPrice: 2000 },
+  "Shotguns":           { category: "SG",  maxPrice: 2400 },
+  "Assault Rifles":     { category: "AR",  maxPrice: 1950 },
+  "Battle Rifles":      { category: "BR",  maxPrice: 1800 },
+  "Snipers":            { category: "RF",  maxPrice: 2600 },
+  "Machine Guns":       { category: "MG",  maxPrice: 1750 },
 }

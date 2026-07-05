@@ -54,6 +54,21 @@ const APPROACH_IDS = ['power', 'precision', 'swiftness', 'resilience', 'fortune'
 const MAX_APPROACH_AT_CREATION = 3
 
 // ---------------------------------------------------------------------------
+// ID helpers
+// ---------------------------------------------------------------------------
+
+/** Generate a deterministic 16-char Foundry ID from a string */
+function makeFoundryId(str) {
+  let hash = 0
+  for (let i = 0; i < str.length; i++) {
+    hash = ((hash << 5) - hash) + str.charCodeAt(i)
+    hash |= 0
+  }
+  const hex = Math.abs(hash).toString(16).padStart(8, '0')
+  return hex + hex  // 8 + 8 = 16 chars
+}
+
+// ---------------------------------------------------------------------------
 // Default character skeleton (exact match to Foundry template.json)
 // ---------------------------------------------------------------------------
 function makeDefaultSkills() {
@@ -174,6 +189,7 @@ function loadFromStorage() {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return null
     const parsed = JSON.parse(raw)
+    migrateItemIds(parsed)
     // Deep-merge with defaults so new fields added later are present
     return deepMergeDefaults(makeDefaultCharacter(), parsed)
   } catch {
@@ -208,6 +224,17 @@ function deepMergeDefaults(defaults, saved) {
     }
   }
   return result
+}
+
+/** Fix old items with non-hex _id values to valid Foundry IDs */
+function migrateItemIds(character) {
+  if (!Array.isArray(character.items)) return
+  const hex16 = /^[0-9a-f]{16}$/i
+  character.items.forEach(item => {
+    if (!item._id || !hex16.test(item._id)) {
+      item._id = makeFoundryId(item.name || 'item')
+    }
+  })
 }
 
 // ---------------------------------------------------------------------------
@@ -580,18 +607,6 @@ export function useCharacterBuilder() {
     if (item && item.system?.readied !== undefined) {
       item.system.readied = !item.system.readied
     }
-  }
-
-  /** Generate a deterministic 16-char Foundry ID from a string */
-  function makeFoundryId(str) {
-    let hash = 0
-    for (let i = 0; i < str.length; i++) {
-      hash = ((hash << 5) - hash) + str.charCodeAt(i)
-      hash |= 0
-    }
-    // Convert to 16-char hex string
-    const hex = Math.abs(hash).toString(16).padStart(8, '0')
-    return hex + hex  // 8 + 8 = 16 chars
   }
 
   function normalizeItem(itemType, itemData) {

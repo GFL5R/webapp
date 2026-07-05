@@ -135,6 +135,7 @@
       <RulesCallout>
         <p>Select a <strong><router-link to="/disciplines">weapon discipline</router-link></strong> from the list of disciplines. You receive:</p>
         <ul>
+          <li>One weapon of your discipline's type (up to a set price)</li>
           <li>Rank 1 in each of the discipline's skills</li>
           <li>The discipline's perk</li>
           <li><strong>16XP</strong> to spend on additional skill ranks or first-level techniques within that discipline only</li>

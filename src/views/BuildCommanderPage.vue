@@ -12,7 +12,7 @@
       <p>In 2072, most surviving Green Zones are nominally under the URNC umbrella. But most people still hold onto the idea of nationality. Where you were born shapes how others see you, and how you see the world.</p>
 
       <RulesCallout>
-        <p>Every Commander begins with all Approaches at <strong>1</strong>. Your nationality grants <strong>+1 to two Approaches</strong>. No single Approach may exceed <strong>3</strong> at character creation.</p>
+        <p>Every Commander begins with all Approaches at <strong>1</strong>. Your nationality grants <strong>+1 to two Approaches</strong> and a small kit of practical gear suited to your homeland. No single Approach may exceed <strong>3</strong> at character creation.</p>
       </RulesCallout>
 
       <TabCard :tabs="nationalityTabs">
@@ -123,7 +123,7 @@
       <p>Your nationality defines where you were born, but your background defines what you did before you became a bounty hunter.</p>
 
       <RulesCallout>
-        <p>Your background grants <strong>+1 to one Approach</strong> and <strong>one starting Skill</strong>. Feel free to come up with your own!</p>
+        <p>Your background grants <strong>+1 to one Approach</strong> and <strong>one starting Skill</strong>. It also provides tools of your trade and, for combat backgrounds, light armor. Feel free to come up with your own!</p>
       </RulesCallout>
 
       <TabCard :tabs="backgroundTabs">
@@ -204,7 +204,7 @@
       <p>Your Discipline defines how you operate and what your Dolls will learn to expect from you. It shapes how you train, what risks you accept, and what kind of problems you walk toward instead of around.</p>
 
       <RulesCallout>
-        <p>Select one <strong><router-link to="/disciplines">Discipline</router-link></strong>. It is now unlocked for you, and you gain one rank in each of its skills, the perk, and one rank 1 technique of your choice within it.</p>
+        <p>Select one <strong><router-link to="/disciplines">Discipline</router-link></strong>. It is now unlocked for you, and you gain one rank in each of its skills, the perk, and one rank 1 technique of your choice within it. Your discipline also grants you a weapon of its type up to a set price. When in doubt, you get a handgun.</p>
       </RulesCallout>
     </QuestionBlock>
 

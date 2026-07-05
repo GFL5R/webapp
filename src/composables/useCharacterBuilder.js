@@ -32,6 +32,7 @@ export const DRAG_TYPES = {
   DISADVANTAGE: 'gfl5r:disadvantage',
   PASSION:      'gfl5r:passion',
   ANXIETY:      'gfl5r:anxiety',
+  VEHICLE:      'gfl5r:vehicle',
 }
 
 // ---------------------------------------------------------------------------

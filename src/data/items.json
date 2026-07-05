@@ -676,5 +676,11 @@
   "rarity": 8,
   "flavor": "The complete package: a new containment unit, a top-tier surgical team, a White Zone medical facility, and a dedicated recovery suite. The price is what you pay for the best possible odds of surviving full-body conversion. The forty percent survival rate does not change, but at least the equipment is pristine.",
   "description": "<h3>Effects</h3>\n      <ul>\n        <li>Includes a new containment unit and the full-body conversion surgical procedure.</li>\n        <li>30-40 hour surgery performed by multiple surgical teams. ~40% survival rate.</li>\n        <li>On success: fully synthetic Doll frame, halts ELID progression, full T-Doll module capacity.</li>\n        <li>Humanity drops to 30 upon waking. Months of adjustment and recalibration follow.</li>\n      </ul>"
-}
+  },
+  "IOP Hornet": {
+  "cost": 8000,
+  "rarity": 4,
+  "flavor": "A quad-rotor reconnaissance drone the size of a large suitcase. Operated remotely via a dedicated control tablet, the Hornet carries a stabilized multi-spectral camera package and a limited-flight endurance battery. It is not built for combat, but its small profile and quiet electric motors make it invaluable for urban reconnaissance, target designation, and perimeter surveillance. The Hornet's collapse-shielded electronics allow it to operate in Yellow Zone conditions where satellite coverage is unreliable.",
+  "description": "<h3>Standard Equipment</h3>\n      <ul>\n        <li>Multi-spectral camera (visual, thermal, low-light).</li>\n        <li>Collapse-shielded avionics.</li>\n        <li>30-minute flight endurance.</li>\n        <li>Control tablet with 2 km effective range.</li>\n      </ul>\n      <h3>Notes</h3>\n      <ul>\n        <li>The Hornet is a consumable piece of equipment, not a vehicle. If destroyed, it is lost.</li>\n        <li>The Hornet can be used to scout ahead, providing early warning of ambushes or obstacles.</li>\n      </ul>"
+  }
 }

@@ -9,6 +9,7 @@ import rawWeapons from '@/data/weapons.json'
 import rawArmor from '@/data/armor.json'
 import rawItems from '@/data/items.json'
 import rawModules from '@/data/modules.json'
+import rawVehicles from '@/data/vehicles.json'
 import rawPerks from '@/data/perks.json'
 import rawCapstones from '@/data/capstones.json'
 import disciplines from '@/data/disciplines'
@@ -350,6 +351,20 @@ function buildCorpus() {
       hash: `#${item.id}`,
       text: [item.name, String(item.cost), String(item.rarity), item.flavor || '', item.description || ''].join(' '),
       snippet: (item.flavor || '').slice(0, 200)
+    })
+  }
+
+  // --- Vehicles ---
+  const vehicles = Object.entries(rawVehicles).map(([name, data]) => ({ id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''), name, ...data }))
+  for (const v of vehicles) {
+    entries.push({
+      id: `vehicle-${v.id}`,
+      title: v.name,
+      category: 'Vehicles',
+      route: '/vehicles',
+      hash: `#${v.id}`,
+      text: [v.name, v.type, v.flavor || '', v.description || ''].join(' '),
+      snippet: (v.flavor || '').replace(/<[^>]*>/g, '').slice(0, 200)
     })
   }
 

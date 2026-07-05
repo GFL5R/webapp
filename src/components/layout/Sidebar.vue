@@ -109,6 +109,7 @@ const sections = [
           { to: '/armor', label: 'Armor' },
           { to: '/items', label: 'Items' },
           { to: '/modules', label: 'Modules' },
+          { to: '/vehicles', label: 'Vehicles' },
         ]
       },
     ]

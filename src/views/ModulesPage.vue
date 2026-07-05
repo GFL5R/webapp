@@ -94,7 +94,7 @@ const crumbs = [
 ]
 
 const prev = { to: '/items', label: 'Items' }
-const next = { to: '/perks', label: 'Perks' }
+const next = { to: '/vehicles', label: 'Vehicles' }
 
 const modules = Object.entries(rawModules).map(([name, data]) => ({
   id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),

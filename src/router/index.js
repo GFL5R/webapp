@@ -32,6 +32,7 @@ const routes = [
   { path: '/armor', name: 'armor', component: () => import('@/views/ArmorPage.vue') },
   { path: '/items', name: 'items', component: () => import('@/views/ItemsPage.vue') },
   { path: '/modules', name: 'modules', component: () => import('@/views/ModulesPage.vue') },
+  { path: '/vehicles', name: 'vehicles', component: () => import('@/views/VehiclesPage.vue') },
   { path: '/perks', name: 'perks', component: () => import('@/views/PerksPage.vue') },
   { path: '/capstones', name: 'capstones', component: () => import('@/views/CapstonesPage.vue') },
   { path: '/poisons-and-drugs', name: 'poisons', component: () => import('@/views/PoisonsPage.vue') },

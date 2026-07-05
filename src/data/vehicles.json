@@ -1,0 +1,539 @@
+{
+  "IOP Jackal": {
+    "type": "Utility Vehicle",
+    "armor_value": 2,
+    "damage_threshold": 18,
+    "passenger_capacity": 4,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Driver only.",
+    "price": 12000,
+    "rarity": 3,
+    "speed": 4,
+    "flavor": "<p>The Jackal is IOP Manufacturing's light utility vehicle.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Open roof with roll cage</li><li>Spare tire mount</li><li>Two forward seats, two jump seats</li><li>Light cargo bed</li></ul>"
+  },
+  "Ural-4320 Cargo Truck": {
+    "type": "Cargo Truck",
+    "armor_value": 1,
+    "damage_threshold": 30,
+    "passenger_capacity": 3,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Driver only.",
+    "price": 18000,
+    "rarity": 2,
+    "speed": 3,
+    "flavor": "<p>WW3 logistics backbone. Six-wheel drive.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Flatbed (12 ton)</li><li>Winch (5 ton)</li></ul><h3>Common Mods</h3><ul><li>Improvised armor (+1 armor)</li><li>Bed-mounted HMG (needs passenger gunner)</li></ul>"
+  },
+  "Svarog Minotaurus": {
+    "type": "Armored Transport",
+    "armor_value": 5,
+    "damage_threshold": 35,
+    "passenger_capacity": 10,
+    "crew": 2,
+    "min_crew": 2,
+    "crew_notes": "Driver + gunner/commander. Cannot fire with only a driver.",
+    "price": 55000,
+    "rarity": 5,
+    "speed": 3,
+    "weapons": [
+      {
+        "name": "RWS (7.62mm MG)",
+        "mount": "roof turret",
+        "category": "RWS",
+        "skill": "Firearms",
+        "range": 3,
+        "damage": 7,
+        "deadliness": 4,
+        "qualities": [
+          "Remote Operated"
+        ],
+        "notes": "Gunner fires from inside."
+      },
+      {
+        "name": "Smoke Grenade Launchers",
+        "mount": "front hull",
+        "category": "SMK",
+        "skill": "Firearms",
+        "range": 1,
+        "damage": 0,
+        "deadliness": 0,
+        "qualities": [
+          "Smoke Screen",
+          "One-Time Use"
+        ],
+        "notes": "Concealment 1 round. 500 cr reload."
+      }
+    ],
+    "flavor": "<p>Svarog APC. Sloped ceramic-composite armor.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Roof RWS (7.62mm MG)</li><li>Smoke grenade launchers</li><li>CBRN seal</li><li>Run-flat tires</li></ul><h3>Crew</h3><ul><li><strong>Driver:</strong> Cannot operate weapons.</li><li><strong>Gunner/Commander:</strong> Operates RWS. Cannot drive.</li><li>Driver only: move but no fire.</li></ul>"
+  },
+  "BTR-90 Berkut": {
+    "type": "Armored Personnel Carrier",
+    "armor_value": 6,
+    "damage_threshold": 32,
+    "passenger_capacity": 8,
+    "crew": 3,
+    "min_crew": 2,
+    "crew_notes": "Driver + gunner. Commander removes +1 TN self-targeting penalty.",
+    "price": 65000,
+    "rarity": 6,
+    "speed": 4,
+    "weapons": [
+      {
+        "name": "KPVT Heavy Machine Gun",
+        "mount": "turret",
+        "category": "HMGC",
+        "skill": "Firearms",
+        "range": 5,
+        "damage": 10,
+        "deadliness": 6,
+        "qualities": [
+          "Armor Piercing"
+        ],
+        "notes": "Dedicated gunner. 14.5mm penetrates light armor."
+      },
+      {
+        "name": "PKT Coaxial MG",
+        "mount": "coaxial",
+        "category": "MG",
+        "skill": "Firearms",
+        "range": 3,
+        "damage": 7,
+        "deadliness": 4,
+        "qualities": [],
+        "notes": "Same gunner as KPVT. Anti-personnel."
+      }
+    ],
+    "flavor": "<p>Eight-wheel drive APC. Amphibious.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>14.5mm KPVT HMG</li><li>7.62mm PKT coaxial MG</li><li>Amphibious (8 km/h)</li><li>NV optics</li><li>NBC protection</li></ul><h3>Crew</h3><ul><li><strong>Driver:</strong> No weapons.</li><li><strong>Gunner:</strong> Turret weapons.</li><li><strong>Commander:</strong> Target acquisition.</li><li>2 crew: +1 TN. 3 crew: normal. Driver only: move only.</li></ul>"
+  },
+  "Girard Meridian": {
+    "type": "Sedan",
+    "armor_value": 1,
+    "damage_threshold": 14,
+    "passenger_capacity": 5,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Driver only.",
+    "price": 6000,
+    "rarity": 1,
+    "speed": 4,
+    "flavor": "<p>Most common civilian car in URNC territory.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Four-door sedan</li><li>Manual or automatic</li><li>Basic radio</li><li>Heater</li></ul>"
+  },
+  "UAS Wanderer": {
+    "type": "Van",
+    "armor_value": 1,
+    "damage_threshold": 18,
+    "passenger_capacity": 8,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Driver only.",
+    "price": 9000,
+    "rarity": 2,
+    "speed": 3,
+    "flavor": "<p>High-roof panel van. Courier and light transport.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>High roof, flat floor</li><li>Sliding door + barn doors</li><li>Cargo tie-downs</li><li>Cargo HVAC</li></ul>"
+  },
+  "WW3-Era HMMWV": {
+    "type": "Military Utility",
+    "armor_value": 3,
+    "damage_threshold": 22,
+    "passenger_capacity": 4,
+    "crew": 1,
+    "min_crew": 2,
+    "crew_notes": "Driver + separate gunner for roof mount.",
+    "price": 22000,
+    "rarity": 4,
+    "speed": 4,
+    "weapons": [
+      {
+        "name": "M240 Medium Machine Gun",
+        "mount": "roof ring",
+        "category": "MG",
+        "skill": "Firearms",
+        "range": 4,
+        "damage": 7,
+        "deadliness": 4,
+        "qualities": [],
+        "notes": "Passenger operates exposed through roof hatch."
+      }
+    ],
+    "flavor": "<p>Iconic HMMWV. NATO surplus.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Roof ring with M240</li><li>Fold-down windshield</li><li>Truck bed (2 jump seats)</li></ul><h3>Crew</h3><ul><li><strong>Driver:</strong> Cannot fire roof weapon.</li><li><strong>Gunner:</strong> Exposed while firing.</li><li>Driver only: weapon unusable.</li></ul>"
+  },
+  "Sangvis Ripper Scout": {
+    "type": "Light Scout Walker",
+    "armor_value": 3,
+    "damage_threshold": 16,
+    "passenger_capacity": 1,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Pilot operates all systems. +1 TN while moving.",
+    "price": 30000,
+    "rarity": 7,
+    "speed": 5,
+    "weapons": [
+      {
+        "name": "Hardpoint Mount",
+        "mount": "external",
+        "category": "HP",
+        "skill": "Firearms",
+        "range": 3,
+        "damage": 6,
+        "deadliness": 4,
+        "qualities": [
+          "Modular"
+        ],
+        "notes": "Light weapon or sensor. Stationary: normal. Moving: +1 TN."
+      }
+    ],
+    "flavor": "<p>Retrofitted SF scout. Four-legged walker.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Four-legged walker</li><li>Pilot cockpit</li><li>Sensors (NV, thermal, motion)</li><li>Hardpoint mount</li></ul>"
+  },
+  "M151 Light Utility": {
+    "type": "Utility Vehicle",
+    "armor_value": 1,
+    "damage_threshold": 12,
+    "passenger_capacity": 4,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Driver only.",
+    "price": 4500,
+    "rarity": 1,
+    "speed": 4,
+    "flavor": "<p>Postwar utility from recycled military tooling.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Open 4-seat cabin, canvas roof</li><li>Small cargo bed</li><li>Basic radio</li></ul>"
+  },
+  "Oshkosh HET Recovery": {
+    "type": "Heavy Transport",
+    "armor_value": 2,
+    "damage_threshold": 45,
+    "passenger_capacity": 3,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Driver only.",
+    "price": 75000,
+    "rarity": 7,
+    "speed": 2,
+    "flavor": "<p>70-ton tank transporter. Armored cab.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Hydraulic trailer (70 ton)</li><li>Winch (20 ton)</li><li>Armored cab</li><li>Tool locker</li></ul>"
+  },
+  "GKN Simba": {
+    "type": "Armored Car",
+    "armor_value": 4,
+    "damage_threshold": 24,
+    "passenger_capacity": 6,
+    "crew": 2,
+    "min_crew": 2,
+    "crew_notes": "Driver + gunner/commander. Cannot fire with only a driver.",
+    "price": 35000,
+    "rarity": 5,
+    "speed": 5,
+    "weapons": [
+      {
+        "name": "Turret Ring Mount",
+        "mount": "turret ring",
+        "category": "RWS",
+        "skill": "Firearms",
+        "range": 4,
+        "damage": 7,
+        "deadliness": 4,
+        "qualities": [
+          "Modular"
+        ],
+        "notes": "LMG, MMG, or AGL. Gunner inside."
+      }
+    ],
+    "flavor": "<p>URNC export armored car.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Turret ring mount</li><li>Sloped steel armor</li><li>Run-flat tires</li></ul>"
+  },
+  "Beilan Moto M-72": {
+    "type": "Motorcycle",
+    "armor_value": 0,
+    "damage_threshold": 8,
+    "passenger_capacity": 2,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Rider + sidecar passenger.",
+    "price": 2500,
+    "rarity": 1,
+    "speed": 6,
+    "flavor": "<p>Sidecar motorcycle. Fast, loud, simple.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Sidecar (1 passenger + cargo)</li><li>Single-cylinder engine</li><li>Locking saddlebag</li></ul>"
+  },
+  "SF Raptor": {
+    "type": "Attack Drone",
+    "armor_value": 1,
+    "damage_threshold": 10,
+    "passenger_capacity": 2,
+    "crew": 1,
+    "min_crew": 1,
+    "needs_operator": false,
+    "crew_notes": "Operator/pilot flies remotely. A cramped internal compartment or external ride points allow up to 2 passengers in extreme discomfort.",
+    "price": 25000,
+    "rarity": 6,
+    "speed": 6,
+    "weapons": [
+      {
+        "name": "Twin Hardpoints",
+        "mount": "wing pylons",
+        "category": "MTL",
+        "skill": "Firearms",
+        "range": 4,
+        "damage": 8,
+        "deadliness": 5,
+        "qualities": [
+          "Modular"
+        ],
+        "notes": "Rockets, missiles, or MG pods. 500 cr reload."
+      }
+    ],
+    "flavor": "<p>Refitted Sangvis Ferri tilt-rotor attack drone. Large enough to carry a pilot and passengers in a cramped compartment, or serve as a carrier for external ride points.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Twin hardpoints</li><li>Tilt-rotor VTOL</li><li>3 km control range</li><li>Optical targeting system</li></ul><h3>Notes</h3><ul><li>Can carry up to 2 passengers in a cramped internal compartment. Passengers cannot perform actions requiring significant movement.</li><li>Can be operated remotely with no onboard crew (frees the compartment for cargo).</li><li>Replacement cost: 15,000 cr.</li></ul>"
+  },
+  "UAS Carrier": {
+    "type": "Utility Helicopter",
+    "armor_value": 2,
+    "damage_threshold": 20,
+    "passenger_capacity": 6,
+    "crew": 2,
+    "min_crew": 2,
+    "crew_notes": "Pilot + co-pilot. Co-pilot operates hardpoints.",
+    "price": 45000,
+    "rarity": 5,
+    "speed": 5,
+    "weapons": [
+      {
+        "name": "Hardpoints (x2)",
+        "mount": "pylons",
+        "category": "HP",
+        "skill": "Firearms",
+        "range": 3,
+        "damage": 6,
+        "deadliness": 4,
+        "qualities": [
+          "Modular"
+        ],
+        "notes": "Light stores. Co-pilot operates. 3 hr fuel."
+      }
+    ],
+    "flavor": "<p>Single-rotor utility helicopter. Reliable.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Sliding doors</li><li>6 seats</li><li>500 kg cargo</li><li>2 external hardpoints</li></ul>"
+  },
+  "Svarog Kite": {
+    "type": "VTOL Transport",
+    "armor_value": 4,
+    "damage_threshold": 30,
+    "passenger_capacity": 12,
+    "crew": 2,
+    "min_crew": 2,
+    "crew_notes": "Pilot + co-pilot/loadmaster.",
+    "price": 85000,
+    "rarity": 7,
+    "speed": 5,
+    "weapons": [
+      {
+        "name": "Hardpoints (x4)",
+        "mount": "wing",
+        "category": "HP",
+        "skill": "Firearms",
+        "range": 4,
+        "damage": 7,
+        "deadliness": 4,
+        "qualities": [
+          "Modular"
+        ],
+        "notes": "Medium stores. Co-pilot operates. 6 hr fuel."
+      }
+    ],
+    "flavor": "<p>Svarog VTOL. Ducted fan, armored compartment.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Armored crew compartment</li><li>Ducted fan VTOL</li><li>Flare/chaff dispenser</li><li>4 hardpoints</li><li>CBRN seal</li></ul>"
+  },
+  "T-90M3 Kontora": {
+    "type": "Main Battle Tank",
+    "armor_value": 8,
+    "damage_threshold": 55,
+    "passenger_capacity": 4,
+    "crew": 4,
+    "min_crew": 3,
+    "crew_notes": "Commander, gunner, driver, loader (autoloader can substitute). Commander needed for target acquisition.",
+    "price": 120000,
+    "rarity": 8,
+    "speed": 2,
+    "weapons": [
+      {
+        "name": "125mm 2A82M Cannon",
+        "mount": "turret",
+        "category": "HOW",
+        "skill": "Firearms",
+        "range": 6,
+        "damage": 15,
+        "deadliness": 9,
+        "qualities": [
+          "Armor Piercing",
+          "Breaching",
+          "Stationary"
+        ],
+        "notes": "Autoloader (22 rds). Gunner operates. Cannot fire while moving."
+      },
+      {
+        "name": "PKT Coaxial MG",
+        "mount": "coaxial",
+        "category": "MG",
+        "skill": "Firearms",
+        "range": 3,
+        "damage": 7,
+        "deadliness": 4,
+        "qualities": [],
+        "notes": "Linked to main gun. Same gunner."
+      },
+      {
+        "name": "12.7mm Kord HMG",
+        "mount": "commander cupola",
+        "category": "HMGC",
+        "skill": "Firearms",
+        "range": 4,
+        "damage": 9,
+        "deadliness": 5,
+        "qualities": [
+          "Armor Piercing"
+        ],
+        "notes": "Commander operates. Independent of main turret."
+      }
+    ],
+    "flavor": "<p>Post-WW3 MBT. 125mm cannon, ERA, composite armor. Strategic asset.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>125mm 2A82M cannon (autoloader)</li><li>7.62mm PKT coaxial MG</li><li>12.7mm Kord HMG (commander)</li><li>Composite armor + ERA</li><li>NBC protection</li><li>Thermal imaging</li></ul><h3>Crew</h3><ul><li><strong>Commander:</strong> Target acquisition, cupola HMG.</li><li><strong>Gunner:</strong> Main gun + coaxial MG.</li><li><strong>Driver:</strong> Drives only.</li><li><strong>Loader:</strong> Replaced by autoloader in emergencies.</li><li>3 crew minimum: commander + gunner + driver.</li></ul>"
+  },
+  "AA-02 Sinner": {
+    "type": "Assault Artillery",
+    "armor_value": 6,
+    "damage_threshold": 40,
+    "passenger_capacity": 1,
+    "crew": 1,
+    "min_crew": 1,
+    "crew_notes": "Single pilot. Neural interface allows one person to operate all systems.",
+    "price": 100000,
+    "rarity": 8,
+    "speed": 4,
+    "weapons": [
+      {
+        "name": "Twin 30mm Autocannons",
+        "mount": "arms",
+        "category": "AC",
+        "skill": "Firearms",
+        "range": 5,
+        "damage": 12,
+        "deadliness": 7,
+        "qualities": [
+          "Armor Piercing",
+          "Burst"
+        ],
+        "notes": "AP and HE ammo selectable. Pilot operates via neural link."
+      },
+      {
+        "name": "Shoulder Missile Pods",
+        "mount": "shoulders",
+        "category": "MTL",
+        "skill": "Firearms",
+        "range": 5,
+        "damage": 12,
+        "deadliness": 8,
+        "qualities": [
+          "Burst"
+        ],
+        "notes": "6 tubes, reloadable. 5,000 cr per reload."
+      },
+      {
+        "name": "Energy Shield",
+        "mount": "integrated",
+        "category": "SHD",
+        "skill": "",
+        "range": 0,
+        "damage": 0,
+        "deadliness": 0,
+        "qualities": [
+          "Defensive 2"
+        ],
+        "notes": "+2 armor vs front arc. 3 uses per scene."
+      }
+    ],
+    "flavor": "<p>KCCO bipedal mech. 6m tall, neural interface, energy shield.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Twin 30mm autocannon arms</li><li>Shoulder missile pods (6 tubes)</li><li>Energy shield (+2 armor front arc)</li><li>Booster system</li><li>Sealed cockpit</li><li>Multi-spectral sensors</li></ul><h3>Crew</h3><ul><li><strong>Pilot:</strong> Neural interface operates all systems. No additional crew needed.</li></ul>"
+  },
+  "SF Manticore": {
+    "type": "Heavy Walker",
+    "armor_value": 7,
+    "damage_threshold": 50,
+    "passenger_capacity": 2,
+    "crew": 2,
+    "min_crew": 2,
+    "crew_notes": "Driver + gunner. Cannot fire with only a driver.",
+    "price": 90000,
+    "rarity": 8,
+    "speed": 3,
+    "weapons": [
+      {
+        "name": "152mm Howitzer",
+        "mount": "under-slung",
+        "category": "HOW",
+        "skill": "Firearms",
+        "range": 7,
+        "damage": 16,
+        "deadliness": 10,
+        "qualities": [
+          "Armor Piercing",
+          "Breaching",
+          "Stationary",
+          "Indirect"
+        ],
+        "notes": "Indirect fire capable. 12 rounds. 3,000 cr per reload. Gunner operates."
+      },
+      {
+        "name": "7.62mm Coaxial MG",
+        "mount": "coaxial",
+        "category": "MG",
+        "skill": "Firearms",
+        "range": 3,
+        "damage": 7,
+        "deadliness": 4,
+        "qualities": [],
+        "notes": "Same gunner as howitzer. Anti-personnel."
+      }
+    ],
+    "flavor": "<p>Sangvis Ferri heavy walker. Four-legged artillery platform.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>152mm howitzer (under-slung)</li><li>7.62mm coaxial MG</li><li>Four-legged walker locomotion</li><li>Stabilized firing platform</li><li>Armored crew cabin (2)</li></ul>"
+  },
+  "URNC Argo": {
+    "type": "Armored Rail Car",
+    "armor_value": 8,
+    "damage_threshold": 60,
+    "passenger_capacity": 8,
+    "crew": 2,
+    "min_crew": 2,
+    "crew_notes": "Gunner/operator + locomotive engineer. Cannot fire while moving if locomotive is unattended.",
+    "price": 200000,
+    "rarity": 9,
+    "speed": 3,
+    "weapons": [
+      {
+        "name": "Retractable Turret Mount",
+        "mount": "roof turret",
+        "category": "RWS",
+        "skill": "Firearms",
+        "range": 4,
+        "damage": 7,
+        "deadliness": 4,
+        "qualities": [
+          "Modular"
+        ],
+        "notes": "Accepts MMG or AGL. Gunner operates from inside. Retracts for full cover."
+      }
+    ],
+    "flavor": "<p>Armored rail car. Bunker on rails. Requires locomotive.</p>",
+    "description": "<h3>Standard Equipment</h3><ul><li>Retractable turret mount</li><li>Steel armor plate</li><li>4 firing ports per side</li><li>Internal bunks (6), workstation</li><li>CBRN seal</li></ul><h3>Crew</h3><ul><li><strong>Gunner/Operator:</strong> Turret and internal systems.</li><li><strong>Engineer:</strong> Operates locomotive (if attached). Without engineer, car is stationary.</li></ul>"
+  }
+}

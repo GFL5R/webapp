@@ -582,9 +582,21 @@ export function useCharacterBuilder() {
     }
   }
 
+  /** Generate a deterministic 16-char Foundry ID from a string */
+  function makeFoundryId(str) {
+    let hash = 0
+    for (let i = 0; i < str.length; i++) {
+      hash = ((hash << 5) - hash) + str.charCodeAt(i)
+      hash |= 0
+    }
+    // Convert to 16-char hex string
+    const hex = Math.abs(hash).toString(16).padStart(8, '0')
+    return hex + hex  // 8 + 8 = 16 chars
+  }
+
   function normalizeItem(itemType, itemData) {
     const base = {
-      _id: itemData.id || itemData.name?.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+      _id: makeFoundryId(itemData.name || itemData.title || itemType),
       name: itemData.name || itemData.title || '',
       type: mapItemType(itemType),
       img: 'icons/svg/item-bag.svg',
@@ -675,7 +687,7 @@ export function useCharacterBuilder() {
   function addPeculiarity(narrativeType, itemData) {
     // narrativeType: 'advantage' | 'disadvantage' | 'passion' | 'anxiety'
     const foundryItem = {
-      _id: itemData.id || `narrative-${Date.now()}`,
+      _id: makeFoundryId(itemData.name || itemData.title || narrativeType),
       name: itemData.name || itemData.title || '',
       type: 'narrative',
       img: 'icons/svg/scroll.svg',
@@ -860,6 +872,7 @@ export function useCharacterBuilder() {
       prototypeToken: {
         actorLink: true,
         disposition: 1,
+        depth: 0,
         bar1: { attribute: 'fatigue' },
         bar2: { attribute: 'strife' },
       },

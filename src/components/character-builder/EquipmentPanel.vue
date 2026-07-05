@@ -82,37 +82,43 @@ const weaponGrantText = computed(() => {
 // ---------------------------------------------------------------------------
 // Section definitions — the ONLY thing that changes between panels
 // ---------------------------------------------------------------------------
-const sections = computed(() => [
-  {
-    dragType: DRAG_TYPES.WEAPON,
-    itemType: 'weapon',
-    title: 'Weapons',
-    emptyText: weaponGrantText.value || 'Drag weapons here',
-    hint: weaponGrantText.value,
-    items: builder.getItemsByType('weapon'),
-  },
-  {
-    dragType: DRAG_TYPES.ARMOR,
-    itemType: 'armor',
-    title: 'Armor',
-    emptyText: 'Drag armor here',
-    items: builder.getItemsByType('armor'),
-  },
-  {
-    dragType: DRAG_TYPES.ITEM,
-    itemType: 'item',
-    title: 'Items',
-    emptyText: 'Drag items here',
-    items: builder.getItemsByType('item'),
-  },
-  {
-    dragType: DRAG_TYPES.MODULE,
-    itemType: 'module',
-    title: 'Modules',
-    emptyText: 'Drag modules here',
-    items: builder.getItemsByType('module'),
-  },
-])
+const sections = computed(() => {
+  const isTDoll = builder.character.system.identity.characterType === 't-doll'
+  const result = [
+    {
+      dragType: DRAG_TYPES.WEAPON,
+      itemType: 'weapon',
+      title: 'Weapons',
+      emptyText: weaponGrantText.value || 'Drag weapons here',
+      hint: weaponGrantText.value,
+      items: builder.getItemsByType('weapon'),
+    },
+    {
+      dragType: DRAG_TYPES.ARMOR,
+      itemType: 'armor',
+      title: 'Armor',
+      emptyText: 'Drag armor here',
+      items: builder.getItemsByType('armor'),
+    },
+    {
+      dragType: DRAG_TYPES.ITEM,
+      itemType: 'item',
+      title: 'Items',
+      emptyText: 'Drag items here',
+      items: builder.getItemsByType('item'),
+    },
+  ]
+  if (isTDoll) {
+    result.push({
+      dragType: DRAG_TYPES.MODULE,
+      itemType: 'module',
+      title: 'Modules',
+      emptyText: 'Drag modules here',
+      items: builder.getItemsByType('module'),
+    })
+  }
+  return result
+})
 
 // ---------------------------------------------------------------------------
 // Drag-and-drop handlers

@@ -25,7 +25,7 @@
 
       <h3>IOP Manufacturing Company (Kyiv, Ukraine)</h3>
 
-      <p>Founded in 2046 by Havier Witkin, IOP is the largest Tactical Doll manufacturer in the world and has been for decades. Their production lines stretch across Eastern Europe. If you've seen a T-Doll on a security detail, a logistics run, or a Yellow Zone patrol, she was almost certainly built by IOP.</p>
+      <p>Founded in 2046 by Havier Witkin, IOP is the largest Tactical Doll manufacturer in the world and has been for decades. Their production lines stretch across Eastern Europe. If you've seen a T-Doll on a security detail, a logistics run, or a Yellow Zone patrol, they were almost certainly built by IOP.</p>
 
       <p>Witkin started as an army technician in the KCCO before pivoting to robotics. When World War Three created overnight demand for combat-capable androids, IOP scrambled to compete with Sangvis Ferri's simpler, tougher Jaeger models. They lost contracts early. The CSD-series frames were too complex, too fragile, too prone to malfunction under battlefield conditions. Frontline troops called them target practice. What saved the company was Persica, a former 90WISH researcher Witkin smuggled out of a collapsing research program at considerable risk. Her breakthroughs in neural cloud architecture and frame reliability turned the company around. When the Butterfly Incident wiped Sangvis Ferri off the map in 2061, IOP controlled the entire Tactical Doll market: military, civilian, and everything in between.</p>
 
@@ -121,7 +121,7 @@
         approaches="POW 2, SWI 2, RES 1, PRE 3, FOR 2"
         description="Sangvis Ferri's field coordinator. The SP series was built for law enforcement contracts that required a Doll who could manage multi-unit operations from inside the action, not behind a desk."
       >
-        <p>SP frames process tactical data, manage squad communications, and issue directives in real time. They were the NCOs of Sangvis Ferri's product line: not the strongest, not the fastest, but the ones who kept everyone else pointed in the right direction. After the open-sourcing, SP units found natural homes in private security and PMC command structures. The frame is built light. It belongs behind the front line, coordinating the units that do the bleeding. A squad that loses its SP falls apart faster than one that loses a rifleman, and every SP Doll carries that knowledge into every decision she makes.</p>
+        <p>SP frames process tactical data, manage squad communications, and issue directives in real time. They were the NCOs of Sangvis Ferri's product line: not the strongest, not the fastest, but the ones who kept everyone else pointed in the right direction. After the open-sourcing, SP units found natural homes in private security and PMC command structures. The frame is built light. It belongs behind the front line, coordinating the units that do the bleeding. A squad that loses its SP falls apart faster than one that loses a rifleman, and every SP Doll carries that knowledge into every decision they make.</p>
       </FrameCard>
     </QuestionBlock>
 

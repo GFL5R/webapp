@@ -28,7 +28,7 @@
 
     <h3>Effects on T-Dolls</h3>
 
-    <p>T-Dolls do not develop ELID. Their bodies are mechanical, not biological. Collapse radiation still degrades their electronics: memory corruption, phantom sensor readings, hallucinations projected into the neural cloud, cascading system faults. In Yellow Zones, a T-Doll can operate freely while her Commander sweats inside a sealed suit. In Red Zones, both of them are on borrowed time. At extreme levels, full system shutdown or irreversible data loss; the Doll's neural cloud fragments and whatever was stored there is gone.</p>
+    <p>T-Dolls do not develop ELID. Their bodies are mechanical, not biological. Collapse radiation still degrades their electronics: memory corruption, phantom sensor readings, hallucinations projected into the neural cloud, cascading system faults. In Yellow Zones, a T-Doll can operate freely while their Commander sweats inside a sealed suit. In Red Zones, both of them are on borrowed time. At extreme levels, full system shutdown or irreversible data loss; the Doll's neural cloud fragments and whatever was stored there is gone.</p>
 
     <ExampleBox>
       <h4>Exposure at a Blast Site</h4>

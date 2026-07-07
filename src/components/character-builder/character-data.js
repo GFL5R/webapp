@@ -4,7 +4,8 @@
  */
 
 export const NATIONALITIES = [
-    { key: "united-states", label: "United States", approaches: ["swiftness", "power"], gear: "Duct Tape, Road Flare, Pocket Knife" },
+    { key: "fsa", label: "Free States of America (FSA)", approaches: ["swiftness", "power"], gear: "Duct Tape, Road Flare, Pocket Knife" },
+    { key: "ara", label: "American Rossartrist Alliance", approaches: ["resilience", "precision"], gear: "Ration Brick, Multitool, Sturdy Boots" },
     { key: "neo-soviet-union", label: "Neo-Soviet Union (NUSSR)", approaches: ["resilience", "power"], gear: "Canteen, Disposable Lighter, Paracord" },
     { key: "china", label: "China", approaches: ["precision", "fortune"], gear: "Compass, Ration Brick, Bottled Water" },
     { key: "latin-america", label: "Latin America Alliance", approaches: ["precision", "power"], gear: "Flashlight, Zip Ties, Hard Candy" },

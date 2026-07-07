@@ -9,7 +9,8 @@
 // Nationality → item names (flavorful, mundane, survival/identity gear)
 // ---------------------------------------------------------------------------
 export const NATIONALITY_ITEMS = {
-  "united-states":        ["Duct Tape", "Road Flare", "Pocket Knife"],
+  "fsa":                  ["Duct Tape", "Road Flare", "Pocket Knife"],
+  "ara":                  ["Ration Brick", "Multitool", "Sturdy Boots"],
   "neo-soviet-union":     ["Canteen", "Disposable Lighter", "Paracord"],
   "china":                ["Compass", "Ration Brick", "Bottled Water"],
   "latin-america":        ["Flashlight", "Zip Ties", "Hard Candy"],

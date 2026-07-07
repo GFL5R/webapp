@@ -6,7 +6,7 @@
 
     <p class="kicker">Collapse Epiphyllum Cultivation and Reverse-Collapse Pattern Remoulding Device</p>
 
-    <p>Remoulding harnesses Collapse radiation to restructure matter at the molecular level, letting a T-Doll exceed her frame's limits. In GFL5R, remoulding techniques work like spells: focused abilities that run on dedicated hardware and scale with investment. They're tied to the <router-link to="/skills">Resolve</router-link> skill. See the <router-link to="/techniques/remoulding">Remoulding Techniques compendium</router-link> for the full list.</p>
+    <p>Remoulding harnesses Collapse radiation to restructure matter at the molecular level, letting a T-Doll exceed their frame's limits. In GFL5R, remoulding techniques work like spells: focused abilities that run on dedicated hardware and scale with investment. They're tied to the <router-link to="/skills">Resolve</router-link> skill. See the <router-link to="/techniques/remoulding">Remoulding Techniques compendium</router-link> for the full list.</p>
 
     <p>This technology is experimental. Reverse Collapse theory has been understood in principle for decades, but practical field hardware has only recently become viable. The units in service are early prototypes: bulky, unstable, and limited compared to what the theory suggests. They work, and on a battlefield where every edge counts, that's enough.</p>
 

@@ -175,6 +175,22 @@ function makeDefaultCharacter() {
         story_end: '',
         met_commander: '',
       },
+      twelve_questions: {
+        // Narrative text fields for each question
+        step1Narrative: '',   // Human: childhood; T-Doll: awakening
+        step2Narrative: '',   // Human: professional history; T-Doll: upgrade history
+        step3Narrative: '',   // Human: mentor; T-Doll: weapon relationship
+        step4Narrative: '',   // Why do you fight?
+        step5Narrative: '',   // Why would you stop?
+        step6Narrative: '',   // What are Dolls/Humans?
+        step7Narrative: '',   // Defining moment
+        step8Narrative: '',   // Flaw / malfunction
+        step9Narrative: '',   // Passion / quirk
+        step10Narrative: '',  // Fear
+        // Q4/Q5 bonuses
+        q4BonusSkill: 'none',     // +1 to any skill at rank 0
+        q5BonusApproach: 'none',  // +1 to any approach
+      },
     },
     items: [],
   }
@@ -439,6 +455,49 @@ export function useCharacterBuilder() {
     if (character.system.social[field] !== undefined) {
       character.system.social[field] = value
     }
+  }
+
+  // ---- Twelve Questions narrative & bonuses ----
+  function getTwelveQ() {
+    return character.system.twelve_questions
+  }
+
+  function setTwelveQNarrative(field, value) {
+    if (character.system.twelve_questions[field] !== undefined) {
+      character.system.twelve_questions[field] = value
+    }
+  }
+
+  function setQ4BonusSkill(skill) {
+    character.system.twelve_questions.q4BonusSkill = skill || 'none'
+    // Apply free skill bonus
+    if (skill && skill !== 'none' && character.system.skills[skill] !== undefined) {
+      character.system.skills_free[skill] = 1
+      character.system.skills[skill] = 1
+    }
+  }
+
+  function clearQ4BonusSkill() {
+    const oldSkill = character.system.twelve_questions.q4BonusSkill
+    if (oldSkill && oldSkill !== 'none') {
+      character.system.skills_free[oldSkill] = 0
+      character.system.skills[oldSkill] = 0
+    }
+    character.system.twelve_questions.q4BonusSkill = 'none'
+  }
+
+  function setQ5BonusApproach(approach) {
+    character.system.twelve_questions.q5BonusApproach = approach || 'none'
+  }
+
+  function applyTwelveQBonuses() {
+    // Called after all selections are made to finalize bonuses
+    const tq = character.system.twelve_questions
+    // Q4 bonus skill
+    if (tq.q4BonusSkill && tq.q4BonusSkill !== 'none') {
+      setQ4BonusSkill(tq.q4BonusSkill)
+    }
+    // Q5 bonus approach is applied via approach display
   }
 
   // ---- Disciplines ----
@@ -864,6 +923,7 @@ export function useCharacterBuilder() {
     character.system.ew = { ...fresh.system.ew }
     character.system.advancement = { ...fresh.system.advancement }
     character.system.narrative = { ...fresh.system.narrative }
+    character.system.twelve_questions = { ...fresh.system.twelve_questions }
     character.system.disciplines = makeDefaultDisciplines()
     character.system.conflict = { ...fresh.system.conflict }
     character.system.harm = JSON.parse(JSON.stringify(fresh.system.harm))
@@ -947,6 +1007,14 @@ export function useCharacterBuilder() {
 
     // Social
     setSocial,
+
+    // Twelve Questions
+    getTwelveQ,
+    setTwelveQNarrative,
+    setQ4BonusSkill,
+    clearQ4BonusSkill,
+    setQ5BonusApproach,
+    applyTwelveQBonuses,
 
     // Disciplines
     setDiscipline,

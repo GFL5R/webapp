@@ -1962,7 +1962,7 @@ li::marker { color: var(--cyan-dim); }
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: var(--amber);
   margin: 0 0 8px;
   padding-bottom: 4px;
   border-bottom: 1px solid var(--line-soft);
@@ -2089,7 +2089,7 @@ li::marker { color: var(--cyan-dim); }
   font-size: 0.58rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: var(--amber);
 }
 .builder-identity-row input,
 .builder-identity-row select {

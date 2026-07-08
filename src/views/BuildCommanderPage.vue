@@ -4,16 +4,16 @@
 
     <h1>Building a Commander</h1>
 
-    <p>Every Commander in this game begins in the same place: working as a licensed bounty hunter under B.R.I.E.F. The work is dangerous, often thankless, but it pays in credits, gear, and reputation. This chapter guides you step by step through creating your Commander: showing how you ended up here and what sets you apart.</p>
+    <p>Every Commander in this game begins in the same place: working as a licensed bounty hunter under B.R.I.E.F. The work is dangerous, often thankless, but it pays in credits, gear, and reputation. These twelve questions guide you step by step through creating your Commander: showing how you ended up here and what sets you apart.</p>
 
     <QuestionBlock :number="1">
       <h2>Where are you from?</h2>
 
-      <p>In 2072, most surviving Green Zones are nominally under the URNC umbrella. But most people still hold onto the idea of nationality. Where you were born shapes how others see you, and how you see the world.</p>
+      <p>In post-collapse society, borders grow ever thinner, but they do still remain. The flag you were born under has imprinted on you, whether for better or worse.</p>
 
       <RulesCallout>
-        <p>Every Commander begins with all Approaches at <strong>1</strong>. Your nationality grants <strong>+1 to two Approaches</strong> and a small kit of practical gear suited to your homeland. No single Approach may exceed <strong>3</strong> at character creation.</p>
-        <p><strong>Starting gear is listed under each nationality below.</strong></p>
+        <p>Select a <strong>nationality</strong>. Every Commander begins with all Approaches at <strong>1</strong>. Your nationality grants <strong>+1 to two Approaches</strong> and a small kit of practical gear suited to your homeland. No single Approach may exceed <strong>3</strong> at character creation.</p>
+        <p><strong>Briefly describe your childhood from where you were born.</strong></p>
       </RulesCallout>
 
       <TabCard :tabs="nationalityTabs">
@@ -32,7 +32,6 @@
           <hr />
           <p><strong>Approaches:</strong> Resilience +1, Precision +1</p>
           <p><strong>Starting Gear:</strong> Ration Brick, Multitool, Sturdy Boots</p>
-          <p>The United States is a shadow of its former self. The entire western seaboard was swallowed by Collapse contamination after Beilan capsules washed ashore from Alaska to Panama, and the interior is scarred by a civil war that has been raging since the 2050s. Your schoolbooks tell a story of glory followed by catastrophe. American soldiers pushed deep toward Moscow in 2050, until it came apart all at once. The economy imploded that summer, Operation Tradewind broke the Allied fleet in the Mediterranean, and back home the country tore itself open before the Soviets ever had to finish the job.</p>
           <p>The old republic was rotten at its core, a loose confederation of states and interests that could not hold together in the face of conflict. A nation of capitalists and men with rifles who answered to nobody and called that freedom. The Alliance taking the federal seat on the east coast was the first step in a long process of righting the sinking ship. The westerners call you tyrants, but you know what their so called "freedom" really costs.</p>
           <p>You believe that the age of flags and borders is what nearly brought the world to its end, and that one singular order, if carried far enough, is the only thing that can prevent it all from happening again. You will not make the same mistakes as the America of the Past. No, your ideals ask everything from you, and you give it freely, in hopes of a better future.</p>
         </template>
@@ -130,13 +129,13 @@
     </QuestionBlock>
 
     <QuestionBlock :number="2">
-      <h2>What is your background?</h2>
+      <h2>What kind of job did you have before this one?</h2>
 
-      <p>Your nationality defines where you were born, but your background defines what you did before you became a bounty hunter.</p>
+      <p>The kind of person who works a single job for their entire life is a rare kind indeed, especially in the year 2072. What did you do before your current situation, and if it's different, why did you change?</p>
 
       <RulesCallout>
-        <p>Your background grants <strong>+1 to one Approach</strong> and <strong>one starting Skill</strong>. It also provides tools of your trade and, for combat backgrounds, light armor. Feel free to come up with your own!</p>
-        <p><strong>Starting gear is listed under each background below.</strong></p>
+        <p>Your background grants <strong>+1 to one Approach</strong> and <strong>one starting Skill</strong>. It also provides tools of your trade and, for combat backgrounds, light armor.</p>
+        <p><strong>Briefly describe your professional history, and if there was a transition, what prompted it.</strong></p>
       </RulesCallout>
 
       <TabCard :tabs="backgroundTabs">
@@ -216,132 +215,124 @@
     </QuestionBlock>
 
     <QuestionBlock :number="3">
-      <h2>What path have you chosen?</h2>
+      <h2>Who taught you the trade?</h2>
 
-      <p>The question isn't whether you're capable. You made it this far.</p>
-
-      <p>Some Commanders are most dangerous at the front, close enough to their Dolls to issue orders by voice. Others stay back, reading the full battlefield from a position that gives them perspective their units don't have. A few specialize in operating before the fight starts: contacts, intelligence, conditions set up so carefully that the firefight becomes optional.</p>
+      <p>Whether healing or hurting, someone taught you how to do what you do. Briefly describe your mentor, whoever they may be, and select a discipline from the list of disciplines, plus one rank 1 technique from it.</p>
 
       <p>Your Discipline defines how you operate and what your Dolls will learn to expect from you. It shapes how you train, what risks you accept, and what kind of problems you walk toward instead of around.</p>
 
       <RulesCallout>
-        <p>Select one <strong><router-link to="/disciplines">Discipline</router-link></strong>. It is now unlocked for you, and you gain one rank in each of its skills, the perk, and one rank 1 technique of your choice within it. Your discipline also grants you a weapon of its type up to a set price. When in doubt, you get a handgun.</p>
+        <p>Select one <strong><router-link to="/disciplines">Discipline</router-link></strong>. It is now unlocked for you, and you gain one rank in each of its associated skills, the perk, and one rank 1 technique of your choice within it. Your discipline also grants you a weapon of its type up to a set price. When in doubt, you get a handgun.</p>
+        <p><strong>Briefly describe your mentor.</strong></p>
       </RulesCallout>
     </QuestionBlock>
 
     <QuestionBlock :number="4">
-      <h2>How do you stand out in your field?</h2>
+      <h2>Why do you fight?</h2>
 
-      <p>Commanders who survive in this work have something others don't. Not just training or experience: everyone who makes it this far has those. Something more specific. A trait that shows up under pressure and makes the difference when every other factor is equal.</p>
+      <p>Everyone has a reason to fight. Fame, fortune, love, anything you can think of. Briefly describe your reason to keep picking up your gun.</p>
 
-      <p>Luck is real. Pattern recognition is real. Stubbornness that borders on clinical: also real. Whatever it is, it's the reason you're still here when others who were equally trained are not.</p>
+      <p>The motivation question feels abstract until the first time a contract goes wrong. When the client lied about the job. When you're three days into a Yellow Zone and your Doll is damaged and the payout no longer justifies what keeping going will cost. That's when you find out what you actually fight for.</p>
 
       <RulesCallout>
-        <p>Select one <strong><router-link to="/advantages">Advantage</router-link></strong> from the list of advantages.</p>
+        <p>Choose <strong>+1 to any Skill at rank 0</strong> based on your reason to fight.</p>
+        <p>The wrong answer is no answer.</p>
       </RulesCallout>
     </QuestionBlock>
 
     <QuestionBlock :number="5">
-      <h2>What holds you back the most?</h2>
+      <h2>Why would you stop?</h2>
 
-      <p>You've survived this long. That doesn't mean you came through clean.</p>
-
-      <p>Some flaws are visible: a temper, a dependency, a refusal to follow orders that conflict with your personal judgment. Others are harder to see from the outside. A fear you've buried. An assumption you've never examined. A line you've drawn somewhere that the job will eventually ask you to cross.</p>
-
-      <p>Every Commander carries something. The dangerous ones know what it is.</p>
+      <p>Everyone puts down the gun eventually. Most as they lay bleeding out in the dirt, but the lucky few walk away with a victory of some sort. What is your victory? A ticket to a white-zone paradise? A lover to settle down with? Briefly describe what your exit condition looks like.</p>
 
       <RulesCallout>
-        <p>Select one <strong><router-link to="/disadvantages">Disadvantage</router-link></strong> from the list of disadvantages.</p>
+        <p>Choose <strong>+1 to one Approach</strong> based on your answer: Power, Precision, Swiftness, Resilience, or Fortune.</p>
       </RulesCallout>
     </QuestionBlock>
 
     <QuestionBlock :number="6">
-      <h2>What sets you apart from other Humans?</h2>
+      <h2>What are Dolls?</h2>
+
+      <p>You work alongside artificial humanoid operatives who think and adapt alongside you. Name one and describe what they are to you. A partner? A weapon? A liability? A friend? Maybe something you haven't quite figured out yet.</p>
+
+      <p>T-Dolls are not people in the legal sense. The URNC classifies them as property with limited operational autonomy. Most Commanders treat them accordingly. But most T-Dolls have been running long enough to develop something that looks a lot like perspective. Some have opinions. Some have preferences. Some have things that function as feelings, if you're willing to use that word.</p>
+
+      <p>Your Doll is watching how you treat them. They're forming conclusions. Get that relationship right early. It will matter more than any piece of gear you carry.</p>
+
+      <RulesCallout>
+        <p>Based on your answer, if you treat them more like a <strong>person</strong>, gain <strong>+5 Humanity</strong>. If you treat them more like an <strong>object</strong>, gain <strong>+1 to any Skill currently at rank 0</strong>.</p>
+        <p>Neither answer is wrong. Both have costs.</p>
+      </RulesCallout>
+    </QuestionBlock>
+
+    <QuestionBlock :number="7">
+      <h2>How did you make your name?</h2>
+
+      <p>Every operator has the job that should have gone wrong, but they managed to pull out of just in time. Briefly describe your defining moment.</p>
+
+      <p>Commanders who survive in this work have something others don't. Not just training or experience: everyone who makes it this far has those. Something more specific. A trait that shows up under pressure and makes the difference when every other factor is equal.</p>
+
+      <RulesCallout>
+        <p>Select one <strong><router-link to="/advantages">Advantage</router-link></strong> that suits your answer.</p>
+      </RulesCallout>
+    </QuestionBlock>
+
+    <QuestionBlock :number="8">
+      <h2>What holds you back?</h2>
+
+      <p>Your flaw, your scar, your bad habit. The thing that makes every job harder than it needs to be. Briefly describe what it is, and how it shows when things go sideways.</p>
+
+      <p>Some flaws are visible: a temper, a dependency, a refusal to follow orders that conflict with your personal judgment. Others are harder to see from the outside. A fear you've buried. An assumption you've never examined. A line you've drawn somewhere that the job will eventually ask you to cross.</p>
+
+      <RulesCallout>
+        <p>Select one <strong><router-link to="/disadvantages">Disadvantage</router-link></strong> that suits your answer.</p>
+      </RulesCallout>
+    </QuestionBlock>
+
+    <QuestionBlock :number="9">
+      <h2>What gets you through the day?</h2>
+
+      <p>Whether it brings you genuine joy or simply makes you feel at peace, you have a passion in your heart for something. Describe how you came upon this interest and how it helps you moving forward.</p>
 
       <p>In a world this broken, the things people hold onto start to define them more than the work does. A Commander who collects pre-Collapse music. An operator who insists on writing physical letters. Someone who takes three minutes before every contract to do something that has nothing to do with the job.</p>
 
       <p>These things are not weaknesses. They're proof that the work hasn't consumed everything.</p>
 
-      <p>It doesn't have to make sense to anyone else. It just has to be yours.</p>
-
       <RulesCallout>
-        <p>Select one <strong><router-link to="/passions">Passion</router-link></strong> from the list of passions.</p>
-      </RulesCallout>
-    </QuestionBlock>
-
-    <QuestionBlock :number="7">
-      <h2>What do you fear the most?</h2>
-
-      <p>Fear keeps you alive. The right kind, correctly calibrated.</p>
-
-      <p>But there's another kind. The kind that surfaces at the specific moment you can't afford it. The kind that shapes decisions in ways you don't always recognize until the after-action report. In a long enough career, you will end up in exactly the situation that triggers yours. Failure. Loss of control. The specific horror of watching people die on a call you made.</p>
-
-      <p>Know what it is before then.</p>
-
-      <RulesCallout>
-        <p>Select one <strong><router-link to="/anxieties">Anxiety</router-link></strong> from the list of anxieties.</p>
-      </RulesCallout>
-    </QuestionBlock>
-
-    <QuestionBlock :number="8">
-      <h2>How do you view Dolls?</h2>
-
-      <p>T-Dolls are not people in the legal sense. The URNC classifies them as property with limited operational autonomy. Most Commanders treat them accordingly.</p>
-
-      <p>But most T-Dolls have been running long enough to develop something that looks a lot like perspective. Some have opinions. Some have preferences. Some have things that function as feelings, if you're willing to use that word. The question of whether Doll consciousness constitutes genuine experience is actively debated in URNC academic circles and actively ignored by everyone in the field.</p>
-
-      <p>Your Doll is watching how you treat them. They're forming conclusions. Get that relationship right early. It will matter more than any piece of gear you carry.</p>
-
-      <p>Decide how your Commander views Dolls. Are they tools? Allies? Students? Friends? Experiments? Something else entirely?</p>
-
-      <RulesCallout>
-        <p>Commanders who view their Doll as a <strong>person</strong> begin with <strong>+5 Humanity</strong>. Those who view them as a <strong>tool</strong> begin with <strong>+1 to any Skill</strong>.</p>
-        <p>Neither answer is wrong. Both have costs.</p>
-      </RulesCallout>
-    </QuestionBlock>
-
-    <QuestionBlock :number="9">
-      <h2>What do you fight for?</h2>
-
-      <p>The motivation question feels abstract until the first time a contract goes wrong. When the client lied about the job. When you're three days into a Yellow Zone and your Doll is damaged and the payout no longer justifies what keeping going will cost. That's when you find out what you actually fight for.</p>
-
-      <p>Money is a real answer. So is duty, survival, revenge, or the specific and personal desire to make something that matters before it's over. Some Commanders are running toward something. Some are running from something they'd rather not name out loud.</p>
-
-      <p>The wrong answer is no answer.</p>
-
-      <RulesCallout>
-        <p>Choose a <strong>personal goal</strong>. This is what your Commander wants above everything else. What it costs everyone around you is a separate problem.</p>
+        <p>Select one <strong><router-link to="/passions">Passion</router-link></strong> that suits your answer.</p>
       </RulesCallout>
     </QuestionBlock>
 
     <QuestionBlock :number="10">
-      <h2>What does your name mean?</h2>
+      <h2>What keeps you up at night?</h2>
 
-      <p>A name is never just a label. It carries history: a family line, a call sign that stuck after one particular operation, or a name you chose when the old life stopped fitting. Names shape how people read you in introductions, in contracts, and in the rumors that precede you into a room.</p>
+      <p>Everyone is afraid of something. It gets under your skin, and you can't think of anything else when it's there. Describe the situation that made you like this, and what happens when it comes to pass.</p>
 
-      <p>In the URNC era, names are also practical. Different record systems track different aliases. Some Commanders operate under more than one. Some have deliberately burned a name they no longer want attached to their file.</p>
+      <p>Fear keeps you alive. The right kind, correctly calibrated. But there's another kind. The kind that surfaces at the specific moment you can't afford it. The kind that shapes decisions in ways you don't always recognize until the after-action report. In a long enough career, you will end up in exactly the situation that triggers yours. Failure. Loss of control. The specific horror of watching people die on a call you made.</p>
 
-      <p>Decide what your name means. Inherited. Gifted. Earned. Taken.</p>
+      <RulesCallout>
+        <p>Select one <strong><router-link to="/anxieties">Anxiety</router-link></strong> that suits your answer.</p>
+      </RulesCallout>
     </QuestionBlock>
 
     <QuestionBlock :number="11">
-      <h2>What is your name?</h2>
+      <h2>What is your name, and what does it mean?</h2>
+
+      <p>You have a name on file, and a story behind it. It could be given to you by your parents, or a nickname given by a colleague, but it's what you're called now.</p>
+
+      <p>In the URNC era, names are also practical. Different record systems track different aliases. Some Commanders operate under more than one. Some have deliberately burned a name they no longer want attached to their file.</p>
 
       <p>Write it down. Whatever you choose, this is who you are to the world. The name your Doll will call in the heat of battle. The one people will remember when you're gone.</p>
-
-      <p>It doesn't have to be the name you were born with.</p>
     </QuestionBlock>
 
     <QuestionBlock :number="12">
-      <h2>How will your story end?</h2>
+      <h2>How does your story end?</h2>
 
-      <p>Everyone dies. Some quietly, some suddenly, some in ways that reshape everything around them.</p>
+      <p>Everyone dies eventually. It's a fact of life. How should it happen for you?</p>
 
-      <p>The story of every Commander working under B.R.I.E.F. eventually resolves. Some retire with enough credits to live well in a Green Zone. Some fall in the field. A few disappear into classified operations and are never formally accounted for. Some make choices in the final act that change the shape of what comes after them.</p>
+      <p>Some retire with enough credits to live well in a Green Zone. Some fall in the field. A few disappear into classified operations and are never formally accounted for. Some make choices in the final act that change the shape of what comes after them.</p>
 
-      <p>Think about how yours ends. In battle? Quietly? A decision that costs you everything, but saves something that matters?</p>
-
-      <p>This question has no bearing on mechanics, but keep your answer in mind. Your GM certainly will...</p>
+      <p>This question has no mechanical bearing. But you should keep it in mind, your DM certainly will...</p>
     </QuestionBlock>
 
     <ContentNavLink to="/building-your-t-doll" label="Continue to building your T-Doll" />
@@ -355,7 +346,6 @@ import ContentFrame from '@/components/layout/ContentFrame.vue'
 import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import ContentNavLink from '@/components/layout/ContentNavLink.vue'
 import PageNav from '@/components/layout/PageNav.vue'
-import SectionDivider from '@/components/layout/SectionDivider.vue'
 import QuestionBlock from '@/components/callouts/QuestionBlock.vue'
 import RulesCallout from '@/components/callouts/RulesCallout.vue'
 import TabCard from '@/components/callouts/TabCard.vue'

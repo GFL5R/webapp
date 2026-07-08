@@ -10,3 +10,9 @@ defineProps({
   number: { type: [String, Number], default: '' }
 })
 </script>
+
+<style scoped>
+.question-block :deep(h2) {
+  color: var(--amber);
+}
+</style>

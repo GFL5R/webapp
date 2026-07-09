@@ -50,6 +50,7 @@
   --font-mono: "Share Tech Mono", ui-monospace, monospace;
 
   --sidebar-width: 260px;
+  --builder-width: 380px;
   --topbar-height: 52px;
   --content-max: 960px;
   --chisel: 18px;
@@ -1854,7 +1855,7 @@ li::marker { color: var(--cyan-dim); }
   color: #fff;
 }
 .builder-toggle.open {
-  right: var(--sidebar-width);
+  right: var(--builder-width);
 }
 
 /* -- Main builder panel -- */
@@ -1864,7 +1865,7 @@ li::marker { color: var(--cyan-dim); }
   right: 0;
   bottom: 0;
   z-index: 89;
-  width: var(--sidebar-width);
+  width: var(--builder-width);
   background: var(--panel-2);
   border-left: 1px solid var(--line);
   backdrop-filter: blur(6px);

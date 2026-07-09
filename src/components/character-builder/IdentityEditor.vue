@@ -16,27 +16,7 @@
       >T-Doll</button>
     </div>
 
-    <!-- Q11: Name -->
-    <div class="builder-identity-row">
-      <label>Name (Q11)</label>
-      <input
-        type="text"
-        :value="builder.character.name"
-        @input="builder.character.name = $event.target.value"
-        placeholder="Character name"
-      />
-    </div>
-
-    <!-- Age -->
-    <div class="builder-identity-row">
-      <label>Age</label>
-      <input
-        type="text"
-        :value="builder.character.system.identity.age"
-        @input="builder.setIdentity('age', $event.target.value)"
-        placeholder="Age"
-      />
-    </div>
+    <!-- Name is part of Q11 below -->
 
     <!-- Human fields -->
     <template v-if="builder.character.system.identity.characterType === 'human'">
@@ -352,7 +332,16 @@
       </div>
     </template>
 
-    <!-- Q11: Name Meaning (shared) -->
+    <!-- Q11: Name + Meaning (human) -->
+    <div class="builder-identity-row" v-if="builder.character.system.identity.characterType === 'human'">
+      <label>Name (Q11)</label>
+      <input
+        type="text"
+        :value="builder.character.name"
+        @input="builder.character.name = $event.target.value"
+        placeholder="Your name"
+      />
+    </div>
     <div class="builder-identity-row" v-if="builder.character.system.identity.characterType === 'human'">
       <label>Name Meaning (Q11)</label>
       <textarea
@@ -363,6 +352,16 @@
       ></textarea>
     </div>
 
+    <!-- Q11: Name + Origin (T-Doll) -->
+    <div class="builder-identity-row" v-if="builder.character.system.identity.characterType === 't-doll'">
+      <label>Name (Q11)</label>
+      <input
+        type="text"
+        :value="builder.character.name"
+        @input="builder.character.name = $event.target.value"
+        placeholder="Your name"
+      />
+    </div>
     <div class="builder-identity-row" v-if="builder.character.system.identity.characterType === 't-doll'">
       <label>Name Origin (Q11)</label>
       <select

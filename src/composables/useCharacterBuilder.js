@@ -109,7 +109,6 @@ function makeDefaultCharacter() {
     system: {
       identity: {
         characterType: 'human',
-        age: '',
         nationality: '',
         background: '',
         frame: '',

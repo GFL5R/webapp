@@ -6,7 +6,7 @@
 
     <p>Every Commander in this game begins in the same place: working as a licensed bounty hunter under B.R.I.E.F. The work is dangerous, often thankless, but it pays in credits, gear, and reputation. These twelve questions guide you step by step through creating your Commander: showing how you ended up here and what sets you apart.</p>
 
-    <QuestionBlock :number="1">
+    <QuestionBlock :number="1" id="q1">
       <h2>Where are you from?</h2>
 
       <p>In post-collapse society, borders grow ever thinner, but they do still remain. The flag you were born under has imprinted on you, whether for better or worse.</p>
@@ -128,7 +128,7 @@
       </TabCard>
     </QuestionBlock>
 
-    <QuestionBlock :number="2">
+    <QuestionBlock :number="2" id="q2">
       <h2>What kind of job did you have before this one?</h2>
 
       <p>The kind of person who works a single job for their entire life is a rare kind indeed, especially in the year 2072. What did you do before your current situation, and if it's different, why did you change?</p>
@@ -214,7 +214,7 @@
       </TabCard>
     </QuestionBlock>
 
-    <QuestionBlock :number="3">
+    <QuestionBlock :number="3" id="q3">
       <h2>Who taught you the trade?</h2>
 
       <p>Whether healing or hurting, someone taught you how to do what you do. Briefly describe your mentor, whoever they may be, and select a discipline from the list of disciplines, plus one rank 1 technique from it.</p>
@@ -227,7 +227,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="4">
+    <QuestionBlock :number="4" id="q4">
       <h2>Why do you fight?</h2>
 
       <p>Everyone has a reason to fight. Fame, fortune, love, anything you can think of. Briefly describe your reason to keep picking up your gun.</p>
@@ -240,7 +240,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="5">
+    <QuestionBlock :number="5" id="q5">
       <h2>Why would you stop?</h2>
 
       <p>Everyone puts down the gun eventually. Most as they lay bleeding out in the dirt, but the lucky few walk away with a victory of some sort. What is your victory? A ticket to a white-zone paradise? A lover to settle down with? Briefly describe what your exit condition looks like.</p>
@@ -250,7 +250,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="6">
+    <QuestionBlock :number="6" id="q6">
       <h2>What are Dolls?</h2>
 
       <p>You work alongside artificial humanoid operatives who think and adapt alongside you. Name one and describe what they are to you. A partner? A weapon? A liability? A friend? Maybe something you haven't quite figured out yet.</p>
@@ -265,7 +265,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="7">
+    <QuestionBlock :number="7" id="q7">
       <h2>How did you make your name?</h2>
 
       <p>Every operator has the job that should have gone wrong, but they managed to pull out of just in time. Briefly describe your defining moment.</p>
@@ -277,7 +277,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="8">
+    <QuestionBlock :number="8" id="q8">
       <h2>What holds you back?</h2>
 
       <p>Your flaw, your scar, your bad habit. The thing that makes every job harder than it needs to be. Briefly describe what it is, and how it shows when things go sideways.</p>
@@ -289,7 +289,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="9">
+    <QuestionBlock :number="9" id="q9">
       <h2>What gets you through the day?</h2>
 
       <p>Whether it brings you genuine joy or simply makes you feel at peace, you have a passion in your heart for something. Describe how you came upon this interest and how it helps you moving forward.</p>
@@ -303,7 +303,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="10">
+    <QuestionBlock :number="10" id="q10">
       <h2>What keeps you up at night?</h2>
 
       <p>Everyone is afraid of something. It gets under your skin, and you can't think of anything else when it's there. Describe the situation that made you like this, and what happens when it comes to pass.</p>
@@ -315,7 +315,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="11">
+    <QuestionBlock :number="11" id="q11">
       <h2>What is your name, and what does it mean?</h2>
 
       <p>You have a name on file, and a story behind it. It could be given to you by your parents, or a nickname given by a colleague, but it's what you're called now.</p>
@@ -325,7 +325,7 @@
       <p>Write it down. Whatever you choose, this is who you are to the world. The name your Doll will call in the heat of battle. The one people will remember when you're gone.</p>
     </QuestionBlock>
 
-    <QuestionBlock :number="12">
+    <QuestionBlock :number="12" id="q12">
       <h2>How does your story end?</h2>
 
       <p>Everyone dies eventually. It's a fact of life. How should it happen for you?</p>
@@ -342,6 +342,8 @@
 </template>
 
 <script setup>
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import ContentFrame from '@/components/layout/ContentFrame.vue'
 import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import ContentNavLink from '@/components/layout/ContentNavLink.vue'
@@ -349,6 +351,20 @@ import PageNav from '@/components/layout/PageNav.vue'
 import QuestionBlock from '@/components/callouts/QuestionBlock.vue'
 import RulesCallout from '@/components/callouts/RulesCallout.vue'
 import TabCard from '@/components/callouts/TabCard.vue'
+
+const route = useRoute()
+
+// Scroll to question hash on mount or hash change
+function scrollToQuestion() {
+  const hash = route.hash?.replace('#', '')
+  if (hash) {
+    setTimeout(() => {
+      document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 100)
+  }
+}
+onMounted(scrollToQuestion)
+watch(() => route.hash, scrollToQuestion)
 
 const crumbs = [
   { label: 'Home', to: '/' },

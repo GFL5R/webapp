@@ -12,7 +12,7 @@
 
     <p>None of that explains why you hum a song you've never been taught, or why you keep a shell casing from a mission that went wrong. Dolls are more than the sum of their parts. The design document stops mattering the moment you start making decisions it didn't account for.</p>
 
-    <QuestionBlock :number="1">
+    <QuestionBlock :number="1" id="tdoll-q1">
       <h2>Who made you, and what is your model number?</h2>
 
       <p>Every manufacturer, even the individual model lines, had different design philosophies. Each frame was designed for a purpose: your approaches and starting skills come from your hardware.</p>
@@ -128,7 +128,7 @@
       </TabCard>
     </QuestionBlock>
 
-    <QuestionBlock :number="2">
+    <QuestionBlock :number="2" id="tdoll-q2">
       <h2>What modifications set you apart from the rest of your line?</h2>
 
       <p>No T-Doll stays stock for long, and you certainly didn't. Whether they were installed by your own choice or forced upon you, you have upgrades now. Every unit of your model line rolled off with the same baseline specs. Same frame, same firmware, same factory calibration. But somewhere along the way, someone invested in making you different.</p>
@@ -141,7 +141,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="3">
+    <QuestionBlock :number="3" id="tdoll-q3">
       <h2>What weapon were you imprinted with?</h2>
 
       <p>The fire control core is what makes a Doll a T-Doll. Fire control cores come imprinted with a specific weapon class. What's yours? The gun isn't just equipment. It's wired into your reflexes, your targeting systems, your sense of self. Some Dolls wear their imprint like a second name. Others resent it: a role assigned before they had any say, an expectation baked into hardware they can't uninstall.</p>
@@ -159,7 +159,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="4">
+    <QuestionBlock :number="4" id="tdoll-q4">
       <h2>Why do you fight?</h2>
 
       <p>Orders are one thing. But Dolls develop their own reasons. Loyalty to a commander who treated you like a person. Revenge against the faction that scrapped your squad. The simple fact that combat is the only thing you've ever been good at. Briefly describe what keeps pulling your trigger.</p>
@@ -169,7 +169,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="5">
+    <QuestionBlock :number="5" id="tdoll-q5">
       <h2>Why would you stop?</h2>
 
       <p>Many Dolls dream of a future where they can stop fighting. What does yours look like? A cozy shop in a green or white zone? Freedom to explore the yellow zone? Something else entirely? Briefly describe what life should look like after the final round is fired.</p>
@@ -179,7 +179,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="6">
+    <QuestionBlock :number="6" id="tdoll-q6">
       <h2>What are Humans?</h2>
 
       <p>You exist alongside creatures of flesh and blood who give you orders, fight beside you, patch your chassis, and sometimes forget you're more than hardware. Name one human you know and describe what they are to you.</p>
@@ -193,7 +193,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="7">
+    <QuestionBlock :number="7" id="tdoll-q7">
       <h2>What is your greatest achievement so far?</h2>
 
       <p>It was a legendary moment. The kind of feat where you exceed every safety limit of your frame and hear of nothing else for the next three days in the repair bay. Describe this moment.</p>
@@ -207,7 +207,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="8">
+    <QuestionBlock :number="8" id="tdoll-q8">
       <h2>What is your malfunction?</h2>
 
       <p>No Doll is flawless. A frame that overheats under sustained load, or a hesitation that surfaces at the wrong moment. Whatever it is, it bothers you more than it should. Briefly describe what it is, and how it manifests.</p>
@@ -219,7 +219,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="9">
+    <QuestionBlock :number="9" id="tdoll-q9">
       <h2>What makes you different?</h2>
 
       <p>Somewhere between the factory and now, you picked up something that wasn't in the blueprint. A fascination with pre-Collapse cinema. An insistence on arranging your ammunition by year of manufacture. A habit of collecting small objects from completed missions that serves no tactical purpose and that you've never been able to explain to anyone's satisfaction, including your own. Describe how you came upon this interest and how it helps you moving forward.</p>
@@ -232,7 +232,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="10">
+    <QuestionBlock :number="10" id="tdoll-q10">
       <h2>What are you most afraid of?</h2>
 
       <p>Officially, Dolls don't experience fear. But anyone who's been around one long enough will know that that's not true. Deep in your neural cloud there's something that gnaws. Memory corruption. Obsolescence. The specific and vivid possibility of watching your Commander die while you're too damaged to intervene. You may not talk about it, but it's always there. Describe this fear, and how you react.</p>
@@ -242,7 +242,7 @@
       </RulesCallout>
     </QuestionBlock>
 
-    <QuestionBlock :number="11">
+    <QuestionBlock :number="11" id="tdoll-q11">
       <h2>What is your name, and how did you get it?</h2>
 
       <p>Every Doll receives a designation. Names are different. It means something, at least to someone. How you're called shapes every interaction. Choose a name, and how you got it.</p>
@@ -276,7 +276,7 @@
       </table>
     </QuestionBlock>
 
-    <QuestionBlock :number="12">
+    <QuestionBlock :number="12" id="tdoll-q12">
       <h2>How does your story end?</h2>
 
       <p>Dolls aren't built to last forever. Eventually your chassis fails beyond repair, your neural cloud degrades past recovery, or someone with a clipboard decides you're obsolete. How should it happen for you?</p>
@@ -293,6 +293,8 @@
 </template>
 
 <script setup>
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import ContentFrame from '@/components/layout/ContentFrame.vue'
 import Breadcrumb from '@/components/layout/Breadcrumb.vue'
 import ContentNavLink from '@/components/layout/ContentNavLink.vue'
@@ -301,6 +303,20 @@ import QuestionBlock from '@/components/callouts/QuestionBlock.vue'
 import RulesCallout from '@/components/callouts/RulesCallout.vue'
 import TabCard from '@/components/callouts/TabCard.vue'
 import FrameCard from '@/components/cards/FrameCard.vue'
+
+const route = useRoute()
+
+// Scroll to question hash on mount or hash change
+function scrollToQuestion() {
+  const hash = route.hash?.replace('#', '')
+  if (hash) {
+    setTimeout(() => {
+      document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 100)
+  }
+}
+onMounted(scrollToQuestion)
+watch(() => route.hash, scrollToQuestion)
 
 const crumbs = [
   { label: 'Home', to: '/' },

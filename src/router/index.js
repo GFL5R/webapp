@@ -53,6 +53,9 @@ const router = createRouter({
     if (to.path === from.path && to.hash !== from.hash) {
       return false
     }
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth' }
+    }
     return { top: 0 }
   }
 })

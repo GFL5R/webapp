@@ -1,5 +1,5 @@
 <template>
-  <div class="question-block">
+  <div :id="id" class="question-block">
     <div v-if="number" class="question-number">Q{{ number }}</div>
     <slot />
   </div>
@@ -7,6 +7,7 @@
 
 <script setup>
 defineProps({
+  id: { type: String, default: '' },
   number: { type: [String, Number], default: '' }
 })
 </script>

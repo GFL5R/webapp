@@ -3,9 +3,9 @@
     {
       "id": "ap-round",
       "name": "AP Round",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "Armor stops most things. Enough rounds at the right velocity, enough firepower behind the shot, and the math changes.",
       "activation": "",
       "opportunities": [],
@@ -28,9 +28,9 @@
     {
       "id": "aggressive-escort",
       "name": "Aggressive Escort",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 1,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "The first duty of a protective detail is positioning: stand between the threat and the principal, collapse the sightlines, make yourself the problem. But if someone shoots at you anyway, it would be foolish not to answer.",
       "activation": "",
       "opportunities": [],
@@ -50,7 +50,7 @@
     {
       "id": "breach-charge",
       "name": "Breach Charge",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
       "skill": "Explosives",
       "flavor": "A locked door stops most things. A properly placed charge stops nothing. The engineering is in the placement: enough force to open the path without losing the team on the other side.",
@@ -68,7 +68,7 @@
       "activation": "",
       "opportunities": [
         "Power (op): The blast also deals physical damage equal to your ranks in Explosives to each character who fails the resistance check.",
-        "Power (op)(op): The breach creates Difficult Terrain at range 0–1 of the breach point.",
+        "Power (op)(op): The breach creates Difficult Terrain at range 0\u20131 of the breach point.",
         "---"
       ],
       "type": "Combat"
@@ -76,9 +76,9 @@
     {
       "id": "defensive-maneuver",
       "name": "Defensive Maneuver",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "Sometimes all else fails and you take a nasty hit. Twisting your body, raising an arm, anything to deflect the blow just enough to avoid the worst of it separates a survivor from a casualty.",
       "activation": "",
       "opportunities": [],
@@ -98,9 +98,9 @@
     {
       "id": "evasive-footwork",
       "name": "Evasive Footwork",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 1,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "Standing still in a gunfight is a habit the dead share with the untrained. Controlled movement, constant repositioning, makes you a harder target and keeps your options open.",
       "activation": "",
       "opportunities": [],
@@ -120,7 +120,7 @@
     {
       "id": "eyes-up",
       "name": "Eyes Up!",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Resolve",
       "flavor": "A fighter who can keep their head in the game, even when the world is spinning around them, can turn a moment of disorientation into an opportunity to strike back.",
@@ -146,9 +146,9 @@
     {
       "id": "glass-case",
       "name": "Glass Case",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "Enough force delivered to the right spot does not just cause damage. It interrupts the target's ability to process what is happening, and that window is all you need.",
       "activation": "",
       "opportunities": [],
@@ -171,7 +171,7 @@
     {
       "id": "improvised-fortification",
       "name": "Improvised Fortification",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
       "skill": "Crafting",
       "flavor": "A flat piece of terrain favors the attacker. An engineer with a few minutes and whatever is at hand can change that equation in ways that matter when the shooting starts.",
@@ -197,7 +197,7 @@
     {
       "id": "let-it-ride",
       "name": "Let It Ride",
-      "rank": 0,
+      "rank": 1,
       "approach": "Fortune",
       "skill": "Resolve",
       "flavor": "Everything in combat is a game of chance, failing to recognize that fact creates undue stress on an operator. Learning to let go and accept the whims of fate can be a powerful tool for maintaining composure and seizing opportunities that others might miss.",
@@ -223,7 +223,7 @@
     {
       "id": "pistol-whip",
       "name": "Pistol Whip",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
       "skill": "Conditioning",
       "flavor": "A gun is not just a tool for shooting. It can also be a blunt instrument, a symbol of authority, and a source of intimidation. A well-placed pistol whip can disarm an opponent, break their concentration, or simply remind them who's in charge.",
@@ -248,7 +248,7 @@
     {
       "id": "remote-detonator",
       "name": "Remote Detonator",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Explosives",
       "flavor": "Placement and timing are the two variables in demolition. The detonator solves the timing problem. Everything else is engineering.",
@@ -274,8 +274,8 @@
     {
       "id": "ricochet",
       "name": "Ricochet",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Firearms",
       "flavor": "A miss is not wasted if it finds someone else. Rounds fired into a cluster rarely stop at the intended target.",
       "activation": "",
@@ -291,7 +291,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): If you fail the check, choose one character at range 0–2 of your target whose Vigilance is lower than your target's. That character suffers physical damage equal to your weapon's base damage.",
+        "(op)(op): If you fail the check, choose one character at range 0\u20132 of your target whose Vigilance is lower than your target's. That character suffers physical damage equal to your weapon's base damage.",
         "---"
       ],
       "type": "Combat"
@@ -299,7 +299,7 @@
     {
       "id": "sever-the-artery",
       "name": "Sever the Artery",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Blades",
       "flavor": "Most cuts hurt. The right cut ends things. There are seven places on the body where a blade can go and guarantee a clock is now running. A knife fighter who knows those seven places fights differently than one who doesn't.",
@@ -324,7 +324,7 @@
     {
       "id": "shield-bash",
       "name": "Shield Bash",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
       "skill": "Exotic Weapons",
       "flavor": "A shield is not just for blocking. In the right hands, it becomes a battering ram, a blunt instrument capable of staggering opponents and creating openings for follow-up attacks.",
@@ -350,8 +350,8 @@
     {
       "id": "shoot-and-scoot",
       "name": "Shoot and Scoot",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Firearms",
       "flavor": "Staying put after firing is how you become a target. The whole point of a short barrel is that you can be somewhere else before anyone gets a fix on where you were.",
       "activation": "",
@@ -375,9 +375,9 @@
     {
       "id": "shoot-to-maim",
       "name": "Shoot to Maim",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "Not every shot is meant to kill. A well-placed round to the knee, shoulder, or hand achieves something a lethal shot cannot: it leaves the opponent present, suffering, and in the way.",
       "activation": "",
       "opportunities": [],
@@ -397,7 +397,7 @@
     {
       "id": "sighting-in",
       "name": "Sighting-in",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Firearms",
       "flavor": "Combat doctrine favors placing pieces on the board where they'll be most effective, but rarely does reality play out like a game. A marksman who can adapt to less-than-ideal conditions and still put rounds on target is a valuable asset to any team.",
@@ -419,7 +419,7 @@
     {
       "id": "splat",
       "name": "Splat!",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Exotic Weapons",
       "flavor": "It's not practical on a modern battlefield, but you can't deny that a giant fucking hammer is a great way to make an impression.",
@@ -441,8 +441,8 @@
     {
       "id": "suppressive-fire",
       "name": "Suppressive Fire",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Firearms",
       "flavor": "A single target is easy enough to reason about. But when rounds start clipping the people around them, everyone in the vicinity has to choose between their objective and their survival.",
       "activation": "",
@@ -458,7 +458,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)+: Choose one character at range 0–2 of your target per (op) spent this way whose Vigilance is lower than your target's. Each chosen character suffers strife equal to your weapon's base damage.",
+        "(op)+: Choose one character at range 0\u20132 of your target per (op) spent this way whose Vigilance is lower than your target's. Each chosen character suffers strife equal to your weapon's base damage.",
         "---"
       ],
       "type": "Combat"
@@ -466,9 +466,9 @@
     {
       "id": "takedown",
       "name": "Takedown",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 1,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "Not every fight ends with a bullet. Sometimes the requirement is a person on the ground, breathing, and unable to get back up without help.",
       "activation": "",
       "opportunities": [],
@@ -491,8 +491,8 @@
     {
       "id": "throwing-knife",
       "name": "Throwing Knife",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Blades",
       "flavor": "A throwing knife is a versatile weapon that can be used for both offense and defense. A well-aimed throw can take out an opponent from a distance, while a quick toss can create an opening in an opponent's defense or distract them long enough to make a follow-up attack.",
       "activation": "",
@@ -516,7 +516,7 @@
     {
       "id": "trench-sweeper",
       "name": "Trench Sweeper",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
       "skill": "Firearms",
       "flavor": "The shotgun is a weapon designed to clear out trenches and tight spaces. A fighter who can use it to its full potential can turn a close-quarters fight into a massacre.",
@@ -541,7 +541,7 @@
     {
       "id": "trip-wire",
       "name": "Trip Wire",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Crafting",
       "flavor": "A trip wire is patience made physical. It does not matter where you are when it goes off. What matters is that you were there to set it.",
@@ -567,9 +567,9 @@
     {
       "id": "weapon-lock",
       "name": "Weapon Lock",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 1,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "Taking a weapon away is one way to neutralize a threat. Trapping it in their hand is faster, and leaves them holding a problem they cannot use.",
       "activation": "",
       "opportunities": [],
@@ -593,7 +593,7 @@
     {
       "id": "whirling-strike",
       "name": "Whirling Strike",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Melee Combat",
       "flavor": "A spinning attack can be a powerful way to strike multiple opponents at once, or to create an opening in an opponent's defense. The momentum of the spin can add extra force to your strike, making it more difficult to block or dodge.",
@@ -615,9 +615,9 @@
     {
       "id": "acrobatic-recovery",
       "name": "Acrobatic Recovery",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness, Resilience",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "A skilled fighter can turn a bad situation into an opportunity. Whether it's rolling with a fall, twisting out of a grapple, or using the momentum of a hit to spring back to their feet, they can recover from conditions that would leave others vulnerable.",
       "activation": "",
       "opportunities": [],
@@ -641,7 +641,7 @@
     {
       "id": "airborne-assault",
       "name": "Airborne Assault",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Firearms",
       "flavor": "You would be suprised just how often a target doesn't look up. Flight remains an unexpected movement in many encounters, and those who can harness it, via jetpack, grappling hook, or just a well-timed leap, can strike from angles their opponent isn't prepared for.",
@@ -663,7 +663,7 @@
     {
       "id": "anchor-point",
       "name": "Anchor Point",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Command",
       "flavor": "A strong defensive position is only useful if the enemy attacks it. By making yourself the most obvious and threatening target, you can draw enemy fire away from vulnerable allies and toward your prepared defenses.",
@@ -689,9 +689,9 @@
     {
       "id": "battle-in-the-mind",
       "name": "Battle in the Mind",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "An elite who has survived enough engagements learns to recognize the signals an opponent does not intend to reveal: the posture, the hesitation, the split-second flicker of the eyes. By the time the first shot is fired, a plan is already in motion.",
       "activation": "",
       "opportunities": [],
@@ -711,7 +711,7 @@
     {
       "id": "breach-and-clear",
       "name": "Breach and Clear",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Tactics",
       "flavor": "Distance is the enemy of a shield operator. The faster they can close the gap, the sooner they can bring their protection to bear on the enemy position.",
@@ -737,7 +737,7 @@
     {
       "id": "closing-strike",
       "name": "Closing Strike",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Blades",
       "flavor": "Many would mistake distance from a blade user for safety, but a true master of the sword can cover ground in the blink of an eye, crossing surprising gaps.",
@@ -762,7 +762,7 @@
     {
       "id": "crushing-blow",
       "name": "Crushing Blow",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Exotic Weapons",
       "flavor": "A powerful strike with a heavy weapon can do more than just deal damage. It can break through defenses, shatter armor, and leave the target vulnerable to follow-up attacks.",
@@ -784,7 +784,7 @@
     {
       "id": "dead-angle",
       "name": "Dead Angle",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
       "skill": "Firearms",
       "flavor": "Corners exist to protect people. Someone who has spent enough time reading a battlefield can visualize the shape of a target without seeing them directly, and put a round exactly where they know it will land.",
@@ -806,7 +806,7 @@
     {
       "id": "disarming-shot",
       "name": "Disarming Shot",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Firearms",
       "flavor": "Shooting a weapon out of someone's hand is, by any reasonable assessment, an extremely difficult shot. The angle, the timing, the margin for error, most marksmen will never attempt it. The ones who do either miss entirely or make it look easy.",
@@ -828,7 +828,7 @@
     {
       "id": "distraction-tactics",
       "name": "Distraction Tactics",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Tactics",
       "flavor": "To draw enemy fire onto yourself is a sacrifice few are willing to make. Those that do, however, open up a world of possibilities for their allies. A well-timed distraction can turn the tide of battle, allowing teammates to reposition, regroup, or strike with impunity while the enemy is focused on you.",
@@ -853,9 +853,9 @@
     {
       "id": "dug-in",
       "name": "Dug In",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "An operator who picks their spot and refuses to leave it is not a stationary target. They are a fixed problem that has to be solved before anything else in the fight gets done.",
       "activation": "",
       "opportunities": [],
@@ -878,7 +878,7 @@
     {
       "id": "eyes-on-the-prize",
       "name": "Eyes on the Prize",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Insight",
       "flavor": "Knowing your enemy's weaknesses is one thing. Knowing their strengths is another. A skilled operator can identify the techniques their opponent relies on most, and use that information to exploit openings and create new opportunities in combat.",
@@ -903,7 +903,7 @@
     {
       "id": "feigned-opening",
       "name": "Feigned Opening",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Performance",
       "flavor": "A skilled fighter can make an opponent believe they see an opening that isn't really there. By feigning weakness, vulnerability, or distraction, they can lure an enemy into a trap or bait them into making a mistake.",
@@ -929,9 +929,9 @@
     {
       "id": "forced-hand",
       "name": "Forced Hand",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 2,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "People will tell you what they value when you make them choose fast enough. Put a blade or a barrel on someone and their priorities clarify immediately.",
       "activation": "",
       "opportunities": [],
@@ -951,8 +951,8 @@
     {
       "id": "gap-in-the-armor",
       "name": "Gap in the Armor",
-      "rank": 0,
-      "approach": "—",
+      "rank": 2,
+      "approach": "\u2014",
       "skill": "Blades",
       "flavor": "Even the toughest armor has a weak point. A skilled fighter who can find and exploit that weak point can turn a heavily armored opponent into a sitting duck.",
       "activation": "",
@@ -973,7 +973,7 @@
     {
       "id": "grappler",
       "name": "Grappler",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
       "skill": "Hand-to-Hand",
       "flavor": "Fighters who are unafraid to get down and dirty with their opponent can control the battlefield in ways that more cautious combatants cannot. A well-timed grapple can neutralize a threat, create an opening for an ally, or even turn an enemy into a makeshift shield.",
@@ -998,8 +998,8 @@
     {
       "id": "guns-akimbo",
       "name": "Guns Akimbo",
-      "rank": 0,
-      "approach": "—",
+      "rank": 2,
+      "approach": "\u2014",
       "skill": "Firearms",
       "flavor": "Anyone can spray bullets with a gun in each hand. Hitting something that way takes a different breed of shooter entirely. The trick is not volume of fire, but timing: one muzzle keeps the target occupied while the other lands the shot that matters.",
       "activation": "",
@@ -1020,9 +1020,9 @@
     {
       "id": "hunter-s-patience",
       "name": "Hunter's Patience",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 2,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "Every operator has their finishing move. The smart ones wait until the target cannot avoid it.",
       "activation": "",
       "opportunities": [],
@@ -1045,7 +1045,7 @@
     {
       "id": "improvise-weapon",
       "name": "Improvise Weapon",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Survival",
       "flavor": "A fighter who can turn anything they find into a weapon is never without options. A broken bottle, a length of pipe, a discarded chair: all can be tools for survival in the right hands.",
@@ -1071,7 +1071,7 @@
     {
       "id": "intercept",
       "name": "Intercept",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Tactics",
       "flavor": "When an ally is in danger, a true protector does not hesitate. They move without thinking, placing themselves between the threat and their teammate. The shield is not just equipment, it is an extension of that instinct.",
@@ -1097,7 +1097,7 @@
     {
       "id": "judo-throw",
       "name": "Judo Throw",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Hand-to-Hand",
       "flavor": "A skilled martial artist can use an opponent's momentum against them, redirecting their own force to throw them off balance and slam them into the ground.",
@@ -1119,7 +1119,7 @@
     {
       "id": "landmine",
       "name": "Landmine",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Explosives",
       "flavor": "A well-placed mine does not need anyone behind it. It waits. Concealed beneath rubble, wedged under a floor panel, buried in a stretch of churned earth, it remains patient until the moment someone steps where they shouldn't. The blast radius does not distinguish between careless and informed.",
@@ -1137,9 +1137,9 @@
       "activation": "",
       "opportunities": [
         "(op)(op): Any item or structure damaged by this effect gains the Destroyed quality instead of Damaged.",
-        "(op)(op): The area at range 0–2 of the detonation point gains the Dangerous and Obscuring terrain qualities until the end of the round.",
+        "(op)(op): The area at range 0\u20132 of the detonation point gains the Dangerous and Obscuring terrain qualities until the end of the round.",
         "(op)+: Increase the TN to detect the mine by 1 per (op) spent this way.",
-        "Precision (op): You place one additional mine within range 0–1 of the original position using the same check.",
+        "Precision (op): You place one additional mine within range 0\u20131 of the original position using the same check.",
         "---"
       ],
       "type": "Combat"
@@ -1147,9 +1147,9 @@
     {
       "id": "last-stand",
       "name": "Last Stand",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "A fighter who is wounded but still standing is not a weakened threat. They are a desperate one. Pain strips away restraint, and what remains is something faster, uglier, and harder to predict than anything training produces.",
       "activation": "",
       "opportunities": [],
@@ -1169,7 +1169,7 @@
     {
       "id": "momentous-strike",
       "name": "Momentous Strike",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Blades",
       "flavor": "Momentum is a powerful force in combat. A fighter who can harness it, using the distance they have covered to strike with greater force, can turn their own movement into a weapon.",
@@ -1191,9 +1191,9 @@
     {
       "id": "murderous-intent",
       "name": "Murderous Intent",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "Combat is, in the most pure essence, the act of killing before being killed. A fighter who embraces that fact, who does not flinch at the thought of taking a life, can tap into a well of primal ferocity that makes them a terrifying opponent.",
       "activation": "",
       "opportunities": [],
@@ -1216,7 +1216,7 @@
     {
       "id": "rolling-with-the-punches",
       "name": "Rolling With the Punches",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
       "skill": "Conditioning",
       "flavor": "The best way to survive a hit is to not be there when it lands. The second best way is to be there, but not be a rigid target for it. A flexible defense can turn an opponent's strength against them, reducing the damage you take and maybe even creating an opening for a counterattack.",
@@ -1238,7 +1238,7 @@
     {
       "id": "swiss-cheese",
       "name": "Swiss Cheese",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Firearms",
       "flavor": "Armor holds up fine against the first shell. The second one finds the gaps the first one made. By the third, the question isn't whether the protection is working, it's whether there's any left.",
@@ -1263,7 +1263,7 @@
     {
       "id": "wrest-control",
       "name": "Wrest Control",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Hand-to-Hand",
       "flavor": "A weapon is only as secure as the grip behind it. Sometimes it is simply a matter of hitting hard enough that holding on becomes impossible, and even the most disciplined fighter loses their hold.",
@@ -1285,7 +1285,7 @@
     {
       "id": "bulwark",
       "name": "Bulwark",
-      "rank": 0,
+      "rank": 3,
       "approach": "Resilience",
       "skill": "Tactics",
       "flavor": "A master of defensive combat becomes an immovable object on the battlefield. Their shield is not just a piece of equipment, it is a declaration that nothing will pass without their permission.",
@@ -1312,9 +1312,9 @@
     {
       "id": "cleaving-strike",
       "name": "Cleaving Strike",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 3,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "Ranged combat doctrine dominates modern engagements for good reason. But veterans who have survived close-quarters fighting know that a skilled blade user occupies a threat category of their own. Bullets shred flesh and damage metal. Only a blade can cleave an arm from its frame.",
       "activation": "",
       "opportunities": [],
@@ -1334,7 +1334,7 @@
     {
       "id": "counterattack",
       "name": "Counterattack",
-      "rank": 0,
+      "rank": 3,
       "approach": "Resilience",
       "skill": "Hand-to-Hand",
       "flavor": "The moment after a melee attack is launched is the most vulnerable time for the attacker. A patient fighter who can exploit that vulnerability can turn such a moment into an opportunity.",
@@ -1361,7 +1361,7 @@
     {
       "id": "deflective-defense",
       "name": "Deflective Defense",
-      "rank": 0,
+      "rank": 3,
       "approach": "Resilience",
       "skill": "Blades",
       "flavor": "Normally relegated to anime and B-tier action movies, deflecting bullets with a blade is a fantasy held by many an aspiring sword user. Actually pulling it off is a feat worthy of legend.",
@@ -1385,7 +1385,7 @@
     {
       "id": "hand-of-god",
       "name": "Hand of God",
-      "rank": 0,
+      "rank": 3,
       "approach": "Precision",
       "skill": "Firearms",
       "flavor": "The ideal sniper shot is one that strikes with surgical precision, bypassing armor and resistance to hit a vulnerable spot. A marksman who can consistently find that spot, even under less-than-ideal conditions, can take down targets that would be otherwise untouchable.",
@@ -1402,7 +1402,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "Precision (op):If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon’s deadliness damage plus your bonus successes.",
+        "Precision (op):If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon\u2019s deadliness damage plus your bonus successes.",
         "---"
       ],
       "type": "Combat"
@@ -1410,8 +1410,8 @@
     {
       "id": "quick-draw-keep-one-in-the-chamber",
       "name": "Quick Draw: Keep One In the Chamber",
-      "rank": 0,
-      "approach": "—",
+      "rank": 3,
+      "approach": "\u2014",
       "skill": "Firearms",
       "flavor": "A quick draw is only as good as the first shot. By keeping a round in the chamber, a skilled shooter can ensure that they are always ready to fire, even if they are caught off guard or have to draw their weapon in a hurry.",
       "activation": "",
@@ -1432,7 +1432,7 @@
     {
       "id": "sniper-s-advantage",
       "name": "Sniper's Advantage",
-      "rank": 0,
+      "rank": 3,
       "approach": "Fortune",
       "skill": "Firearms",
       "flavor": "At extreme ranges, a bullet strikes home long before the initial gunshot can be heard. Skilled snipers can take advantage of this fact to take their target unaware.",
@@ -1459,7 +1459,7 @@
     {
       "id": "flexible-positioning",
       "name": "Flexible Positioning",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Command",
       "flavor": "Battlefield conditions change rapidly. A commander who can quickly reposition their forces to exploit new opportunities or respond to emerging threats maintains the initiative and keeps the enemy off-balance.",
@@ -1486,7 +1486,7 @@
     {
       "id": "no-retreat",
       "name": "No Retreat",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
       "skill": "Command",
       "flavor": "The calculus of retreat is simple: if survival is possible, some will choose it. Remove that option and the math changes. No ground to fall back to means every fighter is now playing for keeps, which is either a catastrophe or an advantage depending on who's made the call.",
@@ -1512,7 +1512,7 @@
     {
       "id": "shock-and-awe",
       "name": "Shock and Awe",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Command",
       "flavor": "Speed is a weapon. A commander who can mobilize their forces faster than the enemy expects creates opportunities where none existed. Quick, decisive action can disrupt enemy formations and create openings for follow-up attacks.",
@@ -1538,7 +1538,7 @@
     {
       "id": "plant-a-seed",
       "name": "Plant a Seed",
-      "rank": 0,
+      "rank": 3,
       "approach": "Precision",
       "skill": "Tactics",
       "flavor": "The best way to deceive an enemy is to make them think they have seen through your deception. A commander who can plant a false strategy and let the opponent believe they have uncovered it can turn the enemy's own caution against them.",
@@ -1565,7 +1565,7 @@
     {
       "id": "sacrifice-play",
       "name": "Sacrifice Play",
-      "rank": 0,
+      "rank": 3,
       "approach": "Fortune",
       "skill": "Command",
       "flavor": "Asking someone to potentially lay down their lives is one of the hardest things a commander can do. It requires not just confidence in the cause, but also a deep understanding of the people being asked to make that sacrifice.",
@@ -1587,7 +1587,7 @@
     {
       "id": "scorched-earth",
       "name": "Scorched Earth",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Subterfuge",
       "flavor": "When the situation is dire and the enemy is on your heels, sometimes the best option is to leave nothing behind. A well-timed act of sabotage can cripple an opponent's advance, destroy their resources, and turn the very ground they stand on against them.",
@@ -1617,8 +1617,8 @@
     {
       "id": "cloak",
       "name": "Cloak",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "A visible avatar is a target. The simplest form of digital camouflage masks your presence on a node, blending your traffic into the network's background noise. It holds up as long as you hold still.",
       "activation": "",
@@ -1643,7 +1643,7 @@
     {
       "id": "dead-drop",
       "name": "Dead Drop",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Computers",
       "flavor": "Tradecraft did not die with the digital age. It adapted. A hidden cache buried in a node's architecture serves the same purpose as a chalk mark on a mailbox: someone left something, and only the right people know where to look.",
@@ -1665,8 +1665,8 @@
     {
       "id": "exfiltrate",
       "name": "Exfiltrate",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "The objective is rarely to break things. It is to take things. Every intrusion eventually leads to a datastore, and the operator who cannot pull the payload clean was never really a hacker to begin with.",
       "activation": "",
@@ -1691,7 +1691,7 @@
     {
       "id": "honeypot",
       "name": "Honeypot",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Computers",
       "flavor": "A honeypot works because intruders expect to find what they came for. The trap is the expectation of reward, held long enough to spring.",
@@ -1717,7 +1717,7 @@
     {
       "id": "neural-fortification",
       "name": "Neural Fortification",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Computers",
       "flavor": "A T-Doll's neural cloud is a marvel of engineering and a target of extraordinary value. Hardening it against intrusion is not optional for any operator who plans to work alongside one. The alternative is watching a partner get turned into a puppet.",
@@ -1739,9 +1739,9 @@
     {
       "id": "overclock",
       "name": "Overclock",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 1,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "Every piece of hardware ships with safety margins built in. Conservative firmware, thermal limits, voltage caps. Stripping those out is the easiest upgrade in the world. It is also the fastest way to burn through a deck you cannot afford to replace.",
       "activation": "",
       "opportunities": [],
@@ -1761,7 +1761,7 @@
     {
       "id": "patch",
       "name": "Patch",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Computers",
       "flavor": "A fragged sentry or a bricked camera does not fix itself. Someone has to restart the process, reload the firmware, and verify the system comes back clean. It is unglamorous work, and it keeps everything running.",
@@ -1787,8 +1787,8 @@
     {
       "id": "spike",
       "name": "Spike",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "Disrupting someone's gear is a nuisance. Striking the operator behind it is a statement. A targeted burst of hostile code bypasses the hardware entirely and hits the person running it: frying feedback loops, spiking neural buffers, turning a rival hacker's own interface into a weapon against them.",
       "activation": "",
@@ -1812,7 +1812,7 @@
     {
       "id": "sweep",
       "name": "Sweep",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Computers",
       "flavor": "A network under attack does not look like a healthy one. An operator who knows what normal traffic patterns look like can read the signs of intrusion before the attacker knows they've been seen.",
@@ -1838,8 +1838,8 @@
     {
       "id": "cleanup-detail",
       "name": "Cleanup Detail",
-      "rank": 0,
-      "approach": "—",
+      "rank": 2,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "",
       "activation": "",
@@ -1863,8 +1863,8 @@
     {
       "id": "falsify-data",
       "name": "Falsify Data",
-      "rank": 0,
-      "approach": "—",
+      "rank": 2,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "Forgery is a crime as old as writing itself. In the digital age, it is not just signatures on paper that can be faked. A forged file can be indistinguishable from the original, and a forged record can rewrite history. The ability to create convincing fakes is a powerful tool for any operator.",
       "activation": "",
@@ -1888,7 +1888,7 @@
     {
       "id": "forensics",
       "name": "Forensics",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Computers",
       "flavor": "An intrusion leaves evidence the same way a break-in does: scratches on the lock, mud on the floor, a drawer left open. Reading the evidence tells you what was taken, how they got in, and where they went next.",
@@ -1914,8 +1914,8 @@
     {
       "id": "hijack",
       "name": "Hijack",
-      "rank": 0,
-      "approach": "—",
+      "rank": 2,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "A locked door is an obstacle. A locked door you control is a weapon. Turrets, drones, environmental systems: every networked device is a tool waiting for someone with the nerve and the skill to pick it up and use it.",
       "activation": "",
@@ -1936,7 +1936,7 @@
     {
       "id": "ice-breaker",
       "name": "ICE Breaker",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Computers",
       "flavor": "Network security programs are built to be resilient, redundant, and relentless. A purpose-built kill program is built to be faster. The contest between intrusion countermeasures and the tools designed to shatter them is an arms race with no finish line, and today's unbreakable defense is tomorrow's solved problem.",
@@ -1961,7 +1961,7 @@
     {
       "id": "payload-injection",
       "name": "Payload Injection",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Computers",
       "flavor": "Access without purpose is just exposure. A well-designed payload leaves the door it entered by undetectable while the damage compounds behind it.",
@@ -1986,7 +1986,7 @@
     {
       "id": "puppet-string",
       "name": "Puppet String",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Computers",
       "flavor": "There are things you can do to a T-Doll that have no equivalent in human warfare. Seizing motor control is one of them. It is efficient, tactically sound, and deeply violating. Most operators who have seen it done to an ally never forget the look on their face.",
@@ -2011,8 +2011,8 @@
     {
       "id": "rootkit",
       "name": "Rootkit",
-      "rank": 0,
-      "approach": "—",
+      "rank": 2,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "A rootkit is a piece of software designed to hide itself and its payload from detection. Installing a rootkit on a node allows you to operate on that node without being physically present, making it an invaluable tool for any operator who wants to maintain a foothold in a network without risking exposure.",
       "activation": "",
@@ -2033,8 +2033,8 @@
     {
       "id": "spoof",
       "name": "Spoof",
-      "rank": 0,
-      "approach": "—",
+      "rank": 2,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "Sensors trust their own data. That is their greatest vulnerability. A spoofed feed shows an empty hallway while a team walks through it. A motion sensor registers nothing. A biometric reader accepts a face that was never scanned. The system works perfectly. It is simply wrong.",
       "activation": "",
@@ -2059,7 +2059,7 @@
     {
       "id": "system-rollback",
       "name": "System Rollback",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Computers",
       "flavor": "Closing a breach after an intruder has entered accomplishes little. A full rollback treats the network as if the intrusion never happened.",
@@ -2085,7 +2085,7 @@
     {
       "id": "trace",
       "name": "Trace",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Computers",
       "flavor": "Finding a hacker on a network is like finding a needle in a haystack. Tracing them is like finding the person who dropped the needle in the haystack. It is not easy, but it is possible with the right tools and enough skill.",
@@ -2110,7 +2110,7 @@
     {
       "id": "blackout",
       "name": "Blackout",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Computers",
       "flavor": "Surgical precision has its place. So does pulling the plug on everything at once. A cascading failure does not discriminate between friend and foe, but when the lights go out and every camera, lock, and turret in the building dies simultaneously, the team that planned for darkness has the advantage.",
@@ -2135,7 +2135,7 @@
     {
       "id": "privilege-escalation",
       "name": "Privilege Escalation",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Computers",
       "flavor": "Admin credentials look the same as legitimate ones. The system doesn't ask why you have them. It just opens every door.",
@@ -2160,7 +2160,7 @@
     {
       "id": "quarantine",
       "name": "Quarantine",
-      "rank": 0,
+      "rank": 3,
       "approach": "Resilience",
       "skill": "Computers",
       "flavor": "When containment fails, isolation is the next best thing. Cutting a compromised node off from the rest of the network stops lateral movement cold. Whatever is on that node stays on that node.",
@@ -2186,7 +2186,7 @@
     {
       "id": "siege-engine",
       "name": "Siege Engine",
-      "rank": 0,
+      "rank": 3,
       "approach": "Power",
       "skill": "Computers",
       "flavor": "Most hackers pick locks. A few kick down doors. And then there are those who undermine the foundations until the entire building lists sideways. Sustained assault on a network's core architecture does not just open a path. It makes every path easier for everyone who follows.",
@@ -2211,8 +2211,8 @@
     {
       "id": "total-eclipse",
       "name": "Total Eclipse",
-      "rank": 0,
-      "approach": "—",
+      "rank": 3,
+      "approach": "\u2014",
       "skill": "Computers",
       "flavor": "There is a point past hacking where the distinction between operator and infrastructure dissolves. Administrative control is not a privilege the network grants. It is a condition the network cannot prevent. What follows is total authority, and then total collapse, because no system survives being owned that completely.",
       "activation": "",
@@ -2236,10 +2236,10 @@
       "id": "line-of-absolute-attack",
       "name": "Line of Absolute Attack",
       "rank": 1,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "A remolding unit sweeps energy in a directed band, not a single point. Two adjacent spaces take the hit simultaneously. By the time the targets realize they were in the pattern, the damage is done.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1\u20133 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2254,7 +2254,7 @@
       "opportunities": [
         "(op)+: Remove obscuring terrain from each selected space per (op) spent this way.",
         "(op): Increase the number of adjacent spaces you can target by 1.",
-        "(op): Extend the range of this technique to 1–4 range bands.",
+        "(op): Extend the range of this technique to 1\u20134 range bands.",
         "---"
       ],
       "type": "Remoulding"
@@ -2263,10 +2263,10 @@
       "id": "sweeping-advance",
       "name": "Sweeping Advance",
       "rank": 2,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "Obstacles stop being obstacles once you've run enough collapse energy through them. The sweep doesn't slow down for cover that isn't there anymore.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1\u20133 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2280,7 +2280,7 @@
       "activation": "",
       "opportunities": [
         "(op): Increase the number of adjacent spaces you can target by 1.",
-        "(op): Extend the range of this technique to 1–4 range bands.",
+        "(op): Extend the range of this technique to 1\u20134 range bands.",
         "---"
       ],
       "type": "Remoulding"
@@ -2289,10 +2289,10 @@
       "id": "scorched-horizon",
       "name": "Scorched Horizon",
       "rank": 3,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "Elevated positions offer a tactical advantage right up until the ground beneath them stops existing. Collapse energy doesn't respect high ground.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost. You may also remove elevated terrain from any target space; any creature or doll that was in that elevated terrain suffers a critical strike.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1\u20133 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost. You may also remove elevated terrain from any target space; any creature or doll that was in that elevated terrain suffers a critical strike.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2306,7 +2306,7 @@
       "activation": "",
       "opportunities": [
         "(op): Increase the number of adjacent spaces you can target by 1.",
-        "(op): Extend the range of this technique to 1–4 range bands.",
+        "(op): Extend the range of this technique to 1\u20134 range bands.",
         "---"
       ],
       "type": "Remoulding"
@@ -2315,10 +2315,10 @@
       "id": "vampirism",
       "name": "Vampirism",
       "rank": 1,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "The remolding unit pulls energy out of a target and routes it back through you. Simple in principle. The enemy gets less; you get more. First lesson in applied remolding.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting one enemy 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the target equal to your ranks in Resolve. You recover fatigue equal to your bonus successes.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting one enemy 1\u20133 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the target equal to your ranks in Resolve. You recover fatigue equal to your bonus successes.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2337,10 +2337,10 @@
       "id": "channeled-sacrifice",
       "name": "Channeled Sacrifice",
       "rank": 2,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "Routing drained energy through yourself and then out to someone else takes more precision than keeping it. You give up the recovery. Someone else gets back on their feet instead.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 3 Resolve check targeting one enemy 1–3 range bands away and one ally 0–2 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 3 Resolve check targeting one enemy 1\u20133 range bands away and one ally 0\u20132 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2359,10 +2359,10 @@
       "id": "the-power-to-take-and-give-life",
       "name": "The Power to Take and Give Life",
       "rank": 3,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "A practiced operator can split the output three ways and not lose a step. The enemy pays the cost. The team collects.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check targeting one enemy 1–3 range bands away and one ally 0–2 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check targeting one enemy 1\u20133 range bands away and one ally 0\u20132 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2375,7 +2375,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): Select one additional ally within 0–2 range bands. That ally also recovers fatigue equal to your bonus successes.",
+        "(op)(op): Select one additional ally within 0\u20132 range bands. That ally also recovers fatigue equal to your bonus successes.",
         "---"
       ],
       "type": "Remoulding"
@@ -2384,7 +2384,7 @@
       "id": "unstable-discharge",
       "name": "Unstable Discharge",
       "rank": 1,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "The first time you flood a remolding unit past its limits, the surge doesn't discriminate. Friend or enemy, anything in the immediate area takes the hit. You learn fast to warn your team before you do it again.",
       "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every creature and doll within 1 range band, including allies.",
@@ -2406,7 +2406,7 @@
       "id": "energy-overflow",
       "name": "Energy Overflow",
       "rank": 2,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "Controlled output means the wave goes out, not back in. A shaped emission doesn't care about range; it cares about who it's aimed at.",
       "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every enemy within 2 range bands.",
@@ -2431,7 +2431,7 @@
       "id": "total-saturation",
       "name": "Total Saturation",
       "rank": 3,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "At full output, collapse energy doesn't just burn. It tears. Whatever survives the initial wave is still bleeding, disoriented, and on fire.",
       "activation": "Activation:\n\nAs an Attack action, make a TN 5 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every enemy within 3 range bands. Each enemy hit also suffers the Burning condition.",
@@ -2456,7 +2456,7 @@
       "id": "elemental-aegis",
       "name": "Elemental Aegis",
       "rank": 1,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "Collapse energy can be turned inward as easily as it's directed out. The practical result is a sustained field that makes you considerably harder to put down.",
       "activation": "Activation:\n\nAs a Support action, make a TN 2 Resolve check targeting yourself.\n\nEffects:\n\nIf you succeed, you gain the Resilient and Hardened conditions.",
@@ -2478,10 +2478,10 @@
       "id": "projected-aegis",
       "name": "Projected Aegis",
       "rank": 2,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "Extending the field to someone else means giving up your own coverage. You take the risk. They take the protection. That's the trade.",
-      "activation": "Activation:\n\nAs a Support action, make a TN 3 Resolve check targeting one ally within 0–2 range bands.\n\nEffects:\n\nIf you succeed, your target gains the Resilient and Hardened conditions.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 3 Resolve check targeting one ally within 0\u20132 range bands.\n\nEffects:\n\nIf you succeed, your target gains the Resilient and Hardened conditions.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2500,7 +2500,7 @@
       "id": "iron-sky",
       "name": "Iron Sky",
       "rank": 3,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "A full-coverage field costs everything the unit has. The squad walks through whatever comes next wearing that cost.",
       "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check targeting yourself and all allies within 2 range bands.\n\nEffects:\n\nIf you succeed, you and each target ally gain the Resilient and Hardened conditions.",
@@ -2522,7 +2522,7 @@
       "id": "battlefield-logistics",
       "name": "Battlefield Logistics",
       "rank": 1,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "A burst of collapse energy applied to your own frame gets you where you need to be. Tactical repositioning stops being an action tax when the energy is free.",
       "activation": "Activation:\n\nAs a Movement action, make a TN 3 Resolve check.\n\nEffects:\n\nIf you succeed, move up to 2 range bands from your starting position. Alternatively, you may enter elevated terrain adjacent to you without paying any movement penalty.",
@@ -2544,7 +2544,7 @@
       "id": "tactical-relay",
       "name": "Tactical Relay",
       "rank": 2,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "Getting your team into position matters more than getting there yourself. A well-placed ally is worth two who are stuck in the wrong spot.",
       "activation": "Activation:\n\nAs a Movement action, make a TN 3 Resolve check targeting yourself or one ally within 2 range bands.\n\nEffects:\n\nIf you succeed, the target moves up to 3 range bands from their starting position. Alternatively, the target may enter elevated terrain adjacent to them without paying any movement penalty.",
@@ -2566,7 +2566,7 @@
       "id": "forced-displacement",
       "name": "Forced Displacement",
       "rank": 3,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "The collapse burst doesn't care whether the target wants to move. Sending an enemy into a worse position is logistics applied to the other side of the board, and the landing hurts.",
       "activation": "Activation:\n\nAs a Movement action, make a TN 4 Resolve check targeting one character within 3 range bands.\n\nEffects:\n\nIf you succeed, move the target up to 3 range bands from their starting position. If the target is an enemy, they also suffer elemental damage equal to your ranks in Resolve.",
@@ -2588,10 +2588,10 @@
       "id": "terraforming",
       "name": "Terraforming",
       "rank": 1,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "A shockwave of collapse energy doesn't just damage what it touches. It changes it. An open path becomes a hazard in under a second, and the enemy spends the rest of the fight working around it.",
-      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–1 range bands. That area becomes Entangling Terrain until the end of the scene.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0\u20131 range bands. That area becomes Entangling Terrain until the end of the scene.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2604,7 +2604,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): Designate one additional area within 0–1 range bands to also become Entangling Terrain.",
+        "(op)(op): Designate one additional area within 0\u20131 range bands to also become Entangling Terrain.",
         "---"
       ],
       "type": "Remoulding"
@@ -2613,10 +2613,10 @@
       "id": "denial-zone",
       "name": "Denial Zone",
       "rank": 2,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "Entanglement slows people down. Dangerous ground and radiation keep them out entirely. When you need to hold a position rather than just slow someone through it, the distinction matters.",
-      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–1 range bands. That area becomes Entangling, Dangerous, or Radiation Terrain (your choice) until the end of the scene.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0\u20131 range bands. That area becomes Entangling, Dangerous, or Radiation Terrain (your choice) until the end of the scene.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2629,7 +2629,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): Designate one additional area within 0–1 range bands to become terrain of the same type.",
+        "(op)(op): Designate one additional area within 0\u20131 range bands to become terrain of the same type.",
         "---"
       ],
       "type": "Remoulding"
@@ -2638,10 +2638,10 @@
       "id": "total-terrain-dominance",
       "name": "Total Terrain Dominance",
       "rank": 3,
-      "approach": "—",
+      "approach": "\u2014",
       "skill": "Resolve",
       "flavor": "At full output, the environment stops being a backdrop and starts being a piece you control. Raised ground, blinded sight lines, denied zones: the battlefield becomes whatever you need it to be.",
-      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–2 range bands. That area becomes Entangling, Dangerous, Radiation, Elevated, or Obscuring Terrain (your choice) until the end of the scene.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0\u20132 range bands. That area becomes Entangling, Dangerous, Radiation, Elevated, or Obscuring Terrain (your choice) until the end of the scene.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2654,7 +2654,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): Designate one additional area within 0–2 range bands to become terrain of the same type.",
+        "(op)(op): Designate one additional area within 0\u20132 range bands to become terrain of the same type.",
         "---"
       ],
       "type": "Remoulding"
@@ -2664,7 +2664,7 @@
     {
       "id": "ballistic-analysis",
       "name": "Ballistic Analysis",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Science",
       "flavor": "Every bullet tells a story. The angle of impact, the depth of penetration, the pattern of spatter, all of these reveal information about the weapon that fired the shot and the position of the shooter. A trained eye can reconstruct the events of a firefight from nothing but the aftermath.",
@@ -2689,7 +2689,7 @@
     {
       "id": "chemical-analysis",
       "name": "Chemical Analysis",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Science",
       "flavor": "The modern battlefield is awash in chemical compounds, from industrial pollutants to military-grade toxins. Understanding what a substance is, where it came from, and how to counter it can mean the difference between life and death in contaminated environments.",
@@ -2714,7 +2714,7 @@
     {
       "id": "combat-stimulant",
       "name": "Combat Stimulant",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
       "skill": "Medicine",
       "flavor": "Stimulants borrow capability from the future. A medic who understands the pharmacology knows how much to borrow and when to stop.",
@@ -2740,7 +2740,7 @@
     {
       "id": "device-modification",
       "name": "Device Modification",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Mechanics",
       "flavor": "A piece of equipment rarely does exactly what you need it to do in exactly the situation you find yourself in. An engineer who can close that gap is worth more than the equipment itself.",
@@ -2766,7 +2766,7 @@
     {
       "id": "emergency-aid",
       "name": "Emergency Aid",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Medicine",
       "flavor": "Thirty seconds of focused attention and the right supplies can buy a casualty an hour. The medic who can provide both while taking fire earns a debt that cannot be repaid.",
@@ -2792,7 +2792,7 @@
     {
       "id": "emergency-frame-stabilization",
       "name": "Emergency Frame Stabilization",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Mechanics",
       "flavor": "A T-Doll in the field does not have the luxury of a proper repair bay. A technician who can stabilize the most critical damage with what is in the kit is the next best option.",
@@ -2818,7 +2818,7 @@
     {
       "id": "emergency-patch",
       "name": "Emergency Patch",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Mechanics",
       "flavor": "Getting a piece of gear functional right now matters more than getting it fixed correctly later. A rough patch that holds through the engagement buys time to do the job properly.",
@@ -2843,7 +2843,7 @@
     {
       "id": "emergency-triage",
       "name": "Emergency Triage",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Medicine",
       "flavor": "In the aftermath of violence, seconds matter. A trained medic can assess multiple casualties in moments, identifying who needs immediate attention and who can wait. This rapid categorization saves lives when resources are limited and time is short.",
@@ -2868,7 +2868,7 @@
     {
       "id": "examine-for-elid",
       "name": "Examine for ELID",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Science",
       "flavor": "The signs of Collapse infection are distinctive to those who know what to look for. Discoloration of the skin, the texture of emerging crystalline growths, the pattern of silicification. A trained observer can determine how far the disease has progressed without exposing themselves to the radiation the infected emit.",
@@ -2890,7 +2890,7 @@
     {
       "id": "field-dressing",
       "name": "Field Dressing",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Medicine",
       "flavor": "The fundamentals of wound care do not change on a battlefield. What changes is the environment in which you apply them.",
@@ -2915,7 +2915,7 @@
     {
       "id": "field-repair",
       "name": "Field Repair",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Mechanics",
       "flavor": "Most damage in the field is mechanical, and most mechanical damage is reversible with the right tools and enough time. The \"enough time\" part is usually the problem.",
@@ -2940,7 +2940,7 @@
     {
       "id": "grease-the-joints",
       "name": "Grease The Joints",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Mechanics",
       "flavor": "Many small things can affect the fighting ability of a T-Doll, from grit in the joints to a discharged power supply. A skilled technician can identify and address these issues on the fly, keeping their T-Dolls in fighting condition on the battlefield.",
@@ -2965,7 +2965,7 @@
     {
       "id": "group-treatment",
       "name": "Group Treatment",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Medicine",
       "flavor": "When treating multiple casualties, a medic can apply their skills in a way that benefits the whole group. By triaging and administering care efficiently, they can improve the overall survivability of their team.",
@@ -2990,7 +2990,7 @@
     {
       "id": "hazard-detection",
       "name": "Hazard Detection",
-      "rank": 0,
+      "rank": 1,
       "approach": "Fortune",
       "skill": "Science",
       "flavor": "The wastes are filled with invisible killers. Radiation from collapsed fluid reactors, biological agents from abandoned research facilities, chemical residues from old battlefields. The ability to detect these threats before they detect you is essential for survival in contaminated zones.",
@@ -3015,7 +3015,7 @@
     {
       "id": "jury-rig",
       "name": "Jury-Rig",
-      "rank": 0,
+      "rank": 1,
       "approach": "Fortune",
       "skill": "Mechanics",
       "flavor": "Sometimes the correct part is two hundred kilometers away and the engagement starts in five minutes. Jury-rigging is the skill of treating those two facts as a single problem with a single solution.",
@@ -3040,7 +3040,7 @@
     {
       "id": "pain-management",
       "name": "Pain Management",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Medicine",
       "flavor": "Pain is information. Suppressing it is a calculated risk: the patient can function, but the feedback telling them when they are making things worse is gone. A medic who administers pain management accepts responsibility for what the patient can no longer feel.",
@@ -3065,7 +3065,7 @@
     {
       "id": "reserve-power",
       "name": "Reserve Power",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Mechanics",
       "flavor": "An unconscious T-Doll is a sitting duck, but if you can get their systems back online even briefly, they might be able to get back in the fight before the enemy can finish them off.",
@@ -3091,7 +3091,7 @@
     {
       "id": "resuscitation",
       "name": "Resuscitation",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Medicine",
       "flavor": "The window to bring someone back from unconsciousness is narrow. A medic who knows how to open it, and when to stop trying, saves more lives than one who doesn't know either.",
@@ -3117,7 +3117,7 @@
     {
       "id": "sensor-array",
       "name": "Sensor Array",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Mechanics",
       "flavor": "Knowing where the threat is before it knows where you are converts a perimeter from a guessing game into a controlled situation. A well-placed sensor array does that automatically.",
@@ -3143,7 +3143,7 @@
     {
       "id": "stop-the-bleeding",
       "name": "Stop the Bleeding",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Medicine",
       "flavor": "A rapidly bleeding wound can be fatal in minutes. By applying a tourniquet, pressure bandage, or other emergency measures, you can slow or stop the bleeding and prevent a grievous injury from becoming a fatal one.",
@@ -3165,7 +3165,7 @@
     {
       "id": "structural-analysis",
       "name": "Structural Analysis",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Science",
       "flavor": "Every structure has a point where minimal force produces maximum effect. An engineer who reads a building the way a medic reads a patient can find it.",
@@ -3191,7 +3191,7 @@
     {
       "id": "emergency-repair",
       "name": "Emergency Repair",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Mechanics",
       "flavor": "A heavily damaged T-Doll is a liability in the field. A technician who can perform emergency repairs to get them back in fighting shape can turn a liability into an asset, even if it's not a perfect fix.",
@@ -3217,7 +3217,7 @@
     {
       "id": "field-surgery",
       "name": "Field Surgery",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Medicine",
       "flavor": "When a casualty's injuries are too severe for basic first aid, a medic with surgical training can perform emergency procedures in the field to stabilize them. This is a risky endeavor, but it can save lives that would otherwise be lost.",
@@ -3243,7 +3243,7 @@
     {
       "id": "forensic-analysis",
       "name": "Forensic Analysis",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Science",
       "flavor": "The dead cannot speak, but their remains tell stories to those who know how to listen. A thorough examination of a crime scene or corpse can reveal the sequence of events that led to death, providing crucial intelligence about enemy operations, criminal activity, or the nature of a threat.",
@@ -3269,7 +3269,7 @@
     {
       "id": "stabilize-the-dying",
       "name": "Stabilize the Dying",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Medicine",
       "flavor": "When someone is on the brink of death, the right treatment can pull them back from the edge. By applying emergency medical techniques, you can stabilize a dying person and buy them precious time to receive proper care.",
@@ -3294,7 +3294,7 @@
     {
       "id": "chemical-synthesis",
       "name": "Chemical Synthesis",
-      "rank": 0,
+      "rank": 3,
       "approach": "Precision",
       "skill": "Science",
       "flavor": "With the right knowledge and resources, you can create chemical compounds that have a variety of applications, from improvised explosives to makeshift medicines. By understanding the properties of different substances and how to combine them, you can turn raw materials into tools for survival.",
@@ -3316,7 +3316,7 @@
     {
       "id": "jack-of-all-trades",
       "name": "Jack of All Trades",
-      "rank": 0,
+      "rank": 3,
       "approach": "Fortune",
       "skill": "Science",
       "flavor": "All skills share the same fundamental principle: the application of knowledge to achieve a desired outcome. A versatile operator can leverage their understanding of one field to enhance their performance in another, treating their proficiency in one area as a proxy for another when the situation calls for it.",
@@ -3340,7 +3340,7 @@
     {
       "id": "appreciate-the-scenery",
       "name": "Appreciate the Scenery",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience, Fortune",
       "skill": "Arts",
       "flavor": "Sometimes the best way to deal with a tense situation is to take a step back and appreciate the world around you.",
@@ -3366,7 +3366,7 @@
     {
       "id": "artisan-s-appraisal",
       "name": "Artisan's Appraisal",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Arts",
       "flavor": "An artist's work is a reflection of their skills, their emotions, and their intentions. A discerning eye can read between the lines of a painting, the notes of a song, or the movements of a performance to gain insight into the creator's mindset and motivations.",
@@ -3392,7 +3392,7 @@
     {
       "id": "beware-the-smallest-mouse",
       "name": "Beware the Smallest Mouse",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Deception",
       "flavor": "Uninteresting people are often overlooked, and that can be a powerful advantage. A skilled operator can use their unassuming nature to their benefit, slipping under the radar and catching others off guard when they least expect it.",
@@ -3417,7 +3417,7 @@
     {
       "id": "borrowed-courage",
       "name": "Borrowed Courage",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Performance",
       "flavor": "The odds are what they are. What you tell people the odds are is a separate question entirely, and one with a correct answer. A commander who needs their people to hold the line for one more hour has exactly one job: give them a reason to believe the hour is worth it. Truth is optional.",
@@ -3443,7 +3443,7 @@
     {
       "id": "cadence",
       "name": "Cadence",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Deception",
       "flavor": "Every skilled operative develops a private language with their close partners: a word choice, a pause, a gesture that means something entirely different from what it appears to mean. To anyone not listening for it, the conversation is exactly what it sounds like.",
@@ -3469,7 +3469,7 @@
     {
       "id": "field-fortifications",
       "name": "Field Fortifications",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Command",
       "flavor": "Not every battlefield offers natural cover. A skilled commander knows when to make their own. With basic tools, local materials, and disciplined labor, a defensive position can be carved from even the most exposed ground.",
@@ -3495,7 +3495,7 @@
     {
       "id": "get-under-their-skin",
       "name": "Get Under Their Skin",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
       "skill": "Deception",
       "flavor": "Sometimes the best way to manipulate someone is to push them just a little bit too far. A well-placed insult, a carefully timed provocation, or a subtle hint at a hidden weakness can all be used to get under someone's skin and make them more susceptible to your influence.",
@@ -3521,7 +3521,7 @@
     {
       "id": "just-a-joke",
       "name": "Just a Joke",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Deception",
       "flavor": "Schroedinger's Asshole (Noun): A person who, after making a statement, waits until the reaction is clear before confirming whether they were joking or not.",
@@ -3546,7 +3546,7 @@
     {
       "id": "keep-your-cool",
       "name": "Keep Your Cool",
-      "rank": 0,
+      "rank": 1,
       "approach": "Fortune",
       "skill": "Resolve",
       "flavor": "Composure under pressure is not a passive quality. It is something you practice, maintain, and occasionally have to consciously rebuild in the middle of a conversation that is trying very hard to take it from you.",
@@ -3568,7 +3568,7 @@
     {
       "id": "lighten-the-mood",
       "name": "Lighten the Mood",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Performance",
       "flavor": "Tension wears people down. A well-timed game, a clever joke, or a shared moment of levity can break that tension before it breaks the team. The right distraction at the right moment lets everyone breathe again.",
@@ -3594,7 +3594,7 @@
     {
       "id": "marching-orders",
       "name": "Marching Orders",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Performance",
       "flavor": "An army marching on extra rations with a good rhythm moving through the rank and file will outlast one marching in silence every time. Morale is logistics.",
@@ -3623,7 +3623,7 @@
     {
       "id": "operational-insight",
       "name": "Operational Insight",
-      "rank": 0,
+      "rank": 1,
       "approach": "Fortune",
       "skill": "Insight",
       "flavor": "Sometimes the answer to a problem isn't found in data or analysis, but in intuition and pattern recognition. A skilled operator can draw on their experience and subconscious processing to identify solutions that elude more methodical approaches.",
@@ -3650,7 +3650,7 @@
     {
       "id": "read-the-room",
       "name": "Read the Room",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Insight",
       "flavor": "A game is a controlled environment. The rules are fixed, the pieces are known, and the only variable is the person sitting across from you. A careful observer does not just watch the board.",
@@ -3675,7 +3675,7 @@
     {
       "id": "social-manipulation",
       "name": "Social Manipulation",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Culture",
       "flavor": "Social dynamics are a delicate ecosystem. A well-placed compliment here, a subtle criticism there: you can shape conversations without anyone realizing they're being guided. The art isn't in controlling people, but in arranging the circumstances so they control themselves.",
@@ -3701,7 +3701,7 @@
     {
       "id": "strategic-insight",
       "name": "Strategic Insight",
-      "rank": 0,
+      "rank": 1,
       "approach": "Fortune",
       "skill": "Science",
       "flavor": "Knowledge illuminates possibilities that others miss. By sharing expertise or framing information in the right context, an operator can sharpen their team's focus while making threats easier to spot.",
@@ -3727,7 +3727,7 @@
     {
       "id": "tactical-assessment",
       "name": "Tactical Assessment",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Insight",
       "flavor": "Direct criticism often creates defensiveness. A skilled operator presents observations as tactical assessments, framing weaknesses as operational parameters rather than personal failings. This allows allies to address vulnerabilities without losing face.",
@@ -3753,7 +3753,7 @@
     {
       "id": "war-cry",
       "name": "War Cry",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Command",
       "flavor": "Sometimes the best way to fight is to rally your allies and strike fear into your enemies. A well-timed war cry can boost your team's morale, intimidate your opponents, and turn the tide of battle in your favor.",
@@ -3779,7 +3779,7 @@
     {
       "id": "bravado",
       "name": "Bravado",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Performance, Arts",
       "flavor": "Playing up your own strengths can be a powerful way to manipulate how others perceive you. Whether it's a display of confidence, a show of force, or a carefully crafted persona, the right performance can make others see you in a completely different light.",
@@ -3804,7 +3804,7 @@
     {
       "id": "commanding-authority",
       "name": "Commanding Authority",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
       "skill": "Command",
       "flavor": "True authority doesn't need to threaten violence. It establishes boundaries through presence alone, creating social pressure that makes aggression seem unthinkable. A commander with this presence can defuse tensions before they escalate.",
@@ -3830,7 +3830,7 @@
     {
       "id": "commanding-presence",
       "name": "Commanding Presence",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Performance",
       "flavor": "First impressions matter on the battlefield as much as in the boardroom. A commander who enters with authority sets the tone for every interaction that follows, commanding attention and respect from the moment they arrive.",
@@ -3856,7 +3856,7 @@
     {
       "id": "look-out",
       "name": "Look Out!",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Command",
       "flavor": "A timely warning can prevent disaster. By alerting allies to imminent threats and suggesting optimal defensive positions, an operator can turn potential casualties into prepared defenders.",
@@ -3881,7 +3881,7 @@
     {
       "id": "manners-maketh-the-man",
       "name": "Manners maketh the Man",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Command, Culture",
       "flavor": "There are contexts where violence isn't just inadvisable, it's actively improper. A character who knows the rules well enough can make attacking a protected individual cost more than it's worth.",
@@ -3906,7 +3906,7 @@
     {
       "id": "negotiation-tactics",
       "name": "Negotiation Tactics",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
       "skill": "Negotiation",
       "flavor": "\"Of course, there are operational expenses to consider... logistics, hazard pay, contingency funds.\" Every contract has room for negotiation if you know where to look and how to ask. The difference between survival and profit is often just a well-timed pause and the right phrasing.",
@@ -3931,7 +3931,7 @@
     {
       "id": "provocative-challenge",
       "name": "Provocative Challenge",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Performance, Tactics",
       "flavor": "A well-aimed insult can be more effective than a bullet. By targeting an enemy's pride, insecurities, or tactical sensibilities, you can force them into making mistakes they would otherwise avoid.",
@@ -3956,7 +3956,7 @@
     {
       "id": "um-actually",
       "name": "Um, Actually",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Science",
       "flavor": "Some arguments are won by rhetoric. Others are won by arriving with more data than the other person can answer. The distinction matters less than most people think.",
@@ -3982,7 +3982,7 @@
     {
       "id": "bend-with-the-storm",
       "name": "Bend with the Storm",
-      "rank": 0,
+      "rank": 3,
       "approach": "Precision",
       "skill": "Deception",
       "flavor": "Sometimes the best way to weather a storm is to let it pass through you. A skilled operator can use misdirection, half-truths, and carefully crafted impressions to manipulate how others perceive them, creating a false sense of security that can be exploited at the right moment.",
@@ -4007,7 +4007,7 @@
     {
       "id": "bond-of-heroes",
       "name": "Bond of Heroes",
-      "rank": 0,
+      "rank": 3,
       "approach": "Fortune",
       "skill": "Performance",
       "flavor": "Some bonds are forged in the heat of battle. The shared experience of fighting side by side can create a connection that transcends words, allowing allies to draw strength from each other even in the darkest moments.",
@@ -4029,7 +4029,7 @@
     {
       "id": "concession",
       "name": "Concession",
-      "rank": 0,
+      "rank": 3,
       "approach": "Precision",
       "skill": "Negotiation",
       "flavor": "The most effective concession is the one that costs you little but looks like a major victory to the other side. Give them what they think they want, and they will walk right into the position you need them in.",
@@ -4054,7 +4054,7 @@
     {
       "id": "dramatic-entrance",
       "name": "Dramatic Entrance",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Culture",
       "flavor": "Making an entrance is an art form. The right timing, the perfect line, the ideal amount of flair, all of these can combine to create a moment that captivates everyone in the room and sets the tone for the entire conversation.",
@@ -4076,7 +4076,7 @@
     {
       "id": "everyone-has-a-price",
       "name": "Everyone Has a Price",
-      "rank": 0,
+      "rank": 3,
       "approach": "Precision",
       "skill": "Negotiation",
       "flavor": "No one is completely incorruptible. Everyone has something they want, and if you can offer it to them at the right price, you can get them to do things they would never do for free.",
@@ -4101,7 +4101,7 @@
     {
       "id": "intimidation",
       "name": "Intimidation",
-      "rank": 0,
+      "rank": 3,
       "approach": "Power",
       "skill": "Command, Performance",
       "flavor": "Intimidation is not just about making threats. It's about creating an atmosphere of fear and uncertainty that can sap an opponent's will to fight. A powerful display of dominance can make even the bravest adversary think twice before crossing you.",
@@ -4126,7 +4126,7 @@
     {
       "id": "mentorship",
       "name": "Mentorship",
-      "rank": 0,
+      "rank": 3,
       "approach": "Resilience",
       "skill": "Command",
       "flavor": "Experience is the best teacher, but a skilled instructor can accelerate the learning process. By breaking down complex techniques into manageable components and providing clear feedback, a mentor can help others master skills that would otherwise take years to develop.",
@@ -4153,7 +4153,7 @@
     {
       "id": "misdirection",
       "name": "Misdirection",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Deception",
       "flavor": "In games of strategy and social maneuvering, the best move is often the one your opponent doesn't see coming. By controlling what information reaches your adversary, you can guide their decisions while pursuing your true objectives unseen.",
@@ -4179,7 +4179,7 @@
     {
       "id": "perception-is-reality",
       "name": "Perception is Reality",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Culture, Command, Performance",
       "flavor": "Strength and weakness are not fixed qualities. They are perceptions, and perceptions can be changed with the right words, the right timing, and the right audience.",
@@ -4205,7 +4205,7 @@
     {
       "id": "prepared-for-anything",
       "name": "Prepared for Anything",
-      "rank": 0,
+      "rank": 3,
       "approach": "Fortune",
       "skill": "Crafting",
       "flavor": "A good operator doesn't just react to problems. They anticipate them. Through careful planning, resource management, and a touch of foresight, they ensure they have the right tool for the job before the job even begins.",
@@ -4230,7 +4230,7 @@
     {
       "id": "roast",
       "name": "Roast",
-      "rank": 0,
+      "rank": 3,
       "approach": "Power",
       "skill": "Performance",
       "flavor": "Sometimes the best way to get under someone's skin is to say something that hits a little too close to home.",
@@ -4255,7 +4255,7 @@
     {
       "id": "show-off",
       "name": "Show Off",
-      "rank": 0,
+      "rank": 3,
       "approach": "Power",
       "skill": "Arts, Performance",
       "flavor": "Sometimes the best way to get what you want is to make sure everyone knows how good you are at what you do. A well-timed display of skill can earn you admiration, respect, and maybe even a little bit of envy from those around you.",
@@ -4277,7 +4277,7 @@
     {
       "id": "slip-of-the-tongue",
       "name": "Slip of the Tongue",
-      "rank": 0,
+      "rank": 3,
       "approach": "Precision",
       "skill": "Insight",
       "flavor": "People rarely lie outright. They omit, redirect, and let you draw the conclusions they want you to draw. Finding the gap between what someone says and what they know takes patience and a very specific kind of attention.",
@@ -4302,7 +4302,7 @@
     {
       "id": "two-heads-are-better-than-one",
       "name": "Two Heads are Better than One",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Command",
       "flavor": "Two people with identical experience give you one perspective. Two people with different experience give you something more useful: options neither of them would have found alone.",
@@ -4329,8 +4329,8 @@
     {
       "id": "clean-hands",
       "name": "Clean Hands",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Deception",
       "flavor": "Anyone can start a fight. The skill is in finishing one lethally while walking away looking like the victim. Provoke the right response, let them throw the first punch, and by the time the body is cold, every witness in the room saw an accident.",
       "activation": "",
@@ -4354,7 +4354,7 @@
     {
       "id": "field-recon",
       "name": "Field Recon",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Survival",
       "flavor": "Knowledge of the terrain is a force multiplier. A scout who can quickly assess the environment and identify advantageous positions can turn the landscape into an ally, finding cover, chokepoints, and escape routes that others might miss.",
@@ -4382,7 +4382,7 @@
     {
       "id": "friends-in-low-places",
       "name": "Friends in Low Places",
-      "rank": 0,
+      "rank": 1,
       "approach": "Fortune",
       "skill": "Subterfuge",
       "flavor": "In the shadows of the city, information is currency. A well-connected operator can tap into a network of informants, spies, and contacts to gain insights that others can't access. The right piece of information at the right time can be more valuable than any weapon.",
@@ -4407,7 +4407,7 @@
     {
       "id": "improvised-hazard",
       "name": "Improvised Hazard",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Survival",
       "flavor": "Ideal conditions mean overwhelming force, clear sightlines, and perfect positioning. Ideal conditions are rare. A smart operative learns to use whatever is at hand: broken glass cuts feet, a kicked-over shelf forces a detour, and a cloud of dust blinds just as well as any deployment.",
@@ -4432,7 +4432,7 @@
     {
       "id": "phantom-step",
       "name": "Phantom Step",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Stealth",
       "flavor": "Agility helps. So does choosing the right moment to move: the instant a guard looks away, the second a crowd surges, the beat when every eye is somewhere else. The best don't just move quietly. They move invisibly, and the difference is knowing when to go.",
@@ -4457,7 +4457,7 @@
     {
       "id": "poison-blade",
       "name": "Poison Blade",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision",
       "skill": "Blades",
       "flavor": "A blade is a weapon in itself, but it can also be a delivery system. A poisoned blade can strike with the lethality of both the toxin and the steel, and the victim may not even realize they've been hit until it's too late.",
@@ -4483,7 +4483,7 @@
     {
       "id": "scrub",
       "name": "Scrub",
-      "rank": 0,
+      "rank": 1,
       "approach": "Precision, Swiftness",
       "skill": "Subterfuge",
       "flavor": "The difference between a crime and a rumor is documentation. Physical traces, access logs, witness memories: each can be managed or disposed of.",
@@ -4505,7 +4505,7 @@
     {
       "id": "alibi",
       "name": "Alibi",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision, Swiftness",
       "skill": "Stealth, Subterfuge, Deception",
       "flavor": "In the world of espionage and covert operations, a well-constructed alibi can be the difference between a successful mission and a compromised one.",
@@ -4527,9 +4527,9 @@
     {
       "id": "dead-air",
       "name": "Dead Air",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "Most engagements fail at the moment of contact. The sound draws attention, the attention draws response, and the responders close the window. Cut the sound and the window stays open.",
       "activation": "",
       "opportunities": [],
@@ -4552,7 +4552,7 @@
     {
       "id": "ghost-step",
       "name": "Ghost Step",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Conditioning",
       "flavor": "Elite operatives do not move around a building; they move through it. Walls, gaps, locked gates, and uneven debris are not obstacles to someone who treats the entire environment as a route. The best make it look effortless. They are simply somewhere else by the time anyone thinks to look.",
@@ -4578,7 +4578,7 @@
     {
       "id": "prepared-ambush",
       "name": "Prepared Ambush",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Conditioning",
       "flavor": "An ambush is not just about striking first. It's about controlling the moment of engagement, dictating the terms of the fight, and using the environment to your advantage. A well-prepared ambush can turn a dangerous encounter into a decisive victory.",
@@ -4604,9 +4604,9 @@
     {
       "id": "silent-strike",
       "name": "Silent Strike",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "There is no such thing as a fair fight. There is only the fight you walked into and the one you set up. A disoriented target, a suppressed barrel, and a clear angle: one of these is a circumstance. All three is a decision.",
       "activation": "",
       "opportunities": [],
@@ -4630,7 +4630,7 @@
     {
       "id": "volatile-dispersal",
       "name": "Volatile Dispersal",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Science",
       "flavor": "Not every weapon is built to kill outright. A well-deployed chemical payload does something more economical: it denies ground, degrades performance, and forces opponents to choose between breathing and fighting. Operators who understand chemistry understand that the most dangerous thing in a room does not always have a trigger.",
@@ -4648,7 +4648,7 @@
       "activation": "",
       "opportunities": [
         "Swiftness (op): Move 1 range band.",
-        "(op)+: The area at range 0–2 of your position gains the Obscuring and Dangerous terrain qualities until the end of the scene.",
+        "(op)+: The area at range 0\u20132 of your position gains the Obscuring and Dangerous terrain qualities until the end of the scene.",
         "(op)+: One target per (op) spent this way suffers a critical strike with severity 2.",
         "---"
       ],
@@ -4657,9 +4657,9 @@
     {
       "id": "what-s-yours-is-mine",
       "name": "What's Yours Is Mine",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
-      "skill": "—",
+      "skill": "\u2014",
       "flavor": "A skilled thief can take more than just a target's possessions. They can take their sense of security, their confidence, and even their breath. A well-timed strike can leave an opponent not just empty-handed, but vulnerable in every way.",
       "activation": "",
       "opportunities": [],
@@ -4684,7 +4684,7 @@
     {
       "id": "call-the-wild",
       "name": "Call the Wild",
-      "rank": 0,
+      "rank": 3,
       "approach": "Power",
       "skill": "Survival",
       "flavor": "An animal companion can be more than just a pet. With the right training and bond, they can become a fierce ally in combat, capable of turning the tide of battle with their strength and ferocity.",
@@ -4710,9 +4710,9 @@
     {
       "id": "silent-assassin",
       "name": "Silent Assassin",
-      "rank": 0,
-      "approach": "—",
-      "skill": "—",
+      "rank": 3,
+      "approach": "\u2014",
+      "skill": "\u2014",
       "flavor": "There is a category of professional beyond deadly: the kind you only discover after the fact. No raised alarm. No struggle. Just stillness, and then a room full of bodies, each taken so cleanly that the last one never knew the first was already gone.",
       "activation": "",
       "opportunities": [],
@@ -4735,7 +4735,7 @@
     {
       "id": "vanishing-act",
       "name": "Vanishing Act",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Survival",
       "flavor": "The best way to win a fight is to avoid it entirely. A skilled operator can use the environment to disappear from sight, slipping away from danger and leaving their opponents grasping at shadows.",
@@ -4764,7 +4764,7 @@
     {
       "id": "bumper-tag",
       "name": "Bumper Tag",
-      "rank": 0,
+      "rank": 1,
       "approach": "Power",
       "skill": "Piloting",
       "flavor": "Two tons of steel at speed is a statement. The best way to deliver it is through a rear bumper. Physics does the rest.",
@@ -4790,7 +4790,7 @@
     {
       "id": "dirty-windshield",
       "name": "Dirty Windshield",
-      "rank": 0,
+      "rank": 1,
       "approach": "Resilience",
       "skill": "Piloting",
       "flavor": "A clean line of sight is a gift from your opponent. Gravel, dust, water, debris. The road is full of material that can be weaponized with a hard turn and the right application of throttle.",
@@ -4816,8 +4816,8 @@
     {
       "id": "drive-by-directive",
       "name": "Drive-By Directive",
-      "rank": 0,
-      "approach": "—",
+      "rank": 1,
+      "approach": "\u2014",
       "skill": "Firearms",
       "flavor": "The wheel in one hand, a sidearm in the other. Most people can manage one of those tasks competently. Doing both at speed requires a different kind of coordination, the kind earned by running enough pursuits to lose count.",
       "activation": "",
@@ -4842,7 +4842,7 @@
     {
       "id": "j-turn",
       "name": "J-Turn",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Piloting",
       "flavor": "Everyone expects the pursued to keep running. A J-turn exploits that assumption. You spin and face them. The drivers who were already falling behind see the move develop and round on you at their leisure. The aggressive ones eat two blocks of overshoot.",
@@ -4868,7 +4868,7 @@
     {
       "id": "lead-foot",
       "name": "Lead Foot",
-      "rank": 0,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Piloting",
       "flavor": "Most drivers flinch when the needle climbs. You lean in. The engine has more to give and your foot already knows the question.",
@@ -4894,7 +4894,7 @@
     {
       "id": "rapid-transit",
       "name": "Rapid Transit",
-      "rank": 0,
+      "rank": 1,
       "approach": "Fortune",
       "skill": "Piloting",
       "flavor": "Efficiency in movement is a tactical advantage. An operator who knows how to optimize routes, anticipate obstacles, and maintain momentum can cover ground faster than anyone expects, turning distance into a manageable variable rather than a constraint.",
@@ -4919,7 +4919,7 @@
     {
       "id": "chicken",
       "name": "Chicken",
-      "rank": 0,
+      "rank": 2,
       "approach": "Power",
       "skill": "Resolve",
       "flavor": "Two vehicles on a collision course. Whoever blinks loses ground. If neither does, both cars eat the closing speed. The one with the heavier frame walks away less broken.",
@@ -4941,7 +4941,7 @@
     {
       "id": "pit-maneuver",
       "name": "PIT Maneuver",
-      "rank": 0,
+      "rank": 2,
       "approach": "Precision",
       "skill": "Piloting",
       "flavor": "The rear quarter panel of a vehicle is a lever. One tap in the right place spins the target with its own momentum. Physics does not give them a choice.",
@@ -4966,7 +4966,7 @@
     {
       "id": "ride-the-line",
       "name": "Ride the Line",
-      "rank": 0,
+      "rank": 2,
       "approach": "Fortune",
       "skill": "Piloting",
       "flavor": "Every driver has a limit. Most discover it by crossing it. Skill helps you stay on the road. Nerve keeps your foot in the throttle when every instinct says brake.",
@@ -4991,7 +4991,7 @@
     {
       "id": "rolling-fortress",
       "name": "Rolling Fortress",
-      "rank": 0,
+      "rank": 2,
       "approach": "Resilience",
       "skill": "Tactics",
       "flavor": "A vehicle parked between your team and incoming fire is better than any wall you could build in the same time. Steel body panels and an engine block absorb rounds that would otherwise find flesh.",
@@ -5013,7 +5013,7 @@
     {
       "id": "thread-the-needle",
       "name": "Thread the Needle",
-      "rank": 0,
+      "rank": 2,
       "approach": "Swiftness",
       "skill": "Piloting",
       "flavor": "Most drivers see a gap and wonder if they fit. You see the same gap and wonder if you need to slow down. Spatial awareness at speed is training, paid for in paint transfers and close calls.",
@@ -5039,7 +5039,7 @@
     {
       "id": "ghost-ride",
       "name": "Ghost Ride",
-      "rank": 0,
+      "rank": 3,
       "approach": "Fortune",
       "skill": "Piloting",
       "flavor": "Sometimes the vehicle is the weapon and you are the delivery system. Lock the wheel. Pick the line. Jump. Two tons of steel at speed does not care about armor.",
@@ -5065,7 +5065,7 @@
     {
       "id": "push-it-to-the-limit",
       "name": "Push It to the Limit",
-      "rank": 0,
+      "rank": 3,
       "approach": "Resilience",
       "skill": "Piloting",
       "flavor": "The manufacturer put a redline on the tachometer. You have never respected it. The engine screams, the frame shakes, and the gap changes. Whether it closes or widens depends on which side of the chase you are on.",
@@ -5091,7 +5091,7 @@
     {
       "id": "smoke-and-mirrors",
       "name": "Smoke and Mirrors",
-      "rank": 0,
+      "rank": 3,
       "approach": "Swiftness",
       "skill": "Piloting",
       "flavor": "A garage entrance. An off-ramp. A tunnel mouth. The best escapes start with a hard turn into somewhere the pursuers did not expect you to go. By the time they realize what happened, the gap has stretched from meters to memory.",
@@ -5113,7 +5113,7 @@
     {
       "id": "totaled",
       "name": "Totaled",
-      "rank": 0,
+      "rank": 3,
       "approach": "Power",
       "skill": "Piloting",
       "flavor": "There are clean ways to end a chase: a spike strip, a barricade, coordinated radio traffic. Then there is the way that ends with a fireball and paperwork. You are the paperwork kind of problem. A vehicle is a projectile. All it needs is the right trajectory.",

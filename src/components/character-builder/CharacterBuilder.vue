@@ -23,17 +23,12 @@
       </div>
 
       <div class="builder-section">
-        <div class="builder-section-title">Approaches</div>
         <ApproachEditor />
       </div>
 
       <div class="builder-section">
-        <div class="builder-section-title">Skills</div>
         <SkillEditor />
       </div>
-
-      <!-- ======= PART I: ORIGIN ======= -->
-      <SectionDivider label="PART I: ORIGIN" />
 
       <template v-if="isHuman">
         <div class="builder-section">
@@ -112,9 +107,6 @@
         </div>
       </template>
 
-      <!-- ======= PART II: TRAINING ======= -->
-      <SectionDivider label="PART II: TRAINING" />
-
       <div class="builder-section">
         <h2 class="builder-q-heading">Q3: {{ isHuman ? 'Who taught you the trade?' : 'What weapon were you imprinted with?' }}</h2>
         <p class="builder-flavor">{{ isHuman ? 'Select a discipline and one starting technique.' : 'Select a weapon discipline. Spend 16 XP on skills and rank 1 techniques.' }}</p>
@@ -187,9 +179,6 @@
         </div>
       </div>
 
-      <!-- ======= PART III: TRAITS ======= -->
-      <SectionDivider label="PART III: TRAITS" />
-
       <div class="builder-section">
         <h2 class="builder-q-heading">Q4: Why do you fight?</h2>
         <div class="builder-identity-row">
@@ -250,9 +239,6 @@
         </div>
       </div>
 
-      <!-- ======= PART IV: WORLDVIEW ======= -->
-      <SectionDivider label="PART IV: WORLDVIEW" />
-
       <div class="builder-section">
         <h2 class="builder-q-heading">Q8: {{ isHuman ? 'What holds you back?' : 'What is your malfunction?' }}</h2>
         <div class="builder-section-title" style="margin-bottom:4px">Disadvantage</div>
@@ -308,9 +294,6 @@
             :placeholder="isHuman ? 'What keeps you up at night?' : 'What are you most afraid of?'" rows="2"></textarea>
         </div>
       </div>
-
-      <!-- ======= PART V: IDENTITY ======= -->
-      <SectionDivider label="PART V: IDENTITY" />
 
       <div class="builder-section">
         <h2 class="builder-q-heading">Q11: What is your name{{ isHuman ? ', and what does it mean' : ', and how did you get it' }}?</h2>

@@ -42,6 +42,7 @@ const routes = [
   { path: '/skills', name: 'skills', component: () => import('@/views/SkillsPage.vue') },
   { path: '/strife', name: 'strife', component: () => import('@/views/StrifePage.vue') },
   { path: '/weapons-and-armor', name: 'weapons', component: () => import('@/views/WeaponsPage.vue') },
+  { path: '/going-solo', name: 'going-solo', component: () => import('@/views/GoingSoloPage.vue') },
   { path: '/search', name: 'search', component: () => import('@/views/SearchPage.vue') },
 ]
 

@@ -58,6 +58,8 @@
 
     <ContentNavLink to="/building-a-commander" label="Start with your human" />
 
+    <p style="margin-top: 2rem;">Not every group wants to run two characters per player. If your table prefers to play only humans or only T-Dolls, see the <router-link to="/going-solo">Going Solo</router-link> for an alternate creation path.</p>
+
     <PageNav :prev="prev" :next="next" />
   </ContentFrame>
 </template>

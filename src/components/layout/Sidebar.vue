@@ -51,48 +51,12 @@ const sections = [
       { to: '/a-boy-and-his-doll', label: 'A Boy & His Doll' },
       { to: '/building-a-commander', label: 'Building a Commander' },
       { to: '/building-your-t-doll', label: 'Building Your T-Doll' },
+      { to: '/going-solo', label: 'Going Solo (Variant)' },
       { to: '/disciplines', label: 'Disciplines' },
       { to: '/experience', label: 'Experience' },
       { to: '/humanity-and-fame', label: 'Humanity & Fame' },
     ],
-    subSections: [
-      {
-        label: 'Commander Questions',
-        defaultOpen: false,
-        links: [
-          { to: '/building-a-commander#q1', label: 'Where are you from?' },
-          { to: '/building-a-commander#q2', label: 'What kind of job did you have before this one?' },
-          { to: '/building-a-commander#q3', label: 'Who taught you the trade?' },
-          { to: '/building-a-commander#q4', label: 'Why do you fight?' },
-          { to: '/building-a-commander#q5', label: 'Why would you stop?' },
-          { to: '/building-a-commander#q6', label: 'What are Dolls?' },
-          { to: '/building-a-commander#q7', label: 'How did you make your name?' },
-          { to: '/building-a-commander#q8', label: 'What holds you back?' },
-          { to: '/building-a-commander#q9', label: 'What gets you through the day?' },
-          { to: '/building-a-commander#q10', label: 'What keeps you up at night?' },
-          { to: '/building-a-commander#q11', label: 'What is your name, and what does it mean?' },
-          { to: '/building-a-commander#q12', label: 'How does your story end?' },
-        ]
-      },
-      {
-        label: 'T-Doll Questions',
-        defaultOpen: false,
-        links: [
-          { to: '/building-your-t-doll#tdoll-q1', label: 'Who made you, and what is your model number?' },
-          { to: '/building-your-t-doll#tdoll-q2', label: 'What modifications set you apart from the rest of your line?' },
-          { to: '/building-your-t-doll#tdoll-q3', label: 'What weapon were you imprinted with?' },
-          { to: '/building-your-t-doll#tdoll-q4', label: 'Why do you fight?' },
-          { to: '/building-your-t-doll#tdoll-q5', label: 'Why would you stop?' },
-          { to: '/building-your-t-doll#tdoll-q6', label: 'What are Humans?' },
-          { to: '/building-your-t-doll#tdoll-q7', label: 'What is your greatest achievement so far?' },
-          { to: '/building-your-t-doll#tdoll-q8', label: 'What is your malfunction?' },
-          { to: '/building-your-t-doll#tdoll-q9', label: 'What makes you different?' },
-          { to: '/building-your-t-doll#tdoll-q10', label: 'What are you most afraid of?' },
-          { to: '/building-your-t-doll#tdoll-q11', label: 'What is your name, and how did you get it?' },
-          { to: '/building-your-t-doll#tdoll-q12', label: 'How does your story end?' },
-        ]
-      }
-    ]
+
   },
   {
     label: 'World',

@@ -324,7 +324,7 @@ const crumbs = [
 ]
 
 const prev = { to: '/building-a-commander', label: 'Building a Commander' }
-const next = { to: '/disciplines', label: 'Disciplines' }
+const next = { to: '/going-solo', label: 'Going Solo (Variant)' }
 
 const manufacturerTabs = [
   { label: 'IOP', name: 'IOP' },

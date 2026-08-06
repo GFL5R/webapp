@@ -18,7 +18,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Power Attack action check, you may spend (op) in the following way:",
       "opportunities": [
         "Power (op)+: Reduce your target's physical resistance by 1 per (op) spent this way. This effect persists until the end of your next turn.",
         "---"
@@ -68,7 +68,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, expend one explosive device and make a TN 3 Explosives (Power) check targeting one door, wall, or structural barrier at range 0.\n\nEffects:\n\nOn a success, the barrier is destroyed or made passable. Each character at range 0–1 of the breach point not behind cover must resist with a TN 3 Conditioning check (Resilience 2, Swiftness 5) or suffer the Dazed condition and 3 strife.",
       "opportunities": [
         "Power (op): The blast also deals physical damage equal to your ranks in Explosives to each character who fails the resistance check.",
         "Power (op)(op): The breach creates Difficult Terrain at range 0–1 of the breach point.",
@@ -144,7 +144,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per game session at the start of a scene, or as a Support action, you may make a TN 2 Resolve (Swiftness) check targeting one character.\n\nEffects:\n\nIf you succeed, that character treats their Focus as 2 lower (to a minimum of 1) and their Vigilance as 2 higher. This effect persists until the end of the scene.",
       "opportunities": [
         "Swiftness (op)+: Choose one additional target per (op) spent this way.",
         "Swiftness (op): This effect persists until the end of the next scene instead.",
@@ -170,7 +170,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Power Attack action check, you may spend (op) in the following way:",
       "opportunities": [
         "Power (op)+: Your target must resist with a TN 3 Conditioning check (Swiftness 1, Resilience 2), plus 1 to all TNs per additional Power (op) spent this way. If they fail, they suffer the Dazed condition and fatigue equal to their shortfall.",
         "---"
@@ -195,7 +195,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 3 Crafting (Power) check.\n\nEffects:\n\nOn a success, construct a piece of cover at one position within range 0–1. Characters at range 0 of the cover position gain physical resistance equal to your ranks in Crafting against attacks originating from one direction (chosen when constructing). The fortification persists until destroyed or the end of the scene.",
       "opportunities": [
         "Power (op): The cover also provides concealment from the protected direction, increasing the TN of Attack actions targeting characters behind it by 1.",
         "Power (op)(op): The fortification requires a TN 4 Explosives or Mechanics check to destroy.",
@@ -221,7 +221,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene, after you perform an action that does not require a check, while in a Fortune Stance, you may make a TN 1 Resolve (Fortune) check.\n\nEffects:\n\nIf you succeed, the next time you would gain strife, reduce the amount you recieve by 3, plus 1 per two bonus successes. This effect persists until the start of your next turn.",
       "opportunities": [
         "Fortune (op): This effect applies each time you would receive strife before the start of your next turn instead.",
         "Fortune (op)(op): You may use this technique one additional time this scene.",
@@ -247,7 +247,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack and Support action using a readied firearm, you may make a TN 3 Conditioning (Resilience) check targeting one character at range 0.\n\nEffects:\n\nIf you succeed, your target suffers physical damage equal to 5 plus your bonus successes with deadliness 2.",
       "opportunities": [
         "Power (op)(op)+: Your target must resist with a TN 4 Conditioning check (Precision 2, Swiftness 5) or be pushed 1 range band away from you per (op)(op) spent this way.",
         "---"
@@ -272,7 +272,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you have one or more explosive devices placed in the scene (such as from Landmine or Breach Charge), as a Support action, you may detonate one or more of them simultaneously from any range.\n\nEffects:\n\nEach triggered device detonates according to its normal effects. You do not need to be within any range of the devices to trigger them this way.",
       "opportunities": [
         "Precision (op): Delay the detonation of one device until a trigger condition you specify occurs (a character enters a position, a door opens, etc.). The condition must be observable from the device's location.",
         "Precision (op)(op): Trigger up to 2 additional placed devices with the same action.",
@@ -298,7 +298,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Firearms Attack action check, you may spend (op) in the following way:",
       "opportunities": [
         "(op)(op): If you fail the check, choose one character at range 0–2 of your target whose Vigilance is lower than your target's. That character suffers physical damage equal to your weapon's base damage.",
         "---"
@@ -323,7 +323,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you succeed on a Blades Attack action check, you may spend (op)(op) in the following way:",
       "opportunities": [
         "Swiftness (op)(op): The target must resist with a TN 3 Conditioning (Resilience 4, Swiftness 1) check. On failure, the target suffers the <a href=\"#Conditions::condition-bleeding\">Bleeding</a> condition and fatigue equal to their shortfall.",
         "---"
@@ -348,7 +348,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action while wielding a readied shield, you may make a TN 3 Exotic Weapons (Power) check targeting one character at range 0.\n\nEffects:\n\nIf you succeed, your target suffers physical damage equal to your shield's base damage plus your bonus successes. The target must resist with a TN 4 Conditioning check (Swiftness 3, Precision 5) or suffer the Dazed condition and be pushed 1 range band away from you.",
       "opportunities": [
         "Power (op): If the target fails their resistance check, they also suffer the Prone condition.",
         "Power (op): Increase the damage dealt by your ranks in Conditioning.",
@@ -374,7 +374,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Firearms Attack action check, you may spend (op)(op) in the following way:",
       "opportunities": [
         "(op)(op): Move up to 1 range band away from your target, then perform a Strike action with your readied weapon targeting a character you moved away from. The TN of this Strike is equal to that character's Vigilance.",
         "---"
@@ -475,7 +475,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Firearms Attack action check, you may spend (op) in the following way:",
       "opportunities": [
         "(op)+: Choose one character at range 0–2 of your target per (op) spent this way whose Vigilance is lower than your target's. Each chosen character suffers strife equal to your weapon's base damage.",
         "---"
@@ -500,7 +500,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack and Scheme action using a readied melee weapon or unarmed, you may make a Blades or Hand-to-Hand check targeting one character at range 0. The TN is equal to the target's Vigilance, reduced to 1 if either character is currently in Dangerous, Entangling, or Obscuring terrain.\n\nEffects:\n\nIf you succeed, your target suffers the Prone condition and fatigue equal to your ranks in Conditioning.",
       "opportunities": [
         "Power (op)(op): Your target suffers the Immobilized condition instead of Prone.",
         "---"
@@ -525,7 +525,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action using one readied Knife in a one-handed grip, you may make a TN 2 Blades check targeting one character at range 1.\n\nEffects:\n\nYou hurl your knife at the target. If you succeed, you deal physical damage to the target equal to the Knife’s base damage plus your bonus successes. The Knife lands at range in a direction of your choice from the target if they defend against the damage, or embeds in them if they suffer a critical strike.",
       "opportunities": [
         "Precision (op)+: Reduce the TN of the next attack action against the target before the end of your next turn by 1.",
         "---"
@@ -550,7 +550,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhile you perform a Strike action with a shotgun, you may spend (op) in the following way:",
       "opportunities": [
         "Power (op): Decrease the TN to hit your targets by 1.",
         "---"
@@ -575,7 +575,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Crafting (Precision) check to place a concealed trip wire at any position within range 0–1.\n\nEffects:\n\nOn a success, the trip wire is hidden at the target position until triggered or the scene ends. When any character moves through the trapped position, they must resist with a TN 3 Conditioning check (Swiftness 2, Resilience 4) or suffer the Prone condition. Triggering the trap also creates an audible disturbance, alerting all characters within range 0–3.",
       "opportunities": [
         "Precision (op): Attach a small explosive or noisemaking device; a character who fails the resistance check also suffers physical damage equal to your ranks in Crafting.",
         "Precision (op)(op): The trip wire is well-concealed; detecting it requires a TN 3 Survival or Insight check, with the TN increased by 1 per bonus success you rolled.",
@@ -601,7 +601,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Blades or Hand-to-Hand Attack action check, you may spend (op) in the following way:",
       "opportunities": [
         "(op): If you succeed, choose one of your target's readied weapons. Your target cannot use that weapon for Attack actions until the end of your next turn.",
         "(op)(op): If you succeed, your target suffers the Immobilized condition instead.",
@@ -653,7 +653,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Combat skill check using the Swiftness or Resilience approach, you may spend (op) in the following way:",
       "opportunities": [
         "Swiftness or Resilience (op)+: Remove one Disoriented or Prone condition from yourself per (op) spent this way.",
         "Swiftness or Resilience (op): If the check would cause you to suffer the Disoriented or Prone condition, you do not suffer it.",
@@ -704,7 +704,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a check to perform a Guard action in a skirmish or a Reinforce action in a mass battle, you may spend (op) as follows:",
       "opportunities": [
         "Resilience (op)+ (Guard): Choose any number of characters in the scene with Focus lower than or equal to your ranks in Performance plus 2 per (op) spent this way. Each chosen character must receive strife equal to your ranks in Performance to perform an Attack or Scheme action targeting any character other than you. This effect persists until the end of your next turn.",
         "Resilience (op)+ (Reinforce): Choose any number of leaders in the scene with Focus lower than or equal to your ranks in Performance plus 2 per (op) spent this way. The enemy army receives panic equal to your ranks in Performance each time any of those leaders performs an Attack or Scheme action targeting any cohort other than yours. This effect persists until the end of your next turn.",
@@ -756,7 +756,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Attack action while wielding a readied shield, you may make a TN 3 Tactics (Swiftness) check targeting one character at range 1–3.\n\nEffects:\n\nIf you succeed, you move into range 0 of your target. Your target must resist with a TN 4 Conditioning check (Swiftness 2, Precision 5) or suffer the Dazed condition.",
       "opportunities": [
         "Swiftness (op): You may immediately perform a Strike action with your shield or a readied one-handed weapon.",
         "Swiftness (op): The target suffers the Disoriented condition in addition to Dazed.",
@@ -782,7 +782,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Attack action while wielding a readied bladed weapon, you may make a TN 3 Blades (Swiftness) check targeting one character at range 1–3.\n\nEffects:\n\nIf you succeed, you move into melee range with your target (range 0) and your target suffers physical damage equal to your Swiftness approach value. The target must resist with a TN 4 Conditioning check (TN 2 Resilience, TN 5 Power); if they fail, increase the physical damage they suffer by your weapon's base damage.",
       "opportunities": [
         "Swiftness (op): Remove the Dazed, Disoriented, Immobilized, or Prone condition from yourself.",
         "---"
@@ -880,7 +880,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per Scene, as a support action using one readied weapon, you may make a Tactics (Resilience) check.\n\nEffects:\n\nIf you succeed, other characters in the scene cannot select your allies as a target if they could select you instead. This effect persists for a number of rounds equal to your Fortification Value (minimum 1).",
       "opportunities": [
         "Resilience (op)+: If you succeed, increase the TN of Attack and Scheme actions targeting you by 1 per (op) spent this way.",
         "---"
@@ -905,7 +905,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you perform a Guard action without moving any range bands this turn, you may spend (op) in the following way:",
       "opportunities": [
         "Fortune (op)(op)+: Choose one character you can perceive per (op)(op) spent this way. On the next check to defend against that character's physical damage before the start of your next turn, your fatigue cannot exceed your Endurance as a result of that attack.",
         "---"
@@ -930,7 +930,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a check to perform a Strike action, you may spend (op) as follows:",
       "opportunities": [
         "Precision (op)+: If your target's vigilance is lower than your ranks in Insight plus the number of (op) spent this way, choose one of the following disclosure categories: approaches (learn one of the target's approach values), conditions (learn all conditions the target is currently suffering), or techniques (the target reveals one combat technique they possess, chosen by the target).",
         "---"
@@ -955,7 +955,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Scheme action, you may make a Performance (Swiftness) check targeting one character in the scene who is observing you. The TN is equal to the target's Vigilance. This technique can only be used during skirmish and mass battle conflicts.\n\nEffects:\n\nIf you succeed, the target believes you are weaker than you actually are (or stronger, if you are feigning strength), and adjusts their actions accordingly. The GM determines how the target's behavior changes based on the situation and the nature of the feigned state.",
       "opportunities": [
         "Swiftness (op)+: Choose one additional target with Vigilance lower than or equal to the original target's per (op) spent this way.",
         "Swiftness (op)+: In a mass battle, increase the TN of Attack checks targeting your cohort by 1, plus 1 per additional (op)(op) spent this way.",
@@ -1030,7 +1030,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action using unarmed or a readied melee weapon, you may make a Hand-to-Hand (Fortune) check targeting one character at range 0. The TN is equal to the silhouette of the target (Minimum 1).\n\nEffects:\n\nIf you succeed, both you and the target suffer the Immobilized condition and you count as granting assistance to all characters who perform Attack actions against your target. This effect persists until the beginning of your next turn.",
       "opportunities": [
         "Fortune (op): If you succeed, your target must resist with a Conditioning check or suffer physical damage equal to its silhouette, ignoring resistance, and suffer the prone condition. The TN of this check is equal to your Fortification Value.",
         "---"
@@ -1080,7 +1080,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make an Attack action check, you may spend (op) in the following way:",
       "opportunities": [
         "(op)(op): If your target is Disoriented or Prone, treat your weapon's damage and deadliness as increased by your ranks in Survival for this check.",
         "---"
@@ -1105,7 +1105,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Attack action, you may make a TN 2 Survival (Swiftness) check.\n\nEffects:\n\nIf you succeed, you find and ready an improvised weapon of your choice, the GM has final say on what is available. The weapon's base damage is equal to your ranks in Survival, and it has the same range and deadliness as a typical melee weapon. The weapon persists until the end of the scene, at which point it gains the Destroyed quality.",
       "opportunities": [
         "Swiftness (op)(op): You may immediately perform a Strike action using the readied weapon.",
         "Swiftness (op)(op)(op): If you succeed, choose one of the following item qualities:",
@@ -1131,7 +1131,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen an Attack action targets a character at range 0 of you, you may spend 1 Fortune Point to intercept the attack. You become the target of the attack instead.",
       "opportunities": [
         "Resilience (op): If you succeed on your resistance check, reduce the damage you suffer by an amount equal to your ranks in Conditioning.",
         "Resilience (op)(op): If you succeed on your resistance check, the attacker suffers strife equal to your ranks in Tactics.",
@@ -1182,7 +1182,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Support action, you may make a TN 3 Explosives (Precision) check and expend one explosive device you are carrying to place a concealed mine at a target position at range 0–1.\n\nEffects:\n\nIf you succeed, the mine is hidden at the target position until the end of the scene. Mines detonate indiscriminately and cannot distinguish ally from enemy. A character who is actively searching may detect the mine with a Survival or Insight check with a TN equal to your bonus successes (minimum 1). When any character or unit enters range 0 of the target position, the mine detonates. Some or all of the following occur based on the scene type: (Skirmish/Other Scene) Each character at range 0–2 of the detonation point suffers physical damage equal to your ranks in Explosives plus your bonus successes, suffers the Dazed condition, and receives 3 strife. Items at range 0–1 of the detonation point gain the Damaged quality. (Mass Battle) The unit that triggered the mine suffers a morale setback; their commander must immediately make a TN 3 Command check or that unit cannot be ordered this round. Additionally, that unit suffers casualties equal to your ranks in Explosives plus your bonus successes for the purpose of determining its combat effectiveness this round. (Mass Battle) If the mine was placed inside or at the threshold of a fortification or chokepoint, reduce the effective defense value of that position by 1 for the remainder of the battle round.",
       "opportunities": [
         "(op)(op): Any item or structure damaged by this effect gains the Destroyed quality instead of Damaged.",
         "(op)(op): The area at range 0–2 of the detonation point gains the Dangerous and Obscuring terrain qualities until the end of the round.",
@@ -1260,7 +1260,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an attack and Movement action using a readied weapon, you may make a TN 4 Combat (Power) check using the appropriate skill for that weapon.\n\nEffects:\n\nIf you succeed, your target suffers a critical strike with severity equal to your weapon's deadliness plus your bonus successes. The TN of the Conditioning check to resist this critical strike is 3 (Precision 4, Swiftness 1) instead of the normal TN. If you fail, you suffer the Disoriented condition.",
       "opportunities": [
         "Power (op): Before resolving the effect, move up to 1 range band toward your target.",
         "---"
@@ -1310,7 +1310,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhile you perform a Strike action with a shotgun, you may spend (op) in the following way:",
       "opportunities": [
         "Power (op)(op)+: Decrease all your targets' physical resistance by 1 per (op)(op) spent this way until the start of your next turn.",
         "---"
@@ -1359,7 +1359,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene, as a Support action while wielding a readied shield, you may make a TN 4 Tactics (Resilience) check.\n\nEffects:\n\nIf you succeed, choose a number of characters at range 0–1 equal to your ranks in Tactics. Until the end of your next turn, those characters add your shield's Defensive quality to their physical resistance, and any Attack action targeting them must target you instead if you are a valid target. You cannot move from your current position while this effect is active.",
       "opportunities": [
         "Resilience (op): Increase the range at which you can protect characters by 1 range band.",
         "Resilience (op): You may move up to 1 range band without ending this effect.",
@@ -1411,7 +1411,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you are targeted by an Attack action, if you have an empty hand, you may spend 1 Fortune point to immediately make a Hand-to-Hand (Resilience) check targeting another character at range 0-1 other than the attacker. The TN is the new target's vigilance.\n\nEffects:\n\nIf you succeed, you cease being the target of the attack action, and your target becomes the target of that action instead.",
       "opportunities": [
         "Resilience (op)(op): If you succeed, your also suffers physical damage equal to your ranks in Hand-to-Hand.",
         "Resilience (op)(op): If you succeed, both the attacker and the new target suffer the dazed condition.",
@@ -1463,7 +1463,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a Firearms (Precision) check targeting one character at a range greater than 3. The TN of the attack is equal to the normal TN of the weapon at that range plus the target's vigilance.\n\nEffects:\n\nIf you succeed, the target suffers damage equal to two times the weapon’s base damage plus your bonus successes.",
       "opportunities": [
         "Precision (op):If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon’s deadliness damage plus your bonus successes.",
         "---"
@@ -1512,7 +1512,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene as an Attack and Movement action using a weapon with an ideal range of 5 or greater, you may make a Firearms (Fortune) check targeting one character at range 6 or greater. The TN of this check is equal to your target's vigilance.\n\nEffects:\n\nIf you succeed, at the start of your target's next turn, they suffer a critical strike with severity equal to your weapon's deadliness.",
       "opportunities": [
         "Fortune (op)+: You may delay this effect for one additional round per (op) spent this way. For each round you delay this way, you increase the deadliness of the critical strike by 2.",
         "---"
@@ -1539,7 +1539,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per round as a Support action, you may make a TN 3 Command (Swiftness) check targeting a number of allies equal to your ranks in Command.\n\nEffects:\n\nIf you succeed, each target may immediately switch to a stance of their choice. Additionally, each target may move 1 range band as part of this effect.",
       "opportunities": [
         "Swiftness (op): One additional ally may be targeted per (op) spent this way.",
         "Swiftness (op)(op): Targets may move 2 range bands instead of 1.",
@@ -1566,7 +1566,7 @@
       "approach": "",
       "skill": "",
       "flavor": "*During a Mass Battle:** If you succeed, your forces do not suffer morale collapse regardless of their current panic value, and continue to function normally. This effect persists for one round, plus one additional round per three bonus successes. *During any other scene:** If you succeed, each target ignores the effects of conditions caused by Strife at or above their Composure threshold. This effect persists for one round, plus one additional round per two bonus successes.",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene as a Support action, you may make a TN 5 Command (Fortune) check targeting your cohort or a number of characters who can hear you up to your ranks in Tactics. Reduce the TN of this check to 2 if all targets are in Entangling or Obscuring terrain.\n\nEffects:\n\nDuring a Mass Battle: If you succeed, your forces do not suffer morale collapse regardless of their current panic value, and continue to function normally. This effect persists for one round, plus one additional round per three bonus successes. During any other scene: If you succeed, each target ignores the effects of conditions caused by Strife at or above their Composure threshold. This effect persists for one round, plus one additional round per two bonus successes.",
       "opportunities": [
         "Fortune (op)+ (Skirmish or other scene): Choose one additional target per (op) spent this way.",
         "Fortune (op)(op) (Skirmish or other scene): If you succeed, each target also ignores the effects of being Incapacitated for one round, plus one additional round per two bonus successes.",
@@ -1592,7 +1592,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene, as an Attack and Movement action, you may make a TN 3 Command (Swiftness) check targeting any number of characters in the scene (or one cohort in a mass battle).\n\nEffects:\n\nIf you succeed during a skirmish, each target increases their initiative by your Swiftness approach value plus your bonus successes at the beginning of the next round. If you succeed during a mass battle, one enemy leader's cohort suffers panic equal to your Swiftness approach value plus your bonus successes.",
       "opportunities": [
         "Swiftness (op): During a skirmish, immediately perform a Strike action.",
         "Swiftness (op): During a mass battle, immediately perform an Assault action against the chosen enemy cohort's leader.",
@@ -1618,7 +1618,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene during a Mass Battle as a Scheme action targeting the commander of the enemy army, you may make a Tactics (Precision) check. The TN is equal to the target's vigilance. If you are not your army's commander, you must stake 5 Humanity and 5 Fame on your success. If your cohort is in Obscuring terrain, reduce the TN by 2.\n\nEffects:\n\nIf you succeed, you immediately change your army's current strategic goal to a new goal of your choice. Any momentum points your army had accrued toward the previous goal are applied to this new goal. If you fail and you are not the commander, you lose the staked Humanity and Fame.",
       "opportunities": [
         "Precision (op): Your target remains unaware of your machinations.",
         "Precision (op): Gain 1 momentum point toward your army's current strategic objective.",
@@ -1669,7 +1669,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per session as an Attack and Movement action during a Mass Battle, you may make a Subterfuge (Swiftness) check targeting one enemy unit. The TN is equal to that unit's commander's vigilance. You may expend one explosive device to reduce the TN by 2 (minimum 1).\n\nEffects:\n\nIf you succeed, choose one of the following: Reduce the defense value of a fortification the target unit occupies by 4 plus your bonus successes. If this reduces the defense value to 0 or lower, the fortification is destroyed; the target unit suffers casualties equal to your bonus successes for the purpose of determining its combat effectiveness, and any commander inside suffers a critical strike with severity equal to 6 plus your bonus successes. The fortification the target unit occupies loses the Entangling terrain quality but gains the Dangerous and Obscuring terrain qualities as it catches ablaze. Remove one special ability from the target unit. The ability is restored when the unit resupplies. Additionally, the target unit's commander must resist with a TN 5 Command check (Swiftness 6, Resilience 3) or that unit suffers a morale disruption equal to your ranks in Tactics plus their shortfall, penalizing their next order.",
       "opportunities": [
         "Swiftness (op): If you succeed, the target unit's commander suffers a critical strike with severity equal to 6 plus your bonus successes.",
         "Swiftness (op)(op): The target unit's commander suffers the Dazed condition.",
@@ -1699,7 +1699,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a Computers check at the network's TN.\n\nEffects:\n\nOn success, your avatar becomes hidden. Sentries and operators cannot detect or target you unless they succeed on a Scan or Sweep that covers your node. The cloak persists until you perform any action other than Pause. Traversing links does not break the cloak.",
       "opportunities": [
         "(op): You do not gain Heat from activating this technique.",
         "(op)(op): Traversing a barrier does not break the cloak.",
@@ -1749,7 +1749,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers check at the network's TN, targeting one datastore on a node where you hold a foothold.\n\nEffects:\n\nIf you succeed, you extract the named dataset to your deck or storage device.",
       "opportunities": [
         "(op): You determine whether the data has been tampered with, and if so, by whom.",
         "(op)(op): You extract the data without leaving any trace that it was copied.",
@@ -1775,7 +1775,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers (Precision) check at the network's TN, targeting one node you have access to.\n\nEffects:\n\nOn a success, designate the target node as a Honeypot. The node appears to contain high-value data or administrative access. The next character who attempts to establish a foothold or access data on the Honeypot node must resist with a Computers check at a TN equal to your ranks in Computers, or have their foothold immediately negated and suffer the Disoriented condition.",
       "opportunities": [
         "Precision (op): You are alerted when the Honeypot is triggered, even if the attacker succeeds their resistance check.",
         "Precision (op)(op): The attacker's origin node is revealed to you regardless of whether they succeed.",
@@ -1849,7 +1849,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a Computers (Resilience) check at the network's TN, targeting one fragged sentry or disabled device on your current node.\n\nEffects:\n\nOn success, restore the target. A fragged sentry returns with Integrity equal to half its maximum (rounded up). A disabled device is reactivated and functions normally. The restored target acts on its next available turn.",
       "opportunities": [
         "Resilience (op): The sentry returns with Integrity equal to its full maximum instead.",
         "Resilience (op)(op): The restored sentry or device gains +1 to its Security Rating until the end of the scene.",
@@ -1875,7 +1875,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a Computers check at the network's TN, targeting one character or sentry on your current node.\n\nEffects:\n\nIf you succeed, deal damage to the target equal to your EW Rating plus your bonus successes. Against characters, this is treated as physical damage. Against sentries, this damage is applied directly to their Integrity.",
       "opportunities": [
         "(op)(op): If you succeed, inflict a critical strike on the target with severity equal to your EW Rating plus 2.",
         "---"
@@ -1900,7 +1900,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a Computers (Precision) check at the network's TN, targeting one node.\n\nEffects:\n\nOn a success, reveal the location of all footholds, rootkits, and planted data on the target node. For each threat found, you may spend (op) to negate one of them.",
       "opportunities": [
         "Precision (op): Extend the scan to one adjacent connected node.",
         "Precision (op)(op): Trace one detected intruder's origin node.",
@@ -1926,7 +1926,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers check at the network's TN, targeting one node where you hold a foothold.\n\nEffects:\n\nIf you succeed, you remove all previous traces of your presence on the target node, including any devices you have hijacked, any rootkits you have installed, and any data you have exfiltrated. This does not prevent an operator from detecting that the node was accessed, but it does prevent them from determining who accessed it or what they did. This does not affect actions taken after you use this technique or nodes you do not currently have a foothold on. If you return to the node later, you will need to use this technique again to remove traces of your new activity.",
       "opportunities": [
         "(op)+: You may intentionally leave behind one specific trace of your presence (such as a planted piece of data from the Falsify Data technique) per (op) spent this way.",
         "---"
@@ -1951,7 +1951,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers check at the network's TN, targeting one file or record on a node where you hold a foothold.\n\nEffects:\n\nIf you succeed, you replace the target file or record with a forgery of your design. The forgery is convincing enough to pass casual inspection, but an operator who knows what to look for can detect it with a successful TN 2 Computers check.",
       "opportunities": [
         "(op)+: Increase the difficulty of detecting the forgery by 1 per (op) spent this way.",
         "---"
@@ -1976,7 +1976,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a Computers (Precision) check at the network's TN, targeting one node.\n\nEffects:\n\nOn success, the GM reveals what actions have been performed on the target node during the current scene: which files were accessed, whether data was copied or modified, what devices were interacted with, and what commands were issued. You also learn the number of distinct intruders who have acted on the node, though not their identities.",
       "opportunities": [
         "Precision (op): You identify the skill and approach used for one action taken on the node.",
         "Precision (op)(op): You identify the specific operator responsible for one action taken on the node.",
@@ -2026,7 +2026,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a Computers [Power] check at the network's TN.\n\nEffects:\n\nOn success, deal damage equal to your EW Rating plus your Power plus bonus successes to a sentry on your current node. This damage ignores the first 2 points of the sentry's Integrity for the purpose of determining whether it is fragged.",
       "opportunities": [
         "(op)(op): The sentry is immediately fragged regardless of remaining Integrity.",
         "---"
@@ -2051,7 +2051,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers (Power) check at the network's TN, targeting one node where you hold a foothold.\n\nEffects:\n\nOn a success, deploy a payload with one of the following effects (choose when activating): Disruptive: All checks made on the node have their TN increased by 1 until the end of the scene. Destructive: The node's Security Rating is reduced by 1 for the remainder of the scene (minimum 1). Corruptive: One file or dataset on the node gains the Corrupted quality and is unusable until cleansed.",
       "opportunities": [
         "Power (op): Increase the potency of the chosen effect (TN penalty to 2, Security Rating reduction to 2, or corrupt one additional dataset).",
         "---"
@@ -2076,7 +2076,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers [Swiftness] check at the target's Security Rating.\n\nEffects:\n\nOn success, you may force the target T-Doll to perform one Movement action of your choice on their next turn, before they act normally. The target is aware they are being manipulated.",
       "opportunities": [
         "(op): The target also suffers 3 strife from the violation of their autonomy.",
         "---"
@@ -2125,7 +2125,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers check at the network's TN, targeting one sensor, camera, or input device on a node where you hold a foothold.\n\nEffects:\n\nIf you succeed, the device reports whatever you want it to report for a number of rounds equal to 1 plus your bonus successes. The spoof is convincing enough to pass casual inspection, but an operator who knows what to look for can detect it with a successful TN 2 Computers check.",
       "opportunities": [
         "(op)+: Increase the difficulty of detecting the spoof by 1 per (op) spent this way.",
         "(op)+: The spoof persists for one additional round per (op) spent this way.",
@@ -2151,7 +2151,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers (Resilience) check at the network's TN, targeting one node.\n\nEffects:\n\nOn a success, remove all footholds, rootkits, payloads, and planted data from the target node. The node's Security Rating is restored to its base value. Each character with a foothold on the node must resist with a Computers check at a TN equal to your bonus successes (minimum TN 2) or lose their foothold and suffer the Disoriented condition.",
       "opportunities": [
         "Resilience (op)+: Increase the TN of the resistance check by 1 per (op) spent this way.",
         "Resilience (op)(op): The node's Security Rating is increased by 1 above its base value until the end of the scene.",
@@ -2177,7 +2177,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers (Precision) check at the network's TN, targeting one revealed rootkit or one hacker's avatar on your current node.\n\nEffects:\n\nIf the target is a rootkit, you learn which node on the network the rootkit's owner currently occupies. If the target is a hacker's avatar, you learn their physical location in realspace: the device they are connected through and their approximate position.",
       "opportunities": [
         "Precision (op)(op): The target is unaware they have been traced.",
         "---"
@@ -2202,7 +2202,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, Immediately increase your heat by 3 and make a Computers [Swiftness] check at the network's TN. There is no heat cost associated with failing this technique.\n\nEffects:\n\nOn success, all devices on the target node are disabled for a number of rounds equal to your bonus successes (minimum 1). Sentries on the node are not fragged but cannot act for the same duration. This affects devices indiscriminately; allied and enemy systems alike go dark.",
       "opportunities": [
         "(op): You shield one device of your choice on the node from the blackout.",
         "---"
@@ -2227,7 +2227,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers (Swiftness) check at the network's TN +1, targeting one node where you hold a foothold.\n\nEffects:\n\nOn a success, the node treats you as a Friendly operator for 1 + bonus successes rounds. While Friendly on that node, you do not accumulate Heat for actions taken there and may use Spider techniques that require a Friendly network.",
       "opportunities": [
         "Swiftness (op)(op): The Friendly status extends to one additional node directly connected to the current node.",
         "---"
@@ -2252,7 +2252,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers (Resilience) check at the network's TN, targeting one node within two links of your current position.\n\nEffects:\n\nOn success, all links to and from the target node are sealed with barriers for a number of rounds equal to 1 plus your bonus successes. Characters on the quarantined node cannot traverse links in any direction, and characters outside cannot enter. Sentries on the quarantined node remain active. The barriers created by Quarantine cannot be removed by the Bypass action; only another Spider's System Rollback or the end of the duration removes them.",
       "opportunities": [
         "Resilience (op): You may designate one character (yourself or an ally) who is exempt from the quarantine and may traverse its barriers freely.",
         "Resilience (op)(op): The quarantine also suppresses all active rootkits on the target node for its duration.",
@@ -2278,7 +2278,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, Immediately increase your heat by 3 and make a Computers [Power] check at the network's TN. There is no heat cost associated with failing this technique.\n\nEffects:\n\nOn success, the network's Security Rating is reduced by 1 for the remainder of the scene (to a minimum of 1). This affects the TN of all checks against the network for all characters, including allies. This technique can only be used once per scene.",
       "opportunities": [
         "(op)(op): The Security Rating is reduced by 2 instead.",
         "---"
@@ -2329,7 +2329,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces.",
       "opportunities": [
         "(op)+: Remove obscuring terrain from each selected space per (op) spent this way.",
         "(op): Increase the number of adjacent spaces you can target by 1.",
@@ -2356,7 +2356,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost.",
       "opportunities": [
         "(op): Increase the number of adjacent spaces you can target by 1.",
         "(op): Extend the range of this technique to 1–4 range bands.",
@@ -2382,7 +2382,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost. You may also remove elevated terrain from any target space; any creature or doll that was in that elevated terrain suffers a critical strike.",
       "opportunities": [
         "(op): Increase the number of adjacent spaces you can target by 1.",
         "(op): Extend the range of this technique to 1–4 range bands.",
@@ -2452,7 +2452,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check targeting one enemy 1–3 range bands away and one ally 0–2 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
       "opportunities": [
         "(op)(op): Select one additional ally within 0–2 range bands. That ally also recovers fatigue equal to your bonus successes.",
         "---"
@@ -2499,7 +2499,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every enemy within 2 range bands.",
       "opportunities": [
         "(op)(op): Each enemy hit also suffers the Burning condition.",
         "---"
@@ -2524,7 +2524,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 5 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every enemy within 3 range bands. Each enemy hit also suffers the Burning condition.",
       "opportunities": [
         "(op)(op): Each enemy hit also suffers the Bleeding and Dazed conditions.",
         "---"
@@ -2681,7 +2681,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–1 range bands. That area becomes Entangling Terrain until the end of the scene.",
       "opportunities": [
         "(op)(op): Designate one additional area within 0–1 range bands to also become Entangling Terrain.",
         "---"
@@ -2706,7 +2706,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–1 range bands. That area becomes Entangling, Dangerous, or Radiation Terrain (your choice) until the end of the scene.",
       "opportunities": [
         "(op)(op): Designate one additional area within 0–1 range bands to become terrain of the same type.",
         "---"
@@ -2731,7 +2731,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–2 range bands. That area becomes Entangling, Dangerous, Radiation, Elevated, or Obscuring Terrain (your choice) until the end of the scene.",
       "opportunities": [
         "(op)(op): Designate one additional area within 0–2 range bands to become terrain of the same type.",
         "---"
@@ -2758,7 +2758,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nMake a TN 2 Science (Precision) check to analyze ballistic evidence such as wounds, bullet impacts, or blast patterns.\n\nEffects:\n\nOn a success, you determine the approximate location of the attack's origin point.",
       "opportunities": [
         "Precision (op): Determine additional details about the weapon used, including its Damage and Deadliness.",
         "---"
@@ -2783,7 +2783,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nMake a TN 2 Science (Resilience) check to analyze a chemical sample (liquid, powder, aerosol, or residue).\n\nEffects:\n\nOn a success, you identify its composition and typical properties, and infer likely origin sources or manufacturing methods.",
       "opportunities": [
         "Resilience (op): Determine a method to synthesize or neutralize the substance.",
         "---"
@@ -2808,7 +2808,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Medicine (Power) check targeting one willing character at range 0 (including yourself).\n\nEffects:\n\nOn a success, until the end of the scene, once per round the target may reduce the TN of one check by 1 before rolling. Each time they activate this benefit, they gain 2 strife.",
       "opportunities": [
         "Power (op): The target also removes 3 fatigue immediately.",
         "Power (op)(op): The TN reduction is 2 instead of 1 each time the target activates this benefit.",
@@ -2834,7 +2834,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action (requires tools), make a TN 3 Mechanics (Precision) check targeting one item within reach.\n\nEffects:\n\nOn a success, add or remove one item quality from the target item. The modification lasts until the end of the scene or until deliberately reversed. The GM has final say on which qualities may be added based on the item's nature and available materials.",
       "opportunities": [
         "Precision (op): The modification is permanent until deliberately reversed.",
         "Precision (op)(op): Add or remove a second quality from the same item.",
@@ -2860,7 +2860,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Medicine (Swiftness) check targeting one character at range 0 who is suffering one or more conditions.\n\nEffects:\n\nOn a success, remove one condition of your choice (Bleeding, Dazed, or Disoriented) from the target.",
       "opportunities": [
         "Swiftness (op): Remove one additional eligible condition from the target.",
         "Swiftness (op)(op): The target also removes 2 fatigue.",
@@ -2886,7 +2886,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Mechanics (Swiftness) check targeting one T-Doll at range 0 who is suffering one or more conditions.\n\nEffects:\n\nOn a success, remove one condition of your choice (Bleeding, Dazed, or Disoriented) from the target.",
       "opportunities": [
         "Swiftness (op): Remove one additional eligible condition from the target.",
         "Swiftness (op)(op): The target also removes 2 fatigue.",
@@ -2912,7 +2912,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Mechanics (Swiftness) check targeting one Damaged item or T-Doll at range 0.\n\nEffects:\n\nOn a success, the target item removes the Damaged quality and becomes functional.",
       "opportunities": [
         "Swiftness (op)(op): The repair holds through the next instance of damage the item would normally receive; the item does not gain the Damaged quality from that instance.",
         "---"
@@ -2937,7 +2937,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Medicine (Swiftness) check to assess all characters within range 0-1.\n\nEffects:\n\nOn a success, you identify which characters are injured and the general severity of their wounds, ordered from most critical to least.",
       "opportunities": [
         "Swiftness (op)+: Identify one specific injury per (op) spent this way, in order from most life-threatening to least.",
         "---"
@@ -2986,7 +2986,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Medicine (Precision) check targeting one character at range 0.\n\nEffects:\n\nOn a success, the target removes fatigue equal to 3 plus your bonus successes.",
       "opportunities": [
         "Precision (op): The next Medicine check targeting this character this scene has its TN reduced by 1.",
         "---"
@@ -3011,7 +3011,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action (requires tools), make a TN 3 Mechanics (Precision) check targeting one item at range 0.\n\nEffects:\n\nOn a success, remove the Damaged quality from the target. If the target is Destroyed, it becomes Damaged instead. The repair holds for the remainder of the scene.",
       "opportunities": [
         "Precision (op): Remove any quality the item gained as a result of damage or malfunction.",
         "---"
@@ -3036,7 +3036,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Mechanics (Precision) check targeting one T-Doll at range 0.\n\nEffects:\n\nOn a success, the target removes fatigue equal to 3 plus your bonus successes.",
       "opportunities": [
         "Precision (op): The next Mechanics check targeting this T-Doll this scene has its TN reduced by 1.",
         "---"
@@ -3061,7 +3061,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Medicine (Precision) check.\n\nEffects:\n\nOn a success, choose a number of characters within range 0 (including yourself) up to your ranks in Medicine. Each chosen character removes fatigue equal to your ranks in Medicine and strife equal to your ranks in Insight.",
       "opportunities": [
         "Precision (op): Include one additional character within range 0.",
         "---"
@@ -3086,7 +3086,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Science (Fortune) check to scan for hazards.\n\nEffects:\n\nOn a success, you detect radiation, biological agents, chemical weapons, or other environmental dangers within range 0-3.",
       "opportunities": [
         "Fortune (op): Determine the exact nature and severity of the hazard.",
         "---"
@@ -3111,7 +3111,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene as a Support action, make a TN 3 Mechanics (Fortune) check targeting one broken, Damaged, or Destroyed item.\n\nEffects:\n\nOn a success, the item becomes functional for the rest of the scene regardless of its damage condition. This does not remove the Damaged or Destroyed quality; at the end of the scene, the item reverts to its pre-jury-rig state.",
       "opportunities": [
         "Fortune (op): The jury-rigged item functions as if it also had the Reinforced quality until the end of the scene.",
         "---"
@@ -3136,7 +3136,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Medicine (Resilience) check targeting one character at range 0 (including yourself).\n\nEffects:\n\nOn a success, until the end of the scene, the target ignores the TN penalties from the Lightly Wounded condition. Additionally, until the start of your next turn, the target also ignores the TN penalties from the Heavily Wounded condition.",
       "opportunities": [
         "Resilience (op)(op): Extend the Heavily Wounded benefit until the end of the scene. When the effect ends, the target gains 3 fatigue.",
         "---"
@@ -3161,7 +3161,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 3 Mechanics (Swiftness) check targeting one Unconscious T-Doll at range 0.\n\nEffects:\n\nOn a success, the target removes the Unconscious condition and may act normally on their next turn.",
       "opportunities": [
         "Swiftness (op): The target also removes the Dazed condition.",
         "Swiftness (op)(op): The target also removes 3 fatigue.",
@@ -3187,7 +3187,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 3 Medicine (Swiftness) check targeting one Unconscious character at range 0.\n\nEffects:\n\nOn a success, the target removes the Unconscious condition and may act normally on their next turn.",
       "opportunities": [
         "Swiftness (op): The target also removes the Dazed condition.",
         "Swiftness (op)(op): The target also removes 3 fatigue.",
@@ -3213,7 +3213,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Mechanics (Precision) check.\n\nEffects:\n\nOn a success, deploy a sensor array monitoring all positions within range 0–3 from where it is placed. For the rest of the scene, you are automatically alerted whenever any character enters or exits the monitored area, regardless of their Stealth or concealment.",
       "opportunities": [
         "Precision (op): Determine one additional detail about each detected character per (op) spent this way (direction of approach, approximate count, or whether they carry weapons).",
         "Precision (op)(op): The sensor array is concealed; detecting it requires a TN 4 Survival or Insight check.",
@@ -3263,7 +3263,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Science (Precision) check targeting one structure, barrier, door, or fortification within range 0–3.\n\nEffects:\n\nOn a success, you identify the target's structural weaknesses. Until the end of the scene, you and any ally who has heard your assessment reduce the TN of checks to damage, breach, or demolish the target by 1.",
       "opportunities": [
         "Precision (op): Determine whether the structure is rigged with traps or explosives.",
         "Precision (op)(op): Identify the optimal breach point; reduce the TN by an additional 1 for the character making the breach attempt.",
@@ -3289,7 +3289,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Mechanics (Precision) check targeting one Heavily Wounded or Incapacitated T-Doll at range 0. You must have access to repair tools to use this technique.\n\nEffects:\n\nOn a success, remove the Heavily Wounded condition from the target. If the target was Incapacitated, remove the Incapacitated condition instead; they become Heavily Wounded. Additionally, remove any critical strike affecting the target with severity 3 or lower.",
       "opportunities": [
         "Precision (op): Remove one additional condition (Bleeding or Dazed) from the target.",
         "Precision (op)(op): The target also removes fatigue equal to your ranks in Mechanics.",
@@ -3315,7 +3315,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Medicine (Precision) check targeting one Heavily Wounded or Incapacitated character at range 0. You must have access to medical supplies to use this technique.\n\nEffects:\n\nOn a success, remove the Heavily Wounded condition from the target. If the target was Incapacitated, remove the Incapacitated condition instead; they become Heavily Wounded.",
       "opportunities": [
         "Precision (op): Remove one additional condition (Bleeding or Dazed) from the target.",
         "Precision (op)(op): The target also removes fatigue equal to your ranks in Medicine.",
@@ -3341,7 +3341,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nMake a TN 2 Science (Precision) check to inspect a crime scene or body for forensic clues.\n\nEffects:\n\nOn a success, you determine what happened to the victim, including cause of death and sequence of events.",
       "opportunities": [
         "Precision (op): Determine the number of assailants involved.",
         "Precision (op): Discover a physical trail (blood, footprints, fibers) that reveals the direction the assailant fled.",
@@ -3367,7 +3367,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Medicine (Resilience) check targeting a dying character with the dying condition.\n\nEffects:\n\nOn a success, you stabilize the character, removing the dying condition. The character is no longer at risk of dying from their injuries, but they remain unconscious and require medical attention to recover.",
       "opportunities": [
         "Resilience (op)(op): The character regains consciousness and can act immediately, though they are still heavily injured.",
         "---"
@@ -3442,7 +3442,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Support action check targeting another character while you are both in Dangerous, Entangling, or Obscuring terrain, you may spend (op) in the following ways:",
       "opportunities": [
         "Resilience (op): You and your target each remove strife equal to your ranks in Arts.",
         "Fortune (op): You and your target each add 1 bonus die to their next check made before the end of the scene.",
@@ -3468,7 +3468,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make an Arts or Performance check using the Precision approach to assess an object or performance, you may spend (op) in the following ways:",
       "opportunities": [
         "Precision (op): Choose one Approach. You learn the creator's or performer's rating in that Approach, and any one Advantage or Disadvantage they possess that relates to it (chosen by the GM).",
         "Precision (op): You learn the creator's or performer's emotional state at the time of creation or performance, and what they most wanted from the work.",
@@ -3494,7 +3494,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Social skill check using the Swiftness approach targeting one or more characters, you may spend (op) in the following way:",
       "opportunities": [
         "Swiftness (op)(op)+: While interacting with you, the target treats their vigilance as 1 lower per (op)(op) spent this way, and reduces the TN of their Social skill checks targeting you by 1. This effect persists until the end of the scene.",
         "---"
@@ -3519,7 +3519,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a downtime activity, you may make a TN 4 Performance (Precision) check targeting an army or a number of characters who can hear you up to your ranks in Insight. You may stake up to 3 Fame to reduce the TN by that amount (minimum 1) to embroider the truth.\n\nEffects:\n\nIf you succeed, you spread a powerful rumor of your enemy's weakness, of reinforcements certain to arrive, or of some other hidden advantage. The first time each target would receive panic or Strife during the next scene, reduce the amount they receive by your ranks in Performance (minimum 0). Whether you succeed or fail, if your side loses the battle, you lose your staked Fame (your promises proved empty). There may also be narrative consequences if individuals remember what you told them.",
       "opportunities": [
         "Precision (op): If you fail, no one can quite recall the specifics of what you said. There are no narrative social consequences for the fabrication.",
         "Precision (op): If you succeed, add 1 bonus die to the first Scheme action check you make during the next scene.",
@@ -3545,7 +3545,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Social skill check using the Precision approach, you may spend (op) in the following ways:",
       "opportunities": [
         "Precision (op): Convey a secret message that alters or contradicts the outward meaning of what you are saying to one character observing you who possesses this technique.",
         "Precision (op)(op): Convey a secret message that alters or contradicts the outward meaning of what you are saying to one character observing you who does not possess this technique.",
@@ -3571,7 +3571,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a downtime activity or a Support action during a mass battle, using adequate supplies and a suitable area, you may make a TN 3 Command (Resilience) check targeting a position you can reach.\n\nEffects:\n\nIf you succeed, you erect a defensive structure of trenches or short barricades in the area. In a mass battle, this structure is treated as a fortification with difficulty value equal to your ranks in Crafting plus your bonus successes, which reduces attrition suffered by the cohort occupying it by 2. In a skirmish, this structure is treated as Obscuring terrain by anyone attacking those inside from outside. This structure is temporary, and degrades completely if left to the elements for more than a few days. It can be maintained with a TN 2 Crafting (Resilience) check as a downtime activity, which might need to be made more frequently in harsh weather conditions such as rain or snow.",
       "opportunities": [
         "Resilience (op): When you perform the Reinforce action in this fortification during a mass battle, treat the TN as reduced by 1 (to a minimum of 1).",
         "Resilience (op)(op)+: Add one of the following terrain qualities per (op)(op) spent this way to the area extending from range 1-3 around the building: Dangerous, Entangling, Obscuring, or Recessed. During a mass battle, enemies attacking a cohort in the fortification are treated as being in terrain with the added qualities.",
@@ -3597,7 +3597,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen making a Social skill (Power) check targeting one or more characters, you may spend (op) in the following way:",
       "opportunities": [
         "Power (op)+: One target gains the Dazed condition per (op) spent this way.",
         "Power (op)(op)+: One target gains the Enraged condition per (op)(op) spent this way.",
@@ -3623,7 +3623,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Social skill check using Swiftness, you may spend (op) in the following way:",
       "opportunities": [
         "Swiftness (op)+: If you lost Humanity as part of this check by saying something crass, rude, or deliberately provocative, regain 1 Humanity per (op) spent this way.",
         "---"
@@ -3672,7 +3672,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Social skill check using the Swiftness approach during a game or lighthearted activity, you may spend (op) in the following ways:",
       "opportunities": [
         "Swiftness (op)+: Choose one participant in the game or an observer. Remove 1 strife per opportunity spent from that participant.",
         "Swiftness (op)(op)(op): Remove 1 strife from each participant and observer instead.",
@@ -3698,7 +3698,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a downtime activity, you may make a TN 4 Performance (Swiftness) check targeting an army or a number of characters traveling with you up to your ranks in Command. You may expend an additional day's rations (army rations for an army, individual rations per individual) to reduce the TN by 2 (minimum 1).\n\nEffects:\n\nIf you succeed, you and your targets cover the distance they would normally travel in that time, regardless of terrain penalties from the march.",
       "opportunities": [
         "Swiftness (op): If your target is an army, it removes attrition up to your ranks in Medicine.",
         "Swiftness (op): If your target is an army, it removes panic up to your ranks in Culture.",
@@ -3727,7 +3727,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per session, when you make a check to recall information, solve a puzzle, or understand a complex situation, you may spend (op) in the following ways:",
       "opportunities": [
         "Fortune (op): The GM provides you with a hint or clue related to the current situation. The usefulness of this hint is proportional to your ranks in Insight.",
         "Fortune (op)(op): You gain a flash of insight about a character in the scene. The GM reveals one of their Advantages, Disadvantages, or a technique they possess that is relevant to the current situation.",
@@ -3754,7 +3754,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, you may make an Insight (Precision) check targeting one opponent in a game you are playing with them. The TN of this check is equal to the target's vigilance.\n\nEffects:\n\nIf you succeed, choose one skill from the following: Tactics, any Combat skill, or any Social skill. You learn your target's ranks in that skill. Choose one additional skill to learn per bonus success.",
       "opportunities": [
         "Precision (op)(op): You learn all of your target's Advantages and Disadvantages that relate to mental acuity, willpower, or social behavior (chosen by the GM).",
         "---"
@@ -3779,7 +3779,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene, as a Scheme and Support action, you may make a Culture (Swiftness) or Tactics (Swiftness) check targeting two other characters who are not hostile to each other. The TN of the check is equal to the highest Vigilance among your targets.\n\nEffects:\n\nIf you succeed, choose one target and increase the TN of their next check by 2. Decrease the TN of the other target's check by 2. This effect persists until the end of your next turn.",
       "opportunities": [
         "Swiftness (op): Neither of your targets realizes your duplicity in hindering one to help the other.",
         "Swiftness (op)(op): You can use this technique one additional time this scene.",
@@ -3805,7 +3805,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per session at the start of a scene, or as a Support action, you may make a TN 2 Science (Fortune) check targeting one character.\n\nEffects:\n\nIf you succeed, that character treats their vigilance as 2 lower (to a minimum of 1) and their focus as 2 higher. This effect persists until the end of the scene.",
       "opportunities": [
         "Fortune (op)+: Choose one additional target per (op) spent this way.",
         "Fortune (op): This effect persists until the end of the next scene instead.",
@@ -3831,7 +3831,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, you may make a TN 2 Insight (Resilience) check to appraise the weaknesses of a character.\n\nEffects:\n\nIf you succeed, choose one of the target's known disadvantages. The target does not apply that disadvantage to their checks until the end of the scene.",
       "opportunities": [
         "Resilience (op)+: Choose one additional disadvantage per (op) spent this way.",
         "Resilience (op)(op): Reduce the TN of the target's next skill check using the Approach the disadvantage is attached to by 2.",
@@ -3857,7 +3857,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene as a Support action, you may make a TN 2 Command (Resilience) check targeting one character within earshot.\n\nEffects:\n\nIf you succeed and your target's Strife equals or exceeds their Composure, they remove Strife until their Strife is equal to their Composure minus 1. If you succeed and your target's Fatigue equals or exceeds their Endurance, they remove Fatigue until their Fatigue is equal to their Endurance minus 1.",
       "opportunities": [
         "Resilience (op)(op): You may use this technique one additional time this scene.",
         "Resilience (op)(op)(op): This technique instead targets any number of qualifying characters within earshot.",
@@ -3883,7 +3883,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, you may make a Performance or Arts (Power) check targeting any number of characters in the scene.\n\nEffects:\n\nIf you succeed, each target perceives your Fame as 10 higher or lower than its actual value (your choice), plus or minus an additional 10 per bonus success (maximum 100, minimum 0). If you do anything that could call your Fame into question, any character may resist with a TN 4 Insight check (Precision 5, Swiftness 2) to determine your actual Fame. This effect persists until the end of the scene.",
       "opportunities": [
         "Power (op): Choose one character in the scene. You learn whether their Fame is higher or lower than your own actual value.",
         "---"
@@ -3908,7 +3908,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per game session as an action, you may make a Command (Fortune) check targeting a number of characters up to your ranks in Command. The TN of this check is equal to the vigilance of the character with the highest Fame among your targets.\n\nEffects:\n\nIf you succeed, your targets cannot perform Attack actions targeting you. This effect persists for one round, plus additional rounds equal to your bonus successes, or until you perform an Attack action.",
       "opportunities": [
         "Fortune (op)+: Choose one additional target with Fame lower than your first target per (op) spent this way.",
         "Fortune (op)(op): Your targets also cannot perform Scheme actions targeting you.",
@@ -3934,7 +3934,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you enter a scene, you may make a Performance (Power) check. The TN of this check is equal to the difference between the Fame of the character in the scene with the highest Fame and your Fame, to a minimum of 1.\n\nEffects:\n\nIf you succeed, reduce the TN of Scheme and Support action checks you make by 1. This effect persists for one round, plus one additional round for every two bonus successes.",
       "opportunities": [
         "Power (op)(op)+: When you receive a Fame award, increase the amount of Fame you gain by 1, plus 1 per additional (op)(op) spent this way.",
         "Power (op)(op): You gain 1 bonus die on your next check made this scene.",
@@ -3960,7 +3960,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a check to resist an effect, you may spend (op) in the following way:",
       "opportunities": [
         "Resilience (op)+: One character per (op) spent this way may immediately switch to a stance of their choice.",
         "---"
@@ -3985,7 +3985,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, you may make a Command or Culture (Resilience) check targeting one character to claim protection for an individual of your choice. The TN of this check is equal to the target's vigilance.\n\nEffects:\n\nIf you succeed, the target must lose Humanity equal to your ranks in Command plus your bonus successes, and suffer that much Strife, to perform an Attack or Scheme action targeting the chosen individual. This effect persists until the end of the scene or until the target performs an Attack or Scheme action targeting that individual.",
       "opportunities": [
         "Resilience (op)+: Choose one additional target whose vigilance is lower than or equal to your first target's vigilance per (op) spent this way.",
         "---"
@@ -4010,7 +4010,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Negotiation (Fortune) check to negotiate payment for a job, you may spend (op) in the following way:",
       "opportunities": [
         "Fortune (op)+: If you succeed, you also convince the client to pay 10% of the fee up front per (op) spent this way.",
         "---"
@@ -4035,7 +4035,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene as a Scheme action, you may make a Performance or Tactics (Power) check targeting one character. The TN of the check is equal to your target's vigilance.\n\nEffects:\n\nIf you succeed during an intrigue encounter or a duel, your target receives strife equal to their Humanity divided by 10 (rounded down, minimum 1) unless they forfeit that much Humanity. If you succeed on the check during a skirmish, that character must immediately move 2 range bands toward you unless they choose to receive 3 strife, plus 1 additional strife for every 2 bonus successes. If you succeed on the check during a mass battle, that character must target your cohort with an Assault or Challenge action next turn, unless they choose to receive 3 strife, plus 1 additional strife for every 2 bonus successes. If you succeed or fail, reduce the TN of your target's next check by 1.",
       "opportunities": [
         "Power (op)(op): You may use this technique one additional time this scene.",
         "---"
@@ -4060,7 +4060,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, you may make a Science (Resilience) check (or another knowledge-based skill at the GM's discretion) targeting one character. The TN of this check is equal to your target's Focus minus their current Strife, to a minimum of 1.\n\nEffects:\n\nIf you succeed, your target suffers the Silenced condition unless they choose to gain Strife equal to your ranks in Command plus one for every bonus success.",
       "opportunities": [
         "(op): If you succeed, you may add one bonus die to your next Social skill check made this scene.",
         "(op)(op)+: Choose one additional target whose Focus is lower than your original target's Focus per (op)(op) spent this way.",
@@ -4086,7 +4086,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make a Social skill check using the Precision approach targeting another character, you may spend (op) in the following way:",
       "opportunities": [
         "Precision (op): Choose one Advantage or Disadvantage. The target comes to believe you possess it, without you having stated it directly or expended visible effort to create that impression. The target also believes you are unaware you have revealed this about yourself. If you do anything that could call this impression into question, any character who witnesses it may resist with a TN 5 Insight check (Resilience 6, Power 3) to see through the fabrication. This effect persists until the target encounters incontrovertible evidence to the contrary or succeeds on the resistance check.",
         "---"
@@ -4135,7 +4135,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, you may make a TN 3 Negotiation (Precision) check targeting one character. When you use this technique, you must give up something you know the target wants: a physical object, a concession in negotiation, or 2 momentum points toward one of their social objectives.\n\nEffects:\n\nIf you succeed, your target cannot add momentum to their social objectives for 1 round, plus 1 additional round per two bonus successes.",
       "opportunities": [
         "(op)(op): Instead of being unable to add momentum, when your target would add momentum to one of their social objectives, those momentum points are added to one of your social objectives of your choice instead. Your target is unaware their efforts are being diverted.",
         "---"
@@ -4184,7 +4184,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, you may make a Negotiation (Precision) check targeting another character in the scene. The TN of this check is equal to the target's Humanity divided by 10 (rounded down, minimum 1). You must offer a bribe with a value in credits equal to the target's social threat rating × 100 to attempt this check. At the GM's discretion, this does not work on mindless ELID-infected, advanced T-Dolls with locked protocols, or other entities incapable of rational self-interest.\n\nEffects:\n\nIf you succeed and your target is a Minion NPC, they accept the bribe and leave the scene. If you succeed and your target is not a Minion NPC, they must accept the bribe unless they receive Strife equal to your ranks in Negotiation. If they accept the bribe, they must either leave the scene, stop attempting to oppose you, or seek terms with you in some sort of negotiation. At the GM's discretion, this might deescalate a more serious conflict to an intrigue.",
       "opportunities": [
         "(op): If your target is a Minion NPC, they join your side in the conflict instead of departing.",
         "---"
@@ -4209,7 +4209,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, you may make a TN 4 Command or Performance (Power) check targeting any number of characters in the scene.\n\nEffects:\n\nIf you succeed, each target suffers 2 strife whenever they choose you as the target of a Social skill check. This effect persists until the end of the scene. If you fail, you suffer 4 strife.",
       "opportunities": [
         "Power (op)(op)+: Each target suffers 1 additional strife per (op)(op) spent this way whenever they target you with a Social skill check.",
         "---"
@@ -4234,7 +4234,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nDuring downtime, or once per session as a Support action, you may make a TN 5 Command (Resilience) check targeting one character with fewer total technique ranks than you.\n\nEffects:\n\nIf you succeed, the target may learn one technique you know that they meet the prerequisites for. The target gains temporary access to this technique for the remainder of the session. If used during downtime, the target gains the technique permanently, reducing the experience cost to learn it by an amount equal to your ranks in Command plus your bonus successes.",
       "opportunities": [
         "Resilience (op): The target may learn an additional technique you know.",
         "Resilience (op)+: You may target one additional character per (op) spent this way.",
@@ -4261,7 +4261,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per scene as a Scheme action, you may make a Deception (Swiftness) check targeting one other character. The TN of this check is equal to the target's vigilance.\n\nEffects:\n\nIf you succeed, you hide your true goal or objective from your opponent. Any action or ability that would reveal your true intentions or objective to the target instead reveals a false, narratively appropriate goal, subject to the GM's approval. This effect persists until the end of the scene. If you succeed, during an intrigue scene, you gain 1 momentum point toward a relevant goal.",
       "opportunities": [
         "Swiftness (op)(op)+: Choose one additional target with vigilance lower than the original target per (op)(op) spent this way.",
         "Swiftness (op)(op)+: If you succeed, you gain 1 additional momentum point per (op)(op) spent this way.",
@@ -4287,7 +4287,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme or Support action, you may make a Culture, Command, or Performance (Swiftness) check targeting one character. The TN is equal to the target's vigilance.\n\nEffects:\n\nIf you succeed and chose a Scheme action, choose one of the target's advantages that you know; whenever it applies, invert it (treat it as a disadvantage instead). This effect persists until the end of the scene. If you succeed and chose a Support action, choose one of the target's disadvantages you know; whenever it applies, invert it (treat it as an advantage instead). This effect persists until the end of the scene.",
       "opportunities": [
         "Swiftness (op): Choose one additional advantage or disadvantage and apply the effect to it.",
         "Swiftness (op)(op)+: Choose one additional target with vigilance lower than or equal to your first target's vigilance per (op)(op) spent this way.",
@@ -4313,7 +4313,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, you may make a TN 1 Crafting (Fortune) check.\n\nEffects:\n\nIf you succeed, you recall preparing an item with a rarity equal to 1 plus your bonus successes on the check. Spend 1 Fortune point to instantly produce one item you could have crafted, as long as it is reasonable (you could be carrying it on your person, have it in your quarters, or had access to the resources to craft it over the past month).",
       "opportunities": [
         "Fortune (op): Double the rarity of the target item, but the item must be perishable or have only sentimental value.",
         "---"
@@ -4338,7 +4338,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per session as a Scheme action, you may make a TN 3 Performance (Power) check targeting a number of characters up to your Power approach value.\n\nEffects:\n\nIf you succeed, each target suffers 2 Strife and must make a TN 5 Resolve check (Precision 4, Swiftness 2). On a failure, each target suffers additional Strife equal to their shortfall. If you fail, you suffer 3 Strife.",
       "opportunities": [
         "Power (op)(op): For each target who reaches their Composure threshold as a result of this technique, gain 5 Fame.",
         "---"
@@ -4388,7 +4388,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action, you may make an Insight (Precision) check targeting one character. The TN of this check is equal to your target's Focus minus their current Strife, to a minimum of 1.\n\nEffects:\n\nIf you succeed, your target slips up and admits something they were concealing from you. If your target was not concealing anything from you, you know this with certainty.",
       "opportunities": [
         "(op)(op)+: If you succeed, your target suffers 2 Strife per (op)(op) spent this way.",
         "---"
@@ -4413,7 +4413,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, you may make a TN 3 Command (Swiftness) check targeting one other character in the scene.\n\nEffects:\n\nIf you succeed, your target has your assistance on the next check they make. Additionally, your target may grant you assistance on the next check you make. Both effects persist until the end of your next turn.",
       "opportunities": [
         "(op)(op): Choose one skill in which you have 0 ranks and your target has 1 or more ranks. When you grant assistance to another character, you count as trained in that skill. This effect persists until the end of the scene.",
         "---"
@@ -4440,7 +4440,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you make an attack check, you may spend (op) in the following way:",
       "opportunities": [
         "(op)+: Each observer with Vigilance equal to or less than the amount of (op) you spend this way cannot attest to lethal intent. Any Supporting evidence those observers would contribute to an investigation speaks only to the act itself, not to premeditation or malice. For the purposes of any Accusation Check, the crime is treated as a lesser charge (manslaughter rather than murder, assault rather than attempted homicide) unless other evidence of intent exists.",
         "---"
@@ -4465,7 +4465,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a downtime activity, or once per scene as a Movement and Support action, you may make a TN 3 Survival (Swiftness) check to survey the terrain around you. In urban environments, you may substitute Subterfuge for Survival.\n\nEffects:\n\nIf you succeed, you learn all terrain qualities of the surrounding area (several miles in all directions if used as a downtime activity, or the full extent of the current scene's area if used in a scene), as well as the location of any fortifications within that range. While conducting this survey, you remain concealed from any character whose vigilance is lower than your ranks in Survival plus your bonus successes.",
       "opportunities": [
         "(op)(op) (Downtime or Mass Battle): Choose one area or battle zone within range of your survey. That area gains one of the following terrain qualities of your choice: Dangerous, Entangling, or Obscuring.",
         "(op)(op) (Other Scene): Choose a position within the area you scouted. All terrain within 3 range bands of that position gains one of the following terrain qualities of your choice: Dangerous, Entangling, or Obscuring.",
@@ -4493,7 +4493,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nOnce per game session, during a narrative scene or as a downtime activity, you may make a TN 2 Subterfuge (Fortune) check to uncover an informant who can give you information about a subject.\n\nEffects:\n\nIf you succeed, you reveal one informant who can give you information about a topic of your choice. If the informant's profile is required, use an appropriate NPC of the GM's choice.",
       "opportunities": [
         "Fortune (op): If you succeed, choose one skill. The informant has a number of ranks in that skill equal to your ranks in Subterfuge and can perform checks with that skill to assist you until the end of the scene.",
         "---"
@@ -4518,7 +4518,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Scheme action, you may make a TN 2 Survival (Swiftness) check targeting one position at range 1–2.\n\nEffects:\n\nIf you succeed, choose one of the following terrain qualities: Dangerous, Entangling, or Obscuring. All terrain within 1 range band of the targeted position gains that terrain quality. This effect persists for one round, plus one additional round for every two bonus successes.",
       "opportunities": [
         "(op)(op): Choose one additional terrain quality (Dangerous, Entangling, or Obscuring) to apply to the terrain.",
         "---"
@@ -4543,7 +4543,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you perform an Initiative check or an Attack action check using the Swiftness approach, you may spend (op) as follows:",
       "opportunities": [
         "Swiftness (op): If you are in Obscuring terrain, within a crowd, or otherwise concealed from direct line of sight, choose one character whose vigilance is equal to or lower than your ranks in Stealth. That character loses track of your position. They cannot target you with Attack or Scheme actions until they succeed on an Insight check with TN equal to your ranks in Stealth</strong> to reacquire you, or until you act in a way that reveals your position.",
         "---"
@@ -4568,7 +4568,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, you may use one dose of a poison or drug you have on hand and make a TN 3 Blades (Precision) check targeting one character at range 0.\n\nEffects:\n\nIf you succeed, the target is affected by the chosen substance and suffers physical damage equal to the weapon's deadliness plus your bonus successes.",
       "opportunities": [
         "Precision (op): If you succeed,  the target suffers a critical strike with severity 2 plus 1 per (op) spent this way.",
         "Precision (op)(op): If you succeed, the target is unaware of the substance until they suffer the first adverse effect caused by it.",
@@ -4644,7 +4644,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action using a readied weapon, you may make a TN 4 (Precision) check using the appropriate Combat skill for your weapon, targeting one character within the weapon's range.\n\nEffects:\n\nIf you succeed, the target suffers physical damage equal to your weapon's base damage and gains the Silenced condition. Additionally, other characters at range 3 or greater from the target do not perceive that they have been struck for 1 round, plus 1 additional round per bonus success. Characters that are actively watching the target are not fooled by this effect.",
       "opportunities": [
         "Precision (op)+: If you succeed, the target suffers a critical strike with severity equal to your weapon's deadliness plus 1 per (op) spent beyond the first.",
         "---"
@@ -4669,7 +4669,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Scheme action, you may make a TN 2 Conditioning (Swiftness) check.\n\nEffects:\n\nIf you succeed, you move one range band, plus one additional range band per two bonus successes. This movement ignores the movement penalties of any terrain you pass through. You may also move along vertical surfaces or across gaps that could conceivably be crossed, at the GM's discretion.",
       "opportunities": [
         "(op): Your movement produces no sound. You do not trigger detection checks based on sound or footfall during this movement.",
         "Swiftness (op)(op): You may bring one willing character at range 0 with you, moving them the same distance along the same path.",
@@ -4695,7 +4695,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a downtime activity, or as a Support action in any other scene, you may make a TN 4 Conditioning (Resilience) check targeting yourself and a number of willing characters up to your ranks in Tactics who are within Dangerous, Entangling, or Obscuring terrain.\n\nEffects:\n\nIf you succeed, all targets are concealed and cannot be detected by characters whose vigilance is equal to or lower than your ranks in Conditioning plus your bonus successes. Concealed characters cannot be targeted by Attack actions. This effect persists for each target until the end of your next turn, or until that target performs an Attack or Movement action.",
       "opportunities": [
         "Resilience (op)+: This effect persists for one additional round per (op) spent this way.",
         "Resilience (op)+: Reduce the TN of the first Attack action check one concealed target makes against a character in the same terrain by 1 per (op) spent this way.",
@@ -4721,7 +4721,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action using a readied suppressed firearm or bladed weapon, you may make a Precision check using the appropriate Combat skill for your weapon with a TN equal to your target's Vigilance, targeting one unaware or Disoriented character within the weapon's range.\n\nEffects:\n\nIf you succeed, the target suffers physical damage equal to your weapon's base damage and a critical strike with severity equal to your weapon's deadliness.",
       "opportunities": [
         "Precision (op)+: Increase the severity of the critical strike by 1 per (op) spent this way.",
         "Precision (op)(op): The target gains the <a href=\"#Conditions::condition-silenced\">Silenced</a> condition. Other characters at range 3 or greater do not perceive that the target has been struck for 1 round.",
@@ -4747,7 +4747,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, you may expend two doses of a single substance and make a TN 2 Science (Swiftness) check targeting each other character at range 0–2.\n\nEffects:\n\nIf you succeed, each target suffers 3 physical damage, ignoring resistance. Each target must also make the Conditioning check for the chosen substance at the TN listed in the Poisons & Drugs rules, and suffers the substance's harmful effect on a failure. T-Dolls follow the normal immunity rules for organic substances.",
       "opportunities": [
         "Swiftness (op): Move 1 range band.",
         "(op)+: The area at range 0–2 of your position gains the Obscuring and Dangerous terrain qualities until the end of the scene.",
@@ -4774,7 +4774,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack and Movement action using one readied weapon without the Cumbersome quality, you may make a TN 3 (Power) check using the appropriate Combat skill for your weapon, targeting one character at range 0–1.\n\nEffects:\n\nIf you succeed, your target suffers physical damage equal to your weapon's base damage. If you succeed and your target is Dazed, you may take one item from their person; the size and accessibility of the item is subject to the GM's approval. If you attempt to take a readied weapon, the target may resist with a TN 3 Conditioning check (Swiftness 5, Resilience 2).",
       "opportunities": [
         "Power (op): The target suffers the <a href=\"#Conditions::condition-dazed\">Dazed</a> condition.",
         "Power (op)+: Move 1 range band, plus 1 additional range band per (op) spent beyond the first.",
@@ -4801,7 +4801,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, you may make a Survival (Power) check targeting one friendly animal companion at range 0–2. The TN of the check is equal to the animal's vigilance.\n\nEffects:\n\nIf you succeed, increase the damage and deadliness of the animal's weapon profiles by 1, plus 1 per two bonus successes. This effect persists until the end of the scene. The animal then gains the Enraged condition and removes all Strife.",
       "opportunities": [
         "(op)+: You may target one additional friendly animal companion per (op) spent this way.",
         "(op)+: The target animal removes 1 Fatigue per (op) spent this way.",
@@ -4827,7 +4827,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you perform a check to use a Street technique, you may spend (op) in the following way:",
       "opportunities": [
         "(op)+: Increase the TN of the next check any one character makes to resist a critical strike you inflict by 1 per (op) spent this way. This effect persists until the end of your next turn.",
         "---"
@@ -4852,7 +4852,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a downtime activity, or once per scene as a Movement and Support action, you may make a TN 5 Survival (Swiftness) check targeting yourself and a number of characters up to your ranks in Tactics who are within Entangling or Obscuring terrain. In urban environments, you may substitute Subterfuge for Survival.\n\nEffects:\n\nIf you succeed, all targets are concealed and cannot be detected by characters whose vigilance is equal to or lower than your ranks in Survival plus your bonus successes. Concealed characters cannot be targeted by Attack actions and cannot themselves perform Attack actions. This effect persists until the end of your next turn, or until any target performs an Attack action.",
       "opportunities": [
         "Swiftness (op)+ (Mass Battle): If you succeed, each enemy unit with forces inside the terrain suffers a morale disruption; their commander must make a TN equal to (op) spent this way Command check or that unit suffers a penalty to its next order.",
         "Swiftness (op)+ (Other Scene): If you succeed, each character you did not target who is within the terrain receives 1 strife per (op) spent this way.",
@@ -4881,7 +4881,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action during a chase while at range 0 of a target vehicle, make a Piloting (Power) check. The TN equals the current scene speed.\n\nEffects:\n\nIf you succeed, the target vehicle suffers damage equal to 3 plus your bonus successes (minus its armor value). The target driver must resist with a Piloting check (TN = your bonus successes + 2, Swiftness 1) or gain 1 stack of Losing Ground.",
       "opportunities": [
         "Power (op): Your vehicle suffers 2 less damage from the collision.",
         "Power (op)(op): The target driver suffers the Disoriented condition.",
@@ -4907,7 +4907,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Scheme action during a chase, make a TN 2 Piloting (Resilience) check.\n\nEffects:\n\nIf you succeed, the area at range 0–2 behind your vehicle gains the Obscuring terrain quality until the end of your next turn. Pursuing drivers treat you as having concealment from those positions.",
       "opportunities": [
         "Resilience (op): The terrain persists for one additional round.",
         "Resilience (op)(op): The terrain also becomes Dangerous terrain. Characters entering the area must make a TN 2 Survival or Piloting check each round or suffer the Dazed condition.",
@@ -4933,7 +4933,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action during a chase, make a TN 3 Firearms check with one readied firearm from the driver's seat, targeting a character or vehicle within your weapon's range.\n\nEffects:\n\nIf you succeed, resolve the attack as a standard Strike action. If you fail, you gain 1 stack of Losing Ground (divided attention costs you pace).",
       "opportunities": [
         "(op): Ignore 1 point of the target's physical resistance from vehicle armor.",
         "(op)(op): Move 1 range band before or after resolving the attack without spending an action.",
@@ -4959,7 +4959,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement action during a chase while you are being pursued, make a TN 2 Piloting (Swiftness) check.\n\nEffects:\n\nIf you succeed, the chase inverts: Reverse your vehicle's facing. Halve the current scene speed (rounded down, minimum 1). Pursuing vehicles that are not Losing Ground gain 2 stacks of Losing Ground. Pursuing vehicles that are Losing Ground remove all stacks of Losing Ground (they have caught up).",
       "opportunities": [
         "Swiftness (op): You may immediately Accelerate. If you do, scene speed increases from the halved value as normal.",
         "Swiftness (op)(op): Gain 1 momentum on any objective involving escape or evasion.",
@@ -4985,7 +4985,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you perform the Accelerate driver action during a chase, you may spend (op) in the following way:",
       "opportunities": [
         "Swiftness (op): The scene speed increases by 2 instead of 1.",
         "Swiftness (op)(op): Until the start of your next turn, increase the TN of techniques targeting you by 1.",
@@ -5011,7 +5011,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a downtime activity, if you have a vehicle available, you may make a TN 2 Piloting (Fortune) check to reach a destination with extreme swiftness.\n\nEffects:\n\nIf you succeed, you reach the destination in half the time it would normally require. Passengers in your vehicle are automatically included in this rapid travel.",
       "opportunities": [
         "Fortune (op): You may lead a number of willing characters with vehicles of their own up to your ranks in Piloting.",
         "---"
@@ -5060,7 +5060,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack and Movement action during a chase while at range 0 of a target vehicle, make a TN 3 Piloting (Precision) check.\n\nEffects:\n\nIf you succeed, the target driver must resist with a Piloting check (TN 4, Swiftness 2, Resilience 5). On failure, the target vehicle gains 2 stacks of Losing Ground and the driver suffers the Dazed condition. On success, they gain 1 stack of Losing Ground instead.",
       "opportunities": [
         "Precision (op)(op): If the effect would cause the target to reach 3 or more stacks of Losing Ground, they are instead violently knocked out. All occupants suffer a Critical Strike with severity equal to the current scene speed.",
         "---"
@@ -5085,7 +5085,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nWhen you fail a Piloting check during a chase, you may spend 1 Fortune Point.\n\nEffects:\n\nYou do not gain a stack of Losing Ground from this failure. If the check was an Attack action, you may immediately move 1 range band in any direction as a free action.",
       "opportunities": [
         "Fortune (op)(op): Treat the failed check as if it succeeded with 0 bonus successes instead. This technique can still only be applied once per failed check.",
         "---"
@@ -5134,7 +5134,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement action during a chase, make a Piloting (Swiftness) check. The TN equals the current scene speed.\n\nEffects:\n\nIf you succeed, you navigate through a space or obstacle that would normally be impassable. Reduce the TN of your next Piloting check to navigate a tight gap or similarly improbable maneuver this scene by your bonus successes (minimum 1). You do not gain Losing Ground this round from other drivers accelerating.",
       "opportunities": [
         "Swiftness (op)+: One pursuing vehicle per (op) spent this way cannot follow you through the gap and must find an alternate route, gaining 1 stack of Losing Ground.",
         "Swiftness (op)(op): You may immediately perform a second Movement action without spending an action.",
@@ -5160,7 +5160,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Attack action during a chase, make a TN 3 Piloting (Fortune) check. Expend your vehicle (it is disabled or destroyed in the process).\n\nEffects:\n\nIf you succeed, you safely exit the vehicle at range 0. The vehicle hurtles forward in a straight line up to 2 range bands. All characters and vehicles in this line suffer a Critical Strike with severity equal to double your vehicle's remaining damage threshold (its damage threshold minus its accumulated damage).",
       "opportunities": [
         "Fortune (op): You may aim the vehicle toward a specific target you can perceive, extending its path to reach them if they are within 3 range bands.",
         "Fortune (op)(op): The vehicle's wreckage counts as Dangerous and Obscuring terrain at its final position until the end of the scene.",
@@ -5186,7 +5186,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nDuring a chase, as a Movement action, spend any amount of strife and deal an equal amount of damage to your vehicle (this damage bypasses armor). Then choose one: If you are chasing: Remove that many stacks of Losing Ground. If you are being pursued: Increase the scene speed by that amount. All other drivers gain Losing Ground as normal for failing to match a speed increase.",
       "opportunities": [
         "Resilience (op): Reduce the damage your vehicle suffers from this technique by 2.",
         "Resilience (op)(op): You do not suffer the strife cost from this technique (the vehicle damage remains).",
@@ -5236,7 +5236,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action during a chase while at range 0–1 of a target vehicle, make a Piloting (Power) check. The TN equals the current scene speed plus the target driver's Vigilance.\n\nEffects:\n\nIf you succeed, the target vehicle suffers damage equal to twice the current scene speed (minus its armor value). Your vehicle suffers damage equal to the current scene speed (minus your vehicle's armor value). If the target vehicle reaches its damage threshold from this damage, it is violently knocked out of the chase. All occupants suffer a Critical Strike with severity equal to the current scene speed plus your bonus successes.",
       "opportunities": [
         "Power (op)+: Reduce the damage your vehicle suffers by 1 per (op) spent this way.",
         "---"

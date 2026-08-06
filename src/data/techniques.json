@@ -401,7 +401,7 @@
       "flavor": "",
       "activation": "Activation:\n\nWhile you perform an Attack action check, you may spend opportunity as follows.",
       "opportunities": [
-        "Precision (op)(op): Choose one of the following conditions: Bleeding, Dazed, Disoriented, Prone. If this check inflicts that condition on one or more targets, those targets cannot remove that condition until the end of your next turn.",
+        "Precision (op)(op): Inflict one of the following conditions on your target: Bleeding, Dazed, Disoriented, Prone.",
         "---"
       ],
       "type": "Combat"

@@ -65,7 +65,8 @@ export const BACKGROUND_GEAR = {
 //
 // category is the weapon category code from weapons.json (HG, SMG, SG, AR, BR,
 // RF, MG, BLD, KNF, SHD). maxPrice is the most expensive weapon allowed.
-// null means no weapon grant (Knuckle Dragger fights unarmed).
+// null means no weapon grant. Every discipline currently grants one so no
+// character finishes creation unarmed.
 //
 // Commander disciplines get a sidearm or thematic weapon.
 // T-Doll weapon disciplines match the weapon category exactly.
@@ -80,7 +81,7 @@ export const DISCIPLINE_WEAPON_GRANTS = {
   "Commander":          { category: "HG",  maxPrice: 1700 },  // sidearm — officer's weapon
   "Black Hat":          { category: "HG",  maxPrice: 1700 },  // sidearm — hacker's backup
   "Spider":             { category: "HG",  maxPrice: 1700 },  // sidearm — EW specialist
-  "Knuckle Dragger":    null,                                 // unarmed fighter
+  "Knuckle Dragger":    { category: "HG",  maxPrice: 1700 },  // sidearm — even an unarmed fighter carries a backup piece
   "Analyst":            { category: "HG",  maxPrice: 1700 },  // sidearm — analyst's backup
   "Field Medic":        { category: "HG",  maxPrice: 1700 },  // sidearm — medic's sidearm
   "Grease Monkey":      { category: "HG",  maxPrice: 1700 },  // sidearm — mechanic's backup

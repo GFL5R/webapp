@@ -15,6 +15,7 @@ import {
   BACKGROUND_GEAR,
   DISCIPLINE_WEAPON_GRANTS,
 } from '@/data/starting-equipment.js'
+import disciplines from '@/data/disciplines.js'
 
 // ---------------------------------------------------------------------------
 // Drag type constants — used by drag sources and drop targets
@@ -898,6 +899,9 @@ export function useCharacterBuilder() {
   }
 
   function getDisciplineWeaponGrant(disciplineTitle) {
+    // Canonical grant lives on the discipline data; the legacy map is a fallback.
+    const disc = disciplines.find(d => d.title === disciplineTitle)
+    if (disc?.startingWeapon?.category) return disc.startingWeapon
     return DISCIPLINE_WEAPON_GRANTS[disciplineTitle] || null
   }
 

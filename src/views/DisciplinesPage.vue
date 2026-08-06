@@ -103,6 +103,7 @@
         :techniques="selected.techniques"
         :perk="selected.perk"
         :capstone="selected.capstone"
+        :starting-weapon="selected.startingWeapon"
       />
     </DisciplineModal>
 
@@ -143,6 +144,7 @@ function onDragStart(event, disc) {
       techniques: disc.techniques,
       perk: disc.perk,
       capstone: disc.capstone,
+      startingWeapon: disc.startingWeapon,
     },
   }
   event.dataTransfer.setData('application/json', JSON.stringify(dragData))

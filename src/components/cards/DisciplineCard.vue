@@ -26,6 +26,12 @@
           <span v-for="s in skills" :key="s" class="tag skill-tag">{{ s }}</span>
         </div>
 
+        <div v-if="startingWeapon && startingWeapon.category" class="disc-starting-weapon">
+          <div class="data-label">Starting Weapon</div>
+          <p>{{ weaponCategoryName(startingWeapon.category) }} (up to {{ startingWeapon.maxPrice }} cr)</p>
+          <p class="flavor-text">Character creation only. Picking up additional disciplines during play does not grant additional weapons.</p>
+        </div>
+
         <div v-if="perk" class="disc-perk">
           <h4>{{ perk.title }}</h4>
           <p v-if="perk.flavor" class="flavor-text">{{ perk.flavor }}</p>
@@ -62,6 +68,7 @@
 import { computed } from 'vue'
 import lookupTechnique from '@/data/technique-lookup.js'
 import { DRAG_TYPES } from '@/composables/useCharacterBuilder.js'
+import { weaponCategoryName } from '@/data/weapon-categories.js'
 
 const props = defineProps({
   title: { type: String, required: true },
@@ -69,7 +76,8 @@ const props = defineProps({
   skills: { type: Array, default: () => [] },
   techniques: { type: Array, default: () => [] },
   perk: { type: Object, default: null },
-  capstone: { type: Object, default: null }
+  capstone: { type: Object, default: null },
+  startingWeapon: { type: Object, default: null }
 })
 
 const resolvedTechniques = computed(() =>
@@ -91,6 +99,7 @@ function onDragStart(event) {
       techniques: props.techniques,
       perk: props.perk,
       capstone: props.capstone,
+      startingWeapon: props.startingWeapon,
     },
   }
   event.dataTransfer.setData('application/json', JSON.stringify(dragData))
@@ -141,6 +150,16 @@ function onDragStart(event) {
   border: 1px solid var(--line-soft);
   padding: 16px;
   margin-top: 12px;
+}
+.disc-starting-weapon {
+  background: var(--panel-2);
+  border: 1px solid var(--line-soft);
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+.disc-starting-weapon p {
+  margin: 4px 0 0;
 }
 .tech-row {
   display: flex;

@@ -4,6 +4,7 @@
 const disciplines = [
   {
     title: 'Ghost',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'Ghosts don\'t exist. They\'re just a tale people assign to unexplained phenomena. No one can prove that you exist either, just the effects you\'ve left behind, usually in the form of a corpse, if anything at all. Unseen operators like you are the stuff of nightmares for any security detail, and the stuff of legends for everyone else.',
     skills: ['Stealth', 'Subterfuge', 'Conditioning'],
     techniques: [
@@ -17,6 +18,7 @@ const disciplines = [
   },
   {
     title: 'Sicario',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'A Sicario, spanish for \'hitman\', is a professional assassin, specializing in eliminating high-profile targets. They are often hired by powerful individuals or organizations to carry out their dirty work, and are known for their efficiency and discretion.',
     skills: ['Stealth', 'Blades', 'Firearms'],
     techniques: [
@@ -31,6 +33,7 @@ const disciplines = [
   },
   {
     title: 'Street Kid',
+    startingWeapon: { category: 'KNF', maxPrice: 1500 },
     flavor: 'No one taught the street kid how to survive. They had to learn on their own, and they had to learn fast. The streets are a harsh place, and only the strong survive. Street kids are resourceful and cunning, able to navigate the urban jungle with ease.',
     skills: ['Deception', 'Crafting', 'Survival'],
     techniques: [
@@ -44,6 +47,7 @@ const disciplines = [
   },
   {
     title: 'Heartbreaker',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'A Heartbreaker knows that the right word at the right time can accomplish what a bullet never could. They navigate social situations with effortless grace, turning obstacles into opportunities with nothing but wit.',
     skills: ['Performance', 'Deception', 'Insight'],
     techniques: [
@@ -60,6 +64,7 @@ const disciplines = [
   },
   {
     title: 'Smooth Talker',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'A Smooth Talker can walk into a room full of people who want them dead and walk out with a contract and a dinner invitation. Whether defusing a standoff or negotiating terms that somehow favor everyone at the table, they always find the angle.',
     skills: ['Negotiation', 'Culture', 'Insight'],
     techniques: [
@@ -74,6 +79,7 @@ const disciplines = [
   },
   {
     title: 'Commander',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'A Commander creates certainty in chaos. When bullets fly and systems fail, they are the calm voice that guides the team through hell and back.',
     skills: ['Command', 'Tactics', 'Resolve'],
     techniques: [
@@ -89,6 +95,7 @@ const disciplines = [
   },
   {
     title: 'Black Hat',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'Networks are doors, and a Black Hat doesn\'t wait for an invitation. They find the service entrance, the loading dock, the ventilation shaft, and if none of those work, they make a new opening.',
     skills: ['Computers', 'Subterfuge', 'Tactics'],
     techniques: [
@@ -104,6 +111,7 @@ const disciplines = [
   },
   {
     title: 'Spider',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'Every network someone is paid to protect has someone else trying to get through it. The Spider\'s job is to make sure that person fails, and to make sure everyone knows why.',
     skills: ['Computers', 'Insight', 'Science'],
     techniques: [
@@ -117,6 +125,7 @@ const disciplines = [
   },
   {
     title: 'Knuckle Dragger',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'When the guns run dry and the knives break, there is only what you were born with. A Knuckle Dragger has made peace with this fact and, honestly, prefers it that way.',
     skills: ['Hand-To-Hand', 'Conditioning', 'Tactics'],
     techniques: [
@@ -131,6 +140,7 @@ const disciplines = [
   },
   {
     title: 'Analyst',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'Information is power, and an Analyst is a master of both. They can take a pile of data and turn it into actionable intelligence that can change the course of a mission.',
     skills: ['Science', 'Insight', 'Computers'],
     techniques: [
@@ -144,6 +154,7 @@ const disciplines = [
   },
   {
     title: 'Field Medic',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'When a teammate goes down, the clock starts. The Field Medic is the person who knows how to stop it.',
     skills: ['Medicine', 'Conditioning', 'Science'],
     techniques: [
@@ -157,6 +168,7 @@ const disciplines = [
   },
   {
     title: 'Grease Monkey',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'A Grease Monkey looks at a battlefield and sees infrastructure. Defensible positions, structural weaknesses, killzones waiting to be established. The terrain isn\'t fixed; it\'s a starting condition.',
     skills: ['Crafting', 'Mechanics', 'Explosives'],
     techniques: [
@@ -171,6 +183,7 @@ const disciplines = [
   },
   {
     title: 'Knives',
+    startingWeapon: { category: 'KNF', maxPrice: 1500 },
     flavor: 'Knives are a weapon as old as humanity itself. A utilitarian tool for the masses that unlocked humanity\'s potential, making it possible to hunt, build, and defend ourselves.',
     skills: ['Blades', 'Stealth', 'Subterfuge'],
     techniques: [
@@ -184,6 +197,7 @@ const disciplines = [
   },
   {
     title: 'Swords',
+    startingWeapon: { category: 'BLD', maxPrice: 1500 },
     flavor: 'Using a sword in 2072 is a statement. Heroes of myth and legend wielded swords, and so now do you as well, perhaps as a nod to the past, or perhaps as a symbol of your own code of honor.',
     skills: ['Blades', 'Conditioning', 'Resolve'],
     techniques: [
@@ -198,6 +212,7 @@ const disciplines = [
   },
   {
     title: 'Pistols',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'Pistols are the most common firearm in 2072, and for good reason. They\'re compact, easy to use, and effective at close to medium range. A pistol is a reliable sidearm that can be used in a variety of situations, making it a staple for any operator.',
     skills: ['Firearms', 'Subterfuge', 'Tactics'],
     techniques: [
@@ -211,6 +226,7 @@ const disciplines = [
   },
   {
     title: 'Submachine Guns',
+    startingWeapon: { category: 'SMG', maxPrice: 2000 },
     flavor: 'Submachine guns are the weapon of choice for close-quarters combat, offering a high rate of fire and excellent maneuverability. They are ideal for operators who need to move quickly and engage targets at close range.',
     skills: ['Firearms', 'Stealth', 'Tactics'],
     techniques: [
@@ -224,6 +240,7 @@ const disciplines = [
   },
   {
     title: 'Shotguns',
+    startingWeapon: { category: 'SG', maxPrice: 2400 },
     flavor: 'Shotguns have been around for centuries, and they continue to be a powerful weapon in 2072. They are devastating at close range, capable of taking down multiple targets with a single blast.',
     skills: ['Firearms', 'Conditioning', 'Survival'],
     techniques: [
@@ -237,6 +254,7 @@ const disciplines = [
   },
   {
     title: 'Assault Rifles',
+    startingWeapon: { category: 'AR', maxPrice: 1950 },
     flavor: 'The rifleman is the backbone of any combat unit, and the assault rifle is their weapon of choice. It offers a balance of range, accuracy, and firepower that makes it effective in a wide variety of combat situations.',
     skills: ['Firearms', 'Tactics', 'Conditioning'],
     techniques: [
@@ -250,6 +268,7 @@ const disciplines = [
   },
   {
     title: 'Battle Rifles',
+    startingWeapon: { category: 'BR', maxPrice: 1800 },
     flavor: 'Battle Rifles are Assault Rifles\' older, more powerful sibling. Unlike Assault Rifles which fire an intermediate cartridge, Battle Rifles retained the full power cartridges of their bolt-action ancestors, giving them superior range and stopping power at the cost of increased recoil and reduced magazine capacity.',
     skills: ['Firearms', 'Resolve', 'Tactics'],
     techniques: [
@@ -263,6 +282,7 @@ const disciplines = [
   },
   {
     title: 'Snipers',
+    startingWeapon: { category: 'RF', maxPrice: 2600 },
     flavor: 'Sniper Rifles encompass everything from your great grandpa\'s hunting rifle to the most advanced anti-materiel rifles of 2072. They are designed for precision shooting at long ranges, allowing snipers to take out targets from a distance with deadly accuracy.',
     skills: ['Firearms', 'Stealth', 'Survival'],
     techniques: [
@@ -276,6 +296,7 @@ const disciplines = [
   },
   {
     title: 'Machine Guns',
+    startingWeapon: { category: 'MG', maxPrice: 1750 },
     flavor: 'Machine Guns changed warfare forever, and they continue to be a dominant force on the battlefield in 2072. They are designed for sustained automatic fire, providing suppressive firepower that can pin down enemies and control the flow of battle.',
     skills: ['Firearms', 'Conditioning', 'Resolve'],
     techniques: [
@@ -289,6 +310,7 @@ const disciplines = [
   },
   {
     title: 'Frontliner',
+    startingWeapon: { category: 'SHD', maxPrice: 2500 },
     flavor: 'Someone has to go first. The Frontliner is the operator who volunteers for that role, armed with a shield and the training to use it. They are the wall between their team and the enemy, absorbing damage that would devastate anyone else.',
     skills: ['Exotic Weapons', 'Tactics', 'Conditioning'],
     techniques: [
@@ -302,6 +324,7 @@ const disciplines = [
   },
   {
     title: 'Baby Driver',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'A Baby Driver slots into the driver\'s seat the way a magazine locks into a receiver. The wheel turns before conscious thought. The throttle answers questions the driver has not finished asking.',
     skills: ['Piloting', 'Firearms', 'Resolve'],
     techniques: [
@@ -316,6 +339,7 @@ const disciplines = [
   },
   {
     title: 'Chauffeur',
+    startingWeapon: { category: 'HG', maxPrice: 1700 },
     flavor: 'A Chauffeur treats the vehicle like a mobile safe room. Every input is measured. Every shift is invisible. Passengers arrive without remembering the drive.',
     skills: ['Piloting', 'Tactics', 'Insight'],
     techniques: [

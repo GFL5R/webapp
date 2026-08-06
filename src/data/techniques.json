@@ -5,7 +5,7 @@
       "name": "AP Round",
       "rank": 1,
       "approach": "Power",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "Armor stops most things. Enough rounds at the right velocity, enough firepower behind the shot, and the math changes.",
       "activation": "",
       "opportunities": [],
@@ -29,8 +29,8 @@
       "id": "aggressive-escort",
       "name": "Aggressive Escort",
       "rank": 1,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "The first duty of a protective detail is positioning: stand between the threat and the principal, collapse the sightlines, make yourself the problem. But if someone shoots at you anyway, it would be foolish not to answer.",
       "activation": "",
       "opportunities": [],
@@ -43,8 +43,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you perform a Guard action while within range 0–1 of the character you are guarding, you may spend opportunity in the following way.",
+      "opportunities": [
+        "(op): After a character performs an Attack action targeting you or the character you are guarding, you may perform a Strike action with one readied weapon targeting that character. This effect persists until the start of your next turn, or until you perform a Strike action this way.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -68,7 +71,7 @@
       "activation": "",
       "opportunities": [
         "Power (op): The blast also deals physical damage equal to your ranks in Explosives to each character who fails the resistance check.",
-        "Power (op)(op): The breach creates Difficult Terrain at range 0\u20131 of the breach point.",
+        "Power (op)(op): The breach creates Difficult Terrain at range 0–1 of the breach point.",
         "---"
       ],
       "type": "Combat"
@@ -78,7 +81,7 @@
       "name": "Defensive Maneuver",
       "rank": 1,
       "approach": "Resilience",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "Sometimes all else fails and you take a nasty hit. Twisting your body, raising an arm, anything to deflect the blow just enough to avoid the worst of it separates a survivor from a casualty.",
       "activation": "",
       "opportunities": [],
@@ -91,16 +94,20 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make a check to resist a critical strike, you may spend opportunity in the following way.",
+      "opportunities": [
+        "(op): If you reduce the critical strike's severity to 0, you do not suffer the effects of the critical strike.",
+        "(op): If you would suffer the Bleeding condition as a result of the critical strike, you do not suffer that condition, and instead suffer the Dazed condition.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
       "id": "evasive-footwork",
       "name": "Evasive Footwork",
       "rank": 1,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "Standing still in a gunfight is a habit the dead share with the untrained. Controlled movement, constant repositioning, makes you a harder target and keeps your options open.",
       "activation": "",
       "opportunities": [],
@@ -113,8 +120,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Movement and Support action, you may spend 2 fatigue.\n\nEffects:\n\nUntil the end of your next turn, increase the TN of Attack action checks targeting you by 1. Additionally, after any such check fails, you may move 1 range band in any direction as a free action.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -148,7 +157,7 @@
       "name": "Glass Case",
       "rank": 1,
       "approach": "Power",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "Enough force delivered to the right spot does not just cause damage. It interrupts the target's ability to process what is happening, and that window is all you need.",
       "activation": "",
       "opportunities": [],
@@ -275,7 +284,7 @@
       "id": "ricochet",
       "name": "Ricochet",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Firearms",
       "flavor": "A miss is not wasted if it finds someone else. Rounds fired into a cluster rarely stop at the intended target.",
       "activation": "",
@@ -291,7 +300,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): If you fail the check, choose one character at range 0\u20132 of your target whose Vigilance is lower than your target's. That character suffers physical damage equal to your weapon's base damage.",
+        "(op)(op): If you fail the check, choose one character at range 0–2 of your target whose Vigilance is lower than your target's. That character suffers physical damage equal to your weapon's base damage.",
         "---"
       ],
       "type": "Combat"
@@ -351,7 +360,7 @@
       "id": "shoot-and-scoot",
       "name": "Shoot and Scoot",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Firearms",
       "flavor": "Staying put after firing is how you become a target. The whole point of a short barrel is that you can be somewhere else before anyone gets a fix on where you were.",
       "activation": "",
@@ -377,7 +386,7 @@
       "name": "Shoot to Maim",
       "rank": 1,
       "approach": "Precision",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "Not every shot is meant to kill. A well-placed round to the knee, shoulder, or hand achieves something a lethal shot cannot: it leaves the opponent present, suffering, and in the way.",
       "activation": "",
       "opportunities": [],
@@ -390,8 +399,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhile you perform an Attack action check, you may spend opportunity as follows.",
+      "opportunities": [
+        "Precision (op)(op): Choose one of the following conditions: Bleeding, Dazed, Disoriented, Prone. If this check inflicts that condition on one or more targets, those targets cannot remove that condition until the end of your next turn.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -412,8 +424,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen making a ranged attack using the Swiftness approach, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Swiftness (op)(op): Reduce the TN penalty for attacking targets outside your weapon's ideal range by 1. This effect lasts until you move or until the end of the scene, whichever comes first.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -434,15 +449,19 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make an Attack action using a melee-type Exotic weapon, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Resilience (op): If you fail, your target suffers physical damage equal to your ranks in Conditioning.",
+        "Resilience (op): If you succeed and your target is Prone, increase the damage you deal by your ranks in Fitness.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
       "id": "suppressive-fire",
       "name": "Suppressive Fire",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Firearms",
       "flavor": "A single target is easy enough to reason about. But when rounds start clipping the people around them, everyone in the vicinity has to choose between their objective and their survival.",
       "activation": "",
@@ -458,7 +477,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)+: Choose one character at range 0\u20132 of your target per (op) spent this way whose Vigilance is lower than your target's. Each chosen character suffers strife equal to your weapon's base damage.",
+        "(op)+: Choose one character at range 0–2 of your target per (op) spent this way whose Vigilance is lower than your target's. Each chosen character suffers strife equal to your weapon's base damage.",
         "---"
       ],
       "type": "Combat"
@@ -467,8 +486,8 @@
       "id": "takedown",
       "name": "Takedown",
       "rank": 1,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "Not every fight ends with a bullet. Sometimes the requirement is a person on the ground, breathing, and unable to get back up without help.",
       "activation": "",
       "opportunities": [],
@@ -492,7 +511,7 @@
       "id": "throwing-knife",
       "name": "Throwing Knife",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Blades",
       "flavor": "A throwing knife is a versatile weapon that can be used for both offense and defense. A well-aimed throw can take out an opponent from a distance, while a quick toss can create an opening in an opponent's defense or distract them long enough to make a follow-up attack.",
       "activation": "",
@@ -568,8 +587,8 @@
       "id": "weapon-lock",
       "name": "Weapon Lock",
       "rank": 1,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "Taking a weapon away is one way to neutralize a threat. Trapping it in their hand is faster, and leaves them holding a problem they cannot use.",
       "activation": "",
       "opportunities": [],
@@ -608,8 +627,12 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make an Attack action using an Exotic weapon, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Swiftness (op)+: If you succeed and your target is a minion, your target suffers additional damage equal to the deadliness of your weapon.",
+        "Swiftness (op)+: If you fail and your target's ranks in Resolve are less than or equal to opportunity spent this way, your target receives strife equal to the deadliness of your weapon.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -617,7 +640,7 @@
       "name": "Acrobatic Recovery",
       "rank": 2,
       "approach": "Swiftness, Resilience",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "A skilled fighter can turn a bad situation into an opportunity. Whether it's rolling with a fall, twisting out of a grapple, or using the momentum of a hit to spring back to their feet, they can recover from conditions that would leave others vulnerable.",
       "activation": "",
       "opportunities": [],
@@ -656,8 +679,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhile you perform a Strike action while 1 or more range bands above your target, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Swiftness (op)+: Choose 1 of your targets per (op) spent this way. That target suffers the Disoriented condition.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -691,7 +717,7 @@
       "name": "Battle in the Mind",
       "rank": 2,
       "approach": "Fortune",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "An elite who has survived enough engagements learns to recognize the signals an opponent does not intend to reveal: the posture, the hesitation, the split-second flicker of the eyes. By the time the first shot is fired, a plan is already in motion.",
       "activation": "",
       "opportunities": [],
@@ -704,8 +730,12 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make an Initiative check for a duel using your Fortune approach, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Fortune (op): Name two approaches. Your opponent must choose one, and cannot select it as their stance during their first turn of the duel.",
+        "Fortune (op)+: Choose a technique category. Learn one of your opponent's known techniques of that category (chosen by the opponent) per (op) spent this way.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -777,8 +807,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make an Attack action using a melee-type Exotic weapon, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Power (op)(op): If you succeed, choose one defensive item your target is using (such as armor they are wearing or a readied shield they are wielding). The item receives the Damaged item quality; if it is already Damaged, it becomes Destroyed instead.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -799,8 +832,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Firearms Attack and Movement action, you may make a Firearms (Fortune) check targeting one character within your weapon's range to whom you do not have direct line of sight. The TN of this check is equal to the target's Vigilance.\n\nEffects:\n\nIf you succeed, the target suffers physical damage equal to your weapon's base damage and strife equal to your bonus successes.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -821,8 +856,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs an Attack action using a readied ranged weapon, you may make a TN 4 Firearms (Precision) check targeting one character within the weapon's range.\n\nEffects:\n\nIf you succeed, your target suffers physical damage equal to your Precision, plus additional damage equal to your bonus successes. Choose one of your target's readied weapons; the target must resist with a TN 4 Conditioning check (Swiftness 2, Precision 5) or lose control of the chosen weapon, which travels 2 range bands in a direction of your choice.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -855,7 +892,7 @@
       "name": "Dug In",
       "rank": 2,
       "approach": "Fortune",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "An operator who picks their spot and refuses to leave it is not a stationary target. They are a fixed problem that has to be solved before anything else in the fight gets done.",
       "activation": "",
       "opportunities": [],
@@ -930,8 +967,8 @@
       "id": "forced-hand",
       "name": "Forced Hand",
       "rank": 2,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "People will tell you what they value when you make them choose fast enough. Put a blade or a barrel on someone and their priorities clarify immediately.",
       "activation": "",
       "opportunities": [],
@@ -944,15 +981,17 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs an Attack and Scheme action using a readied ranged or bladed weapon, you may make a Firearms or Blades check targeting one character within your weapon's range. The TN is equal to the target's Vigilance.\n\nEffects:\n\nIf you succeed, your target must immediately choose one of the following:\n• Suffer strife equal to your ranks in Performance and the Dazed condition.\n• Accept a critical strike with severity equal to your weapon's deadliness.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Combat"
     },
     {
       "id": "gap-in-the-armor",
       "name": "Gap in the Armor",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Blades",
       "flavor": "Even the toughest armor has a weak point. A skilled fighter who can find and exploit that weak point can turn a heavily armored opponent into a sitting duck.",
       "activation": "",
@@ -966,8 +1005,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make an Attack action using a Bladed weapon, you may spend opportunity as follows.",
+      "opportunities": [
+        "(op)+: Your weapon ignores an amount of your target's armor equal to opportunity spent this way.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -999,7 +1041,7 @@
       "id": "guns-akimbo",
       "name": "Guns Akimbo",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Firearms",
       "flavor": "Anyone can spray bullets with a gun in each hand. Hitting something that way takes a different breed of shooter entirely. The trick is not volume of fire, but timing: one muzzle keeps the target occupied while the other lands the shot that matters.",
       "activation": "",
@@ -1013,16 +1055,19 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make a Firearms Attack action check, if you have a second readied weapon you did not use for the attack, you may spend opportunity in the following way.",
+      "opportunities": [
+        "(op)+: You must spend opportunity equal to your target's Vigilance to activate this technique. One target of your action suffers physical damage equal to the second readied weapon's base damage. If that target is Dazed, increase this damage by your ranks in Firearms.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
       "id": "hunter-s-patience",
       "name": "Hunter's Patience",
       "rank": 2,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "Every operator has their finishing move. The smart ones wait until the target cannot avoid it.",
       "activation": "",
       "opportunities": [],
@@ -1112,8 +1157,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make a Blades or Hand-to-Hand attack against a target at range 0, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Power (op): If you succeed, your target must resist with a TN 4 Conditioning check (TN 3 Swiftness, TN 5 Power). If they fail, they suffer the Prone condition and fatigue equal to their shortfall.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -1137,9 +1185,9 @@
       "activation": "",
       "opportunities": [
         "(op)(op): Any item or structure damaged by this effect gains the Destroyed quality instead of Damaged.",
-        "(op)(op): The area at range 0\u20132 of the detonation point gains the Dangerous and Obscuring terrain qualities until the end of the round.",
+        "(op)(op): The area at range 0–2 of the detonation point gains the Dangerous and Obscuring terrain qualities until the end of the round.",
         "(op)+: Increase the TN to detect the mine by 1 per (op) spent this way.",
-        "Precision (op): You place one additional mine within range 0\u20131 of the original position using the same check.",
+        "Precision (op): You place one additional mine within range 0–1 of the original position using the same check.",
         "---"
       ],
       "type": "Combat"
@@ -1149,7 +1197,7 @@
       "name": "Last Stand",
       "rank": 2,
       "approach": "Power",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "A fighter who is wounded but still standing is not a weakened threat. They are a desperate one. Pain strips away restraint, and what remains is something faster, uglier, and harder to predict than anything training produces.",
       "activation": "",
       "opportunities": [],
@@ -1162,8 +1210,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make a check to resist a critical strike during a skirmish, if you are Enraged and not Incapacitated, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Power (op)+: Choose one of your unarmed profiles or a readied improvised weapon. Each other character at range 0–1 with Vigilance lower than or equal to opportunity spent this way suffers physical damage equal to the base damage of your unarmed profile plus 1 for each opportunity spent in excess of their Vigilance.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -1184,8 +1235,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make an Attack action check using a bladed weapon, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Swiftness (op): If you succeed, treat the deadliness of your weapon as increased by the number of range bands you have traveled this round.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -1193,7 +1247,7 @@
       "name": "Murderous Intent",
       "rank": 2,
       "approach": "Power",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "Combat is, in the most pure essence, the act of killing before being killed. A fighter who embraces that fact, who does not flinch at the thought of taking a life, can tap into a well of primal ferocity that makes them a terrifying opponent.",
       "activation": "",
       "opportunities": [],
@@ -1231,8 +1285,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make a Conditioning check to resist a critical strike caused by another character's attack, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Fortune (op)+: You may reduce the critical strike by an additional point per (op)(op) spent this way.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -1278,8 +1335,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs an Attack action using a readied melee weapon or unarmed, you may make a TN 4 Hand-to-Hand (Power) check targeting one character at range 0.\n\nEffects:\n\nIf you succeed, your target suffers physical damage equal to your Power, plus additional damage equal to your bonus successes. Choose one of your target's readied weapons; the target must resist with a TN 4 Conditioning check (Swiftness 2, Precision 5) or surrender control of the weapon to you.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -1313,8 +1372,8 @@
       "id": "cleaving-strike",
       "name": "Cleaving Strike",
       "rank": 3,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "Ranged combat doctrine dominates modern engagements for good reason. But veterans who have survived close-quarters fighting know that a skilled blade user occupies a threat category of their own. Bullets shred flesh and damage metal. Only a blade can cleave an arm from its frame.",
       "activation": "",
       "opportunities": [],
@@ -1327,8 +1386,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make an Attack action check with a melee weapon, you may spend opportunity in the following way.",
+      "opportunities": [
+        "(op)(op): If your target would suffer a critical strike as a result of this check, instead of making a check to resist, they suffer the severity 5–6: Debilitating Gash.",
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -1376,8 +1438,9 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement and Support action using a readied bladed weapon, you may make a TN 4 Blades (Resilience) check.\n\nEffects:\n\nIf you succeed, reduce incoming physical damage from attacks made by characters at range 2–6 by your ranks in Conditioning plus bonus successes.",
       "opportunities": [
+        "Resilience (op)(op): After you defend against physical damage from an attack made by a character at range 2–6, that character suffers 2 strife.",
         "---"
       ],
       "type": "Combat"
@@ -1402,7 +1465,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "Precision (op):If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon\u2019s deadliness damage plus your bonus successes.",
+        "Precision (op):If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon’s deadliness damage plus your bonus successes.",
         "---"
       ],
       "type": "Combat"
@@ -1411,7 +1474,7 @@
       "id": "quick-draw-keep-one-in-the-chamber",
       "name": "Quick Draw: Keep One In the Chamber",
       "rank": 3,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Firearms",
       "flavor": "A quick draw is only as good as the first shot. By keeping a round in the chamber, a skilled shooter can ensure that they are always ready to fire, even if they are caught off guard or have to draw their weapon in a hurry.",
       "activation": "",
@@ -1425,8 +1488,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Strike action using a holstered shotgun, make a Firearms check targeting one area within your effective range. The TN of this check is equal to the highest Vigilance among your targets.\n\nEffects:\n\nIf you succeed, your target suffers a critical strike equal to your weapon's Deadliness, plus 1 per bonus success.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Combat"
     },
     {
@@ -1580,8 +1645,10 @@
       "approach": "",
       "skill": "",
       "flavor": "*During any other scene:** If you succeed, each target ignores the effects of critical strikes with severity lower than your Fortune plus your bonus successes. This effect persists until the end of the scene, at which point all deferred injuries take effect simultaneously. *During a Mass Battle:** If you succeed, your army gains the following ability until the end of the scene: *Fearless:** At the end of each round, your army removes panic equal to your Fortune approach value.",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs an Action, you may make a TN 5 Command (Fortune) check targeting any number of characters who can hear you, or your cohort during a Mass Battle.\n\nEffects:\n\nDuring any other scene: If you succeed, each target ignores the effects of critical strikes with severity lower than your Fortune plus your bonus successes. This effect persists until the end of the scene, at which point all deferred injuries take effect simultaneously.\nDuring a Mass Battle: If you succeed, your army gains the following ability until the end of the scene:\nFearless: At the end of each round, your army removes panic equal to your Fortune approach value.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Command"
     },
     {
@@ -1618,7 +1685,7 @@
       "id": "cloak",
       "name": "Cloak",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "A visible avatar is a target. The simplest form of digital camouflage masks your presence on a node, blending your traffic into the network's background noise. It holds up as long as you hold still.",
       "activation": "",
@@ -1658,15 +1725,17 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers (Resilience) check at the network's TN.\n\nEffects:\n\nOn success, you plant a hidden data cache in a node. The cache remains hidden until the end of the scene or until an operator or sentry succeeds on a Scan action against the node. You or any ally who knows the cache's location can retrieve its contents with a free action when on that node.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Electronic Warfare"
     },
     {
       "id": "exfiltrate",
       "name": "Exfiltrate",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "The objective is rarely to break things. It is to take things. Every intrusion eventually leads to a datastore, and the operator who cannot pull the payload clean was never really a hacker to begin with.",
       "activation": "",
@@ -1732,16 +1801,18 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Support action, make a Computers (Resilience) check at the network's TN.\n\nEffects:\n\nOn success, increase the target T-Doll's Security Rating by 1 until the end of the scene. If the T-Doll is in Level II, also negate the Security Rating reduction from Level II for the same duration.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Electronic Warfare"
     },
     {
       "id": "overclock",
       "name": "Overclock",
       "rank": 1,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "Every piece of hardware ships with safety margins built in. Conservative firmware, thermal limits, voltage caps. Stripping those out is the easiest upgrade in the world. It is also the fastest way to burn through a deck you cannot afford to replace.",
       "activation": "",
       "opportunities": [],
@@ -1754,8 +1825,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Support action, no check required.\n\nEffects:\n\nIncrease your EW Rating by 1 until the end of your next turn. At the end of that turn, your deck suffers the Damaged quality.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Electronic Warfare"
     },
     {
@@ -1788,7 +1861,7 @@
       "id": "spike",
       "name": "Spike",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "Disrupting someone's gear is a nuisance. Striking the operator behind it is a statement. A targeted burst of hostile code bypasses the hardware entirely and hits the person running it: frying feedback loops, spiking neural buffers, turning a rival hacker's own interface into a weapon against them.",
       "activation": "",
@@ -1839,7 +1912,7 @@
       "id": "cleanup-detail",
       "name": "Cleanup Detail",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "",
       "activation": "",
@@ -1864,7 +1937,7 @@
       "id": "falsify-data",
       "name": "Falsify Data",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "Forgery is a crime as old as writing itself. In the digital age, it is not just signatures on paper that can be faked. A forged file can be indistinguishable from the original, and a forged record can rewrite history. The ability to create convincing fakes is a powerful tool for any operator.",
       "activation": "",
@@ -1915,7 +1988,7 @@
       "id": "hijack",
       "name": "Hijack",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "A locked door is an obstacle. A locked door you control is a weapon. Turrets, drones, environmental systems: every networked device is a tool waiting for someone with the nerve and the skill to pick it up and use it.",
       "activation": "",
@@ -1929,8 +2002,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers check at the network's TN, targeting one device on a node where you hold a foothold.\n\nEffects:\n\nIf you succeed, you take control of the device for as long as you maintain concentration. You may issue one command to the device as part of this action; subsequent commands require you to spend your action on your turn. The device continues its last order until commanded otherwise. If you take any other action, you must make a Computers check at the network's TN at the start of your next turn to maintain control, or the device reverts to its default behavior.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Electronic Warfare"
     },
     {
@@ -2012,7 +2087,7 @@
       "id": "rootkit",
       "name": "Rootkit",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "A rootkit is a piece of software designed to hide itself and its payload from detection. Installing a rootkit on a node allows you to operate on that node without being physically present, making it an invaluable tool for any operator who wants to maintain a foothold in a network without risking exposure.",
       "activation": "",
@@ -2026,15 +2101,17 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Scheme action, make a Computers check at the network's TN, targeting one node where you hold a foothold.\n\nEffects:\n\nIf you succeed, you install a rootkit on the target node, allowing you to target objects on the network with techniques that require a foothold on the node regardless of your actual position. The rootkit remains active for a number of rounds equal to your bonus successes (minimum 1). You can only have one rootkit active at a time; installing a new one overwrites the previous one.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Electronic Warfare"
     },
     {
       "id": "spoof",
       "name": "Spoof",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "Sensors trust their own data. That is their greatest vulnerability. A spoofed feed shows an empty hallway while a team walks through it. A motion sensor registers nothing. A biometric reader accepts a face that was never scanned. The system works perfectly. It is simply wrong.",
       "activation": "",
@@ -2212,7 +2289,7 @@
       "id": "total-eclipse",
       "name": "Total Eclipse",
       "rank": 3,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Computers",
       "flavor": "There is a point past hacking where the distinction between operator and infrastructure dissolves. Administrative control is not a privilege the network grants. It is a condition the network cannot prevent. What follows is total authority, and then total collapse, because no system survives being owned that completely.",
       "activation": "",
@@ -2226,8 +2303,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Scheme action, immediately increase your heat by 5 and make a Computers check at the network's TN +2. There is no heat cost associated with failing this technique.\n\nEffects:\n\nOn success, you assume administrative control of the entire network for a number of rounds equal to your bonus successes (minimum 1). While in control, you may issue one command per round to any device on the network as a free action, sentries treat you as an authorized operator and obey your commands, and barriers open or close at your will. At the end of the duration, the network crashes and reboots: all connections are severed, all sentries reboot, and the network goes offline for the remainder of the scene. Your Heat immediately goes to 10 (Burned) when the duration ends, but the crash means there is no network left to trace you on; the physical security response, if any, depends on how fast they can figure out what happened.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Electronic Warfare"
     }
   ],
@@ -2236,10 +2315,10 @@
       "id": "line-of-absolute-attack",
       "name": "Line of Absolute Attack",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "A remolding unit sweeps energy in a directed band, not a single point. Two adjacent spaces take the hit simultaneously. By the time the targets realize they were in the pattern, the damage is done.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1\u20133 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2254,7 +2333,7 @@
       "opportunities": [
         "(op)+: Remove obscuring terrain from each selected space per (op) spent this way.",
         "(op): Increase the number of adjacent spaces you can target by 1.",
-        "(op): Extend the range of this technique to 1\u20134 range bands.",
+        "(op): Extend the range of this technique to 1–4 range bands.",
         "---"
       ],
       "type": "Remoulding"
@@ -2263,10 +2342,10 @@
       "id": "sweeping-advance",
       "name": "Sweeping Advance",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "Obstacles stop being obstacles once you've run enough collapse energy through them. The sweep doesn't slow down for cover that isn't there anymore.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1\u20133 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2280,7 +2359,7 @@
       "activation": "",
       "opportunities": [
         "(op): Increase the number of adjacent spaces you can target by 1.",
-        "(op): Extend the range of this technique to 1\u20134 range bands.",
+        "(op): Extend the range of this technique to 1–4 range bands.",
         "---"
       ],
       "type": "Remoulding"
@@ -2289,10 +2368,10 @@
       "id": "scorched-horizon",
       "name": "Scorched Horizon",
       "rank": 3,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "Elevated positions offer a tactical advantage right up until the ground beneath them stops existing. Collapse energy doesn't respect high ground.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1\u20133 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost. You may also remove elevated terrain from any target space; any creature or doll that was in that elevated terrain suffers a critical strike.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting two adjacent spaces 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to all creatures and dolls in the target spaces. You may remove dangerous, entangling, or obscuring terrain from each target space at no additional cost. You may also remove elevated terrain from any target space; any creature or doll that was in that elevated terrain suffers a critical strike.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2306,7 +2385,7 @@
       "activation": "",
       "opportunities": [
         "(op): Increase the number of adjacent spaces you can target by 1.",
-        "(op): Extend the range of this technique to 1\u20134 range bands.",
+        "(op): Extend the range of this technique to 1–4 range bands.",
         "---"
       ],
       "type": "Remoulding"
@@ -2315,10 +2394,10 @@
       "id": "vampirism",
       "name": "Vampirism",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "The remolding unit pulls energy out of a target and routes it back through you. Simple in principle. The enemy gets less; you get more. First lesson in applied remolding.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting one enemy 1\u20133 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the target equal to your ranks in Resolve. You recover fatigue equal to your bonus successes.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting one enemy 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the target equal to your ranks in Resolve. You recover fatigue equal to your bonus successes.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2329,7 +2408,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check targeting one enemy 1–3 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the target equal to your ranks in Resolve. You recover fatigue equal to your bonus successes.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2337,10 +2416,10 @@
       "id": "channeled-sacrifice",
       "name": "Channeled Sacrifice",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "Routing drained energy through yourself and then out to someone else takes more precision than keeping it. You give up the recovery. Someone else gets back on their feet instead.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 3 Resolve check targeting one enemy 1\u20133 range bands away and one ally 0\u20132 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 3 Resolve check targeting one enemy 1–3 range bands away and one ally 0–2 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2351,7 +2430,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 3 Resolve check targeting one enemy 1–3 range bands away and one ally 0–2 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2359,10 +2438,10 @@
       "id": "the-power-to-take-and-give-life",
       "name": "The Power to Take and Give Life",
       "rank": 3,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "A practiced operator can split the output three ways and not lose a step. The enemy pays the cost. The team collects.",
-      "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check targeting one enemy 1\u20133 range bands away and one ally 0\u20132 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check targeting one enemy 1–3 range bands away and one ally 0–2 range bands away.\n\nEffects:\n\nIf you succeed, deal elemental damage to the enemy equal to your ranks in Resolve. Your ally recovers fatigue equal to your bonus successes.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2375,7 +2454,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): Select one additional ally within 0\u20132 range bands. That ally also recovers fatigue equal to your bonus successes.",
+        "(op)(op): Select one additional ally within 0–2 range bands. That ally also recovers fatigue equal to your bonus successes.",
         "---"
       ],
       "type": "Remoulding"
@@ -2384,7 +2463,7 @@
       "id": "unstable-discharge",
       "name": "Unstable Discharge",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "The first time you flood a remolding unit past its limits, the surge doesn't discriminate. Friend or enemy, anything in the immediate area takes the hit. You learn fast to warn your team before you do it again.",
       "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every creature and doll within 1 range band, including allies.",
@@ -2398,7 +2477,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs an Attack action, make a TN 2 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every creature and doll within 1 range band, including allies.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2406,7 +2485,7 @@
       "id": "energy-overflow",
       "name": "Energy Overflow",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "Controlled output means the wave goes out, not back in. A shaped emission doesn't care about range; it cares about who it's aimed at.",
       "activation": "Activation:\n\nAs an Attack action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every enemy within 2 range bands.",
@@ -2431,7 +2510,7 @@
       "id": "total-saturation",
       "name": "Total Saturation",
       "rank": 3,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "At full output, collapse energy doesn't just burn. It tears. Whatever survives the initial wave is still bleeding, disoriented, and on fire.",
       "activation": "Activation:\n\nAs an Attack action, make a TN 5 Resolve check.\n\nEffects:\n\nIf you succeed, deal elemental damage equal to your ranks in Resolve to every enemy within 3 range bands. Each enemy hit also suffers the Burning condition.",
@@ -2456,7 +2535,7 @@
       "id": "elemental-aegis",
       "name": "Elemental Aegis",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "Collapse energy can be turned inward as easily as it's directed out. The practical result is a sustained field that makes you considerably harder to put down.",
       "activation": "Activation:\n\nAs a Support action, make a TN 2 Resolve check targeting yourself.\n\nEffects:\n\nIf you succeed, you gain the Resilient and Hardened conditions.",
@@ -2470,7 +2549,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 2 Resolve check targeting yourself.\n\nEffects:\n\nIf you succeed, you gain the Resilient and Hardened conditions.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2478,10 +2557,10 @@
       "id": "projected-aegis",
       "name": "Projected Aegis",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "Extending the field to someone else means giving up your own coverage. You take the risk. They take the protection. That's the trade.",
-      "activation": "Activation:\n\nAs a Support action, make a TN 3 Resolve check targeting one ally within 0\u20132 range bands.\n\nEffects:\n\nIf you succeed, your target gains the Resilient and Hardened conditions.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 3 Resolve check targeting one ally within 0–2 range bands.\n\nEffects:\n\nIf you succeed, your target gains the Resilient and Hardened conditions.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2492,7 +2571,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 3 Resolve check targeting one ally within 0–2 range bands.\n\nEffects:\n\nIf you succeed, your target gains the Resilient and Hardened conditions.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2500,7 +2579,7 @@
       "id": "iron-sky",
       "name": "Iron Sky",
       "rank": 3,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "A full-coverage field costs everything the unit has. The squad walks through whatever comes next wearing that cost.",
       "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check targeting yourself and all allies within 2 range bands.\n\nEffects:\n\nIf you succeed, you and each target ally gain the Resilient and Hardened conditions.",
@@ -2514,7 +2593,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check targeting yourself and all allies within 2 range bands.\n\nEffects:\n\nIf you succeed, you and each target ally gain the Resilient and Hardened conditions.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2522,7 +2601,7 @@
       "id": "battlefield-logistics",
       "name": "Battlefield Logistics",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "A burst of collapse energy applied to your own frame gets you where you need to be. Tactical repositioning stops being an action tax when the energy is free.",
       "activation": "Activation:\n\nAs a Movement action, make a TN 3 Resolve check.\n\nEffects:\n\nIf you succeed, move up to 2 range bands from your starting position. Alternatively, you may enter elevated terrain adjacent to you without paying any movement penalty.",
@@ -2536,7 +2615,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement action, make a TN 3 Resolve check.\n\nEffects:\n\nIf you succeed, move up to 2 range bands from your starting position. Alternatively, you may enter elevated terrain adjacent to you without paying any movement penalty.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2544,7 +2623,7 @@
       "id": "tactical-relay",
       "name": "Tactical Relay",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "Getting your team into position matters more than getting there yourself. A well-placed ally is worth two who are stuck in the wrong spot.",
       "activation": "Activation:\n\nAs a Movement action, make a TN 3 Resolve check targeting yourself or one ally within 2 range bands.\n\nEffects:\n\nIf you succeed, the target moves up to 3 range bands from their starting position. Alternatively, the target may enter elevated terrain adjacent to them without paying any movement penalty.",
@@ -2558,7 +2637,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement action, make a TN 3 Resolve check targeting yourself or one ally within 2 range bands.\n\nEffects:\n\nIf you succeed, the target moves up to 3 range bands from their starting position. Alternatively, the target may enter elevated terrain adjacent to them without paying any movement penalty.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2566,7 +2645,7 @@
       "id": "forced-displacement",
       "name": "Forced Displacement",
       "rank": 3,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "The collapse burst doesn't care whether the target wants to move. Sending an enemy into a worse position is logistics applied to the other side of the board, and the landing hurts.",
       "activation": "Activation:\n\nAs a Movement action, make a TN 4 Resolve check targeting one character within 3 range bands.\n\nEffects:\n\nIf you succeed, move the target up to 3 range bands from their starting position. If the target is an enemy, they also suffer elemental damage equal to your ranks in Resolve.",
@@ -2580,7 +2659,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
+      "activation": "Activation:\n\nAs a Movement action, make a TN 4 Resolve check targeting one character within 3 range bands.\n\nEffects:\n\nIf you succeed, move the target up to 3 range bands from their starting position. If the target is an enemy, they also suffer elemental damage equal to your ranks in Resolve.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2588,10 +2667,10 @@
       "id": "terraforming",
       "name": "Terraforming",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "A shockwave of collapse energy doesn't just damage what it touches. It changes it. An open path becomes a hazard in under a second, and the enemy spends the rest of the fight working around it.",
-      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0\u20131 range bands. That area becomes Entangling Terrain until the end of the scene.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–1 range bands. That area becomes Entangling Terrain until the end of the scene.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2604,7 +2683,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): Designate one additional area within 0\u20131 range bands to also become Entangling Terrain.",
+        "(op)(op): Designate one additional area within 0–1 range bands to also become Entangling Terrain.",
         "---"
       ],
       "type": "Remoulding"
@@ -2613,10 +2692,10 @@
       "id": "denial-zone",
       "name": "Denial Zone",
       "rank": 2,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "Entanglement slows people down. Dangerous ground and radiation keep them out entirely. When you need to hold a position rather than just slow someone through it, the distinction matters.",
-      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0\u20131 range bands. That area becomes Entangling, Dangerous, or Radiation Terrain (your choice) until the end of the scene.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–1 range bands. That area becomes Entangling, Dangerous, or Radiation Terrain (your choice) until the end of the scene.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2629,7 +2708,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): Designate one additional area within 0\u20131 range bands to become terrain of the same type.",
+        "(op)(op): Designate one additional area within 0–1 range bands to become terrain of the same type.",
         "---"
       ],
       "type": "Remoulding"
@@ -2638,10 +2717,10 @@
       "id": "total-terrain-dominance",
       "name": "Total Terrain Dominance",
       "rank": 3,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Resolve",
       "flavor": "At full output, the environment stops being a backdrop and starts being a piece you control. Raised ground, blinded sight lines, denied zones: the battlefield becomes whatever you need it to be.",
-      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0\u20132 range bands. That area becomes Entangling, Dangerous, Radiation, Elevated, or Obscuring Terrain (your choice) until the end of the scene.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Resolve check.\n\nEffects:\n\nIf you succeed, designate one area within 0–2 range bands. That area becomes Entangling, Dangerous, Radiation, Elevated, or Obscuring Terrain (your choice) until the end of the scene.",
       "opportunities": [],
       "type": "Remoulding"
     },
@@ -2654,7 +2733,7 @@
       "flavor": "",
       "activation": "",
       "opportunities": [
-        "(op)(op): Designate one additional area within 0\u20132 range bands to become terrain of the same type.",
+        "(op)(op): Designate one additional area within 0–2 range bands to become terrain of the same type.",
         "---"
       ],
       "type": "Remoulding"
@@ -2883,8 +2962,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nMake a TN 2 Science (Precision) check to visually assess a creature or body for signs of <a href=\"#Conditions::elid\">ELID infection</a>.\n\nEffects:\n\nOn a success, you determine whether the subject is infected and, if so, the current stage of <a href=\"#Conditions::elid\">ELID</a> progression (Early, Middle, or Late).",
+      "opportunities": [
+        "---"
+      ],
       "type": "Science"
     },
     {
@@ -3158,8 +3239,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Medicine (Swiftness) check targeting an injured character who is actively <a href=\"#Conditions::condition-bleeding\">bleeding</a>.\n\nEffects:\n\nOn a success, you stop the <a href=\"#Conditions::condition-bleeding\">bleeding</a>, preventing the character from suffering further damage from that wound. The character still needs medical attention to properly treat the injury and recover.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Science"
     },
     {
@@ -3309,8 +3392,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a downtime activity, if you have access to the necessary materials and equipment, make a Science (Precision) check to manufacture a chemical substance. The TN is determined by the GM based on the complexity of the substance being created.\n\nEffects:\n\nOn a success, you create the desired chemical substance. The GM determines the specific properties and potential uses of the substance based on your description and the context of its creation.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Science"
     },
     {
@@ -3331,8 +3416,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nOnce per scene as a Support action, you may make a TN 4 Science (Fortune) check.\n\nEffects:\n\nOn success, choose one technical skill. Until the end of the scene, when making checks using the chosen skill, treat your rating in that skill as equal to your Science rating if it would otherwise be lower.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Science"
     }
   ],
@@ -3561,8 +3648,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nOnce per scene as a Support action, you may spend 1 Fortune point.\n\nEffects:\n\nRemove Strife equal to your Fame divided by 10 (rounded down, minimum 1).",
+      "opportunities": [
+        "---"
+      ],
       "type": "Social"
     },
     {
@@ -4022,8 +4111,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nOnce per session as a Support action, you may make a TN 5 Performance (Fortune) check targeting each character in the scene with whom you share a meaningful bond.\n\nEffects:\n\nIf you succeed, each target removes 5 Strife and 5 Fatigue, plus 1 additional point of each per two bonus successes.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Social"
     },
     {
@@ -4069,8 +4160,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Scheme action, you may make a Culture (Swiftness) check targeting a number of characters up to your Swiftness approach value. The TN is equal to the Vigilance of the character with the highest Fame among your targets.\n\nEffects:\n\nIf you succeed, you may enter or exit the conversation without social penalty. You do not lose Humanity or Fame for interrupting, suddenly departing from, or preempting another character in the conversation, regardless of the relative Fame of those involved.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Social"
     },
     {
@@ -4270,8 +4363,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen making an Arts or Performance (Power) check, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Power (op)+: The next time you receive a Fame award this scene, increase the amount by 1. If there is a character with higher Fame than you in the scene, increase the amount by 1 per opportunity spent this way instead.",
+        "---"
+      ],
       "type": "Social"
     },
     {
@@ -4330,7 +4426,7 @@
       "id": "clean-hands",
       "name": "Clean Hands",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Deception",
       "flavor": "Anyone can start a fight. The skill is in finishing one lethally while walking away looking like the victim. Provoke the right response, let them throw the first punch, and by the time the body is cold, every witness in the room saw an accident.",
       "activation": "",
@@ -4498,8 +4594,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make a Subterfuge check using the Precision or Swiftness approaches to destroy, conceal, or remove incriminating material during downtime or at a scene you are currently in, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Precision or Swiftness (op)+: Increase the TN to detect or investigate the altered material by 1 per opportunity spent this way.",
+        "---"
+      ],
       "type": "Street"
     },
     {
@@ -4520,8 +4619,11 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nWhen you make a Stealth, Subterfuge, or Deception check using the Precision or Swiftness approaches to surveil or engage in other clandestine activities during downtime, you may spend opportunity in the following way.",
+      "opportunities": [
+        "Precision or Swiftness (op)+: If you succeed, you create one piece of Contrary evidence per opportunity spent this way.",
+        "---"
+      ],
       "type": "Street"
     },
     {
@@ -4529,7 +4631,7 @@
       "name": "Dead Air",
       "rank": 2,
       "approach": "Precision",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "Most engagements fail at the moment of contact. The sound draws attention, the attention draws response, and the responders close the window. Cut the sound and the window stays open.",
       "activation": "",
       "opportunities": [],
@@ -4606,7 +4708,7 @@
       "name": "Silent Strike",
       "rank": 2,
       "approach": "Precision",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "There is no such thing as a fair fight. There is only the fight you walked into and the one you set up. A disoriented target, a suppressed barrel, and a clear angle: one of these is a circumstance. All three is a decision.",
       "activation": "",
       "opportunities": [],
@@ -4648,7 +4750,7 @@
       "activation": "",
       "opportunities": [
         "Swiftness (op): Move 1 range band.",
-        "(op)+: The area at range 0\u20132 of your position gains the Obscuring and Dangerous terrain qualities until the end of the scene.",
+        "(op)+: The area at range 0–2 of your position gains the Obscuring and Dangerous terrain qualities until the end of the scene.",
         "(op)+: One target per (op) spent this way suffers a critical strike with severity 2.",
         "---"
       ],
@@ -4659,7 +4761,7 @@
       "name": "What's Yours Is Mine",
       "rank": 2,
       "approach": "Power",
-      "skill": "\u2014",
+      "skill": "—",
       "flavor": "A skilled thief can take more than just a target's possessions. They can take their sense of security, their confidence, and even their breath. A well-timed strike can leave an opponent not just empty-handed, but vulnerable in every way.",
       "activation": "",
       "opportunities": [],
@@ -4711,8 +4813,8 @@
       "id": "silent-assassin",
       "name": "Silent Assassin",
       "rank": 3,
-      "approach": "\u2014",
-      "skill": "\u2014",
+      "approach": "—",
+      "skill": "—",
       "flavor": "There is a category of professional beyond deadly: the kind you only discover after the fact. No raised alarm. No struggle. Just stillness, and then a room full of bodies, each taken so cleanly that the last one never knew the first was already gone.",
       "activation": "",
       "opportunities": [],
@@ -4817,7 +4919,7 @@
       "id": "drive-by-directive",
       "name": "Drive-By Directive",
       "rank": 1,
-      "approach": "\u2014",
+      "approach": "—",
       "skill": "Firearms",
       "flavor": "The wheel in one hand, a sidearm in the other. Most people can manage one of those tasks competently. Doing both at speed requires a different kind of coordination, the kind earned by running enough pursuits to lose count.",
       "activation": "",
@@ -4934,8 +5036,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Scheme action during a chase, make a TN 3 Resolve (Power) check targeting one opposing driver you can perceive.\n\nEffects:\n\nIf you succeed, the target driver gains 3 strife and must immediately choose:\n• Blink: Decelerate, gaining 1 stack of Losing Ground.\n• Hold the line: Both vehicles collide head-on. Each vehicle suffers damage equal to the current scene speed (minus that vehicle's armor value). All occupants of both vehicles suffer a Critical Strike. The severity equals the current scene speed, shifted by half the difference in the two vehicles' damage thresholds (rounded down in favor of the heavier vehicle). Minimum severity 1.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Vehicle"
     },
     {
@@ -5006,8 +5110,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Support action during a skirmish while you are driving a vehicle, position the vehicle as cover. Make a TN 2 Tactics (Resilience) check.\n\nEffects:\n\nIf you succeed, the vehicle provides cover until it moves:\n• Characters on the far side of the vehicle from incoming fire add double your vehicle's armor value to their physical resistance.\n• Occupants inside the vehicle add your vehicle's armor value to their physical resistance.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Vehicle"
     },
     {
@@ -5106,8 +5212,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "",
-      "opportunities": [],
+      "activation": "Activation:\n\nAs a Scheme action during a chase while you are being pursued, make a TN 5 Piloting (Swiftness) check. This technique requires suitable terrain to break line of sight: an alley, a garage, an off-ramp, a tunnel, or similar cover. The GM determines whether the environment supports the maneuver.\n\nEffects:\n\nIf you succeed, the chase ends. You escape all pursuers. The GM describes how you slip away.",
+      "opportunities": [
+        "---"
+      ],
       "type": "Vehicle"
     },
     {

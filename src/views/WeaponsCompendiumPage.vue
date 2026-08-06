@@ -58,6 +58,7 @@
             <span class="db-type-tag">Dmg {{ w.damage }}</span>
             <span class="db-type-tag">Dead {{ w.deadliness }}</span>
             <span class="db-type-tag">Range {{ w.range }}</span>
+            <span class="db-type-tag">Rarity {{ w.rarity }}</span>
           </span>
         </div>
 
@@ -69,6 +70,7 @@
             <span class="tech-tag approach">{{ w.category }}</span>
             <span class="tech-tag rank">Skill: {{ w.skill }}</span>
             <span class="tech-tag skill">Grip: {{ w.grip }}</span>
+            <span class="tech-tag skill">Rarity: {{ w.rarity }}</span>
           </div>
 
           <div class="weapon-stats-grid">

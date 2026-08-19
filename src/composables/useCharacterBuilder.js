@@ -124,6 +124,13 @@ function makeDefaultCharacter() {
         resilience: 1,
         fortune: 1,
       },
+      approaches_free: {
+        power: 1,
+        precision: 1,
+        swiftness: 1,
+        resilience: 1,
+        fortune: 1,
+      },
       skills: makeDefaultSkills(),
       skills_free: makeDefaultSkills(),
       social: {
@@ -132,6 +139,9 @@ function makeDefaultCharacter() {
         status: 30,
         stress_tell: '',
         view_of_dolls: '',
+        view_of_humans: '',
+        view_of_dolls_skill: 'none',
+        view_of_humans_skill: 'none',
       },
       conflict: {
         endurance: 0,
@@ -308,6 +318,8 @@ const isOpen = ref(false)
 // Load persisted or create fresh
 const saved = loadFromStorage()
 const character = reactive(saved || makeDefaultCharacter())
+// All creation-granted approach ranks are free (approaches_free mirrors approaches).
+Object.assign(character.system.approaches_free, character.system.approaches)
 
 // Auto-save on any change
 watch(
@@ -360,6 +372,144 @@ function findEmptyDisciplineSlot() {
 }
 
 // ---------------------------------------------------------------------------
+// Secondary creation effects (Q6 view + T-Doll name origin)
+// ---------------------------------------------------------------------------
+let _secondarySkillGrants = []
+
+function grantSecondarySkill(skill) {
+  if (skill && skill !== 'none' && character.system.skills[skill] !== undefined) {
+    character.system.skills[skill] = (character.system.skills[skill] || 0) + 1
+    character.system.skills_free[skill] = (character.system.skills_free[skill] || 0) + 1
+    _secondarySkillGrants.push(skill)
+  }
+}
+
+function revokeSecondarySkillGrants() {
+  _secondarySkillGrants.forEach(skill => {
+    if (skill && character.system.skills[skill] !== undefined) {
+      character.system.skills[skill] = Math.max(0, (character.system.skills[skill] || 0) - 1)
+      character.system.skills_free[skill] = Math.max(0, (character.system.skills_free[skill] || 0) - 1)
+    }
+  })
+  _secondarySkillGrants = []
+}
+
+function recomputeSocial() {
+  const isHuman = character.system.identity.characterType === 'human'
+  let humanity = isHuman ? 50 : 40
+  let fame = 40
+
+  const view = isHuman ? character.system.social.view_of_dolls : character.system.social.view_of_humans
+  if (view === 'favor' || view === 'positive') humanity += 5
+
+  if (!isHuman) {
+    switch (character.system.identity.name_origin) {
+      case 'human': humanity += 5; break
+      case 'callsign': fame += 5; break
+      case 'weapon': humanity -= 5; break
+      case 'weird': fame -= 5; break
+    }
+  }
+
+  character.system.social.humanity = humanity
+  character.system.social.fame = fame
+  character.system.social.status = 30
+}
+
+function recomputeSecondaryEffects() {
+  revokeSecondarySkillGrants()
+  const isHuman = character.system.identity.characterType === 'human'
+  if (isHuman) {
+    if (character.system.social.view_of_dolls === 'tools') {
+      grantSecondarySkill(character.system.social.view_of_dolls_skill)
+    }
+  } else {
+    if (character.system.social.view_of_humans === 'negative') {
+      grantSecondarySkill(character.system.social.view_of_humans_skill)
+    }
+    if (character.system.identity.name_origin === 'weapon') {
+      grantSecondarySkill('firearms')
+    }
+  }
+  recomputeSocial()
+}
+
+// --- T-Doll module budget (Q2) ---
+const MODULE_BUDGET = 60000
+
+function _moduleBudgetLimit() {
+  const weird = character.system.identity.characterType !== 'human' && character.system.identity.name_origin === 'weird'
+  return MODULE_BUDGET + (weird ? 6000 : 0)
+}
+
+function _moduleCostTotal() {
+  return character.items
+    .filter(i => i.type === 'module')
+    .reduce((sum, i) => sum + (Number(i.system?.cost) || 0), 0)
+}
+
+function moduleBudgetRemaining() {
+  return _moduleBudgetLimit() - _moduleCostTotal()
+}
+
+// --- Export helper: materialize discipline perk/technique stub items ---
+function _materializeDisciplineItems(system, items) {
+  for (const slot of Object.values(system.disciplines || {})) {
+    if (!slot.disciplineId) continue
+    const disc = disciplines.find(d => (d.id || d.title) === slot.disciplineId)
+    if (!disc) continue
+
+    if (disc.perk?.title) {
+      const perkItem = {
+        _id: makeFoundryId(disc.perk.title),
+        name: disc.perk.title,
+        type: 'technique',
+        img: 'systems/gfl5r/assets/icons/techs/perk.svg',
+        system: {
+          source_reference: { source: 'GFL5R', page: 0 },
+          flavor: disc.perk.text || '',
+          description: disc.perk.text || '',
+          xp_cost: 0,
+          rank_required: 1,
+          technique_type: 'perk',
+          approach: '',
+          skill: '',
+          activation: 'passive',
+        },
+      }
+      items.push(perkItem)
+      slot.perkId = perkItem._id
+    }
+
+    if (Array.isArray(slot.techniquesLearned) && slot.techniquesLearned.length) {
+      const learnedIds = []
+      for (const t of slot.techniquesLearned) {
+        const itemId = makeFoundryId(t.name || t.id || 'technique')
+        items.push({
+          _id: itemId,
+          name: t.name || 'Technique',
+          type: 'technique',
+          img: 'systems/gfl5r/assets/icons/techs/technique.svg',
+          system: {
+            source_reference: { source: 'GFL5R', page: 0 },
+            flavor: '',
+            description: '',
+            xp_cost: 0,
+            rank_required: t.rank || 1,
+            technique_type: 'technique',
+            approach: '',
+            skill: '',
+            activation: 'active',
+          },
+        })
+        learnedIds.push(itemId)
+      }
+      slot.techniquesLearned = learnedIds
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Public composable
 // ---------------------------------------------------------------------------
 export function useCharacterBuilder() {
@@ -380,31 +530,41 @@ export function useCharacterBuilder() {
   function setCharacterType(type) {
     // type: 'human' | 't-doll'
     character.system.identity.characterType = type
-    // Reset frame/nationality/background fields
     character.system.identity.nationality = ''
     character.system.identity.background = ''
     character.system.identity.frame = ''
     character.system.identity.manufacturer = ''
     character.system.identity.model = ''
+    character.system.identity.name_origin = ''
+    character.system.social.view_of_dolls = ''
+    character.system.social.view_of_humans = ''
+    character.system.social.view_of_dolls_skill = 'none'
+    character.system.social.view_of_humans_skill = 'none'
     // Reset approaches to base
     APPROACH_IDS.forEach(a => {
       character.system.approaches[a] = 1
+      character.system.approaches_free[a] = 1
     })
     // Reset skills
     SKILL_IDS.forEach(s => {
       character.system.skills[s] = 0
       character.system.skills_free[s] = 0
     })
+    _secondarySkillGrants = []
+    recomputeSocial()
   }
 
   function setIdentity(field, value) {
     character.system.identity[field] = value
+    if (field === 'name_origin') recomputeSecondaryEffects()
   }
 
   // ---- Approaches ----
   function setApproach(approach, value) {
     if (APPROACH_IDS.includes(approach)) {
-      character.system.approaches[approach] = Math.min(MAX_APPROACH_AT_CREATION, Math.max(1, Number(value) || 1))
+      const rank = Math.min(MAX_APPROACH_AT_CREATION, Math.max(1, Number(value) || 1))
+      character.system.approaches[approach] = rank
+      character.system.approaches_free[approach] = rank
     }
   }
 
@@ -418,9 +578,12 @@ export function useCharacterBuilder() {
 
   function setAllApproaches(values) {
     // values: { power: 2, precision: 2, ... }
+    // Creation cap: no single approach may exceed MAX_APPROACH_AT_CREATION.
     for (const [approach, val] of Object.entries(values)) {
       if (APPROACH_IDS.includes(approach)) {
-        character.system.approaches[approach] = Math.max(1, Number(val) || 1)
+        const rank = Math.min(MAX_APPROACH_AT_CREATION, Math.max(1, Number(val) || 1))
+        character.system.approaches[approach] = rank
+        character.system.approaches_free[approach] = rank
       }
     }
   }
@@ -433,15 +596,19 @@ export function useCharacterBuilder() {
   }
 
   function addFreeSkill(skill, ranks) {
-    if (character.system.skills_free[skill] !== undefined) {
+    if (character.system.skills[skill] !== undefined) {
+      character.system.skills[skill] = (character.system.skills[skill] || 0) + ranks
       character.system.skills_free[skill] = (character.system.skills_free[skill] || 0) + ranks
     }
   }
 
   function setFreeSkills(skillsList) {
     // skillsList: ['firearms', 'tactics']
-    // Replaces all free skills — used by IdentityEditor for background/frame
-    SKILL_IDS.forEach(s => { character.system.skills_free[s] = 0 })
+    // Replaces all creation-granted skill ranks — used by background/frame selection.
+    SKILL_IDS.forEach(s => {
+      character.system.skills[s] = 0
+      character.system.skills_free[s] = 0
+    })
     skillsList.forEach(s => { addFreeSkill(s, 1) })
   }
 
@@ -454,6 +621,9 @@ export function useCharacterBuilder() {
   function setSocial(field, value) {
     if (character.system.social[field] !== undefined) {
       character.system.social[field] = value
+    }
+    if (['view_of_dolls', 'view_of_humans', 'view_of_dolls_skill', 'view_of_humans_skill'].includes(field)) {
+      recomputeSecondaryEffects()
     }
   }
 
@@ -511,9 +681,9 @@ export function useCharacterBuilder() {
     slot.capstoneId = disciplineData.capstone ? disciplineData.capstone.id || disciplineData.capstone.title : null
     slot.unlockCost = XP.DISCIPLINE_ENTRY_COST
 
-    // Auto-assign free skill ranks from discipline's associated skills (first 2)
+    // Auto-assign free skill ranks for EACH associated skill (rank 1 each)
     if (disciplineData.skills?.length) {
-      const free = disciplineData.skills.slice(0, 2).map(s => s.toLowerCase().replace(/\s+/g, '_'))
+      const free = disciplineData.skills.map(s => s.toLowerCase().replace(/\s+/g, '_'))
       slot.grantedSkills = free
       addFreeSkills(free)
     }
@@ -535,7 +705,8 @@ export function useCharacterBuilder() {
     // Only remove free skills granted by this discipline
     if (slot.grantedSkills) {
       slot.grantedSkills.forEach(s => {
-        if (character.system.skills_free[s] !== undefined) {
+        if (character.system.skills[s] !== undefined) {
+          character.system.skills[s] = Math.max(0, (character.system.skills[s] || 0) - 1)
           character.system.skills_free[s] = Math.max(0, (character.system.skills_free[s] || 0) - 1)
         }
       })
@@ -588,22 +759,20 @@ export function useCharacterBuilder() {
         total += disc[key].xpSpent || 0
       }
     }
-    // Approach XP: each rank above 1 costs newRank × APPROACH_MULTIPLIER
+    // Approach XP above the free baseline
     APPROACH_IDS.forEach(a => {
-      const rank = character.system.approaches[a]
-      if (rank > 1) {
-        for (let r = 2; r <= rank; r++) {
-          total += r * XP.APPROACH_MULTIPLIER
-        }
+      const rank = character.system.approaches[a] || 1
+      const free = character.system.approaches_free?.[a] || 1
+      for (let r = free + 1; r <= rank; r++) {
+        total += r * XP.APPROACH_MULTIPLIER
       }
     })
-    // Skill XP (non-free): each rank × SKILL_MULTIPLIER
+    // Skill XP above the free baseline
     SKILL_IDS.forEach(s => {
       const rank = character.system.skills[s] || 0
-      if (rank > 0) {
-        for (let r = 1; r <= rank; r++) {
-          total += r * XP.SKILL_MULTIPLIER
-        }
+      const free = character.system.skills_free[s] || 0
+      for (let r = free + 1; r <= rank; r++) {
+        total += r * XP.SKILL_MULTIPLIER
       }
     })
     return total
@@ -636,6 +805,10 @@ export function useCharacterBuilder() {
   // ---- Equipment ----
   function addItem(itemType, itemData) {
     // itemType: 'weapon' | 'armor' | 'item' | 'module'
+    if (itemType === 'module') {
+      const cost = Number(itemData?.cost) || 0
+      if (_moduleCostTotal() + cost > _moduleBudgetLimit()) return null
+    }
     // Normalize data to Foundry item format
     const foundryItem = normalizeItem(itemType, itemData)
     // Avoid duplicates
@@ -920,6 +1093,7 @@ export function useCharacterBuilder() {
     // Deep reset nested objects
     character.system.identity = { ...fresh.system.identity }
     character.system.approaches = { ...fresh.system.approaches }
+    character.system.approaches_free = { ...fresh.system.approaches_free }
     character.system.skills = { ...fresh.system.skills }
     character.system.skills_free = { ...fresh.system.skills_free }
     character.system.social = { ...fresh.system.social }
@@ -933,6 +1107,7 @@ export function useCharacterBuilder() {
     character.items.splice(0)
     _lastNationalityKey = null
     _lastBackgroundKey = null
+    _secondarySkillGrants = []
     updateXP()
     syncConflict()
   }
@@ -942,12 +1117,54 @@ export function useCharacterBuilder() {
     updateXP()
     syncConflict()
 
+    const isHuman = character.system.identity.characterType === 'human'
+    const system = JSON.parse(JSON.stringify(character.system))
+
+    // All ranks granted at creation are free (creation XP never carries over).
+    system.skills_free = { ...system.skills }
+    system.approaches_free = { ...system.approaches }
+
+    // Reshape identity to the per-type Foundry schema; drop the webapp-only flag.
+    if (isHuman) {
+      system.identity = {
+        nationality: character.system.identity.nationality || '',
+        background: character.system.identity.background || '',
+        is_transhuman: false,
+      }
+    } else {
+      system.identity = {
+        frame: character.system.identity.frame || '',
+        manufacturer: character.system.identity.manufacturer || '',
+        model: character.system.identity.model || '',
+        name_origin: character.system.identity.name_origin || '',
+      }
+    }
+
+    // Sanitize social to Foundry's schema (drop webapp-only view keys; their
+    // effects are already baked into humanity/fame and skill ranks).
+    system.social = {
+      humanity: system.social.humanity ?? 50,
+      fame: system.social.fame ?? 40,
+      status: system.social.status ?? 30,
+      stress_tell: system.social.stress_tell || '',
+      view_of_dolls: system.social.view_of_dolls || '',
+    }
+
+    // T-Dolls start with an EW baseline of 1/2 (humans at 0/0).
+    if (!isHuman) system.ew = { ew_rating: 1, security_rating: 2 }
+
+    // A fresh character has no spent XP.
+    system.advancement = { xp_total: 0, xp_spent: 0, xp_saved: 0 }
+
+    const items = JSON.parse(JSON.stringify(character.items))
+    _materializeDisciplineItems(system, items)
+
     const exportData = {
       name: character.name || 'New Character',
-      type: 'character',
+      type: isHuman ? 'human' : 'doll',
       img: character.img,
-      system: JSON.parse(JSON.stringify(character.system)),
-      items: JSON.parse(JSON.stringify(character.items)),
+      system,
+      items,
       prototypeToken: {
         name: character.name || 'Character',
         actorLink: true,
@@ -1050,6 +1267,7 @@ export function useCharacterBuilder() {
     applyNationalityGear,
     applyBackgroundGear,
     getDisciplineWeaponGrant,
+    moduleBudgetRemaining,
 
     // Reset & Export
     reset,

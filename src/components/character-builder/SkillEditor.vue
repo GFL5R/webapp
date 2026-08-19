@@ -16,12 +16,9 @@
           >
             <span class="builder-skill-name">{{ formatSkill(skillId) }}</span>
             <span class="builder-skill-rank">
+              {{ totalRank(skillId) }}
               <template v-if="character.system.skills_free[skillId] > 0">
-                <span class="free">+{{ character.system.skills_free[skillId] }}</span>
-              </template>
-              <template v-if="character.system.skills[skillId] > 0">
-                <span class="base" v-if="character.system.skills_free[skillId] > 0">/</span>
-                <span class="base">{{ character.system.skills[skillId] }}</span>
+                <span class="free">({{ character.system.skills_free[skillId] }} free)</span>
               </template>
             </span>
           </div>
@@ -66,7 +63,7 @@ const skillGroups = [
 ]
 
 function totalRank(skillId) {
-  return (character.system.skills[skillId] || 0) + (character.system.skills_free[skillId] || 0)
+  return character.system.skills[skillId] || 0
 }
 
 function hasGroupSkills(group) {

@@ -88,7 +88,11 @@
           <p class="builder-flavor">Spend up to 60,000 credits on upgrade modules.</p>
 
           <!-- Modules drop zone -->
-          <div class="builder-section-title" style="margin-bottom:4px">Modules</div>
+          <div class="builder-section-title" style="margin-bottom:4px">
+            Modules
+            <span style="font-size:0.6rem;opacity:0.7">({{ moduleBudgetRemaining.toLocaleString() }} cr remaining)</span>
+          </div>
+          <div v-if="moduleBudgetOver" style="font-size:0.6rem;color:var(--rose);margin:2px 0 6px">Over budget — module not added.</div>
           <div class="builder-drop-zone" :class="{ 'drag-over': moduleDragOver, 'empty': modules.length === 0 }"
             @dragover.prevent="moduleDragOver = true"
             @dragleave="moduleDragOver = false"
@@ -213,10 +217,24 @@
             :placeholder="isHuman ? 'What are they to you?' : 'What are humans to you?'" rows="2"></textarea>
         </div>
         <div class="builder-identity-row">
-          <label>{{ isHuman ? 'View of Dolls' : 'Relationship' }}</label>
-          <select :value="character.system.social.view_of_dolls" @change="builder.setSocial('view_of_dolls', $event.target.value)">
-            <option value="favor">{{ isHuman ? 'Person — +5 Humanity' : 'Positive — +5 Humanity' }}</option>
-            <option value="tools">{{ isHuman ? 'Object — +1 Skill' : 'Negative — +1 Skill' }}</option>
+          <label>{{ isHuman ? 'View of Dolls' : 'View of Humans' }}</label>
+          <select v-if="isHuman" :value="character.system.social.view_of_dolls" @change="builder.setSocial('view_of_dolls', $event.target.value)">
+            <option value="favor">Person — +5 Humanity</option>
+            <option value="tools">Object — +1 Skill (rank 0)</option>
+          </select>
+          <select v-else :value="character.system.social.view_of_humans" @change="builder.setSocial('view_of_humans', $event.target.value)">
+            <option value="positive">Positive — +5 Humanity</option>
+            <option value="negative">Negative — +1 Skill (rank 0)</option>
+          </select>
+        </div>
+        <div class="builder-identity-row" v-if="(isHuman && character.system.social.view_of_dolls === 'tools') || (!isHuman && character.system.social.view_of_humans === 'negative')">
+          <label class="builder-narrative-label">Bonus Skill</label>
+          <select
+            :value="isHuman ? character.system.social.view_of_dolls_skill : character.system.social.view_of_humans_skill"
+            @change="builder.setSocial(isHuman ? 'view_of_dolls_skill' : 'view_of_humans_skill', $event.target.value)"
+          >
+            <option value="none">-- None --</option>
+            <option v-for="s in SKILL_IDS" :key="s" :value="s">{{ formatSkill(s) }}</option>
           </select>
         </div>
 
@@ -349,6 +367,7 @@ import SkillEditor from './SkillEditor.vue'
 import EquipmentPanel from './EquipmentPanel.vue'
 import SectionDivider from '@/components/layout/SectionDivider.vue'
 import { NATIONALITIES, BACKGROUNDS, FRAMES } from './character-data.js'
+import { NATIONALITY_ITEMS, BACKGROUND_GEAR } from '@/data/starting-equipment.js'
 import disciplines from '@/data/disciplines.js'
 
 const builder = useCharacterBuilder()
@@ -377,12 +396,15 @@ function capitalize(s) {
 
 // ---- Gear display ----
 const nationalityGear = computed(() => {
-  const nat = NATIONALITIES.find(n => n.key === character.system.identity.nationality)
-  return nat?.gear || ''
+  const items = NATIONALITY_ITEMS[character.system.identity.nationality]
+  return items ? items.join(', ') : ''
 })
 const backgroundGear = computed(() => {
-  const bg = BACKGROUNDS.find(b => b.key === character.system.identity.background)
-  return bg?.gear || ''
+  const gear = BACKGROUND_GEAR[character.system.identity.background]
+  if (!gear) return ''
+  const parts = gear.items ? [...gear.items] : []
+  if (gear.armor) parts.push(`Armor: ${gear.armor}`)
+  return parts.join(', ')
 })
 
 // ---- Discipline slot ----
@@ -407,20 +429,24 @@ const weaponGrantText = computed(() => {
 // ---- T-Doll skill XP ----
 const disciplineSkillList = computed(() => {
   if (!discData.value?.skills) return []
-  return discData.value.skills.slice(0, 2).map(s => s.toLowerCase().replace(/\s+/g, '_'))
+  return discData.value.skills.map(s => s.toLowerCase().replace(/\s+/g, '_'))
 })
 function totalRank(skillId) {
-  return (character.system.skills[skillId] || 0) + (character.system.skills_free[skillId] || 0)
+  return character.system.skills[skillId] || 0
 }
 function nextRankCost(skillId) {
   return (totalRank(skillId) + 1) * 2
 }
+function skillXpSpent(skillId) {
+  const total = character.system.skills[skillId] || 0
+  const free = character.system.skills_free[skillId] || 0
+  let xp = 0
+  for (let r = free + 1; r <= total; r++) xp += r * 2
+  return xp
+}
 function tDollXPTotal() {
   let skillXP = 0
-  for (const sk of disciplineSkillList.value) {
-    const rank = character.system.skills[sk] || 0
-    for (let r = 1; r <= rank; r++) skillXP += r * 2
-  }
+  for (const sk of disciplineSkillList.value) skillXP += skillXpSpent(sk)
   return skillXP + (slot.value.techniquesLearned?.length || 0) * 3
 }
 const tDollXPRemaining = computed(() => Math.max(0, 16 - tDollXPTotal()))
@@ -441,6 +467,8 @@ const anxieties = computed(() => builder.getPeculiaritiesByType('anxiety'))
 
 // ---- Modules ----
 const modules = computed(() => builder.getItemsByType('module'))
+const moduleBudgetRemaining = computed(() => builder.moduleBudgetRemaining())
+const moduleBudgetOver = ref(false)
 
 // ---- Character type ----
 function selectType(type) { builder.setCharacterType(type) }
@@ -527,7 +555,8 @@ function onModuleDrop(event) {
     if (!raw) return
     const { dragType, data } = JSON.parse(raw)
     if (dragType !== DRAG_TYPES.MODULE) return
-    builder.addItem('module', data)
+    const added = builder.addItem('module', data)
+    moduleBudgetOver.value = added === null
   } catch { /* ignore */ }
 }
 

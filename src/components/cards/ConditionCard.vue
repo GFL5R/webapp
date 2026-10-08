@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" :id="anchorId">
     <div class="card-header">
       <span class="card-header-name">{{ title }}</span>
     </div>
@@ -27,12 +27,19 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   title: { type: String, required: true },
   description: { type: String, default: '' },
   effects: { type: Array, default: () => [] },
   removal: { type: String, default: '' }
 })
+
+// Link target, e.g. "Lightly Wounded" -> /conditions#lightly-wounded
+const anchorId = computed(() =>
+  props.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+)
 </script>
 
 <style scoped>

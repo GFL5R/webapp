@@ -52,7 +52,7 @@
       </ul>
     </RulesCallout>
 
-    <h3>Gaining Collapse by Zone</h3>
+    <h3 id="gaining-collapse-by-zone">Gaining Collapse by Zone</h3>
 
     <table>
       <thead>
@@ -188,7 +188,7 @@
       'The things that come out of Black Zones are worse than the things that went in.'
     ]" />
 
-    <SectionDivider label="COLLAPSE STORMS" />
+    <SectionDivider id="collapse-storms" label="COLLAPSE STORMS" />
 
     <h2>Collapse Storms</h2>
 

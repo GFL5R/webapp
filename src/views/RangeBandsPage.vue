@@ -64,7 +64,7 @@
     <p>Entangling terrain seriously hampers the mobility of anyone within it. While within Entangling terrain, a character increases the TN of all checks to move and of all Movement actions by 2.</p>
     <p class="readout">Examples: Sucking mud, brier patches, deep snow, icy ground, moving water.</p>
 
-    <h4>Obscuring Terrain</h4>
+    <h4 id="obscuring-terrain">Obscuring Terrain</h4>
     <p>Obscuring terrain limits the visibility of anyone within it, making it difficult to land strikes. Increase the TN of all Attack checks targeting characters within Obscuring terrain by 1. A character within Obscuring terrain generally cannot see beyond Band 2 of their current position into the Obscuring terrain, though they can typically see out of it if they are within Band 2 of an edge. A character outside of Obscuring terrain cannot see into it beyond Band 2 from the edge.</p>
     <p class="readout">Examples: Dense foliage, darkness, cramped indoor quarters, heavy rain or snow, choking smoke.</p>
 

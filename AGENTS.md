@@ -235,6 +235,7 @@ Add to the `disciplines` array in `src/data/disciplines.js`. Follow the existing
 
 - **Vite path alias**: Use `@/` to reference `src/` in imports (configured in `vite.config.js`)
 - **Hash routing**: All internal links must use `<router-link to="/path">` or `router.push()`. Raw `<a href="/path">` will 404.
+- **Links inside JSON data**: Write them as full hash-router hrefs, e.g. `<a href="#/conditions#bleeding">`. Every `ConditionCard` gets an id slugged from its title; other rule sections need an explicit `id` on the heading or `SectionDivider`. `OpText` renders these links in technique text.
 - **@click.stop**: Use `.stop` on click handlers inside expandable database items to prevent toggle when clicking copy-link buttons.
 - **Technique activation entries**: In `techniques.json`, entries with `"id": "activation"` are pseudo-entries. They must be skipped when indexing or rendering as standalone cards. They have `"name": "Activation:"`.
 - **Duplicate technique names** in disciplines.js silently overwrite when mapped.

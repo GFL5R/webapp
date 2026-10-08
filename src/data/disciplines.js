@@ -1,6 +1,9 @@
 // Canonical discipline data — single source of truth.
 // Imported by DisciplinesPage.vue (rendering) and useSearch.js (search index).
 
+import perks from './perks.json'
+import capstones from './capstones.json'
+
 const disciplines = [
   {
     title: 'Ghost',
@@ -353,5 +356,11 @@ const disciplines = [
     capstone: { title: 'The Professional', text: 'At the peak of defensive driving, the Chauffeur doesn\'t evade pursuers — they make pursuers give up. Every route is pre-planned, every contingency anticipated, every passenger delivered.' }
   }
 ]
+
+// Rules text for perks and capstones lives in perks.json / capstones.json, keyed by title.
+for (const d of disciplines) {
+  if (d.perk) d.perk.description = perks[d.perk.title]?.description ?? ''
+  if (d.capstone) d.capstone.description = capstones[d.capstone.title]?.description ?? ''
+}
 
 export default disciplines

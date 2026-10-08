@@ -3,25 +3,25 @@
   "cost": 500,
   "rarity": 3,
   "flavor": "A suppressor reduces the audible report and muzzle flash of a firearm, making it harder to detect when fired.",
-  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Applies the <a href=\"#Weapons & Armor::weapon-qualities\">Suppressed</a> quality to the weapon.</li>\n      </ul>"
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Applies the <a href=\"#/weapons-and-armor#weapon-qualities\">Suppressed</a> quality to the weapon.</li>\n      </ul>"
 },
   "Scope": {
   "cost": 500,
   "rarity": 2,
   "flavor": "A scope is an optical device that provides magnification and improved aiming capabilities for firearms.",
-  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Applies the <a href=\"#Weapons & Armor::weapon-qualities\">Scoped</a> quality to the weapon.</li>\n      </ul>"
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Applies the <a href=\"#/weapons-and-armor#weapon-qualities\">Scoped</a> quality to the weapon.</li>\n      </ul>"
 },
   "Heavy Barrel": {
   "cost": 500,
   "rarity": 3,
   "flavor": "A heavy barrel is a reinforced barrel that can withstand higher pressures, but the weight reduces the user's ability to sustain fire.",
-  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Applies the <a href=\"#Weapons & Armor::weapon-qualities\">Heavy Barrel</a> quality to the weapon.</li>\n      </ul>"
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Applies the <a href=\"#/weapons-and-armor#weapon-qualities\">Heavy Barrel</a> quality to the weapon.</li>\n      </ul>"
 },
   "Compensator": {
   "cost": 500,
   "rarity": 3,
   "flavor": "A compensator is a device attached to the muzzle of a firearm that redirects propellant gases to counter recoil and unwanted rising of the barrel during rapid fire.",
-  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Applies the <a href=\"#Weapons & Armor::weapon-qualities\">Compensated</a> quality to the weapon.</li>\n      </ul>"
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Applies the <a href=\"#/weapons-and-armor#weapon-qualities\">Compensated</a> quality to the weapon.</li>\n      </ul>"
 },
   "Basic Medical Supplies": {
   "cost": 100,
@@ -39,7 +39,7 @@
   "cost": 200,
   "rarity": 5,
   "flavor": "A flashbang is a non-lethal explosive device that emits a bright flash of light and a loud noise to disorient targets.",
-  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the flashbang at a target area within 2 range bands.</li>\n        <h3>Effects</h3>\n        <ul>\n          <li>All targets within range 1 of the target area must make a <strong>TN 4 Resolve check</strong> or be inflicted with the <strong>Disoriented</strong> <a href=\"#Conditions\">condition</a> for 1 round.</li>\n        </ul>"
+  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the flashbang at a target area within 2 range bands.</li>\n        <h3>Effects</h3>\n        <ul>\n          <li>All targets within range 1 of the target area must make a <strong>TN 4 Resolve check</strong> or be inflicted with the <strong>Disoriented</strong> <a href=\"#/conditions#disoriented\">condition</a> for 1 round.</li>\n        </ul>"
 },
   "Grenade": {
   "cost": 300,
@@ -51,7 +51,7 @@
   "cost": 250,
   "rarity": 5,
   "flavor": "A smoke grenade is a non-lethal device that emits a cloud of smoke to obscure vision and provide cover.",
-  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the smoke grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>Create a cloud of smoke in the target area, converting the area into<a href=\"#Range & Movement\">Obscuring Terrain</a> for 1 round.</li>\n      </ul>"
+  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the smoke grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>Create a cloud of smoke in the target area, converting the area into<a href=\"#/range-bands#obscuring-terrain\">Obscuring Terrain</a> for 1 round.</li>\n      </ul>"
 },
   "Incendiary Grenade": {
   "cost": 400,
@@ -63,7 +63,7 @@
   "cost": 350,
   "rarity": 4,
   "flavor": "A canister that releases a cloud of tear gas, causing severe eye and respiratory irritation. Standard crowd control equipment for urban security forces.",
-  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, deploy the tear gas canister at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>Creates a cloud of irritant gas in the target area for 2 rounds.</li>\n        <li>Characters in the area must make a <strong>TN 3 Resolve check</strong> or gain the <strong>Disoriented</strong> <a href=\"#Conditions\">condition</a> for as long as they remain in the area and 1 round after leaving.</li>\n        <li>T-Dolls with Olfactory Units installed are affected normally. T-Dolls without are unaffected.</li>\n      </ul>"
+  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, deploy the tear gas canister at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>Creates a cloud of irritant gas in the target area for 2 rounds.</li>\n        <li>Characters in the area must make a <strong>TN 3 Resolve check</strong> or gain the <strong>Disoriented</strong> <a href=\"#/conditions#disoriented\">condition</a> for as long as they remain in the area and 1 round after leaving.</li>\n        <li>T-Dolls with Olfactory Units installed are affected normally. T-Dolls without are unaffected.</li>\n      </ul>"
 },
   "Breaching Charge": {
   "cost": 300,
@@ -75,25 +75,25 @@
   "cost": 500,
   "rarity": 6,
   "flavor": "An EMP grenade is a device that emits a burst of electromagnetic energy, disrupting or damaging electronic devices within its blast radius.",
-  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the EMP grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>T-Dolls and other automata within range 1 of the blast gain the <strong><a href=\"#Conditions::condition-incapacitated\">incapacitated</a></strong> condition effect for 1 round.</li>\n      </ul>"
+  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the EMP grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>T-Dolls and other automata within range 1 of the blast gain the <strong><a href=\"#/conditions#incapacitated\">incapacitated</a></strong> condition effect for 1 round.</li>\n      </ul>"
 },
   "Collapse Grenade": {
   "cost": 20000,
   "rarity": 7,
   "flavor": "A collapse grenade is a powerful explosive device that explodes with collapse radiation, causing severe damage to targets within its blast radius and leaving behind a hazardous zone.",
-  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the collapse grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>All targets within range 2 of the target area take a<strong><a href=\"#Harm & Healing::suffering-critical-strikes\">Severity 10 Critical</a></strong> and immediately gain 12 points on their Collapse Track. The target area becomes a <a href=\"#Collapse Radiation::collapse-storms\">Collapse Storm</a> for the rest of the scene.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Illegal:</strong> Being caught with one is reason enough for summary execution in many places.</li>\n      </ul>"
+  "description": "<h3>Activation</h3>\n      <ul>\n        <li>As an attack action, throw the collapse grenade at a target area within 2 range bands.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>All targets within range 2 of the target area take a<strong><a href=\"#/harm-and-healing#critical-strikes\">Severity 10 Critical</a></strong> and immediately gain 12 points on their Collapse Track. The target area becomes a <a href=\"#/collapse-radiation#collapse-storms\">Collapse Storm</a> for the rest of the scene.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Illegal:</strong> Being caught with one is reason enough for summary execution in many places.</li>\n      </ul>"
 },
   "Collapse Bomb": {
   "cost": 200000,
   "rarity": 9,
   "flavor": "A collapse bomb is a powerful explosive device that detonates with collapse radiation, causing severe damage to targets within its blast radius and leaving behind a hazardous zone.",
-  "description": "<h3>Activation</h3>\n      <ul>\n        <li>Place the collapse bomb at your current location. Arming requires a full round action. At the start of your next turn, it detonates.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>All targets within range 6 of the detonation point take take a <strong><a href=\"#Harm & Healing::suffering-critical-strikes\">Severity 15 Critical</a></strong>, and immediately fill the remainder of their collapse track's current level. The entire area within range 6 becomes a <a href=\"#Collapse Radiation::collapse-storms\">Collapse Storm</a> for the rest of the scene.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Bulky:</strong> Requires at least 2 characters to carry. While carrying it, those characters cannot take attack actions.</li>\n        <li><strong>Illegal:</strong> Being caught with one is reason enough for summary execution in many places.</li>\n      </ul>"
+  "description": "<h3>Activation</h3>\n      <ul>\n        <li>Place the collapse bomb at your current location. Arming requires a full round action. At the start of your next turn, it detonates.</li>\n      </ul>\n      <h3>Effects</h3>\n      <ul>\n        <li>All targets within range 6 of the detonation point take take a <strong><a href=\"#/harm-and-healing#critical-strikes\">Severity 15 Critical</a></strong>, and immediately fill the remainder of their collapse track's current level. The entire area within range 6 becomes a <a href=\"#/collapse-radiation#collapse-storms\">Collapse Storm</a> for the rest of the scene.</li>\n      </ul>\n      <h3>Qualities</h3>\n      <ul>\n        <li><strong>Bulky:</strong> Requires at least 2 characters to carry. While carrying it, those characters cannot take attack actions.</li>\n        <li><strong>Illegal:</strong> Being caught with one is reason enough for summary execution in many places.</li>\n      </ul>"
 },
   "Portable Chemistry Kit": {
   "cost": 500,
   "rarity": 3,
   "flavor": "A portable chemistry kit contains the tools and materials necessary for basic chemical synthesis and analysis in the field.",
-  "description": "Required for the <a href=\"#techniques-all::Chemical Synthesis\">Chemical Synthesis</a> technique."
+  "description": "Required for the <a href=\"#/techniques/science#chemical-synthesis\">Chemical Synthesis</a> technique."
 },
   "Pocket Knife": {
   "cost": 50,
@@ -321,7 +321,7 @@
   "cost": 50,
   "rarity": 2,
   "flavor": "A tourniquet is a device used to apply pressure to a limb to stop severe bleeding. It can be a lifesaving tool in emergency situations.",
-  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Removes the <strong><a href=\"#Conditions::bleeding\">bleeding</a></strong> condition when applied to a limb until removed.</li>\n        <li>Inflicts the <strong><a href=\"#Conditions::wounded\">Lightly wounded</a></strong> condition until removed.</li>\n      </ul>"
+  "description": "<h3>Effects</h3>\n      <ul>\n        <li>Removes the <strong><a href=\"#/conditions#bleeding\">bleeding</a></strong> condition when applied to a limb until removed.</li>\n        <li>Inflicts the <strong><a href=\"#/conditions#wounded\">Lightly wounded</a></strong> condition until removed.</li>\n      </ul>"
 },
   "Grappling Hook": {
   "cost": 150,

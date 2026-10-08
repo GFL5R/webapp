@@ -153,7 +153,7 @@
 
     <SectionDivider label="ELID" />
 
-    <h2>ELID</h2>
+    <h2 id="elid">ELID</h2>
 
     <p>The character has contracted the Eurosky Low-Emission Infectious Disease (ELID), a degenerative condition caused by Collapse radiation exposure. ELID progresses through distinct stages.</p>
 
@@ -253,7 +253,7 @@
 
     <SectionDivider label="WOUNDED" />
 
-    <h2>Wounded</h2>
+    <h2 id="wounded">Wounded</h2>
 
     <p>A part of your body or frame has been injured, impairing your ability to act with a specific Approach. When you gain a Wounded condition, specify which Approach is affected:</p>
 

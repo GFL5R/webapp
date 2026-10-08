@@ -60,7 +60,7 @@
 
           <div class="tech-activation" v-if="t.activation">
             <div class="tech-opps-label">Activation</div>
-            <p>{{ t.activation }}</p>
+            <p><OpText :text="t.activation" /></p>
           </div>
 
           <div class="tech-opps" v-if="t.opportunities && t.opportunities.length">

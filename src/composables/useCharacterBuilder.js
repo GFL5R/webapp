@@ -16,6 +16,7 @@ import {
   DISCIPLINE_WEAPON_GRANTS,
 } from '@/data/starting-equipment.js'
 import disciplines from '@/data/disciplines.js'
+import rawPerks from '@/data/perks.json'
 
 // ---------------------------------------------------------------------------
 // Drag type constants — used by drag sources and drop targets
@@ -460,6 +461,8 @@ function _materializeDisciplineItems(system, items) {
     if (!disc) continue
 
     if (disc.perk?.title) {
+      // Same source the Foundry perk compendium is built from
+      const perkData = rawPerks[disc.perk.title] || {}
       const perkItem = {
         _id: makeFoundryId(disc.perk.title),
         name: disc.perk.title,
@@ -467,8 +470,8 @@ function _materializeDisciplineItems(system, items) {
         img: 'systems/gfl5r/assets/icons/techs/perk.svg',
         system: {
           source_reference: { source: 'GFL5R', page: 0 },
-          flavor: disc.perk.text || '',
-          description: disc.perk.text || '',
+          flavor: perkData.flavor || '',
+          description: perkData.description || '',
           xp_cost: 0,
           rank_required: 1,
           technique_type: 'perk',

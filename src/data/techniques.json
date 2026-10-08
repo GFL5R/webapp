@@ -325,7 +325,7 @@
       "flavor": "",
       "activation": "Activation:\n\nWhen you succeed on a Blades Attack action check, you may spend (op)(op) in the following way:",
       "opportunities": [
-        "Swiftness (op)(op): The target must resist with a TN 3 Conditioning (Resilience 4, Swiftness 1) check. On failure, the target suffers the <a href=\"#Conditions::condition-bleeding\">Bleeding</a> condition and fatigue equal to their shortfall.",
+        "Swiftness (op)(op): The target must resist with a TN 3 Conditioning (Resilience 4, Swiftness 1) check. On failure, the target suffers the <a href=\"#/conditions#bleeding\">Bleeding</a> condition and fatigue equal to their shortfall.",
         "---"
       ],
       "type": "Combat"
@@ -2962,7 +2962,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "Activation:\n\nMake a TN 2 Science (Precision) check to visually assess a creature or body for signs of <a href=\"#Conditions::elid\">ELID infection</a>.\n\nEffects:\n\nOn a success, you determine whether the subject is infected and, if so, the current stage of <a href=\"#Conditions::elid\">ELID</a> progression (Early, Middle, or Late).",
+      "activation": "Activation:\n\nMake a TN 2 Science (Precision) check to visually assess a creature or body for signs of <a href=\"#/conditions#elid\">ELID infection</a>.\n\nEffects:\n\nOn a success, you determine whether the subject is infected and, if so, the current stage of <a href=\"#/conditions#elid\">ELID</a> progression (Early, Middle, or Late).",
       "opportunities": [
         "---"
       ],
@@ -3239,7 +3239,7 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "Activation:\n\nAs a Support action, make a TN 4 Medicine (Swiftness) check targeting an injured character who is actively <a href=\"#Conditions::condition-bleeding\">bleeding</a>.\n\nEffects:\n\nOn a success, you stop the <a href=\"#Conditions::condition-bleeding\">bleeding</a>, preventing the character from suffering further damage from that wound. The character still needs medical attention to properly treat the injury and recover.",
+      "activation": "Activation:\n\nAs a Support action, make a TN 4 Medicine (Swiftness) check targeting an injured character who is actively <a href=\"#/conditions#bleeding\">bleeding</a>.\n\nEffects:\n\nOn a success, you stop the <a href=\"#/conditions#bleeding\">bleeding</a>, preventing the character from suffering further damage from that wound. The character still needs medical attention to properly treat the injury and recover.",
       "opportunities": [
         "---"
       ],
@@ -4724,7 +4724,7 @@
       "activation": "Activation:\n\nAs an Attack action using a readied suppressed firearm or bladed weapon, you may make a Precision check using the appropriate Combat skill for your weapon with a TN equal to your target's Vigilance, targeting one unaware or Disoriented character within the weapon's range.\n\nEffects:\n\nIf you succeed, the target suffers physical damage equal to your weapon's base damage and a critical strike with severity equal to your weapon's deadliness.",
       "opportunities": [
         "Precision (op)+: Increase the severity of the critical strike by 1 per (op) spent this way.",
-        "Precision (op)(op): The target gains the <a href=\"#Conditions::condition-silenced\">Silenced</a> condition. Other characters at range 3 or greater do not perceive that the target has been struck for 1 round.",
+        "Precision (op)(op): The target gains the <a href=\"#/conditions#silenced\">Silenced</a> condition. Other characters at range 3 or greater do not perceive that the target has been struck for 1 round.",
         "---"
       ],
       "type": "Street"
@@ -4776,7 +4776,7 @@
       "flavor": "",
       "activation": "Activation:\n\nAs an Attack and Movement action using one readied weapon without the Cumbersome quality, you may make a TN 3 (Power) check using the appropriate Combat skill for your weapon, targeting one character at range 0–1.\n\nEffects:\n\nIf you succeed, your target suffers physical damage equal to your weapon's base damage. If you succeed and your target is Dazed, you may take one item from their person; the size and accessibility of the item is subject to the GM's approval. If you attempt to take a readied weapon, the target may resist with a TN 3 Conditioning check (Swiftness 5, Resilience 2).",
       "opportunities": [
-        "Power (op): The target suffers the <a href=\"#Conditions::condition-dazed\">Dazed</a> condition.",
+        "Power (op): The target suffers the <a href=\"#/conditions#dazed\">Dazed</a> condition.",
         "Power (op)+: Move 1 range band, plus 1 additional range band per (op) spent beyond the first.",
         "Power (op)(op)+: If you succeed, you may take one additional item per (op)(op) spent this way.",
         "---"

@@ -46,16 +46,37 @@ const routes = [
   { path: '/search', name: 'search', component: () => import('@/views/SearchPage.vue') },
 ]
 
+// The incoming page mounts only after the outgoing one finishes its leave transition,
+// so an anchor on it is not in the DOM yet when scrollBehavior runs. Poll until it is,
+// ignoring a same-named id on the page that is still fading out.
+function waitForAnchor(hash, timeout = 2000) {
+  const id = decodeURIComponent(hash.slice(1))
+  const start = performance.now()
+  return new Promise((resolve) => {
+    const check = () => {
+      const el = document.getElementById(id)
+      if (el && !el.closest('.page-leave-active')) return resolve(el)
+      if (performance.now() - start > timeout) return resolve(null)
+      requestAnimationFrame(check)
+    }
+    check()
+  })
+}
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-  scrollBehavior(to, from) {
+  async scrollBehavior(to, from) {
     // Don't scroll on hash-only changes (database item expand/collapse)
     if (to.path === from.path && to.hash !== from.hash) {
       return false
     }
     if (to.hash) {
-      return { el: to.hash, behavior: 'smooth' }
+      const el = await waitForAnchor(to.hash)
+      // Database pages expand and center their own items on mount
+      if (!el || el.classList.contains('db-item')) return false
+      const topbar = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--topbar-height')) || 0
+      return { el, top: topbar + 24, behavior: 'smooth' }
     }
     return { top: 0 }
   }

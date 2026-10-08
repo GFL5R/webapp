@@ -30,7 +30,7 @@
       <li><strong>Sentries:</strong> Does the network have autonomous defense programs or a human operator?</li>
     </ul>
 
-    <SectionDivider label="Security Rating" />
+    <SectionDivider id="security-rating" label="Security Rating" />
 
     <p>Every network has a <strong>Security Rating</strong> from 1 to 6:</p>
 
@@ -72,7 +72,7 @@
       <p>A network operator defending their own system is always Friendly on that network. They do not need to Crack systems, can traverse links freely, and do not accumulate Heat.</p>
     </RulesCallout>
 
-    <SectionDivider label="EW Rating" />
+    <SectionDivider id="ew-rating" label="EW Rating" />
 
     <p>Characters who engage in electronic warfare have an <strong>EW Rating</strong> representing their hardware, software, and exploits:</p>
 

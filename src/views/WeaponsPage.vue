@@ -15,7 +15,7 @@
       <p><strong>Attachments:</strong> Attachments are modifications purchased separately and fitted to a weapon. Each attachment applies a quality to the weapon for as long as it remains installed. See the <router-link to="/items">Items list</router-link> for available attachments and their costs.</p>
     </RulesCallout>
 
-    <SectionDivider label="Weapon Qualities" />
+    <SectionDivider id="weapon-qualities" label="Weapon Qualities" />
     <p>Weapons may possess one or more qualities that modify how they function in the field:</p>
     <StatBlock :stats="weaponQualities" />
 
@@ -27,7 +27,7 @@
       <li>One two-handed weapon</li>
     </ul>
 
-    <SectionDivider label="Armor" />
+    <SectionDivider id="armor" label="Armor" />
     <p>Armor represents protective gear worn to survive hostile environments and incoming fire. Each suit or plate offers a tradeoff between protection, mobility, and concealability.</p>
 
     <h3>Armor Attributes</h3>

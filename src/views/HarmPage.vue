@@ -24,7 +24,7 @@
       <p>A commander is hit by a rifle attack that deals 6 damage after reductions. They have only 3 Endurance remaining before becoming Incapacitated. They may choose not to take 6 Fatigue and instead suffer a critical strike with severity set by the rifle's Deadliness.</p>
     </ExampleBox>
 
-    <SectionDivider label="Critical Strikes" />
+    <SectionDivider id="critical-strikes" label="Critical Strikes" />
     <p>A <strong>critical strike</strong> represents a moment when harm exceeds ordinary fatigue, inflicting lasting trauma or catastrophic damage. Critical strikes have a <strong>severity value</strong>, determined by the method of injury.</p>
     <ul>
       <li><strong>Weapons:</strong> The weapon's Deadliness sets the severity.</li>

@@ -17,7 +17,7 @@
   },
   "Irresistible Charisma": {
     "flavor": "People see what they want to see. You've learned to weaponize that instinct, presenting exactly the right facade and punishing anyone foolish enough to think they've figured you out.",
-    "description": "<h3>Effect:</h3>\n      <p>When you perform a check targeting another character to which one of your advantages or disadvantages applies, you may choose another advantage or disadvantage that shares a type with it. Unless they have clear evidence to the contrary, the target comes to believe that you have the advantage or disadvantage you chose instead of the one you actually have.</p>\n      <p>If the target attempts to seize or exploit this false advantage or disadvantage, their check automatically counts as failing with a shortfall of 3. They suffer 3 strife and the <a href=\"#Conditions::condition-disoriented\">Disoriented condition</a>.</p>"
+    "description": "<h3>Effect:</h3>\n      <p>When you perform a check targeting another character to which one of your advantages or disadvantages applies, you may choose another advantage or disadvantage that shares a type with it. Unless they have clear evidence to the contrary, the target comes to believe that you have the advantage or disadvantage you chose instead of the one you actually have.</p>\n      <p>If the target attempts to seize or exploit this false advantage or disadvantage, their check automatically counts as failing with a shortfall of 3. They suffer 3 strife and the <a href=\"#/conditions#disoriented\">Disoriented condition</a>.</p>"
   },
   "Master Diplomat": {
     "flavor": "When the room is on the verge of falling apart, you are the still point at the center. Your composure is contagious.",
@@ -41,7 +41,7 @@
   },
   "Miracle Worker": {
     "flavor": "You don't accept the assessment. You work the problem.",
-    "description": "<h3>Effect:</h3>\n      <p>Once per game session, when a character would die from their injuries, you may spend 1 Fortune Point as a reaction and make a <strong>TN 5 Medicine (Resilience)</strong> check. On a success, the character is stabilized. They remain <a href=\"#Conditions::condition-incapacitated\">Incapacitated</a> but are no longer in danger of death. The severity of their most severe critical strike is reduced by your bonus successes.</p>"
+    "description": "<h3>Effect:</h3>\n      <p>Once per game session, when a character would die from their injuries, you may spend 1 Fortune Point as a reaction and make a <strong>TN 5 Medicine (Resilience)</strong> check. On a success, the character is stabilized. They remain <a href=\"#/conditions#incapacitated\">Incapacitated</a> but are no longer in danger of death. The severity of their most severe critical strike is reduced by your bonus successes.</p>"
   },
   "On the Fly": {
     "flavor": "Given a week and a proper workshop, anyone could do this. You have neither, and it's still getting done.",
@@ -57,7 +57,7 @@
   },
   "Deadeye": {
     "flavor": "Anyone can point a gun. Fewer can put a round exactly where they want it, every time, under pressure.",
-    "description": "<h3>Effect:</h3>\n      <p>Once per scene, before making an Attack action with a pistol, you may declare a called shot. Choose one of the following effects. On a successful hit, the chosen effect triggers in addition to normal damage:</p>\n      <ul>\n        <li><strong>Disarm:</strong> The target drops one item they are holding.</li>\n        <li><strong>Cripple:</strong> The target suffers <a href=\"#Conditions::wounded\">Lightly Wounded</a> in a chosen Approach.</li>\n        <li><strong>Disable:</strong> One piece of equipment on the target is rendered inoperable until repaired.</li>\n      </ul>"
+    "description": "<h3>Effect:</h3>\n      <p>Once per scene, before making an Attack action with a pistol, you may declare a called shot. Choose one of the following effects. On a successful hit, the chosen effect triggers in addition to normal damage:</p>\n      <ul>\n        <li><strong>Disarm:</strong> The target drops one item they are holding.</li>\n        <li><strong>Cripple:</strong> The target suffers <a href=\"#/conditions#wounded\">Lightly Wounded</a> in a chosen Approach.</li>\n        <li><strong>Disable:</strong> One piece of equipment on the target is rendered inoperable until repaired.</li>\n      </ul>"
   },
   "Bullet Storm": {
     "flavor": "Trigger discipline is a virtue. Knowing when to throw it out the window is a skill.",

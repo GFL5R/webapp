@@ -35,7 +35,8 @@
         <div v-if="perk" class="disc-perk">
           <h4>{{ perk.title }}</h4>
           <p v-if="perk.flavor" class="flavor-text">{{ perk.flavor }}</p>
-          <p>{{ perk.text }}</p>
+          <p class="flavor-text">{{ perk.text }}</p>
+          <div v-if="perk.description" class="disc-ability" v-html="perk.description"></div>
         </div>
       </div>
 
@@ -59,7 +60,8 @@
     <div v-if="capstone" class="disc-capstone">
       <h4>{{ capstone.title }}</h4>
       <p v-if="capstone.flavor" class="flavor-text">{{ capstone.flavor }}</p>
-      <p>{{ capstone.text }}</p>
+      <p class="flavor-text">{{ capstone.text }}</p>
+      <div v-if="capstone.description" class="disc-ability" v-html="capstone.description"></div>
     </div>
   </div>
 </template>
@@ -182,6 +184,19 @@ function onDragStart(event) {
   border: 1px solid var(--line-soft);
   padding: 16px;
   margin-top: 12px;
+}
+.disc-ability {
+  font-size: 0.85rem;
+}
+.disc-ability :deep(h3) {
+  font-size: 0.8rem;
+  margin: 12px 0 4px;
+}
+.disc-ability :deep(p) {
+  margin: 0 0 8px;
+}
+.disc-ability :deep(:last-child) {
+  margin-bottom: 0;
 }
 .thin-hr {
   border: none;

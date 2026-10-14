@@ -637,6 +637,19 @@
     ]
   },
   {
+    "id": "obsolescence",
+    "name": "Obsolescence",
+    "types": [
+      "Mental"
+    ],
+    "flavor": "The new operator was twenty-three, clean-eyed, and could field-strip an MDR faster than the veteran had ever managed. She ran the comms drill without glancing at the manual, logged the resupply manifest before being asked, and climbed the radio tower at a pace that left him at the base watching. Solid, the Commander said. Real asset. The veteran nodded along, smiled, and offered her the good cot. That night he lay in the dark and ran the arithmetic. Ten years of experience, or ten years of experience being replaced by someone who doesn't need to be told anything twice. The manual had been updated three times this year and he hadn't read any of them. The new gear came with a 'training recommended' sticker and he'd told himself he'd get to it. He thought about when the squad stops needing him. Not when he stops being useful, but when someone else is more useful. Younger. Cheaper to maintain. He'd seen what happened to operators who aged out. They didn't get parades. They got a handshake and a folder with their name on it, filed somewhere under 'archived.'.",
+    "effects": [
+      "You live in fear of the day you stop being needed. Every skill you don't keep current, every piece of new equipment you don't master, and every younger or more capable operator who joins the unit is a countdown you can't stop. Relevance is the only thing keeping you employed, and you can feel it slipping.",
+      "You gain 3 strife whenever you are shown up by someone younger or more skilled at your own job, whenever you encounter technology or procedures you can't keep up with, or whenever you are passed over, sidelined, or have your role reduced or reassigned.",
+      "The first time this anxiety applies in a scene, you gain 1 fortune point."
+    ]
+  },
+  {
     "id": "radphobia",
     "name": "Radphobia",
     "types": [

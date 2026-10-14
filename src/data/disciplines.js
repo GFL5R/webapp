@@ -91,7 +91,7 @@ const disciplines = [
       { name: 'Commanding Presence' }, { name: 'Field Fortifications' }, { name: 'Look Out!' },
       { name: 'Mentorship' }, { name: 'Prepared for Anything' }, { name: 'Provocative Challenge' },
       { name: 'No Retreat' }, { name: 'Plant a Seed' }, { name: 'Sacrifice Play' },
-      { name: 'Scorched Earth' }, { name: 'Shock and Awe' }
+      { name: 'Scorched Earth' }, { name: 'Shock and Awe' }, { name: 'Flexible Positioning' }
     ],
     perk: { title: 'Natural Leader', text: 'Commanders are masters of leadership and battlefield strategy, able to turn a group of individuals into a cohesive unit that moves and fights as one. They understand that morale is as important as ammunition.' },
     capstone: { title: 'Battlefield Genius', text: 'At the height of command, the Commander sees the battlefield as a single interconnected system. Every move is calculated, every order anticipated, and victory is simply a matter of execution.' }

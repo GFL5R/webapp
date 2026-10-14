@@ -1524,7 +1524,7 @@
     {
       "id": "flexible-positioning",
       "name": "Flexible Positioning",
-      "rank": 2,
+      "rank": 1,
       "approach": "Swiftness",
       "skill": "Command",
       "flavor": "Battlefield conditions change rapidly. A commander who can quickly reposition their forces to exploit new opportunities or respond to emerging threats maintains the initiative and keeps the enemy off-balance.",
@@ -1539,11 +1539,10 @@
       "approach": "",
       "skill": "",
       "flavor": "",
-      "activation": "Activation:\n\nOnce per round as a Support action, you may make a TN 3 Command (Swiftness) check targeting a number of allies equal to your ranks in Command.\n\nEffects:\n\nIf you succeed, each target may immediately switch to a stance of their choice. Additionally, each target may move 1 range band as part of this effect.",
+      "activation": "Activation:\n\nOnce per round as a Support action, you may make a TN 3 Command (Swiftness) check targeting a single ally.\n\nEffects:\n\nIf you succeed, the target may immediately switch to a stance of their choice.",
       "opportunities": [
-        "Swiftness (op): One additional ally may be targeted per (op) spent this way.",
-        "Swiftness (op)(op): Targets may move 2 range bands instead of 1.",
-        "Swiftness (op)+: Targets gain a bonus die to their next check made before the end of their next turn, plus one additional bonus die per (op) spent beyond the first.",
+        "Swiftness (op): You may target one additional ally.",
+        "Swiftness (op)(op): Targets may move 1 range band in any direction.",
         "---"
       ],
       "type": "Command"

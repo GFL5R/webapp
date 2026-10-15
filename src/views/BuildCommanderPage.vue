@@ -323,6 +323,31 @@
       <p>In the URNC era, names are also practical. Different record systems track different aliases. Some Commanders operate under more than one. Some have deliberately burned a name they no longer want attached to their file.</p>
 
       <p>Write it down. Whatever you choose, this is who you are to the world. The name your Doll will call in the heat of battle. The one people will remember when you're gone.</p>
+
+      <p>Names carry weight beyond their sound. The meaning behind yours grants a lasting mark on how you move through the world. Choose one meaning below. It grants <strong>+1 to the Approach</strong> it’s tied to.</p>
+
+      <table>
+        <thead>
+          <tr><th>Name Meaning</th><th>Description</th><th>Effect</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Bearer of burdens</strong></td><td>A name that speaks of someone who carries weight others can&#39;t. Authority, responsibility, or a strength that answers when called.</td><td>Power +1</td></tr>
+          <tr><td><strong>Iron resolve</strong></td><td>A name born from an unyielding will. What you decide, you do, and the world bends around that certainty.</td><td>Power +1</td></tr>
+          <tr><td><strong>Storm given voice</strong></td><td>A name that arrives before you do, announcing itself. You are loud, direct, and harder to ignore than the weather.</td><td>Power +1</td></tr>
+          <tr><td><strong>The unblinking eye</strong></td><td>A name for someone who sees what others miss. Nothing gets by you, and you notice the details that win or lose the fight.</td><td>Precision +1</td></tr>
+          <tr><td><strong>Poised and exact</strong></td><td>A name for a steady hand and a careful mind. You do things once, and you do them right.</td><td>Precision +1</td></tr>
+          <tr><td><strong>The fine edge</strong></td><td>A name that speaks of precision over power. A scalpel where others bring a sledgehammer.</td><td>Precision +1</td></tr>
+          <tr><td><strong>First to move</strong></td><td>A name given to whoever is already gone when the decision is made. You act before hesitation can set in.</td><td>Swiftness +1</td></tr>
+          <tr><td><strong>Made of motion</strong></td><td>A name that moves like you do. Quick to laugh, quick to react, quick to be somewhere else.</td><td>Swiftness +1</td></tr>
+          <tr><td><strong>The bright spark</strong></td><td>A name for a flash of sudden action and sudden thought, leaving the world scrambling to keep up.</td><td>Swiftness +1</td></tr>
+          <tr><td><strong>Deep roots</strong></td><td>A name that wears well. You endure what breaks others, and you&#39;re still standing when the dust settles.</td><td>Resilience +1</td></tr>
+          <tr><td><strong>The unmoved</strong></td><td>A name for someone the world keeps trying to move and keeps failing. Steady, solid, patient.</td><td>Resilience +1</td></tr>
+          <tr><td><strong>Grown through hardship</strong></td><td>A name that means &#39;still here.&#39; Every scar is part of the story the name tells.</td><td>Resilience +1</td></tr>
+          <tr><td><strong>Luck&#39;s favorite</strong></td><td>A name that whispers of close calls and strange luck, of being in the right place at the right time.</td><td>Fortune +1</td></tr>
+          <tr><td><strong>The blessed</strong></td><td>A name given with an open hand, for someone the world seems to smile on, or who smiles in spite of it.</td><td>Fortune +1</td></tr>
+          <tr><td><strong>The guiding star</strong></td><td>A name that others follow. You have a knack for showing up when it matters and pointing the way.</td><td>Fortune +1</td></tr>
+        </tbody>
+      </table>
     </QuestionBlock>
 
     <QuestionBlock :number="12" id="q12">

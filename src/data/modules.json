@@ -318,5 +318,13 @@
     "approach": null,
     "flavor": "<p>Dense composite layers and reactive hydraulic dampeners are fitted across the frame's most vulnerable structural junctions. The result is a chassis that absorbs the worst of any impact before it reaches the systems underneath.</p>",
     "description": "<h3>Effects</h3>\n      <ul>\n        <li>Whenever you suffer a critical strike, reduce its severity by 2 before applying any other reductions.</li>\n      </ul>"
+  },
+  "Voice Mimicry": {
+    "type": "Frame Augmentation",
+    "cost": 12000,
+    "skill": null,
+    "approach": null,
+    "flavor": "<p>A sophisticated vocal synthesis unit is spliced into the frame's speech hardware, paired with a recording bank in the Neural Cloud. Once the Doll has heard a voice, the module can reconstruct and project it with uncanny accuracy.</p>",
+    "description": "<h3>Effects</h3>\n      <p>You may mimic the voice of any person or T-Doll whose voice you have heard at least once. Each recording remains available until overwritten, but the module holds only a small number of imprinted voices at once.</p>\n      <p>When performing a Deception or Performance check that benefits from mimicking someone whose voice you have imprinted, you can reroll up to a number of dice equal to your <strong>familiarity</strong> with that individual.</p>\n      <h3>Familiarity</h3>\n      <ul>\n        <li><strong>Familiarity 1, First Encounter:</strong> You have heard them speak at least once. You can reroll up to 1 die when mimicking them. The copy is recognizable but imperfect.</li>\n        <li><strong>Familiarity 2, Extended Exposure:</strong> You have interacted with them repeatedly across sustained scenes. You can reroll up to 2 dice when mimicking them.</li>\n        <li><strong>Familiarity 3, Intimate Familiarity:</strong> You have spent extensive time with them. You can reroll up to 3 dice when mimicking them. Even close associates struggle to tell you from the original.</li>\n      </ul>\n      <p>To detect the mimicry, a target makes an Insight check opposed by your Deception or Performance check. Raise the difficulty for targets who know the original well, and lower it for targets with no reason to suspect.</p>"
   }
 }

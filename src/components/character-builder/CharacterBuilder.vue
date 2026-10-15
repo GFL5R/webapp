@@ -320,9 +320,27 @@
           <input type="text" :value="character.name" @input="character.name = $event.target.value" placeholder="Your name" />
         </div>
         <div class="builder-identity-row" v-if="isHuman">
-          <label>Name Meaning</label>
-          <textarea :value="character.system.narrative.name_meaning" @input="character.system.narrative.name_meaning = $event.target.value" placeholder="What does your name mean?" rows="2"></textarea>
+          <label>Name Meaning (Q11)</label>
+          <select
+            :value="tq.q11NameMeaning"
+            @change="onNameMeaningChange($event.target.value)"
+          >
+            <option value="none">-- None --</option>
+            <option v-for="m in NAME_MEANINGS" :key="m.key" :value="m.key">
+              {{ m.label }} — +1 {{ formatApproach(m.approach) }}
+            </option>
+          </select>
         </div>
+        <div class="builder-identity-row" v-if="isHuman">
+          <label>Name Meaning Description</label>
+          <textarea
+            :value="character.system.narrative.name_meaning"
+            @input="character.system.narrative.name_meaning = $event.target.value"
+            placeholder="What does your name mean?"
+            rows="2"
+          ></textarea>
+        </div>
+        <p v-if="isHuman && selectedNameMeaning" class="builder-gear-hint">{{ selectedNameMeaning.meaning }}</p>
         <div class="builder-identity-row" v-if="!isHuman">
           <label>Name Origin</label>
           <select :value="character.system.identity.name_origin" @change="builder.setIdentity('name_origin', $event.target.value)">
@@ -366,7 +384,7 @@ import ApproachEditor from './ApproachEditor.vue'
 import SkillEditor from './SkillEditor.vue'
 import EquipmentPanel from './EquipmentPanel.vue'
 import SectionDivider from '@/components/layout/SectionDivider.vue'
-import { NATIONALITIES, BACKGROUNDS, FRAMES } from './character-data.js'
+import { NATIONALITIES, BACKGROUNDS, FRAMES, NAME_MEANINGS } from './character-data.js'
 import { NATIONALITY_ITEMS, BACKGROUND_GEAR } from '@/data/starting-equipment.js'
 import disciplines from '@/data/disciplines.js'
 
@@ -392,6 +410,18 @@ function formatSkill(id) {
 }
 function capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1)
+}
+function formatApproach(id) {
+  return capitalize((id || '').replace(/_/g, ' '))
+}
+
+// ---- Name meaning (Q11) ----
+const selectedNameMeaning = computed(() =>
+  NAME_MEANINGS.find(m => m.key === tq.q11NameMeaning) || null
+)
+function onNameMeaningChange(value) {
+  builder.setQ11NameMeaning(value)
+  if (isHuman.value) applyHumanBonuses()
 }
 
 // ---- Gear display ----
@@ -485,6 +515,11 @@ function applyHumanBonuses() {
   const tq2 = builder.getTwelveQ()
   if (tq2.q5BonusApproach && tq2.q5BonusApproach !== 'none') {
     if (approaches[tq2.q5BonusApproach] !== undefined) approaches[tq2.q5BonusApproach] += 1
+  }
+  // Q11 name meaning bonus
+  const nameMeaning = NAME_MEANINGS.find(m => m.key === tq2.q11NameMeaning)
+  if (nameMeaning && approaches[nameMeaning.approach] !== undefined) {
+    approaches[nameMeaning.approach] += 1
   }
   builder.setAllApproaches(approaches)
   const freeSkills = bg ? [bg.skill] : []

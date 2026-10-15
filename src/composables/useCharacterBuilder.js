@@ -201,6 +201,8 @@ function makeDefaultCharacter() {
         // Q4/Q5 bonuses
         q4BonusSkill: 'none',     // +1 to any skill at rank 0
         q5BonusApproach: 'none',  // +1 to any approach
+        // Q11 name meaning → approach bonus
+        q11NameMeaning: 'none',    // meaning key → +1 to that meaning's approach
       },
     },
     items: [],
@@ -661,6 +663,10 @@ export function useCharacterBuilder() {
 
   function setQ5BonusApproach(approach) {
     character.system.twelve_questions.q5BonusApproach = approach || 'none'
+  }
+
+  function setQ11NameMeaning(key) {
+    character.system.twelve_questions.q11NameMeaning = key || 'none'
   }
 
   function applyTwelveQBonuses() {

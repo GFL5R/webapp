@@ -326,5 +326,37 @@
     "approach": null,
     "flavor": "<p>A sophisticated vocal synthesis unit is spliced into the frame's speech hardware, paired with a recording bank in the Neural Cloud. Once the Doll has heard a voice, the module can reconstruct and project it with uncanny accuracy.</p>",
     "description": "<h3>Effects</h3>\n      <p>You may mimic the voice of any person or T-Doll whose voice you have heard at least once. Each recording remains available until overwritten, but the module holds only a small number of imprinted voices at once.</p>\n      <p>When performing a Deception or Performance check that benefits from mimicking someone whose voice you have imprinted, you can reroll up to a number of dice equal to your <strong>familiarity</strong> with that individual.</p>\n      <h3>Familiarity</h3>\n      <ul>\n        <li><strong>Familiarity 1, First Encounter:</strong> You have heard them speak at least once. You can reroll up to 1 die when mimicking them. The copy is recognizable but imperfect.</li>\n        <li><strong>Familiarity 2, Extended Exposure:</strong> You have interacted with them repeatedly across sustained scenes. You can reroll up to 2 dice when mimicking them.</li>\n        <li><strong>Familiarity 3, Intimate Familiarity:</strong> You have spent extensive time with them. You can reroll up to 3 dice when mimicking them. Even close associates struggle to tell you from the original.</li>\n      </ul>\n      <p>To detect the mimicry, a target makes an Insight check opposed by your Deception or Performance check. Raise the difficulty for targets who know the original well, and lower it for targets with no reason to suspect.</p>"
+  },
+  "Enhanced Ears": {
+    "type": "Frame Augmentation",
+    "cost": 6000,
+    "skill": null,
+    "approach": null,
+    "flavor": "<p>Functional ears mounted on the head, packed with enhanced microphones and directional filtering that grant sharpened hearing far beyond the base frame. They come in many shapes; cat ears and bunny ears are popular choices.</p>",
+    "description": "<h3>Effects</h3>\n      <p>Unlike the non-functional ears a <strong>Customization Kit</strong> can provide, these are working sensory hardware. The ears react to emotion and follow the Doll's mood, but they also hear: when performing an Insight or Stealth check that benefits from hearing (such as eavesdropping, detecting a hidden foe, or locating a sound source), you can reroll up to two dice.</p>\n      <p>Enhanced ears come in any shape; cat ears and bunny ears are common, but other forms are available.</p>"
+  },
+  "Enhanced Tail": {
+    "type": "Frame Augmentation",
+    "cost": 6000,
+    "skill": null,
+    "approach": null,
+    "flavor": "<p>A functional tail packed with accelerometers and micro-adjustment servos that react to shifts in the host's balance, helping to keep the frame oriented as the user intends. They come in many shapes; cat tails and fox tails are popular choices.</p>",
+    "description": "<h3>Effects</h3>\n      <p>Unlike the non-functional tail a <strong>Customization Kit</strong> can provide, this is a working stabilization system. The tail reacts to emotion and can express mood, but it also keeps you oriented: when performing a Swiftness or Conditioning check that benefits from balance (such as climbing, tightrope walking, or recovering after a stumble), you can reroll up to two dice.</p>\n      <p>Enhanced tails come in any shape; cat tails and fox tails are common, but other forms are available.</p>"
+  },
+  "Emotional Damper": {
+    "type": "Frame Augmentation",
+    "cost": 9000,
+    "skill": null,
+    "approach": null,
+    "flavor": "<p>A neural dampener that smooths the spikes of emotional response, muting the highs and lows of Strife before they register.</p>",
+    "description": "<h3>Effects</h3>\n      <p>While the damper is active, when you would gain Strife, reduce it by 1 (to a minimum of 0). You may toggle the damper on or off as a free action.</p>\n      <p>This quieting comes at a cost. While active, your reduced emotional response reads as uncanny and slightly wrong to those around you.</p>\n      <p>While active, when performing a check that benefits from reading a natural emotional reaction, you must reroll two dice showing (su) or (ex). If the reroll causes you to fail the check, you gain 1 fortune point.</p>"
+  },
+  "Night Vision Unit": {
+    "type": "Frame Augmentation",
+    "cost": 6000,
+    "skill": null,
+    "approach": null,
+    "flavor": "<p>Light-amplification optics layered over the frame's visual sensors, letting the Doll see clearly in darkness that would blind an unmodified frame.</p>",
+    "description": "<h3>Effects</h3>\n      <p>You can see normally in darkness and low light. Environmental penalties from poor visibility do not apply to your checks, and you can spot targets others cannot in the dark.</p>"
   }
 }

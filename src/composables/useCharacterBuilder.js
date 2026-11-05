@@ -366,6 +366,79 @@ const derived = computed(() => {
 // ---------------------------------------------------------------------------
 // Discipline helpers
 // ---------------------------------------------------------------------------
+function normalizeSkillId(s) {
+  return String(s || '').trim().toLowerCase().replace(/[\s\-]+/g, '_')
+}
+
+// Cumulative XP cost to reach a skill rank: rank n costs n × SKILL_MULTIPLIER
+function cumulativeSkillXp(rank) {
+  const r = Math.max(0, Number(rank) || 0)
+  return (XP.SKILL_MULTIPLIER * r * (r + 1)) / 2
+}
+
+// Cumulative rank thresholds from per-rank costs [16, 20, 24] → [16, 36, 60]
+const RANK_THRESHOLDS = XP.DISCIPLINE_RANK_COSTS.reduce((acc, cost) => {
+  acc.push((acc[acc.length - 1] || 0) + cost)
+  return acc
+}, [])
+
+function rankFromXp(xp) {
+  let ranksCompleted = 0
+  for (const threshold of RANK_THRESHOLDS) {
+    if ((xp || 0) >= threshold) ranksCompleted++
+    else break
+  }
+  return { currentRank: Math.min(ranksCompleted + 1, 3), ranksCompleted }
+}
+
+function getSlotDiscipline(slot) {
+  if (!slot?.disciplineId) return null
+  return disciplines.find(d => (d.id || d.title) === slot.disciplineId) || null
+}
+
+// XP already spent on the discipline's associated skills above the free
+// baseline — counts retroactively toward the slot's rank progression
+// (wiki 04-advancement) even though it was spent before the discipline.
+function retroactiveSkillXp(slot) {
+  const disc = getSlotDiscipline(slot)
+  if (!disc?.skills?.length) return 0
+  let xp = 0
+  for (const s of disc.skills) {
+    const id = normalizeSkillId(s)
+    const rank = character.system.skills[id] || 0
+    const free = character.system.skills_free[id] || 0
+    if (rank > free) xp += cumulativeSkillXp(rank) - cumulativeSkillXp(free)
+  }
+  return xp
+}
+
+// Techniques already learned in other discipline slots that this discipline
+// also lists. Returns entries in the same shape as techniquesLearned.
+function retroactiveTechniques(slot) {
+  const disc = getSlotDiscipline(slot)
+  if (!disc?.techniques?.length) return []
+  const listedIds = new Set()
+  const listedNames = new Set()
+  for (const t of disc.techniques) {
+    const name = typeof t === 'string' ? t : t?.name
+    if (!name) continue
+    listedNames.add(String(name).trim().toLowerCase())
+    listedIds.add(makeFoundryId(name))
+  }
+  const found = []
+  for (const other of Object.values(character.system.disciplines)) {
+    if (other === slot || !other.disciplineId) continue
+    for (const t of (other.techniquesLearned || [])) {
+      if (typeof t === 'string') {
+        if (listedIds.has(t)) found.push(t)
+      } else if (t?.name && listedNames.has(String(t.name).trim().toLowerCase())) {
+        found.push({ id: t.id || makeFoundryId(t.name), name: t.name, rank: t.rank || 1 })
+      }
+    }
+  }
+  return found
+}
+
 function findEmptyDisciplineSlot() {
   const slots = character.system.disciplines
   for (const key of Object.keys(slots)) {
@@ -457,6 +530,8 @@ function moduleBudgetRemaining() {
 
 // --- Export helper: materialize discipline perk/technique stub items ---
 function _materializeDisciplineItems(system, items) {
+  // Same technique can be listed by multiple disciplines — emit its item once
+  const materializedIds = new Set()
   for (const slot of Object.values(system.disciplines || {})) {
     if (!slot.disciplineId) continue
     const disc = disciplines.find(d => (d.id || d.title) === slot.disciplineId)
@@ -490,23 +565,26 @@ function _materializeDisciplineItems(system, items) {
       const learnedIds = []
       for (const t of slot.techniquesLearned) {
         const itemId = makeFoundryId(t.name || t.id || 'technique')
-        items.push({
-          _id: itemId,
-          name: t.name || 'Technique',
-          type: 'technique',
-          img: 'systems/gfl5r/assets/icons/techs/technique.svg',
-          system: {
-            source_reference: { source: 'GFL5R', page: 0 },
-            flavor: '',
-            description: '',
-            xp_cost: 0,
-            rank_required: t.rank || 1,
-            technique_type: 'technique',
-            approach: '',
-            skill: '',
-            activation: 'active',
-          },
-        })
+        if (!materializedIds.has(itemId)) {
+          materializedIds.add(itemId)
+          items.push({
+            _id: itemId,
+            name: t.name || 'Technique',
+            type: 'technique',
+            img: 'systems/gfl5r/assets/icons/techs/technique.svg',
+            system: {
+              source_reference: { source: 'GFL5R', page: 0 },
+              flavor: '',
+              description: '',
+              xp_cost: 0,
+              rank_required: t.rank || 1,
+              technique_type: 'technique',
+              approach: '',
+              skill: '',
+              activation: 'active',
+            },
+          })
+        }
         learnedIds.push(itemId)
       }
       slot.techniquesLearned = learnedIds
@@ -595,8 +673,24 @@ export function useCharacterBuilder() {
 
   // ---- Skills ----
   function setSkill(skill, rank) {
-    if (character.system.skills[skill] !== undefined) {
-      character.system.skills[skill] = Math.max(0, Number(rank) || 0)
+    if (character.system.skills[skill] === undefined) return
+    const oldRank = character.system.skills[skill] || 0
+    const newRank = Math.max(0, Number(rank) || 0)
+    if (oldRank === newRank) return
+    character.system.skills[skill] = newRank
+    // Skill XP counts as discipline progression for any discipline listing
+    // the skill — flow the delta into every matching slot (wiki 04-advancement).
+    const xpDelta = cumulativeSkillXp(newRank) - cumulativeSkillXp(oldRank)
+    if (!xpDelta) return
+    for (const slot of Object.values(character.system.disciplines)) {
+      if (!slot.disciplineId) continue
+      const disc = getSlotDiscipline(slot)
+      const associated = (disc?.skills || []).map(normalizeSkillId)
+      if (!associated.includes(skill)) continue
+      slot.xpSpent = Math.max(0, (slot.xpSpent || 0) + xpDelta)
+      const progress = rankFromXp(slot.xpSpent)
+      slot.currentRank = progress.currentRank
+      slot.ranksCompleted = progress.ranksCompleted
     }
   }
 
@@ -688,7 +782,23 @@ export function useCharacterBuilder() {
     slot.disciplineId = disciplineData.id || disciplineData.title
     slot.perkId = disciplineData.perk ? disciplineData.perk.id || disciplineData.perk.title : null
     slot.capstoneId = disciplineData.capstone ? disciplineData.capstone.id || disciplineData.capstone.title : null
-    slot.unlockCost = XP.DISCIPLINE_ENTRY_COST
+    // 5 XP for every discipline beyond the first (wiki 04-advancement)
+    const activeCount = Object.values(character.system.disciplines)
+      .filter(s => s.disciplineId && s !== slot).length
+    slot.unlockCost = activeCount > 0 ? XP.DISCIPLINE_ENTRY_COST : 0
+
+    // Retroactive progression: skill ranks held above the free baseline and
+    // techniques already learned in other disciplines count toward this
+    // slot's rank progress (wiki 04-advancement).
+    const retroTechs = retroactiveTechniques(slot)
+    const seededXp = retroactiveSkillXp(slot)
+      + retroTechs.length * XP.TECHNIQUE_COST
+      + slot.unlockCost
+    if (retroTechs.length) slot.techniquesLearned.push(...retroTechs)
+    slot.xpSpent = seededXp
+    const progress = rankFromXp(seededXp)
+    slot.currentRank = progress.currentRank
+    slot.ranksCompleted = progress.ranksCompleted
 
     // Auto-assign free skill ranks for EACH associated skill (rank 1 each)
     if (disciplineData.skills?.length) {
@@ -756,17 +866,23 @@ export function useCharacterBuilder() {
     for (let i = 0; i < slot.ranksCompleted; i++) {
       cumulative += XP.DISCIPLINE_RANK_COSTS[i] || 0
     }
-    slot.xpSpent = cumulative + (slot.techniquesLearned.length * XP.TECHNIQUE_COST) + (slot.disciplineId ? XP.DISCIPLINE_ENTRY_COST : 0)
+    slot.xpSpent = cumulative + retroactiveSkillXp(slot)
+      + (slot.techniquesLearned.length * XP.TECHNIQUE_COST)
+      + (slot.disciplineId ? XP.DISCIPLINE_ENTRY_COST : 0)
   }
 
   // ---- XP Calculations ----
   function computeTotalXP() {
     let total = 0
     const disc = character.system.disciplines
+    // Skill XP for skills associated with an active discipline slot is already
+    // counted inside that slot's xpSpent; only count the rest globally.
+    const coveredSkills = new Set()
     for (const key of Object.keys(disc)) {
-      if (disc[key].disciplineId) {
-        total += disc[key].xpSpent || 0
-      }
+      if (!disc[key].disciplineId) continue
+      total += disc[key].xpSpent || 0
+      const d = getSlotDiscipline(disc[key])
+      for (const s of (d?.skills || [])) coveredSkills.add(normalizeSkillId(s))
     }
     // Approach XP above the free baseline
     APPROACH_IDS.forEach(a => {
@@ -778,6 +894,7 @@ export function useCharacterBuilder() {
     })
     // Skill XP above the free baseline
     SKILL_IDS.forEach(s => {
+      if (coveredSkills.has(s)) return
       const rank = character.system.skills[s] || 0
       const free = character.system.skills_free[s] || 0
       for (let r = free + 1; r <= rank; r++) {

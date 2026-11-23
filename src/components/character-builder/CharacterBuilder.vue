@@ -113,7 +113,7 @@
 
       <div class="builder-section">
         <h2 class="builder-q-heading">Q3: {{ isHuman ? 'Who taught you the trade?' : 'What weapon were you imprinted with?' }}</h2>
-        <p class="builder-flavor">{{ isHuman ? 'Select a discipline and one starting technique.' : 'Select a weapon discipline. Spend 16 XP on skills and rank 1 techniques.' }}</p>
+        <p class="builder-flavor">{{ isHuman ? 'Select a discipline and one starting technique.' : 'Select a weapon discipline (or Knuckle Dragger). Spend 16 XP on skills and rank 1 techniques.' }}</p>
 
         <!-- Discipline drop zone -->
         <div class="builder-section-title" style="margin-bottom:4px">Discipline</div>
@@ -558,7 +558,9 @@ function onFrameChange(value) {
 }
 
 // ---- Drop handlers ----
-const WEAPON_DISCIPLINE_TITLES = ['Knives', 'Swords', 'Pistols', 'Submachine Guns', 'Shotguns', 'Assault Rifles', 'Battle Rifles', 'Snipers', 'Machine Guns']
+// Weapon disciplines valid for T-Dolls, plus Knuckle Dragger (an unarmed-combat
+// discipline that is also a valid starter discipline for T-Dolls).
+const WEAPON_DISCIPLINE_TITLES = ['Knives', 'Swords', 'Pistols', 'Submachine Guns', 'Shotguns', 'Assault Rifles', 'Battle Rifles', 'Snipers', 'Machine Guns', 'Knuckle Dragger']
 
 function onDiscDrop(event) {
   discDragOver.value = false

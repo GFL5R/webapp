@@ -5,7 +5,7 @@
 
     <p>A discipline is a focused track of training that teaches an operator a specific skillset. Over the course of a campaign, a character may pursue up to five disciplines, building a layered expertise that reflects their growth, priorities, and field experience.</p>
 
-    <p>Every character begins play with one discipline. Humans may select any discipline. T-Dolls must select one of the weapon disciplines but begin with Rank 1 already completed, entering play at Rank 2 in that discipline. Humans begin with only the discipline's perk and a single starting technique.</p>
+    <p>Every character begins play with one discipline. Humans may select any discipline. T-Dolls must select one of the weapon disciplines — or the Knuckle Dragger discipline — but begin with Rank 1 already completed, entering play at Rank 2 in that discipline. Humans begin with only the discipline's perk and a single starting technique.</p>
 
     <SectionDivider label="Structure" />
 
@@ -58,7 +58,7 @@
     <table>
       <thead><tr><th>Humans</th><th></th><th>T-Dolls</th></tr></thead>
       <tbody>
-        <tr><td>Begin with one discipline of their choice, its perk, and one starting technique. Progress through all three ranks normally.</td><td>vs</td><td>Must begin with a weapon discipline matching their designated weapon category. Enter play with Rank 1 already completed, placing them at Rank 2.</td></tr>
+        <tr><td>Begin with one discipline of their choice, its perk, and one starting technique. Progress through all three ranks normally.</td><td>vs</td><td>Must begin with a weapon discipline matching their designated weapon category (or Knuckle Dragger). Enter play with Rank 1 already completed, placing them at Rank 2.</td></tr>
       </tbody>
     </table>
 

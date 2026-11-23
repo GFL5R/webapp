@@ -96,10 +96,13 @@ const techDragOver = ref(false)
 const slot = computed(() => builder.character.system.disciplines.slot1)
 const isTDoll = computed(() => builder.character.system.identity.characterType === 't-doll')
 
-// Weapon disciplines — only these are valid for T-Dolls
+// Weapon disciplines — only these are valid for T-Dolls.
+// Knuckle Dragger is an exception: an unarmed-combat discipline that is also
+// a valid starter discipline for T-Dolls.
 const WEAPON_DISCIPLINE_TITLES = [
   'Knives', 'Swords', 'Pistols', 'Submachine Guns',
   'Shotguns', 'Assault Rifles', 'Battle Rifles', 'Snipers', 'Machine Guns',
+  'Knuckle Dragger',
 ]
 
 // Build a lookup map from discipline title to the full discipline object

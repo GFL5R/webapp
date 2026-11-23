@@ -149,7 +149,7 @@
       <p>Either way, you're good with it. That part isn't optional.</p>
 
       <RulesCallout>
-        <p>Select one <strong><router-link to="/disciplines">Weapon Discipline</router-link></strong>. You receive:</p>
+        <p>Select one <strong><router-link to="/disciplines">Weapon Discipline</router-link></strong> (the Knuckle Dragger discipline is also permitted). You receive:</p>
         <ul>
           <li>One weapon of your discipline's type (up to a set price)</li>
           <li>Rank 1 in each of the discipline's associated skills</li>

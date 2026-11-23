@@ -15,6 +15,10 @@ A single-page application field manual for the **GFL5R** tabletop roleplaying ga
 - **Nginx** production container (alpine)
 - **GitHub Actions** CI/CD → GHCR container
 
+## Git Workflow
+
+- **Always pull after a push.** Run `git pull --rebase` after every successful push (and before retrying a rejected push) — this workspace's repos move independently and the remote frequently has new commits or tags.
+
 ## Build and Run
 
 ```bash
